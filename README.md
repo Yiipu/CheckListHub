@@ -5,11 +5,11 @@
 ```
 CheckListHub/
 │
-├── frontend/            # Next.js 前端
+├── Web/            # Next.js 前端
 │   ├── .gitignore
 │   └── ...
 │
-├── backend/             # Java 后端
+├── Api/             # Java 后端
 │   ├── .gitignore
 │   └── ...
 │
