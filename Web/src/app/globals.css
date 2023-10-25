@@ -16,12 +16,15 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  :root {
+    color-scheme: light dark;
+    @apply dark:text-white dark:bg-black
+  }
+}
+
+@layer components {
+  .container-md {
+    @apply w-full mx-auto md:max-w-md lg:max-w-lg xl:max-w-xl xxl:max-w-xxl;
+  }
 }
