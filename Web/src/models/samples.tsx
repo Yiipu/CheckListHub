@@ -1,4 +1,5 @@
 export const MockList: CheckList = {
+    id: '123',
     header: "样品清单",
     owner: null,
     topicList: ["导航项1", "导航项2", "导航项3"],
@@ -36,3 +37,44 @@ export const MockList: CheckList = {
     ],
     sourceUrl: "https://example.com"
 }
+
+export const MockStarList:ChecklistCollection = {
+    ckLists: [
+        {
+            header: "Checklist 1",
+            id: '1'
+        },
+        {
+            header: "Checklist 2",
+            id: '2'
+        },
+        {
+            header: "Checklist 3",
+            id: '3'
+        },
+        {
+            header: "Checklist 4",
+            id: '4'
+        },
+        {
+            header: "Checklist 5",
+            id: '5'
+        },
+        {
+            header: "Checklist 6",
+            id: '6'
+        },
+        {
+            header: "Checklist 7",
+            id: '7'
+        },
+        {
+            header: "Checklist 8",
+            id: '8'
+        },
+        {
+            header: "Checklist 9",
+            id: '9'
+        },
+    ]
+};

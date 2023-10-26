@@ -1,40 +1,38 @@
-import { MockList } from "@/models/samples"
-
-async function getData(slug: string) {
+async function getData(slug: number) {
     // TODO: 从后端获取数据
-    const res = await fetch(`api/getlist?id=${slug}`)
-   
+    const res = await fetch(`http://localhost:3000/api/mock/checklist?id=${slug}`)
+
     if (!res.ok) {
-      throw new Error('Failed to fetch data')
+        throw new Error('Failed to fetch data')
     }
-   
+
     return res.json()
 }
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function Page({ params }: { params: { slug: number } }) {
 
-    //const data = await getData(params.slug)
-    const list = MockList
-    
+    const data: CheckList = await getData(params.slug)
+
     return (
         <>
+            <p>ID: {data.id}</p>
             <ul>
-                {list.topicList.map((item, index) => (
+                {data.topicList.map((item, index) => (
                     <li key={index}><a href={`#section-${item}`}>{item}</a></li>
                 ))}
             </ul>
             <ul>
-                {list.priorityList?.map((item, index) => (
+                {data.priorityList?.map((item, index) => (
                     <li key={index}>{item}</li>
                 ))}
             </ul>
             <ul>
-                {list.tagList.map((item, index) => (
+                {data.tagList.map((item, index) => (
                     <li key={index}>{item}</li>
                 ))}
             </ul>
             <ul>
-                {list.itemGroups.map((item, index) => (
+                {data.itemGroups.map((item, index) => (
                     <li key={index}>
                         <h3 id={`section-${item.topic}`}>{item.topic}</h3>
                         <ul>
