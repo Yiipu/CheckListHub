@@ -1,6 +1,6 @@
 import './globals.css'
 import { headers } from 'next/headers'
-import SessionProvider from '@/components/auth/SessionProvider'
+import { SessionProvider, UIProvider } from '@/components/ContextProvider'
 
 export default function RootLayout({
   children,
@@ -9,13 +9,14 @@ export default function RootLayout({
 }) {
 
   const headersList = headers()
-  const session:AzureSession = {
+  const session: AzureSession = {
     id: headersList.get('X-MS-CLIENT-PRINCIPAL-ID') || '',
     name: headersList.get('X-MS-CLIENT-PRINCIPAL-NAME') || '',
     idp: headersList.get('X-MS-CLIENT-PRINCIPAL-IDP') || ''
   }
 
   return (
+
     <html lang="en">
       <head>
         <title>CheckListHub</title>
@@ -31,7 +32,9 @@ export default function RootLayout({
       </head>
       <body>
         <SessionProvider value={session}>
-          {children}
+          <UIProvider>
+            {children}
+          </UIProvider>
         </SessionProvider>
       </body>
     </html>

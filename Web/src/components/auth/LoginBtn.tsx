@@ -1,3 +1,4 @@
+'use client'
 import { Button, useDisclosure } from "@nextui-org/react"
 
 import {
@@ -10,7 +11,7 @@ import {
 
 import { provider } from "@/config/auth.config"
 import { useContext } from "react"
-import { SessionContext } from "./SessionProvider"
+import { SessionContext } from "@/components/ContextProvider"
 
 export default function LoginBtn() {
 
