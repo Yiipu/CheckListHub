@@ -32,7 +32,7 @@ export default function LoginBtn() {
               <>
                 <ModalHeader className="flex flex-col gap-1">Sign in</ModalHeader>
                 <ModalBody>
-                  {provider.map((p, index) => (<Button key={index}><a href={`/.auth/login/${p}`}>Sign in with {p}</a></Button>))}
+                  {provider.map((idp, index) => (<Button key={index}><a href={`/.auth/login/${idp}`}>Sign in with {idp}</a></Button>))}
                 </ModalBody>
                 <ModalFooter>
                   <Button color="primary" onPress={onClose}>
