@@ -16,11 +16,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4.0.0
 
-    - name: cd Web
-      run: |
-        cd Web
-        ls
-
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3.0.0
 
@@ -34,9 +29,10 @@ jobs:
     - name: Build and push container image to registry
       uses: docker/build-push-action@v5.0.0
       with:
+        context: "{{defaultContext}}:Web"
+        file: ./Dockerfile
         push: true
         tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_809b0a0609d04d8a82aa0d2c5847d294 }}/checklisthub:${{ github.sha }}
-        file: ./Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
