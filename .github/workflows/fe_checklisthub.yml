@@ -17,7 +17,9 @@ jobs:
     - uses: actions/checkout@v4.0.0
 
     - name: cd Web
-      run: cd Web
+      run: |
+        cd Web
+        ls
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3.0.0
