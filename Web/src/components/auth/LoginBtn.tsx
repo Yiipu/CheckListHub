@@ -19,21 +19,23 @@ export default function LoginBtn() {
   const session = useContext(SessionContext)
 
   return (
-    session.id?.length ?
+    session ?
       <>
-        <p>signed in as {session.name || session.id} with {session.idp}</p>
-        <a href="/.auth/logout">Sign out</a>
+        <p>Logged in as {session.name || session.id} with {session.idp}</p>
+        <a href="/.auth/logout">Log out</a>
       </>
       :
       <>
-        <Button onPress={onOpen}>Sign in</Button>
-        <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="dark:bg-black">
+        <Button onPress={onOpen}>✅ Log in</Button>
+        <Modal isOpen={isOpen} onOpenChange={onOpenChange}
+          className="dark:bg-black"
+          backdrop="blur">
           <ModalContent>
             {(onClose) => (
               <>
-                <ModalHeader className="flex flex-col gap-1">Sign in</ModalHeader>
+                <ModalHeader className="flex flex-col gap-1">Log in</ModalHeader>
                 <ModalBody>
-                  {provider.map((idp, index) => (<Button key={index}><a href={`/.auth/login/${idp}`}>Sign in with {idp}</a></Button>))}
+                  {provider.map((idp, index) => (<Button key={index}><a href={`/.auth/login/${idp}`}>Log in with {idp}</a></Button>))}
                 </ModalBody>
                 <ModalFooter>
                   <Button color="primary" onPress={onClose}>

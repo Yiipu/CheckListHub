@@ -26,5 +26,7 @@ interface CheckList {
 
 // 清单的列表
 interface ChecklistCollection {
+    id: string
+    count: number
     ckLists: Array<{ header: string; id: string }>
 }

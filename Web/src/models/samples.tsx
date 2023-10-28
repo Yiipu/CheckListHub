@@ -12,14 +12,14 @@ export const MockList: CheckList = {
                 {
                     title: "任务1",
                     description: "完成任务1",
-                    tags: ["标签1"],
-                    priority: null,
+                    tags: ["标签1","标签2"],
+                    priority: "高优先级",
                 },
                 {
                     title: "任务2",
                     description: "完成任务2",
                     tags: ["标签1"],
-                    priority: null,
+                    priority: "中优先级",
                 }
             ]
         },
@@ -29,8 +29,8 @@ export const MockList: CheckList = {
                 {
                     title: "任务3",
                     description: "完成任务3",
-                    tags: ["标签1"],
-                    priority: null,
+                    tags: ["标签1","标签3"],
+                    priority: "低优先级",
                 }
             ]
         }
@@ -39,6 +39,8 @@ export const MockList: CheckList = {
 }
 
 export const MockStarList:ChecklistCollection = {
+    id: "0",
+    count: 9,
     ckLists: [
         {
             header: "Checklist 1",

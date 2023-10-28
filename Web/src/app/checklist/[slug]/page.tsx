@@ -1,5 +1,4 @@
 async function getData(slug: number) {
-    // TODO: 从后端获取数据
     const res = await fetch(`http://localhost:3000/api/mock/checklist?id=${slug}`)
 
     if (!res.ok) {

@@ -19,7 +19,7 @@
 @layer base {
   :root {
     color-scheme: light dark;
-    @apply dark:text-white dark:bg-cyan-800 bg-cyan-200
+    @apply dark:text-white dark:bg-slate-900 bg-white
   }
 }
 
