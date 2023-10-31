@@ -11,7 +11,7 @@ import {
 
 import { provider } from "@/config/auth.config"
 import { useContext } from "react"
-import { SessionContext } from "@/components/ContextProvider"
+import { SessionContext } from "@/context/ContextProvider"
 
 export default function LoginBtn() {
 

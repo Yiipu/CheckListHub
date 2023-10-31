@@ -14,6 +14,7 @@ export default async function Page({ params }: { params: { slug: number } }) {
 
     return (
         <>
+            
             <p>ID: {data.id}</p>
             <ul>
                 {data.topicList.map((item, index) => (

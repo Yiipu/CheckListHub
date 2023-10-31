@@ -1,4 +1,4 @@
-import { MockList } from "@/models/samples"
+import { MockList } from "@/types/samples"
 import { NextRequest } from "next/server"
 import sleep from "../sleeper"
 
