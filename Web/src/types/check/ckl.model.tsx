@@ -1,6 +1,6 @@
 // 一条 check 项
 interface Item {
-    title: string | null
+    title: string
     description: string
     tags: string[] | null
     priority: string | null

@@ -48,7 +48,7 @@ export default function RootLayout({
           <UIProvider>
             <div className="container-md">
               <header className="m-2 md:h-[5rem] gap-1 justify-items-center items-center align-middle grid grid-flow-row-dense md:grid-cols-6">
-                <h1 className="text-3xl">CheckListHub</h1>
+                <h1 className="text-3xl"><a href="/">CheckListHub</a></h1>
                 <div className="md:col-start-5"><SearchBtn /></div>
                 <div className="md:col-start-6"><LoginBtn /></div>
               </header>

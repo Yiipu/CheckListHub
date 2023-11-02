@@ -16,7 +16,7 @@ export default async function Home() {
 
   return (
     <>
-      <main className="m-2 grid grid-flow-row-dense grid-cols-2 md:grid-cols-3 md:grid-rows-2">
+      <main className="m-2 grid grid-cols-2 md:grid-cols-3 md:grid-rows-2">
         <div className="col-span-2 row-span-2">
           <CollectionListHeader>❤ Check Our Best Lists</CollectionListHeader>
           <div className="divider" />
