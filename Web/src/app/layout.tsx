@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import { headers } from 'next/headers'
-import { SessionProvider, UIProvider } from '@/context/ContextProvider'
+import { UIProvider } from '@/context/UIProvider'
+import SessionProvider from '@/context/SessionProvider'
 import SearchBtn from '@/components/button/SearchBtn'
 import LoginBtn from '@/components/button/LoginBtn'
 
@@ -18,8 +19,6 @@ export function getSession() {
 在客户端组件:
 import { useContext } from "react"
 import { SessionContext } from "@/components/ContextProvider"
-在服务端组件：
-import { getSession } from "@/app/layout"
 */
 
 export default function RootLayout({

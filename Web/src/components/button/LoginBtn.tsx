@@ -11,12 +11,12 @@ import {
 
 import { provider } from "@/config/auth.config"
 import { useContext } from "react"
-import { SessionContext } from "@/context/ContextProvider"
+import {Session} from "@/context/SessionProvider"
 
 export default function LoginBtn() {
 
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
-  const session = useContext(SessionContext)
+  const session = useContext(Session)
 
   return (
     session ?

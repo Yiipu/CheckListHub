@@ -1,20 +1,18 @@
 'use client'
 
-import { useState } from "react"
+import { useContext, useState } from "react"
 import styles from "./page.module.css"
-import { Accordion, AccordionItem, Switch, cn } from "@nextui-org/react"
 import CollapseBox from "@/components/container/CollapseBox"
+import { CheckList } from '@/context/CheckListProvider'
 
-export default function Page({
-    data,
-}: {
-    data: CheckList,
-}) {
+export default function Page() {
 
     const [priFilter, setPriFilter] = useState<Array<string>>([])
     const [tagFilter, setTagFilter] = useState<Array<string>>([])
     const [disablePriFilter, setDisablePriFilter] = useState<boolean>(true)
     const [disableTagFilter, setDisableTagFilter] = useState<boolean>(true)
+
+    const data = useContext(CheckList)
 
     return (
         <>
@@ -26,13 +24,13 @@ export default function Page({
                     ))}
                 </ul>
                 <ul className={styles.tagList}>
-                    <Switch>disableTagFilter</Switch>
+                    <button>disableTagFilter</button>
                     {data.tagList.map((item, index) => (
-                        <li key={index}><Switch>{item}</Switch></li>
+                        <li key={index}><button>{item}</button></li>
                     ))}
                 </ul>
                 <ul className={styles.priorityList}>
-                    <Switch>disablePriFilter</Switch>
+                    <button>disablePriFilter</button>
                     {data.priorityList?.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
