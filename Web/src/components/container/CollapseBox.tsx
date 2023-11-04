@@ -10,23 +10,20 @@ export default function CollapseBox({
 }: {
     children: JSX.Element,
     title: JSX.Element,
-    subtitle: JSX.Element,
-    className: string,
+    subtitle?: JSX.Element,
+    className?: string,
 }) {
 
     const [collapsed, setCollapsed] = useState<boolean>(true)
 
     return (
-        <div className={`flex ${className}`}>
-            <div>
-
-            </div>
+        <div className={`flex ${className} m-2 bg-cyan-900`}>
             <div className="flex-1">
                 {title}
                 {!collapsed&&<div>{children}</div>}
                 {subtitle}
             </div>
-            <button onClick={() => (setCollapsed(!collapsed))}>
+            <button onClick={() => (setCollapsed(!collapsed))} className=" bg-blue-500 hover:bg-blue-900">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1024 1024"
                     version="1.1"

@@ -1,5 +1,4 @@
 import CheckListProvider from '@/context/CheckListProvider'
-import Page from "./page"
 import styles from "./page.module.css"
 
 async function getData(slug: number) {
