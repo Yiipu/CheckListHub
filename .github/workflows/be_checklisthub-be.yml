@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: java-app
-          path: '${{ github.workspace }}/target/*.jar'
+          path: '${{ github.workspace }}/Api/backend/target/*.jar'
 
   deploy:
     runs-on: ubuntu-latest
@@ -43,7 +43,6 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
-          path: ./Api/backend
           name: java-app
 
       - name: Deploy to Azure Web App
