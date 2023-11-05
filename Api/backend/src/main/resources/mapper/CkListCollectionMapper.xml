@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wallace.mapper.CkListCollectionMapper">
+
+    <resultMap id="BaseResultMap" type="com.wallace.pojo.CkListCollection">
+            <id property="colid" column="colid" jdbcType="INTEGER"/>
+            <result property="cid" column="cid" jdbcType="INTEGER"/>
+            <result property="uid" column="uid" jdbcType="INTEGER"/>
+            <result property="viewTime" column="view_time" jdbcType="TIMESTAMP"/>
+            <result property="isTeam" column="is_team" jdbcType="INTEGER"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        colid,cid,uid,
+        view_time,is_team,version,
+        is_deleted
+    </sql>
+</mapper>
