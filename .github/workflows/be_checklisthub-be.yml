@@ -43,6 +43,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
+          path: ./Api/backend
           name: java-app
 
       - name: Deploy to Azure Web App
