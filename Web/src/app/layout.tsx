@@ -7,6 +7,7 @@ import LoginBtn from '@/components/button/LoginBtn'
 
 export function getSession() {
   const headersList = headers()
+  console.debug(headersList)
   const session: AzureSession | null = headersList.get('X-MS-CLIENT-PRINCIPAL-ID') ? {
     id: headersList.get('X-MS-CLIENT-PRINCIPAL-ID'),
     name: headersList.get('X-MS-CLIENT-PRINCIPAL-NAME'),
