@@ -1,0 +1,79 @@
+{
+  "id": 162,
+  "header": "publication-checklist",
+  "topicList": [
+    "Demo Plugin",
+    "Creating checks",
+    "Displaying check status",
+    "Enforcing checks",
+    "Modifying the list view",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Demo Plugin",
+      "items": [
+        {
+          "title": "<p>If you prefer to get a boilerplate plugin to add checks and start playing with existing code directly you can download, install and activate the demo plugin available here:</p><p>https://github.com/humanmade/demo-publication-checklist</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Creating checks",
+      "items": [
+        {
+          "title": "<p>The core of a check is a function that receives the post's data and meta, and returns a <code>Status</code> object. This status object indicates whether publish should be blocked or not.</p><p>For example, to enforce setting a value for the \"foo\" meta key:</p><p>```php\nuse function Altis\\Workflow\\PublicationChecklist\\register_prepublish_check;\nuse Altis\\Workflow\\PublicationChecklist\\Status;</p><p>add_action( 'altis.publication-checklist.register_prepublish_checks', function () {\n    register_prepublish_check( 'foo', [\n        'run_check' =&gt; function ( array $post, array $meta, array $terms ) : Status {\n            if ( isset( $meta['foo'] ) ) {\n                return new Status( Status::COMPLETE, 'Foo completed' );\n            }</p><pre><code>        return new Status( Status::INCOMPLETE, 'Missing foo data' );\n    },\n] );\n</code></pre><p>} );\n```</p><p>Checks are registered via the <code>Altis\\Workflow\\PublicationChecklist\\register_prepublish_check</code> function with a unique ID. This function should be called on the <code>altis.publication-checklist.register_prepublish_checks</code> action.</p><p><strong>Note:</strong> the <code>altis.publication-checklist.register_prepublish_checks</code> action runs on the <code>plugins_loaded</code> hook so you should make sure your <code>add_action()</code> call is run as soon as your custom plugin file is included or in your theme <code>functions.php</code>. Do not wrap it in a hook such as <code>init</code> or <code>after_setup_theme</code>.</p><p>Your check function receives the post data as an array, and the post's meta data as an array. Your function should only use this data to run the check, as this may represent data before it is saved to the database. Specifically, your function's signature should be:</p><p><code>php\nfunction ( array $post, array $meta, array $terms ) : Status;</code></p><p>Your function must return an <code>Altis\\Workflow\\PublicationChecklist\\Status</code> object. This object is marked as either complete (allow publishing), incomplete (block publishing), or informational (show as failed, but allow publishing). This status object takes the status type (which should be either <code>Status::COMPLETE</code>, <code>Status::INCOMPLETE</code>, or <code>Status::INFO</code>) and a human-readable message.</p><p><code>$post</code> is an array of post data, matching the shape returned by <code>get_post( $id, ARRAY_A )</code>. <code>$meta</code> is an array of meta data, in the format <code>string $key =&gt; mixed|mixed[] $value</code>. <code>$terms</code> is an array of terms, in the format <code>string $taxonomy =&gt; int[] $terms</code>.</p><p>You can additionally pass data with the status object, which can be used on the frontend to assist with rendering.</p><p>By default, checks will only run against the <code>post</code> post type. You can pass the relevant type(s) as a <code>type</code> option:</p><p>```php\nadd_action( 'altis.publication-checklist.register_prepublish_checks', function () {\n    // Pass a single type:\n    register_prepublish_check( 'foo', [\n        'type' =&gt; 'page',\n        // ...\n    ] );</p><pre><code>// Or multiple:\nregister_prepublish_check( 'foo', [\n    'type' =&gt; [\n        'post',\n        'page',\n    ],\n    // ...\n] );\n</code></pre><p>```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Displaying check status",
+      "items": [
+        {
+          "title": "<p>By default, Publication Checklist will render a simple checklist of all checks.</p><p>You can override a specific item to render richer UI if needed. For example, you may wish to integrate deeply into the block editor, or allow users to correct failing checks inline. This UI is directly inserted into the React element tree and replaces the default output.</p><p>Publication Checklist exposes a <code>altis-publishing-workflow.item.{check_id}</code> filter using <a href=\"https://github.com/WordPress/gutenberg/tree/master/packages/components/src/higher-order/with-filters\"><code>withFilters</code></a> to allow overriding the list item component.</p><p>For example, to wrap the default status message with a link to a documentation page for the <code>foo</code> check:</p><p>```jsx\nimport { Fragment } from '@wordpress/element';</p><p>addFilter( 'altis-publishing-workflow.item.image-texts', 'foo/link-message', () =&gt; {\n    return props =&gt; {\n        return (\n            <fragment>\n                { props.renderStatusIcon() }\n                <a href=\"http://example.com/\">{ props.message }</a>\n</fragment>\n        );\n    };\n} );\n```</p><p>Your component receives the following props:</p><p>```jsx\nconst propTypes = {\n    // Check ID.\n    name: PropTypes.string.isRequired,</p><pre><code>// Human-readable message returned from the backend.\nmessage: PropTypes.string.isRequired,\n\n// Status string.\nstatus: PropTypes.oneOf( [ 'complete', 'incomplete', 'info' ] ).isRequired,\n\n// Function to render the status of the current check.\n// () =&gt; ReactElement\nrenderStatusIcon: PropTypes.func.isRequired,\n\n// Additional data from the backend.\ndata: PropTypes.any,\n</code></pre><p>};\n```</p><p>To enable advanced functionality, you may want to wrap this component in <a href=\"https://developer.wordpress.org/block-editor/data/data-core-block-editor/\">selectors which provide data about the post</a>. Note that the backend acts as the canonical source of all check data, so changes to check status will require saving to the backend to take effect.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Enforcing checks",
+      "items": [
+        {
+          "title": "<p>To enforce these checks and block publication, filter the <code>altis.publication-checklist.block_on_failing</code> value and return true from your callback. This will change the UI to disable the publish button, display a user-facing message that checks must be completed, and block requests to publish the post.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Modifying the list view",
+      "items": [
+        {
+          "title": "<p>Publication Checklist will add a Tasks column to the Posts list screen showing the status of each post. This column is only shown if statuses have been registered.</p>"
+        },
+        {
+          "topic": "Hiding the tasks column",
+          "items": [
+            {
+              "title": "<p>To hide this column, filter the <code>altis.publication-checklist.show_tasks_column</code> value and return false from your callback. This will hide the Tasks column.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Changing the location of the tasks column",
+          "items": [
+            {
+              "title": "<p>The tasks column appears after the title column by default on supported post types.</p><p>To change which column the tasks column appears after use the <code>altis.publication-checklist.show_tasks_after_column</code> filter and return the desired column slug such as <code>title</code>, <code>author</code> or <code>tags</code> for example.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p>Publication Checklist is licensed under the GPLv2 or later. Copyright 2019 Human Made and contributors.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

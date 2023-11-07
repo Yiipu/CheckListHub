@@ -1,0 +1,92 @@
+{
+  "id": 33,
+  "header": "checkcheckit",
+  "topicList": [
+    "Installation",
+    "Usage",
+    "Advanced usage",
+    "TODO",
+    "Contributing"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Installation",
+      "items": [
+        {
+          "title": "<pre><code>$ gem install checkcheckit\n</code></pre>"
+        }
+      ]
+    },
+    {
+      "topic": "Usage",
+      "items": [
+        {
+          "title": "<p>A checklist is just a text file that supports a subset of Markdown formatting.\nEvery line that starts with a <code>-</code> is a step.\nEverything beneath a step is that step's body or description.</p><p>Here's an example checklist:</p><pre><code>$ cat sandwich.md\n- Buy the ingredients.\n    Make sure the bread is fresh and soft, and the peanut butter should be\n    organic for best results.\n- Apply the peanut butter.\n    Do this evenly on both slices of bread.\n- Apply the jelly.\n    Use 1-2oz, measured with a home scale.\n- Close sandwich.\n- Eat.\n</code></pre><p>When you want to make a sandwich, start the checklist with <code>check start</code>:</p><pre><code>$ check start sandwich.md\n|.....| Step 1: Buy the ingredients.\n  Make sure the bread is fresh and soft, and the peanut butter should be\n  organic for best results.\nCheck:\n\n|+....| Step 2: Apply the peanut butter.\n  Do this evenly on both slices of bread.\nCheck:\n\n|++...| Step 3: Apply the jelly.\n  Use 1-2oz, measured with a home scale.\nCheck:\n\n|+++..| Step 4: Close sandwich.\nCheck:\n\n|++++.| Step 5: Eat.\nCheck:\n\n|+++++| Done\n</code></pre><p>You can now make a sandwich the same way every time.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Advanced usage",
+      "items": [
+        {
+          "topic": "Shell out to commands",
+          "items": [
+            {
+              "title": "<p><code>check</code> will recognize any text that is surrounded with backticks:\n`command with args` as a command to potentially run.</p><p>It will prompt you if you'd like to run the command. You will then have the\noption to check it off if the output looks correct to you.</p><p>For example:</p><pre><code>$ cat hello.txt\n- say hello\n    `echo hello`\n\n$ check start hello.txt\n|.| Step 1: say hello\n    `echo hello`\n\nRun command `echo hello`?\n&lt;enter&gt;,y,n:\nrunning `echo hello`\nhello\nCheck:\n\n|+| Done\n</code></pre>"
+            }
+          ]
+        },
+        {
+          "topic": "Centralized checklists",
+          "items": [
+            {
+              "title": "<p>You can put all of your checklists into <code>~/checkcheckit</code>, and start them with\nshorthand form. If there are multiple checklists with the same name use the\nformat <code>folder/checklist</code>.</p><p>List your checklists</p><pre><code>$ check list\n# Checklists\npersonal\n  groceries\nwork\n  deploy\n</code></pre><p>Start with shortcut names</p><pre><code>$ check start groceries\n</code></pre><p>One great use case is to create a git repository of checklists for your team.</p><pre><code>$ mkdir -p ~/src/team/checklists\n$ cd ~/src/team/checklists\n$ git init\n$ vim deploy.md &amp;&amp; git commit -a -m \"first checklist\"\n$ mkdir -p ~/checkcheckit\n$ ln -s ~/src/team/checklists ~/checkcheckit/team\n$ check list\n# Checklists\nteam\n  deploy        # Deploy the app\n</code></pre>"
+            }
+          ]
+        },
+        {
+          "topic": "Options",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "TODO",
+      "items": [
+        {
+          "title": "resume a run locally from URL"
+        },
+        {
+          "title": "push notes to web"
+        },
+        {
+          "title": "emit pass/fail and colorize"
+        },
+        {
+          "title": "post to campfire"
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<ol>\n<li>Fork it"
+        },
+        {
+          "title": "Create your feature branch (<code>git checkout -b my-new-feature</code>)"
+        },
+        {
+          "title": "Commit your changes (<code>git commit -am 'Add some feature'</code>)"
+        },
+        {
+          "title": "Push to the branch (<code>git push origin my-new-feature</code>)"
+        },
+        {
+          "title": "Create new Pull Request</li>\n</ol>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

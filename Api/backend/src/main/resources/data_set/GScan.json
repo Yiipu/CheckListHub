@@ -1,0 +1,99 @@
+{
+  "id": 97,
+  "header": "GScan",
+  "topicList": [
+    "作者",
+    "CheckList检测项",
+    "测试环境",
+    "部署和执行",
+    "程序脚本说明",
+    "程序特点",
+    "程序对标",
+    "检测结果",
+    "运行截图",
+    "参考链接"
+  ],
+  "itemGroups": [
+    {
+      "topic": "作者",
+      "items": [
+        {
+          "title": "<p>咚咚呛 </p><p>如有其他建议，可联系微信280495355</p>"
+        }
+      ]
+    },
+    {
+      "topic": "CheckList检测项",
+      "items": [
+        {
+          "title": "<p>自动化程序的CheckList项如下：</p><pre><code>1、主机信息获取\n2、系统初始化alias检查\n3、文件类安全扫描\n  3.1、系统重要文件完整行扫描\n  3.2、系统可执行文件安全扫描\n  3.3、临时目录文件安全扫描\n  3.4、用户目录文件扫描\n  3.5、可疑隐藏文件扫描\n4、各用户历史操作类\n  4.1、境外ip操作类\n  4.2、反弹shell类\n5、进程类安全检测\n  5.1、CUP和内存使用异常进程排查\n  5.2、隐藏进程安全扫描\n  5.3、反弹shell类进程扫描\n  5.4、恶意进程信息安全扫描\n  5.5、进程对应可执行文件安全扫描\n6、网络类安全检测\n  6.1、境外IP链接扫描\n  6.3、恶意特征链接扫描\n  6.4、网卡混杂模式检测\n7、后门类检测\n  7.1、LD_PRELOAD后门检测\n  7.2、LD_AOUT_PRELOAD后门检测\n  7.3、LD_ELF_PRELOAD后门检测\n  7.4、LD_LIBRARY_PATH后门检测\n  7.5、ld.so.preload后门检测\n  7.6、PROMPT_COMMAND后门检测\n  7.7、Cron后门检测\n  7.8、Alias后门\n  7.9、SSH 后门检测\n  7.10、SSH wrapper 后门检测\n  7.11、inetd.conf 后门检测\n  7.12、xinetd.conf 后门检测\n  7.13、setUID 后门检测\n  7.14、8种系统启动项后门检测\n8、账户类安全排查\n  8.1、root权限账户检测\n  8.2、空口令账户检测\n  8.3、sudoers文件用户权限检测\n  8.4、查看各账户下登录公钥\n  8.5、账户密码文件权限检测\n9、日志类安全分析\n  9.1、secure登陆日志\n  9.2、wtmp登陆日志\n  9.3、utmp登陆日志\n  9.4、lastlog登陆日志\n10、安全配置类分析\n  10.1、DNS配置检测\n  10.2、Iptables防火墙配置检测\n  10.3、hosts配置检测\n11、Rootkit分析\n  11.1、检查已知rootkit文件类特征\n  11.2、检查已知rootkit LKM类特征\n  11.3、检查已知恶意软件类特征检测\n12.WebShell类文件扫描\n  12.1、WebShell类文件扫描\n</code></pre>"
+        }
+      ]
+    },
+    {
+      "topic": "测试环境",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>系统：CentOS (6、7) + python (2.x、3.x)</p>\n<p>权限：root权限启动</p>\n<p>执行时间：默认安全扫描大概执行时间为4～6分钟，完全扫描在1～2小时之间，程序执行时间的长度由检测文件的多少决定，有可能会存在较长的时间，请耐心等待</p>\n<p>兼容性：目前程序只针对Centos进行开发测试，其他系统并未做兼容性，检测结果未知</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "部署和执行",
+      "items": [
+        {
+          "title": "<p>程序下载</p><blockquote>\n<p>root# <kbd>git clone https://github.com/grayddq/GScan.git</kbd></p>\n<p>root# <kbd>cd GScan</kbd></p>\n</blockquote><p>参数参考</p><blockquote>\n<pre><code>sh-3.2# python GScan.py -h\n\n  _______      _______.  ______      ___      .__   __.\n /  _____|    /       | /      |    /   \\     |  \\ |  |    {version:v0.1}\n|  |  __     |   (----`|  ,----'   /  ^  \\    |   \\|  |\n|  | |_ |     \\   \\    |  |       /  /_\\  \\   |  . `  |    {author:咚咚呛}\n|  |__| | .----)   |   |  `----. /  _____  \\  |  |\\   |\n \\______| |_______/     \\______|/__/     \\__\\ |__| \\__|    http://grayddq.top\n\n\nUsage: GScan.py [options]\n\nOptions:\n\n  -h, --help     show this help message and exit\n  --version      当前程序版本\n\n Mode:\n    GScan running mode options\n\n    --overseas   境外模式，此参数将不进行境外ip的匹配\n    --full       完全模式，此参数将启用完全扫描\n    --debug      调试模式，进行程序的调试数据输出\n    --dif        差异模式，比对上一次的结果，输出差异结果信息。\n    --sug        排查建议，用于对异常点的手工排查建议\n    --pro        处理方案，根据异常风险生成初步的处理方案\n\n Optimization:\n    Optimization options\n\n    --time=TIME  搜索指定时间内主机改动过的所有文件，demo: --time='2019-05-07\n                 00:00:00~2019-05-07 23:00:00'\n    --job        添加定时任务，用于定时执行程序\n    --log        打包当前系统的所有安全日志（暂不支持）\n</code></pre>\n</blockquote><p>执行命令参考：</p><blockquote>\n<p>root# <kbd>python GScan.py</kbd></p>\n<p>root# <kbd>python GScan.py --sug --pro</kbd></p>\n<p>进行定时任务设置，异常日志将按行输出到./GScan/log/log.log，可通过syslog等服务同步日志信息。</p>\n<p>root# <kbd>python GScan.py --job</kbd> #每天零点执行一次</p>\n<p>root# <kbd>python GScan.py --job --hour=2</kbd> #每2小时执行一次</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "程序脚本说明",
+      "items": [
+        {
+          "title": "<pre><code>GScan\n----GScan.py                   #主程序\n----log                        #日志和结果记录\n----lib                        #模块库文件\n-------core                    #调用库文件\n----------common.py            #公共库模块\n----------globalvar.py         #全局参数管理模块\n----------option.py            #参数管理模块\n----------ip                   ##ip地址定位库\n-------egg                     #yara打包动态库\n-------malware                 #恶意特征库\n-------plugins                 #检测插件模块库\n----------Host_Info.py         #主机信息获取\n----------File_Analysis.py     #文件类安全检测\n----------History_Analysis.py  #用户历史操作类\n----------Proc_Analysis.py     #进程类安全检测\n----------Network_Analysis.py  #网络类安全检测\n----------Backdoor_Analysis.py #后门类检测\n----------User_Analysis.py     #账户类安全排查\n----------Log_Analysis.py      #日志类安全分析\n----------Config_Analysis.py   #安全配置类分析\n----------Rootkit_Analysis.py  #Rootkit分析\n----------SSHAnalysis.py       #secure日志分析\n----------Webserver.py         #获取当前web服务的web根目录\n----------Webshell_Analysis.py #webshell检测\n----------webshell_rule        #webshell检测的规则\n</code></pre>"
+        }
+      ]
+    },
+    {
+      "topic": "程序特点",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>1、程序检测的逻辑和方法，均是由一线安全应急人员根据多年实战经验总结出来的。</p>\n<p>2、程序包括10W+的恶意特征信息，用于恶意文件的比对和查杀。</p>\n<p>3、结果自动化分析，进行黑客攻击溯源</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "程序对标",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>入侵痕迹的检测按照经验归纳为如下子项，省去了一些安全配置和基线类等无关项。</p>\n<p>注：对比内容为程序的实际检测输出结果，其仅代表个人的观点，不代表产品说明。</p>\n</blockquote><pre><code>GScan      程序定位为安全人员提供的一项入侵检测工具，旨在尽可能的发现入侵痕迹，溯源出黑客攻击的整个路径。\nchkrootkit 程序定位为安全人员提供的一项入侵检测工具，旨在发现被植入的后门或者rootkit。\nrkhunter   程序定位为安全人员提供的一项入侵检测工具，旨在发现被植入的后门或者rootkit。\nlynis      程序定位为安全人员日常使用的一款用于主机基线和审计的工具，可辅助漏洞扫描和配置管理，也可部分用于入侵检测。\n</code></pre><p>| 检测项 |  GScan  | chkrootkit | rkhunter |  lynis  |\n|:-------------|:---------: |:------: |:------: |:---------: |\n| 对比版本 | v0.1 | v0.53 | v1.4.6 | v2.7.1 |\n| 【检测前检查项】文件alias检查 | √ | √ |  |  |\n| 【检测前检查项】系统重要文件完整性检测 | √ | √ |  |  |\n| 【主机文件检测】系统重要文件权限检测 |  | √ | √ |  |\n| 【主机文件检测】文件恶意特征扫描 | √ |  |  |  |\n| 【主机文件检测】文件境外IP特征扫描 | √ |  |  |  |\n| 【主机文件检测】敏感目录mount隐藏检测 |  |  | √ | √ |\n| 【主机操作检测】境外IP操作记录检测 | √ |  |  |  |\n| 【主机操作检测】可疑操作或异常检测 | √ | √ |  |  |\n| 【主机进程检测】CPU&amp;内存使用异常检测 | √ |  |  | √ |\n| 【主机进程检测】I/O异常检测 |  |  |  | √ |\n| 【主机进程检测】隐藏进程检测 | √ |  | √ |  |\n| 【主机进程检测】反弹shell进程检测 | √ |  |  |  |\n| 【主机进程检测】可疑进程名称检测 | √ |  |  |  |\n| 【主机进程检测】进程exe恶意特征检测 | √ |  |  |  |\n| 【主机进程检测】僵尸进程检测 |  |  |  | √ |\n| 【主机进程检测】可疑的较大共享内存检测 |  |  | √ |  |\n| 【主机进程检测】内存恶意特征检测 |  |  |  |  |\n| 【网络链接检测】境外IP链接检测 | √ |  |  |  |\n| 【网络链接检测】恶意特征链接检测 | √ | √ | √ |  |\n| 【网络链接检测】网卡混杂模式检测 | √ | √ | √ | √ |\n| 【常规后门检测】LD_PRELOAD后门检测 | √ |  | √ |  |\n| 【常规后门检测】LD_AOUT_PRELOAD后门检测 | √ |  | √ |  |\n| 【常规后门检测】LD_ELF_PRELOAD后门检测 | √ |  | √ |  |\n| 【常规后门检测】LD_LIBRARY_PATH后门检测 | √ |  | √ |  |\n| 【常规后门检测】ld.so.preload后门检测 | √ |  | √ |  |\n| 【常规后门检测】PROMPT_COMMAND后门检测 | √ |  |  |  |\n| 【常规后门检测】Cron后门检测(/var/spool/cron/) | √ |  |  |  |\n| 【常规后门检测】Cron后门检测(/etc/cron.d/) | √ |  |  |  |\n| 【常规后门检测】Cron后门检测(/etc/cron.daily/) | √ |  |  |  |\n| 【常规后门检测】Cron后门检测(/etc/cron.weekly/) | √ |  |  |  |\n| 【常规后门检测】Cron后门检测(/etc/cron.hourly/) | √ |  |  |  |\n| 【常规后门检测】Cron后门检测(/etc/cron.monthly/) | √ |  |  |  |\n| 【常规后门检测】alias后门检测 | √ |  | √ |  |\n| 【常规后门检测】其他环境变量未知后门检测 | √ |  |  |  |\n| 【常规后门检测】SSH后门检测 | √ |  |  |  |\n| 【常规后门检测】SSH Wrapper后门检测 | √ |  |  |  |\n| 【常规后门检测】inetd.conf后门检测 | √ |  | √ |  |\n| 【常规后门检测】xinetd.conf后门检测 | √ |  | √ |  |\n| 【常规后门检测】setUID后门检测 | √ |  |  |  |\n| 【常规后门检测】setGID后门检测 |  |  |  |  |\n| 【常规后门检测】fstab后门检测 |  |  |  |  |\n| 【常规后门检测】系统启动项(/etc/init.d/)后门检测 | √ |  | √ |  |\n| 【常规后门检测】系统启动项(/etc/rc.d/)后门检测 | √ |  | √ |  |\n| 【常规后门检测】系统启动项(/etc/rc.local)后门检测 | √ |  | √ |  |\n| 【常规后门检测】系统启动项(/usr/local/etc/rc.d)后门检测 | √ |  | √ |  |\n| 【常规后门检测】系统启动项(/usr/local/etc/rc.local)后门检测 | √ |  | √ |  |\n| 【常规后门检测】系统启动项(/etc/conf.d/local.start)后门检测 | √ |  | √ |  |\n| 【常规后门检测】系统启动项(/etc/inittab)后门检测 | √ |  | √ |  |\n| 【常规后门检测】系统启动项(/etc/systemd/system)后门检测 | √ |  | √ |  |\n| 【账户安全检测】root权限账户检测 | √ |  | √ | √ |\n| 【账户安全检测】空口令账户检测 | √ |  | √ | √ |\n| 【账户安全检测】sudoers文件检测 | √ |  |  | √ |\n| 【账户安全检测】用户组文件检测 |  |  | √ | √ |\n| 【账户安全检测】密码文件检测 | √ |  | √ | √ |\n| 【账户安全检测】用户免密登录公钥检测 | √ |  | √ |  |\n| 【日志安全检测】secure日志安全检测 | √ |  |  |  |\n| 【日志安全检测】wtmp日志安全检测 | √ | √ |  |  |\n| 【日志安全检测】utmp日志安全检测 | √ | √ |  |  |\n| 【日志安全检测】lastlog日志安全检测 | √ | √ |  |  |\n| 【日志安全检测】web日志安全检测 |  |  |  |  |\n| 【日志安全检测】其他服务日志安全检测 |  |  |  |  |\n| 【安全配置检测】DNS设置检测 | √ |  |  | √ |\n| 【安全配置检测】防火墙设置检测 | √ |  |  | √ |\n| 【安全配置检测】hosts安全检测 | √ |  |  | √ |\n| 【Rootkit检测】已知Rootkit文件特征检测 | √ | √ | √ |  |\n| 【Rootkit检测】已知Rootkit LKM类特征检测 | √ | √ | √ |  |\n| 【Rootkit检测】恶意软件类特征检测 | √ |  | √ |  |\n| 【WEBShell检测】Nginx服务WebShell检测 | √ |  |  |  |\n| 【WEBShell检测】Apache服务WebShell检测 | √ |  |  |  |\n| 【WEBShell检测】Tomcat服务WebShell检测 | √ |  |  |  |\n| 【WEBShell检测】Jetty服务WebShell检测 | √ |  |  |  |\n| 【WEBShell检测】Resin服务WebShell检测 | √ |  |  |  |\n| 【WEBShell检测】Jenkins服务WebShell检测 | √ |  |  |  |\n| 【WEBShell检测】其他默认web目录WebShell检测 | √ |  |  |  |\n| 【漏洞类检查】服务漏洞或配置错误检查 |  |  |  | √ |\n| 【自动攻击路径追溯】攻击路径追溯 | √ |  |  |  |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "检测结果",
+      "items": [
+        {
+          "title": "<p>日志及结果目录默认：./GScan/log/gscan.log</p>"
+        }
+      ]
+    },
+    {
+      "topic": "运行截图",
+      "items": [
+        {
+          "title": "<p><img alt=\"Screenshot\" src=\"pic/1.png\"/></p><p><img alt=\"Screenshot\" src=\"pic/2.png\"/></p><p><img alt=\"Screenshot\" src=\"pic/3.png\"/></p><p><img alt=\"Screenshot\" src=\"pic/4.png\"/></p><p><img alt=\"Screenshot\" src=\"pic/5.png\"/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "参考链接",
+      "items": [
+        {
+          "title": "<p>http://www.chkrootkit.org</p><p>https://github.com/CISOfy/lynis</p><p>http://rkhunter.sourceforge.net/</p><p>https://github.com/stamparm/maltrail</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

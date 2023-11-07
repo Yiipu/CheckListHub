@@ -1,0 +1,189 @@
+{
+  "id": 106,
+  "header": "inspec_tools",
+  "topicList": [
+    "Ruby Usage",
+    "Command line Usage",
+    "generate_ckl_metadata",
+    "generate_inspec_metadata",
+    "compliance",
+    "summary",
+    "xccdf2inspec",
+    "inspec2xccdf",
+    "csv2inspec",
+    "inspec2csv",
+    "inspec2ckl",
+    "pdf2inspec",
+    "xlsx2inspec",
+    "version"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Ruby Usage",
+      "items": [
+        {
+          "title": "<p>The gem exposes methods for converting from an InSpec results JSON to three formats: CKL, XCCDF, and CSV. In the ruby file add a require statement:</p><p><code>require 'inspec_tools'</code></p><p>Pass in the results JSON object to the InspecTools class to get an object that can convert the results into the three formats:</p><p><code>tool = InspecTools::Inspec.new(results_json)\nckl_reuslts = tool.to_ckl\ncsv_results = tool.to_ccsv</code></p><p>The XCCDF converter requires a parameter - a JSON object containing attributes that exist in the XCCDF format, but don't exist in the InSpec results JSON. There's an example of these attributes at <a href=\"examples/attribute.json\">examples/attribute.json</a>.</p><p><code>xccdf_results = tool.to_xccdf(attribs_json)</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Command line Usage",
+      "items": [
+        {
+          "title": "<p>On the Command Line, <code>inspec_tools help</code> will print a listing of all the command with a short description.\nFor detailed help on any command, run <code>inspec_tools help [COMMAND]</code>. Help can also be called with the <code>-h, --help</code> flags after any command, like <code>inspec_tools xccdf2inspec -h</code>.</p><p>For Docker usage, replace the <code>inspec_tools</code> command with the correct Docker command below for your operating system:</p>"
+        },
+        {
+          "title": "<strong>On Linux and Mac</strong>: <code>docker run -it -v$(pwd):/share mitre/inspec_tools</code>"
+        },
+        {
+          "title": "<strong>On Windows CMD</strong>: <code>docker run -it -v%cd%:/share mitre/inspec_tools</code><p>Note that all of the above Docker commands will mount your current directory on the Docker container. Ensure that you have navigated to the directory you intend to convert files in before executing the command.</p>"
+        },
+        {
+          "topic": "generate_map",
+          "items": [
+            {
+              "title": "<p>This command will generate a <code>mapping.yml</code> file that can be passed in to the <code>csv2inspec</code> command with the <code>--m</code> option.</p><p><code>USAGE: inspec_tools generate_map</code></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "generate_ckl_metadata",
+      "items": [
+        {
+          "title": "<p>This command will generate a <code>metadata.json</code> file that can be passed in to the <code>inspec2ckl</code> command with the <code>-m</code> option.</p><p><code>USAGE: inspec_tools generate_ckl_metadata</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "generate_inspec_metadata",
+      "items": [
+        {
+          "title": "<p>This command will generate a <code>metadata.json</code> file that can be passed in to the <code>xccdf2inspec</code> command with the <code>-m</code> option.</p><p><code>USAGE: inspec_tools generate_inspec_metadata</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "compliance",
+      "items": [
+        {
+          "title": "<p><code>compliance</code> parses an inspec results json to check if the compliance level meets a specified threshold.</p><p>If the specified threshold is not met, an error code (1) is returned along with non-compliant elements.</p><p>The compliance score are rounded down to the nearest whole number. For example a score of 77.3 would be displayed as 77.</p><p>Thresholds provided inline (i.e. <code>-i</code>) override thresholds provided by files (i.e. <code>-f</code>).</p><p>```\nUSAGE:  inspec_tools compliance [OPTIONS] -j <inspec-json> -i <threshold-inline>\n    inspec_tools compliance [OPTIONS] -j <inspec-json> -f <threshold-file>\nFLAGS:\n    -j --inspec-json <inspec-json>          : path to InSpec results Json\n    -i --template-inline <threshold-inline> : inline compliance threshold definition\n    -f --threshold-file <threshold-file>    : yaml file with compliance threshold definition\nExamples:</threshold-file></threshold-inline></inspec-json></threshold-file></inspec-json></threshold-inline></inspec-json></p><p>inspec_tools compliance -j examples/sample_json/rhel-simp.json -i '{compliance.min: 80, failed.critical.max: 0, failed.high.max: 0}'</p><p>inspec_tools compliance -j examples/sample_json/rhel-simp.json -f examples/sample_yaml/threshold.yaml\n```</p>"
+        },
+        {
+          "topic": "YAML file or In-line threshold definition styles:",
+          "items": [
+            {
+              "title": "<p>All available configurations can be found in <a href=\"https://github.com/mitre/inspec_tools/blob/master/lib/data/threshold.yaml\">threshold.yml</a></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "summary",
+      "items": [
+        {
+          "title": "<p><code>summary</code> parses an inspec results json and displays the information from all of the tests that were run. Running the command with flags but <code>-j</code> it will display information like:</p><p>```\nOverall compliance: 77%</p><p>failed\n    total : 41\n    critical : 0\n    high : 3\n    medium : 33\n    low : 5\npassed\n    total : 174\n    critical : 0\n    high : 21\n    medium : 147\n    low : 6\nno_impact\n    total : 21\n    critical : 0\n    high : 0\n    medium : 0\n    low : 0\nskipped\n    total : 10\n    critical : 0\n    high : 2\n    medium : 5\n    low : 3\nerror\n    total : 0\n    critical : 0\n    high : 0\n    medium : 0\n    low : 0\n```</p><p>Using additional flags will override the normal output and only display the output that flag specifies.</p><p>USAGE: inspec_tools summary [OPTIONS] -j <inspec-json></inspec-json></p><p>Thresholds provided inline (i.e. <code>-i</code>) override thresholds provided by files (i.e. <code>-t</code>).</p><p>```\nFLAGS:\n  -j --inspec-json <inspec-json>           : path to InSpec results JSON\n  -f --json-full, --no-json-full           : print the summary STDOUT as JSON\n  -k --json-counts, --no-json-counts       : print the result status to STDOUT as JSON\n  -t, --threshold-file=THRESHOLD_FILE]     : path to threshold YAML file\n  -i, --threshold-inline=THRESHOLD_INLINE] : string of text representing threshold YAML inline</inspec-json></p><p>Examples:</p><p>inspec_tools summary -j examples/sample_json/rhel-simp.json -f\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "xccdf2inspec",
+      "items": [
+        {
+          "title": "<p><code>xccdf2inspec</code> converts a STIG XCCDF file to an InSpec profile</p><p>```\nUSAGE: inspec_tools xccdf2inspec [OPTIONS] -x <xccdf-file></xccdf-file></p><p>FLAGS:\n    -x --xccdf <xccdf-file>            : path to the disa stig xccdf file\n    -a --attributes <xccdf-attr-yml>   : path to yml file to save XCCDF values which do not fit into the InSpec schema. These are useful if you want to convert the resulting profile back into XCCDF [optional]\n    -o --output <profile-path>         : path to the InSpec profile output (default: profile) [optional]\n    -f --format [ruby | hash]          : the format you would like (default: ruby) [optional]\n    -s --separate-files [true | false] : output the resulting controls as one or mutiple files (default: true) [optional]\n    -m --metadata <metadata-json>      : path to json file with additional metadata for the inspec.yml file [optional]\n    -r --replace-tags <array>          : A case-sensitive, space separated list to replace tags with a $ if found in a group rules description tag [optional]\n    -c --control-id [vulnID | ruleID]  : use either legacy Vuln ID (ex. 'V-XXXXX') or Rule ID (ex. 'SV-XXXXX') as the overall Control ID (default: vulnID) [optional]</array></metadata-json></profile-path></xccdf-attr-yml></xccdf-file></p><p>example: inspec_tools xccdf2inspec -x xccdf_file.xml -a attributes.yml -o myprofile -f ruby -s false\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "inspec2xccdf",
+      "items": [
+        {
+          "title": "<p><code>inspec2xccdf</code> converts an InSpec profile in json format to a STIG XCCDF Document</p><p>See <a href=\"./examples/inspec2xccdf/README.md\">examples documentation</a> for additional guidance on usage including attribute details.</p><p>```\nUSAGE: inspec_tools inspec2xccdf [OPTIONS] -j <inspec-json> -a <xccdf-attr-yml> -o <xccdf-xml></xccdf-xml></xccdf-attr-yml></inspec-json></p><p>FLAGS:\n    -j --inspec-json <inspec-json>   : path to InSpec Json file created using command 'inspec json <profile> &gt; example.json'\n    -a --attributes <xccdf-attr-yml> : path to yml file that provides the required attributes for the XCCDF document. These attributes are parts of XCCDF document which do not fit into the InSpec schema.\n    -o --output <xccdf-xml>          : name or path to create the XCCDF and title to give the XCCDF\n        -m, [--metadata=METADATA]        : path to json file with additional host metadata for the XCCDF file</xccdf-xml></xccdf-attr-yml></profile></inspec-json></p><p>example: inspec_tools inspec2xccdf -j examples/sample_json/good_nginxresults.json -a lib/data/attributes.yml -o output.xccdf\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "csv2inspec",
+      "items": [
+        {
+          "title": "<p><code>csv2inspec</code> converts a csv security control spreadsheet of STIG controls to an InSpec profile</p><p>```\nUSAGE: inspec_tools csv2inspec [OPTIONS] -c <stig-csv> -m <map-yml></map-yml></stig-csv></p><p>FLAGS:\n    -c --csv <stig-csv>                : path to DISA Stig style csv\n    -m --mapping <map-yml>             : path to yaml with mapping from CSV to InSpec Controls\n    -V --verbose                       : verbose run [optional]\n    -o --output <profile-path>         : path to the InSpec profile output (default: profile) [optional]\n    -f --format [ruby | hash]          : the format you would like (default: ruby) [optional]\n    -s --separate-files [true | false] : separate the controls into different files (default: true) [optional]</profile-path></map-yml></stig-csv></p><p>example: inspec_tools csv2inspec -c examples/csv2inspec/stig.csv -m examples/csv2inspec/mapping.yml -o mydir -f ruby -s true   # To map stig.csv to InSpec via mapping.yml\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "inspec2csv",
+      "items": [
+        {
+          "title": "<p><code>inspec2csv</code> converts an InSpec profile in json format to a csv security control spreadsheet</p><p>```\nUSAGE: inspec_tools inspec2csv [OPTIONS] -j <inspec-json> -o <profile-csv></profile-csv></inspec-json></p><p>FLAGS:\n    -j --inspec-json <inspec-json> : path to InSpec json file\n    -o --output <profile-csv>      : path to output csv\n    -V --verbose                   : run in verbose mode [optional]</profile-csv></inspec-json></p><p>example: inspec_tools inspec2csv -j inspec_profile.json -o mycsv.csv\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "inspec2ckl",
+      "items": [
+        {
+          "title": "<p><code>inspec2ckl</code> translates an InSpec results json into Stig Checklist</p><p>```\nUSAGE: inspec_tools inspec2ckl [OPTIONS] -j <inspec-json> -o <results-ckl></results-ckl></inspec-json></p><p>FLAGS:\n  -j, --inspec-json=INSPEC_JSON       : path to InSpec results JSON file\n  -o, --output=OUTPUT                 : path to output checklist file\n  -m, [--metadata=METADATA]           : path to JSON file with additional metadata for the checklist file\n    -V --verbose                        : verbose run [optional]</p><p>example: inspec_tools inspec2ckl -j results.json -o output.ckl\n```</p>"
+        },
+        {
+          "topic": "inspec2ckl Usage Information",
+          "items": [
+            {
+              "title": "<p>The InSpec to Checklist Parser scans and extracts the results defined in the Inspec JSON results and converts them into a\nChecklist XML file (.ckl or CKL). Checklist XML files are commonly used with the STIG Viewer application but can also be\nuploaded to eMASS.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "pdf2inspec",
+      "items": [
+        {
+          "title": "<p><code>pdf2inspec</code> translates a pdf containing a CIS benchmark into an InSpec profile.</p><p>```\nUSAGE: inspec_tools pdf2inspec [OPTIONS] -p <cis-benchmark></cis-benchmark></p><p>FLAGS:\n    -p --pdf <cis-benchmark>           : path to CIS Benchmark pdf file\n    -o --output <profile-path>         : path to the InSpec profile output (default: profile) [optional]\n    -f --format [ruby | hash]          : the format you would like (default: ruby) [optional]\n    -s --separate-files [true | false] : output the resulting controls as multiple files (default: true) [optional]\n    -d --debug                         : debug run [optional]</profile-path></cis-benchmark></p><p>example: inspec_tools pdf2inspec -p examples/CIS_Ubuntu_Linux_16.04_LTS_Benchmark_v1.0.0.pdf -o /path/to/myprofile -f ruby -s true\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "xlsx2inspec",
+      "items": [
+        {
+          "title": "<p>```\nUsage:\n  inspec_tools xlsx2inspec -m, --mapping=MAPPING -p, --control-name-prefix=CONTROL_NAME_PREFIX -x, --xlsx=XLSX</p><p>Options:\n  -x, --xlsx=XLSX\n  -m, --mapping=MAPPING\n  -p, --control-name-prefix=CONTROL_NAME_PREFIX\n  -V, [--verbose], [--no-verbose]\n  -o, [--output=OUTPUT]\n                                                 # Default: profile\n  -f, [--format=FORMAT]\n                                                 # Default: ruby\n                                                 # Possible values: ruby, hash\n  -s, [--separate-files], [--no-separate-files]\n                                                 # Default: true\n      [--log-level=LOG_LEVEL]                    # Set the logging level: [\"debug\", \"info\", \"warn\", \"error\", \"fatal\"]\n      [--log-location=LOG_LOCATION]              # Location to send diagnostic log messages to. (default: $stdout or Inspec::Log.error)\n  l, [--log-directory=LOG_DIRECTORY]             # Provie log location</p><p>xlsx2inspec translates CIS Benchmarks in XLSX format to Inspec controls using a mapping file</p><p>See examples/xlsx2inspec/mapping.cis.yml for an example mapping file</p><p>example: inspec_tools xlsx2inspec -m examples/xlsx2inspec/mapping.cis.yml -p azure-cis-foundations -x examples/cis.xlsx\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "version",
+      "items": [
+        {
+          "title": "<p>Prints out the gem version</p><p><code>USAGE: inspec_tools version</code></p>"
+        },
+        {
+          "topic": "NOTICE",
+          "items": [
+            {
+              "title": "<p>© 2018 The MITRE Corporation.</p><p>Approved for Public Release; Distribution Unlimited. Case Number 18-3678.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "NOTICE",
+          "items": [
+            {
+              "title": "<p>MITRE hereby grants express written permission to use, reproduce, distribute, modify, and otherwise leverage this software to the extent permitted by the licensed terms provided in the LICENSE.md file included with this project.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "NOTICE",
+          "items": [
+            {
+              "title": "<p>This software was produced for the U. S. Government under Contract Number HHSM-500-2012-00008I, and is subject to Federal Acquisition Regulation Clause 52.227-14, Rights in Data-General.</p><p>No other use other than that granted to the U. S. Government, or to those acting on behalf of the U. S. Government under that Clause is authorized without the express written permission of The MITRE Corporation. DISA STIGs are published by DISA, see: https://public.cyber.mil/privacy-security/</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

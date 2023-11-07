@@ -1,0 +1,228 @@
+{
+  "id": 17,
+  "header": "awesome-checklists",
+  "topicList": [
+    "Table of contents",
+    "Checklists",
+    "Checklist-like",
+    "Creating a checklist",
+    "Contribute",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of contents",
+      "items": [
+        {
+          "title": "<a href=\"#checklists\">Checklists</a>"
+        },
+        {
+          "title": "<a href=\"#software-development\">Software Development</a>"
+        },
+        {
+          "title": "<a href=\"#app-development\">App development</a>"
+        },
+        {
+          "title": "<a href=\"#security\">Security</a>"
+        },
+        {
+          "title": "<a href=\"#web-development\">Web development</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#startups-side-projects\">Startups / side-projects</a>"
+        },
+        {
+          "title": "<a href=\"#checklist-like\">Checklist-like</a>"
+        },
+        {
+          "title": "<a href=\"#design\">Design</a>"
+        },
+        {
+          "title": "<a href=\"#event-planning\">Event-planning</a>"
+        },
+        {
+          "title": "<a href=\"#software-development-2\">Software development</a>"
+        },
+        {
+          "title": "<a href=\"#startups-side-projects-2\">Startups / side-projects</a>"
+        },
+        {
+          "title": "<a href=\"#creating-a-checklist\">Creating a checklist</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Checklists",
+      "items": [
+        {
+          "topic": "Software Development",
+          "items": [
+            {
+              "title": "<p>Checklists related to software development in all its forms.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Startups / side-projects",
+          "items": [
+            {
+              "title": "<p>Checklists related to startups and side projects.</p>"
+            },
+            {
+              "title": "<a href=\"https://www.sideprojectchecklist.com/\">Side project Marketing</a> - A checklist of tactics for marketing your side projects"
+            },
+            {
+              "title": "<a href=\"https://github.com/leonar15/startup-checklist\">Startup checklist</a> - A checklist for incorporation so you can get back to building your product, fundraising, etc."
+            },
+            {
+              "title": "<a href=\"https://cto-security-checklist.sqreen.io/\">SaaS CTO Security Checklist</a> - This is a basic checklist that all SaaS CTOs (and anyone else) can use to harden their security."
+            },
+            {
+              "title": "<a href=\"https://github.com/mrmrs/styleguide-checklist\">Styleguide Checklist</a> - A checklist of potential things that might want to be considered when constructing a style guide for a company or project"
+            },
+            {
+              "title": "<a href=\"https://github.com/slashdotdash/saas-startup-checklist\">SaaS Startup Checklist</a> - A checklist for SaaS startups<p><strong><a href=\"#table-of-contents\">:arrow_up: back to top</a></strong></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Checklist-like",
+      "items": [
+        {
+          "title": "<p>These are additional resources that are in a format similar to a checklist (step by step plan, article with \"top tips\", etc) but are not really in actionable format.</p>"
+        },
+        {
+          "topic": "Design",
+          "items": [
+            {
+              "title": "<a href=\"http://uxrecipe.github.io/\">UX Recipe</a> - A checklist where you discover, choose and estimate your next UX project tools &amp; techniques.<p><strong><a href=\"#table-of-contents\">:arrow_up: back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Event planning",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/erikr/lessobviouschecklist\">Less Obvious Checklist</a> - A checklist for conference organisers of less obvious things"
+            },
+            {
+              "title": "<a href=\"https://github.com/MacLemon/CongressChecklist\">Congress checklist</a> - A list of things to do, to pack and tips on attending a congress<p><strong><a href=\"#table-of-contents\">:arrow_up: back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Software development",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/mgechev/angular-performance-checklist\">Angular performance checklist</a> - Cheatsheet for developing ⚡lightning⚡ fast progressive Angular applications."
+            },
+            {
+              "title": "<a href=\"https://github.com/marcobiedermann/search-engine-optimization\">Search Engine Optimization</a> - A helpful checklist / collection of Search Engine Optimization (SEO) tips and techniques."
+            },
+            {
+              "title": "<a href=\"https://github.com/GDSSecurity/Docker-Secure-Deployment-Guidelines\">Docker Secure Deployment Guidelines</a> - Deployment checklist for securely deploying Docker"
+            },
+            {
+              "title": "<a href=\"https://github.com/mdo/config\">Config</a> - Mdo's checklist for setting up a new Mac's dev environment."
+            },
+            {
+              "title": "<a href=\"https://github.com/nayafia/contributing-template/blob/master/CONTRIBUTING-template.md\">Contributing Template</a> - A template for writing your own contributing guide."
+            },
+            {
+              "title": "<a href=\"https://github.com/dhilipsiva/webapp-checklist\">WebApp Checklist</a> - Technical details that a programmer of a web application should consider before making the site public."
+            },
+            {
+              "title": "<a href=\"https://github.com/tutsplus/SEO-Checklist-for-Web-Designers/blob/master/seo_checklist.md\">SEO Checklist for Web Designers</a> - A checklist to help web designers bring order to their SEO chaos."
+            },
+            {
+              "title": "<a href=\"https://github.com/ddbeck/readme-checklist/blob/master/checklist.md\">README checklist</a> - A checklist for writing READMEs"
+            },
+            {
+              "title": "<a href=\"https://github.com/tutsplus/Website-Launch-Checklist-for-Web-Designers/blob/master/launch_checklist.md\">Website Launch Checklist</a> - A list, in no particular order, of a process tutsplus goes through before we launch their sites."
+            },
+            {
+              "title": "<a href=\"https://github.com/cht8687/React-ES5-To-ES6-Checklist\">React ES5 to ES6 Checklist</a> - The missing manual of upgrading ES5 React to ES6+"
+            },
+            {
+              "title": "<a href=\"https://github.com/iamthefrogy/Application-Security/blob/master/Web-Security/security-assessment-checklist.md\">Application Security checklist - Web Application security</a> - A checklist will help security analyst/consultants to test their client's web application for security assessment"
+            },
+            {
+              "title": "<a href=\"https://github.com/iamthefrogy/Application-Security/blob/master/Android-Security/Android%20Pentest%20Checklist.md\">Application Security checklist - Android pentest checklist</a> - A checklist that will help security analyst/consultants to test their client's android application for security assessment."
+            },
+            {
+              "title": "<a href=\"https://github.com/iamthefrogy/Application-Security/blob/master/Android-Security/Android%20Application%20Hardening.md\">Application Security checklist - Android application hardening</a> - A checklist that will help android developers to harden their application during the development phase."
+            },
+            {
+              "title": "<a href=\"https://github.com/jesusprubio/strong-node\">Strong Node</a> - An exhaustive checklist to assist in the source code security analysis of a Node.js web service."
+            },
+            {
+              "title": "<a href=\"https://github.com/RafaelFunchal/wordpress-security-checklist/blob/master/items.md\">Wordpress Security Checklist</a> - A checklist of actions that you should take to increase the security of your website."
+            },
+            {
+              "title": "<a href=\"https://github.com/datamade/site-launch-checklist\">Site launch checklist</a> -  A checklist of miscellaneous tasks to do before launching a public website."
+            },
+            {
+              "title": "<a href=\"https://github.com/jeanleonino/linux-checklist\">Fresh New Linux install</a> - What to install after setting up your fresh new Linux distro"
+            },
+            {
+              "title": "<a href=\"https://github.com/harrisrobin/react-native-checklist\">React Native Checklist</a> - From idea to app store. A recommended check list for shipping react-native apps."
+            },
+            {
+              "title": "<a href=\"https://blog.codeship.com/preproduction-checklist-for-a-rails-app/\">Preproduction security checklist</a> - Some real-world examples and suggestions for general coding policies for more security"
+            },
+            {
+              "title": "<a href=\"https://blog.risingstack.com/node-js-security-checklist/\">Node.js security checklist</a> - A checklist to help you guide through the must have security checks before your application is enabled to thousands of users/customers.<p><strong><a href=\"#table-of-contents\">:arrow_up: back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Startups / side-projects",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/tutsplus/Marketing-Checklist-For-Indie-Game-Developers/blob/master/Indie%20Game%20Developer%20Marketing%20Checklist.md\">Marketing Checklist for indie game developers</a> - A checklist to help indie game developers promote their games<p><strong><a href=\"#table-of-contents\">:arrow_up: back to top</a></strong></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Creating a checklist",
+      "items": [
+        {
+          "title": "<p>Thanks to <a href=\"https://help.github.com/articles/basic-writing-and-formatting-syntax/\">Github Flavoured Markdown</a>, you can <a href=\"https://github.com/blog/1825-task-lists-in-all-markdown-documents\">create Task lists with ease</a>.\n<code>- Item 1\n - Item 2\n - [x] Item 3 (use an 'x' to put a checkmark)\n - Item 4</code>\nWhich looks like this once rendered:</p>"
+        },
+        {
+          "title": "[ ] Item 1"
+        },
+        {
+          "title": "[ ] Item 2"
+        },
+        {
+          "title": "[x] Item 3"
+        },
+        {
+          "title": "[ ] Item 4<p>As you can see, they render as read-only checkboxes in Markdown files. People with write permissions in the repository can edit the file to select or unselect the checkboxes.</p><p><strong><a href=\"#table-of-contents\">:arrow_up: back to top</a></strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Contribute",
+      "items": [
+        {
+          "title": "<p>Contributions welcome! Read the <a href=\"contributing.md\">contribution guidelines</a> first.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p><a href=\"http://creativecommons.org/publicdomain/zero/1.0\"><img alt=\"CC0\" src=\"http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg\"/></a></p><p>To the extent possible under law, Israel Roldan has waived all copyright and\nrelated or neighboring rights to this work.</p><p><strong><a href=\"#table-of-contents\">:arrow_up: back to top</a></strong></p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

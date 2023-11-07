@@ -1,0 +1,147 @@
+{
+  "id": 225,
+  "header": "WebPerformanceChecklist",
+  "topicList": [
+    "Серверное",
+    "Верстка"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Серверное",
+      "items": [
+        {
+          "title": "<ol>\n<li>Включение HTTP2"
+        },
+        {
+          "title": "<a href=\"http://gtmetrix.com/enable-gzip-compression.html\">Включение gzip</a>"
+        },
+        {
+          "title": "Включение кеширования генерации страниц движком сайта"
+        },
+        {
+          "title": "Включение кеширования для файлов, отдаваемых сервером:<ol>\n<li><a href=\"http://last-modified.com/ru/\">Last-Modifed</a>"
+        },
+        {
+          "title": "<a href=\"http://gtmetrix.com/add-expires-headers.html\">Expires headers</a>"
+        },
+        {
+          "title": "<a href=\"https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#validating-cached-responses-with-etags\">E-tag</a>"
+        },
+        {
+          "title": "<a href=\"https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#cache-control\">Cache-Control</a>"
+        },
+        {
+          "title": "<a href=\"https://www.maxcdn.com/blog/accept-encoding-its-vary-important/\">Vary: Accept-Encoding header</a></li>\n</ol>"
+        },
+        {
+          "title": "Проверка чтоб не было 404-тых откликов на загрузку ресурсов - они замедляют загрузку</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Верстка",
+      "items": [
+        {
+          "title": "<ol>\n<li>Подключение CSS и JS - в конце HTML, перед <code>&lt;/body&gt;</code>"
+        },
+        {
+          "title": "Автоматически генерировать <a href=\"https://github.com/addyosmani/critical\">критический CSS</a> и вставлять его через <code>&lt;style&gt;</code> в <code>&lt;head&gt;</code>"
+        },
+        {
+          "title": "Минимизировать кол-во загружаемых файлов (не очень актуально, если есть HTTP2):<ol>\n<li>Использовать CSS-спрайты"
+        },
+        {
+          "title": "Использовать base64 или <a href=\"https://css-tricks.com/probably-dont-base64-svg/\">инлайнить svg</a> для небольших изображений"
+        },
+        {
+          "title": "Объединять все css в один файл"
+        },
+        {
+          "title": "Объединять все js в один файл"
+        },
+        {
+          "title": "Использовать только <a href=\"http://caniuse.com/#search=woff2\">WOFF2</a> и <a href=\"http://caniuse.com/#search=woff\">WOFF</a> при подключении web fonts. <a href=\"http://bdadam.com/blog/better-webfont-loading-with-localstorage-and-woff2.html\">Подробнее</a> про подключение.</li>\n</ol>"
+        },
+        {
+          "title": "Отложить загрузку данных необязательных для первого отображения страницы:<ol>\n<li>Использовать defer и async для стороннего js"
+        },
+        {
+          "title": "<a href=\"https://github.com/ideus-team/bem-snippets/blob/master/js-socialSharePreload/README.md\">Вынести кнопки соц. шаринга в пост-загрузку</a> или загружать их при прокрутке содержимого к ним"
+        },
+        {
+          "title": "Использовать LazyLoad для картинок, но не в ущерб SEO (src должно вести на реальную картинку, а не на заглушку)."
+        },
+        {
+          "title": "Подгружать невидимые при первой загрузке части страницы через AJAX (например содержимое табов) или через <code>prerender</code>, <a href=\"https://ymatuhin.ru/front-end/html5-link-prefetch/\">подробнее</a>"
+        },
+        {
+          "title": "Подгружать через <code>prerender</code> блоки неиспользуемые на текущей странице, но будут нужны для следующих</li>\n</ol>"
+        },
+        {
+          "title": "Подгружать js-библиотеки и шрифты с CDN - для использования их версий закешированных с других сайтов и быстрой загрузки с CDN если кеша нет"
+        },
+        {
+          "title": "Перенести внешние баннеры и другие ресурсы подгружаемые со сторонних медленных серверов - на сервер клиента"
+        },
+        {
+          "title": "Минимизировать редиректы для внешних ресурсов (например внешний js отдается не по тому URL, по которому запрашивается, а по редиректу стого URL)"
+        },
+        {
+          "title": "Прописать размеры img в html"
+        },
+        {
+          "title": "Минимизировать CSS, JS и HTML"
+        },
+        {
+          "title": "Оптимизировать графику:<ol>\n<li>Не грузить на обычный дисплей ретина изображения. Использовать <a href=\"https://github.com/imulus/retinajs\">retinajs</a> и миксины."
+        },
+        {
+          "title": "Либо использовать технику <a href=\"http://www.netvlies.nl/blog/design-interactie/retina-revolution\">30% quality Retina JPG</a>"
+        },
+        {
+          "title": "Конвертация типа картинок:"
+        },
+        {
+          "title": "svg (предпочтительней) или png - для векторных изображений, диаграмм, строгих переходов цветов"
+        },
+        {
+          "title": "jpg - для полноцвета и градиентов"
+        },
+        {
+          "title": "png24 для прозрачностей"
+        },
+        {
+          "title": "png8 с альфа-каналом для прозрачностей (через оптимизатор графики http://compresspng.com/)\nВозможно где-то можно заменить png24 на png8+matte, а где-то на jpg</li>\n</ul>"
+        },
+        {
+          "title": "Сохранять JPG как progressive"
+        },
+        {
+          "title": "Оптимизировать jpg и png-файлы:"
+        },
+        {
+          "title": "с помощью http://compresspng.com/ и http://compressjpeg.com/ (сжимают лучше и быстрей чем консольные утилиты)"
+        },
+        {
+          "title": "или с помощь консольных утилит pngout, jpegtrank (в том числе плагинами к Grunt/Gulp)</li>\n</ul>"
+        },
+        {
+          "title": "Перенос визуальных украшений в CSS3 вместо картинок:"
+        },
+        {
+          "title": "например тень у картинки можно сделать через box-shadow, а саму картинку сохранить без тени</li>\n</ul>"
+        },
+        {
+          "title": "Объединять несколько рядом стоящих картинок-ссылок в одну картинку, на которую накладываются позиционированные ссылки</li>\n</ol>"
+        },
+        {
+          "title": "Внести правки в дизайн, удалив тяжеловесные элементы"
+        },
+        {
+          "title": "Желательно удалить query string (\"?\") в URL отдаваемых ресурсов (некоторые прокси не кешируют их)</li>\n</ol>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

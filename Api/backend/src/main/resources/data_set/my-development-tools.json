@@ -1,0 +1,3904 @@
+{
+  "id": 129,
+  "header": "my-development-tools",
+  "topicList": [
+    "版权声明 (Copyright and License)",
+    "说明",
+    "TOC",
+    "其他",
+    "输入法",
+    "手册",
+    "编译",
+    "自动化",
+    "财务",
+    "短信",
+    "统计数据",
+    "伪数据",
+    "政务信息",
+    "法律",
+    "数学",
+    "桌面应用开发",
+    "Authorization",
+    "开源项目",
+    "Ansible",
+    "Semver",
+    "RFC",
+    "License",
+    "Github",
+    "SVG",
+    "代码质量检查",
+    "安全",
+    "架构",
+    "Checklist",
+    "编辑器/IDE",
+    "Telegram",
+    "下载工具",
+    "终端 Terminal",
+    "Shell",
+    "diff",
+    "命令行 CLI",
+    "逆向工程",
+    "结构化数据处理",
+    "Lint",
+    "Mock",
+    "网站",
+    "SSL",
+    "BSD",
+    "Linux",
+    "进程管理",
+    "资源管理",
+    "文件管理",
+    "文件同步/备份/快照",
+    "ISO 镜像制作与刻录",
+    "数据库/存储",
+    "网络",
+    "ProtoBuf",
+    "IM",
+    "Git",
+    "Chrome",
+    "Bookmarklet",
+    "测试",
+    "密码相关",
+    "编码",
+    "知识管理",
+    "搜索引擎 Search Bar",
+    "邮件",
+    "翻译",
+    "Windows App",
+    "Mac App",
+    "字体",
+    "Design",
+    "Emoji",
+    "Unicode",
+    "命名",
+    "团队协作",
+    "ChatOps",
+    "电子书",
+    "服务 (Service)",
+    "网盘",
+    "临时共享",
+    "爬虫代理池",
+    "HTTP 静态文件服务",
+    "静态文件托管",
+    "CMS",
+    "PaaS",
+    "Serverless",
+    "microVM",
+    "跳板机/堡垒机",
+    "REPL",
+    "正则表达式 (Regex)",
+    "数据可视化",
+    "日志",
+    "交互式 Notebook",
+    "简历",
+    "Zig",
+    "Lua",
+    "Python",
+    "Java",
+    "Golang",
+    "NodeJS",
+    "TypeScript",
+    "WebAssembly",
+    "Nix",
+    "前端开发",
+    "Docker",
+    "K8S/Kubernetes",
+    "硬件",
+    "HASS (Home Assistant)",
+    "虚拟化",
+    "模板引擎",
+    "TeX/LaTeX",
+    "Slide/Presentation",
+    "SSG: Static Site Generator",
+    "文档",
+    "Hash",
+    "图像处理",
+    "视频处理",
+    "压缩/解压",
+    "OCR",
+    "Android",
+    "截图/录屏",
+    "视频/音频",
+    "知识图谱",
+    "互联网关键词趋势",
+    "机器学习",
+    "AI 工具集",
+    "运营",
+    "中国特色",
+    "人文",
+    "Funny",
+    "游戏开发",
+    "二维码",
+    "FTP",
+    "别人的工具列表"
+  ],
+  "itemGroups": [
+    {
+      "topic": "版权声明 (Copyright and License)",
+      "items": [
+        {
+          "title": "<p>Copyright 2016-2023 ADoyle (adoyle.h@gmail.com). Some Rights Reserved.\nThe project is licensed under the <strong>BSD 3-clause License</strong>.</p><p>Read the <a href=\"./LICENSE\">LICENSE</a> file for the specific language governing permissions and limitations under the License.</p><p>Read the <a href=\"./NOTICE\">NOTICE</a> file distributed with this work for additional information regarding copyright ownership.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "说明",
+      "items": [
+        {
+          "title": "<code>⨀</code> 表示 <strong>开源软件</strong>。本文档大部分都是开源的，所以只注明特别的软件；"
+        },
+        {
+          "title": "<code>Ⓜ</code> 表示兼容 <strong>Mac 平台</strong>；"
+        },
+        {
+          "title": "<code>Ⓛ</code> 表示兼容 <strong>Linux 平台</strong>；"
+        },
+        {
+          "title": "<code>ⓦ</code> 表示兼容 <strong>Windows 平台</strong>；"
+        },
+        {
+          "title": "<code>Ⓗ</code> 表示可以通过 <a href=\"#Homebrew\"><strong>Homebrew</strong></a> 安装；"
+        },
+        {
+          "title": "<code>ⱳ</code> 表示 <strong>Web 服务</strong>；"
+        },
+        {
+          "title": "<code>ⓒ</code> 表示 Chrome 插件；"
+        }
+      ]
+    },
+    {
+      "topic": "TOC",
+      "items": [
+        {
+          "title": "<a href=\"#其他\">其他</a>"
+        },
+        {
+          "title": "<a href=\"#养生\">养生</a>"
+        },
+        {
+          "title": "<a href=\"#教你搜索\">教你搜索</a>"
+        },
+        {
+          "title": "<a href=\"#历史遗珠\">历史遗珠</a>"
+        },
+        {
+          "title": "<a href=\"#社区\">社区</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#输入法\">输入法</a>"
+        },
+        {
+          "title": "<a href=\"#手册\">手册</a>"
+        },
+        {
+          "title": "<a href=\"#cheatsheet-管理器\">Cheatsheet 管理器</a>"
+        },
+        {
+          "title": "<a href=\"#cheatsheet\">Cheatsheet</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#编译\">编译</a>"
+        },
+        {
+          "title": "<a href=\"#自动化\">自动化</a>"
+        },
+        {
+          "title": "<a href=\"#cicd\">CI/CD</a>"
+        },
+        {
+          "title": "<a href=\"#自动化构建\">自动化构建</a>"
+        },
+        {
+          "title": "<a href=\"#自动化机器人\">自动化机器人</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#财务\">财务</a>"
+        },
+        {
+          "title": "<a href=\"#短信\">短信</a>"
+        },
+        {
+          "title": "<a href=\"#统计数据\">统计数据</a>"
+        },
+        {
+          "title": "<a href=\"#地理数据\">地理数据</a>"
+        },
+        {
+          "title": "<a href=\"#网络数据\">网络数据</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#伪数据\">伪数据</a>"
+        },
+        {
+          "title": "<a href=\"#政务信息\">政务信息</a>"
+        },
+        {
+          "title": "<a href=\"#法律\">法律</a>"
+        },
+        {
+          "title": "<a href=\"#数学\">数学</a>"
+        },
+        {
+          "title": "<a href=\"#桌面应用开发\">桌面应用开发</a>"
+        },
+        {
+          "title": "<a href=\"#authorization\">Authorization</a>"
+        },
+        {
+          "title": "<a href=\"#开源项目\">开源项目</a>"
+        },
+        {
+          "title": "<a href=\"#ansible\">Ansible</a>"
+        },
+        {
+          "title": "<a href=\"#semver\">Semver</a>"
+        },
+        {
+          "title": "<a href=\"#rfc\">RFC</a>"
+        },
+        {
+          "title": "<a href=\"#license\">License</a>"
+        },
+        {
+          "title": "<a href=\"#github\">Github</a>"
+        },
+        {
+          "title": "<a href=\"#svg\">SVG</a>"
+        },
+        {
+          "title": "<a href=\"#代码质量检查\">代码质量检查</a>"
+        },
+        {
+          "title": "<a href=\"#安全\">安全</a>"
+        },
+        {
+          "title": "<a href=\"#社工库\">社工库</a>"
+        },
+        {
+          "title": "<a href=\"#漏洞信息平台\">漏洞信息平台</a>"
+        },
+        {
+          "title": "<a href=\"#漏洞靶场\">漏洞靶场</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#架构\">架构</a>"
+        },
+        {
+          "title": "<a href=\"#checklist\">Checklist</a>"
+        },
+        {
+          "title": "<a href=\"#编辑器ide\">编辑器/IDE</a>"
+        },
+        {
+          "title": "<a href=\"#代码编辑器\">代码编辑器</a>"
+        },
+        {
+          "title": "<a href=\"#富文本编辑器-wysiwyg\">富文本编辑器 WYSIWYG</a>"
+        },
+        {
+          "title": "<a href=\"#online-ide\">Online IDE</a>"
+        },
+        {
+          "title": "<a href=\"#ide-辅助工具\">IDE 辅助工具</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#telegram\">Telegram</a>"
+        },
+        {
+          "title": "<a href=\"#下载工具\">下载工具</a>"
+        },
+        {
+          "title": "<a href=\"#终端-terminal\">终端 Terminal</a>"
+        },
+        {
+          "title": "<a href=\"#shell\">Shell</a>"
+        },
+        {
+          "title": "<a href=\"#配色\">配色</a>"
+        },
+        {
+          "title": "<a href=\"#tui\">TUI</a>"
+        },
+        {
+          "title": "<a href=\"#shell-script-development\">Shell Script Development</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#diff\">diff</a>"
+        },
+        {
+          "title": "<a href=\"#image-diff\">image diff</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#命令行-cli\">命令行 CLI</a>"
+        },
+        {
+          "title": "<a href=\"#逆向工程\">逆向工程</a>"
+        },
+        {
+          "title": "<a href=\"#二进制分析\">二进制分析</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#结构化数据处理\">结构化数据处理</a>"
+        },
+        {
+          "title": "<a href=\"#yaml\">YAML</a>"
+        },
+        {
+          "title": "<a href=\"#hcl\">HCL</a>"
+        },
+        {
+          "title": "<a href=\"#json\">JSON</a>"
+        },
+        {
+          "title": "<a href=\"#json-schema\">JSON Schema</a>"
+        },
+        {
+          "title": "<a href=\"#json-path\">JSON Path</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#lint\">Lint</a>"
+        },
+        {
+          "title": "<a href=\"#mock\">Mock</a>"
+        },
+        {
+          "title": "<a href=\"#网站\">网站</a>"
+        },
+        {
+          "title": "<a href=\"#ssl\">SSL</a>"
+        },
+        {
+          "title": "<a href=\"#bsd\">BSD</a>"
+        },
+        {
+          "title": "<a href=\"#linux\">Linux</a>"
+        },
+        {
+          "title": "<a href=\"#进程管理\">进程管理</a>"
+        },
+        {
+          "title": "<a href=\"#资源管理\">资源管理</a>"
+        },
+        {
+          "title": "<a href=\"#文件管理\">文件管理</a>"
+        },
+        {
+          "title": "<a href=\"#文件查找\">文件查找</a>"
+        },
+        {
+          "title": "<a href=\"#文件大小\">文件大小</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#文件同步备份快照\">文件同步/备份/快照</a>"
+        },
+        {
+          "title": "<a href=\"#iso-镜像制作与刻录\">ISO 镜像制作与刻录</a>"
+        },
+        {
+          "title": "<a href=\"#数据库存储\">数据库/存储</a>"
+        },
+        {
+          "title": "<a href=\"#embeddable-db\">Embeddable DB</a>"
+        },
+        {
+          "title": "<a href=\"#数据库设计\">数据库设计</a>"
+        },
+        {
+          "title": "<a href=\"#database-versioning\">Database Versioning</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#网络\">网络</a>"
+        },
+        {
+          "title": "<a href=\"#protobuf\">ProtoBuf</a>"
+        },
+        {
+          "title": "<a href=\"#im\">IM</a>"
+        },
+        {
+          "title": "<a href=\"#git\">Git</a>"
+        },
+        {
+          "title": "<a href=\"#chrome\">Chrome</a>"
+        },
+        {
+          "title": "<a href=\"#bookmarklet\">Bookmarklet</a>"
+        },
+        {
+          "title": "<a href=\"#测试\">测试</a>"
+        },
+        {
+          "title": "<a href=\"#字符串测试\">字符串测试</a>"
+        },
+        {
+          "title": "<a href=\"#http-benchmark\">HTTP Benchmark</a>"
+        },
+        {
+          "title": "<a href=\"#基准测试-benchmark-test\">基准测试 (Benchmark Test)</a>"
+        },
+        {
+          "title": "<a href=\"#压测-stress-test\">压测 (Stress Test)</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#密码相关\">密码相关</a>"
+        },
+        {
+          "title": "<a href=\"#加密解密\">加密/解密</a>"
+        },
+        {
+          "title": "<a href=\"#密码管理\">密码管理</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#编码\">编码</a>"
+        },
+        {
+          "title": "<a href=\"#知识管理\">知识管理</a>"
+        },
+        {
+          "title": "<a href=\"#搜索引擎-search-bar\">搜索引擎 Search Bar</a>"
+        },
+        {
+          "title": "<a href=\"#停止词-stop-words\">停止词 Stop Words</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#邮件\">邮件</a>"
+        },
+        {
+          "title": "<a href=\"#翻译\">翻译</a>"
+        },
+        {
+          "title": "<a href=\"#windows-app\">Windows App</a>"
+        },
+        {
+          "title": "<a href=\"#mac-app\">Mac App</a>"
+        },
+        {
+          "title": "<a href=\"#字体\">字体</a>"
+        },
+        {
+          "title": "<a href=\"#design\">Design</a>"
+        },
+        {
+          "title": "<a href=\"#emoji\">Emoji</a>"
+        },
+        {
+          "title": "<a href=\"#unicode\">Unicode</a>"
+        },
+        {
+          "title": "<a href=\"#命名\">命名</a>"
+        },
+        {
+          "title": "<a href=\"#团队协作\">团队协作</a>"
+        },
+        {
+          "title": "<a href=\"#即时通讯\">即时通讯</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#chatops\">ChatOps</a>"
+        },
+        {
+          "title": "<a href=\"#电子书\">电子书</a>"
+        },
+        {
+          "title": "<a href=\"#电子书阅读器\">电子书阅读器</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#服务-service\">服务 (Service)</a>"
+        },
+        {
+          "title": "<a href=\"#自部署的服务-self-host-service\">自部署的服务 (Self-Host Service)</a>"
+        },
+        {
+          "title": "<a href=\"#评论系统\">评论系统</a>"
+        },
+        {
+          "title": "<a href=\"#图床\">图床</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#网盘\">网盘</a>"
+        },
+        {
+          "title": "<a href=\"#临时共享\">临时共享</a>"
+        },
+        {
+          "title": "<a href=\"#爬虫代理池\">爬虫代理池</a>"
+        },
+        {
+          "title": "<a href=\"#http-静态文件服务\">HTTP 静态文件服务</a>"
+        },
+        {
+          "title": "<a href=\"#静态文件托管\">静态文件托管</a>"
+        },
+        {
+          "title": "<a href=\"#cms\">CMS</a>"
+        },
+        {
+          "title": "<a href=\"#paas\">PaaS</a>"
+        },
+        {
+          "title": "<a href=\"#serverless\">Serverless</a>"
+        },
+        {
+          "title": "<a href=\"#microvm\">microVM</a>"
+        },
+        {
+          "title": "<a href=\"#跳板机堡垒机\">跳板机/堡垒机</a>"
+        },
+        {
+          "title": "<a href=\"#repl\">REPL</a>"
+        },
+        {
+          "title": "<a href=\"#正则表达式-regex\">正则表达式 (Regex)</a>"
+        },
+        {
+          "title": "<a href=\"#数据可视化\">数据可视化</a>"
+        },
+        {
+          "title": "<a href=\"#地图\">地图</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#日志\">日志</a>"
+        },
+        {
+          "title": "<a href=\"#交互式-notebook\">交互式 Notebook</a>"
+        },
+        {
+          "title": "<a href=\"#简历\">简历</a>"
+        },
+        {
+          "title": "<a href=\"#zig\">Zig</a>"
+        },
+        {
+          "title": "<a href=\"#lua\">Lua</a>"
+        },
+        {
+          "title": "<a href=\"#python\">Python</a>"
+        },
+        {
+          "title": "<a href=\"#java\">Java</a>"
+        },
+        {
+          "title": "<a href=\"#golang\">Golang</a>"
+        },
+        {
+          "title": "<a href=\"#nodejs\">NodeJS</a>"
+        },
+        {
+          "title": "<a href=\"#typescript\">TypeScript</a>"
+        },
+        {
+          "title": "<a href=\"#webassembly\">WebAssembly</a>"
+        },
+        {
+          "title": "<a href=\"#nix\">Nix</a>"
+        },
+        {
+          "title": "<a href=\"#前端开发\">前端开发</a>"
+        },
+        {
+          "title": "<a href=\"#docker\">Docker</a>"
+        },
+        {
+          "title": "<a href=\"#k8skubernetes\">K8S/Kubernetes</a>"
+        },
+        {
+          "title": "<a href=\"#硬件\">硬件</a>"
+        },
+        {
+          "title": "<a href=\"#hass-home-assistant\">HASS (Home Assistant)</a>"
+        },
+        {
+          "title": "<a href=\"#虚拟化\">虚拟化</a>"
+        },
+        {
+          "title": "<a href=\"#libvirtkvm\">libvirt/KVM</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#模板引擎\">模板引擎</a>"
+        },
+        {
+          "title": "<a href=\"#texlatex\">TeX/LaTeX</a>"
+        },
+        {
+          "title": "<a href=\"#slidepresentation\">Slide/Presentation</a>"
+        },
+        {
+          "title": "<a href=\"#ssg-static-site-generator\">SSG: Static Site Generator</a>"
+        },
+        {
+          "title": "<a href=\"#jamstack\">JAMstack</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#文档\">文档</a>"
+        },
+        {
+          "title": "<a href=\"#文档系统\">文档系统</a>"
+        },
+        {
+          "title": "<a href=\"#文档处理\">文档处理</a>"
+        },
+        {
+          "title": "<a href=\"#文档检查\">文档检查</a>"
+        },
+        {
+          "title": "<a href=\"#文档排版\">文档排版</a>"
+        },
+        {
+          "title": "<a href=\"#markdown\">Markdown</a>"
+        },
+        {
+          "title": "<a href=\"#changelog\">Changelog</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#hash\">Hash</a>"
+        },
+        {
+          "title": "<a href=\"#图像处理\">图像处理</a>"
+        },
+        {
+          "title": "<a href=\"#视频处理\">视频处理</a>"
+        },
+        {
+          "title": "<a href=\"#压缩解压\">压缩/解压</a>"
+        },
+        {
+          "title": "<a href=\"#ocr\">OCR</a>"
+        },
+        {
+          "title": "<a href=\"#android\">Android</a>"
+        },
+        {
+          "title": "<a href=\"#截图录屏\">截图/录屏</a>"
+        },
+        {
+          "title": "<a href=\"#视频音频\">视频/音频</a>"
+        },
+        {
+          "title": "<a href=\"#音乐\">音乐</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#知识图谱\">知识图谱</a>"
+        },
+        {
+          "title": "<a href=\"#互联网关键词趋势\">互联网关键词趋势</a>"
+        },
+        {
+          "title": "<a href=\"#机器学习\">机器学习</a>"
+        },
+        {
+          "title": "<a href=\"#ai-工具集\">AI 工具集</a>"
+        },
+        {
+          "title": "<a href=\"#运营\">运营</a>"
+        },
+        {
+          "title": "<a href=\"#中国特色\">中国特色</a>"
+        },
+        {
+          "title": "<a href=\"#人文\">人文</a>"
+        },
+        {
+          "title": "<a href=\"#funny\">Funny</a>"
+        },
+        {
+          "title": "<a href=\"#游戏开发\">游戏开发</a>"
+        },
+        {
+          "title": "<a href=\"#二维码\">二维码</a>"
+        },
+        {
+          "title": "<a href=\"#ftp\">FTP</a>"
+        },
+        {
+          "title": "<a href=\"#别人的工具列表\">别人的工具列表</a>"
+        }
+      ]
+    },
+    {
+      "topic": "其他",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/hashcat/hashcat\">hashcat</a>: 很快的密码破解工具"
+        },
+        {
+          "title": "<a href=\"https://github.com/irssi/irssi\">irssi</a>: IRC Client"
+        },
+        {
+          "title": "<a href=\"https://github.com/KittyKatt/screenFetch\">screenFetch</a>: 获取系统信息<code>Ⓛ</code> <code>Ⓜ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/dylanaraps/neofetch\">neofetch</a>: 终端中打印系统信息，纯 Bash 实现。"
+        },
+        {
+          "title": "<a href=\"https://github.com/wooorm/franc\">franc</a>: 自然语言语种推测"
+        },
+        {
+          "title": "<a href=\"https://github.com/resin-io/etcher\">etcher</a>: 将系统镜像写入外接硬盘的工具"
+        },
+        {
+          "title": "<a href=\"https://github.com/joelgriffith/browserless\">browserless</a>: Chrome as a service in docker"
+        },
+        {
+          "title": "<a href=\"https://github.com/nondanee/UnblockNeteaseMusic\">UnblockNeteaseMusic</a>: 解锁网易云音乐客户端变灰歌曲"
+        },
+        {
+          "title": "<a href=\"https://github.com/listen1/listen1_chrome_extension\">Listen 1</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/trazyn/ieaseMusic\">ieaseMusic</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/the1812/Bilibili-Evolved\">Bilibili-Evolved</a>: 强大的哔哩哔哩油猴脚本"
+        },
+        {
+          "title": "<a href=\"https://github.com/sharkdp/insect\">insect</a>: 很不错的计算器，单位换算很方便。提供网页在线服务，也提供终端程序。开源。跨平台。"
+        },
+        {
+          "title": "<a href=\"https://github.com/asdf-vm/asdf\">asdf</a>: 通用的程序版本管理工具。类似 gvm、nvm、rbenv，不过每种语言管理器作为 asdf plugin 使用。"
+        },
+        {
+          "title": "<a href=\"https://www.7-zip.org/\">7zip</a>: 免费开源的压缩软件。支持多种压缩算法、多种压缩等级、加密、分片。支持命令行和桌面端。"
+        },
+        {
+          "title": "<a href=\"https://github.com/kholia/OSX-KVM\">OSX-KVM</a>: 在 KVM 里运行 MacOS"
+        },
+        {
+          "title": "<a href=\"https://github.com/sickcodes/Docker-OSX\">Docker-OSX</a>: 在 Docker 里运行 MacOS"
+        },
+        {
+          "title": "<a href=\"https://github.com/go-musicfox/go-musicfox\">go-musicfox</a>: 在终端里听网易云音乐"
+        },
+        {
+          "title": "<a href=\"https://github.com/upx/upx\">upx</a>: 压缩可执行文件"
+        },
+        {
+          "title": "<a href=\"https://github.com/jpoliv/wakeonlan\">wakeonlan</a>: 网络唤醒工具"
+        },
+        {
+          "topic": "养生",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/zijie0/HumanSystemOptimization\">人体系统调优不完全指南</a>"
+            }
+          ]
+        },
+        {
+          "topic": "教你搜索",
+          "items": [
+            {
+              "title": "http://lmgtfy.com/ : 帮你 google/bing/duckduckgo"
+            },
+            {
+              "title": "http://www.baidu-x.com/ : 帮你百度下"
+            }
+          ]
+        },
+        {
+          "topic": "历史遗珠",
+          "items": [
+            {
+              "title": "<p>那些有意义却不为众人所知或被众人遗忘的项目。</p>"
+            },
+            {
+              "title": "<a href=\"https://9p.io/plan9/\">Plan 9</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/CoatiSoftware/Sourcetrail\">Sourcetrail</a>: 代码可视化浏览器"
+            }
+          ]
+        },
+        {
+          "topic": "社区",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/just-talks/tech-talks\">Tech Talks</a>: 纯技术交流的中文论坛。"
+            },
+            {
+              "title": "<a href=\"http://www.v2ex.com/\">V2EX</a>: 创意工作者们的社区。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "输入法",
+      "items": [
+        {
+          "title": "<a href=\"https://rime.im/download/\">RIME</a>: 开源输入法。支持 Windows/Mac/Linux/Android"
+        },
+        {
+          "title": "<a href=\"https://github.com/rime/plum\">rime/plum</a>: RIME 的配置管理工具"
+        },
+        {
+          "title": "<a href=\"https://github.com/iDvel/rime-ice\">rime-ice 雾凇拼音</a>: RIME 的简体词库"
+        },
+        {
+          "title": "<a href=\"https://github.com/rime/squirrel\">鼠须管 squirrel</a>: Rime for MacOS"
+        },
+        {
+          "title": "<a href=\"https://github.com/LEOYoon-Tsaw/Squirrel-Designer\">Squirrel-Designer</a>: 鼠须管皮肤制作工具"
+        },
+        {
+          "title": "<a href=\"https://apps.apple.com/cn/app/irime%E8%BE%93%E5%85%A5%E6%B3%95-%E5%B0%8F%E9%B9%A4%E5%8F%8C%E6%8B%BC%E4%BA%94%E7%AC%94%E9%83%91%E7%A0%81%E8%BE%93%E5%85%A5%E6%B3%95/id1142623977\">iRime</a>: Rime for iOS"
+        },
+        {
+          "title": "<a href=\"https://github.com/osfans/trime\">同文输入法</a>: Rime for Android"
+        }
+      ]
+    },
+    {
+      "topic": "手册",
+      "items": [
+        {
+          "topic": "Cheatsheet 管理器",
+          "items": [
+            {
+              "title": "<a href=\"https://kapeli.com/dash\">Dash</a>: 桌面程序。Mac 专用。 <code>Ⓜ</code>"
+            },
+            {
+              "title": "http://devdocs.io/ : 社区维护内容。在线网页，也支持 PWA。<a href=\"https://github.com/Thibaut/devdocs/\">开源的</a>"
+            },
+            {
+              "title": "<a href=\"https://zealdocs.org/\">zealdocs</a>: 桌面程序。跨平台"
+            },
+            {
+              "title": "<a href=\"https://github.com/cheat/cheat\">cheat</a>: 命令行工具，本地存储，支持多 cheatsheets 扩展。这个仓库只有程序，需要下载官方 cheatsheets 配合使用。还可以 <code>cheat -e</code> 自己编辑维护。"
+            },
+            {
+              "title": "<a href=\"https://github.com/cheat/cheatsheets\">cheat/cheatsheets</a>: 官方 cheatsheets"
+            },
+            {
+              "title": "<a href=\"https://github.com/adoyle-h/my-command-cheat\">adoyle-h/my-command-cheat</a>: 我的 cheatsheets"
+            },
+            {
+              "title": "<a href=\"https://github.com/tldr-pages/tldr/\">tldr</a>: 命令行工具，手册内容由社区维护，非常详尽。"
+            }
+          ]
+        },
+        {
+          "topic": "Cheatsheet",
+          "items": [
+            {
+              "title": "https://learnxinyminutes.com : 快速学习各种编程语言的手册。<a href=\"https://github.com/adambard/learnxinyminutes-docs\">源码</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/chubin/cheat.sh\">cheat.sh</a>: cheatsheet 服务，可通过 curl 获取内容，内容由社区维护。"
+            },
+            {
+              "title": "<a href=\"https://devhints.io\">Rico's cheatsheets</a>: 网页版，<a href=\"https://github.com/rstacruz/cheatsheets\">源码</a>"
+            },
+            {
+              "title": "<a href=\"https://explainshell.com/\">explainshell.com/</a>: 形象解释 shell 命令"
+            },
+            {
+              "title": "<a href=\"https://github.com/skywind3000/awesome-cheatsheets/blob/master/languages/bash.sh\">BASH CHEATSHEET (中文速查表) - by skywind</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/cirosantilli/linux-cheat\">linux-cheat</a>: Linux user-land CLI utilities"
+            },
+            {
+              "title": "<a href=\"https://gist.github.com/rueycheng/42e355d1480fd7a33ee81c866c7fdf78\">GNU Make Cheatsheet</a>"
+            },
+            {
+              "title": "<a href=\"https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797\">ANSI Escape Sequences</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "编译",
+      "items": [
+        {
+          "title": "<a href=\"https://llvm.org/\">llvm</a>"
+        },
+        {
+          "title": "https://godbolt.org/ : 在线预览汇编码的工具，支持各种版本和架构下的 clang，gcc，甚至还能查看 wasm 指令。"
+        }
+      ]
+    },
+    {
+      "topic": "自动化",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/d-dev-inc/maestro\">maestro</a>: 使用声明式语法，在移动端执行自动化操作。"
+        },
+        {
+          "topic": "CI/CD",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/drone/drone\">drone</a>: Drone is a Continuous Delivery platform built on Docker, written in Go"
+            },
+            {
+              "title": "<a href=\"https://github.com/gocd/gocd\">GoCD</a>: written in java"
+            },
+            {
+              "title": "<a href=\"https://github.com/marketplace/travis-ci/\">Travis CI</a>: 付费服务"
+            }
+          ]
+        },
+        {
+          "topic": "自动化构建",
+          "items": [
+            {
+              "title": "<code>make</code> 与 <code>makefile</code>: 缺点是不能跨平台，优点是能够直接调用 shell 命令和环境变量"
+            },
+            {
+              "title": "<a href=\"https://seisman.github.io/how-to-write-makefile/introduction.html\">Makefile 简易教程</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/xmake-io/xmake\">xmake</a>: 基于 Lua 的轻量级跨平台构建工具"
+            },
+            {
+              "title": "https://danger.systems/ : code review 时挺有用的自动化工具"
+            },
+            {
+              "title": "<a href=\"https://github.com/danger/danger-js\">danger-js</a>: JS 版本"
+            }
+          ]
+        },
+        {
+          "topic": "自动化机器人",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/github/hubot\">hubot</a>: 交互机器人"
+            },
+            {
+              "title": "<a href=\"https://github.com/octalmage/robotjs\">robotjs</a>: 用 NodeJS 定制 GUI 自动化流程。支持 Windows, Mac, Linux 系统"
+            },
+            {
+              "title": "<a href=\"https://github.com/nut-tree/nut.js\">nut.js</a>: 备选方案"
+            },
+            {
+              "title": "<a href=\"https://github.com/botpress/botpress\">botpress</a>: 聊天机器人。TS 实现的。"
+            },
+            {
+              "title": "<a href=\"https://github.com/RasaHQ/rasa\">rasa</a>: 聊天机器人。Python 实现的。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "财务",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/beancount/beancount\">beancount</a>: 复式记账语言，纯文本编辑，命令行操作，提供类似 SQL 的查询"
+        },
+        {
+          "title": "<a href=\"https://www.bmpi.dev/self/beancount-my-accounting-tool-v2/\">参考</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/ledger/ledger\">ledger</a>: 备选方案"
+        },
+        {
+          "title": "<a href=\"https://github.com/beancount/fava\">fava</a>: beancount 的 Web 界面"
+        },
+        {
+          "title": "<a href=\"https://github.com/deb-sig/double-entry-generator\">double-entry-generator</a>: 根据支付宝、微信的账单生成 beancount 代码"
+        }
+      ]
+    },
+    {
+      "topic": "短信",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/pppscn/SmsForwarder\">SmsForwarder</a>: 短信转发器（安卓系统）"
+        },
+        {
+          "title": "临时接收手机短信"
+        },
+        {
+          "title": "https://sms-activate.org/ : 最靠谱的平台，价格不贵"
+        },
+        {
+          "title": "https://5sim.net/zh : 似乎挺便宜的"
+        },
+        {
+          "title": "https://sms24.me/en/ (这个有中国号码，下面那些没有)"
+        },
+        {
+          "title": "https://jiemahao.com/"
+        },
+        {
+          "title": "https://yunduanxin.net/Countries/"
+        },
+        {
+          "title": "https://pingme.tel/receive-sms-online-cn/"
+        }
+      ]
+    },
+    {
+      "topic": "统计数据",
+      "items": [
+        {
+          "title": "<a href=\"http://www.stats.gov.cn/tjsj/\">国家统计局</a>"
+        },
+        {
+          "title": "<a href=\"http://www.nea.gov.cn/\">国家能源局</a>"
+        },
+        {
+          "title": "<a href=\"https://opendata.pku.edu.cn/\">北京大学开放研究数据平台</a>"
+        },
+        {
+          "title": "<a href=\"https://www.nmpa.gov.cn/datasearch/home-index.html\">国家药品监督管理局</a>"
+        },
+        {
+          "topic": "地理数据",
+          "items": [
+            {
+              "title": "https://www.poi86.com/ : POI 数据"
+            }
+          ]
+        },
+        {
+          "topic": "网络数据",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "伪数据",
+      "items": [
+        {
+          "title": "https://jsonplaceholder.typicode.com/"
+        },
+        {
+          "title": "http://dummy.restapiexample.com/"
+        }
+      ]
+    },
+    {
+      "topic": "政务信息",
+      "items": [
+        {
+          "title": "<a href=\"http://www.npc.gov.cn/\">全国人大网</a>"
+        },
+        {
+          "title": "<a href=\"https://ts.isc.org.cn/#/complaint/default\">互联网信息服务投诉平台</a>"
+        }
+      ]
+    },
+    {
+      "topic": "法律",
+      "items": [
+        {
+          "title": "<p>知法才能避免犯法。写程序也容易违法。</p>"
+        },
+        {
+          "title": "<a href=\"http://law.pkulaw.com/\">中国法律检索系统</a>"
+        }
+      ]
+    },
+    {
+      "topic": "数学",
+      "items": [
+        {
+          "title": "<a href=\"https://math.fandom.com/zh/wiki/%E4%B8%AD%E6%96%87%E6%95%B0%E5%AD%A6_Wiki:%E4%B8%BB%E9%A1%B5\">中文数学 Wiki</a>"
+        },
+        {
+          "title": "<a href=\"https://space.bilibili.com/88461692\">3Blue1Brown</a>"
+        }
+      ]
+    },
+    {
+      "topic": "桌面应用开发",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/electron/electron\">electron</a>: 用 Web 技术栈开发跨平台的桌面应用"
+        },
+        {
+          "title": "<a href=\"https://github.com/tauri-apps/tauri\">tauri</a>: 用 Web + Rust + JS 开发跨平台的桌面应用。Web 技术做窗口渲染，Rust 做后端引擎。linux 下使用 GTK + WebKitGTK，windows 使用 windows-rs + WebView2，MacOS 使用 AppKit + WKWebView。Android 和 iOS 的支持还在开发中。包大小、内存占用，都优于 electron。"
+        }
+      ]
+    },
+    {
+      "topic": "Authorization",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/casbin/casbin\">casbin</a>: 一个类库。通过设计 PERM 模型来控制认证策略。支持 ACL, RBAC, ABAC 等策略。支持主流语言。"
+        },
+        {
+          "title": "<a href=\"https://github.com/ory/hydra\">hydra</a>: OpenID Connect and OAuth Provider written in Go"
+        },
+        {
+          "title": "<a href=\"https://github.com/dexidp/dex\">dex</a>: 备选方案"
+        },
+        {
+          "title": "<a href=\"https://2fas.com/\">2FAS</a>: 2FA 客户端，支持 iOS 和 Android。支持 TOTP 和 HOTP。用户体验好，功能丰富。开源。支持浏览器插件（同步需要翻墙）"
+        }
+      ]
+    },
+    {
+      "topic": "开源项目",
+      "items": [
+        {
+          "title": "必读"
+        },
+        {
+          "title": "https://opensource.guide/"
+        },
+        {
+          "title": "如何选择 License"
+        },
+        {
+          "title": "https://choosealicense.com/"
+        },
+        {
+          "title": "如何写 Issue/PR Template"
+        },
+        {
+          "title": "https://github.com/stevemao/github-issue-templates"
+        },
+        {
+          "title": "如何写 Code of Conduct"
+        },
+        {
+          "title": "https://www.contributor-covenant.org/"
+        },
+        {
+          "title": "如何写 Security Policy"
+        },
+        {
+          "title": "https://docs.github.com/en/free-pro-team@latest/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository"
+        },
+        {
+          "title": "https://tools.ietf.org/html/draft-foudil-securitytxt-10"
+        }
+      ]
+    },
+    {
+      "topic": "Ansible",
+      "items": []
+    },
+    {
+      "topic": "Semver",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/sindresorhus/semver-diff\">semver-diff</a>: semver 比较"
+        },
+        {
+          "title": "https://semver.npmjs.com/ : npm semver calculator"
+        },
+        {
+          "title": "<a href=\"https://github.com/fsaintjacques/semver-tool\">semver-tool</a>: 纯 Bash 实现的 Semver 可执行命令"
+        },
+        {
+          "title": "<a href=\"#user-content-commitlint\">commitlint</a>"
+        }
+      ]
+    },
+    {
+      "topic": "RFC",
+      "items": [
+        {
+          "title": "https://tools.ietf.org/ : 查看 IETF RFC 文档的工具。"
+        },
+        {
+          "title": "https://www.rfc-editor.org/ : 查看 IETF RFC 文档的工具。"
+        },
+        {
+          "title": "Markdown 生成 RFC 文档的工具"
+        },
+        {
+          "title": "https://github.com/mmarkdown/mmark"
+        },
+        {
+          "title": "https://github.com/cabo/kramdown-rfc2629"
+        },
+        {
+          "title": "例子：https://github.com/danyork/writing-internet-drafts-in-markdown"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "https://spdx.org/licenses/"
+        },
+        {
+          "title": "<a href=\"https://github.com/sindresorhus/spdx-license-list\">spdx-license-list</a>: nodejs 包"
+        },
+        {
+          "title": "<a href=\"https://github.com/spdx/license-list-data\">license-list-data</a>: Various data formats for the SPDX License List including RDFa, HTML, Text, and JSON"
+        },
+        {
+          "title": "<a href=\"https://github.com/pivotal/LicenseFinder\">LicenseFinder</a>: Find licenses for your project's dependencies."
+        },
+        {
+          "title": "<a href=\"https://github.com/nexB/scancode-toolkit\">scancode-toolkit</a>: detects licenses, copyrights, package manifests &amp; dependencies and more by scanning code ... to discover and inventory open source and third-party packages used in your code."
+        }
+      ]
+    },
+    {
+      "topic": "Github",
+      "items": []
+    },
+    {
+      "topic": "SVG",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/tsayen/dom-to-image\">dom-to-image</a>: DOM 树导出成 SVG 或 PNG 图片"
+        }
+      ]
+    },
+    {
+      "topic": "代码质量检查",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/SonarSource/sonarqube\">SonarQube</a>: 「待评估」"
+        }
+      ]
+    },
+    {
+      "topic": "安全",
+      "items": [
+        {
+          "title": "<a href=\"https://www.kali.org/\">Kali Linux</a>"
+        },
+        {
+          "title": "<a href=\"https://hub.docker.com/r/kalilinux/kali-linux-docker\">Kali Docker Image</a>: <a href=\"https://archive.ph/zh0wk\">参考资料</a>"
+        },
+        {
+          "title": "<a href=\"https://snyk.io/\">Snyk</a>: 开源风险收集检测服务。提供 API 和 CLI 做检查。"
+        },
+        {
+          "title": "<a href=\"https://github.com/We5ter/Scanners-Box\">Scanners-Box</a>: 安全行业从业者自研开源扫描器合辑"
+        },
+        {
+          "title": "<a href=\"https://github.com/falcosecurity/falco\">falco</a>: 「待评价」intrusion and abnormality detection for Cloud Native platforms such as Kubernetes, Mesosphere, and Cloud Foundry. Detect abnormal application behavior."
+        },
+        {
+          "title": "<a href=\"https://github.com/fail2ban/fail2ban\">fail2ban</a>: 入侵防御软件"
+        },
+        {
+          "title": "<a href=\"https://github.com/nmap/nmap\">nmap</a>: 网络扫描工具"
+        },
+        {
+          "title": "<a href=\"https://github.com/rapid7/metasploit-framework\">Metasploit</a>"
+        },
+        {
+          "title": "<a href=\"https://www.nongnu.org/tiger/\">Tiger</a>: The Unix security audit and intrusion detection tool"
+        },
+        {
+          "title": "CVE"
+        },
+        {
+          "title": "https://www.cve.org/"
+        },
+        {
+          "title": "<a href=\"https://securitylab.github.com/\">GitHub Security Lab</a>"
+        },
+        {
+          "title": "https://www.cvedetails.com/"
+        },
+        {
+          "title": "<a href=\"https://github.com/gitleaks/gitleaks\">gitleaks</a>: 检测密码泄露"
+        },
+        {
+          "topic": "社工库",
+          "items": [
+            {
+              "title": "<a href=\"https://t.me/AJL01_bot?start=9Vd56q8uTa\">暗精灵社工库</a>"
+            },
+            {
+              "title": "<a href=\"https://t.me/SGKmainNEWbot?start=IVT62B06286\">TGsgkbot</a>"
+            },
+            {
+              "title": "<a href=\"https://t.me/sgk520_bot?start=DMT534Ai5D\">sgk520_bot</a>"
+            }
+          ]
+        },
+        {
+          "topic": "漏洞信息平台",
+          "items": [
+            {
+              "title": "https://nvd.nist.gov/"
+            },
+            {
+              "title": "https://www.cvedetails.com/"
+            },
+            {
+              "title": "https://cve.mitre.org/"
+            },
+            {
+              "title": "http://www.cnnvd.org.cn/ : 国家信息安全漏洞库"
+            },
+            {
+              "title": "http://cve.scap.org.cn/"
+            }
+          ]
+        },
+        {
+          "topic": "漏洞靶场",
+          "items": [
+            {
+              "title": "https://github.com/vulhub/vulhub"
+            },
+            {
+              "title": "https://github.com/Medicean/VulApps"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "架构",
+      "items": [
+        {
+          "title": "<a href=\"https://docs.microsoft.com/zh-cn/azure/architecture/patterns/\">Microsoft Azure - 云设计模式</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/mspnp/architecture-center\">Github 仓库</a>，<a href=\"https://github.com/mspnp/architecture-center.zh-cn\">中文仓库</a>"
+        },
+        {
+          "title": "https://www.12factor.net/"
+        },
+        {
+          "title": "https://c4model.com/ : C4 Model 绘制架构图的方法论"
+        },
+        {
+          "title": "https://www.infoq.cn/article/C4-architecture-model"
+        },
+        {
+          "title": "<a href=\"https://www.infoq.cn/article/crafting-architectural-diagrams\">软件架构图的艺术</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Checklist",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/mtdvio/going-to-production/blob/master/serverside-checklist.md\">Serverside Checklist</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/mtdvio/going-to-production/blob/master/spa-checklist.md\">SPA Checklist</a>"
+        }
+      ]
+    },
+    {
+      "topic": "编辑器/IDE",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/neovim/neovim\">neovim</a>: 终端编辑器，用 Python 写的 vim"
+        },
+        {
+          "title": "<a href=\"https://github.com/adoyle-h/one.nvim\">one.nvim</a>: All-in-one neovim config framework in Lua."
+        },
+        {
+          "title": "<a href=\"https://github.com/onivim/oni\">oni</a>: Neovim GUI 编辑器"
+        },
+        {
+          "title": "<a href=\"https://github.com/puremourning/vimspector\">vimspector</a>: A multi-language debugging system for Vim"
+        },
+        {
+          "title": "<a href=\"https://vimcolorschemes.com/\">vim colors chemes</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nanotee/nvim-lua-guide\">nvim-lua-guide</a>: nvim 编程圣经"
+        },
+        {
+          "title": "<a href=\"https://github.com/rockerBOO/awesome-neovim\">awesome-neovim</a>"
+        },
+        {
+          "title": "vim"
+        },
+        {
+          "title": "<a href=\"https://github.com/chenxuan520/vim-fast\">vim-fast</a>: 提供了无插件的 vim 配置。（待评测）"
+        },
+        {
+          "title": "<a href=\"https://github.com/Microsoft/vscode\">Visual Studio Code</a>: 可能是最棒的开源 IDE"
+        },
+        {
+          "title": "<a href=\"https://github.com/shanalikhan/code-settings-sync\">code-settings-sync</a>: VSC 设置备份同步工具"
+        },
+        {
+          "title": "<a href=\"https://github.com/cdr/code-server\">code-server</a>: Run VS Code on a remote server"
+        },
+        {
+          "title": "<a href=\"http://www.sublimetext.com\">Sublime</a>: 也许现在比不上其他工具，它是推动编辑器体验进化的功臣。"
+        },
+        {
+          "topic": "代码编辑器",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/ajaxorg/ace\">ace</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/codemirror/dev/\">CodeMirror</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/Microsoft/monaco-editor\">Monaco Editor</a>: VS Code 的代码编辑器"
+            }
+          ]
+        },
+        {
+          "topic": "富文本编辑器 WYSIWYG",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/ory/editor\">ory/editor</a>: 基于 React 和 Redux 的内容编辑器"
+            },
+            {
+              "title": "<a href=\"https://github.com/ianstormtaylor/slate\">slate</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/basecamp/trix\">trix</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/codex-team/editor.js\">editor.js</a>: A block-styled editor with clean JSON output"
+            },
+            {
+              "title": "<a href=\"https://github.com/facebook/lexical\">lexical</a>: facebook 出品"
+            }
+          ]
+        },
+        {
+          "topic": "Online IDE",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/eclipse/che/\">Eclipse Che</a>: 很不错的云端 IDE"
+            },
+            {
+              "title": "<a href=\"https://github.com/theia-ide/theia\">Theia</a>: Web IDE"
+            },
+            {
+              "title": "<a href=\"https://github.com/CompuIves/codesandbox-client\">Codesandbox</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/egoist/codepan\">codepan</a>: Like codepen and jsbin but works offline. https://codepan.net"
+            },
+            {
+              "title": "https://stackblitz.com/ : StackBlitz, Online IDE powered by Visual Studio Code"
+            },
+            {
+              "title": "<a href=\"https://github.com/stackblitz/core\">源码</a>"
+            },
+            {
+              "title": "https://codeanywhere.com/"
+            },
+            {
+              "title": "<a href=\"https://github.com/coder/code-server\">code-server</a>: VSCode in the browser"
+            },
+            {
+              "title": "<a href=\"https://github.com/gitpod-io/gitpod\">gitpod</a>: VSCode in the browser + workspace"
+            }
+          ]
+        },
+        {
+          "topic": "IDE 辅助工具",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/zxqfl/TabNine/\">TabNine</a>: 用深度学习进行自动补全。支持 VS Code, Sublime Text, Vim, Atom, Emacs"
+            },
+            {
+              "title": "<a href=\"https://copilot.github.com/\">GitHub Copilot</a>: 同上"
+            },
+            {
+              "title": "<a href=\"https://github.com/universal-ctags/ctags\">universal-ctags</a>: Universal-ctags 是 Darren Hiebert 的 Exuberant-ctags 的继任"
+            },
+            {
+              "title": "<a href=\"https://www.nerdfonts.com\">NerdFonts</a> 与 <a href=\"https://www.nerdfonts.com/cheat-sheet\">cheat-sheet</a>: 程序员必备字体"
+            },
+            {
+              "title": "<a href=\"https://github.com/jmoon018/PacVim\">PacVim</a>: 用游戏教你学 VIM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Telegram",
+      "items": []
+    },
+    {
+      "topic": "下载工具",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/aria2/aria2\">aria2</a>: 最强大的下载工具"
+        },
+        {
+          "title": "<a href=\"https://github.com/mayswind/AriaNg\">AriaNg</a>: aria2 的前端界面"
+        },
+        {
+          "title": "<a href=\"https://github.com/hurlenko/aria2-ariang-docker\">aria2-ariang-docker</a>: Docker 镜像"
+        },
+        {
+          "title": "<a href=\"https://github.com/P3TERX/aria2.conf\">P3TERX/aria2.conf</a>: aria2 参考配置"
+        },
+        {
+          "title": "bt tracker: BT 下载必须设置 tracker，否则没有速度。"
+        },
+        {
+          "title": "https://github.com/XIU2/TrackersListCollection"
+        },
+        {
+          "title": "https://github.com/ngosang/trackerslist"
+        },
+        {
+          "title": "<a href=\"https://github.com/rg3/youtube-dl\">youtube-dl</a>: 视频下载工具"
+        },
+        {
+          "title": "<a href=\"https://github.com/agalwood/Motrix\">Motrix</a>: 美观又强大的下载工具（目前没人维护，<a href=\"https://github.com/agalwood/Motrix/issues/1396\">作者创业中</a>）"
+        },
+        {
+          "title": "https://youtube.iiilab.com/ : 下载 Youtube 视频，需要关注微信公众号"
+        },
+        {
+          "title": "https://snapsave.io/ : 支持 1080p，需要翻墙"
+        },
+        {
+          "title": "https://bilibili.iiilab.com/ : 下载 B 站视频，需要关注微信公众号"
+        },
+        {
+          "title": "https://twitter.iiilab.com/ : 下载 Twitter 视频/照片，需要关注微信公众号"
+        },
+        {
+          "title": "https://www.downloadtwittervideo.com/ : 需要翻墙"
+        },
+        {
+          "title": "https://instagram.iiilab.com/ : 下载 Instagram 视频/照片，需要关注微信公众号"
+        },
+        {
+          "title": "https://yunyinyue.iiilab.com/ : 下载网易云音乐的歌，需要关注微信公众号"
+        }
+      ]
+    },
+    {
+      "topic": "终端 Terminal",
+      "items": [
+        {
+          "title": "<a href=\"https://www.iterm2.com\">iTerm2</a>: Mac 系统，推荐用这个终端 <code>Ⓜ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/microsoft/terminal\">Windows Terminal</a>: Windows 系统，推荐用这个终端 <code>ⓦ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/cmderdev/cmder\">cmder</a>: 备选方案"
+        },
+        {
+          "title": "<a href=\"https://github.com/zeit/hyper\">Hyper</a>: 用前端技术栈做的终端。非常酷炫 <code>⨀</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/bnb/awesome-hyper\">awesome-hyper</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/Eugeny/tabby\">tabby</a>: 前端技术栈做的终端，可以用 CSS 定制界面，功能完善，支持 Windows/MacOS/Linux。注意：关闭「输入时滚动」选项，否则很容易屏幕闪烁。缺点：无法输入中文标点。"
+        },
+        {
+          "title": "<a href=\"https://itunes.apple.com/us/app/cathode/id656982811\">cathode</a>: 复古终端模拟器 <code>Ⓜ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/xtermjs/xterm.js\">xterm.js</a>: A terminal for the web"
+        },
+        {
+          "title": "<a href=\"https://github.com/GitSquared/edex-ui\">edex-ui</a>: 非常酷！"
+        }
+      ]
+    },
+    {
+      "topic": "Shell",
+      "items": [
+        {
+          "title": "<p>用来增强 Shell 的交互/开发体验。</p>"
+        },
+        {
+          "title": "<a href=\"https://github.com/k4m4/terminals-are-sexy\">terminals-are-sexy</a>: A curated list of Terminal frameworks, plugins &amp; resources for CLI lovers."
+        },
+        {
+          "title": "<a href=\"https://github.com/nushell/nushell\">nushell</a>: 超级酷的 Shell"
+        },
+        {
+          "title": "<a href=\"https://fig.io/\">fig</a>: 非常酷的补全工具。目前只支持 MacOS。"
+        },
+        {
+          "title": "<a href=\"https://github.com/basherpm/basher\">basher</a>: bash 包管理器"
+        },
+        {
+          "title": "<a href=\"https://github.com/anishathalye/dotbot/\">dotbot</a>: dotfile 管理器"
+        },
+        {
+          "title": "<a href=\"http://tiswww.case.edu/php/chet/bash/bashtop.html\">bash</a>: 注意升级到最新版本的 bash"
+        },
+        {
+          "title": "<a href=\"https://github.com/scop/bash-completion\">bash-completion</a>: bash 命令补全"
+        },
+        {
+          "title": "<a href=\"https://github.com/Bash-it/bash-it\">bash-it</a>: Bash 脚本管理框架"
+        },
+        {
+          "title": "<a href=\"https://github.com/anishathalye/dotbot\">dotbot</a>: dotfile 管理框架"
+        },
+        {
+          "title": "<a href=\"https://github.com/facebook/PathPicker\">PathPicker</a>: 「待评价」多条记录选择器。不是很好用"
+        },
+        {
+          "title": "<a href=\"https://github.com/starship/starship\">starship</a>: 漂亮且快速，功能丰富且支持自定义的 prompt。支持很多种 shell。rust 实现的。"
+        },
+        {
+          "title": "<a href=\"https://github.com/adoyle-h/a-bash-prompt\">a-bash-prompt</a>: 备选方案。bash 专用的 prompt。纯 bash 实现的。"
+        },
+        {
+          "title": "<a href=\"https://github.com/sindresorhus/pure\">pure</a>: zsh 专用的 prompt"
+        },
+        {
+          "title": "<a href=\"https://github.com/akinomyoga/ble.sh\">ble.sh</a>: 让 bash 也拥有 zsh 那样的语法高亮、自动补全等功能。超强！"
+        },
+        {
+          "title": "<a href=\"https://github.com/rcaloras/bash-preexec\">bash-preexec</a>: preexec and precmd hook functions for Bash in the style of Zsh."
+        },
+        {
+          "title": "<a href=\"https://github.com/direnv/direnv\">direnv</a>: 根据当前目录自动执行命令，比如设置一些环境变量什么的，切出目录环境变量会自动变回去"
+        },
+        {
+          "title": "<a href=\"https://github.com/kennethreitz/autoenv\">autoenv</a>: README 挺幽默的"
+        },
+        {
+          "title": "<a href=\"https://github.com/jamesob/desk\">desk</a>: 类似方案"
+        },
+        {
+          "title": "<a href=\"https://github.com/Nukesor/pueue\">pueue</a>: 将任意 shell 命令托管到后台队列里执行"
+        },
+        {
+          "title": "<a href=\"https://github.com/charmbracelet/vhs\">vhs</a>: 声明式制作命令行演示 GIF 动图"
+        },
+        {
+          "title": "<a href=\"https://github.com/browsh-org/browsh\">browsh</a>: 运行在终端的网页浏览器"
+        },
+        {
+          "title": "<a href=\"https://github.com/fathyb/carbonyl\">carbonyl</a>: 在终端运行 Chromium。"
+        },
+        {
+          "title": "<a href=\"https://github.com/Xfennec/progress\">progress</a>: 显示 cp, mv, dd 等命令的进度条 <code>Ⓜ</code> <code>Ⓛ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/charmbracelet/glow\">glow</a>: markdown 终端阅读工具"
+        },
+        {
+          "title": "<a href=\"https://github.com/lemnos/theme.sh\">theme.sh</a>: shell 配色设置，动态预览"
+        },
+        {
+          "topic": "配色",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/ggreer/lscolors\">lscolors</a>: LSCOLORS Preview"
+            },
+            {
+              "title": "<a href=\"https://github.com/trapd00r/LS_COLORS\">trapd00r/LS_COLORS</a>: LS_COLORS 自定义集合"
+            },
+            {
+              "title": "<a href=\"https://github.com/mbadolato/iTerm2-Color-Schemes\">iTerm2-Color-Schemes</a>: shell 配色"
+            }
+          ]
+        },
+        {
+          "topic": "TUI",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/charmbracelet/gum\">gum</a>: 超酷的工具"
+            },
+            {
+              "title": "<a href=\"https://github.com/junegunn/fzf\">fzf</a>: 模糊筛选/搜索任意列表"
+            },
+            {
+              "title": "<a href=\"https://github.com/sharkdp/bat\">bat</a>: better cat。自动代码着色，自带分页器，显示代码行，支持 diff，自动标记 git 变动，可显示不可见符号。"
+            },
+            {
+              "title": "<a href=\"https://aa-project.sourceforge.net/index.html\">aalib</a>: 图片、视频转 ASCII art"
+            },
+            {
+              "title": "<a href=\"http://caca.zoy.org/wiki/libcaca\">libcaca</a>: 终端绘制图片"
+            },
+            {
+              "title": "<a href=\"https://github.com/jart/hiptext\">hiptext</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Shell Script Development",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "diff",
+      "items": [
+        {
+          "title": "diff: linux 内置命令"
+        },
+        {
+          "title": "diffstat: linux 内置命令 <code>diff -u | diffstat -C</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/so-fancy/diff-so-fancy\">diff-so-fancy</a>: 超酷的 diff 着色增强工具，但只能用管道输出，仍需借助 diff 或 git diff 工具。"
+        },
+        {
+          "title": "<a href=\"https://github.com/dandavison/delta\">delta</a>: 语义化 Diff，功能丰富。Git 配置不友好"
+        },
+        {
+          "title": "<a href=\"https://github.com/Wilfred/difftastic\">difftastic</a>: 基于 tree-sitter 的 diff。Git 配置不友好"
+        },
+        {
+          "title": "<a href=\"https://github.com/rtfpessoa/diff2html-cli\">diff2html-cli</a>: 将 diff 文件转成 HTML 页面的形式预览。非常漂亮"
+        },
+        {
+          "title": "https://diffy.org/ : 在线服务，支持链接共享。"
+        },
+        {
+          "title": "<a href=\"http://www.kaleidoscopeapp.com\">Kaleidoscope</a>: Diff GUI 软件。支持比较文本、图片、目录 <code>Ⓜ</code>"
+        },
+        {
+          "topic": "image diff",
+          "items": [
+            {
+              "title": "https://www.diffchecker.com/image-diff/ : 在线服务，图片 diff"
+            },
+            {
+              "title": "<a href=\"https://github.com/mapbox/pixelmatch\">pixelmatch</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/uber-archive/image-diff\">image-diff</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "命令行 CLI",
+      "items": []
+    },
+    {
+      "topic": "逆向工程",
+      "items": [
+        {
+          "topic": "二进制分析",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/kaitai-io/kaitai_struct\">kaitai</a>: 可以用 YAML 描述二进制文件的格式，从而解析二进制文件提取出自己想要的信息。它根据 YAML 生成各种语言的库。"
+            },
+            {
+              "title": "https://kaitai.io/"
+            },
+            {
+              "title": "有很多<a href=\"https://formats.kaitai.io/\">应用场景</a>。模型，归档文件，安装包，文件系统，字体，图片，数据库，日志，网络协议。"
+            },
+            {
+              "title": "Web IDE：https://ide.kaitai.io/"
+            },
+            {
+              "title": "<a href=\"https://github.com/NationalSecurityAgency/ghidra\">Ghidra</a>: 美国国家安全局开源的逆向工程框架"
+            },
+            {
+              "title": "<a href=\"https://github.com/mildsunrise/protobuf-inspector\">protobuf-inspector</a>: 逆向解析 protobuf"
+            },
+            {
+              "title": "<a href=\"https://github.com/radareorg/radare2\">radare2</a>: 逆向解析二进制文件的命令行工具集"
+            },
+            {
+              "title": "<a href=\"https://github.com/radareorg/iaito\">iaito</a>: radare2 的 GUI 工具"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "结构化数据处理",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/TomWright/dasel\">dasel</a>: JSON, TOML, YAML, XML, CSV 增删改查、格式转换工具。缺点：无法直接 put 数组。"
+        },
+        {
+          "title": "<a href=\"https://github.com/johnkerl/miller\">miller</a>: 「待评价，看起来参数很复杂」like awk, sed, cut, join, and sort for data formats such as CSV, TSV, JSON, JSON Lines, and positionally-indexed."
+        },
+        {
+          "title": "<a href=\"https://github.com/dbohdan/structured-text-tools\">Structured text tools</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/json-next/awesome-json-next\">Awesome JSON - What's Next?</a>"
+        },
+        {
+          "title": "我喜欢的面向人类的配置文件语法"
+        },
+        {
+          "title": "<a href=\"http://yaml.org/\">YAML</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/hashicorp/hcl\">HCL</a>: 类似 Nginx 的语法配置，Hashicorp 出品"
+        },
+        {
+          "title": "<a href=\"https://www.wikiwand.com/zh-hans/INI%E6%96%87%E4%BB%B6\">INI</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/toml-lang/toml\">TOML</a>"
+        },
+        {
+          "title": "面向机器数据结构语法"
+        },
+        {
+          "title": "JSON"
+        },
+        {
+          "topic": "YAML",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/cblp/yaml-sucks\">yaml-sucks</a>: YAML 的缺点列表"
+            },
+            {
+              "title": "http://yaml-online-parser.appspot.com/"
+            },
+            {
+              "title": "<a href=\"https://github.com/mikefarah/yq\">yq</a>: 类似 jq"
+            }
+          ]
+        },
+        {
+          "topic": "HCL",
+          "items": [
+            {
+              "title": "https://www.hcl2json.com/ : 需要翻墙"
+            }
+          ]
+        },
+        {
+          "topic": "JSON",
+          "items": [
+            {
+              "title": "https://www.json.cn/ : JSON 在线解析"
+            },
+            {
+              "title": "<a href=\"https://github.com/gistia/json-log-viewer\">jv</a>: JSON Log Viewer"
+            },
+            {
+              "title": "<a href=\"https://github.com/antonmedv/fx\">fx</a>: JSON Viewer"
+            },
+            {
+              "title": "<a href=\"https://github.com/stedolan/jq\">jq</a>: JSON Viewer"
+            },
+            {
+              "title": "<a href=\"https://github.com/simeji/jid\">jid</a>: 交互式 JSON Viewer"
+            },
+            {
+              "title": "<a href=\"https://github.com/fiatjaf/jiq\">jiq</a>: It's jid with jq."
+            },
+            {
+              "title": "<a href=\"https://github.com/json5/json5\">JSON5</a>: JSON for humans. (Not an official successor to JSON.)"
+            },
+            {
+              "title": "<a href=\"https://github.com/hjson/hjson\">hjson</a>: 比 JSON5 更丰富，且相对更标准，有 <a href=\"https://hjson.org/rfc.html\">RFC 文档</a>。"
+            },
+            {
+              "title": "<a href=\"https://github.com/lemire/simdjson\">simdjson</a>: Parsing gigabytes of JSON. 2.2GB/s"
+            },
+            {
+              "title": "<a href=\"http://jsonpatch.com/\">JSON Patch</a>: JSON 数据的 add、remove、replace、copy、move、test 操作"
+            },
+            {
+              "title": "<a href=\"https://tools.ietf.org/html/rfc7386\">JSON Merge Patch</a>: RFC7386"
+            },
+            {
+              "title": "https://www.json-generator.com/ : 根据语法随机生成 JSON 对象"
+            },
+            {
+              "title": "<a href=\"https://extendsclass.com/json-generator.html\">extendsclass</a>: JSON data generator"
+            }
+          ]
+        },
+        {
+          "topic": "JSON Schema",
+          "items": [
+            {
+              "title": "https://www.jsonschemavalidator.net/ : 在线校验 JSON Schema"
+            },
+            {
+              "title": "https://spacetelescope.github.io/understanding-json-schema/index.html : 目前最好的入门教程"
+            },
+            {
+              "title": "https://jsonschema.net/ : 根据 JSON 生成 JSON Schema"
+            },
+            {
+              "title": "<a href=\"https://github.com/json-schema-faker/json-schema-faker\">json-schema-faker</a>: 根据 JSON Schema 生成数据"
+            },
+            {
+              "title": "http://schemastore.org/json/ : 各种现成的 JSON Schema 文件"
+            },
+            {
+              "title": "https://github.com/instrumenta/kubernetes-json-schema : K8S JSON Schema 文件"
+            }
+          ]
+        },
+        {
+          "topic": "JSON Path",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/json-path/JsonPath\">JsonPath</a>"
+            },
+            {
+              "title": "https://jsonpath.com/ : JSONPath Online Evaluator"
+            },
+            {
+              "title": "http://jsonpath.herokuapp.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Lint",
+      "items": [
+        {
+          "title": "<a href=\"http://editorconfig.org/\">editorconfig</a>: 最基础的代码风格规约"
+        },
+        {
+          "title": "<a href=\"https://github.com/editorconfig-checker/editorconfig-checker\">editorconfig-checker</a>: 兼容 .editorconfig，且可忽略文件。它提供额外的配置选项 .ecrc"
+        },
+        {
+          "title": "<a href=\"https://github.com/koalaman/shellcheck\">shellcheck</a>: linux shell script lint"
+        },
+        {
+          "title": "<a href=\"https://github.com/Kuniwak/vint\">vint</a>: vim script lint"
+        },
+        {
+          "title": "<a href=\"https://github.com/adrienverge/yamllint\">yamllint</a>: YAML lint"
+        },
+        {
+          "title": "<a href=\"https://github.com/zaach/jsonlint\">jsonlint</a>: JSON lint"
+        },
+        {
+          "title": "<a href=\"http://pro.jsonlint.com\">在线 JSON Lint</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/amperser/proselint\">proselint</a>: 英文语法检查"
+        },
+        {
+          "title": "<a href=\"https://github.com/get-alex/alex\">alex</a>: 英文语法检查"
+        },
+        {
+          "title": "<a href=\"https://github.com/btford/write-good\">write-good</a>: 备选方案"
+        },
+        {
+          "title": "<a href=\"https://github.com/mivok/markdownlint\">markdownlint</a>: markdown lint"
+        },
+        {
+          "title": "<a href=\"https://github.com/yaniswang/HTMLHint\">HTMLHint</a>: HTML lint"
+        },
+        {
+          "title": "<a href=\"https://github.com/htacg/tidy-html5\">tidy</a>: 不明觉厉的 HTML lint。备用"
+        },
+        {
+          "title": "<a href=\"https://github.com/stylelint/stylelint\">stylelint</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/CSSLint/csslint\">csslint</a>: 备用"
+        },
+        {
+          "title": "<a href=\"https://github.com/hadolint/hadolint\">hadolint</a>: Dockerfile Lint\n<a name=\"commitlint\"></a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/conventional-changelog/commitlint\">commitlint</a>: Lint git commit messages"
+        },
+        {
+          "title": "<a href=\"https://github.com/ansible/ansible-lint\">ansible-lint</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/checkstyle/checkstyle\">checkstyle</a>: Java code lint"
+        }
+      ]
+    },
+    {
+      "topic": "Mock",
+      "items": [
+        {
+          "title": "<a href=\"https://mockbin.com/\">mockbin</a>: Mock, Test &amp; Track HTTP Requests and Responses"
+        },
+        {
+          "title": "https://github.com/Mashape/mockbin"
+        }
+      ]
+    },
+    {
+      "topic": "网站",
+      "items": [
+        {
+          "title": "<a href=\"https://www.zhihu.com/question/20075570/answer/206335744\">chrome 自带网页截屏命令</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/sindresorhus/pageres\">pageres</a>: 网页截屏"
+        },
+        {
+          "title": "<a href=\"https://github.com/shinima/temme\">temme</a>: 利用 CSS 语法，从 HTML 提取出 JSON 数据"
+        },
+        {
+          "title": "https://archive.ph/ : 永久保存网页内容。保存的页面来自用户提交的，不做自动抓取。生成短链接"
+        },
+        {
+          "title": "https://archive.org/ : 永久保存网页内容。保存的页面来自用户提交的和自动抓取的。生成链接很长"
+        },
+        {
+          "title": "https://perma.cc/ : 备用方案"
+        },
+        {
+          "title": "<a href=\"https://github.com/ArchiveBox/ArchiveBox\">ArchiveBox</a>: 自己搭建 Archive 网站。"
+        },
+        {
+          "title": "<a href=\"https://github.com/ekalinin/sitemap.js\">sitemap.js</a>: 生成 sitemap 的工具"
+        },
+        {
+          "title": "<a href=\"https://realfavicongenerator.net/\">Favicon 生成器</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/rrweb-io/rrweb\">rrweb</a>: 网页浏览录制和回放"
+        },
+        {
+          "title": "<a href=\"https://github.com/openreplay/openreplay\">Open Replay</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/mikecao/umami\">umami</a>: website analytics alternative to Google Analytics."
+        },
+        {
+          "title": "<a href=\"https://busuanzi.ibruce.info/\">不蒜子 busuanzi</a>: 两行代码搞定站点访问统计"
+        }
+      ]
+    },
+    {
+      "topic": "SSL",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/certbot/certbot\">certbot</a>: letsencrypt 官方证书生成工具"
+        },
+        {
+          "title": "<a href=\"https://github.com/Neilpang/acme.sh\">acme.sh</a>: 证书生成工具, 支持 ZeroSSL.com、Letsencrypt.org、BuyPass.com、SSL.com、Pebble strict Mode，以及其他遵循 RFC8555 的 CA。支持模式 Webroot，Standalone，Standalone tls-alp，Apach，Nginx，DNS，DNS alias，Stateless。"
+        },
+        {
+          "title": "<a href=\"https://github.com/lukas2511/dehydrated\">dehydrated</a>: 备选方案"
+        },
+        {
+          "title": "<a href=\"https://github.com/FiloSottile/mkcert\">mkcert</a>: 零配置生成自签名证书。默认有效时间 825 天。"
+        },
+        {
+          "title": "<a href=\"https://github.com/Fishdrowned/ssl\">Fishdrowned/ssl</a>: 零配置生成自签名证书。比 mkcert 提供更丰富的配置选项。"
+        }
+      ]
+    },
+    {
+      "topic": "BSD",
+      "items": [
+        {
+          "title": "<a href=\"https://www.freebsd.org/\">FreeBSD</a>"
+        },
+        {
+          "title": "<a href=\"https://hackintosh.com/\">hackintosh</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Linux",
+      "items": []
+    },
+    {
+      "topic": "进程管理",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/typicode/hotel\">hotel</a>: 本地进程管理服务"
+        },
+        {
+          "title": "<a href=\"https://github.com/exah/alfred-hotel\">alfred-hotel</a>: 查看 hotel app 的 Alfred Workflow"
+        },
+        {
+          "title": "better <code>ps</code>"
+        },
+        {
+          "title": "<a href=\"http://www.thp.uni-duisburg.de/pstree/\">pstree</a>: 。树形结构展示 ps 命令"
+        },
+        {
+          "title": "<a href=\"https://github.com/dalance/procs\">procs</a>"
+        },
+        {
+          "title": "better <code>top</code> and <code>htop</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/aristocratos/btop\">btop</a>"
+        },
+        {
+          "title": "<a href=\"https://www.atoptool.nl/index.php\">atop</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/clementtsang/bottom\">bottom</a>: 跨平台。Rust 实现。只支持缩放，不支持水平滚动。"
+        },
+        {
+          "title": "<a href=\"https://github.com/nicolargo/glances\">glances</a>: 支持网页访问。Python 实现。"
+        },
+        {
+          "title": "better <code>kill</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nvbn/thefuck\">thefuck</a>: 命令 typo 纠错"
+        },
+        {
+          "title": "<a href=\"https://github.com/sindresorhus/fkill-cli\">fkill-cli</a>: 灵活的删进程命令，例如 <code>fkill 1337 safari :8080</code>，如果不加参数，则是交互式命令。"
+        }
+      ]
+    },
+    {
+      "topic": "资源管理",
+      "items": []
+    },
+    {
+      "topic": "文件管理",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/ranger/ranger\">ranger</a>: 文件管理器 CLI。Python 写的"
+        },
+        {
+          "title": "<a href=\"https://github.com/jarun/nnn\">nnn</a>: 听说很快。待评价"
+        },
+        {
+          "title": "<a href=\"https://github.com/laurent22/massren\">massren</a>: 在自己的编辑器编排后批量重命名文件。非常好用！"
+        },
+        {
+          "title": "<a href=\"http://plasmasturm.org/code/rename\">rename</a>: 备选方案。命令式批量重命名文件。<code>brew install rename</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/facebook/PathPicker\">fpp</a>: 快速筛选工具（不怎么好用）"
+        },
+        {
+          "title": "<a href=\"https://github.com/sindresorhus/trash\">trash</a>: better <code>rm</code>。不直接删除文件而是移到回收站。建议 <code>alias rm='trash'</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/ogham/exa\">exa</a>: better <code>ls</code>"
+        },
+        {
+          "topic": "文件查找",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/sharkdp/fd/\">fd</a>: better <code>find</code>"
+            },
+            {
+              "title": "better <code>grep</code>"
+            },
+            {
+              "title": "<a href=\"https://github.com/BurntSushi/ripgrep\">ripgrep</a>: 模糊搜索文件内容。据说是最快的，搜索大量内容时，确实明显比 ag 快"
+            },
+            {
+              "title": "<a href=\"https://github.com/ggreer/the_silver_searcher\">ag</a>: 备选方案"
+            }
+          ]
+        },
+        {
+          "topic": "文件大小",
+          "items": [
+            {
+              "title": "better <code>du</code>"
+            },
+            {
+              "title": "<a href=\"https://github.com/bootandy/dust\">dust</a>: rust 实现"
+            },
+            {
+              "title": "<a href=\"https://dev.yorhel.nl/ncdu\">ncdu</a>: 递归扫描整个文件夹空间占用，交互式。zig 实现"
+            },
+            {
+              "title": "<a href=\"https://github.com/nachoparker/dutree\">dutree</a>: du 的树形结构展示版本。rust 实现"
+            },
+            {
+              "title": "better <code>df</code>"
+            },
+            {
+              "title": "<a href=\"https://github.com/muesli/duf\">duf</a>: Go 实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "文件同步/备份/快照",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/syncthing/syncthing\">syncthing</a>: 文件自动同步"
+        },
+        {
+          "title": "tar"
+        },
+        {
+          "title": "参考文章: https://archive.ph/7R49W"
+        },
+        {
+          "title": "rsync"
+        },
+        {
+          "title": "<a href=\"https://github.com/rclone/rclone\">rclone</a>: rsync for cloud storage. To sync files and directories to and from different cloud storage providers."
+        },
+        {
+          "title": "<a href=\"https://github.com/restic/restic\">restic</a>: 简单易用的备份工具。支持快照，加密。可与 rclone 搭配。不支持软链接，restore 会<a href=\"https://github.com/restic/restic/issues/2578\">报错</a>。"
+        },
+        {
+          "title": "<a href=\"https://github.com/teejee2008/timeshift\">timeshift</a>: 备选方案。基于 rsync + hard link。支持快照、增量备份、BTRFS、自定义路径（默认屏蔽用户目录）。<strong>不支持云存储</strong>"
+        },
+        {
+          "title": "<a href=\"https://github.com/andrewchambers/bupstash\">bupstash</a>: 据说性能很高"
+        },
+        {
+          "title": "<a href=\"https://github.com/borgbackup/borg\">borg</a>: 备选方案"
+        },
+        {
+          "title": "<a href=\"https://gitlab.com/duplicity/duplicity\">duplicity</a>: 支持增量备份，软链接。不支持硬链接。"
+        },
+        {
+          "title": "<a href=\"\">duply</a>: duplicity 的前端程序"
+        },
+        {
+          "title": "<a href=\"https://clonezilla.org/\">Clonezilla</a>: 镜像和备份程序，不支持快照。使用命令行备份貌似难度很高。还原到不同大小分区也可能出问题。"
+        },
+        {
+          "title": "其他备份工具"
+        },
+        {
+          "title": "<a href=\"https://github.com/bit-team/backintime\">backintime</a>: 备选方案"
+        },
+        {
+          "title": "https://github.com/restic/others"
+        }
+      ]
+    },
+    {
+      "topic": "ISO 镜像制作与刻录",
+      "items": [
+        {
+          "title": "mkisofs: 制作 ISO 镜像。Linux 命令"
+        },
+        {
+          "title": "制作启动 U 盘"
+        },
+        {
+          "title": "<a href=\"https://github.com/ventoy/Ventoy\">Ventoy</a>: 支持多个不同类型的镜像共存。只支持在 Windows/Linux/虚拟机 制作。"
+        },
+        {
+          "title": "<a href=\"https://github.com/pbatard/rufus\">rufus</a>: 操作简单，可配置。只支持在 Windows 制作。"
+        },
+        {
+          "title": "<a href=\"https://github.com/balena-io/etcher\">etcher</a>: 一键操作，不可配置。支持在 Windows/MacOS/Linux（不支持命令行）制作。"
+        },
+        {
+          "title": "<a href=\"https://github.com/jsamr/bootiso\">bootiso</a>: 只支持在 Linux 制作，且用于安装 Linux 系统。"
+        }
+      ]
+    },
+    {
+      "topic": "数据库/存储",
+      "items": [
+        {
+          "title": "<a href=\"https://www.jetbrains.com/datagrip\">DataGrip</a>: 数据库 GUI  <code>Ⓜ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/dbcli/mycli\">mycli</a>: mysql 命令行客户端"
+        },
+        {
+          "title": "<a href=\"https://github.com/dbcli/pgcli\">pgcli</a>: postgres 命令行客户端"
+        },
+        {
+          "title": "<a href=\"https://github.com/luin/medis\">medis</a>: Redis GUI Client  <code>Ⓜ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/enochtangg/quick-SQL-cheatsheet/blob/master/README_zh-hans.md\">SQL 速查表</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/symisc/unqlite\">UNQLite</a>:"
+        },
+        {
+          "title": "<a href=\"https://www.sqlite.org\">SQLite</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/vitessio/vitess\">vitess</a>: MySQL Sharding Proxy。支持 k8s。Youtube 2011 年就开始跑了。"
+        },
+        {
+          "title": "<a href=\"https://github.com/dolthub/dolt\">dolt</a>: 功能类似 Git 的数据库"
+        },
+        {
+          "title": "<a href=\"https://github.com/minio/minio\">minio</a>: 对象存储，高性能，K8S-Native"
+        },
+        {
+          "title": "<a href=\"https://github.com/ceph/ceph\">ceph</a>: 块存储，对象存储，文件存储"
+        },
+        {
+          "title": "<a href=\"https://github.com/alist-org/alist\">alist</a>: 支持多种云盘存储的文件管理程序"
+        },
+        {
+          "topic": "Embeddable DB",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/techfort/LokiJS\">LokiJS</a>: javascript embeddable / in-memory database"
+            },
+            {
+              "title": "<a href=\"https://github.com/tidwall/buntdb\">BuntDB</a>: an embeddable, in-memory key/value database for Go with custom indexing and geospatial support"
+            }
+          ]
+        },
+        {
+          "topic": "数据库设计",
+          "items": [
+            {
+              "title": "<a href=\"https://sqldbm.com/en/Home/\">sqldbm</a>: 目前做的最好（没有之一）的 ER 建模工具，目前免费。"
+            },
+            {
+              "title": "https://dbdiagram.io/ : 在线 ER 建模工具，通过 <a href=\"https://github.com/holistics/dbml\">dbml</a> 语法构建 ER 图。支持导出 SQL。"
+            }
+          ]
+        },
+        {
+          "topic": "Database Versioning",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/flyway/flyway\">flyway</a>: 用 Java 写的，支持 SQL 和 Java 写 migration。没有 revert 概念。"
+            },
+            {
+              "title": "<a href=\"https://github.com/github/gh-ost\">gh-ost</a>: 与 flyway 不一样的实现方案，创建 shadow/ghost 表来作 schema migration。功能丰富。不基于 trigger，基于 bin-log。"
+            },
+            {
+              "title": "<a href=\"https://github.com/golang-migrate/migrate\">migrate</a>: 用 Go 写的，支持 SQL，支持命令行和 Go 编程。"
+            },
+            {
+              "title": "<a href=\"https://github.com/rubenv/sql-migrate\">sql-migrate</a>: 用 Go 写的。备选"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "网络",
+      "items": []
+    },
+    {
+      "topic": "ProtoBuf",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/uber/prototool\">prototool</a>: .proto 管理器"
+        },
+        {
+          "title": "<a href=\"https://github.com/bufbuild/buf\">buf</a>: .proto 管理器"
+        }
+      ]
+    },
+    {
+      "topic": "IM",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/RocketChat/Rocket.Chat\">Rocket.Chat</a>: 开源版 Slack。built with Meteor"
+        },
+        {
+          "title": "<a href=\"https://mattermost.com/\">Mattermost</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Git",
+      "items": []
+    },
+    {
+      "topic": "Chrome",
+      "items": []
+    },
+    {
+      "topic": "Bookmarklet",
+      "items": [
+        {
+          "title": "https://mcdlr.com/css-inject/"
+        },
+        {
+          "title": "https://mcdlr.com/js-inject/"
+        },
+        {
+          "title": "https://adrianroselli.com/2015/01/css-bookmarklets-for-testing-and-fixing.html"
+        },
+        {
+          "title": "https://css-tricks.com/web-development-bookmarklets/"
+        }
+      ]
+    },
+    {
+      "topic": "测试",
+      "items": [
+        {
+          "topic": "字符串测试",
+          "items": [
+            {
+              "title": "<p>附赠一个笑话，<a href=\"https://www.reddit.com/r/ProgrammerHumor/comments/31bgwm/a_bug_tester_walks_into_a_bar/\">一个 Bug 测试员走进一家酒吧</a>。</p>"
+            },
+            {
+              "title": "<a href=\"https://github.com/minimaxir/big-list-of-naughty-strings\">Big List of Naughty Strings</a>: 收集了一系列不正常的字符用来测试字符串校验"
+            }
+          ]
+        },
+        {
+          "topic": "HTTP Benchmark",
+          "items": []
+        },
+        {
+          "topic": "基准测试 (Benchmark Test)",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/haydenjames/bench-scripts\">bench-scripts</a>: 对 Linux 系统进行 Benchmark 的脚本"
+            },
+            {
+              "title": "<a href=\"https://github.com/sharkdp/hyperfine\">hyperfine</a>: 对某个命令进行 Benchmark"
+            },
+            {
+              "title": "<a href=\"https://github.com/akopytov/sysbench\">sysbench</a>: 对数据库和操作系统的 benchmark。支持 lua 脚本"
+            },
+            {
+              "title": "<a href=\"https://programming-language-benchmarks.vercel.app/\">Programming Language and compiler</a>: 对各种编程语言做 Benchmark。很全面。"
+            }
+          ]
+        },
+        {
+          "topic": "压测 (Stress Test)",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/ColinIanKing/stress-ng\">stress-ng</a>: 对 CPU、内存、IO 的压力测试"
+            },
+            {
+              "title": "<a href=\"https://fossies.org/linux/privat/old/stress-1.0.4.tar.gz/stress-1.0.4/doc/stress.html\">stress</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/axboe/fio\">FIO</a>: 测试硬盘 IO。开源。"
+            },
+            {
+              "title": "<a href=\"https://www.geekbench.com/\">Geekbench</a>: 对操作系统的压测工具。闭源。压测报告会自动上传到官网，多个压测报告可以进行比较。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "密码相关",
+      "items": [
+        {
+          "topic": "加密/解密",
+          "items": [
+            {
+              "title": "<a href=\"https://www.gnupg.org/\">GPG</a>"
+            },
+            {
+              "title": "<a href=\"https://keybase.io\">keybase</a>: 以社交系统为之背书的，开源的 PGP 工具、系统与托管服务器"
+            },
+            {
+              "title": "<a href=\"https://github.com/keybase/kbpgp\">kbpgp</a>: Keybase 用 JS 实现的 PGP 程序"
+            }
+          ]
+        },
+        {
+          "topic": "密码管理",
+          "items": [
+            {
+              "title": "<p><a name=\"KeePass\"></a>\n- <a href=\"http://keepass.info\">KeePass</a>: 密码管理器\n  - 推荐将密码文件保存到（私有）网盘里，避免密码文件丢失。\n- <a href=\"https://github.com/keeweb/keeweb\">KeeWeb</a>: <a href=\"#user-content-KeePass\">KeePass</a> 的 GUI 客户端，跨平台\n- <a href=\"https://github.com/mstarke/MacPass\">MacPass</a>: <a href=\"#user-content-KeePass\">KeePass</a> 的 Mac GUI 客户端 <code>Ⓜ</code>\n- <a href=\"https://play.google.com/store/apps/details?id=keepass2android.keepass2android&amp;hl=zh_CN\">Keepass2Android</a>: <a href=\"#user-content-KeePass\">KeePass</a> 的安卓客户端\n  - <a href=\"https://play.google.com/store/apps/details?id=keepass2android.keepass2android_nonet\">Keepass2Android 离线版</a>\n- <a href=\"https://github.com/bitwarden/server\">Bitwarden</a>: 类似商业密码管理器的开源方案</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "编码",
+      "items": [
+        {
+          "title": "https://www.punycoder.com/ : Punycode"
+        },
+        {
+          "title": "<a href=\"https://www.wikiwand.com/en/Leet\">leet</a>"
+        },
+        {
+          "title": "https://1337.me/"
+        },
+        {
+          "title": "https://www.gamehouse.com/blog/leet-speak-cheat-sheet/"
+        }
+      ]
+    },
+    {
+      "topic": "知识管理",
+      "items": [
+        {
+          "title": "<a href=\"https://www.toketaware.com\">iThoughtsX</a>: 思维导图 <code>Ⓜ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/adoyle-h/iThoughts-Search\">Thoughts-Search</a>: iThoughtsX 命令行搜索工具 <code>⨀</code>"
+        }
+      ]
+    },
+    {
+      "topic": "搜索引擎 Search Bar",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/elastic/elasticsearch\">ElasticSearch</a>: 企业级搜索引擎。Java 实现"
+        },
+        {
+          "title": "<a href=\"https://www.algolia.com/\">Algolia</a>: 商业搜索引擎"
+        },
+        {
+          "title": "<a href=\"https://github.com/algolia/docsearch\">docsearch</a>: 基于 algolia 服务的搜索框，搜索时需要请求 algolia api。"
+        },
+        {
+          "title": "<a href=\"https://github.com/typesense/typesense\">typesense</a>: 类似 algolia。C++ 实现的。索引全存内存。"
+        },
+        {
+          "title": "可自己托管，也可以选择 <a href=\"https://cloud.typesense.org/\">typesense cloud</a> 服务，但它没有靠近中国的数据中心。"
+        },
+        {
+          "title": "<a href=\"https://github.com/meilisearch/meilisearch\">MeiliSearch</a>: Rust 实现"
+        },
+        {
+          "title": "<a href=\"https://github.com/valeriansaliou/sonic\">sonic</a>: Rust 实现。"
+        },
+        {
+          "title": "<a href=\"https://github.com/olivernn/lunr.js\">lunr.js</a>: 轻量级的搜索方案。无须部署服务。支持多语言。现已无人维护。"
+        },
+        {
+          "title": "<a href=\"https://github.com/MihaiValentin/lunr-languages\">lunr-languages</a>: 语言包。中文包的依赖加载有问题。"
+        },
+        {
+          "title": "<a href=\"https://lunrjs.com/guides/index_prebuilding.html\">全文索引</a>存储在本地的一个 JSON 文件里，每次加载页面都会加载全文索引。如果网站内容很多，索引文件会很大。"
+        },
+        {
+          "title": "<a href=\"https://github.com/nextapps-de/flexsearch\">flexsearch</a>: 类似 lunr.js。虽然支持中文，但分词功能可能需要自己开发。"
+        },
+        {
+          "title": "<a href=\"https://solr.apache.org/\">solr</a>: 基于 Lucene 的开源企业级搜索平台"
+        },
+        {
+          "topic": "停止词 Stop Words",
+          "items": [
+            {
+              "title": "<p>停用词是指在信息检索中，为节省存储空间和提高搜索效率，在处理自然语言数据（或文本）之前或之后会自动过滤掉某些字或词，这些字或词即被称为 Stop Words（停用词）。\n这些停用词都是人工输入、非自动化生成的，生成后的停用词会形成一个停用词表。但是，并没有一个明确的停用词表能够适用于所有的工具。</p>"
+            },
+            {
+              "title": "中文停止词"
+            },
+            {
+              "title": "<a href=\"https://github.com/goto456/stopwords\">goto456/stopwords</a>"
+            },
+            {
+              "title": "英文停止词"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "邮件",
+      "items": [
+        {
+          "title": "<a href=\"https://cloudmagic.com/k/newton\">Newton</a>: 邮件客户端。也支持移动端 <code>Ⓜ</code>"
+        },
+        {
+          "title": "<a href=\"https://mjml.io/\">mjml</a>: 邮件模板语言"
+        },
+        {
+          "title": "https://www.mailgun.com/ : 发邮件的服务 <code>ⱳ</code>"
+        },
+        {
+          "title": "http://mailchimp.com/ : 搭建邮件&amp;发邮件的服务 <code>ⱳ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nodemailer/nodemailer\">nodemailer</a>: 邮件类库 (NodeJS)"
+        },
+        {
+          "title": "https://mail.tm/ : 临时邮件账号，注销很方便。记录临时账号的密码可以下次登录。"
+        }
+      ]
+    },
+    {
+      "topic": "翻译",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/immersive-translate/immersive-translate\">沉浸式翻译</a>: 浏览器插件，开源免费，体验很好。"
+        },
+        {
+          "title": "<a href=\"https://github.com/soimort/translate-shell\">translate-shell</a>: Command-line translator using Google Translate, Bing Translator, Yandex.Translate, etc."
+        },
+        {
+          "title": "<a href=\"https://poedit.net\">Poedit</a>: .po 翻译软件 <code>Ⓜ</code>。价格太贵，大版本升级坑。暂无替代方案"
+        },
+        {
+          "title": "<a href=\"https://github.com/BYVoid/OpenCC\">OpenCC</a>: 中文简体与繁体转换"
+        },
+        {
+          "title": "https://www.deepl.com/ : 基于 AI 的翻译器"
+        },
+        {
+          "title": "<a href=\"https://www.grammarly.com/\">Grammarly</a>: 提供英文语法纠错的 Web 服务。有 Chrome 插件，体验不错。"
+        }
+      ]
+    },
+    {
+      "topic": "Windows App",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/microsoft/PowerToys\">PowerToys</a>: Windows 官方出品的生产力工具：唤醒工具，颜色选取器，窗口管理器，预览窗口，图像大小调整器，键盘管理器，批量重命名，类似 Spotlight 的启动器，快捷键指南"
+        },
+        {
+          "title": "Windows 包管理器"
+        },
+        {
+          "title": "<a href=\"https://github.com/microsoft/winget-cli\">winget</a>"
+        },
+        {
+          "title": "<a href=\"https://scoop.sh/\">Scoop</a>"
+        },
+        {
+          "title": "<a href=\"https://chocolatey.org/\">chocolatey</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/microsoft/wslg\">WSLg</a>: 让 WSL 支持 GUI 环境"
+        }
+      ]
+    },
+    {
+      "topic": "Mac App",
+      "items": []
+    },
+    {
+      "topic": "字体",
+      "items": []
+    },
+    {
+      "topic": "Design",
+      "items": []
+    },
+    {
+      "topic": "Emoji",
+      "items": [
+        {
+          "title": "https://emojifinder.com/ : 根据输入搜索相关的 emoji"
+        },
+        {
+          "title": "https://emojipedia.org/ : emoji 百科"
+        },
+        {
+          "title": "http://www.emoji-cheat-sheet.com"
+        },
+        {
+          "title": "<a href=\"https://github.com/WebpageFX/emoji-cheat-sheet.com/\">源码</a>"
+        },
+        {
+          "title": "http://unicode.org/emoji/charts-beta/full-emoji-list.html : 完整的 emoji 列表"
+        }
+      ]
+    },
+    {
+      "topic": "Unicode",
+      "items": [
+        {
+          "title": "https://unicode-table.com/cn/"
+        },
+        {
+          "title": "https://www.compart.com/en/unicode : 找 unicode 字符"
+        }
+      ]
+    },
+    {
+      "topic": "命名",
+      "items": [
+        {
+          "title": "<a href=\"http://unbug.github.io/codelf/\">codelf</a>: 解决命名烦恼"
+        },
+        {
+          "title": "https://namelix.com/ : 解决项目命名困难"
+        },
+        {
+          "title": "https://namae.dev/ : 检查名称是否已存在"
+        },
+        {
+          "title": "<a href=\"https://github.com/uetchy/namae\">源码</a>"
+        }
+      ]
+    },
+    {
+      "topic": "团队协作",
+      "items": [
+        {
+          "title": "<a href=\"https://www.airtable.com/\">airtable</a>: 商业方案，小团队免费"
+        },
+        {
+          "title": "<a href=\"https://github.com/nocodb/nocodb\">nocodb</a>: 备选方案。开源的"
+        },
+        {
+          "topic": "即时通讯",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/mattermost/mattermost-server\">mattermost</a>: slack 的开源替代品。即时聊天。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "ChatOps",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/wechaty/wechaty\">wechaty</a>: 聊天机器人开发框架"
+        }
+      ]
+    },
+    {
+      "topic": "电子书",
+      "items": [
+        {
+          "title": "<p>交流学习使用，请勿用于非法用途。</p>"
+        },
+        {
+          "title": "https://zlib.app/"
+        },
+        {
+          "title": "https://bookpan.net/"
+        },
+        {
+          "title": "https://ylibrary.org/"
+        },
+        {
+          "title": "https://search.zhelper.net/ : 搜索前端，调用其他电子书平台的 API。直接打开链接是不可用的。需查阅<a href=\"https://docs.zhelper.net/search/\">使用帮助</a>。"
+        },
+        {
+          "title": "https://zlib.knat.network/ : 类似 zhelper 的搜索前端"
+        },
+        {
+          "title": "https://bookfere.com/tools （<a href=\"https://archive.md/pKKqS\">永久链接</a>）"
+        },
+        {
+          "topic": "电子书阅读器",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/kovidgoyal/calibre/\">calibre</a>: 开源电子书管理器，支持格式转换。"
+            },
+            {
+              "title": "<a href=\"https://github.com/noDRM/DeDRM_tools/\">DeDRM_tools</a>: calibre 插件。去除电子书的 DRM"
+            },
+            {
+              "title": "<a href=\"https://github.com/janeczku/calibre-web\">calibre-web</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/troyeguo/koodo-reader\">koodo-reader</a>: 跨平台的电子书阅读器。不支持移动端"
+            },
+            {
+              "title": "<a href=\"https://github.com/gedoor/legado\">legado</a>: 安卓平台的电子书阅读器"
+            },
+            {
+              "title": "<a href=\"https://github.com/koreader/koreader\">koreader</a>: 转为水墨屏设计的电子书阅读器"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "服务 (Service)",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/linux-china/plantuml-gist\">PlantUML Gist</a>: 基于托管在 Gist 的 <a href=\"#user-content-PlantUML\">PlantUML</a> 在线生成 UML 图"
+        },
+        {
+          "title": "<a href=\"http://sed.js.org\">在线 sed 编辑器</a>"
+        },
+        {
+          "title": "<a href=\"http://www.wikiwand.com/\">Wikiwand</a>: Wikipedia Modernized。非常漂亮的 Wikipedia 阅读器"
+        },
+        {
+          "title": "https://www.vectorizer.io/ : 位图转成矢量图 (SVG)"
+        },
+        {
+          "title": "https://www.uuidgenerator.net/ : uuid 生成器"
+        },
+        {
+          "title": "https://extendsclass.com/ : 在线工具箱，有语法校验器，加/解密，格式转换，Diff 工具，各种生成器，前端压缩等工具。"
+        },
+        {
+          "title": "<a href=\"https://gchq.github.io/CyberChef/\">CyberChef</a>: 开源的工具箱，在线提供编码/解码，压缩，数据分析，时间戳，代码格式化等功能。"
+        },
+        {
+          "title": "https://www.clahub.com/ : CLA 签署服务，开源托管。<a href=\"https://github.com/clahub/clahub\">源码</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/ehough/docker-nfs-server\">docker-nfs-server</a>: A lightweight, robust, flexible, and containerized NFS server."
+        },
+        {
+          "title": "https://alternativeto.net/ : 搜索软件或服务其他替代方案"
+        },
+        {
+          "title": "https://sesme.co/ : 阅后即焚"
+        },
+        {
+          "title": "<a href=\"https://github.com/pingcap/ossinsight\">ossinsight</a>: https://ossinsight.io/ Analysis, Comparison, Trends, Rankings of Github Repos and events"
+        },
+        {
+          "title": "<a href=\"https://github.com/mastodon/mastodon\">Mastodon</a>: 微博客社区"
+        },
+        {
+          "topic": "自部署的服务 (Self-Host Service)",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/steven-tey/dub\">Dub</a>: 开源的短链接服务，自带访问统计"
+            },
+            {
+              "title": "<a href=\"https://github.com/shlinkio/shlink\">shlink</a>: 短链服务。功能挺全。"
+            },
+            {
+              "title": "<a href=\"https://github.com/YOURLS/YOURLS\">YOURLS</a>: 备选方案"
+            },
+            {
+              "title": "<a href=\"https://github.com/rustdesk/rustdesk\">rustdesk</a>: 开源的远程控制软件 (VNC)。支持手机控制电脑，电脑控制手机。支持全平台、多语言。国产软件。"
+            },
+            {
+              "title": "<a href=\"https://github.com/rustdesk/rustdesk-server\">rustdesk-server</a>: 自建中继服务器"
+            }
+          ]
+        },
+        {
+          "topic": "评论系统",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/umputun/remark42\">remark42</a>: 评论系统"
+            },
+            {
+              "title": "<a href=\"https://github.com/walinejs/waline\">waline</a>: 备选方案"
+            },
+            {
+              "title": "<a href=\"https://github.com/ArtalkJS/Artalk\">Artalk</a>: 备选方案"
+            },
+            {
+              "title": "<a href=\"https://github.com/djyde/cusdis\">cusdis</a>: Disqus 替代品"
+            },
+            {
+              "title": "<a href=\"https://disqus.com/\">Disqus</a>: 国外的免费商业评论系统，用户体验好。但国内被墙"
+            },
+            {
+              "title": "<a href=\"https://github.com/SukkaW/DisqusJS\">DisqusJS</a>: 让 Disqus 可以在国内访问，但是只读，不能发表评论"
+            }
+          ]
+        },
+        {
+          "topic": "图床",
+          "items": [
+            {
+              "title": "https://sm.ms/ : 免费公益的图床"
+            },
+            {
+              "title": "https://imgur.com/ : 国外的图床"
+            },
+            {
+              "title": "https://cloudinary.com/"
+            },
+            {
+              "title": "<a href=\"https://github.com/Molunerfinn/PicGo\">PicGo</a>: 图床管理软件，支持各种图床服务，包括 Github。Mac 安装失败见 FAQ。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "网盘",
+      "items": [
+        {
+          "title": "<a href=\"https://www.aliyundrive.com/\">阿里云盘</a>"
+        },
+        {
+          "title": "<a href=\"https://mega.nz/\">Mega</a>: 免费版 25G 空间。需要翻墙"
+        },
+        {
+          "title": "<a href=\"https://dropbox.com/\">Dropbox</a>: 免费版 3.8G 空间。需要翻墙"
+        },
+        {
+          "title": "<a href=\"https://maestral.app/\">Maestral</a>: 开源的 Dropbox 客户端。有 CLI 工具，支持 Linux。"
+        },
+        {
+          "title": "<a href=\"https://github.com/nextcloud/server\">Nextcloud</a>: 开源的网盘方案，客户端支持很多平台。用户体验很好，可与商业产品竞争。支持插件。"
+        },
+        {
+          "title": "<a href=\"https://github.com/haiwen/seafile\">Seafile</a>"
+        },
+        {
+          "title": "<a href=\"https://trainbit.com/\">Trainbit</a>"
+        },
+        {
+          "title": "<a href=\"https://rapidupload.1kbtool.com/\">百度网盘秒传链接转存</a>"
+        },
+        {
+          "title": "<a href=\"https://ttttt.link\">钛盘</a>"
+        },
+        {
+          "title": "<a href=\"https://tmp.link\">国际版</a>"
+        }
+      ]
+    },
+    {
+      "topic": "临时共享",
+      "items": [
+        {
+          "title": "<a href=\"https://cowtransfer.com/\">奶牛快传</a> : 临时文件分享，很好用。国内服务"
+        },
+        {
+          "title": "https://snapdrop.net/ : 通过网页在局域网内端到端传输文件，可用 Docker 自己部署"
+        },
+        {
+          "title": "<a href=\"https://github.com/RobinLinus/snapdrop\">源码</a>"
+        },
+        {
+          "title": "https://wormhole.app/ : 端到端加密，自动过期，单个文件最大 10 GB"
+        },
+        {
+          "title": "<a href=\"https://github.com/dutchcoders/transfer.sh\">transfer.sh</a>: 共享文件的命令行程序"
+        }
+      ]
+    },
+    {
+      "topic": "爬虫代理池",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/jhao104/proxy_pool\">proxy_pool</a>"
+        },
+        {
+          "title": "https://proxy.mimvp.com/"
+        }
+      ]
+    },
+    {
+      "topic": "HTTP 静态文件服务",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/static-web-server/static-web-server\">static-web-server</a>: Rust 写的。<a href=\"https://hub.docker.com/r/joseluisq/static-web-server\">Docker Alpine 镜像</a>大小 3 MB。"
+        },
+        {
+          "title": "<a href=\"https://github.com/caddyserver/caddy\">caddy</a>: Go 写的。<a href=\"https://hub.docker.com/_/caddy\">Docker Alpine 镜像</a>大小 16 MB。"
+        },
+        {
+          "title": "<a href=\"https://github.com/http-party/http-server\">http-server</a>: NodeJS 写的。"
+        },
+        {
+          "title": "<a href=\"https://github.com/lipanski/docker-static-website\">lipanski/docker-static-website</a>: 基于 busybox 自带的 httpd 程序。Docker 镜像大小 154KB。功能有限。"
+        }
+      ]
+    },
+    {
+      "topic": "静态文件托管",
+      "items": [
+        {
+          "title": "http://surge.sh  Static web publishing for Front-End Developers. 设计非常优雅，强烈推荐！"
+        },
+        {
+          "title": "https://www.netlify.com/"
+        }
+      ]
+    },
+    {
+      "topic": "CMS",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/netlify/headlesscms.org\">headless cms</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/strapi/strapi\">strapi</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/TryGhost/Ghost\">Ghost</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/netlify/netlify-cms\">netlify-cms</a>: 基于 Git 服务（比如 github、gitlab）的 Open API 的 CMS。开源项目挺有用。商业项目不适合用。"
+        },
+        {
+          "title": "<a href=\"https://github.com/roapi/roapi\">ROAPI</a>: 把数据源直接以 GraphQL、SQL、RESTful API 暴露。"
+        },
+        {
+          "title": "<a href=\"https://github.com/keystonejs/keystone\">keystone</a>: Headless CMS. Built with GraphQL and React"
+        }
+      ]
+    },
+    {
+      "topic": "PaaS",
+      "items": [
+        {
+          "title": "<p><a href=\"http://www.jancarloviray.com/blog/paas-comparison-2017-dokku-flynn-deis-kubernetes-docker-swarm/\">PAAS comparison - Dokku vs Flynn vs Deis vs Kubernetes vs Docker Swarm (2017)</a></p>"
+        },
+        {
+          "title": "<a href=\"https://kubernetes.io/\">kubernetes</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/dokku/dokku\">dokku</a>: 单机版 PaaS，低门槛"
+        },
+        {
+          "title": "<a href=\"https://planetscale.com/\">planetscale</a>: Serverless MySQL 服务，5GB 免费使用量。"
+        },
+        {
+          "title": "<a href=\"https://railway.app/\">railway.app</a>: 非常棒的应用托管平台。每月赠送 $5，500 小时的免费用量。缺点是部署后就不能停止服务，只能删了部署重来。"
+        },
+        {
+          "title": "https://vercel.com/"
+        },
+        {
+          "title": "https://fly.io/ 免费版支持 3 shared-cpu-1x 256mb VMs, 3GB 存储，160GB 输出带宽。"
+        },
+        {
+          "title": "https://deta.space/ 免费服务"
+        },
+        {
+          "title": "https://www.koyeb.com/"
+        },
+        {
+          "title": "https://qoddi.com/"
+        },
+        {
+          "title": "https://adaptable.io/"
+        },
+        {
+          "title": "https://render.com/"
+        }
+      ]
+    },
+    {
+      "topic": "Serverless",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/apex/up\">apex/up</a>: 值得期待"
+        },
+        {
+          "title": "https://hackernoon.com/up-b3db1ca930ee"
+        },
+        {
+          "title": "<a href=\"https://github.com/serverless/serverless\">serverless/serverless</a>"
+        },
+        {
+          "title": "https://workers.cloudflare.com/ : cloudflare 提供的边缘计算服务"
+        },
+        {
+          "title": "<a href=\"https://github.com/kubeless/kubeless\">kubeless</a>: FaaS in k8s"
+        }
+      ]
+    },
+    {
+      "topic": "microVM",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/firecracker-microvm/firecracker\">firecracker</a>: Secure and fast microVMs for serverless computing。AWS 出品"
+        },
+        {
+          "title": "<a href=\"https://github.com/weaveworks/ignite/\">weaveworks/ignite</a>: a declarative Firecracker microVM administration tool"
+        },
+        {
+          "title": "<a href=\"https://github.com/kubevirt/kubevirt\">kubevirt</a>: 「待评价」KubeVirt is a virtual machine management add-on for Kubernetes. The aim is to provide a common ground for virtualization solutions on top of Kubernetes."
+        },
+        {
+          "title": "https://katacontainers.io/ : 备选方案"
+        }
+      ]
+    },
+    {
+      "topic": "跳板机/堡垒机",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/jumpserver/jumpserver\">jumpserver</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/gravitational/teleport\">teleport</a>"
+        }
+      ]
+    },
+    {
+      "topic": "REPL",
+      "items": [
+        {
+          "title": "<a href=\"https://repl.it/languages\">repl.it</a>: 运行在浏览器的 REPL"
+        },
+        {
+          "title": "<a href=\"https://runkit.com/home\">runkit</a>: 非常酷！在前端直接引用 npm 包编写代码 <code>ⱳ</code>"
+        },
+        {
+          "title": "https://codesandbox.io"
+        }
+      ]
+    },
+    {
+      "topic": "正则表达式 (Regex)",
+      "items": [
+        {
+          "title": "https://regexr.com/ : 正则表达式编辑器。仅支持 JS/PHP"
+        },
+        {
+          "title": "https://regex101.com/ : 支持 JS/PHP/Python/Go/Java/C#"
+        },
+        {
+          "title": "https://regexper.com : 正则表达式可视化 <code>ⱳ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/ziishaned/learn-regex\">Learn regex the easy way</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/pemistahl/grex\">grex</a>: 根据给出的文本，自动给出合适的正则表达式"
+        }
+      ]
+    },
+    {
+      "topic": "数据可视化",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/modood/Administrative-divisions-of-China\">Administrative-divisions-of-China</a>: 中国省、地、县、乡、村级数据。"
+        },
+        {
+          "title": "<a href=\"https://grafana.com/grafana\">Grafana</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/elastic/kibana\">kibana</a>"
+        },
+        {
+          "topic": "地图",
+          "items": [
+            {
+              "title": "<a href=\"https://docs.mapbox.com/mapbox-gl-js/guides/\">Mapbox GL JS</a>: 地图可视化"
+            },
+            {
+              "title": "<a href=\"https://github.com/erik/derive\">derive</a>: 足迹热力图"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "日志",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/allinurl/goaccess\">goaccess</a>: GoAccess is a real-time web log analyzer and interactive viewer that runs in a terminal in *nix systems or through your browser."
+        }
+      ]
+    },
+    {
+      "topic": "交互式 Notebook",
+      "items": [
+        {
+          "title": "<a href=\"http://jupyter.org/\">Jupyter</a>: 交互式可编程的 notebook，主要支持 python。也可扩展支持其他语言"
+        },
+        {
+          "title": "<a href=\"https://github.com/jupyterlab/jupyterlab\">JupyterLab</a>: Jupyter 新的 Web 界面。"
+        },
+        {
+          "title": "<a href=\"https://zhuanlan.zhihu.com/p/33898478\">介绍</a>"
+        },
+        {
+          "title": "<a href=\"https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/master?urlpath=lab/tree/demo\">DEMO</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nteract/nteract\">nteract</a>: 基于 Jupyter 的前端跨平台项目"
+        },
+        {
+          "title": "吃灰但值得一看的项目"
+        },
+        {
+          "title": "<a href=\"https://github.com/witheve/eve\">EVE</a>: 「<a href=\"https://github.com/witheve/Eve/issues/889#issuecomment-395056593\">团队解散</a>」非常酷的概念，Literate Programming 的一种实现，Medium 式编程。"
+        },
+        {
+          "title": "<a href=\"https://github.com/joelotter/kajero\">kajero</a>: 「无人维护」Interactive JavaScript notebooks with clever graphing"
+        },
+        {
+          "title": "https://mybinder.org/"
+        },
+        {
+          "title": "源码 <a href=\"https://github.com/jupyterhub/binderhub\">binderhub</a>"
+        },
+        {
+          "title": "<a href=\"https://quarto.org/\">Quarto</a>: an open-source scientific and technical publishing system built on Pandoc"
+        }
+      ]
+    },
+    {
+      "topic": "简历",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/rbardini/resumed\">resumed</a>: 基于 jsonresume 生成静态网页"
+        },
+        {
+          "title": "https://jsonresume.org/ : 用 JSON 描述简历"
+        },
+        {
+          "title": "https://jsonresume.org/themes/ : 别人基于 jsonresume 做的主题"
+        },
+        {
+          "title": "<a href=\"https://github.com/sharu725/online-cv\">online-cv</a>: 适用于生成简历文档"
+        }
+      ]
+    },
+    {
+      "topic": "Zig",
+      "items": []
+    },
+    {
+      "topic": "Lua",
+      "items": []
+    },
+    {
+      "topic": "Python",
+      "items": []
+    },
+    {
+      "topic": "Java",
+      "items": []
+    },
+    {
+      "topic": "Golang",
+      "items": []
+    },
+    {
+      "topic": "NodeJS",
+      "items": []
+    },
+    {
+      "topic": "TypeScript",
+      "items": []
+    },
+    {
+      "topic": "WebAssembly",
+      "items": []
+    },
+    {
+      "topic": "Nix",
+      "items": []
+    },
+    {
+      "topic": "前端开发",
+      "items": []
+    },
+    {
+      "topic": "Docker",
+      "items": []
+    },
+    {
+      "topic": "K8S/Kubernetes",
+      "items": []
+    },
+    {
+      "topic": "硬件",
+      "items": []
+    },
+    {
+      "topic": "HASS (Home Assistant)",
+      "items": []
+    },
+    {
+      "topic": "虚拟化",
+      "items": [
+        {
+          "title": "<a href=\"https://proxmox.com/en/proxmox-ve\">Proxmox VE</a>: 开源方案，基于 Debian 开发的 Linux 系统。支持 KVM 和 LXC。"
+        },
+        {
+          "title": "<a href=\"https://www.virtualbox.org/\">VirtualBox</a>: 家用、商用方案"
+        },
+        {
+          "title": "<a href=\"https://github.com/hashicorp/vagrant\">Vagrant</a>: 家用、商用方案"
+        },
+        {
+          "title": "https://app.vagrantup.com/ : vagrant box 仓库"
+        },
+        {
+          "title": "<a href=\"https://github.com/dotless-de/vagrant-vbguest\">vagrant-vbguest</a>: 安装 VirtualBox Guest Additions 以支持宿主机与虚拟机共享目录的双向同步"
+        },
+        {
+          "title": "<a href=\"http://vagrantmanager.com/\">Vagrant Manager</a>: Vagrant 管理器。菜单栏工具。"
+        },
+        {
+          "title": "<a href=\"https://github.com/chef/bento\">bento</a>: build minimal Vagrant baseboxes"
+        },
+        {
+          "title": "<a href=\"https://github.com/invernizzi/vagrant-scp\">vagrant-scp</a>: Vagrant 支持 scp"
+        },
+        {
+          "topic": "libvirt/KVM",
+          "items": [
+            {
+              "title": "<a href=\"https://www.linux-kvm.org/page/Main_Page\">KVM</a>: 开源免费，最强大的虚拟化工具"
+            },
+            {
+              "title": "<a href=\"https://github.com/kimchi-project/kimchi\">kimchi</a>: Kimchi manages KVM guests through libvirt. The management interface is accessed over the web using a browser that supports HTML5."
+            },
+            {
+              "title": "<a href=\"https://github.com/retspen/webvirtcloud\">WebVirtCloud</a>: virtualization web interface for admins and users"
+            },
+            {
+              "title": "<a href=\"https://github.com/debauchee/barrier\">barrier</a>: KVM switch over http"
+            },
+            {
+              "title": "<a href=\"https://github.com/tiny-pilot/tinypilot\">TinyPilot</a>: KVM over IP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "模板引擎",
+      "items": [
+        {
+          "title": "<a href=\"https://www.gnu.org/software/gettext/manual/html_node/envsubst-Invocation.html\">envsubst</a>: GNU 工具，<code>${VARIABLE}</code> 语法变量替换"
+        },
+        {
+          "title": "<a href=\"https://github.com/danday74/envsub\">danday74/envsub</a>"
+        },
+        {
+          "title": "<a href=\"http://mustache.github.io/\">mustache</a>: 简单变量替换用 mustache 即可。"
+        },
+        {
+          "title": "<a href=\"https://github.com/wycats/handlebars.js\">handlebars</a>: mustache 的超集，支持复杂的语法和可扩展"
+        },
+        {
+          "title": "<a href=\"https://lodash.com/docs/#template\">lodash.template</a>: 可以兼容各种模板变量语法，体积较小"
+        },
+        {
+          "title": "<a href=\"https://github.com/mozilla/nunjucks\">nunjucks</a>: jinja2 inspired templating engine in nodejs"
+        },
+        {
+          "title": "<a href=\"https://github.com/aui/art-template\">art-template</a>: 官宣性能最高的模板引擎"
+        },
+        {
+          "title": "<a href=\"https://jinja.palletsprojects.com\">Jinja</a>: Ansible 使用的模板引擎"
+        },
+        {
+          "title": "<a href=\"https://cryptic-cliffs-32040.herokuapp.com\">Jinja 模板在线渲染</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/hairyhenderson/gomplate\">gomplate</a>: 用 Go 写的命令行工具"
+        }
+      ]
+    },
+    {
+      "topic": "TeX/LaTeX",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/egeerardyn/awesome-LaTeX\">awesome-LaTeX</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/luong-komorebi/Begin-Latex-in-minutes/blob/master/Translation-Chinese.md\">Begin-Latex-in-minutes</a>"
+        },
+        {
+          "title": "<a href=\"https://www.xm1math.net/texmaker/\">TEXMaker</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/KaTeX/KaTeX\">KaTeX</a>: Fast math typesetting for the web. https://katex.org/"
+        }
+      ]
+    },
+    {
+      "topic": "Slide/Presentation",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/slidevjs/slidev\">slidev</a>: https://sli.dev/"
+        },
+        {
+          "title": "<a href=\"https://github.com/FormidableLabs/spectacle\">spectacle</a>: 基于 React 写的 slide"
+        },
+        {
+          "title": "<a href=\"https://github.com/bespokejs/bespoke\">bespoke</a>: DIY Presentation Micro-Framework"
+        },
+        {
+          "title": "<a href=\"https://github.com/impress/impress.js\">impress.js</a>: 类似 prezi.com 的 slide 框架"
+        },
+        {
+          "title": "<a href=\"https://github.com/ksky521/nodeppt\">nodeppt</a>: 这可能是迄今为止最好的网页版演示库"
+        },
+        {
+          "title": "https://slides.com/ : 基于 <a href=\"https://github.com/hakimel/reveal.js\">reveal.js</a> 的服务，非常好用，但是国内要翻墙 <code>ⱳ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/jxnblk/mdx-deck\">mdx-deck</a>: 基于 MDX 写 slide"
+        }
+      ]
+    },
+    {
+      "topic": "SSG: Static Site Generator",
+      "items": [
+        {
+          "title": "<a href=\"https://jekyllrb.com/\">Jekyll</a>: Ruby 生态。Github Page 默认 SSG。markdown 文本编译成网页。主题和插件生态非常丰富。"
+        },
+        {
+          "title": "<a href=\"https://adoyle.me/Today-I-Learned/others/jekyll.html\">我的使用经验</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/allejo/jekyll-toc\">jekyll-toc</a>: 给 Github Page 的 jekyll 主题增加 TOC"
+        },
+        {
+          "title": "<a href=\"https://github.com/benbalter/jekyll-remote-theme\">jekyll-remote-theme</a>: 自动安装 jekyll 主题"
+        },
+        {
+          "title": "<a href=\"https://github.com/just-the-docs/just-the-docs\">just-the-docs</a>: 基于 Jekyll，适用于生成项目文档。搜索功能强大。"
+        },
+        {
+          "title": "缺点"
+        },
+        {
+          "title": "导航栏的编排很冗余。必须要给 markdown 文档加内容。"
+        },
+        {
+          "title": "<code>{:toc}</code> 这类语法依赖 kramdown，如果 _config.yml 修改了 markdown 解析器，这类语法<a href=\"https://github.com/just-the-docs/just-the-docs/issues/1159\">将会失效</a>。"
+        },
+        {
+          "title": "搜索栏默认<a href=\"https://github.com/just-the-docs/just-the-docs/issues/59\">不支持中文</a>，它使用 <a href=\"https://github.com/olivernn/lunr.js\">lunr.js</a>，需要自己添加<a href=\"https://github.com/MihaiValentin/lunr-languages\">语言包</a>，得改很多东西。</li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"https://github.com/cotes2020/jekyll-theme-chirpy\">jekyll-theme-chirpy</a>: 支持中文，TOC，搜索。"
+        },
+        {
+          "title": "<a href=\"https://github.com/gohugoio/hugo\">Hugo</a>: Go 生态。"
+        },
+        {
+          "title": "<a href=\"https://github.com/gatsbyjs/gatsby\">gatsby</a>: JS + React 生态。适合与 CMS、API、数据库搭配使用。"
+        },
+        {
+          "title": "<a href=\"https://hexo.io/\">Hexo</a>: 适用于搭建个人博客。JS 生态。"
+        },
+        {
+          "title": "<a href=\"https://github.com/getzola/zola\">Zola</a>: Rust 生态。自带搜索栏。"
+        },
+        {
+          "title": "<a href=\"https://github.com/gatsbyjs/gatsby\">Gastby</a>: 基于 React 和 GraphQL 的现代化静态网站生成器。可扩展性好。"
+        },
+        {
+          "title": "<a href=\"https://github.com/doczjs/docz\">docz</a>: 基于 MDX 和 Gastby 的，零配置的，文档生成器"
+        },
+        {
+          "title": "<a href=\"https://github.com/docsifyjs/docsify\">docsify</a>: 基于 Markdown 的文档生成器。在浏览器直接加载 Markdown 文档实时渲染。细节功能做得不是很理想。<code>routerMode: 'history'</code> 针对静态页面托管方案（比如 Github Pages）无效。"
+        },
+        {
+          "title": "<a href=\"https://github.com/egoist/docute\">docute</a>: 类似技术的备选方案"
+        },
+        {
+          "title": "<a href=\"https://github.com/facebook/docusaurus\">docusaurus</a>: JS + React + MDX"
+        },
+        {
+          "title": "<a href=\"https://github.com/vercel/next.js\">next.js</a>: 「待评价」"
+        },
+        {
+          "title": "<a href=\"https://github.com/withastro/astro\">astro</a>: 「待评价」"
+        },
+        {
+          "title": "<a href=\"https://github.com/11ty/eleventy\">eleventy</a>: 「待评价」"
+        },
+        {
+          "title": "<a href=\"https://github.com/benjycui/bisheng\">bisheng</a>: 「待评价」"
+        },
+        {
+          "title": "<a href=\"https://github.com/robinmoisson/staticrypt\">staticrypt</a>: 加密静态网页，解密无需后端服务"
+        },
+        {
+          "topic": "JAMstack",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/jamstack/jamstack.org\">jamstack.org</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "文档",
+      "items": [
+        {
+          "topic": "文档系统",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/AppFlowy-IO/AppFlowy\">AppFlowy</a>: 类似 Notion 的笔记系统。基于 Flutter 和 Rust 开发"
+            },
+            {
+              "title": "<a href=\"https://github.com/outline/outline\">outline</a>: 类似 Notion 的知识库、WIKI 平台"
+            },
+            {
+              "title": "<a href=\"https://www.notion.so/\">Notion</a>: 笔记工具"
+            },
+            {
+              "title": "https://timelinetool.app/notion/event : 统计公开链接的 PV 的 embed 插件"
+            },
+            {
+              "title": "基于 Notion 的网站"
+            },
+            {
+              "title": "https://popsy.co/ : 自定义域名免费。收费功能 8 刀/月"
+            },
+            {
+              "title": "https://super.so/ : 用户体验优秀。自定义域名收费。收费功能 12 刀/月"
+            },
+            {
+              "title": "基于 Notion 自建网站"
+            },
+            {
+              "title": "<a href=\"https://github.com/NotionX/react-notion-x\">react-notion-x</a>: 用 react 组件搭建 notion page"
+            },
+            {
+              "title": "<a href=\"https://github.com/ijjk/notion-blog\">notion-blog</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/transitive-bullshit/nextjs-notion-starter-kit\">nextjs-notion-starter-kit</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/makenotion/notion-sdk-js\">notion-sdk-js</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/Requarks/wiki\">wiki.js</a>: 现代化的 WIKI。AGPL-3.0 License"
+            },
+            {
+              "title": "<a href=\"https://www.sphinx-doc.org\">sphinx-doc</a>: reStructuredText 文档渲染工具"
+            }
+          ]
+        },
+        {
+          "topic": "文档处理",
+          "items": [
+            {
+              "title": "<a href=\"https://pandoc.org/\">pandoc</a>: 各种格式的文档转换工具\n<a name=\"unified\"></a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/unifiedjs/unified\">unified</a>: interface for parsing, inspecting, transforming, and serializing content through syntax trees"
+            },
+            {
+              "title": "<a href=\"https://github.com/rehypejs/rehype\">rehype</a>: HTML processor"
+            },
+            {
+              "title": "<a href=\"https://github.com/dawnlabs/carbon\">carbon</a>: 代码转成图片"
+            },
+            {
+              "title": "<a href=\"https://github.com/vinta/pangu.js\">盤古之白</a>: 给文档加空格"
+            },
+            {
+              "title": "https://github.com/vinta/pangu.space : Web API"
+            }
+          ]
+        },
+        {
+          "topic": "文档检查",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/lycheeverse/lychee\">lychee</a>: Rust 写的"
+            },
+            {
+              "title": "<a href=\"https://github.com/tcort/markdown-link-check\">markdown-link-check</a>: 备用方案。没人维护。JS 写的"
+            }
+          ]
+        },
+        {
+          "topic": "文档排版",
+          "items": [
+            {
+              "title": "<a href=\"https://www.w3.org/TR/clreq/\">中文排版需求</a>"
+            },
+            {
+              "title": "https://github.com/w3c/clreq"
+            },
+            {
+              "title": "<a href=\"https://github.com/sparanoid/chinese-copywriting-guidelines\">中文文案排版指北</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/sivan/heti\">赫蹏（hètí）</a>: css 样式"
+            }
+          ]
+        },
+        {
+          "topic": "Markdown",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/joeyespo/grip\">grip</a>: Markdown 即时渲染服务器"
+            },
+            {
+              "title": "<a href=\"https://github.com/yoshuawuyts/vmd\">vmd</a>: Markdown 即时渲染应用。备选方案"
+            },
+            {
+              "title": "<a href=\"https://github.com/IonicaBizau/json2md\">json2md</a>: 非常灵活的 Markdown 生成工具，容易自己定制功能"
+            },
+            {
+              "title": "<a href=\"https://github.com/jonschlinkert/markdown-toc\">markdown-toc</a>: 根据 markdown heading 文本输出 TOC"
+            },
+            {
+              "title": "<a href=\"#unified\">unified</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/markedjs/marked\">marked</a>: 备用方案"
+            },
+            {
+              "title": "<a href=\"https://github.com/remarkjs/remark\">remark</a>: markdown processor"
+            },
+            {
+              "title": "<a href=\"https://github.com/mdx-js/mdx\">mdx</a>: Markdown + JSX = MDX。支持模块导入和导出，支持 React 组件。写 Web 文档利器。"
+            },
+            {
+              "title": "<a href=\"https://github.com/code-hike/codehike\">Code Hike</a>: MDX 的 remark 插件。使用场景：code walkthrough。"
+            }
+          ]
+        },
+        {
+          "topic": "Changelog",
+          "items": [
+            {
+              "title": "http://keepachangelog.com/  Changelog 书写规约"
+            },
+            {
+              "title": "<a href=\"https://github.com/googleapis/release-please\">release-please</a>: 结合 Github Action 自动执行：生成 Changelog，打 tag，发 Release"
+            },
+            {
+              "title": "<a href=\"https://github.com/git-chglog/git-chglog\">git-chglog</a>: CHANGELOG generator implemented in Go"
+            },
+            {
+              "title": "<a href=\"https://github.com/conventional-changelog/standard-version\">standard-version</a>: Automate versioning and CHANGELOG generation, with semver.org and conventionalcommits.org (现在无人维护)"
+            },
+            {
+              "title": "conventional-changelog 的 <a href=\"https://github.com/conventional-changelog/conventional-changelog-config-spec/\">.versionrc 配置</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/semantic-release/semantic-release\">semantic-release</a>: 备选方案"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Hash",
+      "items": [
+        {
+          "title": "<a href=\"https://www.wikiwand.com/en/List_of_hash_functions\">Wikipedia - List of hash functions</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/Cyan4973/xxHash\">xxHash</a>"
+        },
+        {
+          "title": "<a href=\"https://hashids.org/\">hashids</a>"
+        }
+      ]
+    },
+    {
+      "topic": "图像处理",
+      "items": []
+    },
+    {
+      "topic": "视频处理",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/JonnyBurger/remotion\">Remotion</a>: 用 React 制作视频"
+        }
+      ]
+    },
+    {
+      "topic": "压缩/解压",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/facebook/zstd\">zstd</a>: 压缩比率、速度都很高。"
+        },
+        {
+          "title": "<a href=\"https://github.com/google/snappy\">snappy</a>: 速度非常快，但压缩比低。"
+        },
+        {
+          "title": "<a href=\"https://github.com/mozilla/mozjpeg\">mozjpeg</a>: mozilla 出品的 JPEG 图像压缩算法，压缩率很高"
+        }
+      ]
+    },
+    {
+      "topic": "OCR",
+      "items": []
+    },
+    {
+      "topic": "Android",
+      "items": []
+    },
+    {
+      "topic": "截图/录屏",
+      "items": [
+        {
+          "title": "<a href=\"https://cleanshot.com/\">CleanShot X</a>: 用户体验很优秀。价格略贵。支持截图/窗口截图/截屏/滚动截屏/录屏/录音/OCR 识别/标注"
+        },
+        {
+          "title": "<a href=\"https://monosnap.com/welcome\">Monosnap</a>: 免费又强大的截图/截屏/录屏(支持 GIF 和 MP4)。不支持滚动截屏。 <a name=\"Monosnap\"></a>"
+        },
+        {
+          "title": "<a href=\"https://apps.apple.com/cn/app/ishot-%E6%88%AA%E5%9B%BE-%E9%95%BF%E6%88%AA%E5%9B%BE-%E6%A0%87%E6%B3%A8%E5%B7%A5%E5%85%B7/id1485844094\">iShot</a>: 支持截图/截屏/滚动截屏/录屏/录音/OCR 识别/标注。过了试用期后能用，但是图片会带水印。"
+        },
+        {
+          "title": "Mac 系统自带截图工具。不支持滚动截屏，其他功能都有。Safari 支持滚动截屏。"
+        },
+        {
+          "title": "screencapture:  Mac 自带命令，截图/截屏工具。"
+        },
+        {
+          "title": "<a href=\"https://zh.snipaste.com/\">Snipaste</a>: windows 截图/截屏工具 <code>ⓦ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/wulkano/kap/\">kap</a>: 用户体验很好的，开源的录屏工具，支持 GIF, MP4, WebM, APNG <code>Ⓜ</code> <code>⨀</code>"
+        }
+      ]
+    },
+    {
+      "topic": "视频/音频",
+      "items": [
+        {
+          "title": "<a href=\"https://obsproject.com/\">OBS</a>: 非常好用的推流和录制工具。免费。"
+        },
+        {
+          "title": "<a href=\"https://github.com/obsproject/obs-studio\">源码 obsproject/obs-studio</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/Palakis/obs-ndi\">obs-ndi</a>: 采集窗口的视频和音频"
+        },
+        {
+          "title": "<a href=\"https://staticz.com/soundsiphon/\">Sound Siphon</a>: Mac 下最好用的音频录制工具。能创建虚拟输入设备。能把任何应用的音频输出转发到另一个应用上。价格有点贵。 <code>Ⓜ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/ExistentialAudio/BlackHole\">BlackHole</a>: 免费的开源方案"
+        },
+        {
+          "title": "<a href=\"https://rogueamoeba.com/loopback/\">loopback</a>: 类似的备选方案，价格更贵 <code>Ⓜ</code>"
+        },
+        {
+          "title": "<a href=\"https://rogueamoeba.com/audiohijack/\">Audio Hijack</a>: 专业录音工具。不能创建虚拟设备。 <code>Ⓜ</code>"
+        },
+        {
+          "title": "<a href=\"https://overcast.fm/forecast\">forecast</a>: MP3 metadata 编辑器。做播客会用到。 <code>Ⓜ</code>\n<a name=\"mpv\"></a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/mpv-player/mpv\">mpv</a>: 跨平台的媒体播放器，支持命令行"
+        },
+        {
+          "title": "<a href=\"https://github.com/videolan/vlc\">vlc</a>: 备选方案"
+        },
+        {
+          "title": "<a href=\"https://github.com/lhc70000/iina\">iina</a>: 视频播放器。基于 <a href=\"#user-content-mpv\">mpv</a> 开发 <code>Ⓜ</code>"
+        },
+        {
+          "title": "<a href=\"https://github.com/HandBrake/HandBrake\">HandBrake</a>: 视频转码器"
+        },
+        {
+          "topic": "音乐",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/musescore/MuseScore\">MuseScore</a>: 开源的打谱软件"
+            },
+            {
+              "title": "https://musescore.com/ : MuseScore 曲谱分享平台。包含可视化弹奏等强大功能。大部分功能收费。"
+            },
+            {
+              "title": "http://etaaudio.com/ : 遵循 CC 协议分享的音乐库"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "知识图谱",
+      "items": []
+    },
+    {
+      "topic": "互联网关键词趋势",
+      "items": [
+        {
+          "title": "<a href=\"https://trends.google.com/trends/\">Google Trends</a>"
+        }
+      ]
+    },
+    {
+      "topic": "机器学习",
+      "items": []
+    },
+    {
+      "topic": "AI 工具集",
+      "items": [
+        {
+          "title": "https://www.futuretools.io/"
+        },
+        {
+          "title": "https://ai-bot.cn/"
+        },
+        {
+          "title": "https://www.gptcases.com/"
+        },
+        {
+          "title": "https://convert.leiapix.com/ : 2D 图片添加 3D 效果。"
+        },
+        {
+          "title": "https://flowgpt.ai/ : 这个工具能够用流程图的形式，把 ChartGPT 问答串联起来。适合做教学模板。"
+        },
+        {
+          "title": "https://www.chatpdf.com/ : 帮助用户阅读电子书"
+        }
+      ]
+    },
+    {
+      "topic": "运营",
+      "items": [
+        {
+          "title": "https://lab.lyric.im/wxformat/ : Markdown 转微信公众号排版的工具"
+        },
+        {
+          "title": "<a href=\"https://github.com/lyricat/wechat-format\">源码</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/wechatsync/Wechatsync\">Wechatsync</a>: 一键多平台同步发布文章。支持微信公众号、知乎、微博、今日头条、BiliBili、WordPress、简书、掘金、typecho 等平台"
+        }
+      ]
+    },
+    {
+      "topic": "中国特色",
+      "items": []
+    },
+    {
+      "topic": "人文",
+      "items": []
+    },
+    {
+      "topic": "Funny",
+      "items": []
+    },
+    {
+      "topic": "游戏开发",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/cheat-engine/cheat-engine/\">cheat-engine</a>: 游戏内存修改器。支持 Mac。"
+        },
+        {
+          "title": "<a href=\"https://github.com/godotengine/godot\">godot</a>: 免费的游戏引擎。MIT License"
+        },
+        {
+          "title": "<a href=\"https://github.com/Vivraan/godot-lang-support\">godot-lang-support</a>: godot 其他编程语言扩展"
+        }
+      ]
+    },
+    {
+      "topic": "二维码",
+      "items": [
+        {
+          "title": "<a href=\"https://qrbtf.com/\">二维码生成器</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/soldair/node-qrcode\">qrcode</a>: 命令行版二维码生成器"
+        }
+      ]
+    },
+    {
+      "topic": "FTP",
+      "items": [
+        {
+          "title": "<a href=\"https://security.appspot.com/vsftpd.html\">vsftpd</a>: Very Secure FTP Daemon"
+        },
+        {
+          "title": "<a href=\"https://uftp-multicast.sourceforge.net/\">uftp</a>: 基于 UDP 的 FTP 服务器和客户端"
+        },
+        {
+          "title": "<a href=\"https://www.ncftp.com/ncftp/\">ncftp</a>: ftp 命令行客户端，macos、linux 平台通用。缺点是不支持 ftp over ssl。"
+        },
+        {
+          "title": "<a href=\"https://lftp.yar.ru\">lftp</a>: macos、linux 平台通用。支持 ftp over TLS or OpenSSL。缺点是没有 lls 这样的指令。只能用 <code>!</code>。"
+        },
+        {
+          "title": "<a href=\"https://panic.com/transmit/\">Transmit</a>: Mac 平台的 FTP/SFTP/WebDAV/S3/Backblaze B2/Box/Google Drive/DreamObjects/Dropbox/Microsoft Azure/Rackspace Cloud Files 客户端 APP。<hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "别人的工具列表",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md\">jaywcjlove/awesome-mac</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/skyseraph/Soft-Tools\">skyseraph/Soft-Tools</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/Kickball/awesome-selfhosted\">Kickball/awesome-selfhosted</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/sbilly/awesome-security\">sbilly/awesome-security</a>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

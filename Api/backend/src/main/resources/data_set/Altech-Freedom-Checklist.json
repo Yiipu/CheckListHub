@@ -1,0 +1,296 @@
+{
+  "id": 2,
+  "header": "Altech-Freedom-Checklist",
+  "topicList": [
+    "Cloud (Alternative Google Drive, DropBox)",
+    "Web Browsers (Alternative to Chrome, Firefox)",
+    "Search Engines",
+    "Messaging",
+    "Music",
+    "VPS (Alternative to AWS, Google Cloud, Azure)",
+    "Password Manager",
+    "Phone (Alternative to iPhone, and other Android Phones)",
+    "Laptop",
+    "Video/Streaming Platforms",
+    "Money (Alternative to the Dollar and other Fiat currencies)",
+    "Node (self host)",
+    "Savings accounts",
+    "Proprietary but better than bank returns with stablecoins",
+    "Decentralized Finance",
+    "TV/Movies",
+    "Maps"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Cloud (Alternative Google Drive, DropBox)",
+      "items": [
+        {
+          "title": "Nextcloud (ownyourbits nextcloudpi is the best for this)"
+        }
+      ]
+    },
+    {
+      "topic": "Web Browsers (Alternative to Chrome, Firefox)",
+      "items": [
+        {
+          "title": "Brave (This is the worst browser you should even consider)"
+        },
+        {
+          "title": "Librewolf (Coming from Firefox)"
+        },
+        {
+          "title": "Ungoogled-Chromium (Coming from Chrome)"
+        }
+      ]
+    },
+    {
+      "topic": "Search Engines",
+      "items": [
+        {
+          "title": "Searx"
+        },
+        {
+          "title": "Startpage"
+        },
+        {
+          "title": "DuckDuckGo (Idk if I trust these guys)"
+        },
+        {
+          "title": "Brave has a new private search you can sign up for"
+        }
+      ]
+    },
+    {
+      "topic": "Messaging",
+      "items": [
+        {
+          "title": "Telegram (Absolute worst you should be using)"
+        },
+        {
+          "title": "Signal (Needs a phone number, not ideal)"
+        },
+        {
+          "title": "Matrix (Chad chat app, no need for number or email)"
+        },
+        {
+          "title": "Session (Also Chad but a bit newer)"
+        },
+        {
+          "title": "Brier (All on device, can be used with no net access)"
+        },
+        {
+          "title": "Nextcloud Talk (nextcloudpi works great for this)"
+        }
+      ]
+    },
+    {
+      "topic": "Music",
+      "items": [
+        {
+          "title": "Plex (This is the worst you should even consider)"
+        },
+        {
+          "title": "Jellyfin (Really for video, but can do music too)"
+        }
+      ]
+    },
+    {
+      "topic": "VPS (Alternative to AWS, Google Cloud, Azure)",
+      "items": [
+        {
+          "title": "Filebase"
+        },
+        {
+          "title": "Vultr"
+        },
+        {
+          "title": "Linode"
+        }
+      ]
+    },
+    {
+      "topic": "Password Manager",
+      "items": [
+        {
+          "title": "MyKi (Interesting because no cloud, not sure if free tho)"
+        },
+        {
+          "title": "Bitwarden (Best with your own server)"
+        },
+        {
+          "title": "KeePass (or derivative e.g., KeePassXC)"
+        },
+        {
+          "title": "Keepassxc (This is the best, save password file to a thumbdrive)"
+        },
+        {
+          "title": "Pass (unix standard password manager, even better than keepass)"
+        }
+      ]
+    },
+    {
+      "topic": "Phone (Alternative to iPhone, and other Android Phones)",
+      "items": [
+        {
+          "title": "Graphene OS (This is the worst phone OS you should consider, can only load on Pixel)"
+        },
+        {
+          "title": "Pinephone (Not powerful enough yet)"
+        },
+        {
+          "title": "Librem5 (Not powerful enough yet, and is a absolute unit)"
+        },
+        {
+          "title": "/e/OS (Ungoogled OS has good support for a lot of Operating Systems)"
+        },
+        {
+          "title": "ubuntu touch (Full ubuntu distro for phone)"
+        }
+      ]
+    },
+    {
+      "topic": "Laptop",
+      "items": [
+        {
+          "title": "<p>Must at bare minimum be coreboot\nIdeally Libreboot</p>"
+        },
+        {
+          "title": "Old Thinkpad (X220 and X220 Tablet is the best)"
+        },
+        {
+          "title": "System76 (core booted versions)"
+        },
+        {
+          "title": "Purism (why is the shift key on the right so small)"
+        },
+        {
+          "title": "PinebookPro"
+        },
+        {
+          "title": "Chromebook (Coreboot with mrchromebox and you get a rugged laptop for $60)"
+        }
+      ]
+    },
+    {
+      "topic": "Video/Streaming Platforms",
+      "items": [
+        {
+          "title": "Odysee"
+        },
+        {
+          "title": "Theta"
+        },
+        {
+          "title": "PeerTube"
+        },
+        {
+          "title": "LivePeer"
+        },
+        {
+          "title": "Bitchute (chringe but good idea)"
+        }
+      ]
+    },
+    {
+      "topic": "Money (Alternative to the Dollar and other Fiat currencies)",
+      "items": [
+        {
+          "title": "Bitcoin"
+        },
+        {
+          "title": "Lighting (built on Bitcoin but usable like cash)"
+        },
+        {
+          "title": "Monero"
+        },
+        {
+          "title": "Ethereum"
+        },
+        {
+          "title": "Cardano"
+        },
+        {
+          "title": "USDC and other stable coins (Send dollars over crypto)"
+        }
+      ]
+    },
+    {
+      "topic": "Node (self host)",
+      "items": [
+        {
+          "title": "RaspiBlitz (Lighting node on Pi)"
+        },
+        {
+          "title": "Umbrel (Lighting node on Pi marketed to be easy for anyone)"
+        }
+      ]
+    },
+    {
+      "topic": "Savings accounts",
+      "items": []
+    },
+    {
+      "topic": "Proprietary but better than bank returns with stablecoins",
+      "items": [
+        {
+          "title": "BlockFi"
+        },
+        {
+          "title": "Celsius"
+        },
+        {
+          "title": "Voyager"
+        }
+      ]
+    },
+    {
+      "topic": "Decentralized Finance",
+      "items": [
+        {
+          "title": "AAVE"
+        },
+        {
+          "title": "Synthetix"
+        },
+        {
+          "title": "Saffron.finance"
+        },
+        {
+          "title": "Stacks"
+        },
+        {
+          "title": "Vesper"
+        },
+        {
+          "title": "Bisq"
+        }
+      ]
+    },
+    {
+      "topic": "TV/Movies",
+      "items": [
+        {
+          "title": "Plex (This is the worst you should even consider)"
+        },
+        {
+          "title": "Jellyfin (the best for streaming)"
+        },
+        {
+          "title": "Kodi"
+        }
+      ]
+    },
+    {
+      "topic": "Maps",
+      "items": [
+        {
+          "title": "OpenStreetMap"
+        },
+        {
+          "title": "OpenRouteService"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

@@ -1,0 +1,157 @@
+{
+  "id": 31,
+  "header": "Cat_Checklist_BackEnd_GroupProject",
+  "topicList": [
+    "Project Theme",
+    "API Description",
+    "Relationships",
+    "UML and ERD",
+    "Tech Stack",
+    "SetUp Instructions"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Project Theme",
+      "items": [
+        {
+          "title": "<p>Our project theme initially began as a Cat Task Manager API but became an Animal Task Manager API. Although a regular to-do-list can suffice by using our\nAPI you can manage your pets daily tasks with a stressfree mind. This project was inspired by Alex having to keep up with his multiple pets.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "API Description",
+      "items": [
+        {
+          "title": "<p>The API allows the user to login and input their animals as well as the tasks associated with each pet.  </p>"
+        },
+        {
+          "topic": "User:",
+          "items": [
+            {
+              "title": "<p>This represents a class which enables users to be added and managed within the database. The user can also have a list of animals.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Animals:",
+          "items": [
+            {
+              "title": "<p>This represents a class which enables the user to input their animal's name, birthday and the type of animal they own.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Animal Type:",
+          "items": [
+            {
+              "title": "<p>This class represents different Animal Types a user can choose from eg Cat, Dog, Hedgehog etc. By having this additional steps, only the relevant associated TaskTypes will be present for the user when setting up a new task.\nFor example, Tharahan owns a fish which has MAINTENANCE and FEEDING as the available tasks. </p>"
+            }
+          ]
+        },
+        {
+          "topic": "Task:",
+          "items": [
+            {
+              "title": "<p>This class is where the user is able to input the description of the task, assign a due date, whether it is completed or not and set the priority of the task (HIGH, MEDIUM, LOW) for their chosen pet.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Task Type:",
+          "items": [
+            {
+              "title": "<p>This class allows implementation of the TaskTypeEnums which have been pre-listed for the user to select from.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Relationships",
+      "items": [
+        {
+          "title": "<p>There are 4 one to many relationships:\n- One user to many Animals\n- One AnimalType to many Animals\n- One Animal to many Tasks\n- One TaskType to many Tasks</p>"
+        }
+      ]
+    },
+    {
+      "topic": "UML and ERD",
+      "items": [
+        {
+          "title": "<p><img alt=\"UML\" src=\"https://user-images.githubusercontent.com/126498385/234849711-ce070932-bb02-4236-960c-da685652c6f8.png\"/></p><p><img alt=\"ERD\" src=\"https://user-images.githubusercontent.com/126498385/234849953-0981fac0-65b0-426d-830a-0cea8afb75f6.png\"/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Tech Stack",
+      "items": [
+        {
+          "title": "Intellij IDEA (JDK 17)"
+        },
+        {
+          "title": "PostgreSQL"
+        },
+        {
+          "title": "Spring Boot"
+        },
+        {
+          "title": "Postico"
+        },
+        {
+          "title": "Postman"
+        }
+      ]
+    },
+    {
+      "topic": "SetUp Instructions",
+      "items": [
+        {
+          "title": "<ol>\n<li>Ensure the following are installed on your machine:</li>"
+        },
+        {
+          "title": "Intellij IDEA (JDK 17)"
+        },
+        {
+          "title": "PostgreSQL"
+        },
+        {
+          "title": "Spring Boot"
+        },
+        {
+          "title": "Postico"
+        },
+        {
+          "title": "Postman</li>\n</ul>\n<li> Clone the repository from GitHub. Scroll to the top of this page and click on the green Code button. Ensure SSH is selected and copy the link provided. In your terminal, perform the following command:\n  <pre><code>git clone git@github.com:Yasmin-H/Cat_Checklist_BackEnd_GroupProject.git</code></pre>"
+        },
+        {
+          "title": "Create a new PostgreSQL database named 'Cat_Checklist' anywhere in your terminal.</li>\n<pre> <code>createdb Cat_Checklist </code></pre>\n<li> Via Intellij IDEA, run the CatChecklistApiApplication and make sure the API is running on port 8080."
+        },
+        {
+          "title": "Via Postman, create a new collection called Animal Task Manager and add requests using the 'Postman Instructions' provided below.</li>\n\n  ## PostMan Instructions \n  ### GET(INDEX)\n  #### GET Users - The GET request retrieves all users\n  <pre><code> Method: GET\n  Endpoint : /users\n  URL: http://localhost:8080/users</code></pre>\n\n  #### GET Animals -The GET request retrieves all animals\n  <pre><code> Method: GET\n  Endpoint : /animals\n  URL: http://localhost:8080/animals</code></pre>\n\n  #### GET Tasks - The GET request retrieves all tasks \n  <pre><code> Method: GET\n  Endpoint : /tasks\n  URL: http://localhost:8080/tasks </code></pre>\n\n  ### GET(SHOW)\n  #### GET Users - The GET request retrieves all users\n  <pre><code> Method: GET\n  Endpoint : /users/{id}\n  URL: http://localhost:8080/users</code></pre>\n\n  #### GET Animals -The GET request retrieves all animals\n  <pre><code> Method: GET\n  Endpoint : /animals/{id}\n  URL: http://localhost:8080/animals</code></pre>\n\n  #### GET Tasks - The GET request retrieves all tasks \n  <pre><code> Method: GET\n  Endpoint : /tasks/{id}\n  URL: http://localhost:8080/tasks </code></pre>\n\n   ### POST(CREATE)\n  We will need to use the Request Body to input the details required for each user/animal/task. The request body must be in JSON format in the raw section.\n  #### POST Users - This POST request adds a new user to the list.\n  <pre><code> Method: POST\n  Endpoint : /users\n  URL: http://localhost:8080/users\n\n RequestBody example: \n  {\n    \"name\" : \"Bob\"\n  }                   </code></pre>\n\n\n  #### POST Animals - This POST request adds a new animal to the list.\n  <pre><code> Method: POST\n  Endpoint : /animals\n  URL: http://localhost:8080/animals\n\n  RequestBody example: \n  {\n    \"userId\" : 4,\n    \"name\" : \"Felix\",\n    \"birthday\" : \"2020-05-05\",\n    \"animalTypeId\" : 1\n  }                    </code></pre>\n\n\n  #### POST Tasks - This POST request adds a new task to the list.\n  <pre><code> Method: POST\n  Endpoint : /tasks\n  URL: http://localhost:8080/tasks \n\n RequestBody example:\n  {\n    \"content\" : \"cleaning the litterbox\",\n    \"dueDate\" : \"28.04.2023\",\n    \"priority\" : \"HIGH\",\n    \"completed\" : false,\n    \"animalId\" : 2,\n    \"taskTypeId\" : 3\n }                   </code></pre>\n\n  ### PUT/PATCH (UPDATE)\n  #### PUT Tasks - Changes all the content for each task id by changing the URL.\n  <pre><code> Method: PUT\n  Endpoint : /tasks/{id}\n  URL: http://localhost:8080/tasks/1 \n\n  RequestBody example:\n  {\n    \"content\" : \"changing the water\",\n    \"dueDate\" : \"27.04.2023\",\n    \"priority\" : \"MEDIUM\",\n    \"completed\" : true\n  }                   </code></pre>\n\n   #### PATCH Users - Allows for the username to be edited.\n  <pre><code> Method: PATCH\n  Endpoint : /users/{id}\n  URL: http://localhost:8080/users/1 </code></pre>\n\n  ### DELETE (DESTORY)\n  #### DELETE User - Will destroy any user by entering the userId in the URL.\n  <pre><code> Method: DELETE\n  Endpoint : /users/{id}\n  URL: http://localhost:8080/users/3 </code></pre>\n\n   #### DELETE Animal - Will destroy any animal by entering the animalId in the URL.\n  <pre><code> Method: DELETE\n  Endpoint : /animals/{id}\n  URL: http://localhost:8080/animals/3 </code></pre> \n\n\n  #### DELETE Task - Will destroy any task by entering the taskId in the URL.\n  <pre><code> Method: DELETE\n  Endpoint : /tasks/{id}\n  URL: http://localhost:8080/tasks/3 </code></pre>\n\n  ## Dependencies"
+        },
+        {
+          "title": "Spring Data JPA"
+        },
+        {
+          "title": "Spring Web"
+        },
+        {
+          "title": "SpringBoot DevTools</li>\n</ul>\n\n  ## Collaborators"
+        },
+        {
+          "title": "Thibyaa Mahasivam (GitHub: thibyaa)"
+        },
+        {
+          "title": "Yasmin Haidar (GitHub: Yasmin-H)"
+        },
+        {
+          "title": "Alex Levendis-Takakis (GitHub: alexlt3001)"
+        },
+        {
+          "title": "Tharahan Tharmaraja (GitHub: tharahan04) </ol>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

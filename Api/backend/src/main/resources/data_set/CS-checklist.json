@@ -1,0 +1,237 @@
+{
+  "id": 56,
+  "header": "CS-checklist",
+  "topicList": [
+    "目录",
+    "0x00 前言",
+    "0x01 概述",
+    "0x02 开发语言",
+    "0x03 协议",
+    "0x04 数据库",
+    "0x05 测试工具",
+    "0x06 代理设置",
+    "0x07 测试点",
+    "0x08 相关技巧",
+    "0x09 参考资料&&相关资源"
+  ],
+  "itemGroups": [
+    {
+      "topic": "目录",
+      "items": [
+        {
+          "title": "<p><a href=\"#cs-checklist\"><strong>CS-checklist</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#0x00-前言\"><strong>0x00 前言</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#0x01-概述\"><strong>0x01 概述</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#0x02-开发语言\"><strong>0x02 开发语言</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#0x03-协议\"><strong>0x03 协议</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#0x04-数据库\"><strong>0x04 数据库</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#0x05-测试工具\"><strong>0x05 测试工具</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#0x06-代理设置\"><strong>0x06 代理设置</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#0x07-测试点\"><strong>0x07 测试点</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#0-信息收集\"><strong>0.</strong> <strong>信息收集</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#1-逆向工程\"><strong>1.</strong> <strong>逆向工程</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#2-信息泄露\"><strong>2.</strong> <strong>信息泄露</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#3-传输流量\"><strong>3.</strong> <strong>传输流量</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#4-其他漏洞\"><strong>4.</strong> <strong>其他漏洞</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#用户名枚举\"><strong>用户名枚举</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#暴力破解\"><strong>暴力破解</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#弱口令\"><strong>弱口令</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#密码明文传输\"><strong>密码明文传输</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#sql语句暴露\"><strong>SQL语句暴露</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#sql注入\"><strong>SQL注入</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#csv注入\"><strong>CSV注入</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#xss\"><strong>XSS</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#命令执行\"><strong>命令执行</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#dll劫持\"><strong>DLL劫持</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#逻辑缺陷\"><strong>逻辑缺陷</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#授权认证缺陷\"><strong>授权认证缺陷</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#未授权\"><strong>未授权</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#越权\"><strong>越权</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#溢出\"><strong>溢出</strong></a></p>\n</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "<p><a href=\"#0x08-相关技巧\"><strong>0x08 相关技巧</strong></a></p>"
+        },
+        {
+          "title": "<p><a href=\"#0x09-参考资料相关资源\"><strong>0x09 参考资料&amp;&amp;相关资源</strong></a></p>\n\n<p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "0x00 前言",
+      "items": [
+        {
+          "title": "<p>本项目主要针对pc客户端（cs架构）渗透测试，结合自身测试经验和网络资料形成checklist，如有任何问题，欢迎联系，期待大家贡献更多的技巧和案例。</p><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "0x01 概述",
+      "items": [
+        {
+          "title": "<p>PC客户端，有丰富功能的GUI，C-S架构。</p><p><img alt=\"cs00\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs00.png\"/></p><p>//图片源自:</p><p><a href=\"#article\">https://resources.infosecinstitute.com/practical-thick-client-application-penetration-testing-using-damn-vulnerable-thick-client-app-part-1/#article</a></p><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "0x02 开发语言",
+      "items": [
+        {
+          "title": "<p>C#(.NET)，JAVA，DELPHI，C，C++......</p><p><br/> </p>"
+        }
+      ]
+    },
+    {
+      "topic": "0x03 协议",
+      "items": [
+        {
+          "title": "<p>TCP、HTTP(S)，TDS......</p><p><br/> </p>"
+        }
+      ]
+    },
+    {
+      "topic": "0x04 数据库",
+      "items": [
+        {
+          "title": "<p>oracle，mssql，db2......</p><p><br/> </p>"
+        }
+      ]
+    },
+    {
+      "topic": "0x05 测试工具",
+      "items": [
+        {
+          "title": "<p>//相关工具下载：https://github.com/theLSA/hack-cs-tools</p><p>dvta： pc客户端靶场</p><p>ida pro： 静态分析工具</p><p>ollydbg：动态分析工具</p><p>CFF Explorer：PE文件分析</p><p>PEID：查壳工具</p><p>exeinfope/studype：pe文件分析</p><p>wireshark：观察流量</p><p>tcpview：观察tcp流量</p><p>echo Mirage：可拦截tcp流量</p><p>burpsuite：http(s)抓包</p><p>proxifier：全局代理流量</p><p>procmon：文件和注册表监控</p><p>regshot：注册表变化对比</p><p>process Hacker：进程分析</p><p>RegfromApp：注册表监控</p><p>WSExplorer：岁月联盟进程抓包工具</p><p>strings：查看程序的字符串</p><p><br/> </p><p>.net[反]编译：</p><p>dotpeek</p><p>de4dot</p><p>dnspy</p><p>ilspy</p><p>sae</p><p>ildasm</p><p>ilasm</p><p><br/> </p><p>Java反编译</p><p>jad</p><p>jd-gui</p><p>jadx</p><p>dex2jar</p><p>在线版：<br/></p><p><a href=\"\">javare.cn</a></p><p>www.javadecompilers.com</p><p><br/></p><p>Reflexil：组装编辑器（可以作为ilspy插件）</p><p>Vcg：自动化代码审计工具</p><p>BinScope：二进制分析工具</p><p><br/> </p>"
+        }
+      ]
+    },
+    {
+      "topic": "0x06 代理设置",
+      "items": [
+        {
+          "title": "<p>大部分客户端没有代理配置功能，需要自行设置全局代理，如下两种方法：</p><p>1）IE-internet设置-连接-局域网设置。</p><p>2）proxifier --&gt; proxy server/proxification rules</p><p>//http的流量可以结合burpsuite方便测试（proxy server设置为burp代理地址）。</p><p><img alt=\"cs24\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs24.png\"/></p><p><img alt=\"cs25\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs25.png\"/></p><p><img alt=\"cs26\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs26.png\"/></p><p><br/> </p>"
+        }
+      ]
+    },
+    {
+      "topic": "0x07 测试点",
+      "items": [
+        {
+          "title": "<p><br/> </p>"
+        },
+        {
+          "topic": "0. 信息收集",
+          "items": [
+            {
+              "title": "<p>编译信息，开发环境/语言，使用协议，数据库，ip，混淆/加密，是否加壳等。</p><p><br/></p><p>案例0-CFF查看客户端信息（如编译环境）</p><p>dvta</p><p><img alt=\"cs01\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs01.png\"/></p><p><br/><br/> </p>"
+            }
+          ]
+        },
+        {
+          "topic": "1. 逆向工程",
+          "items": [
+            {
+              "title": "<p>反编译，源代码泄露，硬编码key/password，加解密逻辑，角色判断逻辑（0-admin，1-normaluser），后门等。 </p><p><br/></p><p>案例0-反编译获取加解密逻辑并编写解密工具</p><p>dvta</p><p><img alt=\"cs02\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs02.png\"/></p><p>通过该逻辑和获取的信息</p><p><img alt=\"cs03\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs03.png\"/></p><p><strong>Encrypted Text:</strong> CTsvjZ0jQghXYWbSRcPxpQ==</p><p><strong>AES KEY:</strong> J8gLXc454o5tW2HEF7HahcXPufj9v8k8</p><p><strong>IV:</strong> fq20T0gMnXa6g0l4</p><p>编写解密工具</p><p><code>using System;</code></p><p><code>using System.Collections.Generic;</code></p><p><code>using System.ComponentModel;</code></p><p><code>using System.Data;</code></p><p><code>using System.Drawing;</code></p><p><code>using System.Linq;</code></p><p><code>using System.Text;</code></p><p><code>using System.Threading.Tasks;</code></p><p><code>using System.Windows.Forms;</code></p><p><code>using System.Security.Cryptography;</code></p><p><code>namespace aesdecrypt</code></p><p><code>{</code></p><p>​    <code>public partial class aesdecrypt : Form</code></p><p>​    <code>{</code></p><p>​        <code>public aesdecrypt()</code></p><p>​        <code>{</code></p><p>​            <code>InitializeComponent();</code></p><p>​        <code>}</code></p><p>​        <code>private void decrypt(object sender, EventArgs e)</code></p><p>​        <code>{</code></p><p>​            <code>String key = “J8gLXc454o5tW2HEF7HahcXPufj9v8k8”;</code></p><p>​            <code>String IV = “fq20T0gMnXa6g0l4”;</code></p><p>​            <code>String encryptedtext = “CTsvjZ0jQghXYWbSRcPxpQ==”;</code></p><p>​            <code>byte[] encryptedBytes = Convert.FromBase64String(encryptedtext);</code></p><p>​            <code>AesCryptoServiceProvider aes = new AesCryptoServiceProvider();</code></p><p>​            <code>aes.BlockSize = 128;</code></p><p>​            <code>aes.KeySize = 256;</code></p><p>​            <code>aes.Key = System.Text.ASCIIEncoding.ASCII.GetBytes(key);</code></p><p>​            <code>aes.IV = System.Text.ASCIIEncoding.ASCII.GetBytes(IV);</code></p><p>​            <code>aes.Padding = PaddingMode.PKCS7;</code></p><p>​            <code>aes.Mode = CipherMode.CBC;</code></p><p>​            <code>ICryptoTransform crypto = aes.CreateDecryptor(aes.Key, aes.IV);</code></p><p>​            <code>byte[] decryptedbytes = crypto.TransformFinalBlock(encryptedBytes, 0, encryptedBytes.Length);</code></p><p>​            <code>String decryptedString = System.Text.ASCIIEncoding.ASCII.GetString(decryptedbytes);</code></p><p>​            <code>Console.WriteLine(“\\n”);</code></p><p>​            <code>Console.WriteLine(“##########Decryptig Database password##########\\n”);</code></p><p>​            <code>Console.WriteLine(“Decrypted Database password:” + decryptedString+”\\n”);</code></p><p>​            <code>Console.WriteLine(“##########Done##########\\n”);</code></p><p>​        <code>}</code></p><p>​    <code>}</code></p><p><code>}</code></p><p>//解密代码源自https://resources.infosecinstitute.com/damn-vulnerable-thick-client-app-part-5/#article</p><p><br/></p><p>案例1-反编译修改代码逻辑让普通用户以管理员登录</p><p>dvta</p><p>1-Isadmin</p><p>0-Normaluser</p><p>改1为0即可判断为admin</p><p><img alt=\"cs04\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs04.png\"/></p><p><img alt=\"cs05\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs05.png\"/></p><p><br/><br/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "2. 信息泄露",
+          "items": [
+            {
+              "title": "<p>明文敏感信息，敏感文件（如安装目录下的xxx.config）。</p><p>注册表：利用regshot比较客户端运行（如登录）前后注册表差别。 </p><p>开发调试日志泄露（如dvta.exe &gt;&gt; log.txt）</p><p>process hacker查看客户端内存中的明文敏感数据（如账号密码/key）。</p><p>strings直接查看客户端字符串（如ip信息）。</p><p>查看源代码（如github,gitee等）</p><p><br/></p><p>案例0-配置敏感信息泄露</p><p>dvta</p><p><img alt=\"cs06\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs06.png\"/></p><p><br/></p><p>案例1-内存泄露数据库账号密码</p><p>dvta</p><p><img alt=\"cs07\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs07.png\"/></p><p><br/></p><p>案例2-源代码含有硬编码ftp账号密码</p><p>dvta</p><p><img alt=\"cs08\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs08.png\"/></p><p><br/> </p><p>案例3-开发调试日志泄露</p><p>dvta</p><p><img alt=\"cs09\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs09.png\"/></p><p><br/></p><p>案例4-某系统登录后本地保存账号密码</p><p><img alt=\"cs10\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs10.png\"/></p><p>//本案例来源于https://blog.csdn.net/weixin_30685047/article/details/95916065</p><p><br/><br/> </p>"
+            }
+          ]
+        },
+        {
+          "topic": "3. 传输流量",
+          "items": [
+            {
+              "title": "<p>wireshark/echo Mirage/burpsuite+nopeproxy/fillder/charles</p><p>ftp等协议明文传输的账号密码</p><p>SQL语句明文传输（如利用构造注入，越权等）</p><p><br/></p><p>案例0-正方教务系统sql语句明文传输，返回明文数据</p><p><img alt=\"cs11\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs11.png\"/></p><p><img alt=\"cs12\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs12.png\"/></p><p>//本案例来源于wooyun</p><p><br/></p><p>案例1-某系统登录处数据包返回数据库帐号密码</p><p><img alt=\"cs28\" src=\"https://github.com/theLSA/cs-checklist/raw/master/demo/cs28.png\"/></p><p><br/><br/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "4. 其他漏洞",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "0x08 相关技巧",
+      "items": [
+        {
+          "title": "<ol>\n<li>\n<p>利用procexp --&gt; properties --&gt; tcp/ip 可以查看该客户端发起的网络连接，从而快速确定服务端地址</p>"
+        },
+        {
+          "title": "<p>wireshark直接过滤出服务器或数据库的ip或协议方便查看，如</p>\n</li>\n</ol><p>ip.addr == 1.2.3.4&amp;&amp;http</p><ol>\n<li>如果有数据库账号，可以用数据库监控sql语句操作（如sql server profiler）。</li>\n</ol><p><br/><br/> </p>"
+        }
+      ]
+    },
+    {
+      "topic": "0x09 参考资料&&相关资源",
+      "items": [
+        {
+          "title": "<p><a href=\"https://resources.infosecinstitute.com/\">https://resources.infosecinstitute.com</a></p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

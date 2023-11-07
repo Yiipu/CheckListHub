@@ -1,0 +1,105 @@
+{
+  "id": 110,
+  "header": "ios-code-review-checklist",
+  "topicList": [
+    "Check Projects",
+    "Review Objectives",
+    "Check Capstone Progress",
+    "Set Goals",
+    "Update Student Success Tracker",
+    "Address Any Needs"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Check Projects",
+      "items": [
+        {
+          "title": "<p>Review the following points with each student in the group:</p><ol>\n<li>All projects are pushed to Github with detailed commit messages."
+        },
+        {
+          "title": "Each project is complete and functioning."
+        },
+        {
+          "title": "There are no exceptions or warnings."
+        },
+        {
+          "title": "Classes, properties, and methods follow proper naming conventions and style."
+        },
+        {
+          "title": "Code is written by the student, not copied and pasted from solution branches.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Review Objectives",
+      "items": [
+        {
+          "title": "<ol>\n<li>Work with the student to determine a rating (1-3) on each objective from the week. Ask specific questions for each objective to determine understanding. Ask to see examples of each objective in the projects as evidence of understanding. </li>\n</ol><p>```\n  Rating Scale:</p><p>1 - Does not understand\n  2 - Understands with assistance (mentor, documentation, sample code)\n  3 - Understands independently\n  ```</p><ol>\n<li>\n<p>If the student is rated at 2 or lower, work with him or her on the objective. Invite other students in the group to give feedback. Provide extra practice so they can get to a 3 in future code reviews. As needed, reteach and provide resources or practice on poor objectives.</p>"
+        },
+        {
+          "title": "<p>Report the scores for each objective using the iOS Student Success Tracker. If you do not have access, contact your Lead Instructor.</p>\n</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Check Capstone Progress",
+      "items": [
+        {
+          "title": "<p>Discuss the Capstone Progress. In early weeks of class, discuss ideas, frameworks, and user tests to help the student firmly decide on a project. Once projects have begun, do the following:</p><ol>\n<li>Review the App Canvas"
+        },
+        {
+          "title": "Discuss progress and update the tracker"
+        },
+        {
+          "title": "Identify the biggest challenges blocking progress"
+        },
+        {
+          "title": "Pair program on the big challenge"
+        },
+        {
+          "title": "Give a specific challenge to the student to keep making progress</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Set Goals",
+      "items": [
+        {
+          "title": "<ol>\n<li>Set goals for the student. Focus on student deficiencies first, then black diamond or advanced work."
+        },
+        {
+          "title": "If working on team or capstone projects, review architecture, design, and progress on the project."
+        },
+        {
+          "title": "Give them specific work to do before the next Code Review.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Update Student Success Tracker",
+      "items": [
+        {
+          "title": "<p>Update scores in the Tracker. Please consider the following in your scores:</p><ol>\n<li>Attendance in class"
+        },
+        {
+          "title": "Communication with you"
+        },
+        {
+          "title": "Ability working with frameworks taught prior to this week"
+        },
+        {
+          "title": "Ability working with frameworks taught this week</li>\n</ol><p>Include any feedback or notes that will guide intervention (help) for the student.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Address Any Needs",
+      "items": [
+        {
+          "title": "<p>If there are any specific needs or concerns with the student, contact your lead instructor.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

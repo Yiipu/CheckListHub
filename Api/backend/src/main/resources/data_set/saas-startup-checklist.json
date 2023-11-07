@@ -1,0 +1,325 @@
+{
+  "id": 179,
+  "header": "saas-startup-checklist",
+  "topicList": [
+    "Development",
+    "Deployment",
+    "Resources"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Development",
+      "items": [
+        {
+          "title": "[ ] Source Code Repository"
+        },
+        {
+          "title": "[ ] Continuous Integration"
+        },
+        {
+          "title": "[ ] <a href=\"#cross-browser-testing\">Cross Browser Testing</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#api\">API</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Deployment",
+      "items": [
+        {
+          "title": "[ ] <a href=\"#domain-name\">Domain Name</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#hosting\">Hosting</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#automated-deployment\">Automated Deployment</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#backup\">Backups</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#redundancy-and-failover\">Redundancy and Failover</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#alert-and-monitoring\">Alert and Monitoring</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#ssl-certificate\">Transport Layer Security</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#content-delivery-network\">Content Delivery Network</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#yslow!-web-performance-best-practices-and-rules\">YSlow! Web Performance Best Practices and Rules</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#application-performance-monitoring\">Application Performance Monitoring</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#error-tracking\">Error Tracking</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#analytics\">Analytics</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#social-media\">Social Media</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#status-page\">Status Page</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#image-optimisation\">Image Optimisation</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#feedback-form\">Feedback Form</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Resources",
+      "items": [
+        {
+          "topic": "Cross Browser Testing",
+          "items": [
+            {
+              "title": "<a href=\"http://www.browserswarm.com/\">BrowserSwarm</a>"
+            },
+            {
+              "title": "<a href=\"https://saucelabs.com/\">Sauce Labs</a>"
+            }
+          ]
+        },
+        {
+          "topic": "API",
+          "items": []
+        },
+        {
+          "topic": "Domain Name",
+          "items": [
+            {
+              "title": "<a href=\"http://www.namecheap.com/\">Namecheap</a>"
+            },
+            {
+              "title": "<a href=\"https://www.gandi.net/\">Gandi</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Hosting",
+          "items": []
+        },
+        {
+          "topic": "Automated Deployment",
+          "items": []
+        },
+        {
+          "topic": "Backups",
+          "items": [
+            {
+              "title": "<p>Database replication and frequent, off-site backups.</p>"
+            },
+            {
+              "title": "<a href=\"http://aws.amazon.com/s3/\">Amazon S3</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Redundancy and Failover",
+          "items": [
+            {
+              "title": "<p>Server redundancy and fail-over, load balancing. Multiple, redundant hosting providers to handle datacenter outages.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Alert and Monitoring",
+          "items": [
+            {
+              "title": "<a href=\"http://www.pagerduty.com/\">PagerDuty</a> - <em>Provides SaaS IT on-call \nschedule management, alerting and incident tracking.</em>"
+            }
+          ]
+        },
+        {
+          "topic": "Transport Layer Security",
+          "items": [
+            {
+              "title": "<p>Keep your customer's data safe by using an encrypted connection with an SSL certificate. Mandatory for registration and login pages.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Content Delivery Network",
+          "items": [
+            {
+              "title": "<p>Optimise delivery of web pages, block threats and limit abusive bots and crawlers.</p>"
+            },
+            {
+              "title": "<a href=\"https://www.cloudflare.com\">CloudFlare</a>"
+            }
+          ]
+        },
+        {
+          "topic": "YSlow! Web Performance Best Practices and Rules",
+          "items": [
+            {
+              "title": "<p>Yahoo!'s Exceptional Performance team has identified a number of <a href=\"http://developer.yahoo.com/performance/rules.html\">best practices for making web pages fast</a>.</p><ol>\n<li><a href=\"http://developer.yahoo.com/performance/rules.html#num_http\">Minimize HTTP Requests</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#cdn\">Use a Content Delivery Network</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#emptysrc\">Avoid empty src or href</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#expires\">Add an Expires or a Cache-Control Header</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#gzip\">Gzip Components</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#css_top\">Put StyleSheets at the Top</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#js_bottom\">Put Scripts at the Bottom</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#css_expressions\">Avoid CSS Expressions</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#external\">Make JavaScript and CSS External</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#dns_lookups\">Reduce DNS Lookups</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#minify\">Minify JavaScript and CSS</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#redirects\">Avoid Redirects</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#js_dupes\">Remove Duplicate Scripts</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#etags\">Configure ETags</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#cacheajax\">Make AJAX Cacheable</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#ajax_get\">Use GET for AJAX Requests</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#min_dom\">Reduce the Number of DOM Elements</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#no404\">No 404s</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#cookie_size\">Reduce Cookie Size</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#cookie_free\">Use Cookie-Free Domains for Components</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#no_filters\">Avoid Filters</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#no_scale\">Do Not Scale Images in HTML</a>"
+            },
+            {
+              "title": "<a href=\"http://developer.yahoo.com/performance/rules.html#favicon\">Make favicon.ico Small and Cacheable</a></li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "Application Performance Monitoring",
+          "items": [
+            {
+              "title": "<p>Monitor application performance and track historical trends. \nShould include page load times, error rates, slow transactions, servers resource usage. Correlate performance metrics with deployments/releases. Alerting for severe performance degradation.</p>"
+            },
+            {
+              "title": "<a href=\"http://newrelic.com/\">NewRelic</a> - <em>A powerfully simple way to monitor your Web &amp; Mobile applications.</em>"
+            }
+          ]
+        },
+        {
+          "topic": "Error Tracking",
+          "items": [
+            {
+              "title": "<p>Aggregate client and server errors, exceptions and failures. Should include stack traces, environment information, intelligent notifications, trend analysis. </p>"
+            },
+            {
+              "title": "<a href=\"https://getsentry.com/welcome/\">Sentry</a> - <em>Know immediately when things happen in your application. Engage users before they have a chance to report a problem.</em>"
+            },
+            {
+              "title": "<a href=\"http://airbrake.io/\">Airbrake</a> - <em>With deploy tracking, logging, dupe detection and a dashboard to track your exceptions, managing and triaging errors has never been easier.</em>"
+            },
+            {
+              "title": "<a href=\"http://raygun.io/\">RayGun</a> - <em>Real time error reporting you can set up in under 5 minutes!</em>"
+            },
+            {
+              "title": "<a href=\"http://www.exceptional.io/\">Exceptional</a> - <em>Tracks errors in web apps. It reports them in real-time and gathers the info you need to fix them fast.</em>"
+            },
+            {
+              "title": "<a href=\"http://errbit.github.io/errbit/\">Errbit</a> - <em>The open source, self-hosted error catcher.</em>"
+            },
+            {
+              "title": "<a href=\"https://cloud.google.com/error-reporting/\">Google Stackdriver Error Reporting</a> - <em>Real-time exception monitoring and alerting. No limits.</em>"
+            }
+          ]
+        },
+        {
+          "topic": "Social Media",
+          "items": [
+            {
+              "title": "<p>Register appropriate usernames/pages on social media sites. Configure alerts for mentions, complaints and praise.</p>"
+            },
+            {
+              "title": "<a href=\"https://twitter.com/\">Twitter</a>"
+            },
+            {
+              "title": "<a href=\"http://www.facebook.com/\">Facebook</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Status Page",
+          "items": [
+            {
+              "title": "<p>Externally hosted resource displaying real-time system availabilty, historical uptime, latency, past incidents.</p>"
+            },
+            {
+              "title": "<a href=\"https://www.statuspage.io/\">StatusPage.io</a> - <em>The best way to create a status page for your app or website.</em>"
+            }
+          ]
+        },
+        {
+          "topic": "Image Optimisation",
+          "items": [
+            {
+              "title": "<a href=\"http://addyosmani.com/blog/image-optimization-tools/\">Tools for image optimization</a>"
+            }
+          ]
+        },
+        {
+          "topic": "User Authentication",
+          "items": [
+            {
+              "title": "<a href=\"https://www.loginradius.com/\">LoginRadius</a>"
+            },
+            {
+              "title": "<a href=\"https://www.mojoauth.com\">MojoAuth</a>"
+            },
+            {
+              "title": "<a href=\"https://www.okta.com/\">Okta</a>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

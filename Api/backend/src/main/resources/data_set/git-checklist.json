@@ -1,0 +1,72 @@
+{
+  "id": 96,
+  "header": "git-checklist",
+  "topicList": [
+    "Using It Is Easy",
+    "Advanced Usage",
+    "Work In Progress Commits",
+    "Background Details",
+    "Installing It Is Fairly Easy",
+    "Shortcomings",
+    "Upgrading"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Using It Is Easy",
+      "items": [
+        {
+          "title": "<p>To view your TODOs, just enter the bare command from a git repository:</p><pre><code>$ git todo\n</code></pre><p>Well, if you've not got anything to do yet, it won't have anything to\nshow you. Find out where to go next:</p><pre><code>$ git todo --help\nUsage: git-checklist [COMMAND]\n  Per-branch TODO list for Git repositories\n\nAvailable options:\n  -h,--help                Show this help text\n\nAvailable commands:\n  show                     Show current TODOs\n  add                      Add a TODO\n  done                     Mark a TODO as done.\n  undo                     Item needs redone!\n  remove                   Remove a TODO (can't be undone)\n  stats                    Summary statistics of checklist\n</code></pre><p>It will give you a summary of the commands you can enter at this point.\nThere are no entries yet so all you can do is add them.</p><pre><code>$ git todo add Add an informative README file\n1: Add an informative README file\n</code></pre><p>Each entry has a number in the left column and a box. Empty boxes mean\nthe item is still to be done. When you've finished a task, mark it done\nusing the number as a reference:</p><pre><code>$ git todo done 1\n1: [x] Add an informative README file\n</code></pre><p>You can also \"undo\" items if you realise that the fix you made wasn't so\nhot after all, or you didn't understand the issue fully, or whatever\nother reason.</p><p>Finally you can remove items entirely from the list. This is permanent\nand can't be undone.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Advanced Usage",
+      "items": [
+        {
+          "title": "<p>If you're knee deep in work on one branch and you'd like to change the\nchecklist for another branch, all the commands will recognise the\n<code>--branch</code> (or <code>-b</code>) option.</p><pre><code>$ git todo add --branch newparser Make nicer error messages\n</code></pre><p>If you want to start a description of your note with a hyphen you can\nseparate it from the rest of the command options with a double-hyphen on\nits own.</p><pre><code>$ git todo add -- -b stopped working but --branch still okay\n</code></pre><p>If you want to see all your branches at once use</p><pre><code>$ git todo show --all\n</code></pre><p>Obviously you can't supply the <code>--all</code> flag to any of the editing\ncommands --- you can only edit one branch's checklist at a time.</p><p>There is one more overview command that will take <code>--branch</code> or <code>--all</code>\nas an option:</p><pre><code>$ git todo stats\n2 tasks to do (4 in total)\n</code></pre>"
+        }
+      ]
+    },
+    {
+      "topic": "Work In Progress Commits",
+      "items": [
+        {
+          "title": "<p>I've got an alias called <code>wip</code> which lets me quickly save all my unsaved\nwork in the current branch. You can use this as a basic command:</p><pre><code>$ git config alias.wip=commit -a -m\"WIP\"\n</code></pre><p>But if you use git-checklist the following might be more informative\nwhen you are trying to get the measure of your branches:</p><pre><code>$ git config alias.wip=!git commit -a -m\\\"\"WIP $(git todo stats)\"\\\"\n</code></pre><p>Then you'll get a commit that says something like <em>WIP 2 tasks to do (4\nin total</em> which is much nicer. For the cherry on top I also use\n<code>prepare-commit-msg</code> to pipe the result of <code>git todo show</code> to the commit\nmessage. The summary line will contain a summary and the rest of the\nmessage will contain the current state of the branch.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Background Details",
+      "items": [
+        {
+          "title": "<p>The checklists are stored in <code>.git/checklist/&lt;branchname&gt;</code>. The\nserialised form is basically just the checklists without the number\nprefix. This is similar to the checklist format used by GitHub's\nextended Markdown, so you can re-use the file contents if desired.</p><p>The format is very easy to read and edit manually.</p><pre><code>[ &lt;mark&gt; ] &lt;space&gt; &lt;description&gt; &lt;newline&gt;\n</code></pre><p>The <em><mark></mark></em> is either \"x\" for a completed item or a space otherwise.\n(The parser will accept any non-\"x\" as pending but will always write a\nspace.) The description must not contain a newline but is otherwise\nfreeform.</p><p>The checklist for the working directory is whatever branch name is\npointed to by <code>HEAD</code>. I have not tested it with a detached head, though I\nguess you'd just end up with a SHA as a branch name.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Installing It Is Fairly Easy",
+      "items": [
+        {
+          "title": "<p>Assuming you've got a Haskell installation (if not, <a href=\"http://www.haskell.org/platform\" title=\"Haskell for Windows, Mac OS X and Linux\">grab the Haskell\nplatform</a>) you can grab the source and build with Cabal.</p><pre><code>$ git clone http://github.com/dougalstanton/git-checklist\n$ cd git-checklist\n$ cabal build\n$ cabal install\n</code></pre>"
+        }
+      ]
+    },
+    {
+      "topic": "Shortcomings",
+      "items": [
+        {
+          "title": "<p>The data is stored in a separate directory inside <code>.git</code> which isn't\nversioned --- this is a local list only. I am open to suggestions to\nmake this versioned though it is not a priority for me. My workflow is\nbased around a single computer.</p><p>The read/write step bashes into the awkwardness of lazy IO.</p><p>It doesn't cope very well with not being somewhere inside a repository.\nIt shouldn't wreck anything but the error message isn't very refined.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Upgrading",
+      "items": [
+        {
+          "title": "<p>If you were using a pre-1.0 version the file format has changed\nincompatibly. There is a secret flag to upgrade:</p><pre><code>$ git-checklist --upgrade\n</code></pre><p>Alternatively you can do it manually <em>before you upgrade the\napplication</em> like this. The key part is to strip the first four\ncharacters from each line, ie the number--colon--space prefix.</p><pre><code>for b in .git/checklist/* ; do\n    git-checklist show --branch $(basename $b) | cut -c 5- &gt; $b\ndone\n</code></pre>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

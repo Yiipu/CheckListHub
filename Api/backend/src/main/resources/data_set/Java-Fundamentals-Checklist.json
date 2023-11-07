@@ -1,0 +1,564 @@
+{
+  "id": 114,
+  "header": "Java-Fundamentals-Checklist",
+  "topicList": [
+    "Basics",
+    "Advanced Stuff"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Basics",
+      "items": [
+        {
+          "topic": "Classes",
+          "items": [
+            {
+              "title": "Constructors"
+            },
+            {
+              "title": "fields"
+            },
+            {
+              "title": "Access Modifiers - public, protected, private"
+            },
+            {
+              "title": "Nested Classes"
+            },
+            {
+              "title": "Anonymous Classes"
+            },
+            {
+              "title": "Lambda References"
+            }
+          ]
+        },
+        {
+          "topic": "Interfaces",
+          "items": [
+            {
+              "title": "Creation"
+            }
+          ]
+        },
+        {
+          "topic": "Enums",
+          "items": [
+            {
+              "title": "Creation"
+            }
+          ]
+        },
+        {
+          "topic": "Variables",
+          "items": [
+            {
+              "title": "Fields"
+            },
+            {
+              "title": "static variables"
+            },
+            {
+              "title": "constants"
+            }
+          ]
+        },
+        {
+          "topic": "Data types",
+          "items": [
+            {
+              "title": "Predefined objects"
+            },
+            {
+              "title": "User defined"
+            },
+            {
+              "title": "Primitive data types"
+            },
+            {
+              "title": "Arrays"
+            }
+          ]
+        },
+        {
+          "topic": "Control Statements",
+          "items": [
+            {
+              "title": "If, else, else if"
+            },
+            {
+              "title": "Switch"
+            },
+            {
+              "title": "While loop"
+            },
+            {
+              "title": "For loop"
+            },
+            {
+              "title": "Improved for loop"
+            },
+            {
+              "title": "Return, Break, Continue"
+            }
+          ]
+        },
+        {
+          "topic": "Methods",
+          "items": [
+            {
+              "title": "Static, instance"
+            },
+            {
+              "title": "Return"
+            }
+          ]
+        },
+        {
+          "topic": "Annotations",
+          "items": [
+            {
+              "title": "Creation"
+            },
+            {
+              "title": "Predefined Annotation Types"
+            }
+          ]
+        },
+        {
+          "topic": "Inheritance",
+          "items": [
+            {
+              "title": "Overriding"
+            },
+            {
+              "title": "Super, subclasses"
+            },
+            {
+              "title": "Extends vs Implements"
+            }
+          ]
+        },
+        {
+          "topic": "Strings",
+          "items": [
+            {
+              "title": "Formatting"
+            },
+            {
+              "title": "String methods"
+            }
+          ]
+        },
+        {
+          "topic": "Generics",
+          "items": [
+            {
+              "title": "<p>TODO: add...</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Packages",
+          "items": [
+            {
+              "title": "Creating packages"
+            },
+            {
+              "title": "Compiling classes manually"
+            },
+            {
+              "title": "CLASSPATH"
+            }
+          ]
+        },
+        {
+          "topic": "Exceptions",
+          "items": [
+            {
+              "title": "Try, catch, finally"
+            },
+            {
+              "title": "Checked vs unchecked exceptions"
+            }
+          ]
+        },
+        {
+          "topic": "I/O",
+          "items": [
+            {
+              "title": "Streams"
+            },
+            {
+              "title": "Character streams (Know the difference between byte and character streams)"
+            },
+            {
+              "title": "Writer/Readers"
+            },
+            {
+              "title": "Buffers"
+            },
+            {
+              "title": "Paths - abstract, canonical"
+            },
+            {
+              "title": "Working with files"
+            }
+          ]
+        },
+        {
+          "topic": "Environment",
+          "items": [
+            {
+              "title": "Java Properties"
+            },
+            {
+              "title": "System Properties"
+            },
+            {
+              "title": "Environment Variables"
+            },
+            {
+              "title": "CLASS and CLASSPATH"
+            },
+            {
+              "title": "Security Manager"
+            },
+            {
+              "title": "Storing using YAML"
+            }
+          ]
+        },
+        {
+          "topic": "REGEX",
+          "items": [
+            {
+              "title": "Regular Expressions"
+            }
+          ]
+        },
+        {
+          "topic": "Date Time",
+          "items": [
+            {
+              "title": "Joda"
+            }
+          ]
+        },
+        {
+          "topic": "Deployment",
+          "items": [
+            {
+              "title": "What a jar files is"
+            },
+            {
+              "title": "How to create a jar file manually"
+            },
+            {
+              "title": "Manifest Files"
+            }
+          ]
+        },
+        {
+          "topic": "Unit Tests",
+          "items": [
+            {
+              "title": "Test Driven Development Concepts"
+            },
+            {
+              "title": "JUNIT<p>Java tuts for most of this info <a href=\"https://docs.oracle.com/javase/tutorial/index.html\">here</a>.</p><hr/>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Advanced Stuff",
+      "items": [
+        {
+          "topic": "Binary mastery",
+          "items": [
+            {
+              "title": "Bit shifting"
+            },
+            {
+              "title": "Encoding standards"
+            }
+          ]
+        },
+        {
+          "topic": "Concurrency",
+          "items": [
+            {
+              "title": "Threads, Runnable Class"
+            },
+            {
+              "title": "Synchronization, volatile, atomic"
+            },
+            {
+              "title": "Locks"
+            }
+          ]
+        },
+        {
+          "topic": "Data structures - TODO expand",
+          "items": [
+            {
+              "title": "Lists"
+            },
+            {
+              "title": "Queues"
+            },
+            {
+              "title": "Maps"
+            },
+            {
+              "title": "Sets"
+            },
+            {
+              "title": "ETC"
+            },
+            {
+              "title": "Collections"
+            },
+            {
+              "title": "Difference between the underlying data type and collections library"
+            }
+          ]
+        },
+        {
+          "topic": "Algorithms - TODO expand",
+          "items": [
+            {
+              "title": "Sorting Algorithms"
+            },
+            {
+              "title": "Search algorithms"
+            },
+            {
+              "title": "Time algs take"
+            }
+          ]
+        },
+        {
+          "topic": "Creating JavaDocs",
+          "items": [
+            {
+              "title": "How to generate"
+            },
+            {
+              "title": "Doc comments"
+            },
+            {
+              "title": "@param"
+            },
+            {
+              "title": "@throws"
+            },
+            {
+              "title": "@return"
+            }
+          ]
+        },
+        {
+          "topic": "Using external Libraries",
+          "items": [
+            {
+              "title": "Using *"
+            },
+            {
+              "title": "Importing libraries"
+            },
+            {
+              "title": "Using APIS"
+            },
+            {
+              "title": "Working with maven"
+            }
+          ]
+        },
+        {
+          "topic": "Swing",
+          "items": [
+            {
+              "title": "Components"
+            },
+            {
+              "title": "Events"
+            },
+            {
+              "title": "Listeners"
+            },
+            {
+              "title": "Layout managers"
+            }
+          ]
+        },
+        {
+          "topic": "JavaFX",
+          "items": [
+            {
+              "title": "Listeners"
+            },
+            {
+              "title": "Buttons"
+            },
+            {
+              "title": "Styles (CSS, inline)"
+            }
+          ]
+        },
+        {
+          "topic": "Networking",
+          "items": [
+            {
+              "title": "More coming later."
+            },
+            {
+              "title": "POST, GET HTTP commands"
+            },
+            {
+              "title": "Basic networking"
+            },
+            {
+              "title": "IP addresses, subnet masks, DNS"
+            },
+            {
+              "title": "OSI model"
+            },
+            {
+              "title": "Protocols, Transport (UDP/ TCP) vs Application (HTTP)"
+            }
+          ]
+        },
+        {
+          "topic": "Build Control",
+          "items": [
+            {
+              "title": "Building, deployment"
+            },
+            {
+              "title": "Maven"
+            },
+            {
+              "title": "Plugins, Goals"
+            },
+            {
+              "title": "Build lifecycle"
+            },
+            {
+              "title": "Basic XML"
+            },
+            {
+              "title": "Maven structure"
+            },
+            {
+              "title": "Gradle"
+            },
+            {
+              "title": "No clue."
+            }
+          ]
+        },
+        {
+          "topic": "Source Control",
+          "items": [
+            {
+              "title": "Git"
+            },
+            {
+              "title": "GitHub"
+            },
+            {
+              "title": "Basic Commands"
+            },
+            {
+              "title": "svn (If your job forces you)"
+            }
+          ]
+        },
+        {
+          "topic": "Frameworks / Web Dev",
+          "items": [
+            {
+              "title": "Java EE concepts"
+            },
+            {
+              "title": "Servlets"
+            },
+            {
+              "title": "JSP"
+            },
+            {
+              "title": "Containers"
+            },
+            {
+              "title": "Spring (Server Backend)"
+            },
+            {
+              "title": "REST features"
+            },
+            {
+              "title": "Dependency injection"
+            },
+            {
+              "title": "MVC systems"
+            },
+            {
+              "title": "Freemarker (For view)</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+            },
+            {
+              "title": "Spark"
+            },
+            {
+              "title": "Web containers (Tomcat / Jetty)"
+            },
+            {
+              "title": "REST Concepts"
+            },
+            {
+              "title": "Jax-RS (RESTEasy)</li>\n</ul>"
+            },
+            {
+              "title": "SOAP concepts"
+            },
+            {
+              "title": "XML"
+            }
+          ]
+        },
+        {
+          "topic": "Persistency",
+          "items": [
+            {
+              "title": "SQL"
+            },
+            {
+              "title": "mySQL"
+            },
+            {
+              "title": "JDBC</li>\n</ul>"
+            },
+            {
+              "title": "JPA"
+            },
+            {
+              "title": "Hibernate"
+            },
+            {
+              "title": "EclipseLink"
+            }
+          ]
+        },
+        {
+          "topic": "Serialization",
+          "items": [
+            {
+              "title": "JSON"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

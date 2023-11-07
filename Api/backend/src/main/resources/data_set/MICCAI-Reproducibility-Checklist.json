@@ -1,0 +1,237 @@
+{
+  "id": 122,
+  "header": "MICCAI-Reproducibility-Checklist",
+  "topicList": [
+    "Methods",
+    "Experiments",
+    "Results",
+    "Environments and Requirements",
+    "Dataset",
+    "Preprocessing",
+    "Training",
+    "Inference",
+    "Evaluation",
+    "Results",
+    "Contributing",
+    "Acknowledgement"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Methods",
+      "items": [
+        {
+          "title": "A clear description of the mathematical setting, algorithm, and/or model."
+        },
+        {
+          "title": "Network architecture details"
+        },
+        {
+          "title": "layer details in each block/module"
+        },
+        {
+          "title": "the number of parameters"
+        },
+        {
+          "title": "Explanation of evaluation metrics (with links to code)"
+        }
+      ]
+    },
+    {
+      "topic": "Experiments",
+      "items": [
+        {
+          "title": "Dataset"
+        },
+        {
+          "title": "for public dataset, providing data sources, e.g, references and URL links"
+        },
+        {
+          "title": "for private dataset, providing the data acquisition source and characteristics (e.g., device, contrast agent...), the eligibility description, the ground truth standard (e.g., qualifications and preparation of annotators), annotation tools, analysis of inter-rater variability"
+        },
+        {
+          "title": "details of train / validation / test splits"
+        },
+        {
+          "title": "Preprocessing steps"
+        },
+        {
+          "title": "cropping strategy"
+        },
+        {
+          "title": "resampling method for anisotropic data"
+        },
+        {
+          "title": "intensity normalization method"
+        },
+        {
+          "title": "registration method for multi-sequence/modality data"
+        },
+        {
+          "title": "Training protocols"
+        },
+        {
+          "title": "computing infrastructure (e.g., GPU name, number, memory)"
+        },
+        {
+          "title": "patch size and patch sampling strategy"
+        },
+        {
+          "title": "batch size"
+        },
+        {
+          "title": "optimizer, learning rate and its decay schedule"
+        },
+        {
+          "title": "loss function"
+        },
+        {
+          "title": "data augmentation methods"
+        },
+        {
+          "title": "stopping criteria, and optimal model selection criteria"
+        },
+        {
+          "title": "training time"
+        },
+        {
+          "title": "Testing steps"
+        },
+        {
+          "title": "if using patch-based strategy, describing the patch aggregation method"
+        },
+        {
+          "title": "inference time"
+        },
+        {
+          "title": "Postprocessing steps"
+        },
+        {
+          "title": "Ablation study"
+        }
+      ]
+    },
+    {
+      "topic": "Results",
+      "items": [
+        {
+          "title": "Quantitative analysis of cross validation results and/or testing set results"
+        },
+        {
+          "title": "average and standard deviation of evaluation metrics"
+        },
+        {
+          "title": "<p>statistical analysis (e.g., statistical methods, significant levels...)</p>"
+        },
+        {
+          "title": "<p>Qualitative analysis</p>"
+        },
+        {
+          "title": "box/violin plot, ROC curves"
+        },
+        {
+          "title": "visualized examples of both successful and <strong>failed</strong> cases"
+        }
+      ]
+    },
+    {
+      "topic": "Environments and Requirements",
+      "items": [
+        {
+          "title": "Windows/Ubuntu version"
+        },
+        {
+          "title": "CPU, RAM, GPU information"
+        },
+        {
+          "title": "CUDA version"
+        },
+        {
+          "title": "python version<p>To install requirements:</p><p><code>setup\npip install -r requirements.txt</code></p><blockquote>\n<p>Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Dataset",
+      "items": [
+        {
+          "title": "A link to download the data (if publicly available)"
+        },
+        {
+          "title": "A description of how to prepare the data (e.g., folder structures)"
+        }
+      ]
+    },
+    {
+      "topic": "Preprocessing",
+      "items": [
+        {
+          "title": "<p>A brief description of the preprocessing method</p>"
+        },
+        {
+          "title": "cropping"
+        },
+        {
+          "title": "intensity normalization"
+        },
+        {
+          "title": "resampling<p>Running the data preprocessing code:</p><p><code>python\npython preprocessing.py --input_path &lt;path_to_input_data&gt; --output_path &lt;path_to_output_data&gt;</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Training",
+      "items": [
+        {
+          "title": "<ol>\n<li>To train the model(s) in the paper, run this command:</li>\n</ol><p><code>bash\npython train.py --input-data &lt;path_to_data&gt; --alpha 10 --beta 20</code></p><blockquote>\n<p>Describe how to train the models, with example commands, including the full training procedure and appropriate hyper-parameters.</p>\n</blockquote><p>You can download trained models here:</p>"
+        },
+        {
+          "title": "<a href=\"https://drive.google.com/mymodel.pth\">My awesome model</a> trained on the above dataset with the above code. <blockquote>\n<p>Give a link to where/how the trained models can be downloaded.</p>\n</blockquote><ol>\n<li>To fine-tune the model on a customized dataset, run this command:</li>\n</ol><p><code>bash\npython finetune.py --input-data &lt;path_to_data&gt; --pre_trained_model_path &lt;path to pre-trained model&gt; --other_flags</code></p><ol>\n<li><a href=\"https://colab.research.google.com/\">Colab</a> jupyter notebook</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Inference",
+      "items": [
+        {
+          "title": "<ol>\n<li>To infer the testing cases, run this command:</li>\n</ol><p><code>python\npython inference.py --input-data &lt;path_to_data&gt; --model_path &lt;path_to_trained_model&gt; --output_path &lt;path_to_output_data&gt;</code></p><blockquote>\n<p>Describe how to infer testing cases with the trained models.</p>\n</blockquote><ol>\n<li>\n<p><a href=\"https://colab.research.google.com/\">Colab</a> jupyter notebook</p>"
+        },
+        {
+          "title": "<p>Docker containers on <a href=\"https://hub.docker.com/\">DockerHub</a></p>\n</li>\n</ol><p><code>bash\ndocker container run --gpus \"device=0\" -m 28G --name algorithm --rm -v $PWD/CellSeg_Test/:/workspace/inputs/ -v $PWD/algorithm_results/:/workspace/outputs/ algorithm:latest /bin/bash -c \"sh predict.sh\"</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Evaluation",
+      "items": [
+        {
+          "title": "<p>To compute the evaluation metrics, run:</p><p><code>eval\npython eval.py --seg_data &lt;path_to_inference_results&gt; --gt_data &lt;path_to_ground_truth&gt;</code></p><blockquote>\n<p>Describe how to evaluate the inference results and obtain the reported results in the paper.</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Results",
+      "items": [
+        {
+          "title": "<p>Our method achieves the following performance on <a href=\"https://www.med.upenn.edu/cbica/brats2020/\">Brain Tumor Segmentation (BraTS) Challenge</a></p><p>| Model name       |  DICE  | 95% Hausdorff Distance |\n| ---------------- | :----: | :--------------------: |\n| My awesome model | 90.68% |         32.71          |</p><blockquote>\n<p>Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. </p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>Pick a license and describe how to contribute to your code repository. </p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Acknowledgement",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>We thank the contributors of public datasets. </p>\n</blockquote>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

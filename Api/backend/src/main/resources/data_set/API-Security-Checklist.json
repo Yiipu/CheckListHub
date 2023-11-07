@@ -1,0 +1,148 @@
+{
+  "id": 11,
+  "header": "API-Security-Checklist",
+  "topicList": [
+    "Design",
+    "Input Validation",
+    "Access Control",
+    "Security Configuration",
+    "Logging",
+    "Build",
+    "Security Testing"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Design",
+      "items": [
+        {
+          "title": "[ ] Make sure that all the RESTful APIs have Swagger definitions (e.g. <code>format</code>, <code>maximum</code>, <code>minimum</code>, <code>minItems</code>, <code>maxItems</code>) <a href=\"https://swagger.io/docs/specification/describing-parameters/\">See Swagger documentation for more information</a>"
+        },
+        {
+          "title": "[ ] Make sure that the Swagger definitions contain input validation and all expected header parameters"
+        },
+        {
+          "title": "[ ] Make sure that the definitions contains <a href=\"https://swagger.io/docs/specification/authentication/\">authentication and authorisaiton requirements</a>"
+        },
+        {
+          "title": "[ ] Make sure that the API definitions contain the expected <code>Content-Type</code>"
+        },
+        {
+          "title": "[ ] Use an API gateway to expose APIs"
+        }
+      ]
+    },
+    {
+      "topic": "Input Validation",
+      "items": [
+        {
+          "title": "[ ] Validate all user-supplied input in the headers and in the body before they are processed"
+        },
+        {
+          "title": "[ ] Validate the type (e.g. integer, string, floating point number), size (e.g. minimum string lengths, minimum abd maximum values for numbers) and format the composition of expected inputs"
+        },
+        {
+          "title": "[ ] Validate the sizes of the JSON arrays and number of child elements in XML requests"
+        },
+        {
+          "title": "[ ] Use built-in libraries or annotations for input validation as much as possible, build custom validators if built-in functionality is inadequate"
+        },
+        {
+          "title": "[ ] Validate the size of the request body and request headers (at preferably at the API gateway)"
+        },
+        {
+          "title": "[ ] Validate that the <code>content-type</code> in the request header matches the expected content type"
+        },
+        {
+          "title": "[ ] Do not attempt to sanitise input (e.g. remove certain bad characters or strings)"
+        },
+        {
+          "title": "[ ] Make sure that if input validation fail, the request is rejected with an appropriate error HTTP response"
+        }
+      ]
+    },
+    {
+      "topic": "Access Control",
+      "items": [
+        {
+          "topic": "Rate Limiting",
+          "items": [
+            {
+              "title": "[ ] Make sure that rate limiting/throttling is applied to each API based on either per-session or per-IP or based on other properties that's relevant"
+            }
+          ]
+        },
+        {
+          "topic": "Authentication and Authorisation",
+          "items": [
+            {
+              "title": "[ ] Avoid developing custom authentication protocols as much as possible"
+            },
+            {
+              "title": "[ ] Use an identity provider (IDP) and use open standards and frameworks such as OpenID Connect for user identity and OAuth to delegate authorisation to API resources"
+            },
+            {
+              "title": "[ ] Avoid <a href=\"https://tools.ietf.org/html/rfc7617\">HTTP basic authentication</a> or <a href=\"https://oauth.net/2/grant-types/client-credentials/\">OAuth 2.0 Client Credentials Grant</a> for user authorisaion"
+            },
+            {
+              "title": "[ ] Use <a href=\"https://oauth.net/2/grant-types/authorization-code/\">Authorizaion Code grant</a> with <a href=\"https://oauth.net/2/pkce/\">PKCE (Proof Key for Code Exchange)</a> instead of the <a href=\"https://oauth.net/2/grant-types/implicit/\">Implicit Grant</a> for Single Page Applications (SPAs)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Security Configuration",
+      "items": [
+        {
+          "title": "[ ] Make sure that APIs are exposed through secure channels such as TLS"
+        },
+        {
+          "title": "[ ] Make sure that debug logging or error messages are disabled in production deployments"
+        },
+        {
+          "title": "[ ] Make sure that monitoring and diagnostic endpoints provided by frameworks (e.g. <a href=\"https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html#production-ready-endpoints\">Spring Boot Actuator</a>) are either disabled or secured (HTTPS) and the exposure is controlled"
+        }
+      ]
+    },
+    {
+      "topic": "Logging",
+      "items": [
+        {
+          "title": "[ ] Do not log entire the HTTP request or the HTTP headers or the entire request body as they can potentially contain sensitive information"
+        },
+        {
+          "title": "[ ] Do not log user and system credentials"
+        },
+        {
+          "title": "[ ] Do not log user session information (Cookies, JWT tokens, etc)"
+        }
+      ]
+    },
+    {
+      "topic": "Build",
+      "items": [
+        {
+          "title": "[ ] Use third-party components that do not have vulnerabilities"
+        },
+        {
+          "title": "[ ] Make sure to incorporate security testing into CI/CD processes"
+        }
+      ]
+    },
+    {
+      "topic": "Security Testing",
+      "items": [
+        {
+          "title": "[ ] Make sure that static application security testing (SAST) is performed"
+        },
+        {
+          "title": "[ ] Make sure that software composition analysis (SCA) scanning is performed"
+        },
+        {
+          "title": "[ ] Make sure that dynamic application security testing (DAST) is performed"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

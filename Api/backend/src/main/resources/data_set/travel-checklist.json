@@ -1,0 +1,222 @@
+{
+  "id": 210,
+  "header": "travel-checklist",
+  "topicList": [
+    "Electronics",
+    "Identification & documentation",
+    "Apparel",
+    "Comfort & convenience",
+    "Sanitary & medication",
+    "Misc",
+    "Additional advice"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Electronics",
+      "items": [
+        {
+          "title": "Laptop"
+        },
+        {
+          "title": "Phone"
+        },
+        {
+          "title": "Clear storage (e.g. old photos)"
+        },
+        {
+          "title": "Make sure it's unlocked for SIM cards from any country can be activated on it."
+        },
+        {
+          "title": "Headphones"
+        },
+        {
+          "title": "If owning Bluetooth headphones, bring a 3.5mm jack to use them in-flight."
+        },
+        {
+          "title": "Power bank (10k++ mAh rating)"
+        },
+        {
+          "title": "Outlet adapters"
+        },
+        {
+          "title": "Bring at least two (one for your phone and laptop)"
+        },
+        {
+          "title": "Flash disk"
+        },
+        {
+          "title": "Camera"
+        }
+      ]
+    },
+    {
+      "topic": "Identification & documentation",
+      "items": [
+        {
+          "title": "Passport &amp; visa (including scanned copies)"
+        },
+        {
+          "title": "If passport was recently renewed, bring the old one as well."
+        },
+        {
+          "title": "Double-check travel validity date."
+        },
+        {
+          "title": "Driver's license"
+        },
+        {
+          "title": "Travel itinerary &amp; conference print-outs"
+        },
+        {
+          "title": "Travel diary containing names &amp; addresses (in case phone gets lost)"
+        }
+      ]
+    },
+    {
+      "topic": "Apparel",
+      "items": [
+        {
+          "title": "Breathable, easy-to-wear clothing and footwear"
+        },
+        {
+          "title": "Slip-on shoes"
+        },
+        {
+          "title": "Track pants"
+        },
+        {
+          "title": "T-shirt w/ front pocket"
+        },
+        {
+          "title": "Conference &amp; everyday clothes that match the season"
+        },
+        {
+          "title": "Accessories (e.g. belt, fanny pack)"
+        },
+        {
+          "title": "Spare underwear inside carry-on luggage"
+        },
+        {
+          "title": "Laundry bag and additional bags to put dirty clothes in"
+        }
+      ]
+    },
+    {
+      "topic": "Comfort & convenience",
+      "items": [
+        {
+          "title": "Travel pillow"
+        },
+        {
+          "title": "Sleep mask"
+        },
+        {
+          "title": "Water bottle/tumbler"
+        },
+        {
+          "title": "Sanitary &amp; flushable wipes"
+        }
+      ]
+    },
+    {
+      "topic": "Sanitary & medication",
+      "items": [
+        {
+          "title": "Toiletry bag containing 100ml or less of the following:"
+        },
+        {
+          "title": "Facial cleanser"
+        },
+        {
+          "title": "Toothbrush &amp; toothpaste"
+        },
+        {
+          "title": "Hair product"
+        },
+        {
+          "title": "Soap"
+        },
+        {
+          "title": "Shampoo"
+        },
+        {
+          "title": "Hand towel &amp; body towel"
+        },
+        {
+          "title": "Paracetamol &amp; other over-the-counter drugs"
+        },
+        {
+          "title": "Prescription medication"
+        },
+        {
+          "title": "Bring the actual prescription to avoid getting questioned."
+        },
+        {
+          "title": "Facial razor"
+        },
+        {
+          "title": "Lip balm"
+        },
+        {
+          "title": "Bath lily"
+        },
+        {
+          "title": "Pain relief patches"
+        },
+        {
+          "title": "Sunscreen"
+        }
+      ]
+    },
+    {
+      "topic": "Misc",
+      "items": [
+        {
+          "title": "Travel insurance"
+        },
+        {
+          "title": "Online seat selection &amp; check-in"
+        },
+        {
+          "title": "Spare glasses"
+        },
+        {
+          "title": "Gifts to friends and family"
+        },
+        {
+          "title": "Pocket money (in small denominations)"
+        },
+        {
+          "title": "Roaming activation"
+        },
+        {
+          "title": "Airline phone app to check flight availability"
+        },
+        {
+          "title": "A VPN subscription, useful when connecting to public hotspots within airports, hotels, etc."
+        },
+        {
+          "title": "Credit/debit card"
+        },
+        {
+          "title": "Call issuing bank and let them know your intentions to use the card in another country."
+        }
+      ]
+    },
+    {
+      "topic": "Additional advice",
+      "items": [
+        {
+          "title": "When choosing connecting international flights, choose ones that are at least three hours in between of each other, as unexpected delays might force you to re-book your flight. In my case, I had a 24-hour layover in LAX because there was only a single flight to New Zealand available every day."
+        },
+        {
+          "title": "Always pack the important stuff inside your carry-on luggage (e.g. passport, prescription medication)."
+        },
+        {
+          "title": "It's good to have at least one set of clothes and underwear in your carry-on in case you get laid over for more than 12 hours and would rather leave your checked-in luggage at the airport."
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

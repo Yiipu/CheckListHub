@@ -1,0 +1,502 @@
+{
+  "id": 116,
+  "header": "kubernetes-security-checklist",
+  "topicList": [
+    "Table of Contents",
+    "Kubernetes Infrastructure",
+    "Kubernetes Security Features",
+    "Kubernetes Authorization - RBAC",
+    "Kubernetes Pod Security",
+    "Kubernetes Secrets",
+    "Kubernetes Network Security",
+    "Kubernetes Supply Chain Security",
+    "Kubernetes Thread Matrix",
+    "Common Attacks",
+    "Policy as a code",
+    "Kubernetes Reliability Best Practices",
+    "Kubernetes Security Tools",
+    "Kubernetes Security Guides",
+    "Kubernetes CI/CD Artifacts",
+    "Further reading:",
+    "Collaborate"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<a href=\"#kubernetes-infrastructure\">Kubernetes Infrastructure</a>"
+        },
+        {
+          "title": "<a href=\"#kubernetes-security-features\">Kubernetes Security Features</a>"
+        },
+        {
+          "title": "<a href=\"#kubernetes-authorization---rbac\">Kubernetes Authorization - RBAC</a>"
+        },
+        {
+          "title": "<a href=\"#kubernetes-pod-security\">Kubernetes Pod Security</a>"
+        },
+        {
+          "title": "<a href=\"#kubernetes-secrets\">Kubernetes Secrets</a>"
+        },
+        {
+          "title": "<a href=\"#kubernetes-network-security\">Kubernetes Networking</a>"
+        },
+        {
+          "title": "<a href=\"#kubernetes-supply-chain-security\">Kubernetes Supply Chain Security</a>"
+        },
+        {
+          "title": "<a href=\"#common-attacks\">Common attacks</a>"
+        },
+        {
+          "title": "<a href=\"#kubernetes-security-tools\">Kubernetes Security Tools</a>"
+        },
+        {
+          "title": "<a href=\"#kubernetes-security-guides\">Kubernetes Security Guides</a>"
+        },
+        {
+          "title": "<a href=\"#further-reading\">Further reading</a>"
+        },
+        {
+          "title": "<a href=\"#collaborate\">Collaborate</a><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes Infrastructure",
+      "items": [
+        {
+          "title": "<p><img alt=\"infra-k8s\" src=\"./img/infra-k8s-security.png\"/></p>"
+        },
+        {
+          "title": "✅ Limiting access to the Kubernetes API server except from trusted networks."
+        },
+        {
+          "title": "Limit access to Network API Server (Control plane)"
+        },
+        {
+          "title": "<p>Limit access to Network Nodes</p>\n<blockquote>\n<p>Ports and Protocols - <a href=\"https://kubernetes.io/docs/reference/ports-and-protocols/\">kubernetes official doc</a></p>\n</blockquote>"
+        },
+        {
+          "title": "<p>✅ Limiting access to Kubernetes Cloud Provider API. Apply the least privilege in the Authorization IAM.</p>"
+        },
+        {
+          "title": "✅ Limiting access to etcd"
+        },
+        {
+          "title": "Apply etcd Encryption"
+        },
+        {
+          "title": "Use TLS communication"
+        },
+        {
+          "title": "is ETCD access limited to control plane?"
+        },
+        {
+          "title": "✅ Apply host security benchmark: OpenSCAP, OVAL. Validate if your hosts are following the CIS benchmark. <code>Compliance</code>"
+        },
+        {
+          "title": "✅ Updates and patches"
+        },
+        {
+          "title": "Update the kubernetes version with the fixed bugs"
+        },
+        {
+          "title": "✅ Certs: SSL/TLS for your Kubernetes Cluster"
+        },
+        {
+          "title": "Automated issuance and renewal of certificates to secure Ingress with TLS"
+        },
+        {
+          "title": "Secure pod-to pod communication with mTLS using private PKI Issuers"
+        },
+        {
+          "title": "Supports certificate use cases for web facing and internal workloads<blockquote>\n<p><a href=\"https://cert-manager.io/\">cert-manager</a> is a X.509 certificate controller for Kubernetes and OpenShift workloads.</p>\n<p>Manage TLS Certificates in a Cluster - <a href=\"https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/\">Kubernetes official doc</a></p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes Security Features",
+      "items": [
+        {
+          "title": "✅ Authorization: RBAC"
+        },
+        {
+          "title": "✅ Authentication: SSO"
+        },
+        {
+          "title": "✅ Secrets management"
+        },
+        {
+          "title": "✅ Pod Security policy"
+        },
+        {
+          "title": "✅ Network policy"
+        },
+        {
+          "title": "✅ Observability: Auditing API server"
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes Authorization - RBAC",
+      "items": [
+        {
+          "title": "✅ Role-based Access Control - RBAC"
+        },
+        {
+          "title": "<em>Follow the principle of least privilege</em>"
+        },
+        {
+          "title": "Workload identity in Cloud providers: Employ workload identity to tie RBAC to the cloud provider’s authentication mechanism."
+        },
+        {
+          "title": "<p>Avoid admin-level access in the cluster</p>"
+        },
+        {
+          "title": "<a href=\"https://github.com/aquasecurity/kubectl-who-can\">AquaSecurity/kubectl-who-can</a>. Show who has RBAC permissions to perform actions on different resources in Kubernetes."
+        },
+        {
+          "title": "<a href=\"https://github.com/FairwindsOps/rbac-manager\">FairwindsOps/rbac-manager</a>. This is an operator that supports declarative configuration for RBAC with new custom resources.</li>\n</ul>"
+        },
+        {
+          "title": "<p><a href=\"https://blog.aquasec.com/kubernetes-rbac\">Kubernetes RBAC: Asking for Forgiveness or Getting Permission</a></p>"
+        },
+        {
+          "title": "<a href=\"https://blog.aquasec.com/privilege-escalation-kubernetes-rbac\">Privilege Escalation from Node/Proxy Rights in Kubernetes RBAC</a>"
+        },
+        {
+          "title": "<a href=\"https://blog.aquasec.com/kubernetes-rbac-privilige-escalation\">Kubernetes RBAC: How to Avoid Privilege Escalation via Certificate Signing</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes Pod Security",
+      "items": [
+        {
+          "title": "✅ <a href=\"https://kubernetes.io/docs/concepts/security/pod-security-standards/\">Pod security standards</a>: Restricted, Baseline and Privileged."
+        },
+        {
+          "title": "✅ Configure a <a href=\"https://kubernetes.io/docs/tasks/configure-pod-container/security-context/\">Security context</a> for a pod or container."
+        },
+        {
+          "title": "✅ Container runtime with stronger isolation"
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes Secrets",
+      "items": [
+        {
+          "title": "✅ Encrypt all your secrets"
+        },
+        {
+          "title": "Mozilla's SOPS"
+        },
+        {
+          "title": "Key Management stores in the Cloud Providers"
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes Network Security",
+      "items": [
+        {
+          "title": "<p>when’s the last time anyone discovered a sophisticated attack from a\npacket capture (PCAP) in Kubernetes?</p><p><img alt=\"network-k8s\" src=\"./img/network-k8s.png\"/></p><blockquote>\n<blockquote>\n<p><a href=\"https://isovalent.com/data/isovalent_security_observability.pdf\">Image by Security Observability with eBPF</a></p>\n</blockquote>\n</blockquote>"
+        },
+        {
+          "title": "✅  Network Policy"
+        },
+        {
+          "title": "Use nano segmentation"
+        },
+        {
+          "title": "Use network policy: manage cluster ingress and egress"
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes Supply Chain Security",
+      "items": [
+        {
+          "title": "✅ Enforce image trust with Image signing"
+        },
+        {
+          "title": "Image signing: Container Signing, Verification and Storage in an OCI registry."
+        },
+        {
+          "title": "<a href=\"cosign-with-kubernetes-ensure-integrity-of-images-before-deployment\">Cosign vs Notary by Rewanth</a>"
+        },
+        {
+          "title": "✅ Enabled Kubernetes <a href=\"https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/\">Admission controllers</a> to verify the image integrity."
+        },
+        {
+          "title": "✅ SCA, SBOM<p><img alt=\"container-signing\" src=\"./img/container-signing.png\"/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes Thread Matrix",
+      "items": [
+        {
+          "title": "<a href=\"https://microsoft.github.io/Threat-Matrix-for-Kubernetes/\">Microsoft Threat Matrix</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Common Attacks",
+      "items": [
+        {
+          "title": "Abuse credentials: RBAC, service accounts system:masters"
+        },
+        {
+          "title": "Poisoned Images / Malicious Images in the registry"
+        },
+        {
+          "title": "Supply chain mitigation: Secure Ci/CD env, Image assurance, Image signing"
+        },
+        {
+          "title": "Privileged Escalation – Breaking out of the Container: Excessive capabiiities such as CAP_SYS_ADMIN, CAP_NET_ADMIN, CAP_SYS_PTRACE"
+        },
+        {
+          "title": "<p>Escape to Host- Kubernetes Privilege Pod application</p>"
+        },
+        {
+          "title": "writable hostPath mount: Avoid with misconfigurations k8s tools"
+        },
+        {
+          "title": "<a href=\"https://www.crowdstrike.com/blog/cve-2022-0185-kubernetes-container-escape-using-linux-kernel-exploit/\">CVE-2022-0185: Kubernetes Container Escape Using Linux Kernel Exploit</a></li>\n</ul>"
+        },
+        {
+          "title": "<p>Backdoor container - Persistence: capture the contents of the service account token mounted in the container</p>"
+        },
+        {
+          "title": "<a href=\"https://attack.mitre.org/software/S0600/\">Doki Malware</a>"
+        },
+        {
+          "title": "Used secret management for your application data."
+        },
+        {
+          "title": "Cryptominers"
+        },
+        {
+          "title": "<a href=\"https://attack.mitre.org/software/S0599/\">Kinsing Malware</a>"
+        },
+        {
+          "title": "Laterally moving within the cluster, Network scanning: Avoid with network policy or network segmentation."
+        },
+        {
+          "title": "Misconfigured Kubelet API: Avoid with Kubernetes hardening tools."
+        },
+        {
+          "title": "Set to false the <code>--anonymous-auth</code> flag in the kubelet component."
+        },
+        {
+          "title": "<a href=\"https://attack.mitre.org/software/S0601/\">Hildegard Malware</a>"
+        },
+        {
+          "title": "Application exploit (RCE, SSRF, XXE, etc.)"
+        },
+        {
+          "title": "Reverse Shell: Remote code execution (RCE) that opens a reverse shell connection to a suspicious domain that the attacker is listening. <blockquote>\n<blockquote>\n<p>The workload wasn’t restricted by the container runtime and has overly permissive Linux capabilities that\nenables the attacker to mount in the /etc/kubernetes/manifests directory from the host into the container.\nThe attacker then drops a privileged pod manifest in kubelet’s manifest directory. The attacker now has a high-availability, kubelet-managed backdoor into the cluster that supersedes any IAM (identity and access management) or RBAC policies.</p>\n</blockquote>\n</blockquote>"
+        },
+        {
+          "title": "Fileless attacks in containers"
+        },
+        {
+          "title": "<a href=\"https://youtu.be/dizRKAjuhS0\">Using memfd_create syscall</a>"
+        },
+        {
+          "title": "<p>SSRF attacks to the Kubernetes API server</p>"
+        },
+        {
+          "title": "<p>Denial of Service (DoS) or a Distributed Denial of Service (DDoS): Avoid with misconfigurations k8s tools</p>"
+        },
+        {
+          "title": "✅ Limit the resources (CPU, memory) in the pods"
+        },
+        {
+          "title": "<a href=\"https://github.com/FairwindsOps/goldilocks\">Goldilocks</a> - identify a starting point for resource requests and limits.</li>\n</ul>"
+        },
+        {
+          "title": "✅ Limit the resources (CPU, memory) using Quotes by namespace/cluster."
+        },
+        {
+          "title": "✅ Set limits about traffic in the ingress policy. You can set limits on the number of concurrent connections, the number of requests per second, minute, or hour; the size of request bodies."
+        },
+        {
+          "title": "Fork bomb: Avoid with misconfigurations k8s toolss"
+        }
+      ]
+    },
+    {
+      "topic": "Policy as a code",
+      "items": [
+        {
+          "title": "<p>OPA allows users to set policies across infrastructure and applications.</p>"
+        },
+        {
+          "title": "Standard policies."
+        },
+        {
+          "title": "Organization-specific policies"
+        },
+        {
+          "title": "Environment-specific policies<p>Some controls examples:\n• Which registries images can be downloaded from\n• Which OS capabilities a container can execute with\n• Which namespaces are allowed to run sensitive workloads\n• Labels that must be specified for certain resources\n• Disallowing deprecated or dangerous resource types\n• Enforcing naming schemes or internal standards</p>"
+        },
+        {
+          "topic": "Integrates shift-left Kubernetes Security",
+          "items": [
+            {
+              "title": "<p>Run security validation checks in your CI/CD pipeline. Check the manifest written in in Yaml, Terraform, etc</p>"
+            },
+            {
+              "title": "[x] IaC and automation reduce human error by creating predictable results"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes Reliability Best Practices",
+      "items": [
+        {
+          "title": "Simplicity vs Complexity"
+        },
+        {
+          "title": "Service delivery vs traffic routing. Manually maintained DNS entries, Service delivery is required because your application is scaling in and out, and changes are happening at a fast rate."
+        },
+        {
+          "title": "Configuration management tools: Puppet, Ansible, Terraform"
+        },
+        {
+          "title": "Application configuration: ConfigMaps or Secrets"
+        },
+        {
+          "title": "High-availability (HA) architecture / fault tolerance"
+        },
+        {
+          "title": "Resource limits and auto-scaling. <em>set limits on what a pod can consume to increase reliability. This avoids the noisy neighbor problem</em>"
+        },
+        {
+          "title": "Liveness and readiness probes. <em>configure liveness probes and readiness probes to provide your cluster with the ability to self-heal</em>"
+        },
+        {
+          "topic": "Key Monitoring Alerts",
+          "items": [
+            {
+              "title": "Kubernetes deployment with no replicas"
+            },
+            {
+              "title": "Horizontal Pod Autoscaler (HPA) scaling issues"
+            },
+            {
+              "title": "Host disk usage"
+            },
+            {
+              "title": "High IO wait times"
+            },
+            {
+              "title": "Increased network errors"
+            },
+            {
+              "title": "Increase in pods crashed"
+            },
+            {
+              "title": "Unhealthy Kubelets"
+            },
+            {
+              "title": "nginx config reload failures"
+            },
+            {
+              "title": "Nodes that are not ready"
+            },
+            {
+              "title": "Large number of pods that are not in a Running state"
+            },
+            {
+              "title": "External-DNS errors registering records"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes Security Tools",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/inguardians/peirates\">Penetration tool - Peirates</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/aquasecurity/kube-hunter\">Kube-hunter</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/FairwindsOps/Polaris\">FairwindsOps/Polaris</a>. Validation of best practices in your Kubernetes clusters."
+        },
+        {
+          "title": "<a href=\"https://github.com/kubescape/kubescape\">Kubescape</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/aquasecurity/appshield\">AquaSecurity/appshield</a>. Security configuration checks for popular cloud native applications and infrastructure."
+        },
+        {
+          "title": "[Trivy-operator]"
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes Security Guides",
+      "items": [
+        {
+          "title": "<a href=\"https://media.defense.gov/2022/Aug/29/2003066362/-1/-1/0/CTR_KUBERNETES_HARDENING_GUIDANCE_1.2_20220829.PDF\">Kubernetes Hardening Guide by NSA/CISA</a>"
+        },
+        {
+          "title": "<a href=\"https://attack.mitre.org/matrices/enterprise/containers/\">Containers Matrix by Mitre</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Kubernetes CI/CD Artifacts",
+      "items": [
+        {
+          "title": "argoCD"
+        },
+        {
+          "title": "gitops"
+        },
+        {
+          "title": "terraform"
+        },
+        {
+          "title": "helm"
+        },
+        {
+          "title": "Istio help handling mutual TLS encryption inside the cluster."
+        }
+      ]
+    },
+    {
+      "topic": "Further reading:",
+      "items": [
+        {
+          "title": "<a href=\"https://f.hubspotusercontent40.net/hubfs/2184645/Kubernetes-Best-Practices-WhitePaper.pdf\">Fairwinds - Kubernetes Best Practices</a>"
+        },
+        {
+          "title": "<a href=\"https://cheatsheetseries.owasp.org/cheatsheets/Kubernetes_Security_Cheat_Sheet.html\">Kubernetes Security Cheat Sheet by Owasp</a>"
+        },
+        {
+          "title": "<a href=\"https://itnext.io/how-to-spot-gaps-in-your-public-cloud-kubernetes-security-posture-b9cd375f1b25\">gaps in your public cloud kubernetes security posture</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Collaborate",
+      "items": [
+        {
+          "title": "<p>If you find any typos, errors, outdated resources; or if you have a different point of view. Please open a pull request or contact me.</p><p>Pull requests and stars are always welcome 🙌</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

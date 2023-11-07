@@ -1,0 +1,48 @@
+{
+  "id": 46,
+  "header": "ChooChoo",
+  "topicList": [
+    "Features",
+    "Contributors ✨"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Features",
+      "items": [
+        {
+          "title": "<p><strong>Checklists and tutorials</strong></p>"
+        },
+        {
+          "title": "📋 Create checklists for your students to work through"
+        },
+        {
+          "title": "🖊️ Link checklist items to tutorials written with Jupyter Notebooks or Markdown</li>\n</ul><p><strong>Student self-assessment</strong></p>"
+        },
+        {
+          "title": "❓ Link checklist items to a question bank"
+        },
+        {
+          "title": "👩‍🎤 Allow students to generate their own personalised question sets</li>\n</ul><p><strong>Class collaboration</strong></p>"
+        },
+        {
+          "title": "📢 Enable students contributions to the question bank"
+        },
+        {
+          "title": "👩‍🎤 Use student peer-review to decide which questions are published</li>\n</ul><p><strong>Diagnostic teaching</strong></p>"
+        },
+        {
+          "title": "📊 Generate online plots to summarise class progress in real time"
+        }
+      ]
+    },
+    {
+      "topic": "Contributors ✨",
+      "items": [
+        {
+          "title": "<p>Thanks goes to these wonderful people (<a href=\"https://allcontributors.org/docs/en/emoji-key\">emoji key</a>):</p><table>\n<tbody>\n<tr>\n<td align=\"center\" valign=\"top\" width=\"14.28%\"><a href=\"https://github.com/jcohen02\"><img alt=\"Jeremy Cohen\" src=\"https://avatars.githubusercontent.com/u/8027703?v=4?s=100\" width=\"100px;\"><br/><sub><b>Jeremy Cohen</b></sub></img></a><br/><a href=\"#ideas-jcohen02\" title=\"Ideas, Planning, &amp; Feedback\">🤔</a></td>\n<td align=\"center\" valign=\"top\" width=\"14.28%\"><a href=\"http://lucydot.github.io\"><img alt=\"Lucy Whalley\" src=\"https://avatars.githubusercontent.com/u/2452935?v=4?s=100\" width=\"100px;\"/><br/><sub><b>Lucy Whalley</b></sub></a><br/><a href=\"https://github.com/lucydot/ChooChoo/commits?author=lucydot\" title=\"Code\">💻</a> <a href=\"https://github.com/lucydot/ChooChoo/commits?author=lucydot\" title=\"Documentation\">📖</a> <a href=\"https://github.com/lucydot/ChooChoo/commits?author=lucydot\" title=\"Tests\">⚠️</a> <a href=\"#ideas-lucydot\" title=\"Ideas, Planning, &amp; Feedback\">🤔</a> <a href=\"#infra-lucydot\" title=\"Infrastructure (Hosting, Build-Tools, etc)\">🚇</a> <a href=\"#maintenance-lucydot\" title=\"Maintenance\">🚧</a> <a href=\"#projectManagement-lucydot\" title=\"Project Management\">📆</a></td>\n<td align=\"center\" valign=\"top\" width=\"14.28%\"><a href=\"https://github.com/r-pallister\"><img alt=\"r-pallister\" src=\"https://avatars.githubusercontent.com/u/113981707?v=4?s=100\" width=\"100px;\"/><br/><sub><b>r-pallister</b></sub></a><br/><a href=\"https://github.com/lucydot/ChooChoo/commits?author=r-pallister\" title=\"Tests\">⚠️</a></td>\n<td align=\"center\" valign=\"top\" width=\"14.28%\"><a href=\"https://github.com/prakayastha\"><img alt=\"Prakriti Kayastha\" src=\"https://avatars.githubusercontent.com/u/49740967?v=4?s=100\" width=\"100px;\"/><br/><sub><b>Prakriti Kayastha</b></sub></a><br/><a href=\"https://github.com/lucydot/ChooChoo/commits?author=prakayastha\" title=\"Tests\">⚠️</a></td>\n</tr>\n</tbody>\n</table><p>This project follows the <a href=\"https://github.com/all-contributors/all-contributors\">all-contributors</a> specification. Contributions of any kind welcome!</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

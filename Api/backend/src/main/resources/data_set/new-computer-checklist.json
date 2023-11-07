@@ -1,0 +1,1323 @@
+{
+  "id": 134,
+  "header": "new-computer-checklist",
+  "topicList": [
+    "Getting Started",
+    "Performance",
+    "System Preferences",
+    "🖥 Applications",
+    "🚢 Dock",
+    "🚀 Launchpad",
+    "🐚 Shell Software",
+    "Speed up exposé animation",
+    "Show hidden files in finder",
+    "Disable animation for Get Info window",
+    "No .DS_Store files",
+    "!!! Commit changes by running the following",
+    "Programming Languages",
+    "📝 Fonts",
+    "🖥 Hardware (Ideal dev computer (as of 2016))",
+    "🛃 Rules"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Getting Started",
+      "items": [
+        {
+          "title": "<p>You should have the following user/pass combinations ready:\n- Wifi password (OS setup)\n- Apple ID (OS setup)\n- LastPass (Password manager)\n- Phone – 2FA</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Performance",
+      "items": [
+        {
+          "title": "<p><strong>Computer performance is extremely important.</strong></p><p>To do our jobs faster, we try to balance two things:\n- Use of applications to make our lives <strong>easier</strong>\n- Performance/Efficiency to make our lives <strong>faster</strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "System Preferences",
+      "items": [
+        {
+          "topic": "🍎 General",
+          "items": [
+            {
+              "title": "Appearance: Dark"
+            },
+            {
+              "title": "Accent color: Multicolor"
+            },
+            {
+              "title": "Highlight color: Accent Color"
+            },
+            {
+              "title": "Sidebar icon size: Small"
+            },
+            {
+              "title": "[x] Allow wallpaper tinting in windows"
+            },
+            {
+              "title": "Show scroll bars: Automatically based on mouse or trackpad"
+            },
+            {
+              "title": "Click in the scroll bar to: Jump to the next page"
+            },
+            {
+              "title": "Default web browser: Google Chrome"
+            },
+            {
+              "title": "Prefer tabs: in full screen"
+            },
+            {
+              "title": "[ ] Ask to keep changes when closing documents"
+            },
+            {
+              "title": "[x] Close windows when quitting app"
+            },
+            {
+              "title": "Recent items: None"
+            },
+            {
+              "title": "[ ] Allow Handoff"
+            }
+          ]
+        },
+        {
+          "topic": "🖥 Desktop & Screen Saver",
+          "items": [
+            {
+              "title": "Message: Start after: 1 hour"
+            },
+            {
+              "title": "[x] Show with clock"
+            },
+            {
+              "title": "Hot corner: bottom-left, put monitor to sleep"
+            },
+            {
+              "title": "Screen Saver: Default"
+            },
+            {
+              "title": "[ ] Use random screen saver"
+            }
+          ]
+        },
+        {
+          "topic": "🚢 Dock & Menu Bar",
+          "items": [
+            {
+              "title": "Dock"
+            },
+            {
+              "title": "Size: Smallest"
+            },
+            {
+              "title": "[x] Magnification"
+            },
+            {
+              "title": "Position on screen: Right"
+            },
+            {
+              "title": "Minimize windows using: Scale effect"
+            },
+            {
+              "title": "[x] Double-click on a window's title bar to zoom"
+            },
+            {
+              "title": "[ ] Minimize windows into application icon"
+            },
+            {
+              "title": "[ ] Animate opening applications"
+            },
+            {
+              "title": "[x] Automatically hide and show the Dock"
+            },
+            {
+              "title": "[x] Show indicators for open applications"
+            },
+            {
+              "title": "[x] Show recent applications in Dock</li>\n</ul>"
+            },
+            {
+              "title": "Menu Bar"
+            },
+            {
+              "title": "[ ] Automatically hide and show the menu bar on desktop"
+            },
+            {
+              "title": "[x] Automatically hide and show the menu bar in full screen\n  🕒 Date &amp; Time"
+            },
+            {
+              "title": "Date &amp; Time: Set date and time automatically"
+            },
+            {
+              "title": "Time Zone: Set time zone automatically using current location"
+            },
+            {
+              "title": "Clock"
+            },
+            {
+              "title": "[x] Show date and time in menu bar"
+            },
+            {
+              "title": "Time Options: Digital"
+            },
+            {
+              "title": "Date options:"
+            },
+            {
+              "title": "[x] Show the day of the week"
+            },
+            {
+              "title": "[x] Show the date"
+            }
+          ]
+        },
+        {
+          "topic": "🖲 Mission Control",
+          "items": [
+            {
+              "title": "[x] Automatically rearrage Spaces based on most recent use"
+            },
+            {
+              "title": "[x] When switching to an applications, switch to a Space with open windows for the application"
+            },
+            {
+              "title": "[ ] Group windows by application"
+            },
+            {
+              "title": "[x] Displays have separate Spaces"
+            },
+            {
+              "title": "Dashboard: Off"
+            },
+            {
+              "title": "Mission Control: Ctrl + Opt + Cmd + Up"
+            },
+            {
+              "title": "Application windows: Ctrl + Opt + Cmd + Down"
+            },
+            {
+              "title": "Show Desktop: F11"
+            },
+            {
+              "title": "Show Dashboard F12"
+            }
+          ]
+        },
+        {
+          "topic": "🌐 Language & Region",
+          "items": [
+            {
+              "title": "Preferred languages"
+            },
+            {
+              "title": "English - Primary\n    - 简体中文 - Chinese, Simplified</li>\n</ul>"
+            },
+            {
+              "title": "Region: United States"
+            },
+            {
+              "title": "Calendar: Gregorian"
+            },
+            {
+              "title": "Time format: [x] 24-Hour Time"
+            }
+          ]
+        },
+        {
+          "topic": "🔒 Security & Privacy",
+          "items": [
+            {
+              "title": "General"
+            },
+            {
+              "title": "[x] Require password for 1 minute after sleep or screen saver begins"
+            },
+            {
+              "title": "Allow apps downloaded from: Mac App Store and identified developers</li>\n</ul>"
+            },
+            {
+              "title": "Privacy"
+            },
+            {
+              "title": "Allow the apps below to control your computer: (when downloaded)"
+            },
+            {
+              "title": "Google Chrome (https://www.google.com/chrome/browser/features.html)"
+            },
+            {
+              "title": "Moom (https://itunes.apple.com/us/app/moom/id419330170?mt=12)"
+            },
+            {
+              "title": "Allow the app to control your computer via System Preferences &gt; Security &amp; Privacy"
+            }
+          ]
+        },
+        {
+          "topic": "🔍 Spotlight",
+          "items": [
+            {
+              "title": "Only the following:"
+            },
+            {
+              "title": "Folders"
+            },
+            {
+              "title": "PDF Documents"
+            },
+            {
+              "title": "System Preferences"
+            }
+          ]
+        },
+        {
+          "topic": "🔔 Notifications",
+          "items": [
+            {
+              "title": "Allow Notifications: Banners"
+            },
+            {
+              "title": "[x] Show notifcations on lock screen"
+            },
+            {
+              "title": "[x] Show in Notification Center"
+            }
+          ]
+        },
+        {
+          "topic": "📺 Display",
+          "items": [
+            {
+              "title": "Default for display"
+            },
+            {
+              "title": "[x] Automatically adjust brightness"
+            },
+            {
+              "title": "[x] True Tone"
+            },
+            {
+              "title": "Refresh Rate: ProMotion"
+            }
+          ]
+        },
+        {
+          "topic": "🔌 Battery",
+          "items": [
+            {
+              "title": "Turn display off after 15 minutes"
+            },
+            {
+              "title": "[x] Put hard disks to sleep when possible"
+            },
+            {
+              "title": "[x] Slightly dim the display while on battery power"
+            },
+            {
+              "title": "[ ] Optimize video streaming while on battery"
+            },
+            {
+              "title": "[x] Optimized battery charging"
+            },
+            {
+              "title": "[x] Show battery status in menu bar"
+            },
+            {
+              "title": "[ ] Low power mode"
+            }
+          ]
+        },
+        {
+          "topic": "⌨ Keyboard",
+          "items": [
+            {
+              "title": "Key Repeat - 2nd to fastest"
+            },
+            {
+              "title": "Delay Until Repeat - 3rd tick from left"
+            },
+            {
+              "title": "[x] Adjust keyboard brightness in low light"
+            },
+            {
+              "title": "[ ] Turn off when computer is not used"
+            },
+            {
+              "title": "[x] Show Keyboard, Emoji, &amp; Symbol Viewers in menu bar"
+            },
+            {
+              "title": "[x] Use all F1, F2, etc."
+            }
+          ]
+        },
+        {
+          "topic": "🖱 Mouse",
+          "items": [
+            {
+              "title": "Tracking speed: Fastest"
+            },
+            {
+              "title": "(you can increase it beyond this by doing this http://apple.stackexchange.com/questions/15210/how-to-increase-tracking-speed-beyond-the-maximum)</li>\n</ul>"
+            },
+            {
+              "title": "Scrolling speed: 4th tick from left"
+            },
+            {
+              "title": "Double-Click speed: 2nd tick from right"
+            },
+            {
+              "title": "Primary mouse button: Left"
+            }
+          ]
+        },
+        {
+          "topic": "⬜ Trackpad",
+          "items": [
+            {
+              "title": "Point &amp; Click"
+            },
+            {
+              "title": "[ ] Look up &amp; data detectors"
+            },
+            {
+              "title": "[x] Secondary click"
+            },
+            {
+              "title": "[x] Tap to click"
+            },
+            {
+              "title": "Click: Medium"
+            },
+            {
+              "title": "Tracking speed: 2nd to last tick"
+            },
+            {
+              "title": "[x] Force Click and haptic feedback</li>\n</ul>"
+            },
+            {
+              "title": "Scroll &amp; Zoom"
+            },
+            {
+              "title": "[x] Scroll direction"
+            },
+            {
+              "title": "[x] Zoom in or out"
+            },
+            {
+              "title": "[x] Smart zoom"
+            },
+            {
+              "title": "[x] Rotate</li>\n</ul>"
+            },
+            {
+              "title": "More Gestures"
+            },
+            {
+              "title": "[x] Swipe between pages"
+            },
+            {
+              "title": "[x] Swipe between full-screen apps"
+            },
+            {
+              "title": "[x] Notification Center"
+            },
+            {
+              "title": "[x] Mission Control"
+            },
+            {
+              "title": "[x] App Exposé"
+            },
+            {
+              "title": "[x] Launchpad"
+            },
+            {
+              "title": "[x] Show Desktop"
+            }
+          ]
+        },
+        {
+          "topic": "🖨 Printers & Scanners - Nothing special",
+          "items": []
+        },
+        {
+          "topic": "🔊 Sound",
+          "items": [
+            {
+              "title": "Nothing special"
+            },
+            {
+              "title": "[x] Show volume in menu bar"
+            }
+          ]
+        },
+        {
+          "topic": "☁️/🌐 iCloud / Internet Accounts",
+          "items": [
+            {
+              "title": "Uncheck all besides hardware settings. Use G Suite, Chrome, and Google Photos instead."
+            },
+            {
+              "title": "[x] Keychain"
+            },
+            {
+              "title": "[x] Find My Mac<p>Ignore all those scary warnings and click \"Remove from Mac\".</p>"
+            }
+          ]
+        },
+        {
+          "topic": "💎 Extensions",
+          "items": [
+            {
+              "title": "DON'T DOWNLOAD DRIVE OR DROPBOX"
+            },
+            {
+              "title": "Actions: Not enabled"
+            },
+            {
+              "title": "Finder: Not enabled"
+            },
+            {
+              "title": "Share Menu: Mail, AirDrop, Messages"
+            },
+            {
+              "title": "Today: Not enabled"
+            }
+          ]
+        },
+        {
+          "topic": "🕸 Network",
+          "items": [
+            {
+              "title": "Show Wi-Fi status in menu bar"
+            },
+            {
+              "title": "Advanced"
+            },
+            {
+              "title": "Nothing really different besides default"
+            },
+            {
+              "title": "DNS Servers"
+            },
+            {
+              "title": "192.168.0.1"
+            }
+          ]
+        },
+        {
+          "topic": "📲 Blootooth",
+          "items": [
+            {
+              "title": "Turn Bluetooth Off"
+            },
+            {
+              "title": "[ ] Show Bluetooth in menu bar"
+            }
+          ]
+        },
+        {
+          "topic": "👫 Sharing",
+          "items": [
+            {
+              "title": "Nothing should be on"
+            }
+          ]
+        },
+        {
+          "topic": "👤 Users & Groups",
+          "items": [
+            {
+              "title": "Grant Timmerman - Admin"
+            },
+            {
+              "title": "Avatar: Fox</li>\n</ul>"
+            },
+            {
+              "title": "Other Users - Guest User - Off"
+            }
+          ]
+        },
+        {
+          "topic": "🕰 Time Machine: Off",
+          "items": []
+        },
+        {
+          "topic": "💬 Accessibility",
+          "items": [
+            {
+              "title": "VoiceOver: Disabled"
+            },
+            {
+              "title": "Zoom"
+            },
+            {
+              "title": "[x] Use keyboard shortcuts to zoom"
+            },
+            {
+              "title": "[ ] Use scroll gesture with modifier keys to zoom"
+            },
+            {
+              "title": "Zoom style: Full screen"
+            },
+            {
+              "title": "Advanced"
+            },
+            {
+              "title": "Maximum Zoom: 0"
+            },
+            {
+              "title": "Minimum Zoom: 0"
+            },
+            {
+              "title": "When zoomed in, the screen image moves: Continuously with pointer</li>\n</ul>"
+            },
+            {
+              "title": "Display"
+            },
+            {
+              "title": "[ ] Invert colors"
+            },
+            {
+              "title": "[ ] Use grayscale"
+            },
+            {
+              "title": "[ ] Differentiate without color"
+            },
+            {
+              "title": "[ ] Increase contrast"
+            },
+            {
+              "title": "[ ] Reduce transparency (you could add this if you want)"
+            },
+            {
+              "title": "Display Contrast: Left-most tick"
+            },
+            {
+              "title": "Pointer"
+            },
+            {
+              "title": "Pointer Size: 2nd tick from left"
+            },
+            {
+              "title": "[x] Shake mouse pointer to locate</li>\n</ul>"
+            },
+            {
+              "title": "Descriptions: Disabled"
+            },
+            {
+              "title": "Captions: Default"
+            },
+            {
+              "title": "Audio: None"
+            },
+            {
+              "title": "Keyboard: All disabled"
+            },
+            {
+              "title": "Mouse &amp; Trackpad"
+            },
+            {
+              "title": "[x] Spring-loaded delay: middle</li>\n</ul>"
+            },
+            {
+              "title": "Switch Control: Default"
+            },
+            {
+              "title": "Dictation: None"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "🖥 Applications",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>OPTIONAL: Any application that you have pinned constantly should be converted to a native app\n  - https://github.com/jiahaog/nativefier <code>sudo npm install nativefier -g</code>\n- Applications +(Less tabs, more isolation), -(Links don't work)\n  - SoundCloud: <code>nativefier --name \"SoundCloud\" soundcloud.com</code>\n  - Google Chat: <code>nativefier --name \"Hangouts Chat\" chat.google.com</code></p>\n</blockquote>"
+        },
+        {
+          "topic": "📂 Finder",
+          "items": [
+            {
+              "title": "in folders, right-click, View &gt; as List"
+            },
+            {
+              "title": "Finder &gt; Preferences"
+            },
+            {
+              "title": "Sidebar"
+            },
+            {
+              "title": "Favorites"
+            },
+            {
+              "title": "[ ] All My Files"
+            },
+            {
+              "title": "[ ] iCloud Drive"
+            },
+            {
+              "title": "[ ] AirDrop"
+            },
+            {
+              "title": "[x] Applications"
+            },
+            {
+              "title": "[x] Desktop"
+            },
+            {
+              "title": "[x] Documents"
+            },
+            {
+              "title": "[x] Downloads"
+            },
+            {
+              "title": "[ ] Movies"
+            },
+            {
+              "title": "[ ] Music"
+            },
+            {
+              "title": "[ ] Pictures"
+            },
+            {
+              "title": "[ ] granttimmerman"
+            },
+            {
+              "title": "Shared"
+            },
+            {
+              "title": "[ ] Back to My Mac"
+            },
+            {
+              "title": "[ ] Connected Servers"
+            },
+            {
+              "title": "[ ] Bonjour computers"
+            },
+            {
+              "title": "Devices"
+            },
+            {
+              "title": "[x] Grant's MacBook Pro"
+            },
+            {
+              "title": "[ ] Hard disks"
+            },
+            {
+              "title": "[x] External disks"
+            },
+            {
+              "title": "[x] CDs, DVDs, and iPods"
+            },
+            {
+              "title": "Tags"
+            },
+            {
+              "title": "[ ] Recent tags</li>\n</ul>"
+            },
+            {
+              "title": "Advanced"
+            },
+            {
+              "title": "[x] Show all filename extensions"
+            },
+            {
+              "title": "[ ] Show warning before changing extension"
+            },
+            {
+              "title": "[ ] Show warning before emptying the Trash"
+            },
+            {
+              "title": "When performing a search: Search the Current Folder"
+            }
+          ]
+        },
+        {
+          "topic": "⬛ Terminal Settings",
+          "items": [
+            {
+              "title": "Download my settings here: https://github.com/grant/iterm-profile"
+            },
+            {
+              "title": "Set as default iterm settings</li>\n</ul>"
+            },
+            {
+              "title": "Setup https://github.com/romkatv/powerlevel10k"
+            },
+            {
+              "title": "Copy <code>.ssh</code> folder from this repo."
+            },
+            {
+              "title": "Generate a key and <a href=\"https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent\">add it to GitHub</a>:"
+            },
+            {
+              "title": "<code>sh\n  ssh-keygen -t rsa -b 4096 -C \"your-email@example.com\"\n  eval \"$(ssh-agent -s)\"\n  /usr/bin/ssh-add -K ~/.ssh/id_rsa\n  pbcopy &lt; ~/.ssh/id_rsa.pub</code>"
+            },
+            {
+              "title": "Use GitHub UI to add public key to GH</li>\n</ul>"
+            },
+            {
+              "title": "<a href=\"https://www.iterm2.com/\">iTerm</a> - Terminal"
+            },
+            {
+              "title": "General"
+            },
+            {
+              "title": "Startup"
+            },
+            {
+              "title": "Use System Window Restoration Setting</li>\n</ul>"
+            },
+            {
+              "title": "Closing"
+            },
+            {
+              "title": "[ ] Quit when all windows are closed"
+            },
+            {
+              "title": "[x] Confirm closing multiple sessions"
+            },
+            {
+              "title": "[x] Confirm \"Quit iTerm2 (⌘Q)\" command</li>\n</ul>"
+            },
+            {
+              "title": "Magic"
+            },
+            {
+              "title": "Instant Replay uses [4] MB per session"
+            },
+            {
+              "title": "[ ] Save copy/paste and command history to disk</li>\n</ul>"
+            },
+            {
+              "title": "Services"
+            },
+            {
+              "title": "[ ] Add Bonjour hosts to Profiles"
+            },
+            {
+              "title": "[x] Check for updates automatically"
+            },
+            {
+              "title": "[ ] Prompt for test-release updates</li>\n</ul>"
+            },
+            {
+              "title": "Preferences"
+            },
+            {
+              "title": "[ ] Load preferences from custom folder or URL</li>\n</ul>"
+            },
+            {
+              "title": "Selection"
+            },
+            {
+              "title": "[x] Copy to pasteboard on selection"
+            },
+            {
+              "title": "[ ] Copied text includes trailing newline"
+            },
+            {
+              "title": "[ ] Applications in terminal may access clipboard</li>\n</ul>"
+            },
+            {
+              "title": "Window"
+            },
+            {
+              "title": "[ ] Smart window placement"
+            },
+            {
+              "title": "[x] Adjust window when changing font size"
+            },
+            {
+              "title": "[ ] Zoom maximizes vertically only"
+            },
+            {
+              "title": "[x] Native full screen windows</li>\n</ul>"
+            },
+            {
+              "title": "tmux integration"
+            },
+            {
+              "title": "Open tmux windows as native windows"
+            },
+            {
+              "title": "...</li>\n</ul>"
+            },
+            {
+              "title": "Appearance"
+            },
+            {
+              "title": "Tabs"
+            },
+            {
+              "title": "Tab bar location: Top"
+            },
+            {
+              "title": "Theme: Dark"
+            },
+            {
+              "title": "[x] Show tab bar even when there is only one tab"
+            },
+            {
+              "title": "[x] Show tab numbers"
+            },
+            {
+              "title": "[x] Show tab close buttons"
+            },
+            {
+              "title": "[x] Show activity indicator"
+            },
+            {
+              "title": "[x] Show new-output indicator"
+            },
+            {
+              "title": "[x] Show tab bar in fullscreen</li>\n</ul>"
+            },
+            {
+              "title": "Panes"
+            },
+            {
+              "title": "[x] Show per-pane title bar with split panes</li>\n</ul>"
+            },
+            {
+              "title": "Screen"
+            },
+            {
+              "title": "[ ] Auto-hide menu bar in non-native fullscreen</li>\n</ul>"
+            },
+            {
+              "title": "Window &amp; Tab Titles"
+            },
+            {
+              "title": "[x] Show window number"
+            },
+            {
+              "title": "[x] Show current job name"
+            },
+            {
+              "title": "[ ] Show profile name</li>\n</ul>"
+            },
+            {
+              "title": "Dimming"
+            },
+            {
+              "title": "[ ] Dimming affects only text, not background."
+            },
+            {
+              "title": "Dimming amount: 1/4 Minimal"
+            },
+            {
+              "title": "[x] Dim inactive split panes"
+            },
+            {
+              "title": "[x] Dim background windows</li>\n</ul>"
+            },
+            {
+              "title": "Window"
+            },
+            {
+              "title": "[ ] Show border around window"
+            },
+            {
+              "title": "[ ] Hide scrollbars"
+            },
+            {
+              "title": "[ ] Disable transparency for fullscreen windows by default</li>\n</ul>"
+            },
+            {
+              "title": "Profiles"
+            },
+            {
+              "title": "General"
+            },
+            {
+              "title": "Basics"
+            },
+            {
+              "title": "Name: ?"
+            },
+            {
+              "title": "Command"
+            },
+            {
+              "title": "[x] Login shell"
+            },
+            {
+              "title": "Working Directory"
+            },
+            {
+              "title": "[x] Reuse previous session's directory</li>\n</ul>"
+            },
+            {
+              "title": "Colors"
+            },
+            {
+              "title": "Use the defaults for everything besides the following"
+            },
+            {
+              "title": "Selection: ff8000"
+            },
+            {
+              "title": "Minimum contrast: min</li>\n</ul>"
+            },
+            {
+              "title": "Text"
+            },
+            {
+              "title": "Cursor"
+            },
+            {
+              "title": "[x] Vertical bar"
+            },
+            {
+              "title": "[x] Blinking cursor"
+            },
+            {
+              "title": "Text Rendering"
+            },
+            {
+              "title": "[x] Draw bold text in bold font"
+            },
+            {
+              "title": "[x] Draw bold text in bright colors"
+            },
+            {
+              "title": "[ ] Blinking text allowed"
+            },
+            {
+              "title": "[x] Italic text allowed"
+            },
+            {
+              "title": "Defaults for other things</li>\n</ul>"
+            },
+            {
+              "title": "Window"
+            },
+            {
+              "title": "Transparency: 1/4 from left"
+            },
+            {
+              "title": "[x] Blur: 1/2 from left"
+            },
+            {
+              "title": "Defaults for everything else</li>\n</ul>"
+            },
+            {
+              "title": "Scroll"
+            },
+            {
+              "title": "Scrollback Lines: 50000"
+            },
+            {
+              "title": "Defaults for everything else</li>\n</ul>"
+            },
+            {
+              "title": "Session, Keys, Advanced"
+            },
+            {
+              "title": "Defaults</li>\n</ul>"
+            },
+            {
+              "title": "Preferences"
+            },
+            {
+              "title": "Terminal"
+            },
+            {
+              "title": "Shell Integration"
+            },
+            {
+              "title": "[ ] Insert newline before start of a command prompt if needed"
+            },
+            {
+              "title": "[ ] Show mark indicators"
+            }
+          ]
+        },
+        {
+          "topic": "🌐 Chrome/FF - Web browser",
+          "items": [
+            {
+              "title": "Log in to Chrome profile"
+            },
+            {
+              "title": "Chrome Extensions (chrome://extensions/)"
+            },
+            {
+              "title": "Adblock Plus"
+            },
+            {
+              "title": "Checker Plus for Gmail"
+            },
+            {
+              "title": "Checker Plus for Google Calendar"
+            },
+            {
+              "title": "GoFullPage - Full Page Screen Capture"
+            },
+            {
+              "title": "Hacker News Collapsible Comments"
+            },
+            {
+              "title": "JSON Formatter"
+            },
+            {
+              "title": "LastPass: Free Password Manager"
+            },
+            {
+              "title": "Refined GitHub"
+            },
+            {
+              "title": "Save as PDF"
+            },
+            {
+              "title": "Tab Pinner (Keyboard Shortcuts)"
+            },
+            {
+              "title": "Tab Size on GitHub"
+            },
+            {
+              "title": "Video Speed Controller"
+            },
+            {
+              "title": "WhatFont</li>\n</ul>"
+            },
+            {
+              "title": "<a href=\"https://blog.hubspot.com/marketing/set-gmail-as-browser-default-email-client-ht#sm.0000orlgqi4b7e33zxa10x3lz8ehe\">Open email in Gmail instead of Apple Mail</a>"
+            },
+            {
+              "title": "Display density: compact"
+            }
+          ]
+        },
+        {
+          "topic": "↔️ Moom - Window Management",
+          "items": [
+            {
+              "title": "General"
+            },
+            {
+              "title": "Launch on login"
+            },
+            {
+              "title": "Show preferences on launch"
+            },
+            {
+              "title": "Run as faceless application"
+            },
+            {
+              "title": "Keyboard\n  <img alt=\"https://cloud.githubusercontent.com/assets/744973/20869168/67cc16b0-ba21-11e6-9c03-c06f44e32d39.png\" src=\"https://cloud.githubusercontent.com/assets/744973/20869168/67cc16b0-ba21-11e6-9c03-c06f44e32d39.png\"/>"
+            }
+          ]
+        },
+        {
+          "topic": "🖼 Images/GIFs",
+          "items": [
+            {
+              "title": "<a href=\"https://giphy.com/apps/giphycapture\">Giphy Capture</a> - Create GIFs"
+            },
+            {
+              "title": "<a href=\"https://github.com/keycastr/keycastr\">KeyCastr</a> - <code>brew install --cask keycastr</code>"
+            },
+            {
+              "title": "Screenshots:"
+            },
+            {
+              "title": "Open <code>screenshot.app</code>, options, save to <code>~/screenshots</code>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "🚢 Dock",
+      "items": [
+        {
+          "title": "Remove all but the following:"
+        },
+        {
+          "title": "Finder"
+        },
+        {
+          "title": "Chrome"
+        },
+        {
+          "title": "iTerm"
+        },
+        {
+          "title": "VS Code"
+        }
+      ]
+    },
+    {
+      "topic": "🚀 Launchpad",
+      "items": [
+        {
+          "title": "This will be cluttered, but uninstall anything not relevant."
+        },
+        {
+          "title": "Put all pre-installed apps in folders"
+        }
+      ]
+    },
+    {
+      "topic": "🐚 Shell Software",
+      "items": [
+        {
+          "title": "Download personal dotfiles: https://github.com/grant/dotfiles"
+        },
+        {
+          "title": "Download Homebrew: <code>ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\"</code>"
+        },
+        {
+          "title": "Setup GPG: https://help.github.com/articles/generating-a-new-gpg-key/\n    <code>sh\n    git config --global user.name \"YOUR NAME\"\n    git config --global user.email \"YOUR EMAIL ADDRESS\"\n    git config --global commit.gpgsign true\n    git config --global pull.ff only\n    git config --global push.default current\n    git config --global help.autocorrect 1</code>"
+        },
+        {
+          "title": "<p><code>bat</code>: <code>brew install bat</code> – <code>cat</code> is <code>bat</code> with syntax highlighting</p>"
+        },
+        {
+          "title": "<p>Setup OSX defaults\n    ```sh\n    ## All scripts not effective until Finder and Dock are restarted (see below)</p>\n<h2>Speed up exposé animation</h2>\n<p>defaults write com.apple.dock expose-animation-duration -float 0.1 &amp;&amp; killall Dock</p>\n<h2>Show hidden files in finder</h2>\n<p>defaults write com.apple.finder AppleShowAllFiles -bool YES &amp;&amp; killall Finder</p>\n<h2>Disable animation for Get Info window</h2>\n<p>defaults write com.apple.finder DisableAllAnimations -bool true</p>\n<h2>No .DS_Store files</h2>\n<p>defaults write com.apple.desktopservices DSDontWriteNetworkStores true</p>\n<h1>Disable \"Last Login\"</h1>\n<p>touch .hushlogin</p>\n<h2>!!! Commit changes by running the following</h2>\n<p>killAll Finder &amp;&amp; killAll Dock\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Speed up exposé animation",
+      "items": [
+        {
+          "title": "<p>defaults write com.apple.dock expose-animation-duration -float 0.1 &amp;&amp; killall Dock</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Show hidden files in finder",
+      "items": [
+        {
+          "title": "<p>defaults write com.apple.finder AppleShowAllFiles -bool YES &amp;&amp; killall Finder</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Disable animation for Get Info window",
+      "items": [
+        {
+          "title": "<p>defaults write com.apple.finder DisableAllAnimations -bool true</p>"
+        }
+      ]
+    },
+    {
+      "topic": "No .DS_Store files",
+      "items": [
+        {
+          "title": "<p>defaults write com.apple.desktopservices DSDontWriteNetworkStores true</p>"
+        }
+      ]
+    },
+    {
+      "topic": "!!! Commit changes by running the following",
+      "items": [
+        {
+          "title": "<p>killAll Finder &amp;&amp; killAll Dock\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Programming Languages",
+      "items": [
+        {
+          "title": "Node: https://nodejs.org/en/download/"
+        },
+        {
+          "title": "Golang: https://golang.org/dl/"
+        },
+        {
+          "title": "Java: https://www.oracle.com/java/technologies/javase-downloads.html"
+        },
+        {
+          "title": ".NET Core: https://dotnet.microsoft.com/download"
+        },
+        {
+          "title": "Python: Already preinstalled"
+        },
+        {
+          "title": "Ruby: Already preinstalled"
+        },
+        {
+          "title": "PHP: <code>brew install httpd php72</code>"
+        }
+      ]
+    },
+    {
+      "topic": "📝 Fonts",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/tonsky/FiraCode\">Fira Code</a>\n<code>sh\n    brew tap homebrew/cask-fonts\n    brew install font-fira-code</code>"
+        }
+      ]
+    },
+    {
+      "topic": "🖥 Hardware (Ideal dev computer (as of 2016))",
+      "items": [
+        {
+          "title": "MBP M1"
+        },
+        {
+          "title": "16GB RAM"
+        },
+        {
+          "title": "X Flash storage"
+        }
+      ]
+    },
+    {
+      "topic": "🛃 Rules",
+      "items": [
+        {
+          "title": "Don't install anything else to increase performance."
+        },
+        {
+          "title": "Dropbox"
+        },
+        {
+          "title": "Drive"
+        },
+        {
+          "title": "Adobe Suite (Photoshop, Acrobat, ...)"
+        },
+        {
+          "title": "GoToMeeting"
+        },
+        {
+          "title": "Keybase"
+        },
+        {
+          "title": "Kindle"
+        },
+        {
+          "title": "Dash"
+        },
+        {
+          "title": "Tableau"
+        },
+        {
+          "title": "No games. Use a different computer"
+        },
+        {
+          "title": "Steam"
+        },
+        {
+          "title": "Battle.net/Blizzard"
+        },
+        {
+          "title": "Wineskin"
+        },
+        {
+          "title": "Thalmic labs"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

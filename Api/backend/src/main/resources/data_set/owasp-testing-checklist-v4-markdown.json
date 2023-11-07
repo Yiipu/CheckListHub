@@ -1,0 +1,375 @@
+{
+  "id": 144,
+  "header": "owasp-testing-checklist-v4-markdown",
+  "topicList": [
+    "4.2      Information Gathering",
+    "4.3      Configuration and Deploy Management Testing",
+    "4.4      Identity Management Testing",
+    "4.5      Authentication Testing",
+    "4.6      Authorization Testing",
+    "4.7      Session Management Testing",
+    "4.8      Data Validation Testing",
+    "4.9      Error Handling",
+    "4.10         Cryptography",
+    "4.11         Business Logic Testing",
+    "4.12         Client Side Testing"
+  ],
+  "itemGroups": [
+    {
+      "topic": "4.2      Information Gathering",
+      "items": [
+        {
+          "title": "[ ] OTG-INFO-001  Conduct Search Engine Discovery and Reconnaissance for Information Leakage"
+        },
+        {
+          "title": "[ ] OTG-INFO-002  Fingerprint Web Server"
+        },
+        {
+          "title": "[ ] OTG-INFO-003  Review Webserver Metafiles for Information Leakage"
+        },
+        {
+          "title": "[ ] OTG-INFO-004  Enumerate Applications on Webserver"
+        },
+        {
+          "title": "[ ] OTG-INFO-005  Review Webpage Comments and Metadata for Information Leakage"
+        },
+        {
+          "title": "[ ] OTG-INFO-006  Identify application entry points"
+        },
+        {
+          "title": "[ ] OTG-INFO-007  Map execution paths through application"
+        },
+        {
+          "title": "[ ] OTG-INFO-008  Fingerprint Web Application Framework"
+        },
+        {
+          "title": "[ ] OTG-INFO-009  Fingerprint Web Application"
+        },
+        {
+          "title": "[ ] OTG-INFO-010  Map Application Architecture"
+        }
+      ]
+    },
+    {
+      "topic": "4.3      Configuration and Deploy Management Testing",
+      "items": [
+        {
+          "title": "[ ] OTG-CONFIG-001    Test Network/Infrastructure Configuration"
+        },
+        {
+          "title": "[ ] OTG-CONFIG-002    Test Application Platform Configuration"
+        },
+        {
+          "title": "[ ] OTG-CONFIG-003    Test File Extensions Handling for Sensitive Information"
+        },
+        {
+          "title": "[ ] OTG-CONFIG-004    Backup and Unreferenced Files for Sensitive Information"
+        },
+        {
+          "title": "[ ] OTG-CONFIG-005    Enumerate Infrastructure and Application Admin Interfaces"
+        },
+        {
+          "title": "[ ] OTG-CONFIG-006    Test HTTP Methods"
+        },
+        {
+          "title": "[ ] OTG-CONFIG-007    Test HTTP Strict Transport Security"
+        },
+        {
+          "title": "[ ] OTG-CONFIG-008    Test RIA cross domain policy"
+        }
+      ]
+    },
+    {
+      "topic": "4.4      Identity Management Testing",
+      "items": [
+        {
+          "title": "[ ] OTG-IDENT-001     Test Role Definitions"
+        },
+        {
+          "title": "[ ] OTG-IDENT-002     Test User Registration Process"
+        },
+        {
+          "title": "[ ] OTG-IDENT-003     Test Account Provisioning Process"
+        },
+        {
+          "title": "[ ] OTG-IDENT-004     Testing for Account Enumeration and Guessable User Account"
+        },
+        {
+          "title": "[ ] OTG-IDENT-005     Testing for Weak or unenforced username policy"
+        },
+        {
+          "title": "[ ] OTG-IDENT-006     Test Permissions of Guest/Training Accounts"
+        },
+        {
+          "title": "[ ] OTG-IDENT-007     Test Account Suspension/Resumption Process"
+        }
+      ]
+    },
+    {
+      "topic": "4.5      Authentication Testing",
+      "items": [
+        {
+          "title": "[ ] OTG-AUTHN-001     Testing for Credentials Transported over an Encrypted Channel"
+        },
+        {
+          "title": "[ ] OTG-AUTHN-002     Testing for default credentials"
+        },
+        {
+          "title": "[ ] OTG-AUTHN-003     Testing for Weak lock out mechanism"
+        },
+        {
+          "title": "[ ] OTG-AUTHN-004     Testing for bypassing authentication schema"
+        },
+        {
+          "title": "[ ] OTG-AUTHN-005     Test remember password functionality"
+        },
+        {
+          "title": "[ ] OTG-AUTHN-006     Testing for Browser cache weakness"
+        },
+        {
+          "title": "[ ] OTG-AUTHN-007     Testing for Weak password policy"
+        },
+        {
+          "title": "[ ] OTG-AUTHN-008     Testing for Weak security question/answer"
+        },
+        {
+          "title": "[ ] OTG-AUTHN-009     Testing for weak password change or reset functionalities"
+        },
+        {
+          "title": "[ ] OTG-AUTHN-010     Testing for Weaker authentication in alternative channel"
+        }
+      ]
+    },
+    {
+      "topic": "4.6      Authorization Testing",
+      "items": [
+        {
+          "title": "[ ] OTG-AUTHZ-001     Testing Directory traversal/file include"
+        },
+        {
+          "title": "[ ] OTG-AUTHZ-002     Testing for bypassing authorization schema"
+        },
+        {
+          "title": "[ ] OTG-AUTHZ-003     Testing for Privilege Escalation"
+        },
+        {
+          "title": "[ ] OTG-AUTHZ-004     Testing for Insecure Direct Object References"
+        }
+      ]
+    },
+    {
+      "topic": "4.7      Session Management Testing",
+      "items": [
+        {
+          "title": "[ ] OTG-SESS-001  Testing for Bypassing Session Management Schema"
+        },
+        {
+          "title": "[ ] OTG-SESS-002  Testing for Cookies attributes"
+        },
+        {
+          "title": "[ ] OTG-SESS-003  Testing for Session Fixation"
+        },
+        {
+          "title": "[ ] OTG-SESS-004  Testing for Exposed Session Variables"
+        },
+        {
+          "title": "[ ] OTG-SESS-005  Testing for Cross Site Request Forgery"
+        },
+        {
+          "title": "[ ] OTG-SESS-006  Testing for logout functionality"
+        },
+        {
+          "title": "[ ] OTG-SESS-007  Test Session Timeout"
+        },
+        {
+          "title": "[ ] OTG-SESS-008  Testing for Session puzzling"
+        }
+      ]
+    },
+    {
+      "topic": "4.8      Data Validation Testing",
+      "items": [
+        {
+          "title": "[ ] OTG-INPVAL-001    Testing for Reflected Cross Site Scripting"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-002    Testing for Stored Cross Site Scripting"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-003    Testing for HTTP Verb Tampering"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-004    Testing for HTTP Parameter pollution"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-005    Testing for SQL Injection"
+        },
+        {
+          "title": "[ ] 4.8.5.1         Oracle Testing"
+        },
+        {
+          "title": "[ ] 4.8.5.2         MySQL Testing"
+        },
+        {
+          "title": "[ ] 4.8.5.3         SQL Server Testing"
+        },
+        {
+          "title": "[ ] 4.8.5.4         Testing PostgreSQL"
+        },
+        {
+          "title": "[ ] 4.8.5.5         MS Access Testing"
+        },
+        {
+          "title": "[ ] 4.8.5.6         Testing for NoSQL injection"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-006    Testing for LDAP Injection"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-007    Testing for ORM Injection"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-008    Testing for XML Injection"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-009    Testing for SSI Injection"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-010    Testing for XPath Injection"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-011    IMAP/SMTP Injection"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-012    Testing for Code Injection"
+        },
+        {
+          "title": "[ ] 4.8.12.1        Testing for Local File Inclusion"
+        },
+        {
+          "title": "[ ] 4.8.12.2        Testing for Remote File Inclusion"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-013    Testing for Command Injection"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-014    Testing for Buffer overflow"
+        },
+        {
+          "title": "[ ] 4.8.14.1        Testing for Heap overflow"
+        },
+        {
+          "title": "[ ] 4.8.14.2        Testing for Stack overflow"
+        },
+        {
+          "title": "[ ] 4.8.14.3        Testing for Format string"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-015    Testing for incubated vulnerabilities"
+        },
+        {
+          "title": "[ ] OTG-INPVAL-016    Testing for HTTP Splitting/Smuggling"
+        }
+      ]
+    },
+    {
+      "topic": "4.9      Error Handling",
+      "items": [
+        {
+          "title": "[ ] OTG-ERR-001   Analysis of Error Codes"
+        },
+        {
+          "title": "[ ] OTG-ERR-002   Analysis of Stack Traces"
+        }
+      ]
+    },
+    {
+      "topic": "4.10         Cryptography",
+      "items": [
+        {
+          "title": "[ ] OTG-CRYPST-001    Testing for Weak SSL/TSL Ciphers, Insufficient Transport Layer Protection"
+        },
+        {
+          "title": "[ ] OTG-CRYPST-002    Testing for Padding Oracle"
+        },
+        {
+          "title": "[ ] OTG-CRYPST-003    Testing for Sensitive information sent via unencrypted channels"
+        }
+      ]
+    },
+    {
+      "topic": "4.11         Business Logic Testing",
+      "items": [
+        {
+          "title": "[ ] OTG-BUSLOGIC-001  Test Business Logic Data Validation"
+        },
+        {
+          "title": "[ ] OTG-BUSLOGIC-002  Test Ability to Forge Requests"
+        },
+        {
+          "title": "[ ] OTG-BUSLOGIC-003  Test Integrity Checks"
+        },
+        {
+          "title": "[ ] OTG-BUSLOGIC-004  Test for Process Timing"
+        },
+        {
+          "title": "[ ] OTG-BUSLOGIC-005  Test Number of Times a Function Can be Used Limits"
+        },
+        {
+          "title": "[ ] OTG-BUSLOGIC-006  Testing for the Circumvention of Work Flows"
+        },
+        {
+          "title": "[ ] OTG-BUSLOGIC-007  Test Defenses Against Application Mis-use"
+        },
+        {
+          "title": "[ ] OTG-BUSLOGIC-008  Test Upload of Unexpected File Types"
+        },
+        {
+          "title": "[ ] OTG-BUSLOGIC-009  Test Upload of Malicious Files"
+        }
+      ]
+    },
+    {
+      "topic": "4.12         Client Side Testing",
+      "items": [
+        {
+          "title": "[ ] OTG-CLIENT-001    Testing for DOM based Cross Site Scripting"
+        },
+        {
+          "title": "[ ] OTG-CLIENT-002    Testing for JavaScript Execution"
+        },
+        {
+          "title": "[ ] OTG-CLIENT-003    Testing for HTML Injection"
+        },
+        {
+          "title": "[ ] OTG-CLIENT-004    Testing for Client Side URL Redirect"
+        },
+        {
+          "title": "[ ] OTG-CLIENT-005    Testing for CSS Injection"
+        },
+        {
+          "title": "[ ] OTG-CLIENT-006    Testing for Client Side Resource Manipulation"
+        },
+        {
+          "title": "[ ] OTG-CLIENT-007    Test Cross Origin Resource Sharing"
+        },
+        {
+          "title": "[ ] OTG-CLIENT-008    Testing for Cross Site Flashing"
+        },
+        {
+          "title": "[ ] OTG-CLIENT-009    Testing for Clickjacking"
+        },
+        {
+          "title": "[ ] OTG-CLIENT-010    Testing WebSockets"
+        },
+        {
+          "title": "[ ] OTG-CLIENT-011    Test Web Messaging"
+        },
+        {
+          "title": "[ ] OTG-CLIENT-012    Test Local Storage"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

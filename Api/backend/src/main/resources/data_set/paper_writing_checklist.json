@@ -1,0 +1,251 @@
+{
+  "id": 148,
+  "header": "paper_writing_checklist",
+  "topicList": [
+    "Text",
+    "Figures",
+    "Tables",
+    "Co-authors",
+    "Cover letter"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Text",
+      "items": [
+        {
+          "topic": "Flow",
+          "items": [
+            {
+              "title": "<p>The flow or story arc of your manuscript can take on various forms, but most commonly has an hourglass shape. Here, the width of the hourglass refers to the scope of the material discussed, where the story line itself will fit the Opening, Challenge, Action, Resolution (OCAR) structure, which mostly reflects the standard layout of a paper (see below).</p><p>An hourglass shaped story arc starts with a broad discussion of the context in which to frame the current work, the introduction. The story arc then narrows to the scope of the research question at hand. These research questions are often put forward as formal hypothesis. These hypothesis, how to test them and the final results are layed out in the methodology and results part of the manuscript. This is the narrowest part of story arc, focussing on what is dealt with within the scope of the manuscript and little else. The story arc then widens again by discussing the results relative to (contemporary) literature only to conclude with very broad statements on how to move forward in the conclusion. Other story structures exist, but this is for sure one of the most common ones to consider.</p><p>To guide you to the process you can ask yourself a number of questions:</p>"
+            },
+            {
+              "title": "<p>Opening [O] (Introduction)</p>"
+            },
+            {
+              "title": "[ ] Who are the \"characters\" (topics covered)?"
+            },
+            {
+              "title": "[ ] What is the story about?"
+            },
+            {
+              "title": "[ ] Where does it take place (spatial / temporal coverage)?"
+            },
+            {
+              "title": "[ ] Why is the story important, what is the larger problem at hand?              </li>\n</ul>"
+            },
+            {
+              "title": "<p>Challenge [C] (Introduction / Methods)</p>"
+            },
+            {
+              "title": "[ ] What is the problem you are writing about?"
+            },
+            {
+              "title": "[ ] What specific question do you propose to answer?"
+            },
+            {
+              "title": "[ ] How ‘bad’ is it?"
+            },
+            {
+              "title": "[ ] How important?</li>\n</ul>"
+            },
+            {
+              "title": "<p>Action [A] (Methods / Results)</p>"
+            },
+            {
+              "title": "[ ] What happens to address the challenge?"
+            },
+            {
+              "title": "[ ] Your contribution and results</li>\n</ul>"
+            },
+            {
+              "title": "<p>Resolution [R] (Discussion / Conclusion)</p>"
+            },
+            {
+              "title": "[ ] How has our world view changed as a result of A?"
+            },
+            {
+              "title": "[ ] Big take away messages, what did you learn from your work?"
+            },
+            {
+              "title": "[ ] How should we all move forward?\n<p>Deviating from this basic structure often leads to a skewed story arcs, which either inflates expectations (funnel shape) or underplays the value of the work at hand (inverted funnel). For an in depth discussion I refer to \"<a href=\"https://global.oup.com/academic/product/writing-science-9780199760237?cc=us&amp;lang=en&amp;\">Writing Science</a>\" by Joshua Schimel.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Language",
+          "items": [
+            {
+              "title": "[ ] Use active language"
+            },
+            {
+              "title": "[ ] Avoid long sentences (12 to 17 words max)"
+            },
+            {
+              "title": "[ ] Simplify your language (dead to the thesaurus)"
+            },
+            {
+              "title": "[ ] Check for spelling / grammar mistakes"
+            },
+            {
+              "title": "[ ] One paragraph communicates one important idea"
+            },
+            {
+              "title": "[ ] Connect paragraphs and ideas in a logical order"
+            },
+            {
+              "title": "[ ] Use the present tense for facts"
+            },
+            {
+              "title": "[ ] Use the past tense to describe results"
+            },
+            {
+              "title": "[ ] Avoid informal language, superlatives"
+            },
+            {
+              "title": "[ ] Limit the use of conjuctive (connecting) words (e.g. however, moreover)"
+            },
+            {
+              "title": "[ ] Limit repetitive words (don't substitute using the thesaurus, re-evaluate the sentences)"
+            },
+            {
+              "title": "[ ] Don't use spoken abbreviations (e.g. it's)"
+            },
+            {
+              "title": "[ ] Single-digit numbers should be spelled out; numbers of two or more digits should be expressed as numerals"
+            }
+          ]
+        },
+        {
+          "topic": "Page Layout",
+          "items": [
+            {
+              "title": "[ ] 12 point font (preferrably a serif font)"
+            },
+            {
+              "title": "[ ] Double spaced lines"
+            },
+            {
+              "title": "[ ] Number pages"
+            },
+            {
+              "title": "[ ] Number lines continuously"
+            },
+            {
+              "title": "[ ] Avoid \"<a href=\"https://en.wikipedia.org/wiki/Widow_(typesetting)\">widows or orphans</a>\" or small parts of a larger paragraph remaining at the bottom of a previous page"
+            },
+            {
+              "title": "[ ] Follow the author's layout guide of the journal, most often the schemes:"
+            },
+            {
+              "title": "Introduction, Methods, Results, Discussion, Conclusion"
+            },
+            {
+              "title": "Introduction, Results, Discussion + Conclusion, Methods"
+            }
+          ]
+        },
+        {
+          "topic": "Citation",
+          "items": [
+            {
+              "title": "[ ] Check citations (present in both the manuscript and the reference list)"
+            },
+            {
+              "title": "[ ] Are all data and software sources cited"
+            },
+            {
+              "title": "In R use the <a href=\"https://www.rdocumentation.org/packages/utils/versions/3.5.1/topics/citation\">citation()</a> function to find proper citations to packages</li>\n</ul>"
+            },
+            {
+              "title": "[ ] Is the measurement equipment cited"
+            },
+            {
+              "title": "[ ] Check the citation style required"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Figures",
+      "items": [
+        {
+          "title": "[ ] Figure components are legible in print and on screen"
+        },
+        {
+          "title": "[ ] All axis are named"
+        },
+        {
+          "title": "[ ] Figures are colourblind friendly (for colour schemes see: <a href=\"http://colorbrewer2.org/\">ColorBrewer</a>)"
+        },
+        {
+          "title": "[ ] The use of symbols and line types is preferred over colour"
+        },
+        {
+          "title": "[ ] The caption explains the purpose and content of the figure"
+        },
+        {
+          "title": "[ ] All figures have the same axis orientation"
+        },
+        {
+          "title": "[ ] Figures with the same (x/y) axis are combined in a single panel"
+        },
+        {
+          "title": "[ ] Limit the number of pictures in the main manuscript"
+        },
+        {
+          "title": "Additional figures can go in the Appendix"
+        }
+      ]
+    },
+    {
+      "topic": "Tables",
+      "items": [
+        {
+          "title": "[ ] The caption explains the purpose and content of the table"
+        },
+        {
+          "title": "[ ] Limit the number of tables in the main manuscript"
+        },
+        {
+          "title": "Additional tables can go in the Appendix"
+        }
+      ]
+    },
+    {
+      "topic": "Co-authors",
+      "items": [
+        {
+          "title": "[ ] Do you need to include any co-authors based on data use policies"
+        },
+        {
+          "title": "[ ] Ask permission to include co-authors"
+        },
+        {
+          "title": "[ ] Ask feedback on completed manuscripts only"
+        },
+        {
+          "title": "except for those very closely involved with the analysis"
+        }
+      ]
+    },
+    {
+      "topic": "Cover letter",
+      "items": [
+        {
+          "title": "[ ] Does the manuscript fit the scope of the target journal"
+        },
+        {
+          "title": "[ ] Report potential conflicts of interest"
+        },
+        {
+          "title": "[ ] Does the letter describe the relevance &amp; novelty of manuscript"
+        },
+        {
+          "title": "[ ] Keep it short (aim for half a page)!"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

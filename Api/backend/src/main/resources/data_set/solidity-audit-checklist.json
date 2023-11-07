@@ -1,0 +1,87 @@
+{
+  "id": 198,
+  "header": "solidity-audit-checklist",
+  "topicList": [
+    "Optimizations",
+    "Solidity Pitfalls",
+    "Yul Pitfalls (Solidity Assembly)"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Optimizations",
+      "items": [
+        {
+          "title": "<ol>\n<li>Minimize storage access"
+        },
+        {
+          "title": "Prefer using <code>calldata</code> instead of <code>memory</code>, avoid copying and enjoy slicing:"
+        },
+        {
+          "title": "Non-32-bytes fields of <code>Data calldata data</code> access introduces ~175 gas costs each, prefer using <code>uint256</code>/<code>bytes32</code> and downcast.</li>\n</ul>"
+        },
+        {
+          "title": "Minimize calldata size (very important for L2):"
+        },
+        {
+          "title": "Multiple arrays and nested arrays can be concatenated and sliced by indexes (64 bytes economy per array)"
+        },
+        {
+          "title": "Single byte array could be just concatenated to the end of calldata to avoid having offset and length</li>\n</ul>"
+        },
+        {
+          "title": "Extenral calls on assembly could save thousands of gas"
+        },
+        {
+          "title": "Consider utilizing <a href=\"./solidity-bit-twidding-hacks.md\">\"Bit Twidding Hacks\"</a> ideas for 256-bit integers</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Solidity Pitfalls",
+      "items": [
+        {
+          "title": "<ol>\n<li>Remember <code>address.transfer(*)</code> passes 2300 gas and reverts in case of failure"
+        },
+        {
+          "title": "Remember <code>address.send(*)</code> passes 2300 gas and returns <code>false</code> in case of failure"
+        },
+        {
+          "title": "Never use <code>tx.origin</code> for authentication, non-legitimate action could be executed even inside spam token transfer."
+        },
+        {
+          "title": "External call may revert in the following cases (sometimes even in <code>try-catch</code> block):"
+        },
+        {
+          "title": "Not enough smart contract <code>balance</code> for passing <code>value</code> into the call"
+        },
+        {
+          "title": "Not enough <code>returndatasize()</code> to abi.decode return types (https://github.com/ethereum/solidity/issues/4116)"
+        },
+        {
+          "title": "Not existing or destructed contract when function returns <code>void</code> due to <code>extcodesize</code> pre-call check. (https://github.com/ethereum/solidity/issues/11373, https://github.com/ethereum/solidity/issues/12725)</li>\n</ul>"
+        },
+        {
+          "title": "Arrays pitfalls:"
+        },
+        {
+          "title": "Stores length separately and check boundaries with <code>sload</code> on each item access"
+        },
+        {
+          "title": "Erases items on length shrinking or <code>pop()</code>, can be avoided via Yul (Solidity Assembly)\n</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Yul Pitfalls (Solidity Assembly)",
+      "items": [
+        {
+          "title": "<ol>\n<li>Never do assembly <code>return(*, *)</code> inside <code>public</code> or <code>internal</code> methods, due it cause whole external call exit, similar to <code>revert(*, *)</code> but with success."
+        },
+        {
+          "title": "Never assume memory at <code>mload(0x40)</code> is zeroed, because it could be soiled by previous code.</li>\n</ol>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

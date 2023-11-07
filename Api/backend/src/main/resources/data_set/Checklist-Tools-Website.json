@@ -1,0 +1,115 @@
+{
+  "id": 42,
+  "header": "Checklist-Tools-Website",
+  "topicList": [
+    "🍿 Checklist Tools Website",
+    "Installation",
+    "How to use ?",
+    "Customize",
+    "Troubleshooting",
+    "Contributing",
+    "Support",
+    "Author",
+    "Contributors",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "🍿 Checklist Tools Website",
+      "items": [
+        {
+          "title": "<p align=\"center\">\n<em>A user-friendly and fluid interface for using checklists.</em>\n</p><p align=\"center\">\n<a href=\"https://alexisdanizan.github.io\" target=\"_blank\">\n<img alt=\"Checklist tools website\" src=\"https://github.com/AlexisDanizan/Checklist-Tools-Website/blob/master/data/checklist-tools.gif?raw=true\" title=\"Checklist tools website\" width=\"800\"/>\n</a>\n</p><p><a href=\"https://github.com/AlexisDanizan/Checklist-Tools-Website/blob/master/LICENSE\"><img alt=\"GitHub license\" src=\"https://img.shields.io/github/license/AlexisDanizan/Checklist-Tools-Website.svg\"/></a>\n<a href=\"https://github.com/thedaviddias/Front-End-Checklist/\"><img alt=\"Front‑End_Checklist followed\" src=\"https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg\"/></a>\n<a href=\"https://github.com/AlexisDanizan/Checklist-Tools-Website/issues\"><img alt=\"GitHub issues\" src=\"https://img.shields.io/github/issues/AlexisDanizan/Checklist-Tools-Website.svg\"/></a>\n<a href=\"https://github.com/AlexisDanizan/Checklist-Tools-Website/stargazers\"><img alt=\"GitHub stars\" src=\"https://img.shields.io/github/stars/AlexisDanizan/Checklist-Tools-Website.svg\"/></a>\n<a href=\"https://twitter.com/intent/tweet?text=Wow:&amp;url=https%3A%2F%2Fgithub.com%2FAlexisDanizan%2FChecklist-Tools-Website\"><img alt=\"Twitter\" src=\"https://img.shields.io/twitter/url/https/github.com/AlexisDanizan/Checklist-Tools-Website.svg?style=social\"/></a></p><p><strong>All the power of checklists, without the overhead:</strong>\n - User-friendly and fluid interface\n - Fast build with <a href=\"\">Preact</a> and <a href=\"https://github.com/milligram/milligram\">Milligram</a>\n - Generate PDF report\n - Offline checklists storage with LocalStorage\n - Auto-save your progress 🚀\n - 💥 <strong>Instant no-config app bundling</strong></p><p>Based on checklists:\n - <a href=\"https://github.com/thedaviddias/Front-End-Checklist\">Front-End Checklist</a>\n - <a href=\"https://github.com/marcobiedermann/search-engine-optimization\">Search Engine Optimization</a>\n - <a href=\"https://github.com/shieldfy/API-Security-Checklist\">API Security Checklist</a>\n - <a href=\"https://github.com/karllhughes/side-project-marketing\">The Side Project Marketing Checklist</a></p>"
+        },
+        {
+          "topic": "Use the online version: alexisdanizan.github.io",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Installation",
+      "items": [
+        {
+          "title": "<p><strong>Install with npm</strong>\n<code>bash\nnpm i checklist-tools-website</code></p><p><strong>Install with Yarn</strong>\n<code>bash\nyarn add checklist-tools-website</code></p><p><strong>Install manually</strong></p><p>```bash\ngit clone https://github.com/AlexisDanizan/Checklist-Tools-Website.git\nyarn install</p>"
+        }
+      ]
+    },
+    {
+      "topic": "How to use ?",
+      "items": [
+        {
+          "title": "<p><strong>Build with <a href=\"https://github.com/gulpjs/gulp\">Gulp</a></strong>\n<code>bash\ngulp build</code>\nBuilt files are available in <code>dist</code> folder.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Customize",
+      "items": [
+        {
+          "title": "<p><strong>Build and serve files with <a href=\"https://github.com/gulpjs/gulp\">Gulp</a></strong>\n<code>bash\ngulp build\ngulp webserver</code></p><p>The version is available at <a href=\"http://localhost:8080\">http://localhost:8080</a></p>"
+        },
+        {
+          "topic": "Add a new Checklist",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Troubleshooting",
+      "items": [
+        {
+          "title": "<p>The new checklist does not appear in select:\n - Empty the localstorage before add a new checklist.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<p><strong>Open an issue or a pull request to suggest changes or additions.</strong></p>"
+        },
+        {
+          "topic": "Guide",
+          "items": [
+            {
+              "title": "<p>The <strong>Checklist Tools Website</strong> repository consists of two branches:</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Support",
+      "items": [
+        {
+          "title": "<p>If you have any question or suggestion, don't hesitate to use Twitter:\n* <a href=\"https://twitter.com/alexisdanizan\">Twitter</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Author",
+      "items": [
+        {
+          "title": "<p><strong><a href=\"https://github.com/AlexisDanizan\">Alexis Danizan</a></strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributors",
+      "items": [
+        {
+          "title": "<p>This project exists thanks to all the people who contribute.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p>Designed and created with ♥ by Danizan Alexis. Licensed under the <a href=\"https://www.apache.org/licenses/LICENSE-2.0\">Apache 2.0 License</a>.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

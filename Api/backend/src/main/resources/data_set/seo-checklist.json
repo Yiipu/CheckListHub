@@ -1,0 +1,144 @@
+{
+  "id": 190,
+  "header": "seo-checklist",
+  "topicList": [
+    "HTML",
+    "URLs",
+    "JS and CSS",
+    "Others",
+    "Optionals"
+  ],
+  "itemGroups": [
+    {
+      "topic": "HTML",
+      "items": [
+        {
+          "title": "[ ] Titles (content and lenght)"
+        },
+        {
+          "title": "[ ] Descriptions (content and lenght)"
+        },
+        {
+          "title": "[ ] H1"
+        },
+        {
+          "title": "[ ] H2, H3..."
+        },
+        {
+          "title": "[ ] Link anchor and title"
+        },
+        {
+          "title": "[ ] Image alt"
+        },
+        {
+          "title": "[ ] Image size and weight"
+        },
+        {
+          "title": "[ ] 404 and 500 page"
+        },
+        {
+          "title": "[ ] Compress HTML"
+        },
+        {
+          "title": "[ ] Rich Snippets"
+        },
+        {
+          "title": "[ ] Logo (Content and link)"
+        },
+        {
+          "title": "[ ] Favicon"
+        },
+        {
+          "title": "[ ] <head> elements order: charset, viewport, title, description, Google Analytics script, css, others</head>"
+        }
+      ]
+    },
+    {
+      "topic": "URLs",
+      "items": [
+        {
+          "title": "[ ] URL name"
+        },
+        {
+          "title": "[ ] URL size"
+        },
+        {
+          "title": "[ ] URLs without ending <code>/</code>"
+        },
+        {
+          "title": "[ ] Unique urls"
+        },
+        {
+          "title": "[ ] Absolute URLs"
+        },
+        {
+          "title": "[ ] Sitemap"
+        },
+        {
+          "title": "[ ] Follow/Nofollow links"
+        },
+        {
+          "title": "[ ] Image url"
+        }
+      ]
+    },
+    {
+      "topic": "JS and CSS",
+      "items": [
+        {
+          "title": "[ ] Minimize and merge JS files"
+        },
+        {
+          "title": "[ ] Minimize and merge CSS files"
+        },
+        {
+          "title": "[ ] Fonts should be loaded after the CSS in a separate file"
+        },
+        {
+          "title": "[ ] Use a CDN for statics"
+        }
+      ]
+    },
+    {
+      "topic": "Others",
+      "items": [
+        {
+          "title": "[ ] robots.txt"
+        },
+        {
+          "title": "[ ] Google Analytics"
+        },
+        {
+          "title": "[ ] Web master tools"
+        },
+        {
+          "title": "[ ] All links must return a 200"
+        },
+        {
+          "title": "[ ] Check PageSpeed https://developers.google.com/speed/pagespeed/insights/"
+        },
+        {
+          "title": "[ ] HTTPS"
+        },
+        {
+          "title": "[ ] non-www or www"
+        },
+        {
+          "title": "[ ] Uptime monitor"
+        },
+        {
+          "title": "[ ] Backend errors tracker"
+        }
+      ]
+    },
+    {
+      "topic": "Optionals",
+      "items": [
+        {
+          "title": "[ ] Redirects from old site to new site"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

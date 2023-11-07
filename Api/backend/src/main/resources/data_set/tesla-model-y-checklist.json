@@ -1,0 +1,331 @@
+{
+  "id": 207,
+  "header": "tesla-model-y-checklist",
+  "topicList": [
+    "Before You Buy",
+    "Exterior",
+    "Interior",
+    "Frunk",
+    "Trunk",
+    "Final thoughts about your delivery inspection",
+    "What next?",
+    "Ownership beyond the first 1,000 miles"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Before You Buy",
+      "items": [
+        {
+          "title": "<p>Ensure that you buy the car at the location you intend to pick up. Working with a showroom sales representative means that the rep is not on\nthe ground and they are unable to inspect the vehicle themselves before selling it to you. Sales requests are simply forward onto the pickup\nlocation and any personal details or requests are lost in the handoff.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Exterior",
+      "items": [
+        {
+          "topic": "Locked",
+          "items": [
+            {
+              "title": "[ ] Vehicle VIN matches the assigned VIN"
+            },
+            {
+              "title": "[ ] Color is as ordered"
+            },
+            {
+              "title": "[ ] Wheel style is as ordered (19\" 'Gemini' Wheel, 20\" Induction Wheel, etc)."
+            },
+            {
+              "title": "[ ] A sleeve with <em>two</em> keys is provided"
+            },
+            {
+              "title": "[ ] Check the head light fit"
+            },
+            {
+              "title": "[ ] Inspect the paint around intake vents on the front bumper"
+            },
+            {
+              "title": "[ ] Inspect the frunk, look for paint defects, dents and signs of improper closing by the sides of the T logo"
+            },
+            {
+              "title": "[ ] Make sure the hood sits flush with the quarter panels and frunk"
+            },
+            {
+              "title": "[ ] Inspect that the windshield isn't installed shifted (the gaps between the glass and A pillar on either side\nshould be approximately equal). An improperly installed windshield causes significant wind noise at highway speeds."
+            },
+            {
+              "title": "[ ] Check for uneven/wide panel gaps and that panels are flush to car"
+            },
+            {
+              "title": "[ ] Check that the trim along the bottom of the sides of the vehicle are flush with the bottom of the doors"
+            },
+            {
+              "title": "[ ] Check for trim stains"
+            },
+            {
+              "title": "[ ] Check all 4 door levers"
+            },
+            {
+              "title": "[ ] Check all wheels, ensure they are not scratched"
+            },
+            {
+              "title": "[ ] Check all wheels, ensure there is nothing lodged in the tread (screws, nails, debris, etc.)"
+            },
+            {
+              "title": "[ ] Confirm all 4 hubcaps are present and properly attached"
+            },
+            {
+              "title": "[ ] Check for dings on pillars"
+            },
+            {
+              "title": "[ ] Inspect the paint on the outside and the door jams, ensure panel corners do not have chips"
+            },
+            {
+              "title": "[ ] Check for damage to black rocker panels"
+            },
+            {
+              "title": "[ ] Check the tail light fit<blockquote>"
+            },
+            {
+              "title": "<strong>Photo:</strong> <a href=\"https://imgur.com/aPzCKKG\">tail light (passenger side) not flush with panel</a>"
+            },
+            {
+              "title": "<strong>Fix:</strong> not yet available</li>\n</ul>\n</blockquote>"
+            },
+            {
+              "title": "[ ] Check charging port fit (driver side)"
+            },
+            {
+              "title": "[ ] Inspect the tail lights for condensation"
+            },
+            {
+              "title": "[ ] Inspect the undercarriage, look for damage, missing screws, or screws that are sticking out<blockquote>"
+            },
+            {
+              "title": "<strong>Photo:</strong> <a href=\"https://imgur.com/TozVn9I\">undercarriage screw found sticking out, not fully tightened</a>"
+            },
+            {
+              "title": "<strong>Fix:</strong> requires a 10mm wrench; should you spot anything that needs attention ask the SC staff to inspect all screws and clips (they should've done it already) </li>\n</ul>\n</blockquote>"
+            },
+            {
+              "title": "[ ] Inspect all wheel wells. Each wheel well is fitted with noise dampener covers that are attached to the body with a combination of plastic\npins (pushed in all the way) and metal threaded pins (sticking out) with plastic nuts. Confirm that all plastic pins are present\n(there are no empty holes) and all metal pins (2 in each front wheel well, 4 in each rear wheel well) are present and properly attached.<blockquote>"
+            },
+            {
+              "title": "<strong>Photo:</strong> <a href=\"https://imgur.com/6KqcVg4\">threaded pins with and without plastic nuts</a>"
+            },
+            {
+              "title": "<strong>Fix:</strong> mobile service can fix it in minutes\n</blockquote>"
+            }
+          ]
+        },
+        {
+          "topic": "Unlocked",
+          "items": [
+            {
+              "title": "[ ] Turn on the lights on the car including: fog lights, head lights, tail lights, reverse light, brake, signal lights (head light signal and side signal lights)"
+            },
+            {
+              "title": "[ ] Check that wipers function correctly and look for potential wiper dings on hood"
+            },
+            {
+              "title": "[ ] Inspect every glass and make sure there are no scratches or cracks"
+            },
+            {
+              "title": "[ ] Check for trim scratches on windows due to a software bug that doesn't automatically lower the window when opening the door"
+            },
+            {
+              "title": "[ ] Express Pickup: Check the charge of the vehicle. It comes from the factory at ~50% but the local distributor should charge it to 80%-90% for a \"full tank.\""
+            },
+            {
+              "title": "[ ] Verify that the charge port opens and closes"
+            },
+            {
+              "title": "[ ] Verify that the rubber seal is properly attached to the bottom of all 4 doors.<blockquote>"
+            },
+            {
+              "title": "<strong>Photo:</strong> <a href=\"https://imgur.com/AodUDfg\">rubber seal loose on driver door bottom</a>"
+            },
+            {
+              "title": "<strong>Fix:</strong> service center, replace rubber seal (Tesla calls it a \"secondary seal\")\n</blockquote>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Interior",
+      "items": [
+        {
+          "title": "[ ] Inspect the screen for scratches"
+        },
+        {
+          "title": "[ ] Inspect the center console scratches, dings, etc."
+        },
+        {
+          "title": "[ ] Inspect the dash for scratches"
+        },
+        {
+          "title": "[ ] Verify that wireless charging works on both sides"
+        },
+        {
+          "title": "[ ] Confirm wired charging works (2 x USB-C in front, 2 x USB-C in back)"
+        },
+        {
+          "title": "[ ] Open and close the glovebox"
+        },
+        {
+          "title": "[ ] Make sure USB drive for Sentry Mode / Dashcam is present"
+        },
+        {
+          "title": "[ ] Open and close windows using one click open close and manually open and close (make sure there are no noises and they stay up when you close, and when they\ngo down they do all the way down for front two windows. The rear two windows don't go down all the way."
+        },
+        {
+          "title": "[ ] Verify backup camera"
+        },
+        {
+          "title": "[ ] Play a familiar track through the sound system and confirm that all speakers work (use the balance and fader controls) and there\nare no unexpected clicks, etc."
+        },
+        {
+          "title": "[ ] Fold mirrors"
+        },
+        {
+          "title": "[ ] Check all interior lights, and that all reading lights turn on with a press"
+        },
+        {
+          "title": "[ ] Check windshield all around"
+        },
+        {
+          "title": "[ ] Inspect the headliner all around (no grease, damage or scuffs)"
+        },
+        {
+          "title": "[ ] Inspect both coat hooks (should extend, retract and latch)"
+        },
+        {
+          "title": "[ ] Inspect the steering wheel, check front &amp; back for scratches or tears"
+        },
+        {
+          "title": "[ ] Check that turn signal and drive selection stalks work and actuate smoothly"
+        },
+        {
+          "title": "[ ] Check that the car can be put into reverse, neutral, park"
+        },
+        {
+          "title": "[ ] Look for scratches on the passenger side door sill"
+        },
+        {
+          "title": "[ ] Check seats for scuffs/damage/bad seams"
+        },
+        {
+          "title": "[ ] Verify all front seat adjustments, including lumbar support"
+        },
+        {
+          "title": "[ ] Confirm seat warmers work"
+        },
+        {
+          "title": "[ ] Verify third row seats work correctly if included in your order"
+        },
+        {
+          "title": "[ ] Confirm the middle seat on back row is flush at both ends"
+        },
+        {
+          "title": "[ ] Confirm that back seats recline adjustment works correctly"
+        },
+        {
+          "title": "[ ] Inspect the floor mats for rips, stains, etc."
+        },
+        {
+          "title": "[ ] Inspect the metal accelerator and brake pedal arms; there have been\n<a href=\"https://www.reddit.com/r/TeslaModelY/comments/gyhim1/is_this_normal_my_brake_pedal_arm_has_a_welded/\">reports</a> of\ndifferent finish on pedals (matte on accelerator, glossy on brake) and a conspicuous weld in the middle of the brake pedal"
+        },
+        {
+          "title": "[ ] Turn on climate control, force the heat pump to kick in by taking the temperature to either end of the scale and listen for loud noises"
+        },
+        {
+          "title": "[ ] Confirm (car battery) charging works"
+        }
+      ]
+    },
+    {
+      "topic": "Frunk",
+      "items": [
+        {
+          "title": "[ ] Open and close the frunk"
+        },
+        {
+          "title": "[ ] Verify the clips holding the trim area around the frunk"
+        },
+        {
+          "title": "[ ] Confirm the tow hook isn't missing"
+        }
+      ]
+    },
+    {
+      "topic": "Trunk",
+      "items": [
+        {
+          "title": "[ ] Open &amp; close the lift gate; sometimes the weather seal gets caught in the molding, causing a click"
+        },
+        {
+          "title": "[ ] Confirm the lift gate opens and closes without \"shuddering\" and that the button on the hatch works to close it"
+        },
+        {
+          "title": "[ ] Inspect the cargo covers and verify they're properly attached"
+        },
+        {
+          "title": "[ ] Confirm that seat &amp; trunk buttons fold the back seats"
+        },
+        {
+          "title": "[ ] Confirm folding rear seats do not catch on the rear trunk floor carpeting"
+        },
+        {
+          "title": "[ ] Inspect the back seat covers and verify they're properly attached"
+        },
+        {
+          "title": "[ ] Confirm the <a href=\"https://shop.tesla.com/product/sae-j1772-charging-adapter\">J1772 adapter</a> isn't missing"
+        },
+        {
+          "title": "[ ] Check for tow hitch if you included it on your order."
+        }
+      ]
+    },
+    {
+      "topic": "Final thoughts about your delivery inspection",
+      "items": [
+        {
+          "title": "<p>Please don't be \"that guy\" that blocks Tesla deliveries and staff for hours while going over your new car with a microscope!\nYou can report all of the above after you get home, at your leisure: you have a 7 day/100 miles. It’s not like you won’t\naccept the car because of some minor issue that can be fixed by a mobile service tech later (but won’t be fixed at\npickup).   Visit and check the local super charger while you are there, too.</p><p>Better yet, if you can, pick up the car in person at an express checkout site. Assuming all of your affairs are in order via\nthe website, Tesla will park your car in their lot and put your name on it. You simply sign the paperwork they leave on the dash,\ndeposit the paperwork in a bin, and drive off. This allows you all the time you require to inspect the vehicle before deciding\nto accept the car or not. Do note that the express checkout is often staffed by temporary hires or other low-level staff as their\nonly function is to shuffle the cars around and ensure the proper paperwork awaits you. Any problems that may arise they will simply\nask you to schedule an appointment to come back in with the vehicle. Plan accordingly: do not pickup the vehicle at dusk and have\nto examine everything in darkness.</p><p>This car is quite pricey. Make sure it is absolutely what you want before you accept delivery. With the recent push to \"make the numbers,\"\nTesla is selling cars at a faster clip than they are staffing up at. Wait times to get any issues resolved \"later\" may be immense.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "What next?",
+      "items": [
+        {
+          "title": "<p>Should anything escape factory QC, service center QC, and the above checklist here are some options to be aware of:</p>"
+        },
+        {
+          "title": "<p>If the quality of the car is inadequate you can <strong>refuse delivery</strong>. There have been several refused delivery reports\n(<a href=\"https://www.reddit.com/r/TeslaModelY/comments/hgewe8/rejected_delivery_today_vin_012xxx/\">1</a>, \n<a href=\"https://www.reddit.com/r/TeslaModelY/comments/hgvjee/follow_up_image_from_my_other_post_here_was_the/\">2</a>,\n<a href=\"https://www.reddit.com/r/TeslaModelY/comments/hgew40/model_y_rejected_delivery_today/\">3</a>,\n<a href=\"https://www.reddit.com/r/TeslaModelY/comments/hfuum2/deferred_my_delivery/\">4</a>,\n<a href=\"https://www.reddit.com/r/TeslaModelY/comments/hfb1vg/cancelled_model_y_delivery/\">5</a>,\n<a href=\"https://www.reddit.com/r/TeslaModelY/comments/hete2x/update_rejected_delivery/\">6</a>), check out the threads\n for details. Following that you should be assigned a new VIN.</p>"
+        },
+        {
+          "title": "<p>After leaving the lot you have 72 hours/100 miles to <strong>report delivery issues to be fixed free of charge</strong>. The 72 hours\nrefers to items subject to \"wear and tear,\" such as paint defects, scratches, etc. Any item that would normally be covered\nunder warranty is still covered under warranty, but things like blemishes, scratches, dings, scuffs, aren't covered by any\nother car company. However check <a href=\"https://www.reddit.com/r/TeslaModelY/comments/hh8mgv/rattling_in_back_seats_reported_within_7_days/\">this thread</a>\nabout a problem reported within the first 7 days of ownership and being asked to accept a cost estimate.</p>\n<blockquote>\n<p>Note: the information about refusing delivery and reporting delivery issues has been\ncontributed by several people. I couldn't find the authoritative source; pointers appreciated. </p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Ownership beyond the first 1,000 miles",
+      "items": [
+        {
+          "title": "<p>Making it past the above milestones doesn't mean that SC visits or Mobile Service appointments are a thing of the past. Remaining problems caused by\nQC issues may be covered by <a href=\"https://www.tesla.com/support/vehicle-warranty\">Tesla's New Vehicle Warranty</a>, which for Long Range and Performance\nMYs is 8 years or 120,000 miles. Here are a few things to keep an eye on:</p>"
+        },
+        {
+          "title": "<strong>Door rubber seals</strong> Keep an eye on the seals, particularly on the door bottoms (see above under Unlocked)."
+        },
+        {
+          "title": "<strong>Tail light condensation</strong> Wide temperature changes (such as when leaving the vehicle parked in the sun) may cause condensation to appear in the rear tail\nlights. Should that happen fairly evenly across all 4 lights Tesla won't do anything about it. You may have better luck if it's asymmetric so keep an eye for that."
+        },
+        {
+          "title": "<strong>Trim liner</strong> Poor quality adhesive, bad adhesive application, or a combination of both could cause trim liner pieces glued to the trim to come off. For example,\nhere's the <a href=\"https://imgur.com/a/mqvdf77\">liner peeling off from the lift gate trim</a> after only a couple of months. Keep an eye on glued parts and schedule\nservice for anything that's coming loose.<p>Pull requests for changes/additions welcome.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

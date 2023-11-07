@@ -1,0 +1,18 @@
+{
+  "id": 101,
+  "header": "hdf5-iotest",
+  "topicList": [
+    "Concretized"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Concretized",
+      "items": [
+        {
+          "title": "<p>hdf5iotest@spack%gcc@8.3.0 arch=linux-debian10-skylake\n ^autoconf@2.69%gcc@8.3.0 arch=linux-debian10-skylake\n     ^m4@1.4.18%gcc@8.3.0+sigsegv patches=3877ab548f88597ab2327a2230ee048d2d07ace1062efe81fc92e91b7f39cd00,fc9b61654a3ba1a8d6cd78ce087e7c96366c290bc8d2c299f09828d793b853c8 arch=linux-debian10-skylake\n         ^libsigsegv@2.12%gcc@8.3.0 arch=linux-debian10-skylake\n     ^perl@5.32.0%gcc@8.3.0+cpanm+shared+threads arch=linux-debian10-skylake\n         ^berkeley-db@18.1.40%gcc@8.3.0 arch=linux-debian10-skylake\n         ^gdbm@1.18.1%gcc@8.3.0 arch=linux-debian10-skylake\n             ^readline@8.0%gcc@8.3.0 arch=linux-debian10-skylake\n                 ^ncurses@6.2%gcc@8.3.0~symlinks+termlib arch=linux-debian10-skylake\n                     ^pkgconf@1.7.3%gcc@8.3.0 arch=linux-debian10-skylake\n ^automake@1.16.3%gcc@8.3.0 arch=linux-debian10-skylake\n ^hdf5@1.10.7%gcc@8.3.0~cxx~debug~fortran~hl~java+mpi+pic+shared~szip~threadsafe api=none arch=linux-debian10-skylake\n     ^openmpi@4.0.5%gcc@8.3.0~atomics~cuda~cxx~cxx_exceptions+gpfs~java~legacylaunchers~lustre~memchecker~pmi~singularity~sqlite3+static~thread_multiple+vt+wrapper-rpath fabrics=none schedulers=none arch=linux-debian10-skylake\n         ^hwloc@2.2.0%gcc@8.3.0~cairo~cuda~gl~libudev+libxml2~netloc~nvml+pci+shared arch=linux-debian10-skylake\n             ^libpciaccess@0.16%gcc@8.3.0 arch=linux-debian10-skylake\n                 ^libtool@2.4.6%gcc@8.3.0 arch=linux-debian10-skylake\n                 ^util-macros@1.19.1%gcc@8.3.0 arch=linux-debian10-skylake\n             ^libxml2@2.9.10%gcc@8.3.0~python arch=linux-debian10-skylake\n                 ^libiconv@1.16%gcc@8.3.0 arch=linux-debian10-skylake\n                 ^xz@5.2.5%gcc@8.3.0~pic arch=linux-debian10-skylake\n                 ^zlib@1.2.11%gcc@8.3.0+optimize+pic+shared arch=linux-debian10-skylake\n         ^numactl@2.0.14%gcc@8.3.0 patches=4e1d78cbbb85de625bad28705e748856033eaafab92a66dffd383a3d7e00cc94 arch=linux-debian10-skylake</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

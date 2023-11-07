@@ -1,0 +1,179 @@
+{
+  "id": 215,
+  "header": "unifi-hardening-checklist",
+  "topicList": [
+    "Estado",
+    "Tareas",
+    "Contraseñas",
+    "Actualización Firmware",
+    "Firewall",
+    "Protocolo de Seguridad",
+    "Configuracion IDS e IPS",
+    "Filtrado por M.A.C",
+    "Crear red de Invitados",
+    "Gestión Avanzada de Malware",
+    "Notificaciones del dispositivo",
+    "configuracion avanzada global threat management",
+    "configuracion UPNP",
+    "Configuracion frente a ataques a protocolos de email y VoIP",
+    "Configuracion de SNMP",
+    "Tabla Checklist Wi-Fi Unifi",
+    ":ballot_box_with_check: Tabla Checklist (Plantilla)"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Estado",
+      "items": [
+        {
+          "title": "<p>Trabajo en progreso... :construction_worker:</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Tareas",
+      "items": [
+        {
+          "title": "[ ] Añadir la información del checklist"
+        }
+      ]
+    },
+    {
+      "topic": "Contraseñas",
+      "items": [
+        {
+          "title": "<p>Modificación de contraseñas para acceder al dispositivo electrónico. Accediendo en su web (127.0.0.1), entramos en su interfaz ya que podemos loguearnos con usuario/contraseña, por defecto esta puesta como ubnt/ubnt. Debemos modificar esta contraseña para que nadie pueda acceder a nuestro dispositivo</p><p>Por otro lado, es comveniente sustituir la contraseña de acceso al Wifi, más segura de la que viene por defecto, que sea entre 10 y 20 dígitos, con números, símbolos, mayúsculas y minúsculas.</p><p>https://app.tango.us/app/workflow/3244a260-907b-4529-ba0c-f795ed96beff</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Actualización Firmware",
+      "items": [
+        {
+          "title": "<p>Como sabemos, es importante mantener nuestros dispositivos siempre actualizados. Esto nos permite en princpio subsanar muchas de las vulnerabilidades que se usan en posibles ataques.</p><p>Por lo tanto tener un <strong>Firmware</strong> que reciba actualizaciones; es buena señal. Quiere decir que el fabricante se preocupa porque sus dispositivos sean cada vez más seguros.\nY también nos permitirá mas variedad de configuraciones de hardening o bastionado.</p><p>En este caso, los <em>Wi-Fi Unifi</em>, el fabricante y su comunidad van sacando actualizaciones y tenemos varias maneras de poder actualizarlos a tráves de la interfaz gráfica de su controlador <em>UniFi-Controller</em> y son:</p>"
+        },
+        {
+          "title": "Actualización simple a la última versión (si el/los dispositivos están <em>\"adoptados\"</em>)."
+        },
+        {
+          "title": "También se puede realizar una actualización masiva; solo para los dispositivos inalámbricos, que esten pendientes de actualizarse."
+        },
+        {
+          "title": "Actualización en dispositivos con acceso a Internet. El caso de que no se quiera la última versión y queramos una anterior o Beta. Por ejemplo, para probarla en un solo dispositivo, antes de <em>\"adoptar\"</em> el dispositivo en <em>UniFi Controller</em>.\nSi ya lo tenemos <em>\"adoptado\"</em> , también podremos a tráves de las propiedades del dispositivo en <em>UniFi-Controller</em> instalar una versión anterior."
+        },
+        {
+          "title": "Actualización en dispositivos sin conexión a Internet (Caché). En el caso de que los dispositivos Wi-Fi Unifi aún no tengan conexión Internet.\nPero <em>Unifi-Controller</em> si. Tendremos esta opción."
+        },
+        {
+          "title": "Nos permite a tráves del controlador, ingresando un link; para actualizar el dispositivo.\n    Tiene un apartado de <em>Dispositivos Conocidos</em> o <em>Dispositivos del Sitio</em> , en el que podremos actualizar eligiendo previamente la versión.\n    Que posteriormente en un apartado de <em>Descargas</em> , podremos descargarla en los distintos dispositivos que querramos."
+        },
+        {
+          "title": "Actualización vía SSH de manera local (Aplicable a UniFi AP) para dispositivos con/sin Internet."
+        },
+        {
+          "title": "Actualizaciones automáticas. También podemos recibir las actualizaciones de manera automáticas.\n  A tráves del menu de configuración de <em>Unifi-Controller</em> tenemos un <em>\"check\"</em> que podremos activar/desactivar según nos convenga."
+        }
+      ]
+    },
+    {
+      "topic": "Firewall",
+      "items": [
+        {
+          "title": "<p>Creación en proceso por Jose Manuel Arrieta</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Protocolo de Seguridad",
+      "items": [
+        {
+          "title": "<p>El uso de WPA2 proporciona a los usuarios de WiFi un mayor nivel de seguridad, de modo que los datos compartidos a través de la red no puedan ser interceptados por terceros. Este protocolo actualmente no se puede considerar absolutamente seguro por lo que existe una nueva revision de este llamado WPA3.\nNo todos los dipositivos son compatibles con este ultimo protocolo, por lo que tenemos la opción de configurar y hacer uso de uno de ellos dependiendo del dispositivo receptor.</p><p>Enlace de configuración:\nhttps://app.tango.us/app/workflow/d2a9580c-8746-43ef-9711-57ce03c3d446</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Configuracion IDS e IPS",
+      "items": [
+        {
+          "title": "<p>En el dispositivo tenemos la opción de configurar IDS e IPS para protegernos del acceso al dispositivo y denegar paquetes que nuestro sistema detecte como intrusivo. En el momento que se producte una intrusión o ataque, este emite una alerta a los administradores del sistema</p><p>Enlace de configuración: \nhttps://app.tango.us/app/workflow/1d316b1b-67c0-4c21-ad62-a10c2acac0fb</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Filtrado por M.A.C",
+      "items": [
+        {
+          "title": "<p>Si queremos tener una capa adicional de seguridad, entre las recomendaciones básicas y si tenemos una lista concreta de los dispositivos que queremos que se conecte a nuestro <em>Unifi Wi-Fi</em>, o si por el contrario queremos denegar a <em>\"x\"</em> dispositivos de que no se puedan conectar a nuestra red Wi-Fi. Tenemos el filtrado por M.A.C</p><p>Este dispositivo nos proporciona en sus opciones esta configuración.\n- Enlace al proceso de configuración Filtrado por M.A.C en <em>Unifi Controller</em>: https://app.tango.us/app/workflow/32d30dd1-f737-4a22-9080-4e9c37614231</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Crear red de Invitados",
+      "items": [
+        {
+          "title": "<p>En muchas redes el acceso público se ha convertido en algo necesario y muy valioso, desde los aeropuertos hasta las cafeterías, las redes de invitados están satisfaciendo necesidades, minimizando los riesgos de seguridad y asegurando calidad. UniFi habilita a los administradores con las herramientas necesarias para configurar redes de invitados.</p><p>Enlace: https://app.tango.us/app/workflow/175f2b3a-3100-4c68-979a-9288f72b01ea</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Gestión Avanzada de Malware",
+      "items": [
+        {
+          "title": "<p>Para protegernos de todo tipo de malware tenemos bastantes opciones que podemos ir activando dependiendo de nuestras necesidades, yo elegí las más básicas a modo de demostración.</p><p>Enlace: https://app.tango.us/app/workflow/63a77a14-9c29-432b-9717-7e2a6dd8e4ff</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Notificaciones del dispositivo",
+      "items": [
+        {
+          "title": "<p>Podemos elegir las notificaciones que nos avisará el dispositivo, podemos seleccionar que se muestre como una notificación PUSH, que nos reenvíe a una página con la notificación o que nos mande un email.</p><p>Enlace: https://app.tango.us/app/workflow/4f2067ce-7988-4b63-b10a-919151cd714f</p>"
+        }
+      ]
+    },
+    {
+      "topic": "configuracion avanzada global threat management",
+      "items": [
+        {
+          "title": "<p>En este paso añadimos las configuraciones para control de ip comprometidas, TFTP, SNMP.</p><p>link: https://app.tango.us/app/workflow/27232efb-8ed0-4141-977c-811acf4302f5</p>"
+        }
+      ]
+    },
+    {
+      "topic": "configuracion UPNP",
+      "items": [
+        {
+          "title": "<p>En este apartado vamso a a añadir  la configuracion upnp para añadir automaticamente la gateway a los dispositivos en la red que queramos.</p><p>link: https://app.tango.us/app/workflow/cc8e41e2-32e2-44e7-a3c1-c4204386cce1</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Configuracion frente a ataques a protocolos de email y VoIP",
+      "items": [
+        {
+          "title": "<p>Aquí vamos a activar la protección frente a ataques a los protocolos de email(IMAP, SMTP y POP3) y frente a los ataques a VoIP.</p><p>Enlace a la guía: https://app.tango.us/app/workflow/9834e41d-188b-4c6f-b01b-88e4505d20c6</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Configuracion de SNMP",
+      "items": [
+        {
+          "title": "<p>Aquí vamos a activar la opción de SNMP para facilitar la configuración de administración entre los diferentes dispositivos de red.</p><p>Enlace a la guía: https://app.tango.us/app/workflow/60d09e6b-8cab-4417-b6f7-90f376915bce</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Tabla Checklist Wi-Fi Unifi",
+      "items": []
+    },
+    {
+      "topic": ":ballot_box_with_check: Tabla Checklist (Plantilla)",
+      "items": [
+        {
+          "title": "<p>En el código del archivo copiar/pegar, para ir creando mas filas a la tabla del checklist.</p><p>| <b>Control</b> | <b>Nivel Bajo/Medio/Alto</b> | <b>Checkbox</b> |\n| :---        | :---:       | :---:        |\n| Nombre:Control | Nivel: Bajo/Medio/Alto | :black_square_button: |\n| Contraseñas: Se han cambiado las claves por defecto del panel de administración del dispositivo. Haciendo uso de claves robustas entre 10 y 20 carácteres alfanúmericos y carácteres especiales. | Nivel: Alto | :black_square_button: |\n| Actualización Firmware: Se ha actualizado el firmware en el dispositivo. | Nivel: Alto | :black_square_button: |\n| Microsegmentación de VLAN | Nivel:  | :black_square_button: |\n| Creación de backups automáticos | Nivel:  | :black_square_button: |\n| Filtrado por M.A.C: Se han establecido listas blancas/negras de M.A.C's en la red Wi-Fi | Nivel: Medio | :black_square_button: |\n| Red Guest: Se ha creado red Invitados diferenciada de la red principal. | Nivel: Medio | :black_square_button: |\n| Se ha configurado el protocolo de seguridad WPA2/WPA3. | Nivel: Alto | :black_square_button: |\n| Se ha configurado los sistemas IDS e IPS. | Nivel: Alto | :black_square_button: |\n| Gestión de malware | Nivel: Alto | :black_square_button: |\n| Notificaciones | Nivel: Bajo | :black_square_button: |\n| Configuracion avanzada global threat | Nivel: alto | :black_square_button: |\n| configuracion upnp | Nivel: Bajo | :black_square_button: |\n| Configuracion frente a ataques a protocolos de email y VoIP | Nivel: Medio | :black_square_button: |\n| Configuracion de SNMP | Nivel: Bajo | :black_square_button: |</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

@@ -1,0 +1,244 @@
+{
+  "id": 234,
+  "header": "zen-rails-security-checklist",
+  "topicList": [
+    "Summary",
+    "Supported Rails Versions",
+    "Table of Contents",
+    "The Checklist",
+    "Details and Code Samples",
+    "Authors",
+    "Contributing",
+    "TODO",
+    "References and Further Reading",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Summary",
+      "items": [
+        {
+          "title": "<p>This document provides a not necessarily comprehensive list of security measures\nto be implemented when developing a Ruby on Rails application. It is designed to\nserve as a quick reference and minimize vulnerabilities caused by developer\nforgetfulness. It does not replace developer training on secure coding\nprinciples and how they can be applied.</p><p>Describing how each security vulnerability works is outside the scope of this\ndocument. Links to external resources containing further information are\nprovided in the corresponding sections of the checklist. Please apply only the\nsuggestions you thoroughly understand.</p><p>Please keep in mind that security is a moving target. New vulnerabilities and\nattack vectors are discovered every day. We suggest you try to keep up to date,\nfor instance, by subscribing to security mailing lists related to the software\nand libraries you are using.</p><p>This checklist is meant to be a community-driven resource. Your \n<a href=\"#contributing\">contributions</a> are welcome! </p><p><strong>Disclaimer</strong>: This document does not cover all possible security \nvulnerabilities. The authors do not take any legal responsibility for the \naccuracy or completeness of the information herein.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Supported Rails Versions",
+      "items": [
+        {
+          "title": "<p>This document focuses on Rails 4 and 5. Vulnerabilities that were present in \nearlier versions and fixed in Rails 4 are not included.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<a href=\"#the-checklist\">The Checklist</a>"
+        },
+        {
+          "title": "<a href=\"#injection\">Injection</a>"
+        },
+        {
+          "title": "<a href=\"#authentication\">Authentication</a>"
+        },
+        {
+          "title": "<a href=\"#sessions--cookies\">Sessions &amp; Cookies</a>"
+        },
+        {
+          "title": "<a href=\"#cross-site-scripting-xss\">Cross-Site Scripting (XSS)</a>"
+        },
+        {
+          "title": "<a href=\"#handling-user-input\">Handling User Input</a>"
+        },
+        {
+          "title": "<a href=\"#output-escaping--sanitization\">Output Escaping &amp; Sanitization</a>"
+        },
+        {
+          "title": "<a href=\"#xss-protection-in-haml-templates\">XSS protection in HAML templates</a>"
+        },
+        {
+          "title": "<a href=\"#content-security-policy-csp\">Content Security Policy (CSP)</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#insecure-direct-object-reference\">Insecure Direct Object Reference</a>"
+        },
+        {
+          "title": "<a href=\"#http--tls\">HTTP &amp; TLS</a>"
+        },
+        {
+          "title": "<a href=\"#security-related-headers\">Security-related headers</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#memcached-security\">Memcached Security</a>"
+        },
+        {
+          "title": "<a href=\"#authorization-pundit\">Authorization (Pundit)</a>"
+        },
+        {
+          "title": "<a href=\"#files\">Files</a>"
+        },
+        {
+          "title": "<a href=\"#file-uploads\">File Uploads</a>"
+        },
+        {
+          "title": "<a href=\"#file-downloads\">File Downloads</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#cross-site-request-forgery-csrf\">Cross-Site Request Forgery (CSRF)</a>"
+        },
+        {
+          "title": "<a href=\"#cross-origin-resource-sharing-cors\">Cross Origin Resource Sharing (CORS)</a>"
+        },
+        {
+          "title": "<a href=\"#sensitive-data-exposure\">Sensitive Data Exposure</a>"
+        },
+        {
+          "title": "<a href=\"#credentials\">Credentials</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#routing-template-selection-and-redirection\">Routing, Template Selection, and Redirection</a>"
+        },
+        {
+          "title": "<a href=\"#third-party-software\">Third-party Software</a>"
+        },
+        {
+          "title": "<a href=\"#security-tools\">Security Tools</a>"
+        },
+        {
+          "title": "<a href=\"#testing\">Testing</a>"
+        },
+        {
+          "title": "<a href=\"#others\">Others</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#details-and-code-samples\">Details and Code Samples</a>"
+        },
+        {
+          "title": "<a href=\"#command-injection-example\">Command Injection example</a>"
+        },
+        {
+          "title": "<a href=\"#password-validation-regex\">Password validation regex</a>"
+        },
+        {
+          "title": "<a href=\"#pundit-ensure-all-actions-are-authorized\">Pundit: ensure all actions are authorized</a>"
+        },
+        {
+          "title": "<a href=\"#pundit-only-display-appropriate-records-in-select-boxes\">Pundit: only display appropriate records in select boxes</a>"
+        },
+        {
+          "title": "<a href=\"#rack-cors-configuration\">rack-cors configuration</a>"
+        },
+        {
+          "title": "<a href=\"#convert-filter_parameters-into-a-whitelist\">Convert filter_parameters into a whitelist</a>"
+        },
+        {
+          "title": "<a href=\"#throttling-requests\">Throttling Requests</a>"
+        },
+        {
+          "title": "<a href=\"#haml-xss-protection\">HAML: XSS protection</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#authors\">Authors</a>"
+        },
+        {
+          "title": "<a href=\"#contributing\">Contributing</a>"
+        },
+        {
+          "title": "<a href=\"#todo\">TODO</a>"
+        },
+        {
+          "title": "<a href=\"#references-and-further-reading\">References and Further Reading</a>"
+        },
+        {
+          "title": "<a href=\"#license\">License</a><p>Table of contents generated by <a href=\"https://github.com/thlorenz/doctoc\">DocToc</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "The Checklist",
+      "items": []
+    },
+    {
+      "topic": "Details and Code Samples",
+      "items": []
+    },
+    {
+      "topic": "Authors",
+      "items": [
+        {
+          "title": "<strong>Bruno Facca</strong> - <a href=\"https://www.linkedin.com/in/brunofacca/\">LinkedIn</a> -\nEmail: bruno at facca  dot info"
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<p>Contributions are welcome. If you would like to correct an error or add new \nitems to the checklist, feel free to create an issue followed by a PR. See the\n <a href=\"#TODO\">TODO</a> section for contribution suggestions.  </p><p>If you are interested in contributing regularly, drop me a line at the above\ne-mail to become a collaborator.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "TODO",
+      "items": [
+        {
+          "title": "Add sample tests (RSpec and/or Minitest) to detect the presence of\nvulnerabilities. See OWASP's <a href=\"https://github.com/OWASP/railsgoat/tree/master/spec/vulnerabilities\">RailsGoat security-related Capybara \nspecs</a> for\ninspiration."
+        },
+        {
+          "title": "Compare upload gems regarding their implementation of the <a href=\"#file-uploads\">File\n Uploads</a> items of this checklist (build a table)."
+        },
+        {
+          "title": "Compare authentication gems regarding their implementation of the\n <a href=\"#authentication\">Authentication</a> items of this checklist (build a table)."
+        }
+      ]
+    },
+    {
+      "topic": "References and Further Reading",
+      "items": [
+        {
+          "title": "<a href=\"http://guides.rubyonrails.org/security.html\">Ruby on Rails Security Guide</a>"
+        },
+        {
+          "title": "<a href=\"https://www.amazon.com/Rails-Way-Addison-Wesley-Professional-Ruby/dp/0321944275/\">The Rails 4 Way by Obie Fernandez</a>, Chapter 15"
+        },
+        {
+          "title": "<a href=\"https://www.owasp.org/index.php/Top_10_2013-Top_10\">OWASP Top Ten</a>"
+        },
+        {
+          "title": "<a href=\"https://www.sitepoint.com/common-rails-security-pitfalls-and-their-solutions/\">SitePoint: Common Rails Security Pitfalls and Their Solutions</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/hardhatdigital/rails-security-audit\">Rails Security Audit by Hardhat</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/eliotsykes/rails-security-checklist\">Rails Security Checklist by Eliot Sykes</a>"
+        },
+        {
+          "title": "<a href=\"https://www.engineyard.com/blog/ruby-on-rails-security-checklist\">Ruby on Rails Security 17-Item Checklist</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/ankane/secure_rails\">Rails security best practices</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/pxlpnk/awesome-ruby-security\">Awesome Ruby Security resources</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/edwardqiu/awesome-rails-security\">Awesome Rails Security</a>"
+        },
+        {
+          "title": "<a href=\"https://ankane.org/sensitive-data-rails\">Securing Sensitive Data in Rails</a>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p>Released under the <a href=\"https://opensource.org/licenses/MIT\">MIT License</a>.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

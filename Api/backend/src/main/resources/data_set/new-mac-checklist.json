@@ -1,0 +1,95 @@
+{
+  "id": 135,
+  "header": "new-mac-checklist",
+  "topicList": [
+    "Checklist",
+    "Use it yourself",
+    "Works on my machine"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Checklist",
+      "items": [
+        {
+          "topic": "Prep OS X",
+          "items": [
+            {
+              "title": "Update OS"
+            },
+            {
+              "title": "Download and install latest version of Xcode from the Mac App Store. (if needed)"
+            },
+            {
+              "title": "Install Xcode Command Line Tools by running:<p><code>xcode-select --install\nsleep 1\nosascript &lt;&lt;EOD\n  tell application \"System Events\"\n    tell process \"Install Command Line Developer Tools\"\n      keystroke return\n      click button \"Agree\" of window \"License Agreement\"\n    end tell\n  end tell\nEOD</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Show hidden files",
+          "items": [
+            {
+              "title": "Run <code>defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder</code>"
+            }
+          ]
+        },
+        {
+          "topic": "Setup dotfiles",
+          "items": [
+            {
+              "title": "<p>See <a href=\"https://github.com/ItsMeAra/dotfiles\">my dotfiles</a> </p><p>During this process, you will setup your dotfiles, install global npm packages, and install <a href=\"https://github.com/ItsMeAra/dotfiles/blob/master/brew-cask.txt\">non Mac App Store apps</a> all via Homebrew. <code>#magic</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Secure Git(Hub) access",
+          "items": [
+            {
+              "title": "<p><a href=\"https://cli.github.com/manual/\">https://cli.github.com/manual/</a>. \n- Run <code>gh auth login</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Install Oh My ZSH",
+          "items": [
+            {
+              "title": "<p>Install Oh My ZSH! via curl</p><p><code>$ sh -c \"$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Install NVM",
+          "items": [
+            {
+              "title": "<p><a href=\"https://github.com/nvm-sh/nvm#installing-and-updating\">Install NVM</a> by running this:</p><p><code>bash\n$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash</code></p><p>Then, run this:</p><p><code>bash\n$ source ~/.nvm/nvm.sh</code></p><p>Get list of versions:\n<code>bash\n$ nvm list-remote</code></p><p>Install the version you want:\n<code>bash\n$ nvm install 18\n$ nvm use 18</code></p><p>Or just install latest version:\n<code>bash\n$ nvm install stable</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Set Ruby Version",
+          "items": [
+            {
+              "title": "<p>rbenv was installed in step 3, now set the version. \nVia: <a href=\"https://gorails.com/setup/osx/12-monterey\">https://gorails.com/setup/osx/12-monterey</a>.  </p><p>```</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Use it yourself",
+      "items": [
+        {
+          "title": "<p>Fork this repo, or just copy-paste things you need, and make it your own.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Works on my machine",
+      "items": [
+        {
+          "title": "<p>Works for me, may not work for you.</p><p><img alt=\"Dassit\" src=\"https://i.giphy.com/media/rjjbSS3k4DIgE/giphy.webp\"/></p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

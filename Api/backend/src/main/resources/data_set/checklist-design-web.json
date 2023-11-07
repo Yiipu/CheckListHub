@@ -1,0 +1,269 @@
+{
+  "id": 35,
+  "header": "checklist-design-web",
+  "topicList": [
+    "Pourquoi et comment utiliser cette checklist ?",
+    "Table des matières 📄",
+    "1.1 - Outils",
+    "1.2 - Styleguide et composants",
+    "1.3 - Grille",
+    "1.4 - Couleurs",
+    "1.5 - Typographie",
+    "1.6 - Images et icônes",
+    "1.7 - Liens et navigation",
+    "1.8 - Formulaires et boutons",
+    "1.9 - Responsive"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Pourquoi et comment utiliser cette checklist ?",
+      "items": [
+        {
+          "title": "<p>J’ai conçu cette checklist, <a href=\"https://github.com/thedaviddias/Front-End-Design-Checklist\">basée sur celle de David Dias</a>, afin de de simplifier la collaboration entre les designers et les développeur·euse·s. Il est primordial pour les designers de prendre en considération l’aspect technique lors de la conception pour éviter des problèmes d’intégration lors du développement. Ces deux métiers sont complémentaires et je suis convaincu que chacun·e doit connaître les contraintes de l’autre pour un rendu optimal.</p><p>Si vous êtes designer, je peux vous garantir qu’en utilisant cette checklist les développeur·euse·s vous seront très reconnaissant·e·s. À l’inverse, si vous êtes développeur·euse, adaptez cette checklist à votre méthodologie et partagez là aux designers avec qui vous travaillez.</p><p>Cette checklist est également disponible sur <a href=\"https://benjaminhaeberli.notion.site/Checklist-du-designer-web-8ed31e4854a249dc9680f0ba8bcadd1d\">Notion</a> 😉</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Table des matières 📄",
+      "items": [
+        {
+          "title": "<strong><a href=\"#1---design\">1 - Design</a></strong>"
+        },
+        {
+          "title": "<a href=\"#11---outils\">1.1 Outils</a>"
+        },
+        {
+          "title": "<a href=\"#12---styleguide-et-composants\">1.2 Styleguide et composants</a>"
+        },
+        {
+          "title": "<a href=\"#13---grille\">1.3 Grille</a>"
+        },
+        {
+          "title": "<a href=\"#14---couleurs\">1.4 Couleurs</a>"
+        },
+        {
+          "title": "<a href=\"#15---typographie\">1.5 Typographie</a>"
+        },
+        {
+          "title": "<a href=\"#16---images-et-icônes\">1.6 Images et icônes</a>"
+        },
+        {
+          "title": "<a href=\"#17---liens-et-navigation\">1.7 Liens et navigation</a>"
+        },
+        {
+          "title": "<a href=\"#18---formulaires-et-boutons\">1.8 Formulaires et boutons</a>"
+        },
+        {
+          "title": "<a href=\"#19---responsive\">1.9 Responsive</a>"
+        },
+        {
+          "title": "<strong><a href=\"#2---livraison\">2 - Livraison</a></strong>"
+        }
+      ]
+    },
+    {
+      "topic": "1.1 - Outils",
+      "items": [
+        {
+          "title": "<p>Pour faciliter le workflow (export des assets, compréhension du design), je ne travaille plus qu’avec <a href=\"https://www.figma.com/\">Figma</a> et <a href=\"https://www.adobe.com/ch_fr/products/xd.html\">Adobe XD</a> qui selon moi sont les meilleurs du marché et disponible sur toutes les plateformes. Pour avoir essayé les deux, je recommande <a href=\"https://www.figma.com/\">Figma</a> sans hésiter.</p><p>Si tu fais partie des dinosaures qui n’utilise pas encore un de ces deux outils, comment procèdes-tu ?</p><div align=\"center\">\n<img alt=\"Logo du logiciel informatique Figma\" src=\"./images/figma.png\" width=\"200px\"/>\n<img alt=\"Logo du logiciel informatique Adobe XD\" src=\"./images/adobexd.png\" width=\"200px\"/>\n</div>"
+        }
+      ]
+    },
+    {
+      "topic": "1.2 - Styleguide et composants",
+      "items": [
+        {
+          "title": "[ ] Tous les <strong>composants</strong> sont créés avec l'approche « <a href=\"https://bradfrost.com/blog/post/atomic-web-design/\">Atomic Design</a> ». Dans le cas contraire, des problèmes peuvent survenir en termes de performance et de maintenabilité du projet."
+        },
+        {
+          "title": "[ ] Un <strong>styleguide</strong> (aussi appelé « guide de style ») au format <strong>Figma</strong> ou <strong>Adobe XD</strong> est fourni : il regroupe tous les éléments, composants, styles et dimensions utilisés dans le design.</li>\n</ul><p><strong>Ressources</strong> :</p>"
+        },
+        {
+          "title": "📖 <a href=\"https://atomicdesign.bradfrost.com/table-of-contents/\">Atomic Design : Complete Guide</a> – Brad Frost"
+        },
+        {
+          "title": "📖 <a href=\"https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969\">Everything you need to know about Design Systems</a> – Audreys Hacq"
+        },
+        {
+          "title": "📖 <a href=\"https://elementor.com/blog/web-design-style-guide/\">How To Create a Complete Web Design Style Guide</a>"
+        },
+        {
+          "title": "📚 <a href=\"http://Styleguides.io\">Styleguides.io</a> – Ressources pour la création de styleguides (exemples, outils, articles, etc.)"
+        }
+      ]
+    },
+    {
+      "topic": "1.3 - Grille",
+      "items": [
+        {
+          "title": "[ ] Pour les <strong>mises en page standard</strong> (colonnes et lignes), tous les éléments sont gérés via des « <a href=\"https://help.figma.com/hc/fr/articles/360040451373-Cr%C3%A9ation-de-designs-dynamiques-avec-la-disposition-automatique\">Auto Layout</a> » sur <strong>Figma</strong> ou « <a href=\"https://helpx.adobe.com/fr/xd/help/create-dynamic-designs-with-stacks.html\">Stacks</a> » sur <strong>Adobe XD</strong>"
+        },
+        {
+          "title": "[ ] Pour les <strong>mises en page complexes</strong>, notamment des éléments qui se chevauchent, des <strong>grille standardisées</strong> sont utilisées. Tous les détails de celles-ci (largeur, gouttières, nombre de colonnes, marges) doivent être spécifiés. Le standard actuel est d’utiliser un multiple de 8 pour les gouttières et un nombre pair de colonnes (4 pour mobile et 12 pour desktop).</li>\n</ul><div align=\"center\">\n<img alt=\"Proposition de configuration de grille se basant sur les tailles d’écrans standards\" src=\"./images/grid.png\" width=\"500px\"/>\n<p>Proposition de configuration de grille se basant sur les tailles d’écrans standards</p>\n</div><div align=\"center\">\n<img align=\"top\" alt=\"Exemple d’utilisation d’une grille (desktop)\" src=\"./images/grid-example-desktop.jpg\" width=\"400px\"/>\n<img align=\"top\" alt=\"Exemple d’utilisation d’une grille (mobile)\" src=\"./images/grid-example-mobile.jpg\" width=\"400px\"/>\n</div><div align=\"center\">\n<p>Exemple de l'utilisation d’une grille avec sa déclinaison mobile</p>\n</div><p><strong>Ressources :</strong></p>"
+        },
+        {
+          "title": "📖 <a href=\"https://uxdesign.cc/responsive-layout-grid-guide-for-designers-c3ba7d161bdf\">Responsive layouts grid guide for designers</a> pour comprendre le fonctionnement d’une grille"
+        },
+        {
+          "title": "🛠 <a href=\"http://gridcalculator.dk/\">Grid Calculator</a> pour calculer vos tailles de colonnes"
+        },
+        {
+          "title": "📖 <a href=\"https://help.figma.com/hc/en-us/articles/360040450513-Create-layout-grids-with-grids-columns-and-rows\">Guide : Créer et gérer ses grilles sur Figma</a>"
+        },
+        {
+          "title": "📖 <a href=\"https://helpx.adobe.com/xd/help/work-with-guides-and-grids-in-adobe-xd.html\">Guide : Créer et gérer ses grilles sur Adobe XD</a> pour créer et gérer ses grilles"
+        }
+      ]
+    },
+    {
+      "topic": "1.4 - Couleurs",
+      "items": [
+        {
+          "title": "[ ] Toutes les couleurs utilisées dans les créations sont <strong>nommées en anglais</strong> de manière cohérente.<blockquote>\n<p>gray-light, gray-dark, green <br/>\nbody-background, body-copy, text-paragraph</p>\n</blockquote>"
+        },
+        {
+          "title": "[ ] Le <strong>niveau de contraste</strong> pour tous les éléments graphiques est au minimum « AA »</li>\n</ul><p><strong>Ressources :</strong></p>"
+        },
+        {
+          "title": "🛠 <a href=\"https://contrastchecker.com/\">WCAG : Contrast Checker</a> pour vérifier le niveau de contraste"
+        },
+        {
+          "title": "📖 <a href=\"https://developer.mozilla.org/fr/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast\">MDN : Contraste de la couleur - Accessibilité</a>"
+        }
+      ]
+    },
+    {
+      "topic": "1.5 - Typographie",
+      "items": [
+        {
+          "title": "[ ] Deux polices de caractères maximum (trois en cas d’application très complexe) sont utilisées pour le design et celles-ci sont optimisées pour le web."
+        },
+        {
+          "title": "[ ] Les polices pour le bureau (TTF ou OTF en général) et les polices pour le web, au format <strong>WOFF et WOFF2</strong> ont été fournies (toutes variantes comprises)."
+        },
+        {
+          "title": "[ ] Des <strong>polices de secours</strong> (aussi appelées « <a href=\"https://en.wikipedia.org/wiki/Fallback_font\">fallback fonts</a> ») sont spécifiées."
+        },
+        {
+          "title": "[ ] Le <strong>poids total</strong> de toutes les polices ne dépasse pas 1 à 2 Mo, toutes variantes comprises."
+        },
+        {
+          "title": "[ ] Dans la mesure du possible, tous les textes sont fournis dans la <strong>langue appropriée</strong> au lieu de textes factices comme du Lorem Ipsum. Cela est encore plus important pour les applications multilingues car la longueur d’une section ou d’un titre peut varier d’une langue à l’autre.</li>\n</ul><p><strong>Ressources :</strong></p>"
+        },
+        {
+          "title": "📖 <a href=\"https://raidboxes.io/fr/blog/webdesign-development/typographie-grundlagen-webfonts-tipps/\">Les bases de la typographie web</a> – Raidboxes"
+        },
+        {
+          "title": "🛠 <a href=\"https://google-webfonts-helper.herokuapp.com/\">Google Webfonts Helper</a> pour télécharger les polices Google en local"
+        },
+        {
+          "title": "🛠 <a href=\"https://transfonter.org/\">Transfonter</a> pour convertir les polices au format web et générer le CSS approprié"
+        }
+      ]
+    },
+    {
+      "topic": "1.6 - Images et icônes",
+      "items": [
+        {
+          "title": "[ ] Toutes les <strong>images</strong> (JPEG, PNG) doivent être fournies en résolution 1x et 2x afin de supporter <a href=\"https://www.anthedesign.fr/creation-de-sites-internet/retina-design-web/\">les écrans Retina</a>. Je m’occupe ensuite de convertir les images en format « Next Gen » (WEBP, AVIF) avec <a href=\"https://squoosh.app/\">Squoosh</a> ou similaire."
+        },
+        {
+          "title": "[ ] Une <strong>image de favicon</strong> d'au moins <code>512px</code> * <code>512px</code> est fournie au format PNG, JPG ou SVG. La génération de tous les autres favicons peut être facilement réalisée avec des <a href=\"https://realfavicongenerator.net/\">Favicon Generator</a>."
+        },
+        {
+          "title": "[ ] Une image « <a href=\"https://simplified.co/blog/design-hacks/open-graph-image-everything-you-need-to-know/\">open graph</a> » de <code>1200px</code> * <code>630px</code> est fourni au format JPEG. Elle sera utilisée par défaut lorsque le site sera partagé sur les réseaux sociaux."
+        },
+        {
+          "title": "[ ] Toutes les <strong>icônes</strong> sont fournies au <strong>format SVG</strong>, chacune ayant le même ratio, en noir et optimisés pour le web avec <a href=\"https://jakearchibald.github.io/svgomg/\">SVGOMG</a> (tout cocher sauf les cases qui modifient le rendu final). Le nom de chaque icône commence par <code>icon-</code> et est entièrement en minuscules (sans espace et en utilisant des tirets pour séparer chaque mot).</li>\n</ul><p><strong>Ressources :</strong></p>"
+        },
+        {
+          "title": "🛠 <a href=\"**https**://realfavicongenerator.net/\">Favicon Generator</a> pour générer toutes les versions du <strong>favicon</strong>"
+        },
+        {
+          "title": "🛠 <a href=\"https://jakearchibald.github.io/svgomg/\">SVGOMG</a> pour optimiser les SVG"
+        }
+      ]
+    },
+    {
+      "topic": "1.7 - Liens et navigation",
+      "items": [
+        {
+          "title": "[ ] Tous les <strong>liens</strong> ont quatre états définis : l’état par défaut, l’état de survol, l’état focus et l’état inactif."
+        },
+        {
+          "title": "[ ] Tous les <strong>éléments du menu</strong> ont six états définis : l’état par défaut, l’état actif (page courante) l’état de survol, l’état cliqué, l’état focus et l’état inactif."
+        },
+        {
+          "title": "[ ] Tous les <strong>liens externes</strong> (qui renvoient vers un autre site) sont identifiables par leur style. Je recommande l’utilisation d’un icône SVG comme <a href=\"./images/external_link.svg\">celui utilisé par Mozilla</a>, à placer sur la droite du lien."
+        }
+      ]
+    },
+    {
+      "topic": "1.8 - Formulaires et boutons",
+      "items": [
+        {
+          "title": "[ ] Tous les <strong>champs de saisie</strong> ont cinq états définis : l’état par défaut, l’état de survol, l’état focus, l’état erreur et l’état inactif."
+        },
+        {
+          "title": "[ ] Tous les <strong>boutons</strong> ont cinq états définis : l’état par défaut, l’état de survol, l’état cliqué, l’état focus et l’état inactif."
+        },
+        {
+          "title": "[ ] Les <strong>boutons primaires et secondaires</strong> sont clairement identifiables et sont utilisés selon les bonnes pratiques web."
+        },
+        {
+          "title": "[ ] Les <strong>champs obligatoires</strong> sont identifiables par le style grâce à une icône et/ou une couleur."
+        },
+        {
+          "title": "[ ] Des <strong>exemples de messages</strong> d’erreurs sont fournis. Leur position et leur couleur sont clairement identifiables.</li>\n</ul><p><strong>Ressources :</strong></p>"
+        },
+        {
+          "title": "📖 <a href=\"https://medium.com/nextux/forms-need-validation-2ecbccbacea1\">Forms Need Validation</a> – Andrew Coyle"
+        },
+        {
+          "title": "📖 <a href=\"https://uxplanet.org/primary-secondary-action-buttons-c16df9b36150\">Primary &amp; Secondary Action Buttons</a> – UX Planet"
+        },
+        {
+          "title": "📖 <a href=\"https://medium.com/nextux/design-better-forms-96fadca0f49c\">Design Better Forms</a> – Andrew Coyle"
+        },
+        {
+          "title": "📖 <a href=\"https://medium.com/nextux/design-better-input-fields-3d02985a8e24\">Design Better Input Fields</a> – Andrew Coyle"
+        },
+        {
+          "title": "📖 <a href=\"https://uxplanet.org/designing-perfect-text-field-clarity-accessibility-and-user-effort-d03c1e26004b\">Designing Perfect Text Field: Clarity, Accessibility and User Effort</a> – Nick Babich"
+        },
+        {
+          "title": "📖 <a href=\"https://uxplanet.org/button-ux-design-best-practices-types-and-states-647cf4ae0fc6\">Button UX Design: Best Practices, Types and States</a> – Nick Babich"
+        }
+      ]
+    },
+    {
+      "topic": "1.9 - Responsive",
+      "items": [
+        {
+          "title": "[ ] La <strong>version mobile</strong> de la conception est fournie avant ou en même temps que la version de desktop.<blockquote>\n<p>Si l'équipe de création n'a pas suivi le principe du « <a href=\"https://www.anthedesign.fr/webdesign-2/mobile-first/\">mobile first</a> », certaines irrégularités et incohérences peuvent apparaître entre la version mobile et la version de bureau. Vérifiez et signalez ces problèmes avant de commencer le développement du projet.</p>\n</blockquote>"
+        },
+        {
+          "title": "[ ] En cas de structure de page complexe ou d’animations spécifiques, la <strong>version tablette</strong> du design doit également être prévue.<p>⚠️ La notion de « pixel perfect » est d'une certaine manière dépréciée. Aujourd'hui, il est impossible d'avoir un design qui fonctionne de la même manière face à la multitude des tailles d'écran et de technologies.</p>"
+        },
+        {
+          "topic": "Crédits",
+          "items": [
+            {
+              "title": "Auteur : <strong><a href=\"https://benjaminhaeberli.ch/\">Benjamin Haeberli</a></strong>"
+            },
+            {
+              "title": "Contributeurs : <a href=\"https://github.com/benjaminhaeberli/checklist-design-web/graphs/contributors\">Tous les contributeurs</a>"
+            },
+            {
+              "title": "Inspirée de la <a href=\"https://github.com/thedaviddias/Front-End-Design-Checklist\">Front-End-Design-Checklist</a>"
+            },
+            {
+              "title": "License : <a href=\"https://choosealicense.com/licenses/gpl-3.0/\">GNU GPLv3</a>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

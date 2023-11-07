@@ -1,0 +1,72 @@
+{
+  "id": 57,
+  "header": "CTF-Checklist",
+  "topicList": [
+    "Forensics",
+    "Web",
+    "Binary Exploitation",
+    "Reverse Engineering",
+    "Cryptography",
+    "OSINT",
+    "Papers"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Forensics",
+      "items": [
+        {
+          "title": "<p>| Tool        | Description | Link |\n| ----------- | ----------- | ---- |\n| Wireshark   | Capture packets sent by devices and analyze pcap files | <a href=\"https://www.wireshark.org/download.html\">Wireshark</a> |\n| pkcrack     | Crack zip passwords or run known plaintext attacks | <a href=\"https://www.unix-ag.uni-kl.de/~conrad/krypto/pkcrack.html\">pkcrack</a> |\n| volatility  | Analyze memory dumps | <a href=\"https://github.com/volatilityfoundation/volatility\">volatility</a> |\n| rockyou.txt | List of common passwords helpful in many categories | <a href=\"https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt\">rockyou.txt</a> |\n| Aperi Solve | Image forensics tool that runs many stegonography tools | <a href=\"https://www.aperisolve.fr/\">Aperi Solve</a> |\n| Audacity    | Analyze, visualize, and modify audio files | <a href=\"https://www.audacityteam.org/download/\">Audacity</a> |\n| SleuthKit   | Analyze disk drives and dumps | <a href=\"http://www.sleuthkit.org/sleuthkit/download.php\">SleuthKit</a> |\n| John The Ripper | General purpose password cracker | <a href=\"http://www.openwall.com/john/\">John The Ripper</a> |\n| dsniff | Sniff passwords from packet capture files | <a href=\"https://www.monkey.org/~dugsong/dsniff/\">dsniff</a> |\n| foremost | Extract files from other files by header | <code>sudo apt install foremost</code> |\n| stegsnow | white space steganography | <code>sudo apt install steganography</code> | </p>"
+        }
+      ]
+    },
+    {
+      "topic": "Web",
+      "items": [
+        {
+          "title": "<p>| Tool        | Description | Link |\n| ----------- | ----------- | ---- |\n| RequestBin  | Capture web requests | <a href=\"https://requestbin.com/r\">RequestBin</a> |\n| revshells   | Generate reverse web shells for upload to a variety of different server types | <a href=\"https://www.revshells.com/\">revshells</a> |\n| BurpSuite   | Intercept http requests, analyze them, and modify them before sending | <a href=\"https://portswigger.net/burp/communitydownload\">BurpSuite</a> |\n| sqlmap      | Automate sending sql injection payloads and detect sql injections on webpages | <a href=\"https://github.com/sqlmapproject/sqlmap\">sqlmap</a> |\n| SQL Injection | SQL Injection authentication bypass cheatsheet | <a href=\"https://pentestlab.blog/2012/12/24/sql-injection-authentication-bypass-cheat-sheet/\">sql cheatsheet</a> |\n| SUID Find   | Find SUID binaries on a linux system using <code>find / -perm -u=s -type f 2&gt;/dev/null</code> |\n| root binary find | Find binaries that run with root privileges | <code>sudo -l</code> |\n| Dirbuster   | Find hidden directory and file paths on web servers | <a href=\"https://www.kali.org/tools/dirbuster/\">Dirbuster</a> |\n| Postman     | General purpose HTTP request debugger and generator | <a href=\"https://www.postman.com/downloads/\">Postman</a> |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Binary Exploitation",
+      "items": [
+        {
+          "title": "<p>| Tool        | Description | Link |\n| ----------- | ----------- | ---- |\n| ir0nstone   | PWN tutorials containing many resources/scripts for solving pwn challenges | <a href=\"https://ir0nstone.gitbook.io/\">ir0nstone</a> |\n| pwntools    | Python library for prototyping and writing exploits | <a href=\"https://docs.pwntools.com/en/stable/\">pwntools</a> |\n| ROPGadget   | Tool for find ROP tools and crafting ROP chains | <a href=\"https://github.com/JonathanSalwan/ROPgadget\">ROPGadget</a> |\n| shellstorm  | Database of shellcode in both assembly and byte format | <a href=\"https://shell-storm.org/shellcode/index.html\">shellstorm</a> |\n| Wiremask Buffer Overflow | Buffer overflow pattern generator that when combined with gdb can determine the offset to EIP/RIP when no canary is present | <a href=\"https://wiremask.eu/tools/buffer-overflow-pattern-generator/\">Wiremask</a> |\n| one_gadget  | Find ROP gadgets specifically for spawning a shell i.e ROPing to execve('/bin/sh/, NULL, NULL) | <a href=\"https://github.com/david942j/one_gadget\">one_gadget</a> |\n| checksec    | check binary security properties of the executable revealing which attack vectors will be possible | <code>sudo apt-get install checksec</code> |\n| Guide to Reading Assembly | The faker's guide to reading (x86) assembly language | <a href=\"https://www.timdbg.com/posts/fakers-guide-to-assembly/\">Assembly Guide</a> |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Reverse Engineering",
+      "items": [
+        {
+          "title": "<p>| Tool        | Description | Link |\n| ----------- | ----------- | ---- |\n| Ghidra      | Reverse Engineering toolkit for decompiling binaries into C code for static analysis | <a href=\"https://ghidra-sre.org/\">Ghidra</a> |\n| Uncompyle   | Decompile Python binaries | <a href=\"https://github.com/gstarnberger/uncompyle\">Uncompyle</a> |\n| angr        | Binary analysis platform for Python with static/dynamic analysis support and symbolic execution | <a href=\"https://angr.io/\">angr</a> |\n| jdgui       | Java decompiler for .class files | <a href=\"http://jd.benow.ca/\">jdgui</a> |\n| IDA Freeware| Binary code analysis and reverse engineering | <a href=\"https://hex-rays.com/ida-free/#download\">IDA Freeware</a> |\n| ImHex        | Hex Editor for reverse engineering with patterns | <a href=\"https://github.com/WerWolv/ImHex\">ImHex</a> |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Cryptography",
+      "items": [
+        {
+          "title": "<p>| Tool        | Description | Link |\n| ----------- | ----------- | ---- |\n| alpertron   | Factor very large integers | <a href=\"https://www.alpertron.com.ar/ECM.HTM\">alpertron</a> |\n| factordb    | Database of many factored large integers | <a href=\"http://factordb.com/\">factordb</a> |\n| CyberChef   | Generally useful for analyze encoded/encrypted strings and files | <a href=\"https://gchq.github.io/CyberChef/\">CyberChef</a> |\n| z3          | Theorem prover | <a href=\"https://github.com/Z3Prover/z3\">z3</a> |\n| OR-Tools    | Similar to z3 but supposedly faster | <a href=\"https://developers.google.com/optimization/introduction/overview\">OR-Tools</a> |\n| RsaCtfTool  | Python script for automatically running known RSA attacks given various inputs | <a href=\"https://github.com/RsaCtfTool/RsaCtfTool\">RsaCtfTool</a> |\n| sage        | Fast math good. Fast math as python library good for quick scripting solutions | <a href=\"https://doc.sagemath.org/html/en/index.html\">sage</a> |\n| xortool     | Good for multi-byte xor analysis | <a href=\"https://github.com/hellman/xortool\">xortool</a> |\n| randcrack | Predict values generated by Python's random module | <a href=\"https://github.com/tna0y/Python-random-module-cracker\">randcrack</a> |\n| RSA Algorithm | A nice explanation of the RSA algorithm by Lei Mao | <a href=\"https://leimao.github.io/article/RSA-Algorithm/\">RSA Tutorial</a> |\n| Elliptic Curves | Elliptic Curve notes by Ben Lynn | <a href=\"https://web.archive.org/web/20220412170936/https://crypto.stanford.edu/pbc/notes/elliptic/\">Elliptic Curves</a> |\n| cryptopals  | Website with learning tools and challenges for learning about cryptography | <a href=\"https://cryptopals.com/\">cryptopals</a> |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "OSINT",
+      "items": [
+        {
+          "title": "<p>| Tool        | Description | Link |\n| ----------- | ----------- | ---- |\n| ARPSyndicate | List of helpful OSINT resources | <a href=\"https://github.com/ARPSyndicate/awesome-intelligence\">ARPSyndicate</a> |\n| Epieos      | OSINT Tool search engine that performs a variety of searches | <a href=\"https://epieos.com/\">Epieos</a> |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Papers",
+      "items": [
+        {
+          "title": "<p>| Category    | Title       | Link |\n| ----------- | ----------- | ---- |\n| crypto      | Solving problems with the LLL algorithm | <a href=\"https://www.math.fsu.edu/~hoeij/papers/LLL.pdf\">LLL</a> |</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

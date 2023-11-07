@@ -1,0 +1,480 @@
+{
+  "id": 227,
+  "header": "website-checklist",
+  "topicList": [
+    "Site",
+    "Some Preliminary Questions",
+    "Pages",
+    "Pages Questionnaire",
+    "Navigation",
+    "Navigation Questionnaire",
+    "Content",
+    "External Links",
+    "Content Questionnaire",
+    "Branding",
+    "Media",
+    "Design",
+    "Accessibility",
+    "Compliance",
+    "SEO",
+    "Analytics",
+    "Widgets / Interactives",
+    "Feeds",
+    "Administration",
+    "Deliverables"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Site",
+      "items": [
+        {
+          "title": "<p>Start with the basics.</p>"
+        },
+        {
+          "topic": "Title",
+          "items": []
+        },
+        {
+          "topic": "Description",
+          "items": []
+        },
+        {
+          "topic": "Domain Name",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Some Preliminary Questions",
+      "items": [
+        {
+          "topic": "Administrative",
+          "items": [
+            {
+              "title": "When is the deadline for completion?"
+            },
+            {
+              "title": "What is the budget?"
+            },
+            {
+              "title": "How will development be managed?"
+            }
+          ]
+        },
+        {
+          "topic": "Marketing",
+          "items": [
+            {
+              "title": "Why is the site needed?"
+            },
+            {
+              "title": "Who is the audience of the site?"
+            },
+            {
+              "title": "How will the audience use the site?"
+            },
+            {
+              "title": "What should the audience come away with after visiting the site?"
+            },
+            {
+              "title": "What are the short term goals of the site?"
+            },
+            {
+              "title": "What are the long term goals of the site?"
+            }
+          ]
+        },
+        {
+          "topic": "Technical",
+          "items": [
+            {
+              "title": "What kind of server will the site run on?"
+            },
+            {
+              "title": "What kind of technology will power the site?"
+            },
+            {
+              "title": "Which browsers will need to experience the site?"
+            },
+            {
+              "title": "How will the site be updated? How often?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Pages",
+      "items": [
+        {
+          "title": "<p>When potential visitors search Google, Bing, or whatever else, they scan over the page titles and descriptions. Therefore, it is extremely important that page titles clearly indicate what they can expect from a page. Consider including a promise in a page description which describes something useful that the page will deliver, and include a few words about how the reader will benefit. Avoid hyperbole, advertising language, or strings of search engine keywords.</p>"
+        },
+        {
+          "topic": "Titles",
+          "items": [
+            {
+              "title": "<p>The title is one of the most important factors for a successful search engine optimization of a site. The title provides a summarized explanation of the page, and it is what will appear on search result pages. Yahoo will display up to 120 characters of a title, cropping to complete words. Google will display up to 66 characters of a title, cropping to complete words. The iPhone will display up to 12 characters of the title, cropping to complete words. In one study, 55% of the high traffic sites had a title length between 40 to 100 characters. All together, the page title length should be limited to 66 characters, including spaces and punctuation. It is highly recommended that every page have a unique title.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Description",
+          "items": [
+            {
+              "title": "<p>The description should detail what information the page contains or what the page is about. It is very important to write short and clear sentences that will not confuse potential visitors, as it is often displayed in a search engine result page. It should include as much information as possible, as it will improve search engine optimization. However, the description must be less than 200 characters, and preferably less than 150, as the description greatly effects the SEO optimization of a page. In one study, 70% of high traffic sites had a description of 80 to 220 characters.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Pages Questionnaire",
+      "items": [
+        {
+          "title": "How are the descriptions clear and concise and not stuffed with keywords?"
+        },
+        {
+          "title": "How are the descriptions similar in language or tense between each other?"
+        }
+      ]
+    },
+    {
+      "topic": "Navigation",
+      "items": [
+        {
+          "topic": "Sitemap",
+          "items": []
+        },
+        {
+          "topic": "Paths",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Navigation Questionnaire",
+      "items": [
+        {
+          "title": "Are the pages descriptive and concise?"
+        },
+        {
+          "title": "Are the pages repeated or boilerplate titles?"
+        },
+        {
+          "title": "Differentiate the descriptions for different pages?"
+        },
+        {
+          "title": "How is the navigation clearly visible?"
+        },
+        {
+          "title": "How is the navigation designed to be simple and familiar?"
+        },
+        {
+          "title": "How does the navigation make sense to new visitors?"
+        }
+      ]
+    },
+    {
+      "topic": "Content",
+      "items": [
+        {
+          "topic": "Global Content",
+          "items": []
+        },
+        {
+          "topic": "Persistent Content",
+          "items": []
+        },
+        {
+          "topic": "Page Content",
+          "items": []
+        },
+        {
+          "topic": "Documents",
+          "items": []
+        },
+        {
+          "topic": "Legal / Rights",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "External Links",
+      "items": [
+        {
+          "topic": "Social Media",
+          "items": []
+        },
+        {
+          "topic": "Affiliates",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Content Questionnaire",
+      "items": [
+        {
+          "topic": "Usefulness",
+          "items": [
+            {
+              "title": "Does the content meet the audience needs, goals, and interests?"
+            },
+            {
+              "title": "Does the content meet business goals?"
+            },
+            {
+              "title": "For how long will the content be useful? When should it expire? Has its usefulness already expired?"
+            }
+          ]
+        },
+        {
+          "topic": "Clarity",
+          "items": [
+            {
+              "title": "Is the content understandable to the audience?"
+            },
+            {
+              "title": "Is the content organized logically &amp; coherently?"
+            },
+            {
+              "title": "Is the content free of factual errors, typos, or grammatical errors?"
+            },
+            {
+              "title": "Does the content include all of the information the audience needs or might want? Too much? Too little?"
+            }
+          ]
+        },
+        {
+          "topic": "Style",
+          "items": [
+            {
+              "title": "Does the content read, look, or sound as though it’s professionally crafted?"
+            },
+            {
+              "title": "Does the content seem to have a style?"
+            },
+            {
+              "title": "Does the content consistently reflect the editorial or brand voice?"
+            }
+          ]
+        },
+        {
+          "topic": "Usability",
+          "items": [
+            {
+              "title": "Is the content easy to scan or read?"
+            },
+            {
+              "title": "Is the content appropriately marked up, with headings, lists, tables, etc.?"
+            },
+            {
+              "title": "Does the content have the appropriate metadata?"
+            },
+            {
+              "title": "Can customers find the content when searching using relevant keywords?"
+            },
+            {
+              "title": "Does the content follow search engine optimization (SEO) guidelines without sacrificing quality in other areas?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Branding",
+      "items": [
+        {
+          "topic": "Logo",
+          "items": []
+        },
+        {
+          "topic": "Glyphs",
+          "items": []
+        },
+        {
+          "topic": "Typography",
+          "items": []
+        },
+        {
+          "topic": "Colors",
+          "items": []
+        },
+        {
+          "topic": "Additional Look and Feel",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Media",
+      "items": [
+        {
+          "topic": "Photo",
+          "items": []
+        },
+        {
+          "topic": "Video",
+          "items": []
+        },
+        {
+          "topic": "Audio",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Design",
+      "items": [
+        {
+          "topic": "Layout",
+          "items": []
+        },
+        {
+          "topic": "Widgets",
+          "items": []
+        },
+        {
+          "topic": "Content",
+          "items": []
+        },
+        {
+          "topic": "Responsive",
+          "items": []
+        },
+        {
+          "topic": "Print",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Accessibility",
+      "items": [
+        {
+          "topic": "Layout",
+          "items": []
+        },
+        {
+          "topic": "Colors",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Compliance",
+      "items": [
+        {
+          "topic": "HTML",
+          "items": []
+        },
+        {
+          "topic": "CSS",
+          "items": []
+        },
+        {
+          "topic": "Links",
+          "items": []
+        },
+        {
+          "topic": "Non-Links (404)",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "SEO",
+      "items": []
+    },
+    {
+      "topic": "Analytics",
+      "items": []
+    },
+    {
+      "topic": "Widgets / Interactives",
+      "items": [
+        {
+          "topic": "Interactive",
+          "items": []
+        },
+        {
+          "topic": "Search",
+          "items": []
+        },
+        {
+          "topic": "Response",
+          "items": []
+        },
+        {
+          "topic": "Blog",
+          "items": []
+        },
+        {
+          "topic": "Carousel",
+          "items": []
+        },
+        {
+          "topic": "Twitter",
+          "items": []
+        },
+        {
+          "topic": "Facebook",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Feeds",
+      "items": [
+        {
+          "topic": "RSS",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Administration",
+      "items": [
+        {
+          "topic": "Organization Contact",
+          "items": []
+        },
+        {
+          "topic": "Name",
+          "items": []
+        },
+        {
+          "topic": "Number",
+          "items": []
+        },
+        {
+          "topic": "Email",
+          "items": []
+        },
+        {
+          "topic": "Area of Business",
+          "items": []
+        },
+        {
+          "topic": "Address",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Deliverables",
+      "items": [
+        {
+          "topic": "Timeframe",
+          "items": []
+        },
+        {
+          "topic": "Summary",
+          "items": []
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

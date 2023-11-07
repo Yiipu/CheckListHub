@@ -1,0 +1,404 @@
+{
+  "id": 109,
+  "header": "intro_to_sinatra",
+  "topicList": [
+    "Requirements",
+    "Getting Started",
+    "Understanding Sinatra",
+    "Interacting with a Web Server",
+    "Identifying Resources on the Web",
+    "Breaking Down the HTTP Protocol",
+    "Getting Started with Sinatra",
+    "Introducing MVC",
+    "Domain Model",
+    "Digging into the Source Code",
+    "Our First API endpoint",
+    "Pulling Data from the Database",
+    "Creating new records via fetch requests to the API",
+    "Handling Upvoting"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Requirements",
+      "items": [
+        {
+          "title": "<ol>\n<li>\n<p>Access a Sqlite3 database using Active Record.</p>"
+        },
+        {
+          "title": "<p>Have a minimum of two models with a one to many relationship.</p>"
+        },
+        {
+          "title": "<p>Build out a simple <strong>React</strong> frontend that incorporates at least</p>\n</li>\n</ol><p>one GET request and one non-GET request (POST, PATCH, DELETE).</p><pre><code>  Example: A user should be able to build out a todo list.\n\n  A user should be able to create a new task (POST), see all the tasks (GET),\n\n  update a specific task (PATCH) and delete a task (DELETE). Tasks can be grouped into many\n\n  categories, so a task has many categories and categories have many tasks.\n</code></pre><ol>\n<li>Use good OO design patterns. Have separate classes for your</li>\n</ol><p>models and incorporate instance and class methods where appropriate.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Getting Started",
+      "items": [
+        {
+          "title": "Clone down the starter repo for our Sinatra API and give our project a name while we're at it.</li>\n</ul><p>```bash</p><p>git clone git@github.com:learn-co-curriculum/sinatra-API.git name_of_your_project</p><p>```</p>"
+        },
+        {
+          "title": "move into the project directory and remove the remote pointing to the starter repo.</li>\n</ul><p>```bash</p><p>cd name_of_your_project</p><p>git remote rm origin</p><p>```</p>"
+        },
+        {
+          "title": "<p>We should see no printout here. To verify it worked we can run <code>git remote -v</code> and we should again see no output.</p>"
+        },
+        {
+          "title": "<p>Create a <a href=\"https://github.com/new\">new repository on github</a> for our project making sure to leave all checkboxes for adding a README.md, .gitignore and license are left blank (we can add those later if we like). </p>"
+        },
+        {
+          "title": "<p>Copy the second code block that appears in the body of the new repo page on github by clicking on the clipboard next to it. (It should look something like this)</p>\n</li>\n</ul><p>```bash</p><p>git remote add origin git@github.com:DakotaLMartinez/testing.git</p><p>git branch -M main</p><p>git push -u origin main</p><p>```</p>"
+        },
+        {
+          "title": "<p>Wait a moment for the push to complete, then refresh the page on GitHub and we should see our code there at this point.</p>"
+        },
+        {
+          "title": "<p>Back in our code editor, we can run <code>bundle install</code> to install the dependencies for our backend.</p>\n<p>From there we can start building out our code. Before we do that, however, let's take a minute to talk about Sinatra, what it does and how we're going to adjust our thinking to work with it. </p>"
+        }
+      ]
+    },
+    {
+      "topic": "Understanding Sinatra",
+      "items": [
+        {
+          "title": "<p><a href=\"http://sinatrarb.com/\">Sinatra</a> is a DSL (Domain Specific Language) for quickly creating web applications in Ruby with minimal effort:</p><p>```rb</p><p>require 'sinatra'</p><p>get '/frank-says' do</p><p>'Put this in your pipe &amp; smoke it!'</p><p>end</p><p>```</p><p>So, Sinatra gives us a collection of methods we can use to create web applications. </p><p>Okay, but what does web application mean? Simply put, a web application is a program that runs on a web server instead of on your local machine. So, in order for users to interact with a web application they have to interact with that web server. </p>"
+        }
+      ]
+    },
+    {
+      "topic": "Interacting with a Web Server",
+      "items": [
+        {
+          "title": "<p>There are two key protocols that we can use to manage the interaction between browsers and servers: HTTP &amp; Websockets. </p><blockquote>\n<p>Note that Websockets are usually used for real time communications like chat that require connections to stay open in both directions. </p>\n</blockquote><p>For our purposes, we'll be focusing on HTTP, which is short for HyperText Transfer Protocol. </p><p>You may recognize the HyperText part of that acronym from the HTML acronym (HyperText Markup Language). This is fitting, as HTTP was the original protocol used for delivering HTML documents from web servers to clients (web browsers). Before we get deeper into the HTTP protocol, let's talk through what this looks like from the perspective of the URL.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Identifying Resources on the Web",
+      "items": [
+        {
+          "title": "<p>The following is borrowed from an <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web\">article on MDN</a>. </p><p>The target of an HTTP request is called a \"resource\", whose nature isn't defined further; it can be a document, a photo, or anything else. Each resource is identified by a Uniform Resource Identifier (URI) used throughout HTTP for identifying resources. </p><p>The most common form of URI is the URL (Uniform Resource Locator) commonly referred to as a web address. The following are examples.</p><p>```</p><p>https://developer.mozilla.org</p><p>https://developer.mozilla.org/en-US/docs/Learn/</p><p>https://developer.mozilla.org/en-US/search?q=URL</p><p>```</p><p>The URL contains instructions to the web server that are used to determine what information should be part of the response that it sends back to the client.</p><p>A URL is composed of different parts, some mandatory and others are optional. A more complex example might look like this:</p><p>```</p><p>http://www.example.com:80/path/to/myfile.html?key1=value1&amp;key2=value2#SomewhereInTheDocument</p><p>```</p><p>We'll be breaking this url down into pieces below:</p>"
+        },
+        {
+          "topic": "Protocol",
+          "items": [
+            {
+              "title": "<p><img alt=\"\" src=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web/mdn-url-protocol@x2.png\"/></p><p>This is an indicator to the browser that it should use the HTTP protocol to handle this request. Other common protocols or schemes) that might be used here include: </p><p>|protocol|use|</p><p>|----|----|</p><p>|<code>mailto:</code>| Used to open the user's default mail program with a new email draft to the email address that follows <code>mailto:</code>|</p><p>|<code>file:</code>| Used when the browser is used to open a file that exists within the user's local computer. The path to the file will follow <code>file:</code>|</p><p>|<code>view-source:</code>| used when the browser's <code>View Page Source</code> menu option is selected. It opens the source code for the web address following <code>view-source:</code>|</p><p>Other examples can be found <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web#syntax_of_uniform_resource_identifiers_uris\">in the MDN article</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Authority",
+          "items": [
+            {
+              "title": "<p><img alt=\"\" src=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web/mdn-url-domain@x2.png\"/></p><p>www.example.com is the domain name or authority that governs the namespace. It indicates which Web server is being requested. Alternatively, it is possible to directly use an <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/IP_Address\">IP address</a>, but because it is less convenient, it is not often used on the Web.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Port",
+          "items": [
+            {
+              "title": "<p><img alt=\"\" src=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web/mdn-url-port@x2.png\"/></p><p>:80 is the port in this instance. It indicates the technical \"gate\" used to access the resources on the web server. It is usually omitted if the web server uses the standard ports of the HTTP protocol (80 for HTTP and 443 for HTTPS) to grant access to its resources. Otherwise it is mandatory.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Path",
+          "items": [
+            {
+              "title": "<p><img alt=\"\" src=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web/mdn-url-path@x2.png\"/></p><p><code>/path/to/myfile.html</code> is the path to the resource on the Web server. In the early days of the Web, a path like this represented a physical file location on the Web server. Nowadays, it is mostly an abstraction handled by Web servers without any physical reality. A bit later on, we'll use the <code>path</code> as part of the <code>routes</code> that we create.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Query",
+          "items": [
+            {
+              "title": "<p><img alt=\"\" src=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web/mdn-url-parameters@x2.png\"/></p><p><code>?key1=value1&amp;key2=value2</code> are extra parameters provided to the Web server. Those parameters are a list of key/value pairs separated with the &amp; symbol. The Web server can use those parameters to do extra stuff before returning the resource to the user. Each Web server has its own rules regarding parameters, and the only reliable way to know how a specific Web server is handling parameters is by asking the Web server owner. </p><p>In Sinatra, we'll be able to access query parameters using a hash called <code>params</code>. The example above would be accessible to us like so:</p><p>```rb</p><p>params[:key1] #=&gt; \"value1\"</p><p>params[:key2] #=&gt; \"value2\"</p><p>```</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Fragment",
+          "items": [
+            {
+              "title": "<p><img alt=\"\" src=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web/mdn-url-anchor@x2.png\"/></p><p><code>#SomewhereInTheDocument</code> is an anchor to another part of the resource itself. An anchor represents a sort of \"bookmark\" inside the resource, giving the browser the directions to show the content located at that \"bookmarked\" spot. On an HTML document, for example, the browser will scroll to the point where the anchor is defined; on a video or audio document, the browser will try to go to the time the anchor represents. It is worth noting that the part after the #, also known as fragment identifier, is never sent to the server with the request. </p><p>What this means is that clicking on anchor links within the same HTML document will not trigger a page refresh. They will tell the browser to move the viewport to the appropriate place.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Breaking Down the HTTP Protocol",
+      "items": [
+        {
+          "title": "<p>In the example URL above, we mainly focused on one HTTP verb: <code>GET</code>. When you type a url into the browser and hit enter or click on a link, generally the browser will send a GET request to a particular URL. There are other HTTP verbs that we'll use as well. MDN's article on <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview\">HTTP</a> is a good place to review for further reading.</p><p><img alt=\"\" src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvqTN_pZMrazSvvj6FIzxMXUa8dlMkdFIXCg&amp;usqp=CAU\"/></p><p>The basic idea is that the client (browser) sends a request to the server and the server sends a response back to the client. </p><p>There are different types of HTTP requests that you should be aware of. These are called request methods. The following are the most relevant to what we'll be working with in Sinatra and later in Rails.</p>"
+        },
+        {
+          "title": "<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET\">GET</a> - for retrieving (not modifying) information</p>"
+        },
+        {
+          "title": "<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST\">POST</a> - for sending new information</p>"
+        },
+        {
+          "title": "<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT\">PUT</a> - for updating existing information</p>"
+        },
+        {
+          "title": "<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH\">PATCH</a> - for updating existing information</p>"
+        },
+        {
+          "title": "<p><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE\">DELETE</a> - for deleting stored information</p>\n</li>\n</ul><p>Here's an example of what an HTTP request might look like:</p><p><img alt=\"\" src=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/http_request.png\"/></p><p>Requests consist of the following elements:</p>"
+        },
+        {
+          "title": "<p>An HTTP method, usually a verb like GET, POST or a noun like OPTIONS or HEAD that defines the operation the client wants to perform. Typically, a client wants to fetch a resource (using GET) or post the value of an HTML form (using POST), though more operations may be needed in other cases.</p>"
+        },
+        {
+          "title": "<p>The path of the resource to fetch; the URL of the resource stripped from elements that are obvious from the context, for example without the protocol (http://), the domain (here, developer.mozilla.org), or the TCP port (here, 80).</p>"
+        },
+        {
+          "title": "<p>The version of the HTTP protocol.</p>"
+        },
+        {
+          "title": "<p>Optional headers that convey additional information for the servers. <em>We'll use these to indicate that we want to format the body of our requests in JSON and to receive responses in JSON format</em></p>"
+        },
+        {
+          "title": "<p>Or a body, for some methods like POST, similar to those in responses, which contain the resource sent. <em>In our case, the body of a request might be form data extracted from the state in one of our controlled forms</em></p>\n</li>\n</ul><p>And here's an example HTTP Response</p><p><img alt=\"\" src=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/http_response.png\"/></p><p>Responses consist of the following elements:</p>"
+        },
+        {
+          "title": "<p>The version of the HTTP protocol they follow.</p>"
+        },
+        {
+          "title": "<p>A status code, indicating if the request was successful, or not, and why.</p>"
+        },
+        {
+          "title": "<p>A status message, a non-authoritative short description of the status code.</p>"
+        },
+        {
+          "title": "<p>HTTP headers, like those for requests.</p>"
+        },
+        {
+          "title": "<p>Optionally, a body containing the fetched resource.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Getting Started with Sinatra",
+      "items": [
+        {
+          "title": "<p>When we're first building web applications as an API backend, our focus is on building out endpoints. An endpoint is a route to which requests can be sent in order to retrieve a particular response. When we speak about a <code>route</code> we mean a path that a user can take through your application to go from a request to a response. The main ideas we have to manage when building a route/endpoint for our API are these:</p>"
+        },
+        {
+          "title": "<p>the HTTP verb (get, post, put, patch, or delete)</p>"
+        },
+        {
+          "title": "<p>the path (<code>\"/\"</code>, <code>\"/paintings\"</code>, <code>\"/artists\"</code>)</p>"
+        },
+        {
+          "title": "<p>the JSON that we want to send back as a response</p>"
+        },
+        {
+          "title": "<p>We might make a query to our database using <code>Painting.all</code> and then convert the results to JSON and return that </p>\n</li>\n</ul><p>An example might look like this:</p><p>```rb</p><p>get \"/paintings\" do</p><p>Painting.all.to_json</p><p>end</p><p>```</p><p>Other HTTP details we'll have to account for:</p>"
+        },
+        {
+          "title": "<p>any headers we need to include</p>"
+        },
+        {
+          "title": "<p><code>\"Accept\": \"application/json\"</code></p>"
+        },
+        {
+          "title": "<p><code>\"Content-Type\": \"application/json\"</code></p>"
+        },
+        {
+          "title": "<p>Allowing requests across origins </p>"
+        },
+        {
+          "title": "<p>important so that we can ensure that our API will respond if we make a fetch request from another domain.</p>"
+        },
+        {
+          "title": "<p>this is necessary because we may be deploying the react app somewhere like <a href=\"https://www.netlify.com/\">Netlify</a> while our Sinatra API is deployed on <a href=\"https://www.heroku.com/\">Heroku</a>. They would both have different web addresses, so we'd need to make sure that our API on Heroku will accept requests originating from our react app on Netlify.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Introducing MVC",
+      "items": [
+        {
+          "title": "<p>Before we can hop in and start writing code, we need to understand one of the main design patterns that Ruby on Rails follows. This is important now because we'll be applying that same design pattern to our Sinatra application. This pattern is called <strong>Model-View-Controller</strong>, or <strong>MVC</strong> for short. It looks something like this:</p><p><img alt=\"\" src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVnObsmAMBWv4xbev4TmmLezWslQ87Ugtn2g&amp;usqp=CAU\"/></p><p>Connecting the diagram to our HTTP request/response cycle, we can say that the Browser sends a request to our server and the controller is the part of our sinatra code that decides how to respond. It may interact with one of our Models to get data from the database and then render a response back to the browser utilizing a view. </p><p>The way we've used React so far, we've been doing all rendering of HTML within the browser. While Sinatra has the ability to render html from the server side, we won't be doing so because we want to do that in React. Instead, we'll be thinking of our <em>view</em> code as a way of describing what the JSON representation of our data should look like when we send a response back to our client side react code.</p>"
+        },
+        {
+          "topic": "Key Concepts:",
+          "items": [
+            {
+              "title": "<p><strong>Model</strong> - class that inherits from ActiveRecord::Base that can make queries to the DB and get a collection of objects back</p>"
+            },
+            {
+              "title": "<p><strong>Controller</strong> - class that defines routes and decides how our server will respond to incoming requests</p>"
+            },
+            {
+              "title": "<p><strong>View</strong> - the code that determines the structure of the JSON that the controller will respond with. Later, we can move this code to separate files called serializers, but for now, we'll keep this code right inside our controller's routes.</p>\n<p>Models should be familiar at this point, so the new concepts are the Controller and the View. In Sinatra, the controller is where we define the routes our application will respond to. </p><blockquote>\n<p>This is slightly different in Rails–there are controllers in Rails as well, but the routes are defined in a separate file. In Sinatra, routes live in the controller.</p>\n</blockquote><p>For the example today, we'll be building a Sinatra API to go withthe Sinatra Paintr app that we built in Phase 2.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Domain Model",
+      "items": [
+        {
+          "title": "<p>Paintr application allows users to view and sort a collection of Paintings. </p>"
+        },
+        {
+          "topic": "Key Features",
+          "items": [
+            {
+              "title": "<p>Users can view all the paintings</p>"
+            },
+            {
+              "title": "<p>Users van upvote paintings (add persistence)</p>"
+            },
+            {
+              "title": "<p>Users can search through paintings</p>"
+            },
+            {
+              "title": "<p>Users can view information about a painting's artist</p>"
+            },
+            {
+              "title": "<p>Users can create new paintings (new feature to build)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Tables",
+          "items": [
+            {
+              "title": "<p>paintings</p>"
+            },
+            {
+              "title": "<p>image (string)</p>"
+            },
+            {
+              "title": "<p>title (string)</p>"
+            },
+            {
+              "title": "<p>date (string)</p>"
+            },
+            {
+              "title": "<p>width (float)</p>"
+            },
+            {
+              "title": "<p>height (float)</p>"
+            },
+            {
+              "title": "<p>collecting_institution (string)</p>"
+            },
+            {
+              "title": "<p>dimensions_text (string)</p>"
+            },
+            {
+              "title": "<p>depth (float)</p>"
+            },
+            {
+              "title": "<p>diameter (float)</p>"
+            },
+            {
+              "title": "<p>slug (string)</p>"
+            },
+            {
+              "title": "<p>votes (integer)</p>"
+            },
+            {
+              "title": "<p>artist_id (foreign key)</p>\n</li>\n</ul><p>```rb</p><p>class Painting &lt; ActiveRecord::Base</p><p>belongs_to :artist</p><p>end</p><p>```</p>"
+            },
+            {
+              "title": "<p>artists</p>"
+            },
+            {
+              "title": "<p>name (string)</p>"
+            },
+            {
+              "title": "<p>hometown (string)</p>"
+            },
+            {
+              "title": "<p>birthday (string)</p>"
+            },
+            {
+              "title": "<p>deathday (string)</p>\n<p>```rb</p><p>class Artist &lt; ActiveRecord::Base</p><p>has_many :paintings</p><p>end</p><p>```</p><p>Currently, the react code works by importing the data from another file within the project. We'll want to rework that code so that it pulls the data from our Sinatra API instead. Before we get there, let's take a look at the Ruby source code we're starting out with.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Digging into the Source Code",
+      "items": [
+        {
+          "title": "<p>Now, let's take some time to look through the Gemfile, Rakefile and file structure and get oriented with how the Sinatra gem changes the way we'll be thinking about our Ruby code here. </p><p>```rb</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Our First API endpoint",
+      "items": [
+        {
+          "title": "<p>Let's jump in and try some stuff out. First, let's add this to the application controller.</p><p>```rb</p><p>get \"/hi\" do </p><p>{ hello: \"world\" }</p><p>end</p><p>```</p><p>Next, we'll use <code>shotgun</code> to start our development server. </p><p>```bash</p><p>shotgun</p><p>```</p><p>You should see something like this:</p><p>```bash</p><p>== Shotgun/Thin on http://127.0.0.1:9393/</p><p>2021-06-21 21:50:20 -0700 Thin web server (v1.8.1 codename Infinite Smoothie)</p><p>2021-06-21 21:50:20 -0700 Maximum connections set to 1024</p><p>2021-06-21 21:50:20 -0700 Listening on 127.0.0.1:9393, CTRL+C to stop</p><p>```</p><p>Now, let's go over to the browser and visit:</p><p>```</p><p>http://localhost:9393/hi</p><p>```</p><p>Uh oh!</p><p><img alt=\"\" src=\"/img/non-string-error.png\"/></p><p>OK, so let's break this down. Rack is expecting the return value for the route to be a string, but the body is yielding a non string value. We know we want our api to repsond with JSON, so let's convert the hash to json:</p><p>```rb</p><p>get \"/hi\" do </p><p>{ hello: \"world\" }.to_json</p><p>end</p><p>```</p><p>And try it again:</p><p><img alt=\"\" src=\"/img/json-output.png\"/></p><p>If it doesn't look so nice for you, I recommend installing the <a href=\"https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en\">JSONView</a> chrome extension. After installing, reload the page in the browser and you should see the same formatting as the image above. </p><p>So, when it comes to building out an API endpoint (route) these are the 3 things we need to do:</p><ol>\n<li>\n<p>define the request method (get/post/patch/put/delete)</p>"
+        },
+        {
+          "title": "<p>define the path to the route ('/hi')</p>"
+        },
+        {
+          "title": "<p>pass a block that returns a JSON formatted string (which will be our response body)</p>\n</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Pulling Data from the Database",
+      "items": [
+        {
+          "title": "<p>For our case, we'll want to have an endpoint <code>/paintings</code> that will return an array of paintings. This will replace the import we used in our react code previously. For this to work, we need to have the two models and associated database tables created. </p><p>```bash</p><p>rake db:create_migration NAME=create_artists</p><p>```</p><p>```rb</p><p>class CreateArtists &lt; ActiveRecord::Migration[5.2]</p><p>def change</p><pre><code>create_table :artists do |t|\n\n  t.string :name, null: false\n\n  t.string :hometown\n\n  t.string :birthday\n\n  t.string :deathday\n\nend\n</code></pre><p>end</p><p>end</p><p>```</p><p>Then</p><p>```bash</p><p>rake db:create_migration NAME=create_paintings</p><p>```</p><p>```rb</p><p>class CreatePaintings &lt; ActiveRecord::Migration[5.2]</p><p>def change</p><pre><code>create_table :paintings do |t|\n\n  t.string :image, null: false\n\n  t.string :title, null: false\n\n  t.string :date\n\n  t.float :width\n\n  t.float :height\n\n  t.string :collecting_institution\n\n  t.float :depth\n\n  t.float :diameter\n\n  t.string :slug\n\n  t.integer :votes\n\n  t.references :artist\n\nend\n</code></pre><p>end</p><p>end</p><p>```</p><p>Then </p><p>```bash</p><p>rake db:migrate</p><p>```</p><p>Then we'll need models for <code>Artist</code> and <code>Painting</code>:</p><p>```rb</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Creating new records via fetch requests to the API",
+      "items": [
+        {
+          "title": "<p>Okay, so what's different when we create a painting?</p>"
+        },
+        {
+          "title": "<p>we need to send a <strong>POST</strong> request instead of <strong>GET</strong>.</p>"
+        },
+        {
+          "title": "<p>we'll need to send a <strong>body</strong> along with the request containing information about the painting</p>"
+        },
+        {
+          "title": "<p>we'll need to send <strong>headers</strong> along with the request indicating that we'll be sending and want to receive JSON data.</p>"
+        },
+        {
+          "title": "<p>we'll need to access the data in the body of the request within our Sinatra API to create a new Painting (and Artist). Sinatra makes the body of a <strong>POST</strong> request available to us within the <code>params</code> hash.</p>"
+        },
+        {
+          "topic": "Building the API endpoint.",
+          "items": [
+            {
+              "title": "<p>For this, we'll want to add a route to create a new painting:</p><p>```rb</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Handling Upvoting",
+      "items": [
+        {
+          "title": "<p>If we wanted to handle upvoting within the current domain model, we would be updating a painting. So, in that case, we'd want to send a patch request to make the update. Because we're only going to be handling updating the votes by one, we don't need to send any additional information with the request. But, we do need to have a way of identifying which painting we're updating. We can do this in one of two ways:</p><ol>\n<li>\n<p>Include a URL parameter for the painting's id in the route we create</p>"
+        },
+        {
+          "title": "<p>Add the painting's id to the body of the patch request we send</p>\n</li>\n</ol><p>While both would work, if we're trying to figure out which record to update, we'll generally see that done with the 1st path.</p><p>```rb</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

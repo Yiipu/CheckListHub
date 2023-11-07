@@ -13,4 +13,6 @@ public interface CkListService extends IService<CkList> {
     /* 根据cklistid查询cklist
     * */
      Result findByCid(Integer cid);
+
+    Result insertByInit();
 }

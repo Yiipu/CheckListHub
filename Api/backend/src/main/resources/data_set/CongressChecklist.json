@@ -1,0 +1,980 @@
+{
+  "id": 52,
+  "header": "CongressChecklist",
+  "topicList": [
+    "Content",
+    "👥 Humans",
+    "⏰ Things to do before traveling",
+    "📦 Things to send",
+    "🎒 Things to pack",
+    "🐶 If you travel with your dog",
+    "🚗 If you travel by car",
+    "⛺️ Camp",
+    "🔒 Securing your devices",
+    "📫 Staying up-to-date",
+    "🔙 For when you return home",
+    "❤️ Thanks for being awesome ✨"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Content",
+      "items": [
+        {
+          "title": "<a href=\"#-humans\">👥 Humans</a>"
+        },
+        {
+          "title": "<a href=\"#-things-to-do-before-traveling\">⏰ Things to do before traveling</a>"
+        },
+        {
+          "title": "<a href=\"#-things-to-send\">📦 Things to send</a>"
+        },
+        {
+          "title": "<a href=\"#-things-to-pack\">🎒 Things to pack</a>"
+        },
+        {
+          "title": "<a href=\"#-if-you-travel-with-your-dog\">🐶 If you travel with your dog</a>"
+        },
+        {
+          "title": "<a href=\"#-if-you-travel-by-car\">🚗 If you travel by car</a>"
+        },
+        {
+          "title": "<a href=\"#%EF%B8%8F-camp\">⛺️ Camp</a>"
+        },
+        {
+          "title": "<a href=\"#-securing-your-devices\">🔒 Securing your devices</a>"
+        },
+        {
+          "title": "<a href=\"#-staying-up-to-date\">📫 Staying up-to-date</a>"
+        },
+        {
+          "title": "<a href=\"#-for-when-you-return-home\">🔙 For when you return home</a>"
+        },
+        {
+          "title": "<a href=\"#%EF%B8%8F-thanks-for-being-awesome-\">❤️ Thanks for being awesome ✨</a><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "👥 Humans",
+      "items": [
+        {
+          "title": "<p>General considerations to make the congress a worthwhile experience for everyone, humans, robots and aliens alike.\nYou'll also find a list of all the nice humans who have contributed to this list at the bottom.</p>"
+        },
+        {
+          "topic": "Manners",
+          "items": [
+            {
+              "title": "Be excellent to each other."
+            },
+            {
+              "title": "If you spot somebody not being excellent to someone else, remind them to be excellent and ask them to apologi(s|z)e to the insulted part(y|ies), but only if the insulted wish to receive an apology. Sometimes the insulted party will just want to move on and not have any further contact with someone who was coarse to them."
+            },
+            {
+              "title": "If you don't want to be called $swearword, don't behave like one."
+            },
+            {
+              "title": "Help each other out."
+            },
+            {
+              "title": "Read the Code of Conduct and all linked documents at <a href=\"https://help.ccc.de/\">help.ccc.de</a> and live by it."
+            },
+            {
+              "title": "Ask if it is OK to take a picture BEFORE taking the picture."
+            }
+          ]
+        },
+        {
+          "topic": "Children",
+          "items": [
+            {
+              "title": "Tag your children with an easy way to reach you, like DECT."
+            },
+            {
+              "title": "Remember that they might not understand why they are in this crazy place and why you need to talk to all these people."
+            },
+            {
+              "title": "If the children are grumpy, everyone's grumpy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "⏰ Things to do before traveling",
+      "items": [
+        {
+          "title": "Charge ALL the batteries!"
+        },
+        {
+          "title": "Make backups."
+        },
+        {
+          "title": "Bonus points for even testing restore."
+        },
+        {
+          "title": "Update all the software on your devices."
+        },
+        {
+          "title": "You might want to empty your drives to make room for some COMPLETELY LEGAL media files that might be shared."
+        },
+        {
+          "title": "Put your name on your stuff, especially on things you’ll likely lend to someone (power strips, cables etc). Mastodon handles make excellent name tags because people know how to contact you right away. Prefer permanent markers over stickers, for theft reasons."
+        },
+        {
+          "title": "You DID make backups of all your devices, didn't you? That includes portable computers, servers, mobile phones, tablets, navigation devices, wrist watches and all your other $gadgets."
+        },
+        {
+          "title": "Store the backups not only on the device you're backing up or another device you’re taking with you. A Swiss bank locker is good, if you have one."
+        },
+        {
+          "title": "Send a pull request to this list for all the things I did not think of."
+        },
+        {
+          "title": "Feed the guinea pigs."
+        },
+        {
+          "title": "Water your plants."
+        },
+        {
+          "title": "Clean your coffee-machine and take out the trash."
+        },
+        {
+          "title": "When bringing credit cards and not living in Germany: call your bank and have them pre-approve payments from Germany. Otherwise, your bank may decline all purchases when they don't know you're traveling and suspect fraud."
+        },
+        {
+          "title": "Stock you pantry/freezer with some food that keeps so you have something to eat when you get home (that doesn't rely on shops/restaurants being open)."
+        },
+        {
+          "title": "(optional but recommended) Create account in the <a href=\"https://events.ccc.de/congress/2019/wiki/\">congress wiki</a>, <a href=\"https://events.ccc.de/congress/2019/wiki/Static:Projects\">add your projects</a> and <a href=\"https://events.ccc.de/congress/2019/wiki/Static:Assemblies\">find your assembly</a>."
+        }
+      ]
+    },
+    {
+      "topic": "📦 Things to send",
+      "items": [
+        {
+          "title": "<p>Stuff that you're not allowed to bring on a plane or otherwise need to send via package courier or freight train. (Depending on its size.)</p>"
+        },
+        {
+          "topic": "Items that are explicitly forbidden to bring on a plane",
+          "items": [
+            {
+              "title": "Ammunition"
+            },
+            {
+              "title": "Fireworks"
+            },
+            {
+              "title": "Explosives"
+            },
+            {
+              "title": "Lighter benzine"
+            },
+            {
+              "title": "Lighter gas (Butane)"
+            },
+            {
+              "title": "Matches"
+            },
+            {
+              "title": "Lighters (<em>only</em> allowed on your person)"
+            },
+            {
+              "title": "Butane cartridges"
+            },
+            {
+              "title": "Propane cartridges"
+            },
+            {
+              "title": "Radioactive medication"
+            },
+            {
+              "title": "Anything toxic"
+            },
+            {
+              "title": "Lead acid batteries"
+            },
+            {
+              "title": "Mercury (Quecksilber)"
+            },
+            {
+              "title": "Acids"
+            },
+            {
+              "title": "Bleach"
+            },
+            {
+              "title": "Peroxides"
+            },
+            {
+              "title": "Samsung Galaxy Note 7"
+            },
+            {
+              "title": "Batteries &gt;=100Wh"
+            },
+            {
+              "title": "Self-balancing scooters (hoverboards), unless you remove the battery."
+            },
+            {
+              "title": "(Strong) rare-earth magnets (really small and weak magnets, like the needle of a compass, are okay)"
+            }
+          ]
+        },
+        {
+          "topic": "Not allowed or often problematic on flights, or at least not in hand luggage",
+          "items": [
+            {
+              "title": "All kind of blades"
+            },
+            {
+              "title": "Knives, even small pocket knives"
+            },
+            {
+              "title": "This includes nail files over 6cm, for some reason"
+            },
+            {
+              "title": "Lockpicking equipment"
+            },
+            {
+              "title": "Handcuffs"
+            }
+          ]
+        },
+        {
+          "topic": "Items only allowed to be carried on your body, but neither in checked in luggage nor hand luggage.",
+          "items": [
+            {
+              "title": "Small lighters (one per person)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "🎒 Things to pack",
+      "items": [
+        {
+          "topic": "Decoration",
+          "items": [
+            {
+              "title": "Bring ridiculous amounts of LED strips and other photon emitting devices so we can illuminate ALL the things."
+            },
+            {
+              "title": "Bring battery-powered LEDs/EL-wire/etc to illuminate yourself in the dark (but try not to blind others).<p>This applies to the Congress Center as well as your hotel windows.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Documents",
+          "items": [
+            {
+              "title": "Train/plane tickets (including verification documents for self-printed DB tickets. Check the List of accepted documents! <a href=\"https://www.bahn.de/hilfe/view/pk/de/popup_faq/id3.shtml\" title=\"Deutsche Bahn: Welche Lichtbildausweise werden anerkannt?\">Welche Lichtbildausweise werden anerkannt?</a>)"
+            },
+            {
+              "title": "Congress tickets (printed or digital. iOS passbook/wallet, PDF)"
+            },
+            {
+              "title": "have them ready before your line up at the cash desk!"
+            },
+            {
+              "title": "Passport or other kind of photo ID (Personalausweis)"
+            },
+            {
+              "title": "Driver's license (even an international one)"
+            },
+            {
+              "title": "Hotel booking"
+            },
+            {
+              "title": "Ham radio license (CEPT license)"
+            },
+            {
+              "title": "<a href=\"https://www.noisebridge.net/wiki/Passport\">Hackerspace passport</a>"
+            },
+            {
+              "title": "An <a href=\"https://www.organspende-info.de\">organ donor card</a> (We really hope you won't need it, but just in the case: you might save a life!)"
+            },
+            {
+              "title": "Health insurance card"
+            },
+            {
+              "title": "Vaccination documents or history (Impfpass)"
+            },
+            {
+              "title": "\"Business cards\" to hand out to people with essential information like email address and OpenPGP fingerprint. Optionally other ways to reach you as well. Normally simple DIN A4 paper strips with the information printed on is enough. No need to get fancy."
+            }
+          ]
+        },
+        {
+          "topic": "Payment stuff",
+          "items": [
+            {
+              "title": "<p>When using ATMs/Cash Machines/Bankomaten/Geldautomaten give them a good wiggle before inserting your card. During 32C3 a Skimmer device had been found at an ATM at Bahnhof Dammtor. This is just a reminder, you should do that every time you use your card.</p>"
+            },
+            {
+              "title": "Some cash (€uros, or other local currency)"
+            },
+            {
+              "title": "Credit card"
+            },
+            {
+              "title": "Maestro card (Bankomatkarte, EC-Karte)"
+            },
+            {
+              "title": "Coins (€uros, for automated vending machines, like public transport tickets)"
+            },
+            {
+              "title": "Bitcoin wallet (the encrypted fashion with a good passphrase) or one for your preferred kind of crypto-currency"
+            },
+            {
+              "title": "Emergency numbers for your bank so you can lock your credit card/debit card/Bankomatkarte in case it gets lost/stolen/left behind."
+            },
+            {
+              "title": "German cards can be locked via the <a href=\"http://www.sperr-notruf.de/\">locking hotline</a> 116 116 (or +49 - 30 4050 4050)"
+            },
+            {
+              "title": "For your Bankomat Karte (EC debit card) check if the “Geo Control” of your bank allows withdrawing in your destination country."
+            }
+          ]
+        },
+        {
+          "topic": "Mobility",
+          "items": [
+            {
+              "title": "Cards, PINs, Apps (and required account data) for Car- and bicycle sharing"
+            },
+            {
+              "title": "An app to show local public transport times. Not all cities are available in Google/Apple/You-name-it Maps applications."
+            },
+            {
+              "title": "A <a href=\"https://en.wikipedia.org/wiki/Towel_Day\">towel</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Emergency Information for Events",
+          "items": [
+            {
+              "title": "<p>If you're in an emergency shout <em>HELP!</em></p><p>If you need help, call for help, there are many, many friendly people around to help you.</p><p>Event and location related emergency information is in a separate document for the corresponding event in this repository! You may want to copy that info to a notes application on your smartphone or have a printed card in your wallet.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Personal hygiene",
+          "items": [
+            {
+              "title": "Tooth brush (plus charger if it is an electrical one)"
+            },
+            {
+              "title": "Toothpaste"
+            },
+            {
+              "title": "Dental floss"
+            },
+            {
+              "title": "Shower gel"
+            },
+            {
+              "title": "Flip-flops for shared showers"
+            },
+            {
+              "title": "Shampoo (to avoid bad hair days)"
+            },
+            {
+              "title": "Conditioner"
+            },
+            {
+              "title": "Tampons"
+            },
+            {
+              "title": "Sanitary towels"
+            },
+            {
+              "title": "Condoms, dental dams and other protective gear (Make sure the condoms are not beyond their usage date! (Yes, it really happens…))"
+            },
+            {
+              "title": "Lubricant (silicone or water based, to be compatible with condoms)"
+            },
+            {
+              "title": "Disinfectants"
+            },
+            {
+              "title": "Soap"
+            },
+            {
+              "title": "Deodorant, antiperspirant"
+            },
+            {
+              "title": "Hairbrush/comb (to avoid bad hair days)"
+            },
+            {
+              "title": "Hair-band (Zopfringerl) to tame your mane"
+            },
+            {
+              "title": "Handkerchiefs"
+            },
+            {
+              "title": "Towel. Never hitchhike the Galaxy without one."
+            },
+            {
+              "title": "Contact lenses"
+            },
+            {
+              "title": "cleaning fluid"
+            },
+            {
+              "title": "contact lens container (make sure it fits flight regulations for fluids if you travel by plane.)"
+            },
+            {
+              "title": "replacement contact lenses"
+            },
+            {
+              "title": "replacement glasses"
+            },
+            {
+              "title": "eye drops</li>\n</ul>"
+            },
+            {
+              "title": "Glasses"
+            },
+            {
+              "title": "Spectacle case"
+            },
+            {
+              "title": "Cleaning cloth</li>\n</ul>"
+            },
+            {
+              "title": "Oropax or other things to plug into your ears for a good “night”'s sleep."
+            },
+            {
+              "title": "Hair dryer (in case your place/hotel doesn't supply one, or you have cool ideas to use it for hacking)"
+            }
+          ]
+        },
+        {
+          "topic": "Cosmetics",
+          "items": [
+            {
+              "title": "Make up"
+            },
+            {
+              "title": "Nail polish, also handy to secure screws on your laptop and have a tamper indicator, especially when using one with glitter."
+            },
+            {
+              "title": "Nail polish remover"
+            },
+            {
+              "title": "Nail scissors"
+            },
+            {
+              "title": "Nail file"
+            },
+            {
+              "title": "Razor (with spare blades / plus cable/charger if it is an electrical one)"
+            },
+            {
+              "title": "Shaving soap"
+            },
+            {
+              "title": "Shaving brush"
+            },
+            {
+              "title": "Lipstick/lipgloss"
+            },
+            {
+              "title": "Lip balm"
+            },
+            {
+              "title": "Tweezers"
+            },
+            {
+              "title": "Cotton swabs (Wattestäbchen)"
+            },
+            {
+              "title": "Make up remover pads"
+            },
+            {
+              "title": "Skin care"
+            }
+          ]
+        },
+        {
+          "topic": "Medication",
+          "items": [
+            {
+              "title": "<p>Check the expiry date of the meds you bring.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Clothing",
+          "items": [
+            {
+              "title": "<p>Come as you are, as a friend.</p>"
+            },
+            {
+              "title": "At least ONE clean shirt for each day you stay, plus two for traveling to and from congress (nerdy print is always welcome)"
+            },
+            {
+              "title": "At least ONE set of clean underwear for each day you stay, plus two for traveling to and from congress (Doesn't necessarily need to be in matching pairs, but that is up to you.)"
+            },
+            {
+              "title": "At least ONE pair of clean socks/stockings/tights/overknees for each day you stay, plus two for traveling to and from congress (again, matching pairs optional)"
+            },
+            {
+              "title": "Enough pants/skirts/trousers/dresses/etc. so you can wear clean clothes every day you attend congress (even if somebody accidentally (or intentionally) spills a beverage all over you!)"
+            },
+            {
+              "title": "Cycling shorts. You will walk, a lot. Prevent chafing your thighs."
+            },
+            {
+              "title": "Sewing set (needle, thread, spare button for your trousers/skirts/shirts/blouses/etc.)"
+            },
+            {
+              "title": "Long sleeve shirts"
+            },
+            {
+              "title": "Hoodies, pullovers, zippers, vests (it's cold outside!)"
+            },
+            {
+              "title": "Jacket, coat (wind proof, at least somewhat water resistant)"
+            },
+            {
+              "title": "Comfortable shoes (You'll cover a lot of distance-units during your stay)"
+            },
+            {
+              "title": "Cap, wool cap"
+            },
+            {
+              "title": "Umbrella"
+            },
+            {
+              "title": "Kilt"
+            },
+            {
+              "title": "Bag to separate laundry from clean clothes in your luggage"
+            },
+            {
+              "title": "Gloves"
+            },
+            {
+              "title": "Fancy shoes"
+            },
+            {
+              "title": "Your favorite chainmail body armor"
+            },
+            {
+              "title": "Scarf"
+            },
+            {
+              "title": "Swim suit, bikini, trunks (in case your hotel has a pool or you like diving in a ball pit)"
+            },
+            {
+              "title": "Evening gown"
+            },
+            {
+              "title": "Cosplay is welcome"
+            },
+            {
+              "title": "Tailcoat or suit, maybe including a top hat"
+            },
+            {
+              "title": "Utility belt for your DECT phone, some coins and whatever you carry with you the whole day."
+            },
+            {
+              "title": "High Visibility Vest (to be visible during Angel Work)"
+            },
+            {
+              "title": "Lab Coat"
+            }
+          ]
+        },
+        {
+          "topic": "Gear",
+          "items": [
+            {
+              "title": "<p>Label ALL your gear in a consistent manner. (Mastodon handle and DECT numbers have proven to be working well.)\nIn case something gets lost it can find its way back to you.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "🐶 If you travel with your dog",
+      "items": [
+        {
+          "title": "<p>Please check in advance if dogs are allowed at the event you want to attend. Guide dogs are usually exempt, even if dogs are not allowed.\n- Blanket\n- Food (wet &amp; dry, Snacks)\n- Containers for water and food\n- Brush\n- Tick forceps / tick tweezers\n- Backup leash\n- Medication\n- The dog <em>duh</em>\n- Paperwork, guide dog license (just in case someone gets annoyingly picky)</p>"
+        }
+      ]
+    },
+    {
+      "topic": "🚗 If you travel by car",
+      "items": [
+        {
+          "title": "<p>Please consider ride-sharing or consolidating all your boxes into one transporter and take a train instead.\n- Check out where to park your car (some hotels offer free parking if you register in advance)\n- Make sure you have the <a href=\"https://www.umweltbundesamt.de/en/topics/air/particulate-matter-pm10/low-emission-zones-in-germany\" title=\"Environmental Zone Info for Germany\">environmental zone sticker</a> on your windshield if you're driving to a German city\n- Make sure that your car is safe to drive\n    - Check the pressure in your tires\n    - Check the engine oil and refill the windshield washer\n    - Check the expiry date of your vehicle inspection sticker (TÜV) - Be aware that the tolerance period may be different to other countries</p>"
+        }
+      ]
+    },
+    {
+      "topic": "⛺️ Camp",
+      "items": [
+        {
+          "title": "Tent"
+        },
+        {
+          "title": "Sleeping bag &amp; pillow"
+        },
+        {
+          "title": "Air mattress"
+        },
+        {
+          "title": "Water proof clothing"
+        },
+        {
+          "title": "230V/16A(<em>blue</em>)-to-your-country adaptor &amp; extension (single phase)"
+        },
+        {
+          "title": "230V/32A(<em>red</em>)-to-your-country adaptor &amp; extensions (3-phase)"
+        },
+        {
+          "title": "Cat5e extension cable (10-100m)"
+        },
+        {
+          "title": "Food"
+        },
+        {
+          "title": "Bin bags (for rubbish and dirty clothes)<p>See also the <a href=\"https://github.com/Columbia19/Camping-Checklist\">CampingChecklist</a> for more camping gear.</p>"
+        },
+        {
+          "topic": "Schedule",
+          "items": [
+            {
+              "title": "Have a look at the <a href=\"https://fahrplan.events.ccc.de/congress/2019/Fahrplan/\" title=\"36C3 Fahrplan aka conference schedule\">Fahrplan</a> and maybe make a preselection of talks you really “have to”, “want to” or “would be nice to“ see"
+            },
+            {
+              "title": "Install one of the Fahrplan apps for Android (<a href=\"https://play.google.com/store/apps/details?id=info.metadude.android.congress.schedule\">PlayStore</a>, <a href=\"https://github.com/EventFahrplan/EventFahrplan\">Source</a>) or iOS (<a href=\"https://itunes.apple.com/us/app/30c3-fahrplan-30c3-event-organizer/id764609606?mt=8\">iTunes</a>)"
+            },
+            {
+              "title": "Be sure to schedule a period of time to get your T-Shirt or pullover/hoodie/zipper (when preordered in the first two days)!"
+            },
+            {
+              "title": "To have a sense of train schedules, enter \"Leipzig, Messegelände\" as destination on the <a href=\"https://www.l.de/verkehrsbetriebe\">public transport schedule page</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "🔒 Securing your devices",
+      "items": [
+        {
+          "title": "<p>All security measures for devices on public Internet networks also apply here – threats might come from untrusted devices <em>within</em>, as well as from maleficent third parties <em>outside</em> the Congress network. Of course you should have these measures in place everywhere and all the time since event networks are no more or no less dangerous than the internet in general.</p><p>Read the <a href=\"https://events.ccc.de/congress/2019/wiki/Static:Information_Security\">How to survive guide</a> in the Congress Wiki. There are many excellent tips in there or consult you local <a href=\"https://www.cryptoparty.in/location\" title=\"List of international CryptoParty events\">CryptoParty</a> meetup, CCC ERFA or hackspace friends.</p>"
+        },
+        {
+          "topic": "Backups",
+          "items": [
+            {
+              "title": "<p>Make fresh backups of ALL the devices you bring to CCCongress. Test that you can actually restore data from those backups!\nHave something to backup your laptop on site as well.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "PowerOn/BIOS/EFI Password",
+          "items": [
+            {
+              "title": "<p>Make sure you do have set a BIOS or EFI Password to prevent booting from a live CD to attack your system.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Full disk encryption",
+          "items": [
+            {
+              "title": "<p>Activate full disk encryption with pre-boot authentication. (Mac: Activate FileVault, FreeBSD: GELI, Linux: Cryptsetup, Windows: ~~Windows? S'SLY?~~ VeraCrypt)</p><p>Make sure your system does suspend to disk (SSD) and not to RAM, so you can't extract the passphrase from RAM via Firewire/Thunderbolt/ColdBoot attack.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Backups",
+          "items": [
+            {
+              "title": "<p>You did make fresh backups of all your devices, did you?</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Servers",
+          "items": [
+            {
+              "title": "<p>Check that <em>all</em> your server services are using proper TLS. See <a href=\"https://bettercrypto.org/\" title=\"Better Crypto\">bettercrypto.org</a> or other sources you trust for help on how to properly configure your servers. (Mail, Web, VPN, SSH, etc.)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "VPN tunnel",
+          "items": [
+            {
+              "title": "<p>Have at least one trusted, working and tested VPN endpoint available for tunneling out of the congress network. If you don't have your own VPN server at your disposal, ask friends you trust to help you out. If you do, ask your friends if they need a VPN endpoint and share!</p>"
+            },
+            {
+              "title": "<a href=\"https://www.wireguard.com/\">WireGuard</a>"
+            },
+            {
+              "title": "<a href=\"https://openvpn.net/\" title=\"OpenVPN\">OpenVPN</a>"
+            },
+            {
+              "title": "L2TP/IPSec/IKEv2"
+            },
+            {
+              "title": "<a href=\"http://openssh.org/\" title=\"OpenSSH\">SSH</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/sshuttle/sshuttle\">SSHuttle</a>"
+            },
+            {
+              "title": "<a href=\"http://code.kryo.se/iodine/\" title=\"iodine\">iodine</a> (DNS tunnel for those pesky for-pay captive portal WiFi networks)"
+            },
+            {
+              "title": "<a href=\"https://www.torproject.org/\" title=\"Tor Project\">Tor/Vidalia</a><p>Don't use PPTP, IKEv1, PSK VPNs anymore, they're known to be insecure.\nMake sure your VPN works with IP and Legacy IP without leaking DNS and other traffic.</p><p>Also have those tunnels configured on ALL the devices you intend to use on the local network of the venue, and have it tested. That includes your laptops, phones, tablets, servers, fridge, etc.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Phones",
+          "items": [
+            {
+              "title": "<p>It is not recommended to connect your smartphone to the congress wifi -- if you still can't resist, here are a few things to consider:</p>"
+            },
+            {
+              "title": "Make sure that it's <strong>not a 802.11b</strong> device, as it would slow down the complete wifi network."
+            },
+            {
+              "title": "Disable all synchronization services, as they might be using plaintext."
+            },
+            {
+              "title": "Disable all auto-discovery services (network music players, remote control apps, etc …)."
+            },
+            {
+              "title": "Make sure there are no known exploits for your device (not that unknown-to-you exploits wouldn't be a possible risk as well…)."
+            },
+            {
+              "title": "Turn off push notifications."
+            },
+            {
+              "title": "Update your apps, especially your browser."
+            },
+            {
+              "title": "Use a VPN tunnel if possible."
+            },
+            {
+              "title": "Use a Firewall and only allow the (few) services you trust."
+            },
+            {
+              "title": "<a href=\"https://play.google.com/store/apps/details?id=com.googlecode.droidwall.free\">DroidWall</a> for Android (root required)</li>\n</ul>"
+            },
+            {
+              "title": "If you don't have a VPN tunnel available, you can use <a href=\"https://itunes.apple.com/at/app/onion-browser/id519296448?l=en&amp;mt=8\">OnionBrowser</a> (iOS) or <a href=\"https://guardianproject.info/apps/orbot/\">Orbot</a> (Android) to surf via Tor (which may be its own kind of risk)."
+            },
+            {
+              "title": "Set your GSM network selection to <strong>manual</strong> or you might end up connected to a rogue GSM network.<p><strong>If you are unsure</strong> if there are still some services transmitting plaintext data, <strong>do not connect</strong>.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Pre-paid SIM Cards",
+          "items": [
+            {
+              "title": "<p>Make sure you get a <a href=\"https://en.wikipedia.org/wiki/Sim_card#Formats\" title=\"SIM card formats\">right sized SIM card</a> for your GSM mobile phone!\nIf you need help with buying a SIM card, ask a local for assistance. They're friendly!</p><p>Since citizens from the EU can now use their dataplan while roaming within the EU, consider using that if you can. Keep in mind that you may travel through countries that are not part of the EU where you may get charged enormous amounts. You want to turn off mobile data while travelling through those countries.</p><p>These SIM cards have proven to work well if you need one. When in doubt, ask people who are local to the country of the venue. They surely can recommend a good prepaid SIM to get.\n- <a href=\"https://www.blau.de/\">Blau.de</a> (Germany)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Wifi connection",
+          "items": [
+            {
+              "title": "<p>WIFI connections are identified by their SSID. Some operating systems automatically reconnect to known WIFI networks by default.\nMake sure that your OS is not configured to automatically connect to any networks automatically (for example \"OEBB\" or \"Wifi-on-ICE\" for Austrian and German public transport networks respectively), otherwise your device might be tricked into connecting to a malicious network.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "📫 Staying up-to-date",
+      "items": [
+        {
+          "title": "<p>Most events publish a lot of information about events as they happen. There are many ways to stay in the loop during the event or in between by subscribing to RSS feeds, Twitter accounts, Mastodon accounts, mailing lists and even newsletters [sic].\nFor a list of CCC related news sources you may be interested in following, see 'CCCongress Info Channels.md' in this repository.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "🔙 For when you return home",
+      "items": [
+        {
+          "title": "Store chocolate/chips/crisps at home as an post-event depression antidote"
+        },
+        {
+          "title": "Make notes during CCCongress to watch all the lectures you missed on site because you were attending an awesome workshop or were having interesting conversations with people."
+        },
+        {
+          "title": "Contact the cool people you met at the event"
+        },
+        {
+          "title": "Look for related local events and communities"
+        }
+      ]
+    },
+    {
+      "topic": "❤️ Thanks for being awesome ✨",
+      "items": [
+        {
+          "title": "<p>These people have contributed to improve this list for everyone (in no particular order):</p>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/Astarioth\">@Astarioth</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/N4mes\">@N4mes</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/towo\">@towo</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/michaelem\">@michaelem</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/devdsp\">devdsp</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/meep_VIE\">@meep_VIE</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/MarioVilas\">MarioVilas</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/schwindp\">schwindp</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/oe1rfc\">oe1rfc</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/bekassine\">@bekassine</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/Monikae\">Monikae</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/fin\">@fin</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/RedPlanetAT\">@RedPlanetAT</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/kjellski\">kjellski</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/uliwitness\">@uliwitness</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/anked\">@anked</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/badboy\">badboy</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/nic_ko\">@nic_ko</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/a_z_e_t\">@a_z_e_t</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/stefan2904\">@stefan2904</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/ccc\">@ccc</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/cheatha\">@cheatha</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/FrauFledermaus\">@FrauFledermaus</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/n0la\">n0la</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/RobFog\">RobFog</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/Anon_Hannibal\">Anon_Hannibal</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/SarahKriesche\">Sarah</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/scy\">@scy</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/azet\">azet</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/qsuscs\">qsuscs</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/johnjohndoe\">johnjohndoe</a>"
+        },
+        {
+          "title": "<a href=\"http://ps0ke.de\">Ps0ke</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/musevg\">@musevg</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/leyrer\">@leyrer</a>"
+        },
+        {
+          "title": "<a href=\"https://www.hax404.de/\">hax404</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/cloelkes\">@cloelkes</a>"
+        },
+        {
+          "title": "<a href=\"https://forestraven.net\">raven</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/trollkopp\">@trollkopp</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/dot__not\">@dot__not</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/PeterTheOne\">@PeterTheOne</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/Katti\">@Katti</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/0xjomo\">jomo</a>"
+        },
+        {
+          "title": "<a href=\"https://cryto.net/~joepie91\">joepie91</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/The-Compiler\">The Compiler</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/rixx\">rixx</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/qch3n/\">@qch3n</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/qch3n/\">@peterpoetzi</a>"
+        },
+        {
+          "title": "<a href=\"https://mastodon.social/@iwonder\">iwonder</a>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

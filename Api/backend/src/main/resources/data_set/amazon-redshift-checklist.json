@@ -1,0 +1,127 @@
+{
+  "id": 3,
+  "header": "amazon-redshift-checklist",
+  "topicList": [
+    "Table of Contents",
+    "How to use",
+    "Sister Projects",
+    "Checklist",
+    "Contributing"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<a href=\"#how-to-use\">How to use</a>"
+        },
+        {
+          "title": "<a href=\"#sister-projects\">Sister Projects</a>"
+        },
+        {
+          "title": "<a href=\"#checklist\">Checklist</a>"
+        },
+        {
+          "title": "<a href=\"#designing-tables\">Designing Tables</a>"
+        },
+        {
+          "title": "<a href=\"#loading-data\">Loading Data</a>"
+        },
+        {
+          "title": "<a href=\"#performance\">Performance</a>"
+        },
+        {
+          "title": "<a href=\"#security\">Security</a>"
+        },
+        {
+          "title": "<a href=\"#monitoring\">Monitoring</a>"
+        },
+        {
+          "title": "<a href=\"#consumption\">Consumption</a>"
+        },
+        {
+          "title": "<a href=\"#cluster\">Cluster</a>"
+        },
+        {
+          "title": "<a href=\"#contributing\">Contributing</a>"
+        }
+      ]
+    },
+    {
+      "topic": "How to use",
+      "items": [
+        {
+          "title": "<p>All items in the <strong>Amazon Redshift Checklist</strong> are required for the majority of projects, but some elements can be omitted or are not essential. We choose to use 3 levels of flexibility:</p>"
+        },
+        {
+          "title": ":red_circle: means the item <strong>can't be omitted</strong> for any reason."
+        },
+        {
+          "title": ":yellow_circle: means the item is <strong>highly recommended</strong> and can eventually be omitted in some really particular cases."
+        },
+        {
+          "title": ":green_circle: means the item is <strong>recommended</strong> but can be omitted in some particular situations.</li>\n</ul><p>Some resources possess an emoticon to help you understand which type of content/help you may find on the checklist:</p>"
+        },
+        {
+          "title": ":book: documentation or article"
+        },
+        {
+          "title": ":wrench: online tool"
+        },
+        {
+          "title": ":video_camera: media"
+        }
+      ]
+    },
+    {
+      "topic": "Sister Projects",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/servian/amazon-s3-checklist\">Amazon S3 Checklist</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Checklist",
+      "items": [
+        {
+          "topic": "Designing Tables",
+          "items": []
+        },
+        {
+          "topic": "Loading Data",
+          "items": []
+        },
+        {
+          "topic": "Performance",
+          "items": []
+        },
+        {
+          "topic": "Security",
+          "items": []
+        },
+        {
+          "topic": "Monitoring",
+          "items": []
+        },
+        {
+          "topic": "Consumption",
+          "items": []
+        },
+        {
+          "topic": "Cluster",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<p>Open an issue or a pull request to suggest changes or additions.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

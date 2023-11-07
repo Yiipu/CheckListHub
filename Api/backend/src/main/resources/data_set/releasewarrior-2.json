@@ -1,0 +1,127 @@
+{
+  "id": 173,
+  "header": "releasewarrior-2",
+  "topicList": [
+    "Installing",
+    "Configuring",
+    "Common terminology",
+    "Quick start",
+    "More on each subcommand"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Installing",
+      "items": [
+        {
+          "title": "<p>Get a copy of releasewarrior\n<code>git clone git@github.com:mozilla-releng/releasewarrior-2.0.git &amp;&amp; cd releasewarrior-2.0\nmkvirtualenv --python=/path/to/python3 releasewarrior\npython setup.py develop</code>\nUsing the develop target ensures that you get code updates along with data when pulling in changes.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Configuring",
+      "items": [
+        {
+          "title": "<p>The default configuration expects the releasewarriro-data repository to live at <code>~/.mozbuild/releasewarrior-data</code>.</p><p>```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Common terminology",
+      "items": [
+        {
+          "title": "<code>gtb</code>: Go to build"
+        },
+        {
+          "title": "<code>buildnum</code>: buildnumber"
+        }
+      ]
+    },
+    {
+      "topic": "Quick start",
+      "items": [
+        {
+          "title": "<p><code>releasewarrior</code> is made up of a number of subcommands. <code>status</code>, <code>track</code>, <code>newbuild</code>, <code>prereq</code>, <code>issue</code>, and <code>sync</code>.</p><p>At its core, releasewarrior tracks three todo lists:\n- <code>prereq</code> - prerequite \"Go to build\" (GTB) tasks\n- <code>task</code> - Expected operational tasks for a release in-flight\n- <code>issue</code> - Issues/Problems that have been addressed, or need to be worked on, for a release in-flight.</p><p>The usage for resolving and adding these lists are identical:</p><p>```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "More on each subcommand",
+      "items": [
+        {
+          "title": "<p><strong>note:</strong> unlike previous versions of releasewarrior, the branch is inferred from the product and version. Less typing for you, more validation internally to catch mistakes.</p>"
+        },
+        {
+          "topic": "status",
+          "items": [
+            {
+              "title": "<p>Checks the current state of releases</p><p>Usage:</p><p><code>release status</code></p><p>What happens:</p><p><code>status</code> will tell you all of the upcoming releases with prerequisite tasks before gtb as well as current tasks and issues for releases inflight.</p><p>Examples:</p><p><code>$ release status\nINFO: UPCOMING RELEASES...\nINFO: ===============================================================================\nINFO: Upcoming Release: firefox 57.0b1\nINFO: Expected GTB: 2017-11-09\nINFO:   Incomplete prerequisites:\nINFO:           * ID: 1, deadline: 2017-12-01, bug 123 - bump in tree version manually\nINFO:\nINFO: INFLIGHT RELEASES...\nINFO: ===============================================================================\nINFO: RELEASE IN FLIGHT: firefox 57.0 build1 2017-11-08\nINFO:   Incomplete human tasks:\nINFO:           * ID 6  - check with marketing re: mobile promotion wnp\nINFO:           * ID 7 (alias: publish) - publish release tasks\nINFO:           * ID 8 (alias: signoff) - signoff in Balrog\nINFO:   Unresolved issues:\nINFO: ===============================================================================\nINFO: RELEASE IN FLIGHT: firefox 57.0b2 build2 2017-11-06\nINFO: Graph 1: https://tools.taskcluster.net/task-group-inspector/#/123\nINFO: Graph 2: https://tools.taskcluster.net/task-group-inspector/#/456\nINFO:   Incomplete human tasks:\nINFO:           * ID 2 (alias: publish) - publish release tasks\nINFO:           * ID 3 (alias: signoff) - signoff in Balrog\nINFO:   Unresolved issues:\nINFO:           * ID: 1 bug: none - update verify perma failing. investigating\nINFO:           * ID: 2 bug: 999 - beetmover l10n tasks missing config key \"dest-location\"</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "track",
+          "items": [
+            {
+              "title": "<p>Start tracking an upcoming release. This is a required command before <code>newbuild</code>, below.</p><p>Usage:</p><p><code>release track $PRODUCT $VERSION --date YYYY-MM-DD</code></p><p><code>release track $PRODUCT $VERSION  # --date defaults to today</code></p><p>What it does:</p>"
+            },
+            {
+              "title": "Creates and commits json and markdown files in releasewarrior-data/upcoming/"
+            },
+            {
+              "title": "Release is primed to either \"gtb\" or add/resolve <code>prereq</code>uisites<p>Examples:</p><p><code>$ release track fennec 17.0b1 --date 2017-11-02</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "prereq",
+          "items": [
+            {
+              "title": "<p>Add or resolve a prerequisite task for an upcoming (tracked) release.</p><p>Usage:</p><p>```</p>"
+            }
+          ]
+        },
+        {
+          "topic": "newbuild",
+          "items": [
+            {
+              "title": "<p>Marking gtb for a tracked release, or start a new build number for an existing build.</p><p>Usage:</p><p><code>release newbuild $PRODUCT $VERSION --graphid $graph1 --graphid $graph2</code></p><p>What it does:</p><p>If this is first gtb (buildnum1), the data and wiki files are moved to: releasewarrior-data/inflight/</p><p>If this release is already in flight, the data file's most recent buildnum\nmarked as aborted, any previous unresolved issues are carried forward to new\nbuildnum. This means it is safe to use <code>release newbuild</code> for a product and\nversion that are already listed, it will just start a new build number.</p><p>Example:</p><p><code>$ release newbuild firefox release-rc 15.0 --graphid 1234</code></p><p><strong>note:</strong> if you forget to include all the graphids, manually add them to the json files and run <code>release sync $PRODUCT $VERSION</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "task",
+          "items": [
+            {
+              "title": "<p>Add or resolve a human task for an inflight release</p><p>Usage:</p><p><code>release task $PRODUCT $VERSION --resolve $task_id_or_alias</code></p><p>What it does:</p><p>Tasks are tracked work that must be completed during an in-flight release. When you start a new buildnum, the previous human tasks are reset to unresolved and carried over to next buildnum.</p><p><code>task</code> when run without options will add a task by asking for details through CLI inputs. Examples of both below.</p><p>Examples:</p><p>```</p>"
+            }
+          ]
+        },
+        {
+          "topic": "issue",
+          "items": [
+            {
+              "title": "<p>Add or resolve an issue for an inflight release</p><p>Usage:</p><p><code>release issue $PRODUCT $VERSION\nrelease issue $PRODUCT $VERSION --resolve $issue_id</code></p><p>What it does:</p><p>Issues are tracked failures or problems while a release is inflight. When you start a new buildnum, the previous unresolved issues are carried over to next buildnum.\n<code>issue</code> when run without options will add a task by asking for details through CLI inputs. Examples of both below.</p><p>Examples:</p><p>```</p>"
+            }
+          ]
+        },
+        {
+          "topic": "postmortem",
+          "items": [
+            {
+              "title": "<p>Generate postmortem file for releaseduty weekly meeting</p><p>Usage:</p><p><code>release postmortem YYYY-MM-DD</code></p><p>What it does:</p><p>Creates a postmortem file based on completed releases and their unresolved\nissues. Archives release files that are completed using the same date will\nonly append and archive releases as they are updated.</p><p>Example:</p><p><code>$ release postmortem 2018-01-25\nWARNING: No recently completed releases. Nothing to do!</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "sync",
+          "items": [
+            {
+              "title": "<p>Semi-manually updating releasewarrior</p><p>Usage:</p><p><code>release sync $PRODUCT $VERSION</code></p><p>What it does:</p><p>The data is just a json file and changes are tracked by the repository's\nrevision history, you can always manually update the data and have the tool\nre-create the wiki presentation.</p><p>Example:</p><p><code>$ vim releasewarrior-data/inflight/firefox-esr-27.0esr.json  # change some value\n$ release sync firefox 27.0esr</code></p>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

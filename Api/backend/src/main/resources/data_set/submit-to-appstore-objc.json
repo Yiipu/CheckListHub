@@ -1,0 +1,232 @@
+{
+  "id": 202,
+  "header": "submit-to-appstore-objc",
+  "topicList": [
+    "iTunesConnect & developer.apple.com",
+    "APNS",
+    "Versioning",
+    "Version compatibility",
+    "iOS SDK API updates:",
+    "Server",
+    "Tools",
+    "In-App Purchases",
+    "Specific services",
+    "App extensions (widgets)",
+    "Apple docs"
+  ],
+  "itemGroups": [
+    {
+      "topic": "iTunesConnect & developer.apple.com",
+      "items": [
+        {
+          "title": "Install publisher's provision profile (containing private key p12)."
+        },
+        {
+          "title": "Install distribution certificate containing your app's BundleID."
+        },
+        {
+          "title": "Prepare app in iTunesConnect for your app's BundleID."
+        },
+        {
+          "title": "Provide description and l10ns for all relevant languages."
+        },
+        {
+          "title": "Provide screenshots/videos in iTunesConnect."
+        }
+      ]
+    },
+    {
+      "topic": "APNS",
+      "items": [
+        {
+          "title": "Make sure that APNS certificate includes your app's BundleID."
+        },
+        {
+          "title": "You have created distribution APNS certificate."
+        },
+        {
+          "title": "Your server is using distribution APNS certificate."
+        },
+        {
+          "title": "Check that notifications are working on different iOS versions (pay attention on <strong>iOS8</strong> where API was changed)."
+        }
+      ]
+    },
+    {
+      "topic": "Versioning",
+      "items": [
+        {
+          "title": "Do not hardcode anywhere in sources things like <code>isBeta=YES</code> or <code>DEBUG=YES</code>."
+        },
+        {
+          "title": "<p>Make sure that app icon or name doesn't contain <code>beta</code> word.</p>"
+        },
+        {
+          "title": "<p>Update app version and build version. Never harcode version inside app (use CFBundleVersion instead).</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Version compatibility",
+      "items": [
+        {
+          "title": "<p>Make sure that new release is installed over old version in correct way: </p>"
+        },
+        {
+          "title": "Install app from AppStore. Create ad-hoc build and install it over old version."
+        },
+        {
+          "title": "Check that user doesn't lose any his info after update. </li>\n</ul>"
+        },
+        {
+          "title": "<p>Check that data from <strong>NSUserDefaults</strong> is read in correct way: </p>"
+        },
+        {
+          "title": "app doesn't crash trying to read unexisting keys"
+        },
+        {
+          "title": "your haven't changed keys in <code>initWithCoder</code> and <code>encodeWithCoder</code> (your current app should be able to read data saved by old app)"
+        }
+      ]
+    },
+    {
+      "topic": "iOS SDK API updates:",
+      "items": [
+        {
+          "title": "check that app can connect to your server, open faq page, load image (ATS, iOS9 SDK)"
+        },
+        {
+          "title": "check that geolocation is working (<a href=\"http://stackoverflow.com/a/24063578\">iOS8 SDK</a>)"
+        },
+        {
+          "title": "check that local notifications are working, because user needs permit them too (iOS8 SDK)"
+        },
+        {
+          "title": "push notifications should work too"
+        }
+      ]
+    },
+    {
+      "topic": "Server",
+      "items": [
+        {
+          "title": "Connect application to production server environment."
+        },
+        {
+          "title": "Do not send <code>beta=1</code> (or similar) in any server requests."
+        },
+        {
+          "title": "If app is configurated from server (for example, it downloads DB), make sure that configuration is updated in correct way. If configuration needs to be updated every N hours - it really does."
+        }
+      ]
+    },
+    {
+      "topic": "Tools",
+      "items": [
+        {
+          "title": "Enable crash analytics tool like <a href=\"https://crashlytics.com\">Crashlytics</a>."
+        },
+        {
+          "title": "Enable flow analytics tool like <a href=\"http://www.flurry.com/\">Flurry</a>."
+        },
+        {
+          "title": "Disable <code>NSLog</code> calls. At least like this<p><code>objective-c\n  #define NSLog(...) /* */</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "In-App Purchases",
+      "items": [
+        {
+          "title": "<p>Enable IAPs for your app id in developer.app.com\n  <img src=\"pics/developer.apple.com-ids.png\" width=\"600\"/></p>"
+        },
+        {
+          "title": "<p>Enable IAPs in Xcode Build Settings\n  <img src=\"pics/xcode-apns.png\" width=\"600\"/></p>"
+        },
+        {
+          "title": "<p>Submit finance docs (without doing it, app doesn't receive even list of in-apps) in iTunesConnect:\n  <img src=\"pics/apns-finance-error.png\" width=\"600\"/></p>"
+        },
+        {
+          "title": "<p>Make sure, that if you've hardcoded IAPs IDs, they are the same in iTunes  Connect app too. \n  <img src=\"pics/itunesconnect-IAPs.png\" width=\"600\"/></p>"
+        },
+        {
+          "title": "<p>In-apps are displaying correctly. Test user can make purchases.</p>"
+        },
+        {
+          "title": "In-apps are submitted for review! Otherwise in-apps won't be available even if app version was reviewed."
+        }
+      ]
+    },
+    {
+      "topic": "Specific services",
+      "items": [
+        {
+          "topic": "Parse.com",
+          "items": [
+            {
+              "title": "Check AppDelegate and make sure that <code>applicationId</code> and <code>clientKey</code> are used from production account.</li>\n</ul><p><strong>AppDelegate</strong></p><p><code>objective-c\n  // --------------------- Parse credentials:\n    [Parse setApplicationId:@\"FDF...WGr\" clientKey:@\"1BzI...F\"];</code></p><p>Parse.com application keys</p><p><img src=\"pics/parse-keys.png\" width=\"600\"/></p><p>Keys should be the same in Settings and AppDelegate.</p>"
+            },
+            {
+              "title": "Deploy Cloud code to production account!"
+            },
+            {
+              "title": "<p>Parse application is marked as 'PROD' in Settings\n  <img src=\"pics/parse-production-mode.png\" width=\"600\"/></p>"
+            },
+            {
+              "title": "<p>If you're using APNS, set production certificate in Settings \n  <img src=\"pics/parse-apns.png\" width=\"600\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Facebook",
+          "items": [
+            {
+              "title": "Make sure, that you are using production app, check client key and perform successful login/sharing to Fb."
+            },
+            {
+              "title": "Disable <strong>Sandbox</strong> mode for Fb app."
+            },
+            {
+              "title": "If you are using GraphStory, submit them to review, describe steps-to-reproduce and add necessary screenshots."
+            },
+            {
+              "title": "If you're using <code>FBSDKAppInviteContent</code>, make sure that invitation link is pointing to PROD application"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "App extensions (widgets)",
+      "items": [
+        {
+          "title": "Create separate bundle ID. Usuall it looks like <code>com.company.appName.widgetName</code>."
+        },
+        {
+          "title": "Generate distribution mobile provisions for widget"
+        },
+        {
+          "title": "Make sure that <code>app groups</code> are included in both provisions: host app and extension."
+        },
+        {
+          "title": "Check that widget is using production server URL / production Parse keys."
+        }
+      ]
+    },
+    {
+      "topic": "Apple docs",
+      "items": [
+        {
+          "title": "<p>Also, you can find useful Apple guides:</p>"
+        },
+        {
+          "title": "Common App Rejections</li>\n</ul><p>https://developer.apple.com/app-store/review/rejections/</p>"
+        },
+        {
+          "title": "App Review Guidelines<p>https://developer.apple.com/app-store/review/guidelines/</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

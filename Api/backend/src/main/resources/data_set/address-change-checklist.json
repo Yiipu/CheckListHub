@@ -1,0 +1,259 @@
+{
+  "id": 1,
+  "header": "address-change-checklist",
+  "topicList": [
+    "Contributing",
+    "The checklist"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<p>Pull requests are welcome! You can add country-specific examples.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "The checklist",
+      "items": [
+        {
+          "topic": "Government",
+          "items": []
+        },
+        {
+          "topic": "Personal or family health and related services",
+          "items": [
+            {
+              "title": "Family doctors"
+            },
+            {
+              "title": "Specialist clinics"
+            },
+            {
+              "title": "Pharmacy"
+            },
+            {
+              "title": "Veterinarian and pet ID chips"
+            },
+            {
+              "title": "Daycare centres"
+            },
+            {
+              "title": "Emergency contact information"
+            }
+          ]
+        },
+        {
+          "topic": "Education",
+          "items": [
+            {
+              "title": "School, college, or university"
+            },
+            {
+              "title": "Emergency contact information"
+            },
+            {
+              "title": "Provincial, Territorial, or Federal loans provider"
+            }
+          ]
+        },
+        {
+          "topic": "Work",
+          "items": [
+            {
+              "title": "Employer"
+            },
+            {
+              "title": "Payroll system"
+            },
+            {
+              "title": "Group or individual benefits"
+            },
+            {
+              "title": "HR system"
+            },
+            {
+              "title": "Clients and invoices"
+            },
+            {
+              "title": "Pension plan"
+            },
+            {
+              "title": "Investment portfolio"
+            }
+          ]
+        },
+        {
+          "topic": "Insurance",
+          "items": [
+            {
+              "title": "Home"
+            },
+            {
+              "title": "Automobile"
+            },
+            {
+              "title": "Health, life"
+            },
+            {
+              "title": "Homeowner or renter's insurance"
+            }
+          ]
+        },
+        {
+          "topic": "Finances",
+          "items": [
+            {
+              "title": "Bank accounts"
+            },
+            {
+              "title": "Credit cards"
+            },
+            {
+              "title": "Bank or credit-union cards"
+            },
+            {
+              "title": "Branded credit cards"
+            },
+            {
+              "title": "Loan issuers (automobile finances, line of credit, mortgage, etc)"
+            },
+            {
+              "title": "Contactless payment services"
+            },
+            {
+              "title": "Investment portfolio"
+            },
+            {
+              "title": "Remittance provider"
+            },
+            {
+              "title": "Will"
+            }
+          ]
+        },
+        {
+          "topic": "Home, utilities, and services",
+          "items": [
+            {
+              "title": "Home warranty"
+            },
+            {
+              "title": "🇨🇦 <a href=\"https://www.tarion.com/\">Tarion</a>"
+            },
+            {
+              "title": "Utilities"
+            },
+            {
+              "title": "Electrical"
+            },
+            {
+              "title": "water"
+            },
+            {
+              "title": "gas"
+            },
+            {
+              "title": "heating"
+            },
+            {
+              "title": "Connected services"
+            },
+            {
+              "title": "TV or cable subscription"
+            },
+            {
+              "title": "Home phone"
+            },
+            {
+              "title": "Cell phone"
+            },
+            {
+              "title": "Fax"
+            },
+            {
+              "title": "Internet"
+            },
+            {
+              "title": "Home monitoring"
+            },
+            {
+              "title": "Transit card"
+            },
+            {
+              "title": "Cleaning service"
+            },
+            {
+              "title": "Driveway snow shoveling"
+            },
+            {
+              "title": "Child carseat registration"
+            },
+            {
+              "title": "Other warranty or product registration"
+            },
+            {
+              "title": "Municipal, government, accounts, or related services"
+            },
+            {
+              "title": "🇨🇦\n    <a href=\"https://www.mpac.ca/en/MakingChangesUpdates/ChangingYourMailingAddress\">Municipal Property Assessment Corporation (MPAC)</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Automotive",
+          "items": [
+            {
+              "title": "Car title / registration"
+            },
+            {
+              "title": "Lease or financing"
+            },
+            {
+              "title": "Warranty"
+            }
+          ]
+        },
+        {
+          "topic": "Commercial or Retail",
+          "items": [
+            {
+              "title": "Online shopping, home delivery programs (includes address for saved credit\n  card details)"
+            },
+            {
+              "title": "Loyalty programs"
+            },
+            {
+              "title": "Warranties"
+            },
+            {
+              "title": "Magazine subscriptions"
+            },
+            {
+              "title": "Charities"
+            },
+            {
+              "title": "Product registrations (for recall notices)"
+            },
+            {
+              "title": "Domain registrar"
+            }
+          ]
+        },
+        {
+          "topic": "Other",
+          "items": [
+            {
+              "title": "Cell phone Wi-Fi calling and emergency settings"
+            },
+            {
+              "title": "Trusted friends or family"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

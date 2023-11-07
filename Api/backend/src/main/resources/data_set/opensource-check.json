@@ -1,0 +1,236 @@
+{
+  "id": 139,
+  "header": "opensource-check",
+  "topicList": [
+    "Pre-Requisites",
+    "Install",
+    "Usage",
+    "Checklist",
+    "Boilerplate",
+    "Projects that Checked-Out!",
+    "Thanks",
+    "Contributors"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Pre-Requisites",
+      "items": [
+        {
+          "title": "<p>This utility can currently only be used for JavaScript/Node projects.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Install",
+      "items": [
+        {
+          "title": "<p>This utility can be used as a temporary dependency, global dependency or a dev dependency.</p><p>Head over to the <a href=\"##usage\">usage</a> section below on how to set it up based on your preference.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Usage",
+      "items": [
+        {
+          "topic": "Parameters",
+          "items": [
+            {
+              "title": "<p>The utility accepts the following parameters:</p>"
+            },
+            {
+              "title": "--path - to specify the path of your project directory (defaults to current working directory)"
+            },
+            {
+              "title": "--org - to specify the npm organization namespace for your project"
+            }
+          ]
+        },
+        {
+          "topic": "Usage as a temporary dependency",
+          "items": [
+            {
+              "title": "<p>This is great option for taking this a quick spin!</p><pre><code>npx @condenast/opensource-check --path &lt;your-project-path&gt;\nnpx @condenast/opensource-check --path ./glamorous\nnpx @condenast/opensource-check --path ./xml-to-react --org condenast\n</code></pre>"
+            }
+          ]
+        },
+        {
+          "topic": "Usage as a global dependency",
+          "items": [
+            {
+              "title": "<p>This is a good option if you plan to use this frequently but don't want it to be a part of your project setup.</p><pre><code>npm install -g @condenast/opensource-check\n\nopensource-check --path &lt;your-project-path&gt;\nopensource-check --path ./glamorous\nopensource-check --path ./xml-to-react --org condenast\n</code></pre>"
+            }
+          ]
+        },
+        {
+          "topic": "Usage as a dev dependency",
+          "items": [
+            {
+              "title": "<p>This is a wonderful option if you plan to use this as part of your project workflow including using in CI environment.</p><pre><code>npm install -D @condenast/opensource-check\n\nnpx @condenast/opensource-check --path &lt;your-project-path&gt;\nnpx @condenast/opensource-check --path ./glamorous\nnpx @condenast/opensource-check --path ./xml-to-react --org condenast\n</code></pre>"
+            }
+          ]
+        },
+        {
+          "topic": "Screenshot",
+          "items": [
+            {
+              "title": "<p>This is a sample screenshot of running this utlility:</p><p><img src=\"https://user-images.githubusercontent.com/1215971/37443485-74f4b324-27da-11e8-9e77-957de7edaec8.png\" title=\"screenshot\" width=\"350/\"/></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Checklist",
+      "items": [
+        {
+          "title": "<p>The current checklist of things that are verified by the utility on every run:</p>"
+        },
+        {
+          "topic": "Documentation",
+          "items": [
+            {
+              "title": "[ ] Has a README"
+            },
+            {
+              "title": "[ ] Has a Title"
+            },
+            {
+              "title": "[ ] Has an Install section"
+            },
+            {
+              "title": "[ ] Has a Usage section"
+            },
+            {
+              "title": "[ ] Has a License"
+            },
+            {
+              "title": "[ ] Has a Code of Conduct"
+            },
+            {
+              "title": "[ ] Has Contributing Guidelines"
+            },
+            {
+              "title": "[ ] Has an Issue template"
+            },
+            {
+              "title": "[ ] Has a Pull Request template"
+            },
+            {
+              "title": "[ ] Has a Changelog"
+            },
+            {
+              "title": "[ ] Has Examples"
+            }
+          ]
+        },
+        {
+          "topic": "Development",
+          "items": [
+            {
+              "title": "[ ] Has a package.json"
+            },
+            {
+              "title": "[ ] Has org namespace, if applicable"
+            },
+            {
+              "title": "[ ] Has a version"
+            },
+            {
+              "title": "[ ] Has a description"
+            },
+            {
+              "title": "[ ] Has a main or bin"
+            },
+            {
+              "title": "[ ] Has a link to git repository"
+            },
+            {
+              "title": "[ ] Has contributors"
+            },
+            {
+              "title": "[ ] Has a license"
+            },
+            {
+              "title": "[ ] Has a .gitignore"
+            },
+            {
+              "title": "[ ] Has a linter"
+            },
+            {
+              "title": "[ ] Has a test runner"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Boilerplate",
+      "items": [
+        {
+          "title": "<p>These documents are provided under the <a href=\"/boilerplate\">boilerplate</a> directory for use by any project:</p><ol>\n<li>LICENSE.md - <a href=\"https://github.com/licenses/license-templates/blob/master/templates/apache.txt\">Apache 2.0</a>"
+        },
+        {
+          "title": "CODE_OF_CONDUCT.md - <a href=\"https://www.contributor-covenant.org/version/1/4/code-of-conduct.md\">Contributor Covenant v1.4</a>"
+        },
+        {
+          "title": "CONTRIBUTING.md - (inspired from <a href=\"https://github.com/atom/atom/blob/master/CONTRIBUTING.md\">Atom</a> and <a href=\"https://github.com/rails/rails/blob/master/CONTRIBUTING.md\">Rails</a>)"
+        },
+        {
+          "title": "ISSUE_TEMPLATE.md"
+        },
+        {
+          "title": "PULL_REQUEST_TEMPLATE.md"
+        },
+        {
+          "title": "README.md</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Projects that Checked-Out!",
+      "items": [
+        {
+          "title": "<p>This is a list of projects that pass the Open Source Checks:</p>"
+        },
+        {
+          "title": "OpenSource Check - how meta!"
+        },
+        {
+          "title": "<a href=\"https://github.com/condenast/xml-to-react\">XML To React</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/condenast/quick-bus\">Quick Bus</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/condenast/launch-vehicle-fbm\">Launch Vehicle FBM</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Thanks",
+      "items": [
+        {
+          "title": "<p>We were inspired by the ideas and code of the following projects:</p>"
+        },
+        {
+          "title": "<a href=\"https://github.com/scriptnull/oss-checklist\">oss-checklist</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/todogroup/repolinter\">repolinter</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/danger/danger-js\">danger-js</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributors",
+      "items": [
+        {
+          "title": "<p>See the list of <a href=\"https://github.com/CondeNast/opensource-check/contributors\">contributors</a> who participated in writing this tool.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

@@ -1,0 +1,171 @@
+{
+  "id": 137,
+  "header": "open-project-linter",
+  "topicList": [
+    "About this project",
+    "Getting Started",
+    "Contributing",
+    "Changelog",
+    "About",
+    "Contributors",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "About this project",
+      "items": [
+        {
+          "title": "<p>The Open Project Linter is an automated checklist that new (or experienced\nbut forgetful) open source maintainers can use to make sure that they're\nusing good practices in their documentation, code, and project resources.</p><p>The project started as a way to automate\n<a href=\"https://source.opennews.org/articles/introducing-field-guide-open-source-newsroom/\">this checklist for newsroom developers</a>,\nbut these are good practices for most open source projects!</p><p>This is written in and supported on Python 3.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Getting Started",
+      "items": [
+        {
+          "topic": "Installation",
+          "items": [
+            {
+              "title": "<p>It is recommended that you use a virtual environment in order to avoid\ndependency conflicts between projects. For more information,\n<a href=\"http://docs.python-guide.org/en/latest/dev/virtualenvs/\">a tutorial on virtual environments</a>.\nOnce you have set up a python3 virtual environment, activate the environment.\nThen you can use pip to install Open Project Linter.\n<code>$ pip install open-project-linter</code>\nOnce you have installed the package, you should be able to run it from the\ncommand line (see <a href=\"#Example usage\">Example usage</a>).</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Example usage",
+          "items": [
+            {
+              "title": "<p>Once you have installed the package, if you want to check a local repository,\nmake sure your virtual enviroment is activated and run:\n<code>$ openlinter -d path/to/repository/</code></p><p>For more help, run <code>$ openlinter --help</code>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "topic": "How to set up the dev environment",
+          "items": [
+            {
+              "title": "<p>To set this up for development, fork this repository, then clone it to\nyour development machine using <code>git clone</code>.</p><p>Once you've committed your changes and pushed them to your fork of the\nrepository, file a pull request to get your contribution into the main\nrepository.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Changelog",
+      "items": [
+        {
+          "topic": "version 1.0.1",
+          "items": [
+            {
+              "title": "Fix the error in checking for multiple commits where it was using the reflog\n  not the commit history (<a href=\"https://github.com/OpenNewsLabs/open-project-linter/issues/30\">#30</a>)"
+            }
+          ]
+        },
+        {
+          "topic": "version 1.0",
+          "items": [
+            {
+              "title": "Update <code>ROADMAP.md</code> with pre-NICAR status"
+            },
+            {
+              "title": "Fix the KeyError issue when default config was changed (<a href=\"https://github.com/OpenNewsLabs/open-project-linter/issues/27\">#27</a>)"
+            },
+            {
+              "title": "Split some of the main linter logic out into functions and improve module\n  documentation"
+            },
+            {
+              "title": "Add test fixtures for the git-related tests (<a href=\"https://github.com/OpenNewsLabs/open-project-linter/issues/22\">#22</a>)"
+            }
+          ]
+        },
+        {
+          "topic": "version 0.4dev",
+          "items": [
+            {
+              "title": "Now installs Pygments automatically when installed with pip, with or\n  without pulling versions from <code>requirements.txt</code>"
+            },
+            {
+              "title": "Now includes <code>rules.yml</code> in the package and uses a correct default path\n  to it"
+            }
+          ]
+        },
+        {
+          "topic": "version 0.3dev",
+          "items": [
+            {
+              "title": "Improve documentation"
+            },
+            {
+              "title": "Fix accidental return value change in file content checker"
+            }
+          ]
+        },
+        {
+          "topic": "version 0.2dev",
+          "items": [
+            {
+              "title": "Add automated tests"
+            },
+            {
+              "title": "Fix path bug in file content checker"
+            }
+          ]
+        },
+        {
+          "topic": "version 0.1dev",
+          "items": [
+            {
+              "title": "Command-line application invokable with <code>openlinter</code>, with help on\n  how to run it"
+            },
+            {
+              "title": "Given the path to a directory, checks for:"
+            },
+            {
+              "title": "the existence of license, contributing, and readme files"
+            },
+            {
+              "title": "the presence of code files in the directory and any subdirectories"
+            },
+            {
+              "title": "the presence of a git repository, multiple branches,\n  multiple commits on any branch, and a named development/feature branch</li>\n</ul>"
+            },
+            {
+              "title": "Configurable via <code>rules.yml</code>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "About",
+      "items": [
+        {
+          "title": "<p>This linter was designed and written by <a href=\"https://franceshocutt.com/cv/\">Frances Hocutt</a> via <a href=\"http://changeset.nyc/\">Changeset Consulting</a>, a project management and maintainership consultancy focusing on open source. Sumana Harihareswara of Changeset Consulting attended the initial <a href=\"https://opennews.org/\">OpenNews</a> documentation sprint for <a href=\"http://fieldguide.opennews.org/\">The Field Guide to Open Source in the Newsroom</a> and suggested development of a companion tool to automate the guidebook's checklists as much as possible.</p><p>We look forward to seeing the community add new linter rules to help new maintainers.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributors",
+      "items": [
+        {
+          "title": "Frances Hocutt - https://franceshocutt.com https://github.com/fhocutt/"
+        },
+        {
+          "title": "Sumana Harihareswara - https://changeset.nyc"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p>The Open Project Linter is available under v. 2.0 of the Apache license.\nSee <code>LICENSE</code> for more information.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

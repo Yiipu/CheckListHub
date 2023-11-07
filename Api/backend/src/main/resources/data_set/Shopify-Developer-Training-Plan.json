@@ -1,0 +1,261 @@
+{
+  "id": 192,
+  "header": "Shopify-Developer-Training-Plan",
+  "topicList": [
+    "Contents",
+    "Theme Development",
+    "App Development",
+    "Miscellaneous"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Contents",
+      "items": [
+        {
+          "title": "<a href=\"#theme-development\">Theme Development</a>"
+        },
+        {
+          "title": "<a href=\"#app-development\">App Development</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Theme Development",
+      "items": [
+        {
+          "topic": "Basics",
+          "items": [
+            {
+              "title": "<ol>\n<li>\n<p>Know how to create a development environment. <a href=\"https://help.shopify.com/en/partners/dashboard/managing-stores/development-stores\">1</a></p>"
+            },
+            {
+              "title": "<p>Understand the limitations of a development store including the use of the Bogus Payment Gateway. <a href=\"https://help.shopify.com/en/partners/dashboard/managing-stores/test-orders-in-dev-stores#testing-using-shopifys-bogus-gateway\">2</a></p>"
+            },
+            {
+              "title": "<p>Know how to utilize ThemeKit to sync your local development theme with the Shopify sandbox store. <a href=\"https://shopify.github.io/themekit\">3</a>,<a href=\"https://www.shopify.com/partners/blog/95401862-3-simple-steps-for-setting-up-a-local-shopify-theme-development-environment\">4</a></p>\n</li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Creating development stores](https://help.shopify.com/en/partners/dashboard/managing-stores/development-stores)\n2. [Bogus Payment Gateway](https://help.shopify.com/en/partners/dashboard/managing-stores/test-orders-in-dev-stores#testing-using-shopifys-bogus-gateway)\n3. [Themekit](https://shopify.github.io/themekit/)\n4. [3 Simple Steps for Setting Up a Local Shopify Theme Development Environment](https://www.shopify.com/partners/blog/95401862-3-simple-steps-for-setting-up-a-local-shopify-theme-development-environment)\n</details>"
+            }
+          ]
+        },
+        {
+          "topic": "Products",
+          "items": [
+            {
+              "title": "<ol>\n<li>\n<p>Know about Product Variants. <a href=\"https://help.shopify.com/en/manual/products/variants\">1</a>, <a href=\"https://www.youtube.com/watch?v=UUIP1n_9kP8\">4</a></p>"
+            },
+            {
+              "title": "<p>Know about the 100 Variant limit and 3 option limit. <a href=\"https://help.shopify.com/en/manual/products/variants/add-variants#considerations-for-adding-variants\">2</a></p>"
+            },
+            {
+              "title": "<p>Know what options exist to accomidate the 100 variant limit. <a href=\"https://paulnrogers.com/getting-around-the-shopify-product-variants-limit/\">3</a></p>\n</li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Product Variants](https://help.shopify.com/en/manual/products/variants)\n2. [Variant limitations](https://help.shopify.com/en/manual/products/variants/add-variants#considerations-for-adding-variants)\n3. [Getting Around the Shopify Product Variant Limit](https://paulnrogers.com/getting-around-the-shopify-product-variants-limit/)\n4. [How to Add Variants to Products (Video)](https://www.youtube.com/watch?v=UUIP1n_9kP8)\n</details>"
+            }
+          ]
+        },
+        {
+          "topic": "Liquid basics",
+          "items": [
+            {
+              "title": "<ol>\n<li>\n<p>Understand the basics of liquid including tags and filters. <a href=\"https://shopify.github.io/liquid/basics/introduction/\">1</a></p>"
+            },
+            {
+              "title": "<p>Know Shopify's specific objects, tags, and filters. <a href=\"https://shopify.dev/docs/themes/liquid/reference\">2</a>, <a href=\"https://www.christhefreelancer.com/shopify-liquid-guide/\">3</a></p>"
+            },
+            {
+              "title": "<p>Know of the Shopify liquid cheatsheet. <a href=\"https://www.shopify.com/partners/shopify-cheat-sheet\">4</a></p>"
+            },
+            {
+              "title": "<p>Know of the Snippets Library. <a href=\"https://shopify.github.io/liquid-code-examples/\">5</a></p>\n</li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Liquid Introduction](https://shopify.github.io/liquid/basics/introduction/)\n2. [Shopify's Liquid introduction](https://shopify.dev/docs/themes/liquid/reference)\n3. [Shopify Liquid The Ultimate Guide](https://www.christhefreelancer.com/shopify-liquid-guide/)\n4. [Shopify Liquid Cheatsheet](https://www.shopify.com/partners/shopify-cheat-sheet)\n5. [Snippets Library](https://shopify.github.io/liquid-code-examples/)\n</details>"
+            }
+          ]
+        },
+        {
+          "topic": "Route object",
+          "items": [
+            {
+              "title": "<ol>\n<li>Know the routes object why it's important for multi-lingual stores. [1]</li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Routes Object](https://shopify.dev/docs/themes/liquid/reference/objects/routes)\n</details>"
+            }
+          ]
+        },
+        {
+          "topic": "Translations",
+          "items": [
+            {
+              "title": "<ol>\n<li>\n<p>Know how to leverage translations keys and the <code>| t</code> liquid filter for Shopify translations. <a href=\"https://shopify.dev/tutorials/develop-theme-localization-use-translation-keys\">1</a></p>"
+            },
+            {
+              "title": "<p>Know how to avoid escaping html through the use of <code>_html</code> translation keys. <a href=\"https://shopify.dev/tutorials/develop-theme-localization-use-translation-keys#including-html-in-translation-keys\">2</a></p>"
+            },
+            {
+              "title": "<p>Know where in the Shopify admin a merchant can directly make translation updates. <a href=\"https://help.shopify.com/en/manual/using-themes/translate-theme\">3</a></p>"
+            },
+            {
+              "title": "<p>Understand how multi-lingual translations operate. <a href=\"https://help.shopify.com/en/manual/sell-online/multilingual-online-store\">4</a></p>"
+            },
+            {
+              "title": "<p>Understand how to develop themes to support multi-lingual stores. <a href=\"https://shopify.dev/tutorials/support-multiple-languages-in-apps-and-themes#developing-themes-that-support-multiple-languages\">5</a></p>\n</li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Translation keys and the t filter](https://shopify.dev/tutorials/develop-theme-localization-use-translation-keys)\n2. [Including HTML in translation keys](https://shopify.dev/tutorials/develop-theme-localization-use-translation-keys#including-html-in-translation-keys)\n3. [Translating your store](https://help.shopify.com/en/manual/using-themes/translate-theme)\n4. [Multilingual Stores](https://help.shopify.com/en/manual/sell-online/multilingual-online-store)\n5. [Developing themes that support multiple languages](https://shopify.dev/tutorials/support-multiple-languages-in-apps-and-themes#developing-themes-that-support-multiple-languages)\n</details>"
+            }
+          ]
+        },
+        {
+          "topic": "Alternate Templates",
+          "items": [
+            {
+              "title": "<ol>\n<li>Understand how to create and leverage alternative templates. <a href=\"https://shopify.dev/tutorials/customize-theme-create-alternate-templates\">1</a></li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Create alternate templates](https://shopify.dev/tutorials/customize-theme-create-alternate-templates)\n</details>"
+            }
+          ]
+        },
+        {
+          "topic": "Metafields",
+          "items": [
+            {
+              "title": "<ol>\n<li>\n<p>Know what a metafield is. <a href=\"https://help.shopify.com/en/manual/products/metafields/index\">1</a></p>"
+            },
+            {
+              "title": "<p>Know what the metafield object is. <a href=\"https://shopify.dev/docs/themes/liquid/reference/objects/metafield\">2</a></p>"
+            },
+            {
+              "title": "<p>Know how to show metafields in the theme. <a href=\"https://help.shopify.com/en/manual/products/metafields/index#show-metafields-in-the-storefront\">3</a>,<a href=\"https://www.shopify.com/partners/blog/110057030-using-metafields-in-your-shopify-theme\">4</a></p>"
+            },
+            {
+              "title": "<p>Understand when and how to use private metafields. <a href=\"https://shopify.dev/tutorials/store-data-in-metafields#private-metafields\">5</a></p>\n</li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Metafields](https://help.shopify.com/en/manual/products/metafields/index)\n2. [Metafield object](https://shopify.dev/docs/themes/liquid/reference/objects/metafield)\n3. [Show Metafields in the storefront](https://help.shopify.com/en/manual/products/metafields/index#show-metafields-in-the-storefront)\n4. [Using Metafields in your Shopify theme](https://www.shopify.com/partners/blog/110057030-using-metafields-in-your-shopify-theme)\n5. [Private metafields](https://shopify.dev/tutorials/store-data-in-metafields#private-metafields)\n</details>"
+            }
+          ]
+        },
+        {
+          "topic": "Tags",
+          "items": [
+            {
+              "title": "<ol>\n<li>\n<p>Understand creating and using tags. <a href=\"https://help.shopify.com/en/manual/productivity-tools/using-tags\">1</a></p>"
+            },
+            {
+              "title": "<p>Understand the valid formats of a tag. <a href=\"https://help.shopify.com/en/manual/products/details/tags\">2</a></p>"
+            },
+            {
+              "title": "<p>Understand the limitations of a tag. Such as a maximum of 250 tags per product.</p>"
+            },
+            {
+              "title": "<p>Know how to leverage product tags for collection filtering and the limitations. <a href=\"https://shopify.dev/tutorials/customize-theme-filter-collections-with-product-tags\">3</a></p>\n</li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Creating and using Tags](https://help.shopify.com/en/manual/productivity-tools/using-tags)\n2. [Tag formats](https://help.shopify.com/en/manual/products/details/tags)\n3. [Filter collections with product tags](https://shopify.dev/tutorials/customize-theme-filter-collections-with-product-tags)\n</details>"
+            }
+          ]
+        },
+        {
+          "topic": "Metafields vs Tags",
+          "items": [
+            {
+              "title": "<ol>\n<li>Understand when to use a Shopify Tag vs a Metafield. <a href=\"https://paulnrogers.com/shopify-tags-vs-metafields/\">1</a></li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Tags vs Metafields in Shopify and Shopify Plus](https://paulnrogers.com/shopify-tags-vs-metafields/)\n</details>"
+            }
+          ]
+        },
+        {
+          "topic": "Line Item Property",
+          "items": [
+            {
+              "title": "<ol>\n<li>\n<p>Understand what a line item property is. <a href=\"https://shopify.dev/docs/themes/liquid/reference/objects/line_item#line_item-properties\">1</a></p>"
+            },
+            {
+              "title": "<p>Understand how to surface line item properties as custom inputs in a theme. <a href=\"https://ui-elements-generator.myshopify.com/pages/line-item-property\">2</a></p>"
+            },
+            {
+              "title": "<p>Know how to hide line item properties from the customer in checkout using the <code>_</code> prefix. <a href=\"https://community.shopify.com/c/Shopify-Design/Product-pages-Get-customization-information-for-products/m-p/616525#hide-line-item-properties\">3</a></p>\n</li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Line Item Property Object](https://shopify.dev/docs/themes/liquid/reference/objects/line_item#line_item-properties)\n2. [Line Item Property Input Generator](https://ui-elements-generator.myshopify.com/pages/line-item-property)\n3. [Hide Line Item Properties](https://community.shopify.com/c/Shopify-Design/Product-pages-Get-customization-information-for-products/m-p/616525#hide-line-item-properties)\n</details>"
+            }
+          ]
+        },
+        {
+          "topic": "Shopify Scripts",
+          "items": [
+            {
+              "title": "<ol>\n<li>Understand the basics of Ruby. <a href=\"https://www.codecademy.com/learn/learn-ruby\">1</a>"
+            },
+            {
+              "title": "Understand what Shopify scripts are and how to use them. <a href=\"https://help.shopify.com/en/manual/apps/apps-by-shopify/script-editor/\">2</a>, <a href=\"https://help.shopify.com/en/manual/apps/apps-by-shopify/script-editor/examples\">3</a>"
+            },
+            {
+              "title": "Know the Shopify Scripts API. <a href=\"https://help.shopify.com/en/manual/apps/apps-by-shopify/script-editor/shopify-scripts\">4</a>"
+            },
+            {
+              "title": "Know the limitations of Script such as not being able to add products and lack of API. <a href=\"https://help.shopify.com/en/manual/apps/apps-by-shopify/script-editor/limitations\">5</a>"
+            },
+            {
+              "title": "Know about the unofficial Shopify Scripts generator. <a href=\"https://jgodson.github.io/shopify-script-creator/\">6</a></li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Learn Ruby Fundamentals](https://www.codecademy.com/learn/learn-ruby)\n2. [Shopify Scripts &amp; Script Editor](https://help.shopify.com/en/manual/apps/apps-by-shopify/script-editor/)\n3. [Shopify Scripts Examples](https://help.shopify.com/en/manual/apps/apps-by-shopify/script-editor/examples)\n4. [Scripts API](https://help.shopify.com/en/manual/apps/apps-by-shopify/script-editor/shopify-scripts)\n5. [Limitations of Scripts](https://help.shopify.com/en/manual/apps/apps-by-shopify/script-editor/limitations)\n6. [Scripts Generator](https://jgodson.github.io/shopify-script-creator/)\n</details>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "App Development",
+      "items": [
+        {
+          "topic": "App types",
+          "items": [
+            {
+              "title": "<ol>\n<li>Know the differences between different types of apps (Private vs Unslited vs Public). <a href=\"https://help.shopify.com/en/manual/apps/app-types\">1</a></li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "API versioning & rate limiting",
+          "items": [
+            {
+              "title": "<ol>\n<li>Understand Shopify's API Versioning scheme and quarterly release/deprecation cycle. <a href=\"https://shopify.dev/concepts/about-apis/versioning\">1</a>"
+            },
+            {
+              "title": "Understand how Shopify rate limits the REST and Graphql Admin APIS. <a href=\"https://shopify.dev/concepts/about-apis/rate-limits\">1</a>"
+            },
+            {
+              "title": "Know that Shopify Plus stores have double the rate limits. <a href=\"https://shopify.dev/concepts/about-apis/rate-limits#resource-based-rate-limits\">1</a>"
+            },
+            {
+              "title": "Know that the popular <code>Shopify-api-node</code> library respects rate limiting and allows for configuration. <a href=\"https://github.com/MONEI/Shopify-api-node#shopifycalllimits\">1</a></li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "Security best practices",
+          "items": [
+            {
+              "title": "<ol>\n<li>Know how to rotate credentials and why it's important. <a href=\"https://shopify.dev/tutorials/rotate-revoke-api-credentials\">1</a>"
+            },
+            {
+              "title": "Know that access tokens should be encrypted at rest."
+            },
+            {
+              "title": "Know that all API requests should be verified via session before taking actions on behalf of a user."
+            },
+            {
+              "title": "Know that all user input should be cleaned and verified before saving to DB.</li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "Useful packages",
+          "items": [
+            {
+              "title": "<ol>\n<li><a href=\"https://github.com/MONEI/Shopify-api-node\">Shopify API Node</a> - #1 package to connect to Shopify's REST API via NodeJS."
+            },
+            {
+              "title": "<a href=\"https://github.com/Shopify/quilt\">Shopify Quilt</a> - Collection of official Shopify Javascript packages."
+            },
+            {
+              "title": "<a href=\"https://github.com/Shopify/quilt/tree/master/packages/admin-graphql-api-utilities\">Admin-graphql-api-utilities</a> - Super useful package when interacting with the Storefront and Admin Graphql libraries."
+            },
+            {
+              "title": "<a href=\"https://github.com/Shopify/polaris-react\">Polaris React</a> - Shopify's official component library to create apps consistent with Shopify's UI/UX."
+            },
+            {
+              "title": "<a href=\"https://www.npmjs.com/package/@shopify/app-bridge-react\">App-bridge-react</a> - Shopify's library for creating embedded apps that interact with Shopify such as showing modals, alerts, etc.</li>\n</ol>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Miscellaneous",
+      "items": [
+        {
+          "title": "<ol>\n<li>Know about the developer changelog which is where Shopify announces developer facing changes and features. <a href=\"https://shopify.dev/changelog\">1</a></li>\n</ol><details>\n<summary>Resources</summary>\n\n1. [Developer Changelog](https://shopify.dev/changelog)\n</details>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

@@ -1,0 +1,325 @@
+{
+  "id": 189,
+  "header": "seo-checklist-dev",
+  "topicList": [
+    "SEO naturel",
+    "Méta Données",
+    "Données structurées",
+    "Optimisations mobiles",
+    "Outils SEO généralistes",
+    "Inspirations :"
+  ],
+  "itemGroups": [
+    {
+      "topic": "SEO naturel",
+      "items": [
+        {
+          "title": "[ ] Pas de liste de mots-clés ou de texte cachés dans le contenu via CSS ou JavaScript"
+        },
+        {
+          "title": "[ ] Pas de liens cassés"
+        },
+        {
+          "title": "[ ] Pas de contenu obsolète"
+        },
+        {
+          "title": "[ ] Ajouter <code>rel=\"nofollow\"</code> sur les liens réciproques (2 pages de 2 domaines différents se pointant l'une l'autre)"
+        },
+        {
+          "title": "[ ] Faire supprimer (ou désavouer via Google Search Console) les backlinks de mauvaise qualité"
+        },
+        {
+          "title": "[ ] Chaque image ou élément non textuel est dotée d'une alternative textuelle (attribut <code>alt</code>, 80 caractères max)"
+        },
+        {
+          "title": "[ ] Chaque contenu audio et vidéo est accompagné de sa transcription textuelle"
+        },
+        {
+          "title": "[ ] Les textes mis en images sont reproduits dans l'alternative textuelle (attribut <code>alt</code>, 80 caractères max)"
+        },
+        {
+          "title": "[ ] Les termes présents dans l'alternative textuelle des images sont également présents dans le contenu de la page"
+        },
+        {
+          "title": "[ ] Si le site utilise la technique des jeux de cadres, l'élément NOFRAME est utilisé, décrivant en prose le contenu du cadre. Le mieux reste de ne pas utiliser cette technique du tout"
+        },
+        {
+          "title": "[ ] Chaque page du site contient un élément de titre de section H1"
+        },
+        {
+          "title": "[ ] Le contenu visé pour le référencement est mis en exergue (strong ou em)"
+        },
+        {
+          "title": "[ ] Le contenu de chaque page est organisé selon une structure de titres de section HTML"
+        },
+        {
+          "title": "[ ] La page d'accueil du site n'est pas une page tunnel"
+        },
+        {
+          "title": "[ ] La page d'accueil expose la nature des contenus et services proposés"
+        },
+        {
+          "title": "[ ] L'adresse et le numéro de téléphone de l'entreprise sont disponibles sous forme textuelle"
+        },
+        {
+          "title": "[ ] Les formats d'images utilisés sont indexables par les principaux moteurs de recherche d'image"
+        },
+        {
+          "title": "[ ] Le texte des documents PDF internes est sélectionnable"
+        },
+        {
+          "title": "[ ] Si le site propose un fil de syndication, celui propose des contenus et pas seulement des liens"
+        },
+        {
+          "title": "[ ] Les images sont cohérentes avec les contenus de la page"
+        },
+        {
+          "title": "[ ] Le nom de fichier des images significatives est cohérent avec leur contenu"
+        },
+        {
+          "title": "[ ] Le site propose plusieurs répertoires et/ou sous-domaines"
+        },
+        {
+          "title": "[ ] Le contenu de chaque nom de domaine lui est propre"
+        },
+        {
+          "title": "[ ] Chaque langue proposée fait l'objet d'un domaine ou d'un sous-domaine différent (à vérifier)"
+        },
+        {
+          "title": "[ ] Hors extensions génériques, l'extension du nom de domaine correspond à la zone géographique visée"
+        },
+        {
+          "title": "[ ] Si le nom de domaine correspond à une zone géographique, le site est hébergé dans cette zone"
+        },
+        {
+          "title": "[ ] Le libellé de chaque hyperlien décrit sa fonction ou la nature du contenu vers lequel il pointe"
+        },
+        {
+          "title": "[ ] Les liens qui ne sont pas en rapport avec les contenus ou services proposés sont déclarés en nofollow"
+        },
+        {
+          "title": "[ ] Les adresses URL ne contiennent pas d'indication concernant les paramètres de session"
+        },
+        {
+          "title": "[ ] Les URL des liens internes contiennent exclusivement des caractères alphanumériques ou considérés comme sûrs"
+        },
+        {
+          "title": "[ ] Les liens externes sont en rapport avec les contenus ou services proposés"
+        },
+        {
+          "title": "[ ] Les URL contiennent des termes présents dans les titres de pages"
+        },
+        {
+          "title": "[ ] Le nombre de liens externes dans une page n'excède pas le nombre de liens internes"
+        },
+        {
+          "title": "[ ] Des libellés de liens identiques pointent vers la même page"
+        },
+        {
+          "title": "[ ] Tous les hyperliens du site sont valides"
+        },
+        {
+          "title": "[ ] Les liens internes utilisent une URL unique pour chaque page"
+        },
+        {
+          "title": "[ ] Le titre de chaque page (élément TITLE) permet d'identifier son contenu (80 caractères max)"
+        },
+        {
+          "title": "[ ] Le contenu de l'élément TITLE de chaque page ne commence pas par le nom du site"
+        },
+        {
+          "title": "[ ] Le contenu de l'élément meta description est une phrase significative et non une liste de mots clefs (250 caractères max)"
+        },
+        {
+          "title": "[ ] Le code source de chaque page indique la langue principale du contenu"
+        },
+        {
+          "title": "[ ] Le site compte autant de meta description différentes que de pages"
+        },
+        {
+          "title": "[ ] Le site propose un plan du site contenant des liens HTML"
+        },
+        {
+          "title": "[ ] L'accès aux contenus significatifs n'est pas conditionné par des actions de formulaires"
+        },
+        {
+          "title": "[ ] L'accès aux contenus significatifs n'est pas conditionnée par le support de javascript"
+        },
+        {
+          "title": "[ ] L'accès aux contenus significatifs n'est pas conditionné par le support des cookies"
+        },
+        {
+          "title": "[ ] La racine du site contient des instructions pour les robots d'indexation (fichier robots.txt)"
+        },
+        {
+          "title": "[ ] Le fichier robots.txt propose une référence valide à un fichier sitemap"
+        },
+        {
+          "title": "[ ] Le site propose un fichier sitemap indiquant les contenus à explorer"
+        },
+        {
+          "title": "[ ] Le temps de rafraichissement indiqué dans le fichier sitemap est cohérent avec la fréquence de mise à jour du site"
+        },
+        {
+          "title": "[ ] Le site fait l'objet de liens entrants"
+        },
+        {
+          "title": "[ ] Le site n'interdit pas la mise en place de liens entrants"
+        },
+        {
+          "title": "[ ] Le plan du site est accessible depuis la page d'accueil"
+        },
+        {
+          "title": "[ ] Les libellés du menu principal de navigation sont cohérents avec le contenu des rubriques"
+        },
+        {
+          "title": "[ ] Les menus sont utilisables sans extension (flash...) ou activation de langages (CSS ou JavaScript..)"
+        },
+        {
+          "title": "[ ] Le site propose un fil d'Ariane"
+        },
+        {
+          "title": "[ ] Le site ne contient pas de liens vers des pages en construction"
+        },
+        {
+          "title": "[ ] Les vidéos sont soumises à au moins deux diffuseurs externes"
+        },
+        {
+          "title": "[ ] Les contenus du site sont consultables sans extension (flash...) ou activation de langages (CSS ou JavaScript..)"
+        },
+        {
+          "title": "[ ] Les styles ne sont pas utilisés pour générer du contenu"
+        },
+        {
+          "title": "[ ] Les mises en majuscules à des fins décoratives sont effectuées à l'aide des styles CSS"
+        },
+        {
+          "title": "[ ] Les textes pouvant être mis en forme via des styles ne sont pas remplacés par des images"
+        },
+        {
+          "title": "[ ] Les contenus HTML sont mis en forme à l'aide de styles CSS externalisés"
+        },
+        {
+          "title": "[ ] Si le site propose des redirections, celles-ci sont permanentes (code 301)"
+        },
+        {
+          "title": "[ ] Le serveur envoie un code HTTP 404 pour les ressources non trouvées"
+        },
+        {
+          "title": "[ ] Les URL alternatives vers la page d'accueil font l'objet d'une redirection 301 vers l'URL principale"
+        },
+        {
+          "title": "[ ] Les noms de domaine secondaires redirigent en 301 vers le nom de domaine principal"
+        },
+        {
+          "title": "[ ] Le site et le serveur sont configurés pour délivrer les pages de manière performante"
+        }
+      ]
+    },
+    {
+      "topic": "Méta Données",
+      "items": [
+        {
+          "topic": "Quelques outils pour bien travailler",
+          "items": [
+            {
+              "title": "<a href=\"https://search.google.com/structured-data/testing-tool/u/0/\">Google Structured Data Testing Tool</a>"
+            },
+            {
+              "title": "<a href=\"http://www.seo-extension.com/\">SEO META chrome extension</a>"
+            },
+            {
+              "title": "<a href=\"https://developers.facebook.com/tools/debug/\">Facebook OpenGraph debugger</a>"
+            },
+            {
+              "title": "<a href=\"https://cards-dev.twitter.com/validator\">Twitter Card Validator</a>"
+            },
+            {
+              "title": "<a href=\"https://developers.pinterest.com/tools/url-debugger/\">Pinterest Rich Card debugger</a>"
+            }
+          ]
+        },
+        {
+          "topic": "OpenGraph",
+          "items": [
+            {
+              "title": "<p>Voici une bonne base documentée à copier-coller dans votre code en remplaçant les valeurs. Pour aller plus loin, voir la doc de <a href=\"https://ogp.me/\">The Open Graph protocol</a>.</p><p>```html</p><p><meta content=\"SEO pour les Samouraïs\" property=\"og:title\"/></p><p><meta content=\"Une description 100% texte (donc pas de liens), très similaire à la meta description classique\" property=\"og:description\"/></p><p><meta content=\"article\" property=\"og:type\"/></p><p><meta content=\"http://www.example.com/article/tt0117500/\" property=\"og:url\"/></p><p><meta content=\"http://example.com/images/seo.jpg\" property=\"og:image\"/>\n<meta content=\"image/jpeg\" property=\"og:image:type\"/>\n<meta content=\"1200\" property=\"og:image:width\"/>\n<meta content=\"630\" property=\"og:image:height\"/></p><p><meta content=\"summary_large_image\" name=\"twitter:card\"/></p><p><meta content=\"@site\" name=\"twitter:site\"/></p><p><meta content=\"@creator\" name=\"twitter:creator\"/></p><p><meta content=\"http://example.com/images/seo.jpg\" name=\"twitter:image\"/>\n```</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Données structurées",
+      "items": [
+        {
+          "title": "<p>Voici un exemple qui remplace l'URL dans les résultats de recherche par un fil d'ariane. À placer dans le <code>&lt;body&gt;</code>. Le code est copié depuis la <a href=\"https://developers.google.com/search/docs/data-types/breadcrumb\">documentation de Google sur les Données structurées</a>.</p><p>Créez une nouvelle balise <code>&lt;script&gt;</code> pour chaque bloc de données structurées.</p><p>```html</p><script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"BreadcrumbList\",\n    \"itemListElement\": [\n      {\n        \"@type\": \"ListItem\",\n        \"position\": 1,\n        \"name\": \"Books\",\n        \"item\": \"https://example.com/books\"\n      },\n      {\n        \"@type\": \"ListItem\",\n        \"position\": 2,\n        \"name\": \"Authors\",\n        \"item\": \"https://example.com/books/authors\"\n      },\n      {\n        \"@type\": \"ListItem\",\n        \"position\": 3,\n        \"name\": \"Ann Leckie\",\n        \"item\": \"https://example.com/books/authors/annleckie\"\n      }\n    ]\n  }\n</script><p>```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Optimisations mobiles",
+      "items": [
+        {
+          "title": "<p>Google dispose désormais de 2 index différents : un pour les résultats mobiles, et un autre pour le reste (principalement les résultats desktop).</p><p>Il est donc primordial de faire attention à soigner et optimiser l'aspect mobile de votre projet web.</p>"
+        },
+        {
+          "title": "[ ] Une méta viewport bien calibrée : <code>&lt;meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1\"&gt;</code>"
+        },
+        {
+          "title": "[ ] Si vous créez une PWA, alors vous pouvez ajouter <a href=\"https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html\">les meta tags spécifiques Apple</a> ainsi qu'un <a href=\"https://developers.google.com/web/fundamentals/web-app-manifest/\">manifest.json</a>"
+        },
+        {
+          "title": "[ ] Générez toutes les icones pour les différents appareils mobiles sur <a href=\"https://realfavicongenerator.net/\">Real Favicon Generator</a>"
+        },
+        {
+          "title": "[ ] Lancez un audit sur <a href=\"https://developers.google.com/web/tools/lighthouse/\">Lighthouse</a> et atteignez un score le plus élevé possible (80 est un minimum)"
+        }
+      ]
+    },
+    {
+      "topic": "Outils SEO généralistes",
+      "items": [
+        {
+          "title": "<p>Ces outils ne sont pas là pour aider le développeur mais le marketer. Je les ajoute tout de même car cela fait un très bon complément à cette checklist.</p>"
+        },
+        {
+          "title": "<a href=\"https://www.woorank.com/fr\">WooRank</a> : outil complet et généraliste, interface très agréable, priorisation des actions à mener, génération de rapports pdf"
+        },
+        {
+          "title": "<a href=\"https://ads.google.com/intl/fr_fr/home/tools/keyword-planner/\">Google Keyword Planner</a> : Pour affiner son choix de mots-clés afin de sortir des termes trop génériques"
+        },
+        {
+          "title": "<a href=\"https://trends.google.fr/trends/?geo=FR\">Google Trends</a> : afin de comparer l'évolution de popularité des mots-clés"
+        },
+        {
+          "title": "<a href=\"https://search.google.com/search-console/about\">Google Search Console</a> : pour surveiller l'état des recherches et des liens, permets de vérifier s'il y a des backlinks depuis des mauvais sites (spam)"
+        },
+        {
+          "title": "<a href=\"https://www.spyfu.com/\">SpyFu</a> : découvrez la stratégie de mots clés de vos concurrents"
+        }
+      ]
+    },
+    {
+      "topic": "Inspirations :",
+      "items": [
+        {
+          "title": "<a href=\"https://checklists.opquast.com/seo/\">Opquast checklist</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/ibandominguez/seo-checklist\">ibandominguez SEO checklist</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/tutsplus/SEO-Checklist-for-Web-Designers/blob/master/seo_checklist.md\">TutsPlus SEO checklist</a>"
+        },
+        {
+          "title": "<a href=\"https://frontendmasters.com/courses/modern-seo/introduction/\">FrontEnd Masters Modern SEO course</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/h5bp/html5-boilerplate\">HTML5 Boilerplate</a>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

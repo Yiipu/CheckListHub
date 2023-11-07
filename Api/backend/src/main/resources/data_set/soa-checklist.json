@@ -1,0 +1,435 @@
+{
+  "id": 195,
+  "header": "soa-checklist",
+  "topicList": [
+    "Administrative (people, flows, responsibilities)",
+    "Automated processes",
+    "Implementation"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Administrative (people, flows, responsibilities)",
+      "items": [
+        {
+          "title": "Blueprint/template for a new service"
+        },
+        {
+          "title": "Documentation, standards, guides (how-to, know-how documents)"
+        },
+        {
+          "title": "Team support"
+        },
+        {
+          "title": "Understanding of the whole process by each member"
+        },
+        {
+          "title": "Pro-active development and support"
+        },
+        {
+          "title": "Accepted responsibilities and duties for each stage of a service"
+        },
+        {
+          "title": "Plan for service live circle"
+        },
+        {
+          "title": "Pre-production development"
+        },
+        {
+          "title": "Launching"
+        },
+        {
+          "title": "Rollout backward compatible version of a service"
+        },
+        {
+          "title": "Hotfixing"
+        },
+        {
+          "title": "Rollout backward incompatible version of a service"
+        },
+        {
+          "title": "Data migration"
+        },
+        {
+          "title": "Switchover"
+        },
+        {
+          "title": "Service rollback"
+        }
+      ]
+    },
+    {
+      "topic": "Automated processes",
+      "items": [
+        {
+          "title": "Continuous development"
+        },
+        {
+          "title": "Tests"
+        },
+        {
+          "title": "Automated"
+        },
+        {
+          "title": "Unit tests"
+        },
+        {
+          "title": "Functional tests"
+        },
+        {
+          "title": "Code style (lints and sniffers)"
+        },
+        {
+          "title": "Code quality monitoring (<a href=\"http://www.sonarqube.org/\">Sonar</a>, <a href=\"https://scrutinizer-ci.com/\">Scrutinizer</a>)"
+        },
+        {
+          "title": "Code coverage checks</li>\n</ul>"
+        },
+        {
+          "title": "Manual"
+        },
+        {
+          "title": "Feature acceptance/Business acceptance"
+        },
+        {
+          "title": "A/B tests  </li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Conditions of integration"
+        },
+        {
+          "title": "Code style checks"
+        },
+        {
+          "title": "Test results"
+        },
+        {
+          "title": "Code coverage percentage</li>\n</ul>"
+        },
+        {
+          "title": "Conditions of disintegration a feature"
+        },
+        {
+          "title": "Error rate after deploy live"
+        },
+        {
+          "title": "Healthchecks</li>\n</ul>"
+        },
+        {
+          "title": "Storing a new tested snapshots/artefact of a service"
+        },
+        {
+          "title": "Artefact storage (Docker registry)"
+        },
+        {
+          "title": "Cleanup policy (Delete old tags with timeout)</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Continuous delivery of stable artefacts"
+        },
+        {
+          "title": "<a href=\"https://github.com/paunin/images-builder\">Images builder</a>"
+        },
+        {
+          "title": "Services provisioning(<a href=\"https://www.ansible.com/\">Ansible</a>)"
+        }
+      ]
+    },
+    {
+      "topic": "Implementation",
+      "items": [
+        {
+          "title": "System layers"
+        },
+        {
+          "title": "Hardware: Servers and networks"
+        },
+        {
+          "title": "Scaling (adding new nodes) should not affect consistency of other layers"
+        },
+        {
+          "title": "Degradation (removing nodes)  should not affect consistency of other layers"
+        },
+        {
+          "title": "Monitoring"
+        },
+        {
+          "title": "Hardware"
+        },
+        {
+          "title": "Network"
+        },
+        {
+          "title": "Resources and load</li>\n</ul>"
+        },
+        {
+          "title": "Alerting policy</li>\n</ul>"
+        },
+        {
+          "title": "Cluster: Services management system  (<a href=\"http://kubernetes.io/\">Kubernetes</a>, alternatives: <a href=\"https://www.openshift.com\">OpenShift</a>,<a href=\"http://servicemix.apache.org/\">Apache Mesos/Apache Karaf</a>)"
+        },
+        {
+          "title": "Monitoring"
+        },
+        {
+          "title": "Availability of each node in the cluster"
+        },
+        {
+          "title": "All services up and running"
+        },
+        {
+          "title": "Connectivity between different pods and services"
+        },
+        {
+          "title": "Public endpoints accessibility </li>\n</ul>"
+        },
+        {
+          "title": "Alerting policy"
+        },
+        {
+          "title": "Restart (full or partial) should bring cluster and systems up without destruction"
+        },
+        {
+          "title": "Log aggregation system - collect all logs from all containers"
+        },
+        {
+          "title": "Execution environment"
+        },
+        {
+          "title": "Meta-project with topology of the system"
+        },
+        {
+          "title": "Showroom + Staging"
+        },
+        {
+          "title": "Separate namespace for each showroom"
+        },
+        {
+          "title": "Fixed showroom for the staging (last stable pre-release)"
+        },
+        {
+          "title": "Production"
+        },
+        {
+          "title": "Configuration"
+        },
+        {
+          "title": "Secrets"
+        },
+        {
+          "title": "Configs should be a part of the meta-project </li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Service: Application and any service"
+        },
+        {
+          "title": "Service itself (Docker image)"
+        },
+        {
+          "title": "Backward compatibility for a few generations"
+        },
+        {
+          "title": "Cleanup policy for deprecated/unused:"
+        },
+        {
+          "title": "Logic branches"
+        },
+        {
+          "title": "Data structures (RDBMS/NoSql)</li>\n</ul>"
+        },
+        {
+          "title": "One container - one process"
+        },
+        {
+          "title": "Segregated commands even in one image (management layer can pick any to run)"
+        },
+        {
+          "title": "Built in commands"
+        },
+        {
+          "title": "Test service/source code (docker compose to setup required test ENV)"
+        },
+        {
+          "title": "DEV/DEBUG mode</li>\n</ul>"
+        },
+        {
+          "title": "Logging"
+        },
+        {
+          "title": "Writing in stdout (without using containers’ file system) will enforce cluster layer to keep all logs</li>\n</ul>"
+        },
+        {
+          "title": "Monitoring"
+        },
+        {
+          "title": "Application and business checks (New Relic: throughput, metrics)"
+        },
+        {
+          "title": "Self health checks (metrics+<a href=\"http://www.prometeus.net/site/\">Prometeus</a>+<a href=\"https://grafana.org/\">Grafana</a>)"
+        },
+        {
+          "title": "Queues content (amount of messages)"
+        },
+        {
+          "title": "Db content (custom checks)"
+        },
+        {
+          "title": "Cache utilization check</li>\n</ul>"
+        },
+        {
+          "title": "Alerting policies (<a href=\"http://www.prometeus.net/site/\">Prometeus</a>, <a href=\"https://newrelic.com\">NewRelic</a>)"
+        },
+        {
+          "title": "Tracing system agent (<a href=\"http://zipkin.io/\">zipkin</a>)"
+        },
+        {
+          "title": "Self-sufficiency"
+        },
+        {
+          "title": "Interfaces documentation"
+        },
+        {
+          "title": "Restful API"
+        },
+        {
+          "title": "<a href=\"http://swagger.io/\">Swagger</a></li>\n</ul>"
+        },
+        {
+          "title": "Port and service description (README.md files)"
+        },
+        {
+          "title": "Service should be able to set itself up"
+        },
+        {
+          "title": "Wait for required related services and ports (<a href=\"https://docs.docker.com/compose/startup-order/\">dockerize</a>)"
+        },
+        {
+          "title": "Configuring from environment variables (<a href=\"https://github.com/kelseyhightower/confd\">confd</a>)"
+        },
+        {
+          "title": "Warming up"
+        },
+        {
+          "title": "Run data migration (needed maintenance service)"
+        },
+        {
+          "title": "Cache fulfilment</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Replication, balancing and scaling on service level"
+        },
+        {
+          "title": "Failover and self-reorganisation in case of:"
+        },
+        {
+          "title": "Service crashed"
+        },
+        {
+          "title": "Physical node out of cluster"
+        },
+        {
+          "title": "Resources problems on specific node </li>\n</ul>"
+        },
+        {
+          "title": "Logs system"
+        },
+        {
+          "title": "Service to collect and access logs grabbed from Cluster layer"
+        },
+        {
+          "title": "ELK stack/Gray Log/etc</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Persistent volumes to keep data"
+        },
+        {
+          "title": "EBS AWS"
+        },
+        {
+          "title": "Ceph"
+        },
+        {
+          "title": "NFS</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Common services"
+        },
+        {
+          "title": "Tracing system (<a href=\"http://zipkin.io/\">Zipkin</a>)"
+        },
+        {
+          "title": "Single sign-on service"
+        },
+        {
+          "title": "Authentication service (<a href=\"https://jwt.io/\">JWT</a>)"
+        },
+        {
+          "title": "Authorization requests from all services</li>\n</ul>"
+        },
+        {
+          "title": "Detached processing (<a href=\"http://martinfowler.com/bliki/CQRS.html\">CQRS</a>)"
+        },
+        {
+          "title": "Request-Queue-Processor schema"
+        },
+        {
+          "title": "Stream data addressing and processing (<a href=\"https://projectreactor.io/\">Reactor</a>)</li>\n</ul>"
+        },
+        {
+          "title": "Real Time data requests processing"
+        },
+        {
+          "title": "Reliable data provider/API gateway (sync data retrieving)"
+        },
+        {
+          "title": "Request-Manager-Service solution</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Reliable data-bus for events"
+        },
+        {
+          "title": "Event-Broker-Subscriber solution (<a href=\"http://camel.apache.org/\">Apache Camel</a>)"
+        },
+        {
+          "title": "Http/TCP API endpoint to accept events"
+        },
+        {
+          "title": "Event fulfilment (Earn required information for subscribers)"
+        },
+        {
+          "title": "Event delivery"
+        },
+        {
+          "title": "Event delivery policies"
+        },
+        {
+          "title": "Retry"
+        },
+        {
+          "title": "Reque"
+        },
+        {
+          "title": "Giveup</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "RDBMS: <a href=\"https://github.com/paunin/postgres-docker-cluster\">Postgres cluster</a>"
+        },
+        {
+          "title": "DB backups: <a href=\"https://github.com/paunin/pg-backupper\">PG backupper</a>"
+        },
+        {
+          "title": "Key-value + Queue: <a href=\"https://github.com/relaxart/kubernetes-redis-cluster\">Redis cluster</a>"
+        },
+        {
+          "title": "Messages system: <a href=\"https://github.com/relaxart/docker-rabbitmq-cluster\">Rabbit MQ cluster</a>"
+        },
+        {
+          "title": "Healthcheck system"
+        },
+        {
+          "title": "Alerting system"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

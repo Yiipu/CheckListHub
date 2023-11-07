@@ -1,0 +1,472 @@
+{
+  "id": 86,
+  "header": "Front-End-Design-Checklist",
+  "topicList": [
+    "Front-End Design Checklist",
+    "Table of Contents",
+    "How to use the Design Checklist?",
+    "Why you need to use the Design Checklist?",
+    "1. - Design requirements",
+    "2. - Analysis and pre-work phases",
+    "3. - Validation",
+    "4. - Development phase",
+    "5. - Before production",
+    "Translations",
+    "Support",
+    "Author",
+    "Contributors",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Front-End Design Checklist",
+      "items": [
+        {
+          "title": "<p align=\"center\">\n<em> The Design Checklist for Front-End Developers is an exhaustive list of elements which can help developers to analyse and understand web designs and ensure the quality of their Front-End development.</em>\n</p><p><a href=\"http://makeapullrequest.com\"><img alt=\"PRs Welcome\" src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\"/></a> <a href=\"https://gitter.im/Front-End-Checklist/Front-End-Design-Checklist\"><img alt=\"Join the chat at https://gitter.im/Front-End-Checklist/Front-End-Design-Checklist\" src=\"https://badges.gitter.im/Front-End-Checklist/Front-End-Design-Checklist.svg\"/></a> <a href=\"https://creativecommons.org/publicdomain/zero/1.0/\"><img alt=\"CC0\" src=\"https://img.shields.io/badge/license-CC0-green.svg\"/></a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<strong><a href=\"#1---design-requirements\">1. Design requirements</a></strong>"
+        },
+        {
+          "title": "<a href=\"#11---grid-system\">1.1 Grid system</a>"
+        },
+        {
+          "title": "<a href=\"#12---colors\">1.2 Colors</a>"
+        },
+        {
+          "title": "<a href=\"#13---fonts-and-texts\">1.3 Fonts and texts</a>"
+        },
+        {
+          "title": "<a href=\"#14---links-and-navigation\">1.4 Links and navigation</a>"
+        },
+        {
+          "title": "<a href=\"#15---images--icons\">1.5 Images / Icons</a>"
+        },
+        {
+          "title": "<a href=\"#16---forms-and-buttons\">1.6 Forms and buttons</a>"
+        },
+        {
+          "title": "<a href=\"#17---responsive-web-design\">1.7 Responsive Web Design</a>"
+        },
+        {
+          "title": "<a href=\"#18---style-guide-and-component-approach\">1.8 Style Guide and component approach</a>"
+        },
+        {
+          "title": "<a href=\"#19---delivery-files\">1.9 Delivery files</a></li>\n</ul>"
+        },
+        {
+          "title": "<strong><a href=\"#2---analysis-and-pre-work-phases\">2. Analysis and pre-work phases</a></strong>"
+        },
+        {
+          "title": "<a href=\"#21---paper-analysis\">2.1 Paper analysis</a>"
+        },
+        {
+          "title": "<a href=\"#22---pre-development-phase\">2.2 Pre-development phase</a></li>\n</ul>"
+        },
+        {
+          "title": "<strong><a href=\"#3---validation\">3. Validation</a></strong>"
+        },
+        {
+          "title": "<strong><a href=\"#4---development-phase\">4. Development phase</a></strong>"
+        },
+        {
+          "title": "<strong><a href=\"#5---before-production\">5. Before production</a></strong><hr/><blockquote>\n<p>The <strong>Design Checklist for Front-End Developers</strong> is an exhaustive list of elements which Web Designers and Front-End Developers need to take into consideration to facilitate their collaboration. The following elements are a mix between known practices and new elements based on a long experience analysing web designs.</p>\n</blockquote><p>In case you are looking for a list of all elements you need to have/to test before launching your site/HTML page to production, take a look on the → <a href=\"https://github.com/thedaviddias/Front-End-Checklist\">Front-End Checklist</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "How to use the Design Checklist?",
+      "items": [
+        {
+          "title": "<p>When comes the moment where developers discover new web designs, before converting them to code, some important elements may be missing. The Front-End Design Checklist is a tool for Front-End developers and Web Designers which aim to help both to work in a seamlessly way.</p><p>You can share that checklist to Web Designers to ensure time will be saved at the delivery time or you can use it to review all elements delivered by the creative team and ensure everything is correct before digging into the code integration.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Why you need to use the Design Checklist?",
+      "items": [
+        {
+          "title": "Ensure all points are taken into consideration by the Creative Team"
+        },
+        {
+          "title": "Having a document where Web Designers and Developers can rely to ensure a better communication and coherence in the way they interact."
+        },
+        {
+          "title": "Because it's easy to forget some important elements when you are pushed by short timelines"
+        },
+        {
+          "title": "Avoid discovering issues after the creative team is already working on another project."
+        },
+        {
+          "title": "To show the complementary work between a Web Designer and a Front-End Developer<hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "1. - Design requirements",
+      "items": [
+        {
+          "title": "<p>Designing a website or a webapp requires following some rules and taking into consideration that the project is not only a graphic project but a web project too. The next sections are crucial for any web project.</p>"
+        },
+        {
+          "topic": "1.1 - Grid system",
+          "items": [
+            {
+              "title": "<p><img alt=\"Grid system\" src=\"/images/grid-system.png\"/></p>"
+            },
+            {
+              "title": "<p>[ ] A <strong>grid</strong> is explicitly provided in the design, and the details of the grid are present in the technical specification (width, gutters, number of columns…). The Web Designer can keep the grid in a transparent layer and use it on all his project.\n    &gt; ℹ️ <a href=\"https://guideguide.me/\">Guide Guide</a> is a plugin for Photoshop that can help you easily build your grid.</p>\n<blockquote>\n<p>ℹ️ On Sketch, you can use the integrated “<a href=\"https://www.sketchapp.com/docs/canvas/rulers-guides-grids/\">Make Grid Tool</a>” to design your desired grid.</p>\n</blockquote>"
+            },
+            {
+              "title": "<p>[ ] <strong>Be familiar with the grid system</strong> you’ll use on your project. Most of the time, some options (like alignment, offsetting, nesting…) are ignored by the developer and tend to be replaced by manual padding or margin unnecessarily.</p>"
+            },
+            {
+              "title": "[ ] Before working on each components of your website, you can <strong>build every templates</strong> used in the creatives only with the grid classes. Building the structure before everything else, will facilitate your work afterwards.</li>\n</ul><p>```html</p><div class=\"container\">\n<div class=\"row\">\n<div class=\"col-sm\">\n<!-- Let empty at first -->\n</div>\n<div class=\"col-sm\">\n<!-- Let empty at first -->\n</div>\n<div class=\"col-sm\">\n<!-- Let empty at first -->\n</div>\n</div>\n</div><p>```</p><p>⚠️ <em>If you want to ensure that the grid and the width of the devices are respected, you may want to generate yourself a PSD template and that you will send it to the Web Designer.</em></p><p><strong>Additional Resources:</strong></p>"
+            },
+            {
+              "title": "🛠 <a href=\"https://getbootstrap.com/docs/4.0/layout/grid/\">Bootstrap Grid System</a> (v4)"
+            },
+            {
+              "title": "🛠 <a href=\"http://flexboxgrid.com/\">Flexbox Grid</a>"
+            },
+            {
+              "title": "📖 <a href=\"https://css-tricks.com/dont-overthink-it-grids/\">Don't Overthink It Grids | CSS-Tricks</a><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "1.2 - Colors",
+          "items": [
+            {
+              "title": "<p><img alt=\"Colors\" src=\"/images/colors.png\"/></p>"
+            },
+            {
+              "title": "[ ] <strong>All colors used in the creatives are named</strong> ($gray-light, $gray-dark, $green) or accordingly with their use ($body-background, $body-copy, $text-paragraph…). They can be exported in an <a href=\"https://www.lifewire.com/aco-file-2619477\">ACO file</a> (if use Photoshop or on a symbol page for Sketch) and shared with the developers.</li>\n</ul><p><img alt=\"Color Swatches\" src=\"/images/color-swatches.jpg\"/></p>"
+            },
+            {
+              "title": "<p>[ ] The different <strong>color state</strong> of some elements (like buttons, links, inputs...) are defined and worked in the context of a light or dark background and with a light or a dark text.</p>"
+            },
+            {
+              "title": "<p>[ ] All or the most important/used <strong>colors are accessible</strong> in the design to allow a fluid navigation on the website/webapp.</p>\n<p><strong>Additional Resources:</strong>\n* 🛠 <a href=\"https://contrastchecker.com/\">WCAG - Contrast Checker</a>\n* 🛠 <a href=\"http://colorsafe.co/\">Color Safe - accessible web color combinations</a>\n* 🛠 <a href=\"https://coolors.co/\">Coolors.co - The super fast color schemes generator</a></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "1.3 - Fonts and texts",
+          "items": [
+            {
+              "title": "<p><img alt=\"Fonts\" src=\"/images/fonts.png\"/></p><p>Fonts are an essential part of every design, they shouldn’t be chosen without discernment. Choosing the wrong font for a project could have financial and legal impacts.</p><p>It is recommended to ask your client to buy these fonts to avoid possible future issues and take into consideration the condition of use. Some webfonts are limited in terms of pageviews and can’t be hosted (<a href=\"https://aeolidia.com/understanding-webfont-licensing-structures/\">Understanding Webfont Licensing Structures</a>).</p>"
+            },
+            {
+              "title": "[ ] The fonts for desktop (TTF or OTF in general) and the webfonts, in <strong>WOFF, WOFF2 and TTF format</strong> were provided (in a Zip file or given access to the website where they were bought).\n    &gt; ℹ️ TTF format for desktop is not the same than TTF for Web.</li>\n</ul><p><strong>Resources:</strong>\n    * 📖 <a href=\"https://css-tricks.com/snippets/css/using-font-face/\">Using @font-face | CSS-Tricks</a>\n* [ ] <a href=\"https://en.wikipedia.org/wiki/Fallback_font\">Fallback font</a> stacks were specified in a document (ideally the Style Guide) to the Front-End Developer.</p><p><strong>Resources:</strong>\n  * 📖 <a href=\"https://css-tricks.com/css-basics-fallback-font-stacks-robust-web-typography/\">CSS Basics: Fallback Font Stacks for More Robust Web Typography | CSS-Tricks</a>\n  * <a href=\"https://www.fontsquirrel.com/tools/webfont-generator\">Create Your Own @font-face Kits » Font Squirrel</a></p>"
+            },
+            {
+              "title": "<p>[ ] The <strong>total weight</strong> of the all webfonts don’t exceed 1-2 Mb (all variants included: italic, bold etc).</p>"
+            },
+            {
+              "title": "<p>[ ] As far as possible, <strong>all texts are provided in the proper language</strong> instead of dummy texts in English (Lorem Ipsum and affiliates).</p>\n<blockquote>\n<p>ℹ️ In case of a multilingual website, always ask yourself how the design can react if the text is longer than it was previously define. Remember that Web Designers use to create perfect designs and don’t always think about possible issues or situation with too much text.</p>\n</blockquote>\n<p><strong>Additional Resources:</strong>\n* 📖 <a href=\"https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization\">Web Font Optimization  |  Web Fundamentals  |  Google Developers</a>\n* <a href=\"https://css-tricks.com/font-display-masses/\"><code>font-display</code> for the Masses | CSS-Tricks</a>\n* <a href=\"https://betterwebtype.com/rhythm-in-web-typography\">Rhythm in Typography | improve legibility, readability, and visual hierarchy</a></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "1.4 - Links and navigation",
+          "items": [
+            {
+              "title": "<p><img alt=\"Links and navigation\" src=\"/images/links.png\"/></p>"
+            },
+            {
+              "title": "[ ] All <strong>links have a default, hover, focus, active and visited state</strong> clearly defined (the Style Guide is the best document to specified these)."
+            },
+            {
+              "title": "[ ] Alternate views of all navigation states (hover, active/current page)."
+            }
+          ]
+        },
+        {
+          "topic": "1.5 - Images / Icons",
+          "items": [
+            {
+              "title": "<p><img alt=\"Images\" src=\"/images/images.png\"/></p>"
+            },
+            {
+              "title": "[ ] A <strong>favicon image</strong> with at least 512px X 512px is provided in PNG format. The generation of all the others Favicons can be easily done with online tools.</li>\n</ul><p><strong>Resources:</strong>\n  * <a href=\"https://realfavicongenerator.net/\">Favicon Generator for all platforms: iOS, Android, PC/Mac...</a></p>"
+            },
+            {
+              "title": "[ ] All icons are provided in <strong>SVG format</strong>, each in the same square dimension, in black and in a separated folder.</li>\n</ul><p><strong>Resources:</strong>\n  * 🛠 <a href=\"https://jakearchibald.github.io/svgomg/\">SVGOMG - SVGO's Missing GUI</a></p>"
+            },
+            {
+              "title": "[ ] The <strong>name of each icon</strong> starts with <code>icon-</code> and is entirely in lowercase (without any space and using dashes to separate each word).<p><strong>Additional Resources:</strong>\n* 📖 <a href=\"https://images.guide/\">Essential Image Optimization</a></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "1.6 Forms and buttons",
+          "items": [
+            {
+              "title": "<p><img alt=\"Forms\" src=\"/images/forms.png\"/></p>"
+            },
+            {
+              "title": "[ ] All forms possess a title that can be used as a legend"
+            },
+            {
+              "title": "[ ] An example of the <strong>different states of all input fields</strong> were provided (at least focus and inactive/disabled state)."
+            },
+            {
+              "title": "[ ] <strong>All error messages</strong> were provided, the text (eventually in a separated document) the position and the color are clearly identifiable in the creatives and consistent. Some messages should be different according to the error.\n  <strong>Resources:</strong>"
+            },
+            {
+              "title": "📖 <a href=\"https://uxdesign.cc/forms-need-validation-2ecbccbacea1\">Forms Need Validation – UX Collective</a>"
+            },
+            {
+              "title": "[ ] <strong>Indicators of required/optional</strong> fields are provided."
+            },
+            {
+              "title": "[ ] The <strong>primary and secondary buttons</strong> are clearly identifiable and are used following common practices.\n  <strong>Resources:</strong>"
+            },
+            {
+              "title": "📖 <a href=\"https://uxplanet.org/primary-secondary-action-buttons-c16df9b36150\">Primary &amp; Secondary Action Buttons – UX Planet</a>"
+            },
+            {
+              "title": "[ ] An example of the <strong>different states of a button</strong> were provided (Normal, hover, focused, pressed and inactive state)."
+            },
+            {
+              "title": "[ ] Buttons with built-in <strong>loading indicators</strong> are provided and can be applied to any button.</li>\n</ul><p><strong>Additional Resources:</strong></p>"
+            },
+            {
+              "title": "📖 <a href=\"https://uxdesign.cc/design-better-forms-96fadca0f49c\">Design Better Forms – UX Collective</a>"
+            },
+            {
+              "title": "📖 <a href=\"https://uxdesign.cc/design-better-input-fields-3d02985a8e24\">Design Better Input Fields – UX Collective</a>"
+            },
+            {
+              "title": "📖 <a href=\"https://uxplanet.org/designing-perfect-text-field-clarity-accessibility-and-user-effort-d03c1e26004b\">Designing Perfect Text Field: Clarity, Accessibility and User Effort</a>"
+            },
+            {
+              "title": "📖 <a href=\"https://uxplanet.org/button-ux-design-best-practices-types-and-states-647cf4ae0fc6\">Button UX Design: Best Practices, Types and States – UX Planet</a>"
+            },
+            {
+              "title": "📖 <a href=\"https://www.smashingmagazine.com/2016/11/a-quick-guide-for-designing-better-buttons/\">How To Design Better Buttons — Smashing Magazine</a>"
+            },
+            {
+              "title": "📖 <a href=\"https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23\">Buttons in Design Systems – EightShapes – Medium</a><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "1.7 - Responsive Web Design",
+          "items": [
+            {
+              "title": "<p><img alt=\"Responsive\" src=\"/images/responsive.png\"/></p>"
+            },
+            {
+              "title": "<p>[ ] The <strong>mobile version</strong> of the design is provided before or at the same time of the desktop version.</p>\n<blockquote>\n<p>If the “<strong>mobile first</strong>” thinking was not followed by the creative team, some irregularities and inconsistencies may appear between the mobile and the desktop version. Check and flag these issues before starting the development of the project.\n* [ ] The <strong>tablet version</strong> of the design in certain cases should be provide too.</p>\n</blockquote>\n</li>\n</ul><p>⚠️ <em>The </em><em>pixel perfect</em><em> notion is today in a certain way deprecated. Today, it’s impossible to have a design that worked the same facing the multitude of the screen sizes.</em></p><p><strong>Additional Resources:</strong></p>"
+            },
+            {
+              "title": "📖 <a href=\"https://webmasters.googleblog.com/2016/11/mobile-first-indexing.html\">Official Google Webmaster Central Blog: Mobile-first Indexing</a><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "1.8 - Style Guide and component approach",
+          "items": [
+            {
+              "title": "<p><img alt=\"Styleguide\" src=\"/images/styleguide.png\"/></p>"
+            },
+            {
+              "title": "[ ] All components designed on each page were created with the <strong>component based approach</strong>  (Atomic Design). If not, issues can occur in terms of performance, maintainability of the project...</li>\n</ul><p><strong>Resources:</strong>\n  * 📖 <a href=\"http://bradfrost.com/blog/post/atomic-web-design/\">Atomic design</a>\n  * 📖 <a href=\"https://www.tandemseven.com/technology/6-reasons-component-based-ui-development/\">6 Reasons for Component-Based UI Development</a></p>"
+            },
+            {
+              "title": "[ ] A <strong>Style Guide</strong> needs to be provided listing all elements, components, styles, dimensions. Some boilerplates like <a href=\"https://www.uxpower.tools/\">UX Power Tools</a> can help saving time and keep consistency in the designs.</li>\n</ul><p>⚠️ <em>In the case where the Style Guide is missing, it's a good practice to build yourself a <a href=\"https://github.com/davidhund/styleguide-generators\">living Style Guide</a> to facilitate your work. Some CMS like Drupal, for example, have plugins that allow to develop a living Style Guide using <a href=\"https://drupal-pattern-lab.github.io/\">Pattern Lab</a>.</em></p><p><strong>Additional Resources:</strong></p>"
+            },
+            {
+              "title": "📖 <a href=\"https://medium.com/sketch-app-sources/tagged/style-guides\">Style Guides – Design + Sketch – Medium</a>"
+            },
+            {
+              "title": "📖 <a href=\"https://codepen.io/guide\">The CodePen Design Patterns and Style Guide</a>"
+            },
+            {
+              "title": "📖 <a href=\"http://rizzo.lonelyplanet.com/styleguide/design-elements/colours\">Lonely Planet Travel Guides and Travel Information</a>"
+            },
+            {
+              "title": "📖 <a href=\"https://www.yelp.com/styleguide\">Styleguide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "1.9 - Delivery files",
+          "items": [
+            {
+              "title": "<p><img alt=\"Delivery files\" src=\"/images/delivery-files.png\"/></p>"
+            },
+            {
+              "title": "<p>[ ] For all websites, the web designer needs to provide at least <strong>2 PSD</strong> (mobile, desktop and eventually tablet) or at least <strong>1 Sketch file</strong> which needs to be delivered with the dimension below (if you have Photoshop CC 2015 and above, I recommend using artboards).</p>\n<blockquote>\n<p>ℹ️ Some web designers could eventually create multiple PSD corresponding to each components used and import them in a single PSD as “smart layer”. In that case, you’ll have multiple PSD linked to one or two files. In the case of Sketch, since the <strong>libraries</strong> exist since version 47, it is possible to link multiples files with symbols ……..</p>\n</blockquote>"
+            },
+            {
+              "title": "<p>[ ] The <strong>creative files are cleaned</strong> before delivering to developers (empty and unnecessary layer needs to be removed to avoid large files).</p>"
+            },
+            {
+              "title": "<p>[ ] The <strong>404 error</strong> (and eventually the page 500 error) page were designed.</p>"
+            },
+            {
+              "title": "[ ] All <strong>popins, popups and alert boxes</strong> were designed and can be enable throw layers of compositions.</li>\n</ul><p><strong>Additional Resources:</strong></p>"
+            },
+            {
+              "title": "📖 <a href=\"http://photoshopetiquette.com/\">Photoshop Etiquette: A Guide to Discernible Web Design</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "2. - Analysis and pre-work phases",
+      "items": [
+        {
+          "title": "<p><img alt=\"Analysis and phases\" src=\"/images/phases.png\"/></p><p>Before starting the analysis and the pre-work phases and after receiving the creative files, you need to check some important elements:</p>"
+        },
+        {
+          "title": "<strong><em>Which version of Photoshop, Sketch is used?</em></strong>\n  Some features are specific to some versions of Photoshop or Sketch. It is important to flag any issue regarding this as soon as possible."
+        },
+        {
+          "title": "<strong><em>Is the width of each PSD or artboard correct?</em></strong>\n  In case some space is added on each side of the design, check the exact width of the website."
+        },
+        {
+          "title": "<strong><em>Are the creatives using too much “box-shadow”, “linear or radial gradient”…?</em></strong>\n  Don’t forget the .... Effect which can have impacts on the browser painting performance."
+        },
+        {
+          "title": "<strong><em>Is a sitemap / breadcrumb provided to understand the architecture of all pages and their dependencies?</em></strong>"
+        },
+        {
+          "title": "<strong><em>Does the website needs to have retina images?</em></strong><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+        },
+        {
+          "topic": "2.1 - Paper analysis",
+          "items": [
+            {
+              "title": "<p><img alt=\"Paper Analysis\" src=\"/images/analysis.png\"/></p><p>It is recommended <strong>printing</strong> some (or all) of the pages you have on an A3 format (or A4 if you don’t have this format). Because of the height of the page. you’ll probably need to print some designs on multiple pages.</p><p>I can’t imagine a better way to start than analysing creatives on a paper with a pencil (or different colourful pencils chosen to highlight different type of information).</p><ol>\n<li>\n<p>Define the <strong>structure of the pages</strong>, the headers, the sections, the articles, main, footer outlining these on at least one printed page.</p>"
+            },
+            {
+              "title": "<p>Find all the <strong>headings</strong> that structured a page, ensure the <code>H1</code> is not on the logo and that the logical order is followed. Most of the time, the H1 for the homepage will be hidden with CSS but needs to keep its legitimate meaning. That analysis should be done with the help of a SEO specialist in case you have one in your team.</p>"
+            },
+            {
+              "title": "<p>Try to find and regroup <strong>similar components</strong> giving them an individual name regarding their functionality and not just their context. For example, naming a tab system “</p>"
+            },
+            {
+              "title": "<p>Most of the creative elements can be <strong>done using CSS</strong>. Today, it is not recommended to create any layout element using images. Any simple graphical element like buttons or borders should be done in CSS to avoid performance or scalability issues.</p>"
+            },
+            {
+              "title": "<p>Find some <strong>possible lack of coherence</strong>, in case a Styleguide was not provided by the creative team, it’s your responsibility to ensure that every graphic element belong to a possible category (Buttons, Typography, Sliders…). It’ll help you to create your own CSS / Sass architecture or to identify which component you’ll need from an identified CSS Framework.</p>\n</li>\n</ol><p>⚠️ <em>After the paper analysis phase, you can invite the creative team to use a tool like <a href=\"https://www.invisionapp.com/\">InVision</a>, to facilitate the communication and exchange between the creative team and the developers. The possibility to comment directly on pages can be a time-saver and allow to keep a history of modifications and decisions.</em></p>"
+            }
+          ]
+        },
+        {
+          "topic": "2.2 - Pre-development phase",
+          "items": [
+            {
+              "title": "[ ] According to the specifications, <strong>plugins needed were defined</strong> in an early stage. Having a pre-list of possible plugins before starting the development can help the developer to stay focus and not spend too much time in doing research during the development phase. Obviously, some plugins may not perfectly fit and will be changed accordingly.</li>\n</ul><p><strong>Additional Resources:</strong></p>"
+            },
+            {
+              "title": "🛠 <a href=\"https://js.libhunt.com/\">Awesome JS</a>"
+            },
+            {
+              "title": "🛠 <a href=\"https://bestof.js.org/\">BestOfJS</a><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "3. - Validation",
+      "items": [
+        {
+          "title": "<p>The validation phase is when everything seems to be ready to be integrated. The client, in general, validate the creatives without waiting for any approval from the technical team. As exposed in the Design Checklist, it is essential that developers ensure the quality of the delivery before starting to code.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "4. - Development phase",
+      "items": [
+        {
+          "title": "<p>[ ] All <strong>medias can be cut and saved</strong> before starting the development phase. That can help you to avoid back and forth between your creative software and your code editor.</p>"
+        },
+        {
+          "title": "<p>[ ] <strong>The image folder has a clear architecture</strong> where you  arranged the layout's images. It is important to stay consistent between projects in general. Defining a structure for that folder and a naming convention can be helpful.</p>\n</li>\n</ul><p>You can find an example of a possible structure with prefixes used to recognise each image appurtenance.</p><p><code>bash\n.\n└── images\n    ├── background\n    ├── banners\n    ├── icons\n    └── layout</code></p>"
+        },
+        {
+          "title": "[ ] <strong>A naming convention is used</strong> like adding prefixes to differentiate types of images, all images used for background can be prefixed by <code>bg-</code>, icons by <code>icon-</code>, hero banners by <code>hero-</code> or <code>banner-</code> and so on."
+        }
+      ]
+    },
+    {
+      "topic": "5. - Before production",
+      "items": [
+        {
+          "title": "<p>Before launching your website, be sure to review all your pages using the <a href=\"https://frontendchecklist.io\">Front-End Checklist</a>!</p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Translations",
+      "items": [
+        {
+          "title": "<p>The Front-End Checklist is also available in other languages. Thanks for all translators and their awesome work!</p>"
+        },
+        {
+          "title": "🇨🇳 Chinese: <a href=\"https://github.com/JohnsenZhou/Front-End-Design-Checklist\">JohnsenZhou/Front-End-Design-Checklist</a>"
+        },
+        {
+          "title": "🇪🇸 Spanish: <a href=\"https://github.com/eoasakura/Front-End-Design-Checklist\">eoasakura/Front-End-Design-Checklist</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Support",
+      "items": [
+        {
+          "title": "<p>If you have any question or suggestion, don't hesitate to use Gitter or Twitter:</p>"
+        },
+        {
+          "title": "<a href=\"https://www.producthunt.com/posts/front-end-design-checklist\">Give an UP on Product Hunt</a>"
+        },
+        {
+          "title": "<a href=\"https://gitter.im/Front-End-Checklist][28]/Front-End-Design-Checklist?utm_source=share-link&amp;utm_medium=link&amp;utm_campaign=share-link\">Chat on Gitter</a>"
+        },
+        {
+          "title": "<a href=\"https://www.facebook.com/frontenddesignchecklist/\">Facebook</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/thedaviddias\">Twitter</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Author",
+      "items": [
+        {
+          "title": "<p><strong><a href=\"https://github.com/thedaviddias\">David Dias</a></strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributors",
+      "items": [
+        {
+          "title": "<p>This project exists thanks to all the people who <a href=\".github/CONTRIBUTING.md\">contribute!</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p><a href=\"https://creativecommons.org/publicdomain/zero/1.0/\"><img alt=\"CC0\" src=\"https://i.creativecommons.org/p/zero/1.0/88x31.png\"/></a></p><p>All icons are provided by <a href=\"https://icons8.com/\">Icons8</a></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

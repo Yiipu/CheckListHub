@@ -1,0 +1,75 @@
+{
+  "id": 177,
+  "header": "rn-checkbox-list",
+  "topicList": [
+    "Support",
+    "Setup",
+    "Usage",
+    "Sample example",
+    "Available props",
+    "Improvements"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Support",
+      "items": [
+        {
+          "title": "<p>| rn-checkbox-list version | Platform              | RN Version |\n| ------------------------ | --------------------- | ---------- |\n| &gt;= 1.0.0                 | Android, iOS, Windows | &gt;=0.62.3   |\n| &gt; 0.3                    | Android, iOS, Windows | 0.61.5     |\n| &lt;=0.2                    | Android               | 0.61.5     |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Setup",
+      "items": [
+        {
+          "title": "<p>This library is available on <a href=\"https://www.npmjs.com/package/rn-checkbox-list\">npm</a>, install it with:\n<code>npm i @react-native-community/checkbox rn-checkbox-list</code>\nor\n<code>yarn add @react-native-community/checkbox rn-checkbox-list</code></p><p>and then run <code>npx pod-install</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Usage",
+      "items": [
+        {
+          "title": "<ol>\n<li>Import rn-checkbox-list:</li>\n</ol><p><code>javascript\nimport CheckboxList from 'rn-checkbox-list';</code></p><ol>\n<li>Create data with id and name:</li>\n</ol><p><code>javascript\n[{ id: 1, name: 'Green Book' }, { id: 2, name: 'Bohemian Rhapsody' }];</code></p><ol>\n<li>Add data to imported component</li>\n</ol><p><code>javascript\n&lt;CheckboxList headerName=\"This is header name\" listItems={data} /&gt;</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Sample example",
+      "items": [
+        {
+          "title": "<p><code>javascript\n&lt;CheckboxList\n  headerName=\"Movies\"\n  theme=\"red\"\n  listItems={data}\n  onChange={({ ids, items }) =&gt; console.log('My updated list :: ', ids)}\n  listItemStyle={{ borderBottomColor: '#eee', borderBottomWidth: 1 }}\n  checkboxProp={{ boxType: 'square' }} // iOS (supported from v0.3.0)\n  onLoading={() =&gt; &lt;LoaderComponent /&gt;}\n/&gt;</code></p><p>Check for complete example <a href=\"https://github.com/rinku-k/rn-checkbox-list/blob/master/example/index.js\">here</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Available props",
+      "items": [
+        {
+          "title": "<p>| Name              | Type         | Default                                                                                                                                             | Description                                           |\n| ----------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |\n| listItems         | object array | []                                                                                                                                                  | List of checkboxes                                    |\n| selectedListItems | object array | []                                                                                                                                                  | List of selected items(subset of <code>listItems</code>)         |\n| headerName        | string       | ''                                                                                                                                                  | Shows header with the given name                      |\n| listItemStyle     | object       | {}                                                                                                                                                  | Each check list style                                 |\n| checkboxProp      | object       | {}                                                                                                                                                  | Custom checkbox style                                 |\n| headerStyle       | object       | <a href=\"https://github.com/rinku-k/rn-checkbox-list/wiki/Props-Details#headerstyle\">See here</a> | Header check list style                               |\n| onChange          | function     | null                                                                                                                                                | Fires on each checkbox select or deselect             |\n| onLoading         | function     | null                                                                                                                                                | When the list is empty and a loader needs to be shown |\n| theme             | string       | #1A237E                                                                                                                                             | Custom theme color for checkbox                       |\n|<strong>v1.1.0 &amp; above</strong>|||\n| renderItem        | function     | Text Component                                                                                                                                      | Custom render component for each list item            |</p><p><strong>Refer <a href=\"https://github.com/rinku-k/rn-checkbox-list/wiki/Props-Details\">wiki</a> for detailed usecases of the props</strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Improvements",
+      "items": [
+        {
+          "title": "[x] Importing checkbox through updated react-native package (removing warnings)"
+        },
+        {
+          "title": "[x] Customisable checkbox colors"
+        },
+        {
+          "title": "[x] Provide selected items and selected ids"
+        },
+        {
+          "title": "[x] Support for default selected items"
+        },
+        {
+          "title": "[x] Support iOS<p>Pull requests, feedbacks and suggestions are welcome!</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

@@ -1,0 +1,312 @@
+{
+  "id": 229,
+  "header": "windows_hardening",
+  "topicList": [
+    "Introduction",
+    "HardeningKitty",
+    "Sources"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Introduction",
+      "items": [
+        {
+          "title": "<p>The project started as a simple hardening list for Windows 10. After some time, HardeningKitty was created to simplify the hardening of Windows. Now, HardeningKitty supports guidelines from Microsoft, CIS Benchmarks, DoD STIG and BSI SiSyPHuS Win10. And of course my own hardening list.</p><p>This is a hardening checklist that can be used in private and business environments for hardening Windows 10. The checklist can be used for all Windows versions, but in Windows 10 Home the Group Policy Editor is not integrated and the adjustment must be done directly in the registry. For this, there is the <em>HailMary</em> mode from <em>HardeningKitty</em>.</p><p>The settings should be seen as security and privacy recommendation and should be carefully checked whether they will affect the operation of your infrastructure or impact the usability of key functions. It is important to weigh security against usability.</p><p>The project started with the creation of a simple hardening checklist for Windows 10. The focus has shifted to the audit of various well-known frameworks / benchmarks with the development of <em>HardeningKitty</em>. Meanwhile, various CIS benchmarks and Microsoft Security Baselines are supported. With the development of the <em>HailMary</em> mode, it will also be possible to apply settings of any hardening checklist on a Windows system.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "HardeningKitty",
+      "items": [
+        {
+          "title": "<p><em>HardeningKitty</em> supports hardening of a Windows system. The configuration of the system is retrieved and assessed using a finding list. In addition, the system can be hardened according to predefined values. <em>HardeningKitty</em> reads settings from the registry and uses other modules to read configurations outside the registry.</p><p>The script was developed for English systems. It is possible that in other languages the analysis is incorrect. Please create an issue if this occurs.</p>"
+        },
+        {
+          "topic": "Signed Version",
+          "items": [
+            {
+              "title": "<p>The development of <em>HardeningKitty</em> happens in this repository. In the <a href=\"https://github.com/scipag/HardeningKitty\">repository of scip AG</a> is a stable version of <em>HardeningKitty</em> that has been <em>signed</em> with the code signing certificate of <em>scip AG</em>. This means that <em>HardeningKitty</em> can also be run on systems that only allow signed scripts.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "How To Run",
+          "items": [
+            {
+              "title": "<p>Run the script with administrative privileges to access machine settings. For the user settings it is better to execute them with a normal user account. Ideally, the user account is used for daily work.</p><p>Download <em>HardeningKitty</em> and copy it to the target system (script and lists). Then HardeningKitty can be imported and executed:</p><p>```powershell\nPS C:\\tmp&gt; Import-Module .\\HardeningKitty.psm1\nPS C:\\tmp&gt; Invoke-HardeningKitty -EmojiSupport</p><pre><code>     =^._.^=\n    _(      )/  HardeningKitty 0.9.0-1662273740\n</code></pre><p>[*] 9/4/2022 8:54:12 AM - Starting HardeningKitty</p><p>[<em>] 9/4/2022 8:54:12 AM - Getting user information\n[</em>] Hostname: DESKTOP-DG83TOD\n[*] Domain: WORKGROUP</p><p>...</p><p>[<em>] [</em>] 9/4/2022 8:54:12 AM - Starting Category Account Policies\n[😺] ID 1103, Store passwords using reversible encryption, Result=0, Severity=Passed\n[😺] ID 1100, Account lockout threshold, Result=10, Severity=Passed\n[😺] ID 1101, Account lockout duration, Result=30, Severity=Passed</p><p>...</p><p>[*] 9/4/2022 8:54:12 AM - Starting Category User Rights Assignment\n[😿] ID 1200, Access this computer from the network, Result=BUILTIN\\Administrators;BUILTIN\\Users, Recommended=BUILTIN\\Administrators, Severity=Medium</p><p>...</p><p>[*] 9/4/2022 8:54:14 AM - Starting Category Administrative Templates: Printer\n[🙀] ID 1764, Point and Print Restrictions: When installing drivers for a new connection (CVE-2021-34527), Result=1, Recommended=0, Severity=High\n[🙀] ID 1765, Point and Print Restrictions: When updating drivers for an existing connection (CVE-2021-34527), Result=2, Recommended=0, Severity=High</p><p>...</p><p>[*] 9/4/2022 8:54:19 AM - Starting Category MS Security Guide\n[😿] ID 2200, LSA Protection, Result=, Recommended=1, Severity=Medium\n[😼] ID 2201, Lsass.exe audit mode, Result=, Recommended=8, Severity=Low</p><p>...</p><p>[<em>] 9/4/2022 8:54:25 AM - HardeningKitty is done\n[</em>] 9/4/2022 8:54:25 AM - Your HardeningKitty score is: 4.82. HardeningKitty Statistics: Total checks: 325 - Passed: 213, Low: 33, Medium: 76, High: 3.\n```</p>"
+            }
+          ]
+        },
+        {
+          "topic": "How To Install",
+          "items": [
+            {
+              "title": "<p>First create the directory <em>HardeningKitty</em> and for every version a sub directory like <em>0.9.2</em> in a path listed in the <em>PSModulePath</em> environment variable.</p><p>Copy the module <em>HardeningKitty.psm1</em>, <em>HardeningKitty.psd1</em>, and the <em>lists</em> directory to this new directory.</p><p><code>powershell\nPS C:\\tmp&gt; $Version = \"0.9.2\"\nPS C:\\tmp&gt; New-Item -Path $Env:ProgramFiles\\WindowsPowerShell\\Modules\\HardeningKitty\\$Version -ItemType Directory\nPS C:\\tmp&gt; Copy-Item -Path .\\HardeningKitty.psd1,.\\HardeningKitty.psm1,.\\lists\\ -Destination $Env:ProgramFiles\\WindowsPowerShell\\Modules\\HardeningKitty\\$Version\\ -Recurse</code></p><p>For more information see Microsoft's article <a href=\"https://docs.microsoft.com/en-us/powershell/scripting/developer/module/installing-a-powershell-module\">Installing a PowerShell Module</a>.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "How to Automatically Download and Install the Latest Release",
+          "items": [
+            {
+              "title": "<p>You can use the script below to download and install the latest release of <em>HardeningKitty</em>.</p><p><code>powershell\nFunction InstallHardeningKitty() {\n    $Version = (((Invoke-WebRequest \"https://api.github.com/repos/0x6d69636b/windows_hardening/releases/latest\" -UseBasicParsing) | ConvertFrom-Json).Name).SubString(2)\n    $HardeningKittyLatestVersionDownloadLink = ((Invoke-WebRequest \"https://api.github.com/repos/0x6d69636b/windows_hardening/releases/latest\" -UseBasicParsing) | ConvertFrom-Json).zipball_url\n    $ProgressPreference = 'SilentlyContinue'\n    Invoke-WebRequest $HardeningKittyLatestVersionDownloadLink -Out HardeningKitty$Version.zip\n    Expand-Archive -Path \".\\HardeningKitty$Version.zip\" -Destination \".\\HardeningKitty$Version\" -Force\n    $Folder = Get-ChildItem .\\HardeningKitty$Version | Select-Object Name -ExpandProperty Name\n    Move-Item \".\\HardeningKitty$Version\\$Folder\\*\" \".\\HardeningKitty$Version\\\"\n    Remove-Item \".\\HardeningKitty$Version\\$Folder\\\"\n    New-Item -Path $Env:ProgramFiles\\WindowsPowerShell\\Modules\\HardeningKitty\\$Version -ItemType Directory\n    Set-Location .\\HardeningKitty$Version\n    Copy-Item -Path .\\HardeningKitty.psd1,.\\HardeningKitty.psm1,.\\lists\\ -Destination $Env:ProgramFiles\\WindowsPowerShell\\Modules\\HardeningKitty\\$Version\\ -Recurse\n    Import-Module \"$Env:ProgramFiles\\WindowsPowerShell\\Modules\\HardeningKitty\\$Version\\HardeningKitty.psm1\"\n}\nInstallHardeningKitty</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Examples",
+          "items": []
+        },
+        {
+          "topic": "HardeningKitty Score",
+          "items": [
+            {
+              "title": "<p>Each Passed finding gives 4 points, a Low finding gives 2 points, a Medium finding gives 1 point and a High Finding gives 0 points.</p><p>The formula for the HardeningKitty Score is <em>(Points achieved / Maximum points) * 5 + 1</em>.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "HardeningKitty Interface",
+          "items": [
+            {
+              "title": "<p><a href=\"https://github.com/ataumo\">@ataumo</a> build a web based interface for HardeningKitty. The tool can be used to create your own lists and provides additional information on the hardening settings. The <a href=\"https://github.com/ataumo/policies_hardening_interface\">source code</a> is under AGPL license and there is a <a href=\"https://phi.cryptonit.fr/policies_hardening_interface/\">demo site</a>.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Last Update",
+          "items": [
+            {
+              "title": "<p>HardeningKitty can be used to audit systems against the following baselines / benchmarks:</p><p>| Name | System Version    | Version  |\n| :--- | :---------------- | :------  |\n| 0x6d69636b Windows 10 (Machine) | 22H2 | |\n| 0x6d69636b Windows 10 (User) | 22H2 | |\n| BSI SiSyPHuS Windows 10 hoher Schutzbedarf Domänenmitglied (Machine) | 1809 | 1.0 |\n| BSI SiSyPHuS Windows 10 hoher Schutzbedarf Domänenmitglied (User) | 1809| 1.0\n| BSI SiSyPHuS Windows 10 normaler Schutzbedarf Domänenmitglied (Machine) | 1809| 1.0 |\n| BSI SiSyPHuS Windows 10 normaler Schutzbedarf Domänenmitglied (User) | 1809| 1.0 |\n| BSI SiSyPHuS Windows 10 normaler Schutzbedarf Einzelrechner (Machine) | 1809| 1.0 |\n| BSI SiSyPHuS Windows 10 normaler Schutzbedarf Einzelrechner (User) | 1809 | 1.0 |\n| CIS Microsoft Windows 10 Enterprise (Machine) | 1809 | 1.6.1 |\n| CIS Microsoft Windows 10 Enterprise (User) | 1809 | 1.6.1 |\n| CIS Microsoft Windows 10 Enterprise (Machine) | 1903 | 1.7.1 |\n| CIS Microsoft Windows 10 Enterprise (User) | 1903 | 1.7.1 |\n| CIS Microsoft Windows 10 Enterprise (Machine) | 1909 | 1.8.1 |\n| CIS Microsoft Windows 10 Enterprise (User) | 1909 | 1.8.1 |\n| CIS Microsoft Windows 10 Enterprise (Machine) | 2004 | 1.9.1 |\n| CIS Microsoft Windows 10 Enterprise (User) | 2004 | 1.9.1 |\n| CIS Microsoft Windows 10 Enterprise (Machine) | 20H2 | 1.10.1 |\n| CIS Microsoft Windows 10 Enterprise (User) | 20H2 | 1.10.1 |\n| CIS Microsoft Windows 10 Enterprise (Machine) | 21H1 | 1.11.0 |\n| CIS Microsoft Windows 10 Enterprise (User) | 21H1 | 1.11.0 |\n| CIS Microsoft Windows 10 Enterprise (Machine) | 21H2 | 1.12.0 |\n| CIS Microsoft Windows 10 Enterprise (User) | 21H2 | 1.12.0 |\n| CIS Microsoft Windows 10 Enterprise (Machine) | 22H2 | 2.0.0 |\n| CIS Microsoft Windows 10 Enterprise (User) | 22H2 | 2.0.0 |\n| CIS Microsoft Windows 11 Enterprise (Machine) | 21H2 | 1.0.0 |\n| CIS Microsoft Windows 11 Enterprise (User) | 21H2 | 1.0.0 |\n| CIS Microsoft Windows 11 Enterprise (Machine) | 22H2 | 2.0.0 |\n| CIS Microsoft Windows 11 Enterprise (User) | 22H2 | 2.0.0 |\n| CIS Microsoft Windows Server 2012 R2 (Machine) | R2 | 2.4.0 |\n| CIS Microsoft Windows Server 2012 R2 (User) | R2 | 2.4.0 |\n| CIS Microsoft Windows Server 2012 R2 (Machine) | R2 | 2.6.0 |\n| CIS Microsoft Windows Server 2012 R2 (User) | R2 | 2.6.0 |\n| CIS Microsoft Windows Server 2016 (Machine) | 1607 | 1.2.0 |\n| CIS Microsoft Windows Server 2016 (User) | 1607 | 1.2.0 |\n| CIS Microsoft Windows Server 2016 (Machine) | 1607 | 1.3.0 |\n| CIS Microsoft Windows Server 2016 (User) | 1607 | 1.3.0 |\n| CIS Microsoft Windows Server 2016 (Machine) | 1607 | 2.0.0 |\n| CIS Microsoft Windows Server 2016 (User) | 1607 | 2.0.0 |\n| CIS Microsoft Windows Server 2019 (Machine) | 1809 | 1.1.0 |\n| CIS Microsoft Windows Server 2019 (User) | 1809 | 1.1.0 |\n| CIS Microsoft Windows Server 2019 (Machine) | 1809 | 1.2.1 |\n| CIS Microsoft Windows Server 2019 (User) | 1809 | 1.2.1 |\n| CIS Microsoft Windows Server 2019 (Machine) | 1809 | 2.0.0 |\n| CIS Microsoft Windows Server 2019 (User) | 1809 | 2.0.0 |\n| CIS Microsoft Windows Server 2022 (Machine) | 21H2 | 1.0.0 |\n| CIS Microsoft Windows Server 2022 (User) | 21H2 | 1.0.0 |\n| CIS Microsoft Windows Server 2022 (Machine) | 22H2 | 2.0.0 |\n| CIS Microsoft Windows Server 2022 (User) | 22H2 | 2.0.0 |\n| DoD Microsoft Windows 10 STIG (Machine) | 20H2 | v2r1 |\n| DoD Microsoft Windows 10 STIG (User) | 20H2 | v2r1 |\n| DoD Windows Server 2019 Domain Controller STIG (Machine) | 20H2 | v2r1 |\n| DoD Windows Server 2019 Domain Controller STIG (User) | 20H2 | v2r1 |\n| DoD Windows Server 2019 Member Server STIG (Machine) | 20H2 | v2r1 |\n| DoD Windows Server 2019 Member Server STIG (User) | 20H2 | v2r1 |\n| DoD Windows Defender Antivirus STIG | 20H2 | v2r1 |\n| DoD Windows Firewall STIG | 20H2 | v1r7 |\n| Microsoft Security baseline for Microsoft Edge | 87 | Final |\n| Microsoft Security baseline for Microsoft Edge | 88, 89, 90, 91 | Final |\n| Microsoft Security baseline for Microsoft Edge | 92 | Final |\n| Microsoft Security baseline for Microsoft Edge | 93, 94 | Final |\n| Microsoft Security baseline for Microsoft Edge | 95 | Final |\n| Microsoft Security baseline for Microsoft Edge | 96 | Final |\n| Microsoft Security baseline for Microsoft Edge | 97 | Final |\n| Microsoft Security baseline for Microsoft Edge | 98, 99, 100, 101, 102, 103, 104, 105, 106 | Final |\n| Microsoft Security baseline for Microsoft Edge | 107, 108, 109, 110, 111 | Final |\n| Microsoft Security baseline for Microsoft Edge | 112, 113 | Final |\n| Microsoft Security baseline for Microsoft Edge | 114, 115, 116 | Final |\n| Microsoft Security baseline for Microsoft Edge | 117, 118 | Final |\n| Microsoft Security baseline for Windows 10 | 2004 | Final |\n| Microsoft Security baseline for Windows 10 | 20H2, 21H1 | Final |\n| Microsoft Security baseline for Windows 10 | 21H2 | Final |\n| Microsoft Security baseline for Windows 10 (Machine) | 22H2 | Final |\n| Microsoft Security baseline for Windows 10 (User) | 22H2 | Final |\n| Microsoft Security baseline for Windows 11 | 21H2 | Final |\n| Microsoft Security baseline for Windows 11 (Machine) | 22H2 | Final |\n| Microsoft Security baseline for Windows 11 (User) | 22H2 | Final |\n| Microsoft Security baseline for Windows Server (DC) | 2004 | Final |\n| Microsoft Security baseline for Windows Server (Member) | 2004 | Final |\n| Microsoft Security baseline for Windows Server (DC) | 20H2 | Final |\n| Microsoft Security baseline for Windows Server (Member) | 20H2 | Final |\n| Microsoft Security baseline for Windows Server 2022 (DC) | 21H2 | Final |\n| Microsoft Security baseline for Windows Server 2022 (Member) | 21H2 | Final |\n| Microsoft Security baseline for Office 365 ProPlus (Machine) | Sept 2019 | Final |\n| Microsoft Security baseline for Office 365 ProPlus (User) | Sept 2019 | Final |\n| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (Machine) | v2104, v2106 | Final |\n| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (User) | v2104, v2106 | Final |\n| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (Machine) | v2112 | Final |\n| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (User) | v2112 | Final |\n| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (Machine) | v2206 | Final |\n| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (User) | v2206 | Final |\n| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (Machine) | v2306 | Final |\n| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (User) | v2306 | Final |\n| Microsoft Windows Server TLS Settings | 1809 | 1.0 |\n| Microsoft Windows Server TLS Settings (Future Use with TLSv1.3) | 1903 | 1.0 |</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Sources",
+      "items": [
+        {
+          "title": "<a href=\"https://www.cisecurity.org/cis-benchmarks/\">CIS Benchmarks</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-windows-10-and-windows-server-version/ba-p/1543631\">Security baseline (FINAL): Windows 10 and Windows Server, version 2004</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-and-windows-server/ba-p/1999393\">Security baseline (FINAL) for Windows 10 and Windows Server, version 20H2</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-version-21h1/ba-p/2362353\">Security baseline (FINAL) for Windows 10, version 21H1</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-windows-10-version-21h2/ba-p/3042703\">Security baseline for Windows 10, version 21H2</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-server-2022-security-baseline/ba-p/2724685\">Windows Server 2022 Security Baseline</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-security-baseline/ba-p/2810772\">Windows 11 Security baseline</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-version-22h2-security-baseline/ba-p/3632520\">Windows 11, version 22H2 Security baseline</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt\">Kernel DMA Protection for Thunderbolt 3</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures\">BitLocker Countermeasures</a>"
+        },
+        {
+          "title": "<a href=\"https://support.microsoft.com/en-us/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d\">Blocking the SBP-2 driver and Thunderbolt controllers to reduce 1394 DMA and Thunderbolt DMA threats to BitLocker</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-manage\">Manage Windows Defender Credential Guard</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction\">Reduce attack surfaces with attack surface reduction rules</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection\">Configuring Additional LSA Protection</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/security-updates/securityadvisories/2017/4053440\">Securely opening Microsoft Office documents that contain Dynamic Data Exchange (DDE) fields</a>"
+        },
+        {
+          "title": "<a href=\"https://gist.githubusercontent.com/wdormann/732bb88d9b5dd5a66c9f1e1498f31a1b/raw/69c9d9d14b386d8f178e59a046804501ec1ee304/disable_ddeauto.reg\">DDE registry settings</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon\">Sysmon</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/SwiftOnSecurity/sysmon-config\">SwiftOnSecurity/sysmon-config</a>"
+        },
+        {
+          "title": "<a href=\"https://medium.com/@cryps1s/endpoint-isolation-with-the-windows-firewall-462a795f4cfb\">Dane Stuckey - @cryps1s Endpoint Isolation with the Windows Firewall</a>"
+        },
+        {
+          "title": "<a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=55319\">Microsoft Security Compliance Toolkit 1.0</a>"
+        },
+        {
+          "title": "<a href=\"https://blogs.technet.microsoft.com/secguide/2016/01/22/new-tool-policy-analyzer/\">Policy Analyzer</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-office-365-proplus-v1908-sept-2019-final/ba-p/873084\">Security baseline for Office 365 ProPlus (v1908, Sept 2019) - FINAL</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2104/ba-p/2307695\">Security baseline for Microsoft 365 Apps for enterprise v2104 - FINAL</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2106/ba-p/2492355\">Security baseline for Microsoft 365 Apps for enterprise v2106 - FINAL</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2112/ba-p/3038172\">Security baseline for Microsoft 365 Apps for enterprise, v2112</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-m365-apps-for-enterprise-v2306/ba-p/3858702\">Security baseline for Microsoft 365 Apps for enterprise v2206</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-m365-apps-for-enterprise-v2306/ba-p/3858702\">Security baseline for Microsoft 365 Apps for enterprise v2306</a>"
+        },
+        {
+          "title": "<a href=\"https://gist.github.com/mackwage/08604751462126599d7e52f233490efe\">mackwage/windows_hardening.cmd</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-87/ba-p/1950297\">Security baseline for Microsoft Edge version 87</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-89/ba-p/2186265\">Security baseline for Microsoft Edge version 89</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v92/ba-p/2563679\">Security baseline for Microsoft Edge v92</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v93/ba-p/2744505\">Security baseline for Microsoft Edge v93</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v95/ba-p/2897269\">Security baseline for Microsoft Edge v95</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v96/ba-p/2997665\">Security baseline for Microsoft Edge v96</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v97/ba-p/3062252\">Security baseline for Microsoft Edge v97</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v98/ba-p/3165443\">Security baseline for Microsoft Edge v98</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v99/ba-p/3249241\">Security baseline for Microsoft Edge v99</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v100/ba-p/3281982\">Security baseline for Microsoft Edge v100</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v101/ba-p/3298140\">Security baseline for Microsoft Edge v101</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v102/ba-p/3465195\">Security baseline for Microsoft Edge v102</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v103/ba-p/3548236\">Security baseline for Microsoft Edge v103</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v104/ba-p/3593826\">Security baseline for Microsoft Edge v104</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v105/ba-p/3615904\">Security baseline for Microsoft Edge v105</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-106/ba-p/3643958\">Security baseline for Microsoft Edge v106</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v107/ba-p/3678903\">Security baseline for Microsoft Edge v107</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-108/ba-p/3691250\">Security baseline for Microsoft Edge v108</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-109/ba-p/3713981\">Security baseline for Microsoft Edge v109</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-110/ba-p/3740900\">Security baseline for Microsoft Edge v110</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-111/ba-p/3767483\">Security baseline for Microsoft Edge v111</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-112/ba-p/3789975\">Security baseline for Microsoft Edge v112</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-113/ba-p/3814398\">Security baseline for Microsoft Edge v113</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-114/ba-p/3839728\">Security baseline for Microsoft Edge v114</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-115/ba-p/3882420\">Security baseline for Microsoft Edge v115</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-review-for-microsoft-edge-version-116/ba-p/3905425\">Security baseline for Microsoft Edge v116</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-117/ba-p/3930862\">Security baseline for Microsoft Edge v117</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-review-for-microsoft-edge-version-118/ba-p/3955123\">Security baseline for Microsoft Edge v118</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-policies\">Microsoft Edge - Policies</a>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/milenkowski/status/1326865844215934979\">A hint for Office 365 Telemetry</a>"
+        },
+        {
+          "title": "<a href=\"https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Studien/Office_Telemetrie/Office_Telemetrie.pdf?__blob=publicationFile&amp;v=5\">BSI: Microsoft Office Telemetry Analysis report</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/deployoffice/privacy/manage-privacy-controls\">Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise</a>"
+        },
+        {
+          "title": "<a href=\"https://public.cyber.mil/stigs/gpo/\">DoD Cyber Exchange Public - Security Technical Implementation Guides (STIGs) - Group Policy Objects</a>"
+        },
+        {
+          "title": "<a href=\"https://www.bsi.bund.de/EN/Topics/Cyber-Security/Recommendations/SiSyPHuS_Win10/AP11/SiSyPHuS_AP11.html\">BSI SiSyPHuS Win10: Windows 10 Hardening Guideline</a>"
+        },
+        {
+          "title": "<a href=\"https://www.hass.de/content/setup-microsoft-windows-or-iis-ssl-perfect-forward-secrecy-and-tls-12\">Setup Microsoft Windows or IIS for SSL Perfect Forward Secrecy and TLS 1.2</a>"
+        },
+        {
+          "title": "<a href=\"https://www.nartac.com/Products/IISCrypto/\">Nartac Software - IIS Crypto</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls\">Transport Layer Security (TLS) best practices with the .NET Framework</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/windows/win32/secauthn/tls-cipher-suites-in-windows-server-2022\">TLS Cipher Suites in Windows Server 2022</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/windows-server/security/tls/tls-registry-settings\">Transport Layer Security (TLS) registry settings</a>"
+        },
+        {
+          "title": "<a href=\"https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox/\">Windows Defender Antivirus can now run in a sandbox</a>"
+        },
+        {
+          "title": "<a href=\"https://support.microsoft.com/en-us/topic/kb5005010-restricting-installation-of-new-printer-drivers-after-applying-the-july-6-2021-updates-31b91c02-05bc-4ada-a7ea-183b129578a7\">KB5005010: Restricting installation of new printer drivers after applying the July 6, 2021 updates</a>"
+        },
+        {
+          "title": "<a href=\"https://admx.help/\">admx.help - Group Policy Administrative Templates Catalog</a>"
+        },
+        {
+          "title": "<a href=\"https://techcommunity.microsoft.com/t5/itops-talk-blog/how-to-defend-users-from-interception-attacks-via-smb-client/ba-p/1494995\">How to Defend Users from Interception Attacks via SMB Client Defense</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/powershell/scripting/whats-new/migrating-from-windows-powershell-51-to-powershell-7\">Migrating from Windows PowerShell 5.1 to PowerShell 7</a>"
+        },
+        {
+          "title": "<a href=\"https://support.microsoft.com/en-us/office/data-security-and-python-in-excel-33cc88a4-4a87-485e-9ff9-f35958278327\">Data security and Python in Excel</a>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

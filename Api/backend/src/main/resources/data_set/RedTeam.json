@@ -1,0 +1,130 @@
+{
+  "id": 173,
+  "header": "RedTeam",
+  "topicList": [
+    "⚜️ Aภl๏miuภuຮ ⚜️",
+    "RED TEAM ENGAGEMENT GOAL PLANNING",
+    "Shr3dKit Red Team Tool Kit"
+  ],
+  "itemGroups": [
+    {
+      "topic": "⚜️ Aภl๏miuภuຮ ⚜️",
+      "items": [
+        {
+          "title": "<img align=\"center\" src=\"https://user-images.githubusercontent.com/51442719/172729066-1293d382-4a31-4f03-8c23-ab0ea5f611a0.png\" width=\"100\"/><br/><br/><br/><br/><br/><br/>"
+        },
+        {
+          "topic": "There is not a set standard of a CONOPS document;",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "RED TEAM ENGAGEMENT GOAL PLANNING",
+      "items": [
+        {
+          "topic": "COMMON GOALS: MEASURE AND OBSERVE ...",
+          "items": [
+            {
+              "title": "A THREAT’S ABILITY TO ACCESS TO COMMON AND RESTRICTED AREAS (PHYSICAL)"
+            },
+            {
+              "title": "What ability does a threat have to access common areas?"
+            },
+            {
+              "title": "What ability does a threat have to access restricted areas?"
+            },
+            {
+              "title": "Can a threat use access gained to enable cyber capabilities?"
+            },
+            {
+              "title": "<p>What impacts can a threat have through gained access?</p>"
+            },
+            {
+              "title": "<p>A THREAT’S ABILITY TO ACCESS KEY/CRITICAL SYSTEMS</p>"
+            },
+            {
+              "title": "Can a threat access key/critical systems?"
+            },
+            {
+              "title": "<p>What impacts can a threat have on key/critical systems?</p>"
+            },
+            {
+              "title": "<p>A THREAT’S ABILITY TO MOVE FREELY THROUGHOUT A NETWORK</p>"
+            },
+            {
+              "title": "<p>What ability does a threat have to freely move throughout a network?</p>"
+            },
+            {
+              "title": "<p>A THREAT’S ABILITY TO GAIN DOMAIN WIDE AND LOCAL ADMINISTRATIVE ACCESS?</p>"
+            },
+            {
+              "title": "What ability does a threat have to gain local administrative access?"
+            },
+            {
+              "title": "What ability does a threat have to gain domain administrative access?"
+            },
+            {
+              "title": "<p>What ability does a threat have to gain elevated access?</p>"
+            },
+            {
+              "title": "<p>A THREAT’S ABILITY TO ACCESS OR IDENTIFY SENSITIVE INFORMATION</p>"
+            },
+            {
+              "title": "What ability does a threat have to access sensitive information?"
+            },
+            {
+              "title": "<p>What ability does a threat have to identify sensitive information?</p>"
+            },
+            {
+              "title": "<p>A THREAT’S ABILITY TO EXFILTRATE DATA OUTSIDE AN ORGANIZATION</p>"
+            },
+            {
+              "title": "What ability does a threat have to exfiltrate data outside an organization?"
+            },
+            {
+              "title": "<p>How much data must be exfiltrated to impact an organization?</p>"
+            },
+            {
+              "title": "<p>A THREAT’S ABILITY TO ACT UNDETECTED FOR A GIVEN TIME FRAME</p>"
+            },
+            {
+              "title": "How long can a threat go undetected?"
+            },
+            {
+              "title": "Can a threat achieve its goals undetected?"
+            },
+            {
+              "title": "<p>What must a threat do to stimulate a reaction from an organization?</p>"
+            },
+            {
+              "title": "<p>A THREAT’S ABILITY TO PERFORM OPERATIONAL IMPACTS</p>"
+            },
+            {
+              "title": "What impacts can a threat perform against an organization?"
+            },
+            {
+              "title": "How can a threat affect X?<hr/>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Shr3dKit Red Team Tool Kit",
+      "items": [
+        {
+          "title": "<blockquote>\n<p><img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/174849801-19d7b9fd-6c34-4d73-84f1-9707cf639cfb.png\"/></p>\n<h3>This tool kit is very much influenced by infosecn1nja's kit. Use this script to grab majority of the repos.</h3>\n<h4>NOTE: hard coded in /opt and made for Kali Linux</h4>"
+        },
+        {
+          "title": "<h4>Total Size (so far): 2.5+Gb</h4>\n\n</blockquote>"
+        },
+        {
+          "topic": "This tool kit is very much influenced by infosecn1nja's kit. Use this script to grab majority of the repos.",
+          "items": []
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

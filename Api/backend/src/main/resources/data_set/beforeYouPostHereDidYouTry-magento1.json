@@ -1,0 +1,181 @@
+{
+  "id": 24,
+  "header": "beforeYouPostHereDidYouTry-magento1",
+  "topicList": [
+    "Table of contents",
+    "Basic checks when running into any issue",
+    "Issue-specific solutions"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of contents",
+      "items": [
+        {
+          "title": "<ol>\n<li><a href=\"#basic-debugging\">Basic debugging steps</a>"
+        },
+        {
+          "title": "<a href=\"#emails-not-sending\">Emails not sending</a>"
+        },
+        {
+          "title": "<a href=\"#productimages-not-displaying\">Product images not displaying</a>"
+        },
+        {
+          "title": "<a href=\"#cronjob-not-running\">Cronjob not running</a>"
+        },
+        {
+          "title": "<a href=\"#applying-patches-without-ssh\">Applying patches without SSH</a>"
+        },
+        {
+          "title": "<a href=\"#form-field-validation\">Form field validation</a></li>\n</ol><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Basic checks when running into any issue",
+      "items": [
+        {
+          "title": "<p>Thanks to an excellent answer by Ben Lessani (http://magento.stackexchange.com/a/429/50 &lt; go upvote it) we have a basic checklist for any bug you run into.</p>"
+        },
+        {
+          "topic": "Logging",
+          "items": [
+            {
+              "title": "<p>Always check the Magento logs in <code>var/log/...</code>, also make sure it's turned on under <code>System &gt; Configuration &gt; Developer &gt; Log Settings</code> and check the PHP and other related logs which are probably either located in your webshops root folder or in the <code>/var/logs/</code> folder on the server.</p><p>Also check your developer console for any error logging on the frontend. It might be a javascript issue.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Enable PHP Errors",
+          "items": [
+            {
+              "title": "<p>This is key to most issues. For security or other reasons, PHP error display could likely be disabled by default by your PHP configuration.</p><p>You can enable errors with a more permanent solution, or merely something more temporary.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Enable Developer Mode",
+          "items": [
+            {
+              "title": "<p>When you've had an error and suddenly hit the \"Error Report\" page, and been given a seemingly useless error string like <code>1184257287824</code> - you've got a few options.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Check your permissions",
+          "items": [
+            {
+              "title": "<p>Incorrect permissions will cause a wealth of problems, a lot of which are not that easy to find at first glance. </p><blockquote>\n<p>For example.<br/>\nIf PHP cannot write to the <code>./media</code> directory and you have JS combine enabled - Magento is unable to generate the combined file and associated unique URI for the media. So instead, what you'll find in your browser source code is a full server path to the media file\n<code>/home/path/public_html/media/xxx</code></p>\n</blockquote><p>Otherwise, the site can appear to be functioning as normal - with no critical errors actually visible.</p><p><em>Please bear in mind, this practice is secure for dedicated hosting but may present security issues with shared hosting if the Apache process isn’t chroot’ed per user.</em></p><p>In our example, the SSH/FTP user is <code>sonassi</code>, the Apache user is <code>apache</code> and the group is <code>apache</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Revert theme to default",
+          "items": [
+            {
+              "title": "<p>Its possible that either your theme or package is responsible for this issue. Reverting back to a vanilla Magento theme is a quick way to find out. </p><p>*<em>This comes with the caveat that some modules may be dependent on certain theme features</em></p><p>Rather than change anything via the admin panel, it is much simpler to merely rename the offending directories.</p><p><strong>Via SSH</strong></p><pre><code>mv ./app/design/frontend/myBrokenTheme{,.tmp}\nmv ./skin/frontend/myBrokenTheme{,.tmp}\n</code></pre><p>Or via your FTP client, traverse and rename your package to something else. eg. <code>myBrokenTheme.tmp</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Disable local modules",
+          "items": [
+            {
+              "title": "<p>By default, Magento defines the PHP include path to load classes in the following order</p><pre><code>Local &gt; Community &gt; Core\n</code></pre><blockquote>\n<p>If a file is in Local - load it and do no more.<br/>\nIf a file is in community - load it and do no more.<br/>\nIf a file can't be found anywhere else - load it from the core.  </p>\n</blockquote><p>Again, rather than disable modules via the Magento admin panel, it is more practical to do this at a file level. </p><p>Typically, to disable a module the \"proper\" way, you would edit the respective <code>./app/etc/modules/MyModule.xml</code> file and set <code>&lt;active&gt;false&lt;/active&gt;</code> - however, this doesn't actually prevent a class from loading.</p><p>If another class extends a given class in a module (ignoring any Magento dependency declarations), it will still be loaded - regardless of whether the extension is disabled or not. </p><p>So again, the best means to disable an extension is to rename the directory.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Issue-specific solutions",
+      "items": [
+        {
+          "topic": "Emails not sending",
+          "items": [
+            {
+              "title": "<blockquote>\n<p>My (transactional) emails are not being sent</p>\n</blockquote><ol>\n<li>Are there any emails sent or just not the ones from the queue"
+            },
+            {
+              "title": "Did you check the queue table if the e-mails are added to the queue correctly?"
+            },
+            {
+              "title": "Do you use an module for sending emails?"
+            },
+            {
+              "title": "Are you sending email via SMTP or Sendgrid etc and if so, is the SMTP or service working properly?"
+            },
+            {
+              "title": "Did you check if contact form email is sending, is it just the transactional emails?"
+            },
+            {
+              "title": "If sending via localhost, try to create a test script with the following code <code>&lt;?php mail('your@email.com', 'Test email', 'Test email'); ?&gt;</code> in your magento root and execute it from browser."
+            },
+            {
+              "title": "Did you check the mail log created by your server? Are the emails in there?"
+            },
+            {
+              "title": "Check \"Spam\" folder in your email account.</li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "Product images not displaying",
+          "items": [
+            {
+              "title": "<blockquote>\n<p>Product images are not displaying on the front end </p>\n</blockquote><ol>\n<li>Check file permissions on <code>media</code> folder (775 for directory and 664 for files)"
+            },
+            {
+              "title": "Check if the file owner is correct (could be <code>root:root</code>)"
+            },
+            {
+              "title": "Flush first image cache and then regular cache</li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "Cronjob not running",
+          "items": [
+            {
+              "title": "<blockquote>\n<p>One or more, or all cronjobs in Magento fail to run </p>\n</blockquote><ol>\n<li>Install <a href=\"https://github.com/AOEpeople/Aoe_Scheduler/\">Aoe Scheduler</a> to an overview of tasks"
+            },
+            {
+              "title": "Empty the <code>cron_schedule</code> table and ensure Magento rebuilds it"
+            },
+            {
+              "title": "Check config XMLs for syntax errors, a syntax error might cause cronjobs not to be picked up"
+            },
+            {
+              "title": "Check logs and Aoe Scheduler for errors thrown in cronjobs. If one fails, the ones afterwards will too."
+            },
+            {
+              "title": "Call the cronjob method directly from a script (<code>[Namespace]_[Module]_Model_Cron::theMethod()</code>). Does it execute like expected?"
+            },
+            {
+              "title": "Check if the cronjob in Linux has any issues using this answer http://stackoverflow.com/a/2264897/387136"
+            },
+            {
+              "title": "For magento 1.8+ check if PHP function <code>shell_exec</code> is not disabled in php.ini</li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "Applying patches without SSH",
+          "items": [
+            {
+              "title": "<ol>\n<li>Do it locally and then deploy the changed files to the server (prefered with git, capistrano or something alike)</li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "Form field validation",
+          "items": [
+            {
+              "title": "<p>Magento offers a full Javascript validation library out of the box. These validations can be used by adding a class to an input field.</p><p>Below a validation for E-mail addresses.\n```html</p><form action=\"\" id=\"some-form\" method=\"post\" name=\"some-form\">\n[...]\n    <label for=\"samefield\"><?php echo $this->__('Some field') ?&gt; <span class=\"required\">*</span></label><br/>\n<input class=\"input-text required-entry validate-email\" id=\"samefield\" name=\"samefield\"/>\n[...]\n</form><p>```</p><p>You can find all available validations in <code>js/prototype/validation.js</code>. In Mage EE 1.14.2 / 1.9.2.2 the following are available</p><blockquote>\n<p>validate-no-html-tags\nvalidate-select\nrequired-entry\nvalidate-number\nvalidate-number-range\nvalidate-digits\nvalidate-digits-range\nvalidate-alpha\nvalidate-code\nvalidate-alphanum\nvalidate-alphanum-with-spaces\nvalidate-street\nvalidate-phoneStrict\nvalidate-phoneLax\nvalidate-fax\nvalidate-date\nvalidate-date-range\nvalidate-email\nvalidate-emailSender\nvalidate-password\nvalidate-admin-password\nvalidate-cpassword\nvalidate-both-passwords\nvalidate-url\nvalidate-clean-url\nvalidate-identifier\nvalidate-xml-identifier\nvalidate-ssn\nvalidate-zip\nvalidate-zip-international\nvalidate-date-au\nvalidate-currency-dollar\nvalidate-one-required\nvalidate-one-required-by-name\nvalidate-not-negative-number\nvalidate-zero-or-greater\nvalidate-greater-than-zero\nvalidate-state\nvalidate-new-password\nvalidate-cc-number\nvalidate-cc-type\nvalidate-cc-type-select\nvalidate-cc-exp\nvalidate-cc-cvn\nvalidate-ajax\nvalidate-data\nvalidate-css-length\nvalidate-length\nvalidate-percents\nrequired-file\nvalidate-cc-ukss</p>\n</blockquote><p>In case you need some custom validation that will require some javascript. In the template file add the following after the form</p><p>```html</p><form action=\"\" id=\"some-form\" method=\"post\" name=\"some-form\">\n[...]\n    <label for=\"samefield\"><?php echo $this->__('Some field') ?&gt; <span class=\"required\">*</span></label><br/>\n<input class=\"input-text required-entry validate-custom-value\" id=\"samefield\" name=\"samefield\"/>\n[...]\n</form><script type=\"text/javascript\">\n//<![CDATA[\n    var form = new VarienForm('some-form', true);\n    Validation.add('validate-custom-value','This field value must be \"foo\"',function(v){\n        return (v == 'foo') ? true : false ;\n    });\n//]]>   \n</script><p>```</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

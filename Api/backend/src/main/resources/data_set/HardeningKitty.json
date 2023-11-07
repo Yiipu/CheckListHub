@@ -1,0 +1,73 @@
+{
+  "id": 98,
+  "header": "HardeningKitty",
+  "topicList": [
+    "How to Run",
+    "How To Install",
+    "HardeningKitty Score",
+    "HardeningKitty Interface"
+  ],
+  "itemGroups": [
+    {
+      "topic": "How to Run",
+      "items": [
+        {
+          "title": "<p>Run the script with administrative privileges to access machine settings. For the user settings it is better to execute them with a normal user account. Ideally, the user account is used for daily work.</p><p>Download <em>HardeningKitty</em> and copy it to the target system (script and lists). Then HardeningKitty can be imported and executed:</p><p>```powershell</p><p>PS C:\\tmp&gt; Import-Module .\\HardeningKitty.psm1</p><p>PS C:\\tmp&gt; Invoke-HardeningKitty -EmojiSupport</p><pre><code>     =^._.^=\n\n    _(      )/  HardeningKitty 0.9.0-1662273740\n</code></pre><p>[*] 9/4/2022 8:54:12 AM - Starting HardeningKitty</p><p>[*] 9/4/2022 8:54:12 AM - Getting user information</p><p>[*] Hostname: DESKTOP-DG83TOD</p><p>[*] Domain: WORKGROUP</p><p>...</p><p>[<em>] [</em>] 9/4/2022 8:54:12 AM - Starting Category Account Policies</p><p>[😺] ID 1103, Store passwords using reversible encryption, Result=0, Severity=Passed</p><p>[😺] ID 1100, Account lockout threshold, Result=10, Severity=Passed</p><p>[😺] ID 1101, Account lockout duration, Result=30, Severity=Passed</p><p>...</p><p>[*] 9/4/2022 8:54:12 AM - Starting Category User Rights Assignment</p><p>[😿] ID 1200, Access this computer from the network, Result=BUILTIN\\Administrators;BUILTIN\\Users, Recommended=BUILTIN\\Administrators, Severity=Medium</p><p>...</p><p>[*] 9/4/2022 8:54:14 AM - Starting Category Administrative Templates: Printer</p><p>[🙀] ID 1764, Point and Print Restrictions: When installing drivers for a new connection (CVE-2021-34527), Result=1, Recommended=0, Severity=High</p><p>[🙀] ID 1765, Point and Print Restrictions: When updating drivers for an existing connection (CVE-2021-34527), Result=2, Recommended=0, Severity=High</p><p>...</p><p>[*] 9/4/2022 8:54:19 AM - Starting Category MS Security Guide</p><p>[😿] ID 2200, LSA Protection, Result=, Recommended=1, Severity=Medium</p><p>[😼] ID 2201, Lsass.exe audit mode, Result=, Recommended=8, Severity=Low</p><p>...</p><p>[*] 9/4/2022 8:54:25 AM - HardeningKitty is done</p><p>[*] 9/4/2022 8:54:25 AM - Your HardeningKitty score is: 4.82. HardeningKitty Statistics: Total checks: 325 - Passed: 213, Low: 33, Medium: 76, High: 3.</p><p>```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "How To Install",
+      "items": [
+        {
+          "title": "<p>First create the directory <em>HardeningKitty</em> and for every version a sub directory like <em>0.9.0</em> in a path listed in the <em>PSModulePath</em> environment variable.</p><p>Copy the module <em>HardeningKitty.psm1</em>, <em>HardeningKitty.psd1</em>, and the <em>lists</em> directory to this new directory.</p><p>```powershell</p><p>PS C:\\tmp&gt; $Version = \"0.9.0\"</p><p>PS C:\\tmp&gt; New-Item -Path $Env:ProgramFiles\\WindowsPowerShell\\Modules\\HardeningKitty\\$Version -ItemType Directory</p><p>PS C:\\tmp&gt; Copy-Item -Path .\\HardeningKitty.psd1,.\\HardeningKitty.psm1,.\\lists\\ -Destination $Env:ProgramFiles\\WindowsPowerShell\\Modules\\HardeningKitty\\$Version\\ -Recurse</p><p>```</p><p>For more information see Microsoft's article <a href=\"https://docs.microsoft.com/en-us/powershell/scripting/developer/module/installing-a-powershell-module\">Installing a PowerShell Module</a>.</p>"
+        },
+        {
+          "topic": "How to Automatically Download and Install the Latest Release",
+          "items": [
+            {
+              "title": "<p>You can use the script below to download and install the latest release of <em>HardeningKitty</em>.</p><p>```powershell</p><p>Function InstallHardeningKitty() {</p><pre><code>$Version = ((Invoke-WebRequest \"https://api.github.com/repos/0x6d69636b/windows_hardening/releases/latest\" -UseBasicParsing) | ConvertFrom-Json).Name\n\n$HardeningKittyLatestVersionDownloadLink = ((Invoke-WebRequest \"https://api.github.com/repos/0x6d69636b/windows_hardening/releases/latest\" -UseBasicParsing) | ConvertFrom-Json).zipball_url\n\n$ProgressPreference = 'SilentlyContinue'\n\nInvoke-WebRequest $HardeningKittyLatestVersionDownloadLink -Out HardeningKitty$Version.zip\n\nExpand-Archive -Path \".\\HardeningKitty$Version.zip\" -Destination \".\\HardeningKitty$Version\" -Force\n\n$Folder = Get-ChildItem .\\HardeningKitty$Version | Select-Object Name -ExpandProperty Name\n\nMove-Item \".\\HardeningKitty$Version\\$Folder\\*\" \".\\HardeningKitty$Version\\\"\n\nRemove-Item \".\\HardeningKitty$Version\\$Folder\\\"\n\nNew-Item -Path $Env:ProgramFiles\\WindowsPowerShell\\Modules\\HardeningKitty\\$Version -ItemType Directory\n\nSet-Location .\\HardeningKitty$Version\n\nCopy-Item -Path .\\HardeningKitty.psd1,.\\HardeningKitty.psm1,.\\lists\\ -Destination $Env:ProgramFiles\\WindowsPowerShell\\Modules\\HardeningKitty\\$Version\\ -Recurse\n\nImport-Module \"$Env:ProgramFiles\\WindowsPowerShell\\Modules\\HardeningKitty\\$Version\\HardeningKitty.psm1\"\n</code></pre><p>}</p><p>InstallHardeningKitty</p><p>```</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Examples",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "HardeningKitty Score",
+      "items": [
+        {
+          "title": "<p>Each Passed finding gives 4 points, a Low finding gives 2 points, a Medium finding gives 1 point and a High Finding gives 0 points.</p><p>The formula for the HardeningKitty Score is <em>(Points achieved / Maximum points) * 5 + 1</em>.</p>"
+        },
+        {
+          "topic": "Rating",
+          "items": [
+            {
+              "title": "<p>| Score | Rating Casual | Rating Professional |</p><p>| :---- | :------------ | :------------------ |</p><p>| 6 | 😹 Excellent | Excellent |</p><p>| 5 | 😺 Well done | Good |</p><p>| 4 | 😼 Sufficient | Sufficient |</p><p>| 3 | 😿 You should do better | Insufficient |</p><p>| 2 | 🙀 Weak | Insufficient |</p><p>| 1 | 😾 Bogus | Insufficient |</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "HardeningKitty Interface",
+      "items": [
+        {
+          "title": "<p><a href=\"https://github.com/ataumo\">ataumo</a> build a web based interface for HardeningKitty. The tool can be used to create your own lists and provides additional information on the hardening settings. The <a href=\"https://github.com/ataumo/policies_hardening_interface\">source code</a> is under AGPL license and there is a <a href=\"https://phi.cryptonit.fr/policies_hardening_interface/\">demo site</a>.</p>"
+        },
+        {
+          "topic": "Last Update",
+          "items": [
+            {
+              "title": "<p>HardeningKitty can be used to audit systems against the following baselines / benchmarks:</p><p>| Name | System Version    | Version  |</p><p>| :--- | :---------------- | :------  |</p><p>| 0x6d69636b Windows 10 (Machine) | 22H2 | |</p><p>| 0x6d69636b Windows 10 (User) | 22H2 | |</p><p>| BSI SiSyPHuS Windows 10 hoher Schutzbedarf Domänenmitglied (Machine) | 1809 | 1.0 |</p><p>| BSI SiSyPHuS Windows 10 hoher Schutzbedarf Domänenmitglied (User) | 1809| 1.0</p><p>| BSI SiSyPHuS Windows 10 normaler Schutzbedarf Domänenmitglied (Machine) | 1809| 1.0 |</p><p>| BSI SiSyPHuS Windows 10 normaler Schutzbedarf Domänenmitglied (User) | 1809| 1.0 |</p><p>| BSI SiSyPHuS Windows 10 normaler Schutzbedarf Einzelrechner (Machine) | 1809| 1.0 |</p><p>| BSI SiSyPHuS Windows 10 normaler Schutzbedarf Einzelrechner (User) | 1809 | 1.0 |</p><p>| CIS Microsoft Windows 10 Enterprise (Machine) | 1809 | 1.6.1 |</p><p>| CIS Microsoft Windows 10 Enterprise (User) | 1809 | 1.6.1 |</p><p>| CIS Microsoft Windows 10 Enterprise (Machine) | 1903 | 1.7.1 |</p><p>| CIS Microsoft Windows 10 Enterprise (User) | 1903 | 1.7.1 |</p><p>| CIS Microsoft Windows 10 Enterprise (Machine) | 1909 | 1.8.1 |</p><p>| CIS Microsoft Windows 10 Enterprise (User) | 1909 | 1.8.1 |</p><p>| CIS Microsoft Windows 10 Enterprise (Machine) | 2004 | 1.9.1 |</p><p>| CIS Microsoft Windows 10 Enterprise (User) | 2004 | 1.9.1 |</p><p>| CIS Microsoft Windows 10 Enterprise (Machine) | 20H2 | 1.10.1 |</p><p>| CIS Microsoft Windows 10 Enterprise (User) | 20H2 | 1.10.1 |</p><p>| CIS Microsoft Windows 10 Enterprise (Machine) | 21H1 | 1.11.0 |</p><p>| CIS Microsoft Windows 10 Enterprise (User) | 21H1 | 1.11.0 |</p><p>| CIS Microsoft Windows 10 Enterprise (Machine) | 21H2 | 1.12.0 |</p><p>| CIS Microsoft Windows 10 Enterprise (User) | 21H2 | 1.12.0 |</p><p>| CIS Microsoft Windows 10 Enterprise (Machine) | 22H2 | 2.0.0 |</p><p>| CIS Microsoft Windows 10 Enterprise (User) | 22H2 | 2.0.0 |</p><p>| CIS Microsoft Windows 11 Enterprise (Machine) | 21H2 | 1.0.0 |</p><p>| CIS Microsoft Windows 11 Enterprise (User) | 21H2 | 1.0.0 |</p><p>| CIS Microsoft Windows 11 Enterprise (Machine) | 22H2 | 2.0.0 |</p><p>| CIS Microsoft Windows 11 Enterprise (User) | 22H2 | 2.0.0 |</p><p>| CIS Microsoft Windows Server 2012 R2 (Machine) | R2 | 2.4.0 |</p><p>| CIS Microsoft Windows Server 2012 R2 (User) | R2 | 2.4.0 |</p><p>| CIS Microsoft Windows Server 2012 R2 (Machine) | R2 | 2.6.0 |</p><p>| CIS Microsoft Windows Server 2012 R2 (User) | R2 | 2.6.0 |</p><p>| CIS Microsoft Windows Server 2016 (Machine) | 1607 | 1.2.0 |</p><p>| CIS Microsoft Windows Server 2016 (User) | 1607 | 1.2.0 |</p><p>| CIS Microsoft Windows Server 2016 (Machine) | 1607 | 1.3.0 |</p><p>| CIS Microsoft Windows Server 2016 (User) | 1607 | 1.3.0 |</p><p>| CIS Microsoft Windows Server 2016 (Machine) | 1607 | 2.0.0 |</p><p>| CIS Microsoft Windows Server 2016 (User) | 1607 | 2.0.0 |</p><p>| CIS Microsoft Windows Server 2019 (Machine) | 1809 | 1.1.0 |</p><p>| CIS Microsoft Windows Server 2019 (User) | 1809 | 1.1.0 |</p><p>| CIS Microsoft Windows Server 2019 (Machine) | 1809 | 1.2.1 |</p><p>| CIS Microsoft Windows Server 2019 (User) | 1809 | 1.2.1 |</p><p>| CIS Microsoft Windows Server 2019 (Machine) | 1809 | 2.0.0 |</p><p>| CIS Microsoft Windows Server 2019 (User) | 1809 | 2.0.0 |</p><p>| CIS Microsoft Windows Server 2022 (Machine) | 21H2 | 1.0.0 |</p><p>| CIS Microsoft Windows Server 2022 (User) | 21H2 | 1.0.0 |</p><p>| CIS Microsoft Windows Server 2022 (Machine) | 22H2 | 2.0.0 |</p><p>| CIS Microsoft Windows Server 2022 (User) | 22H2 | 2.0.0 |</p><p>| DoD Microsoft Windows 10 STIG (Machine) | 20H2 | v2r1 |</p><p>| DoD Microsoft Windows 10 STIG (User) | 20H2 | v2r1 |</p><p>| DoD Windows Server 2019 Domain Controller STIG (Machine) | 20H2 | v2r1 |</p><p>| DoD Windows Server 2019 Domain Controller STIG (User) | 20H2 | v2r1 |</p><p>| DoD Windows Server 2019 Member Server STIG (Machine) | 20H2 | v2r1 |</p><p>| DoD Windows Server 2019 Member Server STIG (User) | 20H2 | v2r1 |</p><p>| DoD Windows Defender Antivirus STIG | 20H2 | v2r1 |</p><p>| DoD Windows Firewall STIG | 20H2 | v1r7 |</p><p>| Microsoft Security baseline for Microsoft Edge | 87 | Final |</p><p>| Microsoft Security baseline for Microsoft Edge | 88, 89, 90, 91 | Final |</p><p>| Microsoft Security baseline for Microsoft Edge | 92 | Final |</p><p>| Microsoft Security baseline for Microsoft Edge | 93, 94 | Final |</p><p>| Microsoft Security baseline for Microsoft Edge | 95 | Final |</p><p>| Microsoft Security baseline for Microsoft Edge | 96 | Final |</p><p>| Microsoft Security baseline for Microsoft Edge | 97 | Final |</p><p>| Microsoft Security baseline for Microsoft Edge | 98, 99, 100, 101, 102, 103, 104, 105, 106 | Final |</p><p>| Microsoft Security baseline for Microsoft Edge | 107, 108, 109, 110, 111 | Final |</p><p>| Microsoft Security baseline for Microsoft Edge | 112, 113 | Final |</p><p>| Microsoft Security baseline for Microsoft Edge | 114 | Final |</p><p>| Microsoft Security baseline for Windows 10 | 2004 | Final |</p><p>| Microsoft Security baseline for Windows 10 | 20H2, 21H1 | Final |</p><p>| Microsoft Security baseline for Windows 10 | 21H2 | Final |</p><p>| Microsoft Security baseline for Windows 10 (Machine) | 22H2 | Final |</p><p>| Microsoft Security baseline for Windows 10 (User) | 22H2 | Final |</p><p>| Microsoft Security baseline for Windows 11 | 21H2 | Final |</p><p>| Microsoft Security baseline for Windows 11 (Machine) | 22H2 | Final |</p><p>| Microsoft Security baseline for Windows 11 (User) | 22H2 | Final |</p><p>| Microsoft Security baseline for Windows Server (DC) | 2004 | Final |</p><p>| Microsoft Security baseline for Windows Server (Member) | 2004 | Final |</p><p>| Microsoft Security baseline for Windows Server (DC) | 20H2 | Final |</p><p>| Microsoft Security baseline for Windows Server (Member) | 20H2 | Final |</p><p>| Microsoft Security baseline for Windows Server 2022 (DC) | 21H2 | Final |</p><p>| Microsoft Security baseline for Windows Server 2022 (Member) | 21H2 | Final |</p><p>| Microsoft Security baseline for Office 365 ProPlus (Machine) | Sept 2019 | Final |</p><p>| Microsoft Security baseline for Office 365 ProPlus (User) | Sept 2019 | Final |</p><p>| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (Machine) | v2104, v2106 | Final |</p><p>| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (User) | v2104, v2106 | Final |</p><p>| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (Machine) | v2112 | Final |</p><p>| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (User) | v2112 | Final |</p><p>| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (Machine) | v2206 | Final |</p><p>| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (User) | v2206 | Final |</p><p>| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (Machine) | v2306 | Final |</p><p>| Microsoft Security Baseline for Microsoft 365 Apps for enterprise (User) | v2306 | Final |</p><p>| Microsoft Windows Server TLS Settings | 1809 | 1.0 |</p><p>| Microsoft Windows Server TLS Settings (Future Use with TLSv1.3) | 1903 | 1.0 |</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

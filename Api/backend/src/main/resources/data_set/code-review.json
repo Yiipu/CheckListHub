@@ -1,0 +1,232 @@
+{
+  "id": 50,
+  "header": "code-review",
+  "topicList": [
+    "Phase 1: The Light Pass",
+    "Phase 2: The Contextual Pass",
+    "References"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Phase 1: The Light Pass",
+      "items": [
+        {
+          "topic": "General",
+          "items": [
+            {
+              "title": "Code formatting has been used"
+            },
+            {
+              "title": "Line indentation char and line breaks"
+            },
+            {
+              "title": "Only required files are changed"
+            },
+            {
+              "title": "Disagreement between code and specification"
+            },
+            {
+              "title": "Comments in source code are included"
+            },
+            {
+              "title": "Documentation of the implementation is created or updated"
+            },
+            {
+              "title": "Does not contain any unimplemented areas like //TODO or //FIXME"
+            },
+            {
+              "title": "Optimistic or undefensive programming"
+            }
+          ]
+        },
+        {
+          "topic": "Unclear Or Messy",
+          "items": [
+            {
+              "title": "Verify correct and meaningful naming"
+            },
+            {
+              "title": "Magic numbers and values"
+            },
+            {
+              "title": "Variables used for more than one purpose"
+            },
+            {
+              "title": "Minimized variable, method and class scopes"
+            },
+            {
+              "title": "Method signature"
+            },
+            {
+              "title": "Packing too much into one line"
+            },
+            {
+              "title": "Complex IF conditions, IF instead of Switch"
+            },
+            {
+              "title": "Cyclomatic complexity"
+            }
+          ]
+        },
+        {
+          "topic": "Error Handling",
+          "items": [
+            {
+              "title": "Use exceptions only for unexpected errors"
+            },
+            {
+              "title": "Avoid empty catch blogs"
+            },
+            {
+              "title": "Error handler over-catches exceptions and aborts current flow or application"
+            },
+            {
+              "title": "Error handler is not implemented e.g. contains TODO, FIXME"
+            }
+          ]
+        },
+        {
+          "topic": "Java",
+          "items": [
+            {
+              "title": "Review class imports"
+            },
+            {
+              "title": "Wrong use of == and equals()"
+            },
+            {
+              "title": "Wrong use of collection data types, like List instead of Set"
+            },
+            {
+              "title": "Object contract errors (e.g. equals and hashCode)"
+            },
+            {
+              "title": "Exposure to immutable data types"
+            }
+          ]
+        },
+        {
+          "topic": "Git Commit Message",
+          "items": [
+            {
+              "title": "Describes what and why it has changed"
+            },
+            {
+              "title": "Verify correct format"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Phase 2: The Contextual Pass",
+      "items": [
+        {
+          "topic": "Functional programming",
+          "items": [
+            {
+              "title": "Prefer immutability"
+            },
+            {
+              "title": "Minimize side-effects and perform them in a central place"
+            },
+            {
+              "title": "Do not rely on global state"
+            },
+            {
+              "title": "Plan for composing functions"
+            },
+            {
+              "title": "Keep method signatures as simple as possible"
+            },
+            {
+              "title": "Write generic functions"
+            },
+            {
+              "title": "Avoid type specific functions"
+            }
+          ]
+        },
+        {
+          "topic": "Code Structure",
+          "items": [
+            {
+              "title": "Understandability of written changes"
+            },
+            {
+              "title": "No logical errors"
+            },
+            {
+              "title": "Max usage of static type compiler checking"
+            },
+            {
+              "title": "Does not violate architecture guidelines, design principles or implementation patterns"
+            },
+            {
+              "title": "Are there any alternative implementations that increase simplicity, readability or maintainability"
+            },
+            {
+              "title": "Check edge cases in functions"
+            },
+            {
+              "title": "Any better approach to use a framework, library or class exists?"
+            },
+            {
+              "title": "Look for omissions: Shouldn't this component also do X?"
+            },
+            {
+              "title": "Enough log statements to find bugs quickly"
+            }
+          ]
+        },
+        {
+          "topic": "External Systems",
+          "items": [
+            {
+              "title": "Reduce amount of calls / Optimize calls to external systems"
+            }
+          ]
+        },
+        {
+          "topic": "Tests",
+          "items": [
+            {
+              "title": "Unit-tests and End 2 End Tests are added and test all functionality"
+            },
+            {
+              "title": "Test coverage of changed lines and critical path"
+            }
+          ]
+        },
+        {
+          "topic": "Code-Review Commenting",
+          "items": [
+            {
+              "title": "Adding comments: Be polite and constructive"
+            },
+            {
+              "title": "Add positive comments for good code e.g. unusually elegant solution, creative solution, great design"
+            }
+          ]
+        },
+        {
+          "topic": "Finalizing",
+          "items": [
+            {
+              "title": "Sign of the pull request"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "References",
+      "items": [
+        {
+          "title": "<p><a href=\"https://github.com/thoughtbot/guides/tree/master/code-review\">Code Review</a></p><p><a href=\"https://medium.freecodecamp.com/code-briefing-what-does-it-mean-when-code-is-easy-to-reason-about-64453e71b751#.f0136qxo3\">Code Briefing: What does it mean when code is “easy to reason about”?</a></p><p><a href=\"https://codetrips.com/2015/01/25/do-not-allow-bad-smells-in-your-code/\">Do Not Allow Bad Smells In Your Code</a></p><p><a href=\"https://medium.com/@f8/writing-great-git-commit-messages-a-revision-b86311c610e#.b114xxhjv\">Writing Great Git Commit Messages; A Revision</a></p><p><a href=\"https://medium.com/@mrjoelkemp/giving-better-code-reviews-16109e0fdd36\">Giving better code reviews</a></p><p><a href=\"https://rainsoft.io/coding-like-shakespeare-practical-function-naming-conventions/\">Coding like Shakespeare: practical function naming conventions</a></p><p><a href=\"https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-yuan.pdf\">Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-Intensive Systems</a></p><p><a href=\"https://msdn.microsoft.com/en-us/library/ee658093.aspx\">Software Architecture and Design</a></p><p><a href=\"https://www.youtube.com/watch?v=llGgO74uXMI\">YouTube: Core Design Principles for Software Developers</a></p><p><a href=\"https://github.com/torvalds/subsurface-for-dirk/commit/b6590150d68df528efd40c889ba6eea476b39873\">Information about properly formatted commit messages</a></p><p><a href=\"https://martinfowler.com/articles/replaceThrowWithNotification.html\">Replacing Throwing Exceptions with Notification in Validations</a></p><p><a href=\"https://medium.com/javascript-scene/the-dao-of-immutability-9f91a70c88cd\">The Dao of Immutability</a></p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

@@ -1,0 +1,461 @@
+{
+  "id": 155,
+  "header": "phperCheckList",
+  "topicList": [
+    "基础算法",
+    "数据结构",
+    "计算机网络",
+    "OOP相关",
+    "PHP基础",
+    "PHP规范",
+    "PHP核心",
+    "MYSQL",
+    "Nginx",
+    "负载均衡",
+    "Redis",
+    "AMQP",
+    "ElasticSearch"
+  ],
+  "itemGroups": [
+    {
+      "topic": "基础算法",
+      "items": [
+        {
+          "title": "排序"
+        }
+      ]
+    },
+    {
+      "topic": "数据结构",
+      "items": [
+        {
+          "title": "数组"
+        },
+        {
+          "title": "栈"
+        },
+        {
+          "title": "队列"
+        },
+        {
+          "title": "链表"
+        },
+        {
+          "title": "树"
+        },
+        {
+          "title": "图"
+        },
+        {
+          "title": "堆"
+        },
+        {
+          "title": "散列表"
+        }
+      ]
+    },
+    {
+      "topic": "计算机网络",
+      "items": [
+        {
+          "title": "OSI七层模型"
+        },
+        {
+          "title": "TCP/IP五层模型"
+        },
+        {
+          "title": "TCP相关"
+        },
+        {
+          "title": "三次握手，四次关闭"
+        },
+        {
+          "title": "HTTP"
+        },
+        {
+          "title": "方法"
+        },
+        {
+          "title": "GET"
+        },
+        {
+          "title": "POST"
+        },
+        {
+          "title": "PUT"
+        },
+        {
+          "title": "DELETE"
+        },
+        {
+          "title": "PATCH"
+        },
+        {
+          "title": "HEADER"
+        },
+        {
+          "title": "OPTIONS"
+        },
+        {
+          "title": "TRACE</li>\n</ul>"
+        },
+        {
+          "title": "HTTP的关于缓存的头"
+        },
+        {
+          "title": "HTTP的关于验证的头"
+        }
+      ]
+    },
+    {
+      "topic": "OOP相关",
+      "items": [
+        {
+          "title": "三大特性"
+        },
+        {
+          "title": "继承"
+        },
+        {
+          "title": "封装"
+        },
+        {
+          "title": "多态"
+        },
+        {
+          "title": "重写"
+        },
+        {
+          "title": "重载</li>\n</ul>"
+        },
+        {
+          "title": "五大原则"
+        },
+        {
+          "title": "单一职责"
+        },
+        {
+          "title": "接口隔离"
+        },
+        {
+          "title": "开放-封闭"
+        },
+        {
+          "title": "替换原则"
+        },
+        {
+          "title": "依赖倒置原则"
+        },
+        {
+          "title": "面向接口编程"
+        },
+        {
+          "title": "interface 与abstract class 区别"
+        },
+        {
+          "title": "trait的作用"
+        },
+        {
+          "title": "PHP如何实现重载"
+        },
+        {
+          "title": "GOF 23设计模式"
+        },
+        {
+          "title": "创造型"
+        },
+        {
+          "title": "工厂方法"
+        },
+        {
+          "title": "抽象工厂"
+        },
+        {
+          "title": "建造者"
+        },
+        {
+          "title": "原型"
+        },
+        {
+          "title": "单例</li>\n</ul>"
+        },
+        {
+          "title": "结构型"
+        },
+        {
+          "title": "适配器"
+        },
+        {
+          "title": "桥接"
+        },
+        {
+          "title": "组合"
+        },
+        {
+          "title": "装饰"
+        },
+        {
+          "title": "外观"
+        },
+        {
+          "title": "享元"
+        },
+        {
+          "title": "代理</li>\n</ul>"
+        },
+        {
+          "title": "行为型"
+        },
+        {
+          "title": "解释器"
+        },
+        {
+          "title": "模版方法"
+        },
+        {
+          "title": "责任链"
+        },
+        {
+          "title": "命令"
+        },
+        {
+          "title": "迭代器"
+        },
+        {
+          "title": "中介者"
+        },
+        {
+          "title": "备忘录"
+        },
+        {
+          "title": "观察者"
+        },
+        {
+          "title": "状态"
+        },
+        {
+          "title": "策略"
+        },
+        {
+          "title": "访问者</li>\n</ul>"
+        },
+        {
+          "title": "MVC"
+        }
+      ]
+    },
+    {
+      "topic": "PHP基础",
+      "items": [
+        {
+          "title": "魔术方法"
+        },
+        {
+          "title": "__construct()"
+        },
+        {
+          "title": "__destruct()"
+        },
+        {
+          "title": "__call()"
+        },
+        {
+          "title": "__callStatic()"
+        },
+        {
+          "title": "__get()"
+        },
+        {
+          "title": "__set()"
+        },
+        {
+          "title": "__isset()"
+        },
+        {
+          "title": "__unset()"
+        },
+        {
+          "title": "__sleep()"
+        },
+        {
+          "title": "__wakeup()"
+        },
+        {
+          "title": "__toString()"
+        },
+        {
+          "title": "__invoke()"
+        },
+        {
+          "title": "__set_state()"
+        },
+        {
+          "title": "__clone()"
+        },
+        {
+          "title": "__debugInfo()"
+        },
+        {
+          "title": "魔术常量"
+        },
+        {
+          "title": "__LINE__"
+        },
+        {
+          "title": "__FILE__"
+        },
+        {
+          "title": "__DIR__"
+        },
+        {
+          "title": "__FUNCTION__"
+        },
+        {
+          "title": "__CLASS__"
+        },
+        {
+          "title": "__TRAIT__"
+        },
+        {
+          "title": "__METHOD__"
+        },
+        {
+          "title": "__NAMESPACE__"
+        },
+        {
+          "title": "超全局变量"
+        },
+        {
+          "title": "$_SERVER"
+        },
+        {
+          "title": "$_REQUEST"
+        },
+        {
+          "title": "$_POST"
+        },
+        {
+          "title": "$_GET"
+        },
+        {
+          "title": "$_FILES"
+        },
+        {
+          "title": "$_ENV"
+        },
+        {
+          "title": "$_COOKIE"
+        },
+        {
+          "title": "$_SESSION"
+        }
+      ]
+    },
+    {
+      "topic": "PHP规范",
+      "items": [
+        {
+          "title": "基础代码规范(PSR1)"
+        },
+        {
+          "title": "代码风格指导(PSR2)"
+        },
+        {
+          "title": "日志接口(PSR3)"
+        },
+        {
+          "title": "自动加载规范(PSR4)"
+        },
+        {
+          "title": "HTTP消息接口(PSR7)"
+        },
+        {
+          "title": "容器接口(PSR11)"
+        }
+      ]
+    },
+    {
+      "topic": "PHP核心",
+      "items": [
+        {
+          "topic": "体系架构",
+          "items": [
+            {
+              "title": "<p><img alt=\"image\" src=\"http://images0.cnblogs.com/blog/511662/201311/22213110-f17b10a2fbd4428abd6c806c33fc7d10.png\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "PHP生命周期",
+          "items": [
+            {
+              "title": "<p><img alt=\"image\" src=\"https://github.com/pangudashu/php7-internal/raw/master/img/php.png\"/></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "MYSQL",
+      "items": [
+        {
+          "title": "存储引擎"
+        },
+        {
+          "title": "索引类型  b+tree hash 数据结构"
+        },
+        {
+          "title": "执行计划"
+        }
+      ]
+    },
+    {
+      "topic": "Nginx",
+      "items": [
+        {
+          "title": "用途: 反向代理，lb，"
+        },
+        {
+          "title": "fastcig配置"
+        }
+      ]
+    },
+    {
+      "topic": "负载均衡",
+      "items": [
+        {
+          "title": "负载算法:轮询，加权轮询，哈希"
+        },
+        {
+          "title": "三层负载，七层负载"
+        },
+        {
+          "title": "负载均衡实现灰度发布"
+        }
+      ]
+    },
+    {
+      "topic": "Redis",
+      "items": [
+        {
+          "title": "五种数据结构"
+        },
+        {
+          "title": "Redis实现MQ"
+        },
+        {
+          "title": "Redis实现分布式事务锁"
+        }
+      ]
+    },
+    {
+      "topic": "AMQP",
+      "items": []
+    },
+    {
+      "topic": "ElasticSearch",
+      "items": []
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

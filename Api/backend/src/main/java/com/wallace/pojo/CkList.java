@@ -1,14 +1,17 @@
 package com.wallace.pojo;
 
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.annotation.*;
 
 import java.io.Serializable;
+
+import com.wallace.utils.JsonTypeHandler;
 import lombok.Data;
 
 /**
  * @TableName ck_list
  */
-@TableName(value ="ck_list")
+@TableName(value = "ck_list", autoResultMap = true)
 @Data
 public class CkList implements Serializable {
     @TableId
@@ -17,8 +20,8 @@ public class CkList implements Serializable {
     private Integer uid;
 
     private String header;
-
-    private Object checklist;
+    @TableField(typeHandler = JsonTypeHandler.class)
+    private JSONObject checklist;
     @Version
     private Integer version;
     @TableLogic

@@ -1,0 +1,67 @@
+{
+  "id": 43,
+  "header": "checklistbank",
+  "topicList": [
+    "Prerequisites",
+    "Available Scripts"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Prerequisites",
+      "items": [
+        {
+          "title": "<p>node &gt;= 14</p><p>The ChecklistBank UI is build with <a href=\"https://reactjs.org/\">React</a> using UI components from <a href=\"https://ant.design/\">Ant design</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Available Scripts",
+      "items": [
+        {
+          "title": "<p>This project was bootstrapped with <a href=\"https://github.com/facebookincubator/create-react-app\">Create React App</a>.\nIn the project directory, you can run:</p>"
+        },
+        {
+          "topic": "node writeEnums.js",
+          "items": [
+            {
+              "title": "<p>Fetch all enums and write them as json files to  <code>src/enumeration</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "npm install",
+          "items": [
+            {
+              "title": "<p>To install the package.json dependencies.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "npm start",
+          "items": [
+            {
+              "title": "<p>Runs the app in the development mode.<br/>\nOpen <a href=\"http://localhost:3000\">http://localhost:3000</a> to view it in the browser.</p><p>The page will reload if you make edits.<br/>\nYou will also see any lint errors in the console.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "npm test",
+          "items": [
+            {
+              "title": "<p>Launches the test runner in the interactive watch mode.<br/>\nSee the section about <a href=\"#running-tests\">running tests</a> for more information.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "npm run build",
+          "items": [
+            {
+              "title": "<p>Builds the app for production to the <code>build</code> folder.<br/>\nIt correctly bundles React in production mode and optimizes the build for the best performance.</p><p>The build is minified and the filenames include the hashes.<br/>\nYour app is ready to be deployed!</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

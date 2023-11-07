@@ -1,0 +1,934 @@
+{
+  "id": 92,
+  "header": "fullstack-checklist",
+  "topicList": [
+    "Web",
+    "Apps",
+    "Backend for frontend (BFF)",
+    "Shared common library",
+    "Configuration and secrets",
+    "Feature flag",
+    "Logging",
+    "Serverless",
+    "Ownership",
+    "Versioning",
+    "Database",
+    "Data warehouse",
+    "Types of communication",
+    "API definitions",
+    "API design",
+    "Service discovery",
+    "Failure and recovery",
+    "Multi tenancy",
+    "Principles",
+    "Load test",
+    "Code hygiene",
+    "Philosophy",
+    "Centralisation",
+    "Tooling",
+    "CI/CD",
+    "Deployment",
+    "Monitoring",
+    "Responsibility",
+    "Complexity of algorithms",
+    "Concurrency"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Web",
+      "items": [
+        {
+          "title": "Language: <a href=\"https://www.typescriptlang.org/\">Typescript</a> + <a href=\"https://www.w3schools.com/js/js_es6.asp\">ES6</a>.  Full stop."
+        },
+        {
+          "title": "Frameworks:"
+        },
+        {
+          "title": "<a href=\"\">React &gt;= 0.14</a> with <a href=\"https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc\">functional components</a>"
+        },
+        {
+          "title": "Get started with <a href=\"https://create-react-app.dev/docs/getting-started/\">create-react-app</a>"
+        },
+        {
+          "title": "<a href=\"https://reactjs.org/docs/hooks-intro.html\">hooks</a> and <a href=\"https://reactjs.org/docs/context.html\">context</a>, and when it gets too difficult, <a href=\"https://blog.isquaredsoftware.com/2018/03/redux-not-dead-yet/\">redux</a>"
+        },
+        {
+          "title": "<a href=\"https://jestjs.io/\">Jest</a> &gt; <a href=\"https://mochajs.org/\">Mocha</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/DevExpress/testcafe\">TestCafe</a> &gt; <a href=\"https://www.cypress.io/\">Cypress</a> &gt; <a href=\"https://www.selenium.dev/\">Selenium</a></li>\n</ul>"
+        },
+        {
+          "title": "Shared common library.  <a href=\"https://bit.dev/\">bit.dev</a> has good UI and doubles as a package repo.  <a href=\"https://github.com/lerna/lerna\">lerna</a> may be hard to use."
+        },
+        {
+          "title": "<a href=\"https://yarnpkg.com/\">yarn</a> &gt; <a href=\"https://www.npmjs.com/\">npm</a>"
+        },
+        {
+          "title": "<a href=\"https://webpack.js.org/\">webpack</a> for bundling"
+        },
+        {
+          "title": "<a href=\"https://graphql.org/\">GraphQL</a> for data querying"
+        },
+        {
+          "title": "<a href=\"https://github.com/axios/axios\">axios</a> for HTTP requests"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Single_sign-on\">Single sign-on (SSO)</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Progressive_web_application\">Progressive web apps (PWA)</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Deep_linking\">Deep linking</a>: a page can be addressed and shared by a link"
+        }
+      ]
+    },
+    {
+      "topic": "Apps",
+      "items": [
+        {
+          "title": "<a href=\"https://reactnative.dev/\">ReactNative</a>"
+        },
+        {
+          "title": "<a href=\"https://flutter.dev/\">Flutter</a>"
+        },
+        {
+          "title": "Native language (Java or Swift)"
+        }
+      ]
+    },
+    {
+      "topic": "Backend for frontend (BFF)",
+      "items": [
+        {
+          "title": "<p>One <a href=\"https://samnewman.io/patterns/architectural/bff/\">BFF</a> per frontend app.</p><p>Usages:\n* Resource intensive tasks\n* Complex query/aggregation \n* Protecting FE from unstable API changes\n* <a href=\"https://auth0.com/docs/flows/concepts/auth-code\">OAuth 2 authorization code flow</a>\n* Special protocol (e.g., websocket)</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Shared common library",
+      "items": [
+        {
+          "title": "<p>The philosophy is to abstract common functionality into a shared layer for better governance and easier upgrades.</p>"
+        },
+        {
+          "title": "Middleware"
+        },
+        {
+          "title": "Context: common fields across all request flows (e.g., trace ID, caller ID)"
+        },
+        {
+          "title": "Common data types (e.g., timestamp, currency, coordinates, country code, error codes)"
+        },
+        {
+          "title": "Authentication"
+        },
+        {
+          "title": "Configuration"
+        },
+        {
+          "title": "Cross service communication"
+        },
+        {
+          "title": "Protocol abstraction: the underlying protocol used should be hidden from user.  This allows easier protocol updates (e.g., HTTP to gRPC)"
+        },
+        {
+          "title": "Service discovery: services should be addressable by a name.</li>\n</ul>"
+        },
+        {
+          "title": "Handlers base class (e.g., message handler, request handler)"
+        },
+        {
+          "title": "DAO base class"
+        },
+        {
+          "title": "Cache library"
+        },
+        {
+          "title": "Logging"
+        },
+        {
+          "title": "Metrics"
+        }
+      ]
+    },
+    {
+      "topic": "Configuration and secrets",
+      "items": [
+        {
+          "title": "Configuration files should live in the same repository as code."
+        },
+        {
+          "title": "Secrets should go into a secret manager.  Deployment infrastructure should inject the secrets at run time."
+        },
+        {
+          "title": "Allow secret overriding using environment variables (for running locally)."
+        }
+      ]
+    },
+    {
+      "topic": "Feature flag",
+      "items": [
+        {
+          "title": "<p><strong>Definition</strong>: a <a href=\"https://martinfowler.com/articles/feature-toggles.html#ATogglingTale\">feature flag</a> is a toggle that a program uses to decide its behaviour.  This is useful when rolling out new features gradually.</p><p>A feature flag system has these concepts:</p>"
+        },
+        {
+          "title": "Flag value (aka. toggle value): the value that a program gets for a feature flag"
+        },
+        {
+          "title": "Rule: a rule is associated with a flag, and it maps parameters to a flag value.  E.g., a rule can map all users with age &lt; 18 to flag value <code>under-18</code>."
+        },
+        {
+          "title": "Feature management service: service that stores flags and rules.  This service has admin APIs or UI to configure the flags and rules.  E.g., <a href=\"https://launchdarkly.com/\">LaunchDarkly</a>.<blockquote>\n<p>Make an effort to keep the number of feature flags low.  </p>\n<p>Make a plan to remove unnecessary feature flags.  A feature flag is no longer needed if 100% of the traffic is using the new feature.</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Logging",
+      "items": [
+        {
+          "title": "<a href=\"https://stackify.com/what-is-structured-logging-and-why-developers-need-it/\">Structured logging</a>: variables get their own fields, log messages are static strings"
+        },
+        {
+          "title": "What to log"
+        },
+        {
+          "title": "Timestamp"
+        },
+        {
+          "title": "Trace ID"
+        },
+        {
+          "title": "Caller ID"
+        },
+        {
+          "title": "Service"
+        },
+        {
+          "title": "Environment</li>\n</ul>"
+        },
+        {
+          "title": "When to log"
+        },
+        {
+          "title": "Service starts.  Log configurations."
+        },
+        {
+          "title": "Service crashes"
+        },
+        {
+          "title": "Assertions fail (a code path that should never happen)"
+        },
+        {
+          "title": "Errors are handled"
+        },
+        {
+          "title": "Log at least one message per happy path</li>\n</ul>"
+        },
+        {
+          "title": "When not to log:"
+        },
+        {
+          "title": "Error propagation without handling"
+        },
+        {
+          "title": "Normal code flow"
+        },
+        {
+          "title": "Duplicates"
+        }
+      ]
+    },
+    {
+      "topic": "Serverless",
+      "items": [
+        {
+          "topic": "Pros",
+          "items": [
+            {
+              "title": "On demand (cost saving)"
+            },
+            {
+              "title": "No infrastructure"
+            },
+            {
+              "title": "No single point of failure"
+            },
+            {
+              "title": "High scalability"
+            }
+          ]
+        },
+        {
+          "topic": "Cons",
+          "items": [
+            {
+              "title": "Not suitable for long running tasks (due to timeout)"
+            },
+            {
+              "title": "Not suitable for resource intensive tasks"
+            },
+            {
+              "title": "Not suitable for programs with local persistence (e.g., memory cache)"
+            },
+            {
+              "title": "Reactive (i.e., requires external triggers to run), not suitable for pro-active tasks (e.g., periodic notification, heartbeating)"
+            },
+            {
+              "title": "Complex workflow with multiple functions needs careful orchestration (e.g., <a href=\"https://aws.amazon.com/step-functions/faqs/\">step function</a>)"
+            },
+            {
+              "title": "Logs need different shipping mechanism (because you don't control the VM and cannot install log aggregation daemons)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Ownership",
+      "items": [
+        {
+          "title": "The owner should be the writer"
+        },
+        {
+          "title": "There should be only one writer to a data set (the moderator)"
+        },
+        {
+          "title": "The owner should provide libraries for reading the data.  The libraries should hide the low level details of how data is retrieved (e.g., directly from DB, or via the owner)."
+        }
+      ]
+    },
+    {
+      "topic": "Versioning",
+      "items": [
+        {
+          "title": "Data should have created and updated timestamps"
+        },
+        {
+          "title": "If multiple data versions can co-exist, several strategies:"
+        },
+        {
+          "title": "New table: good for isolation, bad for management (especially if tables are created by CD pipeline)"
+        },
+        {
+          "title": "A version column: good for management, bad for indexing and possible hot partition.</li>\n</ul>"
+        },
+        {
+          "title": "If old version needs to be migrated to new version, consider a tool like <a href=\"https://aws.amazon.com/datapipeline/faqs/\">AWS Data Pipeline</a>."
+        }
+      ]
+    },
+    {
+      "topic": "Database",
+      "items": [
+        {
+          "topic": "Types of database",
+          "items": [
+            {
+              "title": "<a href=\"https://en.wikipedia.org/wiki/SQL\">SQL</a>"
+            },
+            {
+              "title": "Pros"
+            },
+            {
+              "title": "Joint query is easy"
+            },
+            {
+              "title": "Transaction is easy</li>\n</ul>"
+            },
+            {
+              "title": "Cons"
+            },
+            {
+              "title": "Schema change is hard"
+            },
+            {
+              "title": "Usually poor scalability</li>\n</ul>\n</li>\n</ul>"
+            },
+            {
+              "title": "<a href=\"https://en.wikipedia.org/wiki/NoSQL\">NoSQL</a>"
+            },
+            {
+              "title": "Pros"
+            },
+            {
+              "title": "Schema change is easy"
+            },
+            {
+              "title": "Easy to scale</li>\n</ul>"
+            },
+            {
+              "title": "Cons"
+            },
+            {
+              "title": "Can only query on indexes"
+            },
+            {
+              "title": "No joining, making application code complex"
+            },
+            {
+              "title": "Limited transaction support"
+            },
+            {
+              "title": "Bad index design can result in <a href=\"https://stackoverflow.com/questions/53631825/hot-partition-problem-in-dynamo-db-gone-with-the-new-on-demand-feature\">hot partitions</a>\n\n<p>SQL DB usually scales computing and storage together, which can be wasteful.  An exception is <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.html\">AWS Aurora</a> which scales them independenly.</p><p>NoSQL uses <a href=\"https://en.wikipedia.org/wiki/Shard_(database_architecture)\">sharding</a> to achieve high scalability.</p><p>See <a href=\"#concurrency\">concurrency</a> for discussion on transaction and data consistency.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Best practices",
+          "items": [
+            {
+              "title": "For microservices, DB should be treated more like working memory than long term source of truth (which should be your data warehouse instead)."
+            },
+            {
+              "title": "Prefer NoSQL than SQL."
+            },
+            {
+              "title": "Avoid <a href=\"https://en.wikipedia.org/wiki/Object-relational_mapping\">ORM</a>(e.g., <a href=\"https://hibernate.org/\">Hibernate</a>, <a href=\"https://docs.sqlalchemy.org/en/13/\">SQLAlchemy</a>).  They make your code bloated, less clear and fragile."
+            },
+            {
+              "title": "Always define a DAO layer in application to expose an interface customised to the business logic.  This reduces coupling of business logic to DB, and improves testability."
+            },
+            {
+              "title": "Implement data (un)marshalling in the DAO."
+            }
+          ]
+        },
+        {
+          "topic": "Query",
+          "items": [
+            {
+              "title": "<p>When complex query (multi-fields, condition filter, pagination, sorting, etc) is needed, it's best to keep indexes in a search engine.</p><p>This also makes it possible to use a simple DB (e.g., NoSQL).</p><p>Examples:</p>"
+            },
+            {
+              "title": "<a href=\"https://en.wikipedia.org/wiki/Elasticsearch\">Elasticsearch</a>: index search"
+            },
+            {
+              "title": "<a href=\"https://lucene.apache.org/solr/\">Solr</a>: text search"
+            },
+            {
+              "title": "<a href=\"https://www.algolia.com/\">Aloglia</a>: text search"
+            }
+          ]
+        },
+        {
+          "topic": "Pagination",
+          "items": [
+            {
+              "title": "<a href=\"https://dev.to/jackmarchant/offset-and-cursor-pagination-explained-b89\">Offset vs cursor</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Data warehouse",
+      "items": [
+        {
+          "title": "<p>The data is usually structured, with repeated and nested fields (e.g., JSON, YAML).</p><p>The DW therefore needs to handle them correctly.  <a href=\"https://aws.amazon.com/nosql/columnar/\">Columnar storage</a> following <a href=\"https://blog.twitter.com/engineering/en_us/a/2013/dremel-made-simple-with-parquet.html\">Google Dremel whitepaper</a> is ideal (e.g., <a href=\"https://en.wikipedia.org/wiki/Apache_Parquet\">Parquet</a> format).</p>"
+        },
+        {
+          "topic": "What goes into DW",
+          "items": [
+            {
+              "title": "<a href=\"https://www.nuwavesolutions.com/snapshot-fact-tables/\">Trasactional data</a> and <a href=\"https://microservices.io/patterns/data/event-sourcing.html\">Event sourcing</a>: model data change as events, and store the events in DW.  Use cases:"
+            },
+            {
+              "title": "user activity analysis"
+            },
+            {
+              "title": "trend detection"
+            },
+            {
+              "title": "usage tracking</li>\n</ul>"
+            },
+            {
+              "title": "<a href=\"https://www.nuwavesolutions.com/snapshot-fact-tables/\">Snapshot data</a>: point-in-time data.  Use cases:"
+            },
+            {
+              "title": "account balance"
+            },
+            {
+              "title": "inventry stock level</li>\n</ul>\n</li>\n</ul><p>Snapshot data may be collected in several ways:</p>"
+            },
+            {
+              "title": "exported from service DB"
+            },
+            {
+              "title": "constructed by playing back transactional data over last snapshot"
+            }
+          ]
+        },
+        {
+          "topic": "Best practices",
+          "items": [
+            {
+              "title": "Have a <a href=\"https://www.dremio.com/what-is-a-data-pipeline/\">data pipeline</a> architecture as part of infrastructure."
+            },
+            {
+              "title": "Define schema with version for all data types, with validation rules"
+            },
+            {
+              "title": "Validate incoming data before storing"
+            },
+            {
+              "title": "Common schema fields:"
+            },
+            {
+              "title": "Timestamp"
+            },
+            {
+              "title": "Trace ID"
+            },
+            {
+              "title": "Caller ID"
+            },
+            {
+              "title": "Service"
+            },
+            {
+              "title": "Environment"
+            },
+            {
+              "title": "Dedupe ID"
+            },
+            {
+              "title": "Is it test?  (without this, test and real data is mingled and it's painful to separate them later)</li>\n</ul>"
+            },
+            {
+              "title": "Don't serve data from DW directly.  Instead, use a <a href=\"https://www.alooma.com/blog/what-is-a-data-pipeline\">pipeline</a> to <a href=\"https://www.alooma.com/blog/what-is-etl\">ETL</a> the data into a service, then serve it using APIs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Types of communication",
+      "items": [
+        {
+          "title": "Request-response"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Push_technology#Long_polling\">Long polling</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/WebSocket\">Websocket</a>"
+        },
+        {
+          "title": "<a href=\"https://taskqueues.com/\">Task queue (aka. message queue)</a>"
+        },
+        {
+          "title": "Broadcast"
+        }
+      ]
+    },
+    {
+      "topic": "API definitions",
+      "items": [
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Protocol_Buffers\">Protocol buffers (abv. protobuf)</a>.  Usages:"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Remote_procedure_call\">Remote procedure call (RPC)</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Inter-process_communication\">Inter-process communication (IPC)</a>"
+        },
+        {
+          "title": "Message schema definition</li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"https://swagger.io/docs/specification/about/\">OpenAPI (aka. Swagger)</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Apache_Thrift\">Thrift</a>, less popular"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Apache_Avro\">Avro</a>, less popular<p>SDKs for different languages can be generated from API definitions.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "API design",
+      "items": [
+        {
+          "title": "Implement <a href=\"https://apigee.com/about/cp/api-gateway\">API gateway</a> to handle:"
+        },
+        {
+          "title": "API routing"
+        },
+        {
+          "title": "Protocol translation (e.g., REST to Protobuf)"
+        },
+        {
+          "title": "Authentication"
+        },
+        {
+          "title": "Logging/metrics"
+        },
+        {
+          "title": "Usage auditing</li>\n</ul>"
+        },
+        {
+          "title": "Limit the usage of <a href=\"https://en.wikipedia.org/wiki/Polymorphism_(computer_science)\">polymorphic</a> payload (if payload is different in structure, better to make it a different API)"
+        },
+        {
+          "title": "Error response is part of the design, not an after thought."
+        },
+        {
+          "title": "Standardise and regulate the use of error codes.  Adhere to HTTP status code definitions."
+        },
+        {
+          "title": "Treat HTTP 5xx status as system failures that require intervention (i.e., don't use them lightly)."
+        }
+      ]
+    },
+    {
+      "topic": "Service discovery",
+      "items": [
+        {
+          "title": "<p>This ensures that services and APIs are addressable in the infrastructure (by a unique and stable name).</p>"
+        },
+        {
+          "title": "<a href=\"https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727\">Overlay networks</a>"
+        },
+        {
+          "title": "Address: an abstract concept of where data should be sent, e.g., IP address"
+        },
+        {
+          "title": "Routers: interprets the address and sends traffic to the correct endpoint"
+        },
+        {
+          "title": "DNS server: specialised service that resolves service name to address"
+        }
+      ]
+    },
+    {
+      "topic": "Failure and recovery",
+      "items": [
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern\">Circuit breaker</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Exponential_backoff\">Exponential backoff</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Rate_limiting\">Rate limit</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Multi tenancy",
+      "items": [
+        {
+          "title": "<p>This is relevant for SaaS systems, where multiple users/customers/partners share the same application and infrastructure but not data.</p><p><a href=\"https://docs.microsoft.com/en-us/azure/sql-database/saas-tenancy-app-design-patterns\">Data segregation</a> is the most common technique used.</p><p>Infrastructure segration does not scale well.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Principles",
+      "items": [
+        {
+          "title": "Test the right thing, at the right level (API level &gt; unit level &gt; whole system level).  E.g., DAO (having more complexity presumably) deserves more testing than HTTP handlers."
+        },
+        {
+          "title": "Aim for quality, not coverage.  E.g., 90% DAO test coverage with mocked DB isn't better than 70% with real DB."
+        },
+        {
+          "title": "Higher level tests should be more general, lower level tests should be more specific (e.g., cover edge cases)"
+        },
+        {
+          "title": "You can't cover everything in test, but you can make sure you know how to fix it when it breaks (e.g., with good monitoring/logging)"
+        },
+        {
+          "title": "Use <a href=\"https://en.wikipedia.org/wiki/Behavior-driven_development\">BDD style</a> (i.e., structure test as a <a href=\"https://en.wikipedia.org/wiki/Behavior-driven_development#Behavioral_specifications\">scenario</a>) but not BDD itself (i.e., don't do scenario-to-code translation)"
+        },
+        {
+          "title": "Make test data identifiable.  Test data should never intefere with real data."
+        },
+        {
+          "title": "Not be afraid to run test in production.  This requires building application with testability in mind."
+        }
+      ]
+    },
+    {
+      "topic": "Load test",
+      "items": [
+        {
+          "title": "Scenario description"
+        },
+        {
+          "title": "Number of users"
+        },
+        {
+          "title": "Scenario of each user"
+        },
+        {
+          "title": "Ramp up/cool down period</li>\n</ul>"
+        },
+        {
+          "title": "Metrics"
+        },
+        {
+          "title": "Response time"
+        },
+        {
+          "title": "Throughput"
+        },
+        {
+          "title": "Error rate</li>\n</ul>"
+        },
+        {
+          "title": "Monitoring: make sure the load generator isn't stressed out, by monitoring its CPU/memory/network"
+        },
+        {
+          "title": "Scaling: runing multiple instances, and aggregate the logs."
+        },
+        {
+          "title": "Tools"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Gatling_(software)\">Gatling</a>: open source, written in Scala, good report UI, own DSL"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Apache_JMeter\">JMeter</a>: open source, written in Java, hard to configure"
+        },
+        {
+          "title": "<a href=\"https://locust.io/\">Locust</a>: open source, written in Python"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Apache_JMeter\">NeoLoad</a>: commercial"
+        },
+        {
+          "title": "<a href=\"https://www.blazemeter.com/load-testing/\">BlazeMeter</a>: commercial"
+        }
+      ]
+    },
+    {
+      "topic": "Code hygiene",
+      "items": [
+        {
+          "title": "<a href=\"https://softwareengineering.stackexchange.com/questions/307346/why-is-it-good-programming-practice-to-limit-scope\">Limit scope of variables</a>"
+        },
+        {
+          "title": "Consistent naming"
+        },
+        {
+          "title": "Declare constants at top"
+        },
+        {
+          "title": "Always use a linter and integrate it into CI"
+        },
+        {
+          "title": "Encourage the use of IDEs"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Reproducible_builds\">Reproducible builds</a>: Use a package manager that can lock dependency versions"
+        }
+      ]
+    },
+    {
+      "topic": "Philosophy",
+      "items": [
+        {
+          "title": "<a href=\"https://www.infoq.com/articles/Continuous-Delivery-Maturity-Model/\">Aim for level 5 of CI maturity</a>"
+        },
+        {
+          "title": "<a href=\"https://rollout.io/blog/configuration-as-code-everything-need-know/\">Configuration as code</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Infrastructure_as_code\">Infrastructure as code</a>"
+        },
+        {
+          "title": "No ad-hoc fixes"
+        },
+        {
+          "title": "<a href=\"https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure\">Immutable infrastructure</a> (no hot fixes)"
+        },
+        {
+          "title": "Developers should self-service"
+        },
+        {
+          "title": "Pager is the last line of escalation.  Use it sparingly."
+        }
+      ]
+    },
+    {
+      "topic": "Centralisation",
+      "items": [
+        {
+          "title": "<p>Components with shared ownership should be considered a piece of infrastructure, and managed in a single place (instead of distributed across repositories/codebases).</p><p>Examples:</p>"
+        },
+        {
+          "title": "Service API definitions (service provider != API owner)"
+        },
+        {
+          "title": "Message schema definitions"
+        },
+        {
+          "title": "Documentation"
+        },
+        {
+          "title": "Data in data warehouse"
+        }
+      ]
+    },
+    {
+      "topic": "Tooling",
+      "items": [
+        {
+          "title": "<p><a href=\"https://en.wikipedia.org/wiki/Command-line_interface\">CLI</a> and scripts should be the prefered way of automation.</p><p>They should be well documented, versioned and published for easy installation.  Example: <a href=\"https://github.com/goreleaser/goreleaser\">goreleaser</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "CI/CD",
+      "items": [
+        {
+          "title": "<a href=\"https://circleci.com/\">Circle CI</a>"
+        },
+        {
+          "title": "<a href=\"https://travis-ci.org/\">Travis CI</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/features/actions\">GitHub Actions</a>"
+        },
+        {
+          "title": "<a href=\"https://concourse-ci.org/\">Concourse CI</a>: ususally as a deployment pipeline instead of code builder"
+        },
+        {
+          "title": "<a href=\"https://jenkins.io/\">Jenkins</a>"
+        },
+        {
+          "title": "<a href=\"https://www.atlassian.com/software/bamboo\">Bamboo</a>: commercial"
+        }
+      ]
+    },
+    {
+      "topic": "Deployment",
+      "items": [
+        {
+          "title": "Deploy from master (never branches)"
+        },
+        {
+          "title": "<a href=\"https://martinfowler.com/bliki/CanaryRelease.html\">Canary release</a>"
+        },
+        {
+          "title": "<a href=\"https://blog.christianposta.com/deploy/blue-green-deployments-a-b-testing-and-canary-releases/\">Blue/green deployment</a>"
+        },
+        {
+          "title": "Acceptance test on the full platform"
+        }
+      ]
+    },
+    {
+      "topic": "Monitoring",
+      "items": [
+        {
+          "title": "Healthcheck endpoints for long running services"
+        },
+        {
+          "title": "<a href=\"#tracing\">Tracing</a>"
+        },
+        {
+          "title": "Service dependency graph based on traffic and healthcheck.  This makes service grade/decommission safer"
+        },
+        {
+          "title": "Service metrics and dashboard"
+        }
+      ]
+    },
+    {
+      "topic": "Responsibility",
+      "items": [
+        {
+          "title": "Provide tooling/library/framework/process to make low level testing self-serviced by developers (unit tests, component tests, load tests)."
+        },
+        {
+          "title": "Develop and own end user and high level tests, from an organisation or company perspective."
+        },
+        {
+          "title": "Test automation, reducing manual intervention."
+        },
+        {
+          "title": "Standardise test methodology across teams."
+        },
+        {
+          "title": "Reduce noise from fragile tests, false positives, long-time-known bugs, to prevent distraction and increase sensitivity to true positives across the company."
+        }
+      ]
+    },
+    {
+      "topic": "Complexity of algorithms",
+      "items": [
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Big_O_notation\">Big O notation</a> for both time and space complexity"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Cyclomatic_complexity\">Cyclomatic complexity</a>: how many logical path a function has"
+        }
+      ]
+    },
+    {
+      "topic": "Concurrency",
+      "items": [
+        {
+          "title": "Models of concurrency"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Thread_(computing)\">Thread</a>"
+        },
+        {
+          "title": "<a href=\"https://stackoverflow.com/questions/2332765/lock-mutex-semaphore-whats-the-difference\">Locks, mutex, semaphor</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Event_loop\">Event loop</a> + <a href=\"https://en.wikipedia.org/wiki/Asynchronous_I/O\">Asynchronous IO</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Message_passing\">Message passing</a> and <a href=\"https://en.wikipedia.org/wiki/Communicating_sequential_processes\">CSP</a> (including <a href=\"https://en.wikipedia.org/wiki/Actor_model\">actor systems</a>)</li>\n</ul>"
+        },
+        {
+          "title": "Common errors"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Deadlock\">Deadlock</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Race_condition#Software\">Race condition</a></li>\n</ul>"
+        },
+        {
+          "title": "Distributed systems"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/CAP_theorem\">CAP theorem</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Consensus_algorithm\">Concensus algorithms</a>: <a href=\"https://en.wikipedia.org/wiki/Paxos_(computer_science)\">Paxos</a>, <a href=\"https://en.wikipedia.org/wiki/Raft_(computer_science)\">Raft</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Eventual_consistency\">Eventual consistency</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Gossip_protocol\">Gossip protocol</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Eventual_consistency\">BASE</a>"
+        },
+        {
+          "title": "<strong>Warning</strong> not suitable for systems requiring <a href=\"https://en.wikipedia.org/wiki/ACID\">ACID</a>, e.g., bank account transfer.</li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Leader_election\">Leader election</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Shard_(database_architecture)\">Sharding</a>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Log-structured_merge-tree\">LSM</a>: used by most NoSQL DB to ensure no data loss"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

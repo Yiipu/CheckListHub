@@ -1,0 +1,300 @@
+{
+  "id": 232,
+  "header": "wp-themes-review",
+  "topicList": [
+    "Getting Started",
+    "Internal Setup",
+    "Run Test Tools",
+    "Accessibility",
+    "Code",
+    "Core Functionality and Features",
+    "Favicons",
+    "Language",
+    "Licensing",
+    "Naming",
+    "Options and Settings",
+    "Plugins",
+    "Screenshot",
+    "Security and Privacy",
+    "Selling, credits and links",
+    "Stylesheets and Scripts",
+    "Templates"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Getting Started",
+      "items": [
+        {
+          "title": "[ ] Did you join <a href=\"http://chat.wordpress.org/\">WordPress Slack</a>"
+        },
+        {
+          "title": "[ ] Did you join the theme review team in #themereview"
+        },
+        {
+          "title": "[ ] Did you subscribe to <a href=\"https://make.wordpress.org/themes\">Theme Review Team Updates</a>"
+        },
+        {
+          "title": "[ ] Did you <a href=\"https://make.wordpress.org/themes/\">Request a Theme</a> to review"
+        }
+      ]
+    },
+    {
+      "topic": "Internal Setup",
+      "items": [
+        {
+          "title": "[ ] <a href=\"https://make.wordpress.org/meta/handbook/about/get-involved/setting-up-your-machine\">Install a WordPress site for testing</a>"
+        },
+        {
+          "title": "[ ] Import the <a href=\"https://wpcom-themes.svn.automattic.com/demo/theme-unit-test-data.xml\">theme unit test data</a> into your installation"
+        },
+        {
+          "title": "[ ] Set WP_DEBUG to <code>true</code> in wp-config"
+        },
+        {
+          "title": "[ ] Install the following Plugins: <a href=\"https://wordpress.org/extend/plugins/theme-check/\">Theme Check</a>, <a href=\"https://wordpress.org/extend/plugins/debug-bar/\">Debug Bar</a>, <a href=\"https://wordpress.org/extend/plugins/log-deprecated-notices/\">Log Deprecated Notices</a>, <a href=\"https://wordpress.org/extend/plugins/monster-widget/\">Monster Widget</a>, <a href=\"https://wordpress.org/extend/plugins/wordpress-beta-tester/\">WordPress Beta Tester</a>, <a href=\"https://wordpress.org/plugins/theme-mentor/\">Theme Mentor</a> <em>(Note: all those plugins can be installed via the <a href=\"https://wordpress.org/extend/plugins/developer/\">Developer</a> plugin)</em>"
+        }
+      ]
+    },
+    {
+      "topic": "Run Test Tools",
+      "items": [
+        {
+          "title": "[ ] Run Theme Check then see the results"
+        },
+        {
+          "title": "[ ] Run Theme Mentor then see the results"
+        },
+        {
+          "title": "[ ] Drag Monster Widget to the Sidebar then see how it looks"
+        }
+      ]
+    },
+    {
+      "topic": "Accessibility",
+      "items": [
+        {
+          "title": "[ ] If the theme has the tag <code>accessibility-ready</code> then it needs to meet <a href=\"https://make.wordpress.org/themes/handbook/review/accessibility/\">these requirements</a>."
+        }
+      ]
+    },
+    {
+      "topic": "Code",
+      "items": [
+        {
+          "title": "[ ] Check PHP and JS errors."
+        },
+        {
+          "title": "[ ] Include at least index.php and style.css."
+        },
+        {
+          "title": "[ ] Have a valid DOCTYPE declaration and include language_attributes."
+        },
+        {
+          "title": "[ ] Sanitize everything."
+        },
+        {
+          "title": "[ ] No removing or modifying non-presentational hooks."
+        },
+        {
+          "title": "[ ] No shortcodes are allowed."
+        },
+        {
+          "title": "[ ] Support the following WordPress-generated CSS classes: <code>.alignleft, .alignright, .wp-caption, .wp-caption-text, .gallery-caption, .sticky, .bypostauthor</code>"
+        }
+      ]
+    },
+    {
+      "topic": "Core Functionality and Features",
+      "items": [
+        {
+          "title": "[ ] Use <a href=\"https://make.wordpress.org/themes/handbook/review/wordpress-functionality-and-features/\">WordPress functionality and features first, if available</a>."
+        },
+        {
+          "title": "[ ] Don’t include admin/feature pointers."
+        },
+        {
+          "title": "[ ] No custom post types and no custom taxonomies."
+        },
+        {
+          "title": "[ ] No pay wall restricting any WordPress feature."
+        },
+        {
+          "title": "[ ] No disabling of the admin tool bar."
+        },
+        {
+          "title": "[ ] Use <a href=\"https://developer.wordpress.org/reference/functions/get_template_directory/\">get_template_directory()</a> rather than <code>TEMPLATEPATH</code> to return the template path."
+        },
+        {
+          "title": "[ ] Use <a href=\"https://developer.wordpress.org/reference/functions/get_stylesheet_directory/\">get_stylesheet_directory()</a> rather than <code>STYLESHEETPATH</code> to return the stylesheet path."
+        },
+        {
+          "title": "[ ] Avoid hard coding to modify content. Instead, use function parameters, filters and action hooks where appropriate. For  example wp_title should be modified using a filter."
+        },
+        {
+          "title": "[ ] Able to have child themes made from them."
+        },
+        {
+          "title": "[ ] Include comments_template()."
+        }
+      ]
+    },
+    {
+      "topic": "Favicons",
+      "items": [
+        {
+          "title": "[ ] If implemented, disable favicons by default and have the ability for users to override."
+        }
+      ]
+    },
+    {
+      "topic": "Language",
+      "items": [
+        {
+          "title": "[ ] All theme text strings are to be translatable."
+        },
+        {
+          "title": "[ ] Include a text domain in style.css"
+        },
+        {
+          "title": "[ ] Use a single unique theme slug – as the theme slug appears in style.css. If it uses a framework then no more than 2 unique slugs."
+        },
+        {
+          "title": "[ ] Can use any language for text, but only use the same one for all text."
+        }
+      ]
+    },
+    {
+      "topic": "Licensing",
+      "items": [
+        {
+          "title": "[ ] Be 100% GPL and/or 100% GPL-compatible licensed."
+        },
+        {
+          "title": "[ ] Declare copyright and license explicitly. Use the license and license uri header slugs to style.css."
+        },
+        {
+          "title": "[ ] Declare licenses of any resources included such as fonts or images."
+        },
+        {
+          "title": "[ ] All code and design should be your own or legally yours. Cloning of designs is not acceptable."
+        }
+      ]
+    },
+    {
+      "topic": "Naming",
+      "items": [
+        {
+          "title": "[ ] Theme names must not use: WordPress, Theme."
+        },
+        {
+          "title": "[ ] Spell “WordPress” correctly in all public facing text: all one word, with both an uppercase W and P."
+        }
+      ]
+    },
+    {
+      "topic": "Options and Settings",
+      "items": [
+        {
+          "title": "[ ] Save options in a single array."
+        },
+        {
+          "title": "[ ] Use <a href=\"https://make.wordpress.org/themes/2014/07/09/using-sane-defaults-in-themes/\">sane defaults</a> and don’t write default setting values to the database."
+        },
+        {
+          "title": "[ ] Use edit_theme_options capability for add_theme_page(), rather than rely on a role (e.g. “administrator”), or a different capability (e.g. “edit_themes”, “manage_options”) for the capability to add the settings page."
+        },
+        {
+          "title": "[ ] If using a theme options page, add it to the ‘Appearance’ menu."
+        },
+        {
+          "title": "[ ] Use either the Settings API or the Customizer for implementing theme options."
+        },
+        {
+          "title": "[ ] Prefix all options, custom functions, custom <a href=\"http://php.net/manual/en/language.variables.scope.php\">global variables</a> and custom constants with the theme-slug."
+        }
+      ]
+    },
+    {
+      "topic": "Plugins",
+      "items": [
+        {
+          "title": "[ ] Don’t include any plugins. A theme can recommend plugins but not include those plugins in the theme code."
+        },
+        {
+          "title": "[ ] Don’t do things in a theme considered plugin territory."
+        }
+      ]
+    },
+    {
+      "topic": "Screenshot",
+      "items": [
+        {
+          "title": "[ ] Screenshot.png should be of the actual theme as it appears with default options, not a logo or mockup."
+        },
+        {
+          "title": "[ ] The screenshot.png should be no bigger than 880 x 660px."
+        }
+      ]
+    },
+    {
+      "topic": "Security and Privacy",
+      "items": [
+        {
+          "title": "[ ] Don’t phone home without informed user consent. Find out more about <a href=\"https://make.wordpress.org/themes/handbook/review/recommended/security-and-privacy/\">security</a> here."
+        },
+        {
+          "title": "[ ] Make any collection of user data ‘opt-in’ only and have a theme option that is set to disabled by default.Validate and sanitze untrusted data before entering into the database. All untrusted data should be escaped before output. (see: <a href=\"https://codex.wordpress.org/Data_Validation\">Data Validation</a>)"
+        },
+        {
+          "title": "[ ] No url shorteners used in the theme."
+        },
+        {
+          "title": "[ ] Use <code>esc_attr()</code> for text inputs and <code>esc_textarea()</code> for textareas."
+        }
+      ]
+    },
+    {
+      "topic": "Selling, credits and links",
+      "items": [
+        {
+          "title": "[ ] If you are a themeshop you should be selling under GPL to be in the WordPress.org repo."
+        },
+        {
+          "title": "[ ] If the theme adds a footer credit link, there should only be one (link to WordPress does not count)"
+        }
+      ]
+    },
+    {
+      "topic": "Stylesheets and Scripts",
+      "items": [
+        {
+          "title": "[ ] No hard coding of scripts, styles and Favicons unless a browser workaround script. Everything should be enqueued."
+        },
+        {
+          "title": "[ ] No analytics or tracking."
+        },
+        {
+          "title": "[ ] No minification of scripts or files unless provide original files."
+        },
+        {
+          "title": "[ ] Required to use core-bundled scripts rather than including their own version of that script. For example jQuery."
+        },
+        {
+          "title": "[ ] Include all scripts and resources it uses rather than hot-linking. The exception to this is Google libraries."
+        },
+        {
+          "title": "[ ] If a tag is used in style.css the theme should support that feature or adhere to what that tag stands for. For example custom background or header."
+        }
+      ]
+    },
+    {
+      "topic": "Templates",
+      "items": [
+        {
+          "title": "<p>If using templates, custom template files should be called using <a href=\"https://developer.wordpress.org/reference/functions/get_template_part/\">get_template_part()</a> or locate_template().\nThere are several <a href=\"https://make.wordpress.org/themes/handbook/review/recommended/templates/\">template specific things</a> you should consider when certain ones are being used.\nUse *_url() template tags, rather than bloginfo() equivalents.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

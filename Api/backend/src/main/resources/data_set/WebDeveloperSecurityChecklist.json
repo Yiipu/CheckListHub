@@ -1,0 +1,282 @@
+{
+  "id": 223,
+  "header": "WebDeveloperSecurityChecklist",
+  "topicList": [
+    "Introduction",
+    "Contents",
+    "The Checklist",
+    "Contributing",
+    "Similar Lists",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Introduction",
+      "items": [
+        {
+          "title": "<p><a href=\"#the-checklist\">This checklist</a> has been reproduced verbatim from <a href=\"https://simplesecurity.sensedeep.com/@sensedeep\">Michael O' Brien</a>'s blog post by the <a href=\"https://simplesecurity.sensedeep.com/web-developer-security-checklist-f2e4f43c9c56\">same name</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Contents",
+      "items": [
+        {
+          "title": "<a href=\"#database\">Database</a>"
+        },
+        {
+          "title": "<a href=\"#development\">Development</a>"
+        },
+        {
+          "title": "<a href=\"#authentication\">Authentication</a>"
+        },
+        {
+          "title": "<a href=\"#denial-of-service-protection\">Denial of Service Protection</a>"
+        },
+        {
+          "title": "<a href=\"#web-traffic\">Web Traffic</a>"
+        },
+        {
+          "title": "<a href=\"#apis\">APIs</a>"
+        },
+        {
+          "title": "<a href=\"#validation\">Validation</a>"
+        },
+        {
+          "title": "<a href=\"#cloud-configuration\">Cloud Configuration</a>"
+        },
+        {
+          "title": "<a href=\"#infrastructure\">Infrastructure</a>"
+        },
+        {
+          "title": "<a href=\"#operation\">Operation</a>"
+        },
+        {
+          "title": "<a href=\"#test\">Test</a>"
+        },
+        {
+          "title": "<a href=\"#finally-have-a-plan\">Finally, have a plan</a>"
+        }
+      ]
+    },
+    {
+      "topic": "The Checklist",
+      "items": [
+        {
+          "topic": "Database",
+          "items": [
+            {
+              "title": "[ ] Use encryption for data identifying users and sensitive data like access tokens, email addresses or billing details."
+            },
+            {
+              "title": "[ ] If your database supports low cost encryption at rest (like <a href=\"https://aws.amazon.com/about-aws/whats-new/2015/12/amazon-aurora-now-supports-encryption-at-rest/\">AWS Aurora</a>), then enable that to secure data on disk. Make sure all backups are stored encrypted as well."
+            },
+            {
+              "title": "[ ] Use minimal privilege for the database access user account. Don’t use the database root account."
+            },
+            {
+              "title": "[ ] Store and distribute secrets using a key store designed for the purpose. Don’t hard code in your applications."
+            },
+            {
+              "title": "[ ] Fully prevent SQL injection by only using SQL prepared statements. For example: if using NPM, don’t use npm-mysql, use npm-mysql2 which supports prepared statements."
+            }
+          ]
+        },
+        {
+          "topic": "Development",
+          "items": [
+            {
+              "title": "[ ] Ensure that all components of your software are scanned for vulnerabilities for every version pushed to production. This means O/S, libraries and packages. This should be automated into the CI-CD process."
+            },
+            {
+              "title": "[ ] Secure development systems with equal vigilance to what you use for production systems. Build the software from secured, isolated development systems."
+            }
+          ]
+        },
+        {
+          "topic": "Authentication",
+          "items": [
+            {
+              "title": "[ ] Ensure all passwords are hashed using appropriate crypto such as bcrypt. Never write your own crypto and correctly initialize crypto with good random data."
+            },
+            {
+              "title": "[ ] Implement simple but adequate password rules that encourage users to have long, random passwords."
+            },
+            {
+              "title": "[ ] Use multi-factor authentication for your logins to all your service providers."
+            }
+          ]
+        },
+        {
+          "topic": "Denial of Service Protection",
+          "items": [
+            {
+              "title": "[ ] Make sure that DOS attacks on your APIs won’t cripple your site. At a minimum, have rate limiters on your slower API paths like login and token generation routines. Consider CAPTCHA on front-end APIs to protect back-end services against DOS."
+            },
+            {
+              "title": "[ ] Enforce sanity limits on the size and structure of user submitted data and requests."
+            },
+            {
+              "title": "[ ] Use <a href=\"https://en.wikipedia.org/wiki/Denial-of-service_attack\">Distributed Denial of Service</a> (DDOS) mitigation via a global caching proxy service like <a href=\"https://www.cloudflare.com/\">CloudFlare</a>. This can be turned on if you suffer a DDOS attack and otherwise function as your DNS lookup."
+            }
+          ]
+        },
+        {
+          "topic": "Web Traffic",
+          "items": [
+            {
+              "title": "[ ] Use TLS for the entire site, not just login forms and responses. Never use TLS for just the login form."
+            },
+            {
+              "title": "[ ] Cookies must be httpOnly and secure and be scoped by path and domain."
+            },
+            {
+              "title": "[ ] Use CSP without allowing unsafe-* backdoors. It is a pain to configure, but worthwhile."
+            },
+            {
+              "title": "[ ] Use X-Frame-Option, X-XSS-Protection headers in client responses."
+            },
+            {
+              "title": "[ ] Use HSTS responses to force TLS only access. Redirect all HTTP request to HTTPS on the server as backup."
+            },
+            {
+              "title": "[ ] Use CSRF tokens in all forms and use the new <a href=\"https://scotthelme.co.uk/csrf-is-dead/\">SameSite Cookie</a> response header which fixes CSRF once and for all newer browsers."
+            }
+          ]
+        },
+        {
+          "topic": "APIs",
+          "items": [
+            {
+              "title": "[ ] Ensure that no resources are enumerable in your public APIs."
+            },
+            {
+              "title": "[ ] Ensure that users are fully authenticated and authorized appropriately when using your APIs."
+            }
+          ]
+        },
+        {
+          "topic": "Validation & Encoding",
+          "items": [
+            {
+              "title": "[ ] Do client-side input validation for quick user feedback, but never trust it."
+            },
+            {
+              "title": "[ ] Validate every last bit of user input following a whitelist approach on the server. Never use untrusted user input in SQL statements or server-side contexts that are being evaluated. Always validate and encode user input before displaying in responses."
+            }
+          ]
+        },
+        {
+          "topic": "Cloud Configuration",
+          "items": [
+            {
+              "title": "[ ] Ensure all services have minimum ports open. While security through obscurity is no protection, using non-standard ports will make it a little bit harder for attackers."
+            },
+            {
+              "title": "[ ] Host backend database and services on private VPCs that are not visible on any public network. Be very careful when configuring AWS security groups and peering VPCs which can inadvertently make services visible to the public."
+            },
+            {
+              "title": "[ ] Isolate logical services in separate VPCs and peer VPCs to provide inter-service communication."
+            },
+            {
+              "title": "[ ] Ensure all services only accept data from a minimal set of IP addresses."
+            },
+            {
+              "title": "[ ] Restrict outgoing IP and port traffic to minimize APTs and “botification”."
+            },
+            {
+              "title": "[ ] Always use AWS IAM roles and not root credentials."
+            },
+            {
+              "title": "[ ] Use minimal access privilege for all ops and developer staff."
+            },
+            {
+              "title": "[ ] Regularly rotate passwords and access keys according to a schedule."
+            }
+          ]
+        },
+        {
+          "topic": "Infrastructure",
+          "items": [
+            {
+              "title": "[ ] Ensure you can do upgrades without downtime. Ensure you can quickly update software in a fully automated manner."
+            },
+            {
+              "title": "[ ] Create all infrastructure using a tool such as Terraform, and not via the cloud console. Infrastructure should be defined as “code” and be able to be recreated at the push of a button. Have zero tolerance for any resource created in the cloud by hand — Terraform can then audit your configuration."
+            },
+            {
+              "title": "[ ] Use centralized logging for all services. You should never need SSH to access or retrieve logs."
+            },
+            {
+              "title": "[ ] Don’t SSH into services except for one-off diagnosis. Using SSH regularly, typically means you have not automated an important task."
+            },
+            {
+              "title": "[ ] Don’t keep port 22 open on any AWS service groups on a permanent basis. Instead consider allowing only authorized IPs to SSH on the box."
+            },
+            {
+              "title": "[ ] Create <a href=\"http://chadfowler.com/2013/06/23/immutable-deployments.html\">immutable hosts</a> instead of long-lived servers that you patch and upgrade. (See <a href=\"https://simplesecurity.sensedeep.com/immutable-infrastructure-can-be-dramatically-more-secure-238f297eca49\">Immutable Infrastructure Can Be More Secure</a>)."
+            },
+            {
+              "title": "[ ] Use an <a href=\"https://en.wikipedia.org/wiki/Intrusion_detection_system\">Intrusion Detection System</a> like <a href=\"https://www.sensedeep.com/\">SenseDeep</a> or service to minimize <a href=\"https://en.wikipedia.org/wiki/Advanced_persistent_threat\">APTs</a>."
+            }
+          ]
+        },
+        {
+          "topic": "Operation",
+          "items": [
+            {
+              "title": "[ ] Power off unused services and servers. The most secure server is one that is powered down."
+            }
+          ]
+        },
+        {
+          "topic": "Test",
+          "items": [
+            {
+              "title": "[ ] Audit your design and implementation."
+            },
+            {
+              "title": "[ ] Do penetration testing — hack yourself, but also have someone other than you pen testing as well."
+            }
+          ]
+        },
+        {
+          "topic": "Finally, have a plan",
+          "items": [
+            {
+              "title": "[ ] Have a threat model that describes what you are defending against. It should list and prioritize the possible threats and actors."
+            },
+            {
+              "title": "[ ] Have a practiced security incident plan. One day, you will need it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<p>Contributions welcome! Read the <a href=\"CONTRIBUTING.md\">contribution guidelines</a> first.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Similar Lists",
+      "items": [
+        {
+          "title": "<p>Check out or <a href=\"CONTRIBUTING.md\">add</a> similar security checklists <a href=\"SIMILAR.md\">here</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p><a href=\"https://creativecommons.org/publicdomain/zero/1.0/\"><img alt=\"CC0\" src=\"http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg\"/></a></p><p>To the extent possible under law, <a href=\"http://virajkulkarni.me/\">Viraj Kulkarni</a> has waived all copyright and related or neighboring rights to this work.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

@@ -1,0 +1,704 @@
+{
+  "id": 34,
+  "header": "Checklist-Checklist",
+  "topicList": [
+    "Contents",
+    "Platform",
+    "Programming Languages",
+    "Web Development",
+    "App & Project Development",
+    "   WordPress",
+    "Marketing",
+    "Personal Security",
+    "Event",
+    "Job Seeking",
+    "Business",
+    "Travelling",
+    "Games",
+    "Miscellaneous",
+    "Creating a Checklist",
+    "Help Wanted",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Contents",
+      "items": [
+        {
+          "title": "<a href=\"#Platform\">Platform</a>"
+        },
+        {
+          "title": "<a href=\"#Programming-Languages\">Programming Languages</a>"
+        },
+        {
+          "title": "<a href=\"#Web-Development\">Web Development</a>"
+        },
+        {
+          "title": "<a href=\"#Front-End-Development\">Front-End Development</a>"
+        },
+        {
+          "title": "<a href=\"#Back-End-Development\">Back-End Development</a>"
+        },
+        {
+          "title": "<a href=\"#Web-App\">Web App</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#App-Project-Development\">App &amp; Project Development</a>"
+        },
+        {
+          "title": "<a href=\"#WordPress\">WordPress</a>"
+        },
+        {
+          "title": "<a href=\"#Marketing\">Marketing</a>"
+        },
+        {
+          "title": "<a href=\"#Personal-Security\">Personal Security</a>"
+        },
+        {
+          "title": "<a href=\"#Event\">Event</a>"
+        },
+        {
+          "title": "<a href=\"#Job-Seeking\">Job Seeking</a>"
+        },
+        {
+          "title": "<a href=\"#Business\">Business</a>"
+        },
+        {
+          "title": "<a href=\"#Travelling\">Travelling</a>"
+        },
+        {
+          "title": "<a href=\"#Games\">Games</a>"
+        },
+        {
+          "title": "<a href=\"#Miscellaneous\">Miscellaneous</a>"
+        },
+        {
+          "title": "<a href=\"#Creating-a-Checklist\">Creating a Checklist</a>"
+        },
+        {
+          "title": "<a href=\"#Help-Wanted\">Help Wanted</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Platform",
+      "items": [
+        {
+          "title": "Linux"
+        },
+        {
+          "title": "<a href=\"https://github.com/jeanleonino/linux-checklist\">Fresh New Linux</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/Forty-Bot/linux-checklist\">Anderson's 0x539</a></li>\n</ul>"
+        },
+        {
+          "title": "OSX"
+        },
+        {
+          "title": "Fresh New OS"
+        },
+        {
+          "title": "by <a href=\"https://github.com/grant/new-computer-checklist\">grant</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/abookyun/clean-install-your-mac-without-hesitation\">abookyun</a></li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Ubuntu"
+        },
+        {
+          "title": "<a href=\"https://github.com/phortx/Ubuntu-Setup-Checklist\">Fresh New Ubuntu</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Programming Languages",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/huytd/golang-checklist\">Go</a>"
+        },
+        {
+          "title": "Haskell"
+        },
+        {
+          "title": "by <a href=\"https://github.com/haskell-perf/checklist\">haskell-perf</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/iand675/haskell-checklist\">iand675</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/tfausak/haskell-package-checklist\">package</a></li>\n</ul>"
+        },
+        {
+          "title": "Java"
+        },
+        {
+          "title": "<a href=\"https://github.com/hantsy/awesome-javaee8\">Java EE 8</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/marco76/java-project-checklist\">a new Java contract / project / employee</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"http://bitovi.github.io/checklist/\">JavaScript project</a> | <a href=\"https://github.com/bitovi/checklist\">Code</a> | <a href=\"https://www.youtube.com/watch?v=20ebllexvuc\">Video</a>"
+        },
+        {
+          "title": "PHP"
+        },
+        {
+          "title": "<a href=\"http://phppackagechecklist.com/#1,2,3,4,5,6,7,8,9,10,11,12,13,14\">Package</a> | <a href=\"https://github.com/reinink/phppackagechecklist.com\">Code</a>"
+        },
+        {
+          "title": "Security"
+        },
+        {
+          "title": "by <a href=\"https://github.com/sk89q/php-security-checklist\">sk89q</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/Tjoosten/Security-Checklists\">Tjoosten</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"https://github.com/codeinphp/php-project-checklist\">Project</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"http://python.apichecklist.com/\">Python API</a> | <a href=\"https://github.com/vintasoftware/python-api-checklist\">Code</a>"
+        },
+        {
+          "title": "Ruby"
+        },
+        {
+          "title": "<a href=\"https://github.com/flatiron-school/ruby-debugging-checklist\">Debugging</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"http://www.symfony2-checklist.com/\">Symfony2 deployment</a> | <a href=\"https://github.com/winzou/symfony2-checklist\">Code</a>"
+        },
+        {
+          "title": "Ruby on Rails"
+        },
+        {
+          "title": "<a href=\"http://www.rails-upgrade-checklist.com/\">Upgrade</a> | <a href=\"https://github.com/jwo/rails-upgrade_checklist\">Code</a>"
+        },
+        {
+          "title": "Security"
+        },
+        {
+          "title": "by <a href=\"https://github.com/brunofacca/zen-rails-security-checklist\">brunofacca</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/eliotsykes/rails-security-checklist\">eliotsykes</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Web Development",
+      "items": [
+        {
+          "topic": "Front-End Development",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/rcherny/Front-End-Architecture-Checklist/blob/master/BaseFrontEndArch.md\">Before Front-End Development</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/soleo/front-end-building-checklist\">Feature Building</a>"
+            },
+            {
+              "title": "After Front-End Development"
+            },
+            {
+              "title": "by <a href=\"https://frontendchecklist.io/\">thedaviddias</a> | <a href=\"https://github.com/thedaviddias/Front-End-Checklist\">Code</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/drublic/checklist\">drublic</a>"
+            },
+            {
+              "title": "by <a href=\"http://webdevchecklist.com/\">ligershark</a> | <a href=\"https://github.com/ligershark/webdevchecklist.com\">Code</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/albburtsev/frontend-developer-checklist\">albburtsev</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/strv-academy-2017/deployment-checklist\">strv-academy-2017</a></li>\n</ul>"
+            },
+            {
+              "title": "Web Design"
+            },
+            {
+              "title": "by <a href=\"https://github.com/Heydon/inclusive-design-checklist\">Heydon</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/grayghostvisuals/webdesignerschecklist\">grayghostvisuals</a>"
+            },
+            {
+              "title": "by <a href=\"http://imaginarydesign.github.io/webdev-checklist/\">Imaginarydesign</a> | <a href=\"https://github.com/Imaginarydesign/webdev-checklist\">Code</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/actum/frontend-checklist\">actum</a></li>\n</ul>"
+            },
+            {
+              "title": "<a href=\"https://github.com/92bondstreet/code-review-front-end\">Code Review</a>"
+            },
+            {
+              "title": "SEO"
+            },
+            {
+              "title": "by <a href=\"https://webdesign.tutsplus.com/articles/a-web-designers-seo-checklist-including-portable-formats--webdesign-10740\">tutsplus</a> | <a href=\"https://github.com/tutsplus/SEO-Checklist-for-Web-Designers\">Code</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/ibandominguez/seo-checklist\">ibandominguez</a></li>\n</ul>"
+            },
+            {
+              "title": "<a href=\"https://github.com/irekrog/accessibility-checklist\">Accessibility</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/mgechev/angular-performance-checklist\">Angular Performance</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/shekhargulati/building-java-web-apps-checklist\">Java + Angular/React</a>"
+            },
+            {
+              "title": "React"
+            },
+            {
+              "title": "<a href=\"https://github.com/cht8687/React-ES5-To-ES6-Checklist\">Upgrading ES5 React to ES6+</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/harrisrobin/react-native-checklist\">harrisrobin</a> - A check list to refer to before starting a react-native project</li>\n</ul>"
+            },
+            {
+              "title": "<a href=\"https://github.com/bahmutov/npm-module-checklist\">NPM Module</a>"
+            },
+            {
+              "title": "Drupal"
+            },
+            {
+              "title": "<a href=\"https://github.com/theodorosploumis/drupal8-checklist\">Drupal 8</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/alehkot/drupal-launch-checklist\">Website launch</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Back-End Development",
+          "items": [
+            {
+              "title": "Docker"
+            },
+            {
+              "title": "<a href=\"https://github.com/GDSSecurity/Docker-Secure-Deployment-Guidelines\">Security</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/nicolaka/checklist\">Enterprise</a></li>\n</ul>"
+            },
+            {
+              "title": "Node.js"
+            },
+            {
+              "title": "by <a href=\"https://github.com/nickoki/node_app_checklist\">nickoki</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/jesusprubio/strong-node\">Security</a></li>\n</ul>"
+            },
+            {
+              "title": "<a href=\"http://djangoappschecklist.com/\">Django</a> | <a href=\"https://github.com/vintasoftware/django-apps-checklist\">Code</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/magento-hackathon/upgrade-checklist\">Magneto</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Web App",
+          "items": [
+            {
+              "title": "Security"
+            },
+            {
+              "title": "by <a href=\"https://github.com/virajkulkarni14/WebDeveloperSecurityChecklist\">virajkulkarni14</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/iamthefrogy/Application-Security/blob/master/Web-Security/security-assessment-checklist.md\">iamthefrogy</a></li>\n</ul>"
+            },
+            {
+              "title": "Launch"
+            },
+            {
+              "title": "by <a href=\"https://www.opquast.com/opquast-web-quality-checklist/\">Opquast</a> - Include checklists for Ecommerce website and issue certificates"
+            },
+            {
+              "title": "by <a href=\"https://weblaunchchecklist.com/\">HarrisJT</a> | <a href=\"https://github.com/HarrisJT/web-launch-checklist\">Code</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/datamade/site-launch-checklist\">datamade</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/mapiec/checklist\">mapiec</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/siddharthashok/Site-Launch-Checklist\">siddharthashok</a>"
+            },
+            {
+              "title": "by <a href=\"https://github.com/kdee15/deployment-checklist\">kdee15</a></li>\n</ul>"
+            },
+            {
+              "title": "<a href=\"https://github.com/antarestupin/performance-checklist\">Web Application Performance</a> - Gathers performance practices to apply when developing a web application."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "App & Project Development",
+      "items": [
+        {
+          "title": "Plan"
+        },
+        {
+          "title": "<a href=\"http://uxrecipe.github.io/\">UX Recipe</a> | <a href=\"https://github.com/uxrecipe/uxrecipe.github.io\">Code</a> - Discover, choose and estimate your next UX project tools &amp; techniques."
+        },
+        {
+          "title": "<a href=\"https://github.com/togakangaroo/estimation-checklist\">Estimation</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"https://github.com/spatie/checklist-going-live\">All projects that are going live</a>"
+        },
+        {
+          "title": "Project Management"
+        },
+        {
+          "title": "by <a href=\"https://github.com/smtlaissezfaire/project_management/blob/master/project_management_checklist.txt\">smtlaissezfaire</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/joelparkerhenderson/project_management_checklist\">joelparkerhenderson</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"https://github.com/theodesp/stable-systems-checklist\">Stable System</a>"
+        },
+        {
+          "title": "Open Source"
+        },
+        {
+          "title": "<a href=\"https://github.com/ddbeck/readme-checklist/blob/master/checklist.md\">README</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/process-bot/contribution-checklist\">Contribution</a>"
+        },
+        {
+          "title": "Open Source Project"
+        },
+        {
+          "title": "by <a href=\"https://github.com/afonsopacifer/open-source-checklist\">afonsopacifer</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/cfpb/open-source-project-template/blob/master/opensource-checklist.md\">cfpb</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/jollygoodcode/Open_Source_Checklist\">jollygoodcode</a></li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "iOS App Developmenet"
+        },
+        {
+          "title": "by <a href=\"https://github.com/oisin/app-release-checklist/blob/master/checklist.md\">oisin</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/ahmedragab/iOS-Checklist/wiki\">ahmedragab</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"https://github.com/IamHDT/Ecommerce-Website-Security-CheckList\">Ecommerce Website Security</a>"
+        },
+        {
+          "title": "Submit to AppStore"
+        },
+        {
+          "title": "by <a href=\"https://github.com/stanfy/submit-to-appstore-objc\">stanfy</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/acomito/expo-to-appstore-checklist\">acomito</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/rossbeale/iOS-App-Store-Submission-Checklist\">rossbeale</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/whitef0x0/app-store-checklist\">whitef0x0</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/DevMountain/ios-code-review-checklist\">DevMountain</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"https://github.com/IFit9/App-Launch-Checklist\">Android App Launch</a>"
+        }
+      ]
+    },
+    {
+      "topic": "   WordPress",
+      "items": [
+        {
+          "title": "Themes Review"
+        },
+        {
+          "title": "by <a href=\"https://github.com/thanhluu/wp-themes-review\">thanhluu</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/grappler/theme-review-checklist\">grappler</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/laras126/theme-checklist\">laras126</a>"
+        },
+        {
+          "title": "by <a href=\"http://mattrude.github.io/theme-checklist/\">mattrude</a> | <a href=\"https://github.com/mattrude/theme-checklist\">Code</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"https://github.com/hasinhayder/themeforest-wp-theme-approval-checklist\">Theme Approval Checklist for ThemeForest</a>"
+        },
+        {
+          "title": "<a href=\"http://wpsecuritychecklist.org/items/\">Security</a> | <a href=\"https://github.com/RafaelFunchal/wordpress-security-checklist\">Code</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/douglasanro/wordpress-seo-checklist\">SEO</a>"
+        },
+        {
+          "title": "Publish website"
+        },
+        {
+          "title": "by <a href=\"https://github.com/arobbins/wp-deploy-checklist\">arobbins</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/ingvijonasson/checklist-wordpress\">ingvijonasson</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Marketing",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/karllhughes/side-project-marketing/blob/master/marketing-checklist.md\">Side Project Marketing</a>"
+        },
+        {
+          "title": "<a href=\"https://gamedevelopment.tutsplus.com/articles/an-indie-game-developers-marketing-checklist-including-portable-formats--gamedev-7560\">Marketing Checklist for Indie Game Developers</a> | <a href=\"https://github.com/tutsplus/Marketing-Checklist-For-Indie-Game-Developers\">Code</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Personal Security",
+      "items": [
+        {
+          "title": "by <a href=\"https://github.com/alulsh/personal-security-checklist\">alulsh</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/diafygi/privacy-checklist\">diafygi</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/adilmajid/privacy-for-the-paranoid\">adilmajid</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Event",
+      "items": [
+        {
+          "title": "Conference"
+        },
+        {
+          "title": "<a href=\"https://github.com/gSchool/presentation-checklist\">Presentations</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/mxsasha/lessobviouschecklist\">Conference Organizers</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/MacLemon/CongressChecklist\">Conference Attendees</a></li>\n</ul>"
+        },
+        {
+          "title": "Meetup"
+        },
+        {
+          "title": "<a href=\"https://github.com/ctdesign/meetup-checklist\">Meetup</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Job Seeking",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/owocki/Interview_prep_checklist\">Interview Prep</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Business",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/nlra/Startup-Test\">Startup-Test</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/leonar15/startup-checklist\">Startup Incorporation</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/slashdotdash/saas-startup-checklist\">SaaS Startup</a>"
+        },
+        {
+          "title": "<a href=\"http://crisismanagement.devchecklists.com/\">Crisis Management</a> | <a href=\"https://github.com/vintasoftware/crisis-management-checklist\">Code</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Travelling",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/xzyfer/us-travel-checklist\">US</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/jpcaparas/travel-checklist\">Abroad</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/histrio/awesome-hiking\">Hiking</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Games",
+      "items": [
+        {
+          "title": "<a href=\"http://zkjellberg.github.io/dark-souls-3-cheat-sheet/\">Dark Souls 3</a> | <a href=\"https://github.com/ZKjellberg/dark-souls-3-cheat-sheet\">Code</a>"
+        },
+        {
+          "title": "<a href=\"http://smcnabb.github.io/dark-souls-2-cheat-sheet/\">Dark Souls 2</a> | <a href=\"https://github.com/smcnabb/dark-souls-2-cheat-sheet/tree/gh-pages\">Code</a>"
+        },
+        {
+          "title": "Pokemon"
+        },
+        {
+          "title": "<a href=\"http://pokemonpostgame.com/\">Multiple checklists</a> | <a href=\"https://github.com/PhilMurwin/PokemonChecklists\">Code</a>"
+        },
+        {
+          "title": "<a href=\"http://giacomolaw.me/pokefinder/\">Pokefinder</a> | <a href=\"https://github.com/GiacomoLaw/pokefinder\">Code</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Miscellaneous",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/shieldfy/API-Security-Checklist\">API Security</a>"
+        },
+        {
+          "title": "<a href=\"https://cto-security-checklist.sqreen.io/\">SaaS Security</a> | <a href=\"https://github.com/sqreen/CTOSecurityChecklist\">Code</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/mrmrs/styleguide-checklist\">Style Guide Creation</a>"
+        },
+        {
+          "title": "<a href=\"http://competency-checklist.appspot.com/\">Programmer Competency Matrix</a>"
+        },
+        {
+          "title": "<a href=\"https://devops-security-checklist.sqreen.io/\">DevOps</a> | <a href=\"https://github.com/sqreen/DevOpsSecurityChecklist\">Code</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/paunin/soa-checklist\">Microservice Oriented Architecture</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/fukawi2/NetworkHealthChecklist\">Network Health</a>"
+        },
+        {
+          "title": "<a href=\"http://bruceeckel.github.io/Language-Evaluation-Checklist/\">Language Evaluation</a>"
+        },
+        {
+          "title": "Code Review"
+        },
+        {
+          "title": "by <a href=\"https://github.com/rjz/code-review-checklist\">rjz</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/markoch/code-review\">markoch</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/ahammel/code-review-checklist/blob/master/code-review-checklist.md\">ahammel</a>"
+        },
+        {
+          "title": "by <a href=\"https://github.com/godber/software_dev_templates_and_checklists/blob/master/code_review/fog_creek-code_review-checklist.md\">godber</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"https://github.com/jonmbake/router-security-checklist\">Router Security</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Creating a Checklist",
+      "items": [
+        {
+          "title": "<p>Thanks to <a href=\"https://help.github.com/articles/basic-writing-and-formatting-syntax/\">Github Flavoured Markdown</a>, you can <a href=\"https://github.com/blog/1825-task-lists-in-all-markdown-documents\">create Task lists with ease</a>.</p><p><code>- Item 1\n - Item 2\n - [x] Item 3 (use an 'x' to put a checkmark)\n - Item 4</code></p><div align=\"right\"><a href=\"#table-of-contents\">🔝   back to top</a></div>"
+        }
+      ]
+    },
+    {
+      "topic": "Help Wanted",
+      "items": [
+        {
+          "title": "<p>Ways you can help</p><ol>\n<li>Add latest and greatest checklists"
+        },
+        {
+          "title": "Delete broken links to checklists"
+        },
+        {
+          "title": "Delete links to low-quality checklists"
+        },
+        {
+          "title": "Design the appearance of <a href=\"http://checklist.yingjiehu.com\">the website</a>"
+        },
+        {
+          "title": "Fix any typo"
+        },
+        {
+          "title": "Rewrite the title or description of any checklist to make them more easily understood"
+        },
+        {
+          "title": "Suggest different ways to categorize</li>\n</ol>"
+        },
+        {
+          "topic": "Contribution Guideline",
+          "items": [
+            {
+              "title": "Use the following format: <code>[Title](LINK) - DESCRIPTION.</code>"
+            },
+            {
+              "title": "The link should be the url linked to the checklist directly."
+            },
+            {
+              "title": "Add one link per pull-request."
+            },
+            {
+              "title": "Keep descriptions concise, clear and simple, and end them with a period / stop."
+            },
+            {
+              "title": "New categories, or improvements to the existing ones are also welcome."
+            },
+            {
+              "title": "Make sure your text editor is set to remove trailing whitespace."
+            },
+            {
+              "title": "<p>(Optional) Please add an Awesome Checklist badge in the list added. <a href=\"http://checklist.yingjiehu.com/\"><img src=\"https://img.shields.io/badge/Awesome-Checklist-blue.svg\"/></a></p>\n<p>You can use whatever color you like by replacing <code>&lt;COLOR&gt;</code> in</p>\n<p><code>&lt;a href=\"http://checklist.yingjiehu.com/\"&gt;&lt;img src=\"https://img.shields.io/badge/Awesome-Checklist-&lt;CODE&gt;.svg\"&gt;&lt;/a&gt;</code>.</p>\n<p>Example:</p>"
+            },
+            {
+              "title": "<p>pink <code>ff69b4</code> <a href=\"http://checklist.yingjiehu.com/\"><img src=\"https://img.shields.io/badge/Awesome-Checklist-ff69b4.svg\"/></a></p>\n<p><code>&lt;a href=\"http://checklist.yingjiehu.com/\"&gt;&lt;img src=\"https://img.shields.io/badge/Awesome-Checklist-ff69b4.svg\"&gt;&lt;/a&gt;</code></p>"
+            },
+            {
+              "title": "<p>red <a href=\"http://checklist.yingjiehu.com/\"><img src=\"https://img.shields.io/badge/Awesome-Checklist-red.svg\"/></a></p>\n<p><code>&lt;a href=\"http://checklist.yingjiehu.com/\"&gt;&lt;img src=\"https://img.shields.io/badge/Awesome-Checklist-red.svg\"&gt;&lt;/a&gt;</code></p>"
+            },
+            {
+              "title": "<p>blue <a href=\"http://checklist.yingjiehu.com/\"><img src=\"https://img.shields.io/badge/Awesome-Checklist-blue.svg\"/></a></p>\n<p><code>&lt;a href=\"http://checklist.yingjiehu.com/\"&gt;&lt;img src=\"https://img.shields.io/badge/Awesome-Checklist-blue.svg\"&gt;&lt;/a&gt;</code></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p><a href=\"http://creativecommons.org/licenses/by/4.0/\"><img alt=\"Creative Commons License\" src=\"http://i.creativecommons.org/l/by/4.0/88x31.png\"/></a></p><p>This work is licensed under a <a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

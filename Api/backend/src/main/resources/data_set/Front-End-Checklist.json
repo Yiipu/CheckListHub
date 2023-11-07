@@ -1,0 +1,238 @@
+{
+  "id": 84,
+  "header": "Front-End-Checklist",
+  "topicList": [
+    "Índice",
+    "Autores",
+    "Referências",
+    "Licença"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Índice",
+      "items": [
+        {
+          "title": "[ ] <a href=\"#design\">Design</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#usabilidade\">Usabilidade</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#acessibilidade\">Acessibilidade</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#seo\">SEO</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#web-performance-optimization\">Web Performance Optimization</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#qualidade-de-codigo\">Qualidade de Código</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#cross-browser\">Cross Browser</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#awd/rwd/mobile\">AWD/RWD/Mobile</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#analises\">Análises</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#workflow\">Workflow</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#mantenabilidade\">Mantenabilidade</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#outros-testes\">Outros Testes</a>"
+        },
+        {
+          "title": "[ ] <a href=\"#creditos\">Créditos</a>"
+        },
+        {
+          "title": "<a href=\"#autores\">Autores</a>"
+        },
+        {
+          "title": "<a href=\"#referencias\">Referências</a>"
+        },
+        {
+          "title": "<a href=\"#licenca\">Licença</a>"
+        },
+        {
+          "topic": "Design",
+          "items": [
+            {
+              "title": "[ ] <a href=\"http://tableless.com.br/guia-de-estilos/\">Criar guia de estilos</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Usabilidade",
+          "items": []
+        },
+        {
+          "topic": "Acessibilidade",
+          "items": []
+        },
+        {
+          "topic": "SEO",
+          "items": []
+        },
+        {
+          "topic": "Web Performance Optimization",
+          "items": []
+        },
+        {
+          "topic": "Qualidade de código",
+          "items": [
+            {
+              "title": "[ ] Validar HTML na W3C"
+            },
+            {
+              "title": "[ ] Validar CSS na W3C"
+            },
+            {
+              "title": "[ ] CSS Lint"
+            },
+            {
+              "title": "[ ] JS Hint"
+            }
+          ]
+        },
+        {
+          "topic": "Cross-browser",
+          "items": [
+            {
+              "title": "[ ] Definir quais browsers serão suportados"
+            },
+            {
+              "title": "[ ] Utilizar Autoprefixer"
+            },
+            {
+              "title": "[ ] Verifique o site/aplicação em todos os navegadores"
+            }
+          ]
+        },
+        {
+          "topic": "AWD/RWD/Mobile",
+          "items": [
+            {
+              "title": "[ ] Media Queries Mobile First"
+            },
+            {
+              "title": "[ ] Disponibilizar fotos para Retina Display"
+            },
+            {
+              "title": "[ ] Utilizar SVG em tudo o que possivel (<a href=\"https://css-tricks.com/icon-fonts-vs-svg/\">SVG &gt; icon fonts</a>)"
+            },
+            {
+              "title": "[ ] Use input types corretos"
+            },
+            {
+              "title": "[ ] Use a meta-tag <code>viewport</code> da forma correta"
+            },
+            {
+              "title": "[ ] <a href=\"http://validator.w3.org/mobile/\">Pontuação mobile OK de 75+</a>"
+            },
+            {
+              "title": "[ ] <a href=\"https://validator.w3.org/mobile-alpha/\">Validar no W3C Mobile Checker</a>"
+            },
+            {
+              "title": "[ ] Teste em emuladores mobile"
+            },
+            {
+              "title": "[ ] Teste em dispositivos reais"
+            }
+          ]
+        },
+        {
+          "topic": "Análises",
+          "items": [
+            {
+              "title": "[ ] Adicionar análise de tráfego (Analytics)"
+            }
+          ]
+        },
+        {
+          "topic": "Workflow",
+          "items": [
+            {
+              "title": "[ ] Versionar o projeto corretamente"
+            },
+            {
+              "title": "[ ] Automatizar o máximo de tarefas possíveis"
+            },
+            {
+              "title": "[ ] Automatizar deploy"
+            }
+          ]
+        },
+        {
+          "topic": "Mantenabilidade",
+          "items": [
+            {
+              "title": "[ ] Nunca usar <code>!important</code>"
+            },
+            {
+              "title": "[ ] Focar o nome de seletores (Classes) sempre na função e nunca no conteúdo"
+            }
+          ]
+        },
+        {
+          "topic": "Outros Testes",
+          "items": [
+            {
+              "title": "[ ] <a href=\"http://validator.w3.org/checklink\">Verificar links quebrados</a>"
+            },
+            {
+              "title": "[ ] Verificar ortografia e gramática"
+            }
+          ]
+        },
+        {
+          "topic": "Créditos",
+          "items": [
+            {
+              "title": "[ ] <a href=\"http://humanstxt.org/\">Adicionar humans.txt</a>"
+            },
+            {
+              "title": "[ ] <a href=\"http://escolhaumalicenca.com.br/\">Escolher e adicionar uma licença adequada</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Autores",
+      "items": [
+        {
+          "title": "<p><a href=\"https://github.com/afonsopacifer\"><img alt=\"Afonso Pacifer\" src=\"img/afonso-pacifer.jpg\"/></a> | <a href=\"https://github.com/daniguerrato\"><img alt=\"Dani Guerrato\" src=\"img/dani-guerrato.jpg\"/></a> | <a href=\"https://github.com/brunopulis\"><img alt=\"Bruno Pulis\" src=\"img/bruno-pulis.jpg\"/></a>\n--- | --- | --- | --- | --- | --- | ---\n<a href=\"https://github.com/afonsopacifer\">Afonso Pacifer</a> | <a href=\"https://github.com/daniguerrato\">Dani Guerrato</a>| <a href=\"https://github.com/brunopulis\">Bruno Pulis</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Referências",
+      "items": [
+        {
+          "title": "<a href=\"http://a11yproject.com/checklist.html\">a11y Project checklist</a>"
+        },
+        {
+          "title": "<a href=\"http://browserdiet.com/\">Browser Diet</a>"
+        },
+        {
+          "title": "<a href=\"http://webdevchecklist.com/\">Web Dev Checklist</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Licença",
+      "items": [
+        {
+          "title": "<p><a href=\"licence.md\">MIT Licence</a> © Afonso Pacifer</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

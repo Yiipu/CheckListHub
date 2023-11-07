@@ -1,0 +1,384 @@
+{
+  "id": 196,
+  "header": "soa-readiness-checklist",
+  "topicList": [
+    "Checklist",
+    "Raw topics",
+    "Links"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Checklist",
+      "items": [
+        {
+          "title": "<p>SOON</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Raw topics",
+      "items": [
+        {
+          "title": "communications"
+        },
+        {
+          "title": "<p>frontend - backend</p>"
+        },
+        {
+          "title": "Types"
+        },
+        {
+          "title": "json API"
+        },
+        {
+          "title": "REST json"
+        },
+        {
+          "title": "GraphQL"
+        },
+        {
+          "title": "Guidelines for developers</li>\n</ul>"
+        },
+        {
+          "title": "<p>backend - backend</p>"
+        },
+        {
+          "title": "Types"
+        },
+        {
+          "title": "json API"
+        },
+        {
+          "title": "REST json"
+        },
+        {
+          "title": "GraphQL"
+        },
+        {
+          "title": "AvroRPC"
+        },
+        {
+          "title": "gRPC"
+        },
+        {
+          "title": "Thrift RPC"
+        },
+        {
+          "title": "Guidelines for developers</li>\n</ul>"
+        },
+        {
+          "title": "<p>Events</p>"
+        },
+        {
+          "title": "<p>event serealisation</p>"
+        },
+        {
+          "title": "TODO: take more examples from link - https://reasonablypolymorphic.com/blog/protos-are-wrong/index.html"
+        },
+        {
+          "title": "humar readable"
+        },
+        {
+          "title": "xml"
+        },
+        {
+          "title": "json"
+        },
+        {
+          "title": "binary"
+        },
+        {
+          "title": "avro"
+        },
+        {
+          "title": "protobuf"
+        },
+        {
+          "title": "trift"
+        },
+        {
+          "title": "Links"
+        },
+        {
+          "title": "http://dataintensive.net</li>\n</ul>"
+        },
+        {
+          "title": "<p>event types</p>"
+        },
+        {
+          "title": "Business event"
+        },
+        {
+          "title": "<p>High-level, intention-revealing business events</p>"
+        },
+        {
+          "title": "<p>Data-change event</p>"
+        },
+        {
+          "title": "<p>Low-level, technical event for describing changes</p>"
+        },
+        {
+          "title": "<p>Links</p>"
+        },
+        {
+          "title": "\"Format &amp; Semantics\" section from https://medium.com/@sderosiaux/cqrs-what-why-how-945543482313</li>\n</ul>"
+        },
+        {
+          "title": "<p>Event ordering</p>"
+        },
+        {
+          "title": "by event bus"
+        },
+        {
+          "title": "by service logic</li>\n</ul>"
+        },
+        {
+          "title": "<p>Compatibility level and event versions</p>"
+        },
+        {
+          "title": "backward and forward compatibility"
+        },
+        {
+          "title": "Different versions for event data and event schema"
+        },
+        {
+          "title": "Links"
+        },
+        {
+          "title": "http://dataintensive.net</li>\n</ul>"
+        },
+        {
+          "title": "<p>how to store event schemas</p>"
+        },
+        {
+          "title": "in source code"
+        },
+        {
+          "title": "in separate library"
+        },
+        {
+          "title": "in schema registry</li>\n</ul>"
+        },
+        {
+          "title": "<p>event bus</p>"
+        },
+        {
+          "title": "if kafka"
+        },
+        {
+          "title": "how to create a new topic locally, in production, in staging and in test env"
+        },
+        {
+          "title": "topic convention"
+        },
+        {
+          "title": "partition convention"
+        },
+        {
+          "title": "consumer group"
+        },
+        {
+          "title": "log compatction"
+        },
+        {
+          "title": "if rebbitmq"
+        },
+        {
+          "title": "how to create a queue"
+        },
+        {
+          "title": "if google pub/sub"
+        },
+        {
+          "title": "how to create a queue</li>\n</ul>"
+        },
+        {
+          "title": "<p>AuthN/AuthZ</p>"
+        },
+        {
+          "title": "<p>Data composition</p>"
+        },
+        {
+          "title": "<p>How to make API composition</p>"
+        },
+        {
+          "title": "REST"
+        },
+        {
+          "title": "API gateway"
+        },
+        {
+          "title": "self written"
+        },
+        {
+          "title": "open source</li>\n</ul>"
+        },
+        {
+          "title": "GraphQL"
+        },
+        {
+          "title": "manual stitching"
+        },
+        {
+          "title": "GQL gateway</li>\n</ul>"
+        },
+        {
+          "title": "<p>How to make data composition</p>"
+        },
+        {
+          "title": "Sync"
+        },
+        {
+          "title": "backend to backend communications"
+        },
+        {
+          "title": "Async"
+        },
+        {
+          "title": "event bus</li>\n</ul>"
+        },
+        {
+          "title": "<p>Data synchronization</p>"
+        },
+        {
+          "title": "How to get data which needful for business logic?"
+        },
+        {
+          "title": "sync way"
+        },
+        {
+          "title": "Backend to backend communications</li>\n</ul>"
+        },
+        {
+          "title": "async way"
+        },
+        {
+          "title": "event bus"
+        },
+        {
+          "title": "CQRS"
+        },
+        {
+          "title": "data streaming</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "<p>DevOps</p>"
+        },
+        {
+          "title": "Developers know how to provision a new service by self"
+        },
+        {
+          "title": "Developers know how to setup CI/CD by self"
+        },
+        {
+          "title": "Developers know how to deploy service to all env by self"
+        },
+        {
+          "title": "Developers know how to setup logs/monitoring/alerting by self and where they can find all information about the service"
+        },
+        {
+          "title": "<p>Developers have clear understanding what they need to do from infrastructure perspective before start using a new service in production</p>"
+        },
+        {
+          "title": "<p>Testing</p>"
+        },
+        {
+          "title": "System has contract testing infrastructure"
+        },
+        {
+          "title": "Developers can write contract testing without by self</li>\n</ul>"
+        },
+        {
+          "title": "<p>System has e2e testing infrastructure</p>"
+        },
+        {
+          "title": "<p>Observability</p>"
+        },
+        {
+          "title": "Logs"
+        },
+        {
+          "title": "Developers know how to store logs"
+        },
+        {
+          "title": "everyone know how and where to read logs</li>\n</ul>"
+        },
+        {
+          "title": "<p>Monitoring</p>"
+        },
+        {
+          "title": "Business metrics"
+        },
+        {
+          "title": "ARP metrics"
+        },
+        {
+          "title": "System metrics"
+        },
+        {
+          "title": "Tracing</li>\n</ul>"
+        },
+        {
+          "title": "<p>Inventory aka list of all services in the system</p>"
+        },
+        {
+          "title": "<p>We need a place where we can see all our services and dependencies between them</p>"
+        },
+        {
+          "title": "<p>local development</p>"
+        },
+        {
+          "title": "<p>developers can get same env as a production env</p>"
+        },
+        {
+          "title": "<p>ETL and analytics</p>"
+        },
+        {
+          "title": "<p>Documentation</p>"
+        },
+        {
+          "title": "Do you have a process around Architecture Decision Records?"
+        },
+        {
+          "title": "Do you have domain documentation which can be useful for developers and other ppl from the team?"
+        },
+        {
+          "title": "Do you have a documentation for the each service?"
+        },
+        {
+          "title": "API"
+        },
+        {
+          "title": "architecture of the service"
+        },
+        {
+          "title": "how to install service locally</li>\n</ul>"
+        },
+        {
+          "title": "List of allowed technologies/practices"
+        },
+        {
+          "title": "Checks"
+        },
+        {
+          "title": "deployment checklist"
+        },
+        {
+          "title": "moving to production checklist"
+        }
+      ]
+    },
+    {
+      "topic": "Links",
+      "items": [
+        {
+          "title": "<a href=\"https://medium.com/platform-engineer/microservices-design-guide-eca0b799a7e8\">Microservices Design Guide</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.google.com/spreadsheets/d/1vjnjAII_8TZBv2XhFHra7kEQzQpOHSZpFIWDjynYYf0/edit#gid=0\">When microservices fail...</a>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

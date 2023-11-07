@@ -1,0 +1,1012 @@
+{
+  "id": 59,
+  "header": "cybersecurity-security-harderning",
+  "topicList": [
+    "What is Security Hardening?",
+    "Table of Contents",
+    "Hardening Guide Collections",
+    "GNU/Linux",
+    "macOS",
+    "Network Devices",
+    "Virtualization - VMware",
+    "Containers - Docker",
+    "Services",
+    "Authentication - Passwords",
+    "Hardware - CPU - BIOS - UEFI",
+    "Cloud",
+    "Tools to check security hardening",
+    "Tools to apply security hardening",
+    "Password Generators",
+    "Other Awesome Security Lists",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "What is Security Hardening?",
+      "items": [
+        {
+          "title": "<p>Hardening, when applied to computing, is the practice of reducing a system’s vulnerability by reducing its attack surface.</p><p><img alt=\"hardening\" src=\"https://github.com/paulveillard/cybersecurity-security-harderning/blob/main/img/security-hardening.png\"/></p><p>Hardening may involve a reduction in attack vectors by culling the pathways, or vectors, attackers would use. It may range from adhering to blanket policies such as Zero Trust, the Principle of Least Privilege (PoLP), or Defense In Depth, but also manifest as certain task lists such as implementing workforce training, segmenting resources, automating security updates, resetting default passwords, hashing passwords, and ceasing to store or transmit data unless it is encrypted.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<a href=\"#security-hardening-guides-and-best-practices\">Security Hardening Guides and Best Practices</a>"
+        },
+        {
+          "title": "<a href=\"#hardening-guide-collections\">Hardening Guide Collections</a>"
+        },
+        {
+          "title": "<a href=\"#gnulinux\">GNU/Linux</a>"
+        },
+        {
+          "title": "<a href=\"#red-hat-enterprise-linux---rhel\">Red Hat Enterprise Linux - RHEL</a>"
+        },
+        {
+          "title": "<a href=\"#centos\">CentOS</a>"
+        },
+        {
+          "title": "<a href=\"#suse\">SUSE</a>"
+        },
+        {
+          "title": "<a href=\"#ubuntu\">Ubuntu</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#windows\">Windows</a>"
+        },
+        {
+          "title": "<a href=\"#macos\">macOS</a>"
+        },
+        {
+          "title": "<a href=\"#network-devices\">Network Devices</a>"
+        },
+        {
+          "title": "<a href=\"#switches\">Switches</a>"
+        },
+        {
+          "title": "<a href=\"#routers\">Routers</a>"
+        },
+        {
+          "title": "<a href=\"#ipv6\">IPv6</a>"
+        },
+        {
+          "title": "<a href=\"#firewalls\">Firewalls</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#virtualization---vmware\">Virtualization - VMware</a>"
+        },
+        {
+          "title": "<a href=\"#containers---docker\">Containers - Docker</a>"
+        },
+        {
+          "title": "<a href=\"#services\">Services</a>"
+        },
+        {
+          "title": "<a href=\"#ssh\">SSH</a>"
+        },
+        {
+          "title": "<a href=\"#tlsssl\">TLS/SSL</a>"
+        },
+        {
+          "title": "<a href=\"#web-servers\">Web Servers</a>"
+        },
+        {
+          "title": "<a href=\"#apache-http-server\">Apache HTTP Server</a>"
+        },
+        {
+          "title": "<a href=\"#apache-tomcat\">Apache Tomcat</a>"
+        },
+        {
+          "title": "<a href=\"#eclipse-jetty\">Eclipse Jetty</a>"
+        },
+        {
+          "title": "<a href=\"#microsoft-iis\">Microsoft IIS</a>"
+        },
+        {
+          "title": "<a href=\"#mail-servers\">Mail Servers</a>"
+        },
+        {
+          "title": "<a href=\"#ftp-servers\">FTP Servers</a>"
+        },
+        {
+          "title": "<a href=\"#database-servers\">Database Servers</a>"
+        },
+        {
+          "title": "<a href=\"#active-directory\">Active Directory</a>"
+        },
+        {
+          "title": "<a href=\"#adfs\">ADFS</a>"
+        },
+        {
+          "title": "<a href=\"#kerberos\">Kerberos</a>"
+        },
+        {
+          "title": "<a href=\"#ldap\">LDAP</a>"
+        },
+        {
+          "title": "<a href=\"#dns\">DNS</a>"
+        },
+        {
+          "title": "<a href=\"#ntp\">NTP</a>"
+        },
+        {
+          "title": "<a href=\"#nfs\">NFS</a>"
+        },
+        {
+          "title": "<a href=\"#cups\">CUPS</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#authentication---passwords\">Authentication - Passwords</a>"
+        },
+        {
+          "title": "<a href=\"#hardware---cpu---bios---uefi\">Hardware - CPU - BIOS - UEFI</a>"
+        },
+        {
+          "title": "<a href=\"#cloud\">Cloud</a>"
+        },
+        {
+          "title": "<a href=\"#tools\">Tools</a>"
+        },
+        {
+          "title": "<a href=\"#tools-to-check-security-hardening\">Tools to check security hardening</a>"
+        },
+        {
+          "title": "<a href=\"#gnulinux-1\">GNU/Linux</a>"
+        },
+        {
+          "title": "<a href=\"#windows-1\">Windows</a>"
+        },
+        {
+          "title": "<a href=\"#network-devices-1\">Network Devices</a>"
+        },
+        {
+          "title": "<a href=\"#tlsssl-1\">TLS/SSL</a>"
+        },
+        {
+          "title": "<a href=\"#ssh-1\">SSH</a>"
+        },
+        {
+          "title": "<a href=\"#hardware---cpu---bios---uefi-1\">Hardware - CPU - BIOS - UEFI</a>"
+        },
+        {
+          "title": "<a href=\"#docker\">Docker</a>"
+        },
+        {
+          "title": "<a href=\"#cloud-1\">Cloud</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#tools-to-apply-security-hardening\">Tools to apply security hardening</a>"
+        },
+        {
+          "title": "<a href=\"#gnulinux-2\">GNU/Linux</a>"
+        },
+        {
+          "title": "<a href=\"#windows-2\">Windows</a>"
+        },
+        {
+          "title": "<a href=\"#tlsssl-2\">TLS/SSL</a>"
+        },
+        {
+          "title": "<a href=\"#cloud-2\">Cloud</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#password-generators\">Password Generators</a>"
+        },
+        {
+          "title": "<a href=\"#books\">Books</a>"
+        },
+        {
+          "title": "<a href=\"#other-awesome-lists\">Other Awesome Lists</a>"
+        },
+        {
+          "title": "<a href=\"#other-awesome-security-lists\">Other Awesome Security Lists</a><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Hardening Guide Collections",
+      "items": [
+        {
+          "title": "<a href=\"https://www.cisecurity.org/cis-benchmarks/\">CIS Benchmarks</a> (registration required)"
+        },
+        {
+          "title": "<a href=\"https://www.ssi.gouv.fr/en/best-practices/\">ANSSI Best Practices</a>"
+        },
+        {
+          "title": "<a href=\"https://apps.nsa.gov/iaarchive/library/ia-guidance/security-configuration/index.cfm?PAGE=1&amp;itemsQty=ALL\">NSA Security Configuration Guidance</a>"
+        },
+        {
+          "title": "<a href=\"https://www.nsa.gov/what-we-do/cybersecurity/\">NSA Cybersecurity Resources for Cybersecurity Professionals</a> and <a href=\"https://nsacyber.github.io/publications.html\">NSA Cybersecurity publications</a>"
+        },
+        {
+          "title": "<a href=\"https://public.cyber.mil/stigs/\">US DoD DISA Security Technical Implementation Guides (STIGs) and Security Requirements Guides (SRGs)</a>"
+        },
+        {
+          "title": "<a href=\"https://www.open-scap.org/security-policies/\">OpenSCAP Security Policies</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cyber.gov.au/publications\">Australian Cyber Security Center Publications</a>"
+        },
+        {
+          "title": "<a href=\"https://www.first.org/resources/guides/\">FIRST Best Practice Guide Library (BPGL)</a>"
+        },
+        {
+          "title": "<a href=\"http://hardentheworld.org/\">Harden the World</a> - a collection of hardening guidelines for devices, applications and OSs (mostly Apple for now)."
+        }
+      ]
+    },
+    {
+      "topic": "GNU/Linux",
+      "items": [
+        {
+          "title": "<a href=\"https://www.ssi.gouv.fr/en/guide/configuration-recommendations-of-a-gnulinux-system/\">ANSSI - Configuration recommendations of a GNU/Linux system</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cisecurity.org/benchmark/distribution_independent_linux/\">CIS Benchmark for Distribution Independent Linux</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/trimstray/the-practical-linux-hardening-guide\">trimstray - The Practical Linux Hardening Guide</a> - practical step-by-step instructions for building your own hardened systems and services. Tested on CentOS 7 and RHEL 7."
+        },
+        {
+          "title": "<a href=\"https://github.com/trimstray/linux-hardening-checklist\">trimstray - Linux Hardening Checklist</a> - most important hardening rules for GNU/Linux systems (summarized version of The Practical Linux Hardening Guide)"
+        },
+        {
+          "title": "<a href=\"https://github.com/imthenachoman/How-To-Secure-A-Linux-Server\">How To Secure A Linux Server</a> - for a single Linux server at home"
+        },
+        {
+          "title": "<a href=\"https://www.cyberciti.biz/tips/linux-security.html\">nixCraft - 40 Linux Server Hardening Security Tips (2019 edition)</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cyberciti.biz/tips/tips-to-protect-linux-servers-physical-console-access.html\">nixCraft - Tips To Protect Linux Servers Physical Console Access</a>"
+        },
+        {
+          "title": "<a href=\"https://www.tecmint.com/disable-root-login-in-linux/\">TecMint - 4 Ways to Disable Root Account in Linux</a>"
+        },
+        {
+          "title": "<a href=\"https://www.ernw.de/download/ERNW_Guide_to_Securely_Configure_Linux_Servers_For_IPv6_v1_0.pdf\">ERNW - IPv6 Hardening  Guide  for  Linux Servers</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/trimstray/iptables-essentials\">trimstray - Iptables Essentials: Common Firewall Rules and Commands</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/Neo23x0/auditd\">Neo23x0/auditd</a> - Best Practice Auditd Configuration"
+        },
+        {
+          "topic": "Red Hat Enterprise Linux - RHEL",
+          "items": [
+            {
+              "title": "<a href=\"https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/security_guide/index\">Red Hat - A Guide to Securing Red Hat Enterprise Linux 7</a>"
+            },
+            {
+              "title": "<a href=\"https://public.cyber.mil/stigs/downloads/?_dl_facet_stigs=unix-linux\">DISA STIGs - Red Hat Enterprise Linux 7</a> (2019)"
+            },
+            {
+              "title": "<a href=\"https://www.cisecurity.org/benchmark/red_hat_linux/\">CIS Benchmark for Red Hat Linux</a>"
+            },
+            {
+              "title": "<a href=\"https://www.cyberciti.biz/faq/configure-set-up-a-firewall-using-firewalld-on-rhel-8/\">nixCraft - How to set up a firewall using FirewallD on RHEL 8</a>"
+            }
+          ]
+        },
+        {
+          "topic": "CentOS",
+          "items": [
+            {
+              "title": "<a href=\"https://www.lisenet.com/2017/centos-7-server-hardening-guide/\">Lisenet - CentOS 7 Server Hardening Guide</a> (2017)"
+            },
+            {
+              "title": "<a href=\"https://highon.coffee/blog/security-harden-centos-7/\">HighOn.Coffee - Security Harden CentOS 7</a> (2015)"
+            }
+          ]
+        },
+        {
+          "topic": "SUSE",
+          "items": [
+            {
+              "title": "<a href=\"https://www.suse.com/documentation/sles-12/singlehtml/book_security/book_security.html\">SUSE Linux Enterprise Server 12 SP4 Security Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://www.suse.com/documentation/sles-12/book_hardening/data/book_hardening.html\">SUSE Linux Enterprise Server 12 Security and Hardening Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Ubuntu",
+          "items": [
+            {
+              "title": "<a href=\"https://help.ubuntu.com/lts/serverguide/security.html.en\">Ubuntu documentation - Security</a>"
+            },
+            {
+              "title": "<a href=\"https://wiki.ubuntu.com/Security/Features\">Ubuntu wiki - Security Hardening Features</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Windows",
+          "items": [
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-security-baselines\">Microsoft - Windows security baselines</a>"
+            },
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/windows-server/security/security-and-assurance\">Microsoft - Windows Server Security | Assurance</a>"
+            },
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/windows/security/\">Microsoft - Windows 10 Enterprise Security</a>"
+            },
+            {
+              "title": "<a href=\"https://www.bsi.bund.de/EN/Topics/Cyber-Security/Recommendations/SiSyPHuS_Win10/AP11/SiSyPHuS_AP11_node.html\">BSI/ERNW - Configuration Recommendations for Hardening of Windows 10 Using Built-in Functionalities</a> (2021) - focused on Windows 10 LTSC 2019"
+            },
+            {
+              "title": "<a href=\"https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-microsoft-windows-10-version-21h1-workstations\">ACSC - Hardening Microsoft Windows 10, version 21H1, Workstations</a>"
+            },
+            {
+              "title": "<a href=\"https://www.cyber.gov.au/publications/securing-powershell-in-the-enterprise\">ACSC - Securing PowerShell in the Enterprise</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/PaulSec/awesome-windows-domain-hardening\">Awesome Windows Domain Hardening</a>"
+            },
+            {
+              "title": "<a href=\"https://support.microsoft.com/en-gb/help/2696547/detect-enable-disable-smbv1-smbv2-smbv3-in-windows-and-windows-server\">Microsoft - How to detect, enable and disable SMBv1, SMBv2, and SMBv3 in Windows and Windows Server</a>"
+            },
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules\">Microsoft recommended block rules</a> - List of applications or files that can be used by an attacker to circumvent application whitelisting policies"
+            },
+            {
+              "title": "<a href=\"https://www.ernw.de/download/ERNW_Guide_to_Configure_Securely_Windows_Servers_For_IPv6_v1_0.pdf\">ERNW - IPv6 Hardening Guide for Windows Servers</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/nsacyber/AppLocker-Guidance\">NSA - AppLocker Guidance</a> - Configuration guidance for implementing application whitelisting with AppLocker"
+            },
+            {
+              "title": "<a href=\"https://github.com/nsacyber/Pass-the-Hash-Guidance\">NSA - Pass the Hash Guidance</a> - Configuration guidance for implementing Pass-the-Hash mitigations (Archived)"
+            },
+            {
+              "title": "<a href=\"https://github.com/nsacyber/BitLocker-Guidance\">NSA - BitLocker Guidance</a> - Configuration guidance for implementing disk encryption with BitLocker"
+            },
+            {
+              "title": "<a href=\"https://github.com/nsacyber/Event-Forwarding-Guidance\">NSA - Event Forwarding Guidance</a> - Configuration guidance for implementing collection of security relevant Windows Event Log events by using Windows Event Forwarding"
+            },
+            {
+              "title": "<a href=\"https://docs.google.com/document/d/1_43UroB0zY4-R2E2r_nH4ndYpDmXAY8g0oTp8yWlwBk/edit?usp=sharing\">Windows Defense in Depth Strategies</a> - work in progress"
+            },
+            {
+              "title": "<a href=\"https://medium.com/@cryps1s/endpoint-isolation-with-the-windows-firewall-462a795f4cfb\">Endpoint Isolation with the Windows Firewall</a> based on Jessica Payne’s <a href=\"https://channel9.msdn.com/Events/Ignite/New-Zealand-2016/M377\">‘Demystifying the Windows Firewall’</a> talk from Ignite 2016<p>See also <a href=\"#active-directory\">Active Directory</a> and <a href=\"#adfs\">ADFS</a> below.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "macOS",
+      "items": [
+        {
+          "title": "<a href=\"https://www.ernw.de/download/ERNW_Hardening_IPv6_MacOS-X_v1_0.pdf\">ERNW - IPv6 Hardening Guide for OS-X</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Network Devices",
+      "items": [
+        {
+          "title": "<a href=\"https://apps.nsa.gov/iaarchive/library/ia-guidance/security-tips/harden-network-devices.cfm\">NSA - Harden Network Devices</a> - very short but good summary"
+        },
+        {
+          "topic": "Switches",
+          "items": [
+            {
+              "title": "<a href=\"http://iasecontent.disa.mil/stigs/zip/U_Layer_2_Switch_V1R3_SRG.zip\">DISA - Layer 2 Switch SRG</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Routers",
+          "items": [
+            {
+              "title": "<a href=\"https://www.nsa.gov/Portals/70/documents/what-we-do/cybersecurity/professional-resources/ctr-guide-to-border-gateway-protocol-best-practices.pdf?v=1\">NSA - A Guide to Border Gateway Protocol (BGP) Best Practices</a>"
+            }
+          ]
+        },
+        {
+          "topic": "IPv6",
+          "items": [
+            {
+              "title": "ERNW - Developing an Enterprise IPv6 Security Strategy <a href=\"https://www.insinuator.net/2015/12/developing-an-enterprise-ipv6-security-strategy-part-1-baseline-analysis-of-ipv4-network-security/\">Part 1</a>, <a href=\"https://www.insinuator.net/2015/12/developing-an-enterprise-ipv6-security-strategy-part-2-network-isolation-on-the-routing-layer/\">Part 2</a>, <a href=\"https://www.insinuator.net/2015/12/developing-an-enterprise-ipv6-security-strategy-part-3-traffic-filtering-in-ipv6-networks-i/\">Part 3</a>, <a href=\"https://insinuator.net/2015/12/developing-an-enterprise-ipv6-security-strategy-part-4-traffic-filtering-in-ipv6-networks-ii/\">Part 4</a> - Network Isolation on the Routing Layer, Traffic Filtering in IPv6 Networks"
+            },
+            {
+              "title": "see also IPv6 links under GNU/Linux, Windows and macOS"
+            }
+          ]
+        },
+        {
+          "topic": "Firewalls",
+          "items": [
+            {
+              "title": "<a href=\"https://www.nist.gov/publications/guidelines-firewalls-and-firewall-policy\">NIST SP 800-41 Rev 1 - Guidelines on Firewalls and Firewall Policy</a> (2009)"
+            },
+            {
+              "title": "<a href=\"https://github.com/trimstray/iptables-essentials\">trimstray - Iptables Essentials: Common Firewall Rules and Commands</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Virtualization - VMware",
+      "items": [
+        {
+          "title": "<a href=\"https://www.vmware.com/security/hardening-guides.html\">VMware Security Hardening Guides</a> - covers most VMware products and versions"
+        },
+        {
+          "title": "<a href=\"https://www.cisecurity.org/benchmark/vmware/\">CIS VMware ESXi 6.5 Benchmark</a> (2018)"
+        },
+        {
+          "title": "<a href=\"https://public.cyber.mil/stigs/downloads/?_dl_facet_stigs=virtualization\">DISA STIGs - Virtualisation</a> - VMware vSphere 6.0 and 5"
+        },
+        {
+          "title": "<a href=\"https://www.enisa.europa.eu/publications/security-aspects-of-virtualization\">ENISA - Security aspects of virtualization</a> - generic, high-level best practices for virtualization and containers (Feb 2017)"
+        },
+        {
+          "title": "<a href=\"https://www.nist.gov/publications/guide-security-full-virtualization-technologies\">NIST SP 800-125 - Guide to Security for Full Virtualization Technologies</a> - (2011)"
+        },
+        {
+          "title": "<a href=\"https://csrc.nist.gov/publications/detail/sp/800-125a/rev-1/final\">NIST SP 800-125A Revision 1 - Security Recommendations for Server-based Hypervisor Platforms</a> (2018)"
+        },
+        {
+          "title": "<a href=\"https://csrc.nist.gov/publications/detail/sp/800-125b/final\">NIST SP 800-125B Secure Virtual Network Configuration for Virtual Machine (VM) Protection</a> (2016)"
+        },
+        {
+          "title": "<a href=\"https://www.ssi.gouv.fr/guide/recommandations-de-securite-pour-les-architectures-basees-sur-vmware-vsphere-esxi/\">ANSSI - Recommandations de sécurité pour les architectures basées sur VMware vSphere ESXi</a> - for VMware 5.5 (2016), in French"
+        },
+        {
+          "title": "<a href=\"https://www.ssi.gouv.fr/administration/guide/problematiques-de-securite-associees-a-la-virtualisation-des-systemes-dinformation/\">ANSSI - Problématiques de sécurité associées à la virtualisation des systèmes d’information</a> (2013), in French"
+        }
+      ]
+    },
+    {
+      "topic": "Containers - Docker",
+      "items": [
+        {
+          "title": "<a href=\"https://www.secjuice.com/how-to-harden-docker-containers/\">How To Harden Your Docker Containers</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cisecurity.org/benchmark/docker/\">CIS Docker Benchmarks</a> - registration required"
+        },
+        {
+          "title": "<a href=\"https://www.nist.gov/publications/application-container-security-guide\">NIST SP 800-190 - Application Container Security Guide</a>"
+        },
+        {
+          "title": "<a href=\"https://cloudberry.engineering/article/practical-introduction-container-security/\">A Practical Introduction to Container Security</a>"
+        },
+        {
+          "title": "<a href=\"https://www.ssi.gouv.fr/guide/recommandations-de-securite-relatives-au-deploiement-de-conteneurs-docker/\">ANSSI - Recommandations de sécurité relatives au déploiement de conteneurs Docker</a> (2020), in French"
+        }
+      ]
+    },
+    {
+      "topic": "Services",
+      "items": [
+        {
+          "topic": "SSH",
+          "items": [
+            {
+              "title": "<a href=\"https://nvlpubs.nist.gov/nistpubs/ir/2015/NIST.IR.7966.pdf\">NIST IR 7966 - Security of Interactive and Automated Access Management Using Secure Shell (SSH)</a>"
+            },
+            {
+              "title": "<a href=\"https://www.ssi.gouv.fr/en/guide/openssh-secure-use-recommendations/\">ANSSI - (Open)SSH secure use recommendations</a>"
+            },
+            {
+              "title": "<a href=\"https://linux-audit.com/audit-and-harden-your-ssh-configuration/\">Linux Audit - OpenSSH security and hardening</a>"
+            },
+            {
+              "title": "<a href=\"https://www.sshaudit.com/hardening_guides.html\">Positron Security SSH Hardening Guides</a> (2017-2018) - focused on crypto algorithms"
+            },
+            {
+              "title": "<a href=\"https://stribika.github.io/2015/01/04/secure-secure-shell.html\">stribika - Secure Secure Shell</a> (2015) - some algorithm recommendations might be slightly outdated"
+            },
+            {
+              "title": "<a href=\"https://bettercrypto.org/\">Applied Crypto Hardening: bettercrypto.org</a> - handy reference on how to configure the most common services’ crypto settings (TLS/SSL, PGP, SSH and other cryptographic tools)"
+            },
+            {
+              "title": "<a href=\"https://tools.ietf.org/html/draft-ietf-curdle-ssh-kex-sha2-10\">IETF - Key Exchange (KEX) Method Updates and Recommendations for Secure Shell (SSH) draft-ietf-curdle-ssh-kex-sha2-10</a> - update to the recommended set of key exchange methods for use in the Secure Shell (SSH) protocol to meet evolving needs for stronger security. This document updates RFC 4250."
+            },
+            {
+              "title": "<a href=\"https://gravitational.com/blog/how-to-ssh-properly\">Gravitational - How to SSH Properly</a> - how to configure SSH to use certificates and two-factor authentication"
+            }
+          ]
+        },
+        {
+          "topic": "TLS/SSL",
+          "items": [
+            {
+              "title": "<a href=\"https://csrc.nist.gov/publications/detail/sp/800-52/rev-2/draft\">NIST SP800-52 Rev 2 (2nd draft) - Guidelines for the Selection, Configuration, and Use of Transport Layer Security (TLS) Implementations</a> - 2018, recommends TLS 1.3"
+            },
+            {
+              "title": "<a href=\"https://www.ncsc.nl/english/current-topics/factsheets/it-security-guidelines-for-transport-layer-security-tls.html\">Netherlands NCSC - IT Security Guidelines for Transport Layer Security (TLS)</a> - 2019"
+            },
+            {
+              "title": "<a href=\"https://www.ssi.gouv.fr/en/guide/security-recommendations-for-tls/\">ANSSI - Security Recommendations for TLS</a> - 2017, does not cover TLS 1.3"
+            },
+            {
+              "title": "<a href=\"https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices\">Qualys SSL Labs - SSL and TLS Deployment Best Practices</a> - 2017, does not cover TLS 1.3"
+            },
+            {
+              "title": "<a href=\"https://tools.ietf.org/html/rfc7540#appendix-A\">RFC 7540 Appendix A TLS 1.2 Cipher Suite Black List</a>"
+            },
+            {
+              "title": "<a href=\"https://bettercrypto.org/\">Applied Crypto Hardening: bettercrypto.org</a> - handy reference on how to configure the most common services’ crypto settings (TLS/SSL, PGP, SSH and other cryptographic tools)"
+            }
+          ]
+        },
+        {
+          "topic": "Web Servers",
+          "items": [
+            {
+              "title": "<a href=\"https://cipherlist.daniel-ruf.de/\">Cipherli.st - Strong Ciphers for Apache, nginx and Lighttpd</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Mail Servers",
+          "items": []
+        },
+        {
+          "topic": "FTP Servers",
+          "items": []
+        },
+        {
+          "topic": "Database Servers",
+          "items": []
+        },
+        {
+          "topic": "Active Directory",
+          "items": [
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory\">Microsoft - Best Practices for Securing Active Directory</a>"
+            },
+            {
+              "title": "<a href=\"https://www.cert.ssi.gouv.fr/uploads/guide-ad.html\">ANSSI CERT-FR - Active Directory Security Assessment Checklist</a> - 2020 (English and French versions)"
+            },
+            {
+              "title": "<a href=\"https://blogs.technet.microsoft.com/lrobins/2011/06/23/admin-free-active-directory-and-windows-part-1-understanding-privileged-groups-in-ad/\">\"Admin Free\" Active Directory and Windows, Part 1- Understanding Privileged Groups in AD</a>"
+            },
+            {
+              "title": "<a href=\"https://blogs.technet.microsoft.com/lrobins/2011/06/23/admin-free-active-directory-and-windows-part-2-protected-accounts-and-groups-in-active-directory/\">\"Admin Free\" Active Directory and Windows, Part 2- Protected Accounts and Groups in Active Directory</a>"
+            }
+          ]
+        },
+        {
+          "topic": "ADFS",
+          "items": [
+            {
+              "title": "<a href=\"https://adsecurity.org/?p=3782\">adsecurity.org - Securing Microsoft Active Directory Federation Server (ADFS)</a>"
+            },
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/best-practices-securing-ad-fs\">Microsoft - Best practices for securing Active Directory Federation Services</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Kerberos",
+          "items": [
+            {
+              "title": "<a href=\"https://www.cisecurity.org/benchmark/mit_kerberos/\">CIS MIT Kerberos 1.10 Benchmark</a> - 2012"
+            }
+          ]
+        },
+        {
+          "topic": "LDAP",
+          "items": [
+            {
+              "title": "<a href=\"http://www.openldap.org/doc/admin24/security.html\">OpenLDAP Software 2.4 Administrator's Guide - OpenLDAP Security Considerations</a>"
+            },
+            {
+              "title": "<a href=\"https://www.skills-1st.co.uk/papers/ldap-best-2011/best-practices-in-ldap-security.pdf\">Best Practices in LDAP Security</a> (2011)"
+            },
+            {
+              "title": "<a href=\"https://ff1959.wordpress.com/2013/07/31/ldap-hardening-server-security-so-administrators-can-sleep-at-night/\">LDAP: Hardening Server Security (so administrators can sleep at night)</a>"
+            },
+            {
+              "title": "<a href=\"http://web.archive.org/web/20130801091446/http://www.ldapguru.info/ldap/authentication-best-practices.html\">LDAP Authentication Best Practices</a> - retrieved from web.archive.org"
+            },
+            {
+              "title": "<a href=\"http://www.openldap.org/conf/odd-tuebingen-2018/Michael1.pdf\">Hardening OpenLDAP on Linux with AppArmor and systemd</a> - slides"
+            },
+            {
+              "title": "<a href=\"http://www.zytrax.com/books/ldap/ch15/\">zytrax LDAP for Rocket Scientists - LDAP Security</a>"
+            },
+            {
+              "title": "<a href=\"https://www.digitalocean.com/community/tutorials/how-to-encrypt-openldap-connections-using-starttls\">How To Encrypt OpenLDAP Connections Using STARTTLS</a>"
+            }
+          ]
+        },
+        {
+          "topic": "DNS",
+          "items": [
+            {
+              "title": "<a href=\"https://www.cisecurity.org/benchmark/bind/\">CIS - BIND DNS Server 9.9 Benchmark</a> (2017)"
+            },
+            {
+              "title": "<a href=\"https://public.cyber.mil/stigs/compilations/\">DISA STIGs - BIND 9.x</a> (2019)"
+            },
+            {
+              "title": "<a href=\"https://csrc.nist.gov/publications/detail/sp/800-81/2/final\">NIST SP 800-81-2 - Secure Domain Name System (DNS) Deployment Guide</a> (2013)"
+            },
+            {
+              "title": "<a href=\"https://insights.sei.cmu.edu/sei_blog/2017/02/six-best-practices-for-securing-a-robust-domain-name-system-dns-infrastructure.html\">CMU SEI - Six Best Practices for Securing a Robust Domain Name System (DNS) Infrastructure</a>"
+            },
+            {
+              "title": "<a href=\"https://apps.nsa.gov/iaarchive/library/ia-guidance/security-configuration/applications/bind-9-dns-security.cfm\">NSA BIND 9 DNS Security</a> (2011)"
+            }
+          ]
+        },
+        {
+          "topic": "NTP",
+          "items": [
+            {
+              "title": "<a href=\"https://tools.ietf.org/html/draft-ietf-ntp-bcp-13\">IETF - Network Time Protocol Best Current Practices draft-ietf-ntp-bcp</a> (last draft #13 in March 2019)"
+            },
+            {
+              "title": "<a href=\"https://insights.sei.cmu.edu/sei_blog/2017/04/best-practices-for-ntp-services.html\">CMU SEI - Best Practices for NTP Services</a>"
+            },
+            {
+              "title": "<a href=\"https://www.linux.com/learn/arrive-time-ntp-part-2-security-options\">Linux.com - Arrive On Time With NTP -- Part 2: Security Options</a>"
+            },
+            {
+              "title": "<a href=\"https://www.linux.com/learn/2017/2/arrive-time-ntp-part-3-secure-setup\">Linux.com - Arrive On Time With NTP -- Part 3: Secure Setup</a>"
+            }
+          ]
+        },
+        {
+          "topic": "NFS",
+          "items": [
+            {
+              "title": "<a href=\"https://www.tldp.org/HOWTO/NFS-HOWTO/security.html\">Linux NFS-HOWTO - Security and NFS</a> - a good overview of NFS security issues and some mitigations"
+            },
+            {
+              "title": "<a href=\"https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/security_guide/index#sec-Securing_NFS\">Red Hat - A Guide to Securing Red Hat Enterprise Linux 7 - Securing NFS</a>"
+            },
+            {
+              "title": "<a href=\"https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/storage_administration_guide/s1-nfs-security\">Red Hat - RHEL7 Storage Administration Guide - Securing NFS</a>"
+            },
+            {
+              "title": "<a href=\"https://lists.debian.org/debian-user/2017/10/msg00476.html\">NFSv4 without Kerberos and permissions</a> - why NFSv4 without Kerberos does not provide security"
+            },
+            {
+              "title": "<a href=\"https://www.certdepot.net/rhel7-use-kerberos-control-access-nfs-network-shares/\">CertDepot - RHEL7: Use Kerberos to control access to NFS network shares</a>"
+            }
+          ]
+        },
+        {
+          "topic": "CUPS",
+          "items": [
+            {
+              "title": "<a href=\"https://www.cups.org/doc/security.html\">CUPS Server Security</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Authentication - Passwords",
+      "items": [
+        {
+          "title": "<a href=\"https://www.ncsc.gov.uk/collection/passwords\">UK NCSC - Password administration for system owners</a>"
+        },
+        {
+          "title": "<a href=\"https://pages.nist.gov/800-63-3/\">NIST SP 800-63 Digital Identity Guidelines</a>"
+        },
+        {
+          "title": "<a href=\"https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html\">OWASP Password Storage Cheat Sheet</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Hardware - CPU - BIOS - UEFI",
+      "items": [
+        {
+          "title": "<a href=\"https://www.ssi.gouv.fr/en/guide/hardware-security-requirements-for-x86-platforms/\">ANSSI - Hardware security requirements for x86 platforms</a> - recommendations for security features and configuration options applying to hardware devices (CPU, BIOS, UEFI, etc) (Nov 2019)"
+        },
+        {
+          "title": "<a href=\"https://github.com/nsacyber/Hardware-and-Firmware-Security-Guidance\">NSA - Hardware and Firmware Security Guidance</a> - Guidance for the Spectre, Meltdown, Speculative Store Bypass, Rogue System Register Read, Lazy FP State Restore, Bounds Check Bypass Store, TLBleed, and L1TF/Foreshadow vulnerabilities as well as general hardware and firmware security guidance."
+        },
+        {
+          "title": "<a href=\"https://www.nsa.gov/Portals/70/documents/what-we-do/cybersecurity/professional-resources/csi-uefi-lockdown.pdf?v=1\">NSA Info Sheet: UEFI Lockdown Quick Guidance (March 2018)</a>"
+        },
+        {
+          "title": "<a href=\"https://www.nsa.gov/Portals/70/documents/what-we-do/cybersecurity/professional-resources/ctr-uefi-defensive-practices-guidance.pdf?ver=2018-11-06-074836-090\">NSA Tech Report: UEFI Defensive Practices Guidance (July 2017)</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Cloud",
+      "items": [
+        {
+          "title": "<a href=\"https://www.nsa.gov/Portals/70/documents/what-we-do/cybersecurity/professional-resources/csi-cloud-security-basics.pdf?v=1\">NSA Info Sheet: Cloud Security Basics (August 2018)</a>"
+        },
+        {
+          "title": "<a href=\"https://iase.disa.mil/cloud_security/Pages/index.aspx\">DISA DoD Cloud Computing Security</a>"
+        },
+        {
+          "title": "<a href=\"https://asecure.cloud/\">asecure.cloud - Build a Secure Cloud</a> - A free repository of customizable AWS security configurations and best practices"
+        }
+      ]
+    },
+    {
+      "topic": "Tools to check security hardening",
+      "items": [
+        {
+          "title": "<a href=\"https://www.inspec.io/\">Chef InSpec</a> - open-source testing framework by Chef that enables you to specify compliance, security, and other policy requirements. can run on Windows and many Linux distributions."
+        },
+        {
+          "topic": "GNU/Linux",
+          "items": [
+            {
+              "title": "<a href=\"https://cisofy.com/lynis/\">Lynis</a> - script to check the configuration of Linux hosts"
+            },
+            {
+              "title": "<a href=\"https://www.open-scap.org/tools/openscap-base/\">OpenSCAP Base</a> - oscap command line tool"
+            },
+            {
+              "title": "<a href=\"https://www.open-scap.org/tools/scap-workbench/\">SCAP Workbench</a> - GUI for oscap"
+            },
+            {
+              "title": "<a href=\"https://www.nongnu.org/tiger/\">Tiger - The Unix security audit and intrusion detection tool</a> (might be outdated)"
+            },
+            {
+              "title": "<a href=\"https://github.com/trimstray/otseca\">otseca</a> - Open source security auditing tool to search and dump system configuration. It allows you to generate reports in HTML or RAW-HTML formats."
+            },
+            {
+              "title": "<a href=\"https://github.com/TH3xACE/SUDO_KILLER\">SUDO_KILLER</a> - A tool to identify sudo rules' misconfigurations and vulnerabilities within sudo"
+            },
+            {
+              "title": "<a href=\"https://github.com/finalduty/cis_benchmarks_audit\">CIS Benchmarks Audit</a> - bash script which performs tests against your CentOS system to give an indication of whether the running server may comply with the CIS v2.2.0 Benchmarks for CentOS (only CentOS 7 for now)"
+            }
+          ]
+        },
+        {
+          "topic": "Windows",
+          "items": [
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliance-toolkit-10\">Microsoft Security Compliance Toolkit 1.0</a> - set of tools that allows enterprise security administrators to download, analyze, test, edit, and store Microsoft-recommended security configuration baselines for Windows and other Microsoft products"
+            },
+            {
+              "title": "<a href=\"https://microsoft.github.io/DSCEA/\">Microsoft DSC Environment Analyzer (DSCEA)</a> - simple implementation of PowerShell Desired State Configuration that uses the declarative nature of DSC to scan Windows OS based systems in an environment against a defined reference MOF file and generate compliance reports as to whether systems match the desired configuration"
+            },
+            {
+              "title": "<a href=\"https://github.com/cottinghamd/HardeningAuditor/\">HardeningAuditor</a> - Scripts for comparing Microsoft Windows compliance with the Australian ASD 1709 &amp; Office 2016 Hardening Guides"
+            },
+            {
+              "title": "<a href=\"https://www.pingcastle.com/\">PingCastle</a> - Tool to check the security of Active Directory"
+            }
+          ]
+        },
+        {
+          "topic": "Network Devices",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/arpitn30/nipper-ng\">Nipper-ng</a> - to check the configuration of network devices (does not seem to be updated)"
+            }
+          ]
+        },
+        {
+          "topic": "TLS/SSL",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/ssllabs/research/wiki/Assessment-Tools\">Qualys SSL Labs - List of tools to assess TLS/SSL servers and clients</a>"
+            },
+            {
+              "title": "<a href=\"https://ssldecoder.daniel-ruf.de/\">SSL Decoder</a> - checks the SSL/TLS configuration of a server"
+            }
+          ]
+        },
+        {
+          "topic": "SSH",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/arthepsy/ssh-audit\">ssh-audit</a> - SSH server auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc)"
+            }
+          ]
+        },
+        {
+          "topic": "Hardware - CPU - BIOS - UEFI",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/chipsec/chipsec\">CHIPSEC: Platform Security Assessment Framework</a> - framework for analyzing the security of PC platforms including hardware, system firmware (BIOS/UEFI), and platform components"
+            },
+            {
+              "title": "<a href=\"https://github.com/ANSSI-FR/chipsec-check\">chipsec-check</a> - Tools to generate a Debian Linux distribution with chipsec to test hardware requirements"
+            }
+          ]
+        },
+        {
+          "topic": "Docker",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/docker/docker-bench-security\">Docker Bench for Security</a> - script that checks for dozens of common best-practices around deploying Docker containers in production, inspired by the CIS Docker Community Edition Benchmark v1.1.0."
+            }
+          ]
+        },
+        {
+          "topic": "Cloud",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/toniblyx/my-arsenal-of-aws-security-tools\">toniblyx/my-arsenal-of-aws-security-tools</a> - List of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Tools to apply security hardening",
+      "items": [
+        {
+          "title": "<a href=\"https://dev-sec.io/\">DevSec Hardening Framework</a> - a framework to automate hardening of OS and applications, using Chef, Ansible and Puppet"
+        },
+        {
+          "topic": "GNU/Linux",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/pratiktri/server_init_harden\">Linux Server Hardener</a> - for Debian/Ubuntu (2019)"
+            },
+            {
+              "title": "<a href=\"http://bastille-linux.sourceforge.net/\">Bastille Linux</a> - outdated"
+            }
+          ]
+        },
+        {
+          "topic": "Windows",
+          "items": [
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliance-toolkit-10\">Microsoft Security Compliance Toolkit 1.0</a> - set of tools that allows enterprise security administrators to download, analyze, test, edit, and store Microsoft-recommended security configuration baselines for Windows and other Microsoft products"
+            },
+            {
+              "title": "<a href=\"https://github.com/securitywithoutborders/hardentools\">Hardentools</a> - for Windows individual users (not corporate environments) at risk, who might want an extra level of security at the price of some usability."
+            },
+            {
+              "title": "<a href=\"https://github.com/aghorler/Windows-10-Hardening\">Windows 10 Hardening</a> - A collective resource of settings modifications (mostly opt-outs) that attempt to make Windows 10 as private and as secure as possible."
+            },
+            {
+              "title": "<a href=\"https://github.com/Disassembler0/Win10-Initial-Setup-Script\">Disassembler0 Windows 10 Initial Setup Script</a> - PowerShell script for automation of routine tasks done after fresh installations of Windows 10 / Server 2016 / Server 2019"
+            },
+            {
+              "title": "<a href=\"https://github.com/OneLogicalMyth/Automated-AD-Setup\">Automated-AD-Setup</a> - A PowerShell script that aims to have a fully configured domain built in under 10 minutes, but also apply security configuration and hardening"
+            },
+            {
+              "title": "<a href=\"https://gist.github.com/mackwage/08604751462126599d7e52f233490efe\">mackwage/windows_hardening.cmd</a> - Script to perform some hardening of Windows 10"
+            }
+          ]
+        },
+        {
+          "topic": "TLS/SSL",
+          "items": [
+            {
+              "title": "<a href=\"https://ssl-config.mozilla.org/\">Mozilla SSL Configuration Generator</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Cloud",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/toniblyx/my-arsenal-of-aws-security-tools\">toniblyx/my-arsenal-of-aws-security-tools</a> - List of open source tools for AWS security: defensive, offensive, auditing, DFIR, etc."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Password Generators",
+      "items": [
+        {
+          "title": "<a href=\"https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/\">How-To Geek - 10 Ways to Generate a Random Password from the Linux Command Line</a>"
+        },
+        {
+          "title": "<a href=\"https://vitux.com/generation-of-a-random-password-on-linux-shell/\">Vitux - 8 Ways to Generate a Random Password on Linux Shell</a>"
+        },
+        {
+          "title": "<a href=\"https://ss64.com/docs/security.html\">SS64 - Password security and a comparison of Password Generators</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Other Awesome Security Lists",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-android-security\">Cybersecurity Android Security</a> - A collection of android security related resources."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-macOS-iOS-security\">Cybersecurity macOS &amp; iOS Security</a> - A collection of macOS and iOS security related resources."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-windows-exploitation\">Cybersecurity ARM Exploitation</a> - A curated list of Windows &amp; ARM exploitation resources."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-ctf\">Cybersecurity CTF</a> - A curated list of CTF frameworks, libraries, resources and software."
+        },
+        {
+          "title": "<a href=\"https://github.com/joe-shenouda/awesome-cyber-skills\">Awesome Cyber Skills</a> - A curated list of hacking environments where you can train your cyber skills legally and safely."
+        },
+        {
+          "title": "<a href=\"https://github.com/Lissy93/personal-security-checklist\">Awesome Personal Security</a> - A curated list of digital security and privacy tips, with links to further resources."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-data-privacy\">Cybersecurity Data Privacy</a> - A curated list of digital security and privacy tips, with links to further resources."
+        },
+        {
+          "title": "<a href=\"https://github.com/paralax/awesome-honeypots\">Awesome Honeypots</a> - An awesome list of honeypot resources."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-malware-analysis\">Cybersecurity Malware Analysis</a> - A curated list of awesome malware analysis tools and resources."
+        },
+        {
+          "title": "<a href=\"https://github.com/caesar0301/awesome-pcaptools\">Awesome PCAP Tools</a> - A collection of tools developed by other researchers in the Computer Science area to process network traces."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-penetration-testing\">Cybersecurity Penetration Testing</a> - A collection of awesome penetration testing resources, tools and other shiny things."
+        },
+        {
+          "title": "<a href=\"https://github.com/Friz-zy/awesome-linux-containers\">Awesome Linux Containers</a> - A curated list of awesome Linux Containers frameworks, libraries and software."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-incident-response\">Cybersecurity Incident Response</a> - A curated list of resources for incident response."
+        },
+        {
+          "title": "<a href=\"https://github.com/infoslack/awesome-web-hacking\">Awesome Web Hacking</a> - This list is for anyone wishing to learn about web application security but do not have a starting point."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-hacking\">Cybersecurity Hacking</a> - A curated list of awesome Hacking tutorials, tools and resources"
+        },
+        {
+          "title": "<a href=\"https://github.com/doyensec/awesome-electronjs-hacking\">Awesome Electron.js Hacking</a> - A curated list of awesome resources about Electron.js (in)security"
+        },
+        {
+          "title": "<a href=\"https://github.com/pauveillard/cybersecurity-threat-intelligence\">Cybersecurity Threat Intelligence</a> - A curated list of threat intelligence resources."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-threat-detection\">Cybersecurity Threat Detection</a> -  A curated list of threat modeling resources."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-cryptography\">Cybersecurity Cryptography</a> -  A curated list of cryptography resources."
+        },
+        {
+          "title": "<a href=\"https://github.com/coreb1t/awesome-pentest-cheat-sheets\">Awesome Pentest Cheat Sheets</a> - Collection of the cheat sheets useful for pentesting"
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-industrial-control-systems-security\">Cybersecurity Industrial Control System Security</a> - A curated list of resources related to Industrial Control System (ICS) security."
+        },
+        {
+          "title": "<a href=\"https://github.com/InQuest/awesome-yara\">Awesome YARA</a> - A curated list of awesome YARA rules, tools, and people."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-threat-detection\">Cybersecurity Threat Detection and Hunting</a> - A curated list of awesome threat detection and hunting resources."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-container-security\">Cybersecurity Container Security</a> - A curated list of awesome resources related to container building and runtime security"
+        },
+        {
+          "title": "<a href=\"https://github.com/pFarb/awesome-crypto-papers\">Awesome Crypto Papers</a> - A curated list of cryptography papers, articles, tutorials and howtos."
+        },
+        {
+          "title": "<a href=\"https://github.com/jakejarvis/awesome-shodan-queries\">Awesome Shodan Search Queries</a> - A collection of interesting, funny, and depressing search queries to plug into Shodan.io."
+        },
+        {
+          "title": "<a href=\"https://github.com/paulveillard/cybersecurity-forensics\">Cybersecurity Digital Forensics</a> - A collection of awesome tools used to counter forensics activities."
+        },
+        {
+          "title": "<a href=\"https://github.com/PaulSec/awesome-sec-talks\">Awesome Security Talks &amp; Videos</a> - A curated list of awesome security talks, organized by year and then conference.<p><strong><a href=\"#\"><code>^        back to top        ^</code></a></strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p>MIT License &amp; <a href=\"https://creativecommons.org/licenses/by/4.0/\">cc</a> license</p><p><a href=\"http://creativecommons.org/licenses/by/4.0/\" rel=\"license\"><img alt=\"Creative Commons License\" src=\"https://i.creativecommons.org/l/by/4.0/88x31.png\" style=\"border-width:0\"/></a><br/>This work is licensed under a <a href=\"http://creativecommons.org/licenses/by/4.0/\" rel=\"license\">Creative Commons Attribution 4.0 International License</a>.</p><p>To the extent possible under law, <a href=\"https://github.com/paulveillard/\">Paul Veillard</a> has waived all copyright and related or neighboring rights to this work.</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

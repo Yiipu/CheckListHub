@@ -1,0 +1,194 @@
+{
+  "id": 170,
+  "header": "react-native-checklist",
+  "topicList": [
+    "Table of content",
+    "Prerequisites",
+    "Init App",
+    "Development Strategy Tips",
+    "App Icons and Splash-screen",
+    "Rename",
+    "CI",
+    "Certificates",
+    "Use Fastlane Precheck",
+    "Common App Rejection"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of content",
+      "items": [
+        {
+          "title": "<a href=\"#installation\">Prerequisites</a>"
+        },
+        {
+          "title": "<a href=\"#app-store-and-google-play\">App Store</a>"
+        },
+        {
+          "title": "<a href=\"#init-app\">Init App</a>"
+        },
+        {
+          "title": "<a href=\"#starters\">Starters</a>"
+        },
+        {
+          "title": "<a href=\"#development-strategy-tips\">Development Strategy Tips</a>"
+        },
+        {
+          "title": "<a href=\"#focus-on-one-check-both\">Focus on one, check both</a>"
+        },
+        {
+          "title": "<a href=\"#app-icons-and-splash-screen\">App Icons &amp; Splash-screen</a>"
+        },
+        {
+          "title": "<a href=\"#generate-app-icons-&amp;-splash-screen-automatically\">Automatic</a>"
+        },
+        {
+          "title": "<a href=\"#generate-app-icons-&amp;-splash-screen-manually\">Manual</a>"
+        },
+        {
+          "title": "<a href=\"#rename\">Rename App</a>"
+        },
+        {
+          "title": "<a href=\"#rename-app-automatically\">Automatic</a>"
+        },
+        {
+          "title": "<a href=\"#rename-app-manually\">Manual</a>"
+        },
+        {
+          "title": "<a href=\"#ci\">CI</a>"
+        },
+        {
+          "title": "<a href=\"#ci-comparison-table\">Comparison Table</a>"
+        },
+        {
+          "title": "<a href=\"#handle-offline\">Handle Offline</a>"
+        },
+        {
+          "title": "@TODO"
+        },
+        {
+          "title": "<a href=\"#Certificates\">Certificates</a>"
+        },
+        {
+          "title": "@TODO"
+        },
+        {
+          "title": "<a href=\"#use-fastlane-precheck\">Use Fastlane Precheck</a>"
+        },
+        {
+          "title": "<a href=\"#common-app-rejection\">Review Apple's Common App Rejections</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Prerequisites",
+      "items": [
+        {
+          "topic": "App Store and Google Play",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Init App",
+      "items": [
+        {
+          "topic": "Starters",
+          "items": [
+            {
+              "title": "<p>There are many boilerplates/starter kits for react-native out there. I highly recommend using <a href=\"https://github.com/react-community/create-react-native-app\">create-react-native-app</a> as a starting point, however if you do not mind learning the boilerplates, you will find a list of good starters below.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Development Strategy Tips",
+      "items": [
+        {
+          "topic": "Focus on one, check both.",
+          "items": [
+            {
+              "title": "<p>Even if you choose to focus on one platform at first, it is recommended that you always check both, especially if you are installing a lot of third-party libraries. React Native is constantly changing and the libraries you are using probably cannot keep up with all the breaking changes being introduced. If you want to avoid making bad decisions and identifying potential road blocks early, make sure you always check both platforms.</p><p>Even better, focus on Android and check iOS. This is because Android is the platform most likely to make you run into issues.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "App Icons and Splash-screen",
+      "items": [
+        {
+          "topic": "Generate App Icon & Splash-screen Automatically",
+          "items": [
+            {
+              "title": "<p><strong><em>💻📲 (Recommended)</em></strong></p><p>Generating app icons and a splash-screen doesn't have to be hard. Simply install <a href=\"https://github.com/bamlab/generator-rn-toolbox/blob/master/generators/assets/README.md\">generator-rn-toolbox</a> and follow the instructions to get them for both iOS and Android.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Generate App Icon & Splash-screen Manually",
+          "items": [
+            {
+              "title": "<p>If you do not go with the automatic way, you will need to generate your app icons in the following sizes for each respective format:</p><p><a href=\"https://stackoverflow.com/a/34333915/6401805\">Original answer</a></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Rename",
+      "items": [
+        {
+          "topic": "Rename App Automatically",
+          "items": [
+            {
+              "title": "<p>Use <a href=\"https://github.com/junedomingo/react-native-rename\">react-native-rename</a> to automatically rename your react-native app fro iOS and Android</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Rename App Manually Manual",
+          "items": [
+            {
+              "title": "<p>Renaming a react-native app manually is simple.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "CI",
+      "items": [
+        {
+          "topic": "CI Comparison Table",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Certificates",
+      "items": [
+        {
+          "title": "<p>// @TODO</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Use Fastlane Precheck",
+      "items": [
+        {
+          "title": "<p>Make sure to run fastlane's precheck before submitting your app to Apple's app store. From their repo:</p><blockquote>\n<p>Apple rejects builds for many avoidable metadata issues like including swear words 😮, other companies’ trademarks, or even mentioning an iOS bug 🐛. <em>fastlane precheck</em> takes a lot of the guess work out by scanning your app’s details in iTunes Connect for avoidable problems. fastlane precheck helps you get your app through app review without rejections so you can ship faster 🚀</p>\n</blockquote><p><a href=\"https://github.com/fastlane/fastlane/tree/master/precheck\">👉 👉Precheck👈 👈</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Common App Rejection",
+      "items": [
+        {
+          "title": "<p>Make sure to read over Apple's common app rejection before submitting to the app store. These are the most common issues that apple rejects apps for, so save yourself the trouble and make sure your app won't be rejected for obvious reasons.</p><p>👉 👉 <a href=\"https://developer.apple.com/app-store/review/rejections/\">Apple Common Rejection 👈 👈</a></p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

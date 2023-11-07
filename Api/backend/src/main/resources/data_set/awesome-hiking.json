@@ -1,0 +1,462 @@
+{
+  "id": 19,
+  "header": "awesome-hiking",
+  "topicList": [
+    "Disclaimers:",
+    "Content"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Disclaimers:",
+      "items": [
+        {
+          "title": "<em>This is not necessary or sufficient list.</em> Used for self-examination, to avoid forgetting even basic items."
+        },
+        {
+          "title": "<em>Some items are optional for the weather or time of year.</em>"
+        },
+        {
+          "title": "<em>It was written for myself and will likely not take into account your personal preferences.</em> However, corrections and additions are strongly welcomed."
+        },
+        {
+          "title": "<em>English is not my native language.</em> But I'll try."
+        }
+      ]
+    },
+    {
+      "topic": "Content",
+      "items": [
+        {
+          "title": "<a href=\"#navigation-\">Navigation</a>"
+        },
+        {
+          "title": "<a href=\"#communication-\">Communication</a>"
+        },
+        {
+          "title": "<a href=\"#illumination-\">Illumination</a>"
+        },
+        {
+          "title": "<a href=\"#documents-\">Documents</a>"
+        },
+        {
+          "title": "<a href=\"#bivouac-\">Bivouac</a>"
+        },
+        {
+          "title": "<a href=\"#food-\">Food</a>"
+        },
+        {
+          "title": "<a href=\"#clothes-\">Clothes</a>"
+        },
+        {
+          "title": "<a href=\"#first-aid-\">First Aid</a>"
+        },
+        {
+          "title": "<a href=\"#unsorted-\">Unsorted</a>"
+        },
+        {
+          "title": "<a href=\"#todo-\">TODO</a>"
+        },
+        {
+          "title": "<a href=\"#donts-\">Donts</a>"
+        },
+        {
+          "topic": "Navigation ↑",
+          "items": [
+            {
+              "title": "<p><em>What will help you get to where you need to go. And back.</em></p>"
+            },
+            {
+              "title": "[ ] paper map"
+            },
+            {
+              "title": "[ ] compass"
+            },
+            {
+              "title": "[ ] gps"
+            }
+          ]
+        },
+        {
+          "topic": "Communication ↑",
+          "items": [
+            {
+              "title": "[ ] phone"
+            },
+            {
+              "title": "[ ] walkie talkie"
+            }
+          ]
+        },
+        {
+          "topic": "Illumination ↑",
+          "items": [
+            {
+              "title": "<p><em>What will help in the dark.</em></p>"
+            },
+            {
+              "title": "[ ] flashlight (headlamp, hand-held)"
+            },
+            {
+              "title": "[ ] lamp (led, gas)"
+            },
+            {
+              "title": "[ ] chemical light source"
+            },
+            {
+              "title": "[ ] candle"
+            }
+          ]
+        },
+        {
+          "topic": "Documents ↑",
+          "items": [
+            {
+              "title": "[ ] any ID (laminated copy)"
+            },
+            {
+              "title": "[ ] medical insurance"
+            },
+            {
+              "title": "[ ] certificates for knives"
+            },
+            {
+              "title": "[ ] tickets"
+            },
+            {
+              "title": "[ ] permits and passes"
+            },
+            {
+              "title": "[ ] namecard in a backpack"
+            },
+            {
+              "title": "[ ] wallet"
+            },
+            {
+              "title": "[ ] stash separated from a wallet"
+            }
+          ]
+        },
+        {
+          "topic": "Shelter ↑",
+          "items": [
+            {
+              "title": "<p><em>What you will sleep in.</em></p>"
+            },
+            {
+              "title": "[ ] tent or hammock"
+            },
+            {
+              "title": "[ ] sleeping pad"
+            },
+            {
+              "title": "[ ] sleeping bag or quilt"
+            },
+            {
+              "title": "[ ] tarp<p><em>What you will prepare food with</em>\n* [ ] stove (fuel canister, liquid fuel)\n* [ ] saw for firewood (safer than Axe!)\n* [ ] fire lighting (lighter, matches, tinder or fire starters)\n* [ ] pots and pans\n* [ ] grill, campfire tripod</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Food ↑",
+          "items": [
+            {
+              "title": "<p><em>What gives energy.</em></p>"
+            },
+            {
+              "title": "[ ] nuts + dried fruits"
+            },
+            {
+              "title": "[ ] chocolate"
+            },
+            {
+              "title": "[ ] salt"
+            },
+            {
+              "title": "[ ] tea / coffee"
+            },
+            {
+              "title": "[ ] dehydrated or freeze dried meals"
+            },
+            {
+              "title": "[ ] vacuum packed food (store bought like tuna or salmon, home made with vacuum sealer)"
+            },
+            {
+              "title": "[ ] fresh food for shorter trips"
+            },
+            {
+              "title": "[ ] frozen food for longer trips (weather dependent)"
+            }
+          ]
+        },
+        {
+          "topic": "Water ↑",
+          "items": [
+            {
+              "title": "<p><em>Water is life.</em></p>"
+            },
+            {
+              "title": "[ ] water bottles (to carry clean water in)"
+            },
+            {
+              "title": "[ ] filter and pump (to process water and remove bacteria/viruses - depends on filter!)"
+            },
+            {
+              "title": "[ ] kettle (bring water to a strong boil for several minutes to kill life in it)"
+            },
+            {
+              "title": "[ ] purification tablets (in case filter stops working)"
+            }
+          ]
+        },
+        {
+          "topic": "Clothes ↑",
+          "items": [
+            {
+              "title": "[ ] insoles"
+            },
+            {
+              "title": "[ ] raincoat / rain pants"
+            },
+            {
+              "title": "[ ] change of socks"
+            },
+            {
+              "title": "[ ] change of underpants"
+            },
+            {
+              "title": "[ ] warm hat, warm gloves, warm layers"
+            },
+            {
+              "title": "[ ] gaiters"
+            },
+            {
+              "title": "[ ] bug net hat"
+            },
+            {
+              "title": "[ ] warm sweater with neck (comes in handy even in the summer)"
+            },
+            {
+              "title": "[ ] headgear (bandana, shemagh)"
+            },
+            {
+              "title": "[ ] camp shoes"
+            },
+            {
+              "title": "[ ] swim suit"
+            },
+            {
+              "title": "[ ] water shoes"
+            },
+            {
+              "title": "[ ] leather gloves"
+            }
+          ]
+        },
+        {
+          "topic": "First Aid ↑",
+          "items": [
+            {
+              "title": "[ ] dressings"
+            },
+            {
+              "title": "adhesive plaster (bactericidal,  patches)"
+            },
+            {
+              "title": "bandages"
+            },
+            {
+              "title": "sterile cotton wool"
+            },
+            {
+              "title": "elastic bandage"
+            },
+            {
+              "title": "[ ] disinfectant"
+            },
+            {
+              "title": "miramistin / chlorhexidine"
+            },
+            {
+              "title": "alcohol wipes"
+            },
+            {
+              "title": "[ ] cream (baby, protective, moisturizing)"
+            },
+            {
+              "title": "[ ] local warming ointment"
+            },
+            {
+              "title": "[ ] remedy for corns"
+            },
+            {
+              "title": "[ ] теймурова паста"
+            },
+            {
+              "title": "[ ] antihistamine"
+            },
+            {
+              "title": "pills (Супрастин, Драмина)"
+            },
+            {
+              "title": "localized ointment (Фенистил)"
+            },
+            {
+              "title": "[ ] painkillers (Цитрамон, Нимесулид, Ибупрофен, Дротаверин)"
+            },
+            {
+              "title": "[ ] rehydration (Регидрон)"
+            },
+            {
+              "title": "[ ] healing remedies (Пантенол, клей БФ)"
+            },
+            {
+              "title": "[ ] remedies for diarrhea (Лоперамид, Денол)"
+            },
+            {
+              "title": "[ ] specific"
+            }
+          ]
+        },
+        {
+          "topic": "Unsorted ↑",
+          "items": [
+            {
+              "title": "<p><em>What doesn't fit in any other category</em></p>"
+            },
+            {
+              "title": "[ ] bug repellent"
+            },
+            {
+              "title": "[ ] mp3-player"
+            },
+            {
+              "title": "[ ] waterproof cover for backpack"
+            },
+            {
+              "title": "[ ] warmers (catalytic, chemical)"
+            },
+            {
+              "title": "[ ] batteries"
+            },
+            {
+              "title": "[ ] gloves (working, washable)"
+            },
+            {
+              "title": "[ ] sitting pad"
+            },
+            {
+              "title": "[ ] Utensils"
+            },
+            {
+              "title": "mug"
+            },
+            {
+              "title": "spoon"
+            },
+            {
+              "title": "bowl"
+            },
+            {
+              "title": "knife (swiss army, hiking, washable, potato peeler)"
+            },
+            {
+              "title": "[ ] toothpicks"
+            },
+            {
+              "title": "[ ] sewing kit"
+            },
+            {
+              "title": "[ ] wristwatch"
+            },
+            {
+              "title": "[ ] ПРСТ (СЛГ)"
+            },
+            {
+              "title": "shovel"
+            },
+            {
+              "title": "~~hairbrush~~"
+            },
+            {
+              "title": "toothbrush, toothpaste"
+            },
+            {
+              "title": "toilet paper"
+            },
+            {
+              "title": "wet wipes"
+            },
+            {
+              "title": "[ ] trash bags"
+            },
+            {
+              "title": "[ ] whistle"
+            },
+            {
+              "title": "[ ] ~~book~~"
+            },
+            {
+              "title": "[ ] writing items (pen, pencil, notepad/notebook)"
+            },
+            {
+              "title": "[ ] entertainment (harmonica, guitar, ukulele, etc.)"
+            },
+            {
+              "title": "[ ] mirror (plastic)"
+            }
+          ]
+        },
+        {
+          "topic": "TODO ↑",
+          "items": [
+            {
+              "title": "<p><em>What would be nice to do in advance.</em></p>"
+            },
+            {
+              "title": "[ ] charge all rechargeable batteries"
+            },
+            {
+              "title": "[ ] replace non rechargeable batteries"
+            },
+            {
+              "title": "[ ] sharpen knives"
+            },
+            {
+              "title": "[ ] test out the tent"
+            },
+            {
+              "title": "[ ] clean the pots"
+            },
+            {
+              "title": "[ ] get cash out of the bank"
+            },
+            {
+              "title": "[ ] review the route"
+            },
+            {
+              "title": "[ ] inform relatives / friends about your route plan"
+            },
+            {
+              "title": "[ ] break in new shoes and boots"
+            },
+            {
+              "title": "[ ] test all new gear close to home"
+            }
+          ]
+        },
+        {
+          "topic": "DONTS ↑",
+          "items": [
+            {
+              "title": "<p>*No. Don't do it *</p>"
+            },
+            {
+              "title": "Leave the glass bottles at home"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

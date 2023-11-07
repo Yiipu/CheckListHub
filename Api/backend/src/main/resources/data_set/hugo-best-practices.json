@@ -1,0 +1,249 @@
+{
+  "id": 104,
+  "header": "hugo-best-practices",
+  "topicList": [
+    "Table of contents",
+    "Content organization",
+    "Git repository and CI Tools",
+    "Content types and archetypes",
+    "```yaml",
+    "Configure the site",
+    "CSS and JavaScript",
+    "Images",
+    "Caching and .htaccess",
+    "Add a Schema.org partial",
+    "External links in new window",
+    "Front-End Checklist",
+    "Awesome Hugo list",
+    "Tools"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of contents",
+      "items": [
+        {
+          "title": "<a href=\"#hugo---best-practices\">Hugo - Best practices</a>"
+        },
+        {
+          "title": "<a href=\"#table-of-contents\">Table of contents</a>"
+        },
+        {
+          "title": "<a href=\"#content-organization\">Content organization</a>"
+        },
+        {
+          "title": "<a href=\"#git-repository-and-ci-tools\">Git repository and CI Tools</a>"
+        },
+        {
+          "title": "<a href=\"#content-types-and-archetypes\">Content types and archetypes</a>"
+        },
+        {
+          "title": "<a href=\"#configure-the-site\">Configure the site</a>"
+        },
+        {
+          "title": "<a href=\"#css-and-javascript\">CSS and JavaScript</a>"
+        },
+        {
+          "title": "<a href=\"#css\">CSS</a>"
+        },
+        {
+          "title": "<a href=\"#javascript\">Javascript</a>"
+        },
+        {
+          "title": "<a href=\"#conditionals\">Conditionals</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#images\">Images</a>"
+        },
+        {
+          "title": "<a href=\"#caching-and-htaccess\">Caching and .htaccess</a>"
+        },
+        {
+          "title": "<a href=\"#add-a-schemaorg-partial\">Add a Schema.org partial</a>"
+        },
+        {
+          "title": "<a href=\"#external-links-in-new-window\">External links in new window</a>"
+        },
+        {
+          "title": "<a href=\"#front-end-checklist\">Front-End Checklist</a>"
+        },
+        {
+          "title": "<a href=\"#tools\">Tools</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Content organization",
+      "items": [
+        {
+          "title": "<p>Keep all images next to the index Markdown file. This allows to keep the images in the highest possible resolution and let hugo resize them to the perfect size for the current theme (see <a href=\"#images\">Images</a> below).</p><p><code>sh\n├── mysite/\n    ├── content/\n    │   └── posts/\n    │       ├── 0001-firstpost/\n    │       │   ├── index.md\n    │       │   └── me.jpg\n    │       ├── 0002-secondpost/\n    │       │   ├── index.md\n    │           └── fun.jpg\n    ├── about/\n    │   └── index.md</code></p><p>There is a Discussion on this in the <a href=\"https://discourse.gohugo.io/t/discussion-content-organization-best-practice/6360/2\">Forum</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Git repository and CI Tools",
+      "items": [
+        {
+          "title": "<p>Keep your site in a version control system like Git. This provides backup, history and multi user editing out of the box.</p><p>Use Continuous Integration/Deployment to publish your website after git push. Simple solutions like <a href=\"https://github.com/adnanh/webhook/\">webhook</a> might do the job. For complex scenarios you might want to use something like <a href=\"https://jenkins.io/\">Jenkins</a>. For most cases Jenkins will be overkill.</p><p>You can sync files using <code>rsync</code> after a successful build. Have a look at the provided <code>deployment</code> scripts in this repository.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Content types and archetypes",
+      "items": [
+        {
+          "title": "<p>Define your required types. A blog usually goes with pages and posts. Pages won't have fields like the author or creation dates displayed.\nPages are usually reached under their name directly. Posts will be posted several times a month and might have a structure like <code>/year/month/name</code>.\nThe archetypes should reflect the data that is needed for the content. Posts should have tags and categories applied.</p><p><code>yaml\n[permalinks]\n    posts = \"/:year/:month/:slug/\"\n    page = \"/:slug/\"</code></p><p>This might be the archetype for posts. I prefect to collect all categories and tags in the archetype so I can remove all unused ones for the new blog post.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "```yaml",
+      "items": [
+        {
+          "title": "<p>title: \"{{ replace .Name \"-\" \" \" | title }}\"\nauthor: Sebastian\ntype: post\ndate:  {{ now.Format \"2006-01-02\" }}\nfeatured_image: myimage.jpg\ndraft: true\ncategories:\n  - A\n  - B\n  - C\ntags:\n  - Hugo\n  - Game Development\n  - Internet of Things (IoT)\n  - Linux\n  - ...\ndescription: xxx</p><hr/><p>CONTENT</p><p> </p><p>Source: xyz\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Configure the site",
+      "items": [
+        {
+          "title": "<p>Configure your new site with all relevant <a href=\"https://gohugo.io/getting-started/configuration/\">options</a>. These are helpful values to start with.</p><p>```yaml</p>"
+        }
+      ]
+    },
+    {
+      "topic": "CSS and JavaScript",
+      "items": [
+        {
+          "title": "<p>Old themes kept the css and js files in the static folder. Sometimes tools like Gulp, Grunt and Webpack were used for pre-processing.\nThe latest version of Hugo will do all the stuff like bundling and minifying for you. For this to work the files have to be put in the <code>assets</code> folder.</p><p>There are three critical methods to use as the bare minimum <code>minify</code>, <code>fingerprint</code> and <code>slice</code>. SCSS might make use of <code>toCSS</code> and <code>postCSS</code>.</p><p>With <code>minify</code> you will get a minified version of your files. (<a href=\"https://gohugo.io/hugo-pipes/minification/\">Hugo Documentation</a>)</p><p>The <code>fingerprint</code> adds a unique string to the name so that the browser won't cache your files on modification. (<a href=\"https://gohugo.io/hugo-pipes/fingerprint/\">Hugo Documentation</a>)</p><p>Finally <code>slice</code> allows you to concat multiple files to a new one. This works best with <code>minify</code>. (<a href=\"https://gohugo.io/hugo-pipes/bundling/\">Hugo Documentation</a>)</p>"
+        },
+        {
+          "topic": "CSS",
+          "items": [
+            {
+              "title": "<p>Putting the above methods in place the minified <code>main.css</code> will be created as described below. Keep in mind that the files has to be in the <code>assets</code> folder.</p><p><code>html\n{{ $stylemain := resources.Get \"css/main.css\" | minify | fingerprint \"sha512\" }}\n&lt;link rel=\"stylesheet\" href=\"{{ $stylemain.RelPermalink }}\" integrity=\"{{ $stylemain.Data.Integrity }}\"&gt;</code></p><p>For processing SCSS Hugo provides two functions. (<a href=\"https://gohugo.io/hugo-pipes/postcss/\">Hugo Documentation</a>)</p><p><code>html\n{{ $stylemain := resources.Get \"scss/main.scss\" | toCSS | postCSS (dict \"use\" \"autoprefixer\") | minify | fingerprint \"sha512\" }}\n&lt;link rel=\"stylesheet\" href=\"{{ $stylemain.RelPermalink }}\" integrity=\"{{ $stylemain.Data.Integrity }}\"&gt;</code></p><p>Combining all css files to one minified file allows fewer HTTP requests. This is done using <code>slice</code>.</p><p><code>html\n{{ $cssbootstrap := resources.Get \"/css/bootstrap.css\" }}\n{{ $cssmain := resources.Get \"/css/main.css\" }}\n{{ $csscustom := resources.Get \"/css/custom.css\" }}\n{{ $allcss := slice $cssbootstrap $cssmain $csscustom | resources.Concat \"/css/vendor.css\" | minify | fingerprint \"sha512\" }}\n&lt;link rel=\"stylesheet\" href=\"{{ $allcss.RelPermalink }}\" integrity=\"{{ $allcss.Data.Integrity }}\"&gt;</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Javascript",
+          "items": [
+            {
+              "title": "<p>Usually a theme will contain multiple JS files which might require a specific order. This is where <code>slice</code> comes into handy.</p><p>```html\n{{ $jquery := resources.Get \"/js/jquery-v6.6.6/jquery.min.js\" }}\n{{ $bootstrap := resources.Get \"/js/bootstrap-v4.6.0/bootstrap.min.js\" }}\n{{ $main := resources.Get \"/js/main.js\" }}</p><p>{{ $fullscript := slice $jquery $bootstrap $main | resources.Concat \"/js/vendor.js\" | minify | fingerprint \"sha512\" }}</p><script integrity=\"{{ $fullscript.Data.Integrity }}\" src=\"{{ $fullscript.RelPermalink }}\"></script><p>```</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Conditionals",
+          "items": [
+            {
+              "title": "<p>All scripts and styles that are needed only on specific pages should be wrapped in conditionals.</p><p><code>html\n{{ if .Params.customPageColor }}\n    &lt;style&gt;\n        body { background-color: red; }\n    &lt;/style&gt;\n{{ end }}</code></p><p><code>html\n{{ if .Params.contactScript }}\n    &lt;script src=\"/js/my-contact-script.js\"&gt;&lt;/script&gt;\n{{ end }}</code></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Images",
+      "items": [
+        {
+          "title": "<p>Image files should never be larger than necessary.</p><p>Hugo allows you to create resources from <code>.Params</code> information (<a href=\"https://gohugo.io/hugo-pipes/resource-from-string/\">Hugo Documentation</a>).\nThe resources can be processed with the image processing functions from Hugo afterwards (<a href=\"https://gohugo.io/content-management/image-processing/\">Hugo Documentation</a>).\nThis allows you to keep the original images next to the Markdown files (as mentioned before) and let Hugo generate thumbnails and smaller versions.</p><p><code>html\nfeatured_image: my-blog-header-1.jpg</code></p><p>This example resizes the image mentioned in the <code>featured_image</code> parameter of the blog page to a version with 800 pixel width.</p><p><code>html\n{{ if .Params.featured_image }}\n    {{ $siteurl := (.RelPermalink) }}\n    {{ $sitetitle := (.Title) }}\n    {{ with .Resources.GetMatch (.Params.featured_image) }}\n        {{ $thumb := .Resize \"800x\" }}\n        &lt;img src=\"{{ $thumb.Permalink }}\" alt=\"{{ $sitetitle }}\"&gt;\n    {{ end }}\n{{ end }}</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Caching and .htaccess",
+      "items": [
+        {
+          "title": "<p>See the example <code>.htaccess</code> in the <code>static</code> folder. It covers the following points.</p>"
+        },
+        {
+          "title": "Redirects for old content"
+        },
+        {
+          "title": "Compression"
+        },
+        {
+          "title": "Caching"
+        },
+        {
+          "title": "SSL"
+        },
+        {
+          "title": "HSTS and Content Security Policies"
+        },
+        {
+          "title": "Errror documents"
+        },
+        {
+          "title": "Wordpress migration rules<p>Make sure you understand every rule before applying it! The Content-Security-Policy might break your page if you rely on external sources.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Add a Schema.org partial",
+      "items": [
+        {
+          "title": "<p><strong>UPDATE:</strong> Even better use Hugo <a href=\"https://gohugo.io/templates/internal/\">internal templates</a> for this.</p><p><strong>UPDATE (Hugo &gt;= 0.60.0):</strong> According to the patch notes Hugo processes the images in a new order. <code>The image logic in the 3 SEO internal templates twitter_cards.html, opengraph.html, and schema.html is consolidated: images page param first, then bundled image matching *feature*, *cover* or *thumbnail*, then finally images site param.</code></p><p>Add a Schema.org partial according to <a href=\"https://keithpblog.org/post/hugo-website-seo/\"></a>.</p><p>```html</p>"
+        }
+      ]
+    },
+    {
+      "topic": "External links in new window",
+      "items": [
+        {
+          "title": "<p>Starting with Hugo 0.60 and the <em>Goldmark</em> parser external <strong>links</strong> won't open in a <strong>new window</strong>. The <code>hrefTargetBlank</code> from <em>Blackfriday</em> is not supported in <em>Goldmark</em>.\nIn the <a href=\"https://github.com/spech66/hugo-shortcodes\">hugo-shortcodes</a> collection the <code>render-link.html</code> shortcode will fix the problem. Put the file in <code>\\layouts\\_default\\_markup</code> and alls urls starting with http(s) will get the <code>target=\"_blank\" rel=\"noopener noreferrer\"</code> properties.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Front-End Checklist",
+      "items": [
+        {
+          "title": "<p>Walk trough every point in the <a href=\"https://github.com/thedaviddias/Front-End-Checklist\">Front-End Checklist</a> and the <a href=\"https://github.com/thedaviddias/Front-End-Performance-Checklist\">Front-End Performance Checklist</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Awesome Hugo list",
+      "items": [
+        {
+          "title": "<p>Additional links and resources can be found at <a href=\"https://github.com/theNewDynamic/awesome-hugo\">Awesome Hugo</a>. <em>A curated list of awesome things related to Hugo.</em></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Tools",
+      "items": [
+        {
+          "title": "<p>There are some tools and websites that can validate your page and check the speed.</p>"
+        },
+        {
+          "title": "<a href=\"https://webhint.io/scanner/\">webhint</a> <em>is a linting tool that will help you with your site's accessibility, speed, security and more, by checking your code for best practices and common errors.</em>"
+        },
+        {
+          "title": "<a href=\"https://varvy.com/\">Varvy SEO tool</a> <em>See how well a page follows the Google guidelines.</em>"
+        },
+        {
+          "title": "<a href=\"https://search.google.com/structured-data/testing-tool\">Google Structured Data Testing Tool</a> Helps validating the structured data on the website."
+        },
+        {
+          "title": "<a href=\"https://developers.google.com/speed/pagespeed/insights/\">Google PageSpeed Insights</a> checks performance, loading times and image sizes."
+        },
+        {
+          "title": "<a href=\"https://developers.google.com/web/tools/lighthouse/\">Google Lighthouse</a> performs audits on website performance, best practices, accessibility and SEO."
+        },
+        {
+          "title": "<a href=\"https://www.ssllabs.com/ssltest/index.html\">SSL Server Test</a> is a <em>free online service performing a deep analysis of the configuration of any SSL web server on the public Internet.</em>"
+        },
+        {
+          "title": "<a href=\"https://ssl-config.mozilla.org/\">Mozilla SSL Configuration Generator</a> <em>An easy-to-use secure configuration generator for web, database, and mail software.</em>"
+        },
+        {
+          "title": "<a href=\"https://seorch.de/\">SEORCH</a> German SEO testing tool."
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

@@ -1,0 +1,761 @@
+{
+  "id": 29,
+  "header": "Camping-Checklist",
+  "topicList": [
+    "ENGLISH",
+    "Travelling by car",
+    "German",
+    "Reisen mit einem Auto",
+    "Links"
+  ],
+  "itemGroups": [
+    {
+      "topic": "ENGLISH",
+      "items": [
+        {
+          "topic": "Sleeping",
+          "items": [
+            {
+              "title": "tent"
+            },
+            {
+              "title": "pegs"
+            },
+            {
+              "title": "rope"
+            },
+            {
+              "title": "check eyelets"
+            },
+            {
+              "title": "optional extra rods to secure your tent in case of heavy rain</li>\n</ul>"
+            },
+            {
+              "title": "camping mat / sleeping pad"
+            },
+            {
+              "title": "camp bed"
+            },
+            {
+              "title": "airbed / air mattress (pro tip: inflate air mattress back at home, put something on it and leave it for the night. prevents bad surprises at campsite)"
+            },
+            {
+              "title": "sleeping bag"
+            },
+            {
+              "title": "pillow"
+            },
+            {
+              "title": "fluffy blanket"
+            }
+          ]
+        },
+        {
+          "topic": "Furniture",
+          "items": [
+            {
+              "title": "blanket or carpet to put in the anteroom of your tent"
+            },
+            {
+              "title": "chair"
+            },
+            {
+              "title": "table"
+            },
+            {
+              "title": "hand truck"
+            },
+            {
+              "title": "pavillon or tarp (sun protection)"
+            }
+          ]
+        },
+        {
+          "topic": "Clothing",
+          "items": [
+            {
+              "title": "shirts"
+            },
+            {
+              "title": "underwear"
+            },
+            {
+              "title": "socks/stockings/tights/overknees"
+            },
+            {
+              "title": "pants/skirts/trousers/dresses/kilts"
+            },
+            {
+              "title": "Hoodies, pullovers, zippers, vests"
+            },
+            {
+              "title": "Jacket"
+            },
+            {
+              "title": "shoes (sneekers, rubber boots, plastic shoes or flipflops for showering)"
+            },
+            {
+              "title": "rain shield"
+            },
+            {
+              "title": "Swim suit, bikini, trunks"
+            },
+            {
+              "title": "pajamas"
+            },
+            {
+              "title": "Scarf (it might get windy)"
+            }
+          ]
+        },
+        {
+          "topic": "Personal hygiene",
+          "items": [
+            {
+              "title": "Tooth brush, Toothpaste"
+            },
+            {
+              "title": "Shower gel, Shampoo, Conditioner"
+            },
+            {
+              "title": "Tampons, Sanitary towels"
+            },
+            {
+              "title": "Soap"
+            },
+            {
+              "title": "Deodorant, antiperspirant"
+            },
+            {
+              "title": "Hairbrush/comb"
+            },
+            {
+              "title": "Handkerchiefs"
+            },
+            {
+              "title": "Towels (bring at least one big and one small)"
+            },
+            {
+              "title": "Contact lenses"
+            },
+            {
+              "title": "cleaning fluid"
+            },
+            {
+              "title": "contact lens container (make sure it fits flight regulations for fluids if you travel by plane.)"
+            },
+            {
+              "title": "replacement contact lenses"
+            },
+            {
+              "title": "replacement glasses</li>\n</ul>"
+            },
+            {
+              "title": "Glasses"
+            },
+            {
+              "title": "spectacle case</li>\n</ul>"
+            },
+            {
+              "title": "Oropax"
+            },
+            {
+              "title": "Hand desinfectant, yet always wash your hands"
+            },
+            {
+              "title": "lip balm"
+            }
+          ]
+        },
+        {
+          "topic": "Tools",
+          "items": [
+            {
+              "title": "rubber hammer (for tent pegs)"
+            },
+            {
+              "title": "torch / flashlight / headlamp (including batteries and matching charger)"
+            },
+            {
+              "title": "batteries"
+            },
+            {
+              "title": "pocket knife / leatherman"
+            },
+            {
+              "title": "sunscreen"
+            },
+            {
+              "title": "sunglasses"
+            },
+            {
+              "title": "sun hat"
+            },
+            {
+              "title": "rescue blanket"
+            },
+            {
+              "title": "insect protection"
+            },
+            {
+              "title": "toilet paper"
+            },
+            {
+              "title": "kitchen roll"
+            },
+            {
+              "title": "tissues"
+            },
+            {
+              "title": "cleaning tissues"
+            },
+            {
+              "title": "rubbish bag"
+            },
+            {
+              "title": "lasers"
+            },
+            {
+              "title": "cable drum (power, ethernet, fiber)"
+            },
+            {
+              "title": "power distributor"
+            },
+            {
+              "title": "lights or flags to identify your tent"
+            },
+            {
+              "title": "card games"
+            },
+            {
+              "title": "fan (not the cheering crowd type)"
+            },
+            {
+              "title": "Working gloves (for buildup and teardown)"
+            },
+            {
+              "title": "Tape measure"
+            },
+            {
+              "title": "Gaffa-/Duck-/Duct-Tape (may in different colours)"
+            },
+            {
+              "title": "Marker (Water proof) bright and dark colour to write on tape"
+            },
+            {
+              "title": "hooks or pegs, clothesline/washing-line/rope (to hang up things)"
+            },
+            {
+              "title": "Blåhaj (or other favorite plushy)"
+            }
+          ]
+        },
+        {
+          "topic": "Food/Drink",
+          "items": [
+            {
+              "title": "1-2 weeks before the event: check expiry date of food in your fridge and eat those things that might go bad during your absence. food waste is not nice ;)"
+            },
+            {
+              "title": "camping plates, cups, cutlery"
+            },
+            {
+              "title": "water canister (5L), foldable"
+            },
+            {
+              "title": "refrigerator box"
+            },
+            {
+              "title": "camping stove"
+            },
+            {
+              "title": "chewing gum"
+            },
+            {
+              "title": "canned food"
+            },
+            {
+              "title": "Cookies, cereal bars, crackers"
+            },
+            {
+              "title": "vegetable peeler"
+            },
+            {
+              "title": "salt"
+            },
+            {
+              "title": "dish detergent, sponge"
+            },
+            {
+              "title": "Metal mug (e.g. from Easterhegg)"
+            },
+            {
+              "title": "Water bottle to carry around during hot days"
+            }
+          ]
+        },
+        {
+          "topic": "Medication",
+          "items": [
+            {
+              "title": "band-aid"
+            },
+            {
+              "title": "analgetics (Thomapyrin, Aspirin)"
+            },
+            {
+              "title": "Clarityn (or other histamine blocker if you're allergic to something)"
+            },
+            {
+              "title": "Neocitran/Theraflu/Paracetamol"
+            },
+            {
+              "title": "Contraceptives, prophylactic (contraceptive pill, condoms, etc.)"
+            },
+            {
+              "title": "Something for your stomach (Immodium, Iberogast, …)"
+            },
+            {
+              "title": "Bepanthen"
+            },
+            {
+              "title": "antiseptic (Octenisept)"
+            },
+            {
+              "title": "personal medication"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Travelling by car",
+      "items": [
+        {
+          "title": "High-visibility vests for all persons travelling (mandatory: AT/DE: 1 per car, HU: 1 per person in the car)"
+        },
+        {
+          "topic": "Power Supply",
+          "items": [
+            {
+              "title": "3-phase 400V adapter to 230V single phase (ruggedized outdoor kind)"
+            },
+            {
+              "title": "Solarpanele"
+            },
+            {
+              "title": "Akkus, PowerBanks"
+            },
+            {
+              "title": "AA, AAA batteries"
+            },
+            {
+              "title": "hand crank generator"
+            },
+            {
+              "title": "Wind generator"
+            },
+            {
+              "title": "hydro electric power plant"
+            },
+            {
+              "title": "Uninterruptable power supply (UPS)"
+            }
+          ]
+        },
+        {
+          "topic": "Decoration and Signage",
+          "items": [
+            {
+              "title": "<p>Ideally all decorative lighting is independently solar powered.</p>"
+            },
+            {
+              "title": "LED strips to brighten up your tent or pavillon"
+            },
+            {
+              "title": "LED torches to illuminate rope and pegs to prevent people from tripping over them during the night<hr/>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "German",
+      "items": [
+        {
+          "topic": "Schlafen",
+          "items": [
+            {
+              "title": "Zelt"
+            },
+            {
+              "title": "Heringe"
+            },
+            {
+              "title": "Abspannseile"
+            },
+            {
+              "title": "Ösen überprüfen"
+            },
+            {
+              "title": "optionale Extrastangen, um das Zelt bei Regen und Wind abzusichern</li>\n</ul>"
+            },
+            {
+              "title": "Isomatte"
+            },
+            {
+              "title": "Feldbett"
+            },
+            {
+              "title": "Luftmatratze (Pro Tipp: Luftmatratze zuhause aufblasen, etwas Schweres darauf legen und eine Nacht lang abwarten. Kann bösen Überraschungen beim Campen vorbeugen.)"
+            },
+            {
+              "title": "Schlafsack"
+            },
+            {
+              "title": "Polster"
+            },
+            {
+              "title": "Flauschedecke"
+            }
+          ]
+        },
+        {
+          "topic": "Möbel",
+          "items": [
+            {
+              "title": "Picknickdecke oder Teppich für den Zeltvorraum"
+            },
+            {
+              "title": "Tisch"
+            },
+            {
+              "title": "Sessel"
+            },
+            {
+              "title": "Rodel/Sackkarre"
+            },
+            {
+              "title": "Pavillon/Sonnensegel (Sonnenschutz)"
+            }
+          ]
+        },
+        {
+          "topic": "Kleidung",
+          "items": [
+            {
+              "title": "T-Shirts"
+            },
+            {
+              "title": "Unterwäsche"
+            },
+            {
+              "title": "Socken/Strumpfhosen"
+            },
+            {
+              "title": "Hosen/Röcke/Kleider/Kilts"
+            },
+            {
+              "title": "Hoodies, Pullover, Westen"
+            },
+            {
+              "title": "Jacke"
+            },
+            {
+              "title": "Schuhe (Sneekers, Gummistiefel, Plastikschuhe oder Flipflops zum Duschen)"
+            },
+            {
+              "title": "Regenschutz"
+            },
+            {
+              "title": "Badeanzug, Bikini, Badehosen"
+            },
+            {
+              "title": "Pyjama"
+            },
+            {
+              "title": "Schal oder Halstuch (es könnte windig werden)"
+            }
+          ]
+        },
+        {
+          "topic": "Personal hygiene",
+          "items": [
+            {
+              "title": "Zahnbürste, Zahnpasta"
+            },
+            {
+              "title": "Duschgel, Shampoo, Conditioner"
+            },
+            {
+              "title": "Tampons, Binden"
+            },
+            {
+              "title": "Seife"
+            },
+            {
+              "title": "Deo"
+            },
+            {
+              "title": "Bürste/Kamm"
+            },
+            {
+              "title": "Taschentücher"
+            },
+            {
+              "title": "Handtücher (mindestens ein großes und ein kleines)"
+            },
+            {
+              "title": "Kontaktlinsen"
+            },
+            {
+              "title": "Reinigungsflüssigkeit"
+            },
+            {
+              "title": "Behälter"
+            },
+            {
+              "title": "Ersatzlinsen"
+            },
+            {
+              "title": "Ersatzbrille</li>\n</ul>"
+            },
+            {
+              "title": "Brille"
+            },
+            {
+              "title": "Brillenetui</li>\n</ul>"
+            },
+            {
+              "title": "Oropax"
+            },
+            {
+              "title": "Desinfektionsgel oder -spray"
+            },
+            {
+              "title": "Lippenpflege"
+            }
+          ]
+        },
+        {
+          "topic": "Diverses",
+          "items": [
+            {
+              "title": "Gummihammer (zum Einschlagen von Zeltheringen)"
+            },
+            {
+              "title": "Taschenlampe / Stirnlampe (inkl. Akkus und passendem Ladegerät)"
+            },
+            {
+              "title": "Batterien"
+            },
+            {
+              "title": "Taschenmesser / Leatherman"
+            },
+            {
+              "title": "Gummistiefel"
+            },
+            {
+              "title": "Sonnencreme"
+            },
+            {
+              "title": "Sonnenbrille"
+            },
+            {
+              "title": "Sonnenhut"
+            },
+            {
+              "title": "Rettungsdecke"
+            },
+            {
+              "title": "Insektenschutz"
+            },
+            {
+              "title": "Toilettenpapier"
+            },
+            {
+              "title": "Küchenrolle"
+            },
+            {
+              "title": "Taschentücher"
+            },
+            {
+              "title": "Reinigungstücher"
+            },
+            {
+              "title": "Müllsäcke"
+            },
+            {
+              "title": "Laser"
+            },
+            {
+              "title": "Kabeltrommel (Wechselstrom, Ethernet, Glasfaser)"
+            },
+            {
+              "title": "Verteiler"
+            },
+            {
+              "title": "Licht oder Fahne für das Zelt zwecks Orientierung"
+            },
+            {
+              "title": "Kartenspiel"
+            },
+            {
+              "title": "Fächer / Ventilator"
+            },
+            {
+              "title": "Arbeitshandschuhe für Auf- und Abbau"
+            },
+            {
+              "title": "Maßband"
+            },
+            {
+              "title": "Gaffa-/Duck-/Duct-Tape/Gewebeband (evt. in unterschiedlichen Farben)"
+            },
+            {
+              "title": "Lackstift/Edding (Wasserfest, um Klebeband zu beschriften.)"
+            },
+            {
+              "title": "Haken oder Wäscheklammern, Wäscheleine, Seil um Sachen aufzuhängen"
+            },
+            {
+              "title": "Blåhaj (oder ein anderes Lieblingskuscheldings)"
+            }
+          ]
+        },
+        {
+          "topic": "Essen/Trinken",
+          "items": [
+            {
+              "title": "1-2 Wochen vor dem Event: überprüfe die Haltbarkeit der Lebensmittel in deinem Kühlschrank und verbrauche jene Lebensmittel, die während deiner Abwesenheit schlecht werden könntemln. Lebensmittelverschwendung ist unschön ;)"
+            },
+            {
+              "title": "Kühlbox"
+            },
+            {
+              "title": "Wasserkanister (5L), evt. faltbar"
+            },
+            {
+              "title": "Plastikteller, Becher, Besteck"
+            },
+            {
+              "title": "Gaskocher"
+            },
+            {
+              "title": "Kaugummi"
+            },
+            {
+              "title": "Dosennahrung"
+            },
+            {
+              "title": "Kekse, Müsliriegel, Cracker"
+            },
+            {
+              "title": "Salz"
+            },
+            {
+              "title": "Gemüseschäler"
+            },
+            {
+              "title": "Geschirrspülmittel, Geschirrspülschwamm"
+            },
+            {
+              "title": "Metallbecher/Metallhäferl (zB vom Easterhegg)"
+            },
+            {
+              "title": "Tragbare Wasserflasche für heiße Tage"
+            }
+          ]
+        },
+        {
+          "topic": "Medikamente",
+          "items": [
+            {
+              "title": "Pflaster"
+            },
+            {
+              "title": "Analgetikum gegen Schmerzen (Thomapyrin, Aspirin)"
+            },
+            {
+              "title": "Clarityn (oder ein anderer Histaminblocker im Fall einer Allergie oder Intoleranz)"
+            },
+            {
+              "title": "Neocitran/Theraflu/Paracetamol"
+            },
+            {
+              "title": "Verhütungsmittel (Pille, Kondome, etc.)"
+            },
+            {
+              "title": "Etwas für den Magen (Immodium, Iberogast, …)"
+            },
+            {
+              "title": "Bepanthen"
+            },
+            {
+              "title": "Antiseptikum (Octenisept)"
+            },
+            {
+              "title": "persönliche Medikamente"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Reisen mit einem Auto",
+      "items": [
+        {
+          "title": "Warnwesten für alle Reisenden (verpflichtend: AT/DE: 1 pro Auto, HU: 1 pro Person im Auto)"
+        },
+        {
+          "topic": "Stromversorgung",
+          "items": [
+            {
+              "title": "400V, Drehstrom Adapter auf 1 Phase 230V (allwettertauglich)"
+            },
+            {
+              "title": "Solar panels"
+            },
+            {
+              "title": "Rechargables, power banks"
+            },
+            {
+              "title": "AA (Mignon), AAA Batterien"
+            },
+            {
+              "title": "Handgenerator, Dynamo"
+            },
+            {
+              "title": "Wind Generator"
+            },
+            {
+              "title": "Hydroelektrisches Kraftwerk"
+            },
+            {
+              "title": "USV (Unterbrechungsfreie Stromversorgung)"
+            }
+          ]
+        },
+        {
+          "topic": "Dekoration und Beschilderung",
+          "items": [
+            {
+              "title": "<p>Idealerweise sind alle Dekobeleuchtungen unabhängig vom Stromnetz und solarbetrieben.</p>"
+            },
+            {
+              "title": "LED Streifen um Zelt oder Pavillon zu erleuchten"
+            },
+            {
+              "title": "LED Fackeln/Spieße um die Heringe und Abspannseile zu beleuchten, damit niemand in der Nacht drüber stolpert."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Links",
+      "items": []
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

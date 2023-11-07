@@ -1,0 +1,72 @@
+{
+  "id": 174,
+  "header": "reliability-checklist",
+  "topicList": [
+    "Why you might want to use it:",
+    "Upcoming Reliability Aspects:",
+    "Workflow",
+    "Add custom_model config"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Why you might want to use it:",
+      "items": [
+        {
+          "title": "<p><b>✅ No coding needed</b><br/>\nPre-defined templates available to easily integrate your models/datasets via command line only.</p><p><b>✅ Bring Your own Model (BYoM)</b><br/>\nYour model template is missing? We have you covered: Check out <a href=\"\">BYoM</a> to create your own model specific config file.</p><p><b>✅ Bring Your own Data (BYoD)</b><br/>\nYour dataset template is missing? Check out <a href=\"\">BYoD</a> to create your own dataset specific config file.</p><p><b>✅ Reliability metrics</b><br/>\nCurrently, we support a number of reliability related aspects:</p>"
+        },
+        {
+          "title": "<b>Accuracy/F1/Precision/Recall</b>"
+        },
+        {
+          "title": "<b>Calibration:</b> Reliability Diagram Expected Calibration Error (ECE), Expected Overconfidence Error (EOE)"
+        },
+        {
+          "title": "<b>Selective Prediction:</b> Risk-Coverage Curve (RCC), AUC of risk-coverage curve"
+        },
+        {
+          "title": "<b>Sensitivity</b>"
+        },
+        {
+          "title": "<b>Stability</b>"
+        },
+        {
+          "title": "<b>Out-of-Distribution</b>"
+        }
+      ]
+    },
+    {
+      "topic": "Upcoming Reliability Aspects:",
+      "items": [
+        {
+          "title": "<b>Adversarial Attack:</b> Model in the loop adversarial attacks to evaluate model's robustness."
+        },
+        {
+          "title": "<b>Task-Specific Augmentations:</b> Task-specific augmentations to check the reliability on augmented inputs."
+        },
+        {
+          "title": "<b>Novelty</b>"
+        },
+        {
+          "title": "<b>Other Measures:</b> We plan to incorporate other measures such as bias, fairness, toxicity, and faithfulness of models. We also plan to measure the reliability of generative models on crucial parameters such as hallucinations."
+        }
+      ]
+    },
+    {
+      "topic": "Workflow",
+      "items": [
+        {
+          "title": "<p><b>✅ Want to integrate more features?</b><br/>\nOur easy-to-develop infrastructure allows developers to contribute models, datasets, augmentations, and evaluation metrics seamlessly to the workflow.</p><p><img alt=\"workflow\" src=\"extras/recheck_workflow.svg\"/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Add custom_model config",
+      "items": [
+        {
+          "title": "<p>```bash</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

@@ -1,0 +1,107 @@
+{
+  "id": 24,
+  "header": "Azure_Checklists",
+  "topicList": [
+    "What is an Azure Architecture - Solution requirement considerations?",
+    "Why this repository?",
+    "Reporting errors and contributing",
+    "Using the spreadsheet for Azure reviews",
+    "Security settings running macros",
+    "Disclaimer"
+  ],
+  "itemGroups": [
+    {
+      "topic": "What is an Azure Architecture - Solution requirement considerations?",
+      "items": [
+        {
+          "title": "<p>Building a cloud solution on Azure can be an exciting yet daunting task.</p><p>The key to a successful implementation is carefully planning and considering solution requirements using the guidance of the Microsoft Cloud Adoption and Well Architecture frameworks.</p><p>But knowing what questions to ask and data to capture to give you the bigger picture - to not only consider the solution for the short term and long term, can be difficult.</p><p>Leaning on the great frameworks already in place to assist with the <a href=\"https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/?WT.mc_id=AZ-MVP-5004796\">Cloud Adoption</a> and <a href=\"https://learn.microsoft.com/en-us/azure/architecture/framework/?WT.mc_id=AZ-MVP-5004796\">Azure Well Architecture frameworks</a>, the solution requirements checklist is intended to act as a way of asking and capturing the requirements of your solutions. It can be a great reminder to discover some of those requirements (whether functional or non-functional) that you may have forgotten about!</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Why this repository?",
+      "items": [
+        {
+          "title": "<p>This repo separates the actual checklist contentfrom the offical/community driven checklists offered as part of the <a href=\"https://github.com/Azure/review-checklists\">Azure Review Checklist</a>. This checklist is aimed as a method of capturing business requirements before the review stage.</p><p>The excel checklist, is purely for demonostration purposes. It may be out-of-date with the latest excel spreadsheet from the Azure Review, and running an out of date question of the Azure Architecture checklist.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Reporting errors and contributing",
+      "items": [
+        {
+          "title": "<p>Please feel free to open an issue or create a PR if you find any error or missing information in the checklist. This is aimed to be community driven.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Using the spreadsheet for Azure reviews",
+      "items": [
+        {
+          "title": "<ol>\n<li>\n<p>Download the Excel spreadsheet from the <a href=\"https://github.com/Azure/review-checklists/releases/latest/download/review_checklist.xlsm\">latest release</a> to your PC</p>"
+        },
+        {
+          "title": "<p>Download the latest version of the Azure architecture JSON file to your computer.</p>"
+        },
+        {
+          "title": "<p>In the Fastrack for Azure Review Checklist, select Import Checklist from JSON.</p>"
+        },
+        {
+          "title": "<p>Import the checklist.</p>"
+        },
+        {
+          "title": "<p>(Optional) If you are going to distribute the spreadsheet to users that cannot work with macros (for example, either because of security reasons or because they use Office for Mac), save a version of the spreadsheet in xlsx format (instead of xlsm). Note that disabling macros will result in the spreadsheet losing its ability to import updated versions of the checklist or JSON-based Azure Resource Graph query results</p>"
+        },
+        {
+          "title": "<p>Go row by row, and set the \"Status\" field to one of the available options, and write any remarks in the \"Comments\" field (such as why a recommendation is not relevant, or who will fix the open item)</p>"
+        },
+        {
+          "title": "<p>Since there are many rows in a review, it is recommended proceeding in chunks: either going area after area (first \"Networking\", then \"Security\", etc) or starting with the \"High\" priority elements and afterwards moving down to \"Medium\" and \"Low\"</p>"
+        },
+        {
+          "title": "If any recommendation is not clear, there is a \"More Info\" link with more context information."
+        },
+        {
+          "title": "<p><strong>IMPORTANT</strong>: design decisions are not a checkbox exercise, but a series of compromises. It is OK deviating from certain recommendations, if the implications are clear (for example, sacrificing security with operational simplicity or lower cost for non-critical applications)</p>"
+        },
+        {
+          "title": "<p>Check the \"Dashboard\" worksheet for a graphical representation of the review progress</p>\n</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Security settings running macros",
+      "items": [
+        {
+          "title": "<p>There are some settings that you might need to change in your system to run macro-enabled Excel spreadsheets. When initially opening the file you may see the following error, which prevents Excel from loading:</p><blockquote>\n<p>Excel cannot open the file 'review_checklist.xlsm' because the file format or file extension is not valid. Verify that the file has not been corrupted and that the file extension matches the format of the file.</p>\n</blockquote><p>In other cases the file opens with the following message, which prevents you from being able to load the checklist items:</p>"
+        },
+        {
+          "topic": "Unblock file or add an exception to Windows Security",
+          "items": [
+            {
+              "title": "<ol>\n<li>\n<p>You might need to unblock the file from the file properties in the Windows File Explorer, so that you can use the macros required to import the checklist content from github.com:</p>"
+            },
+            {
+              "title": "<p>Additionally, you might want to add the folder where you cloned this repo to the list of exceptions in Windows Security (in the Virus &amp; Threat Protection section):</p>\n</li>\n</ol>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Disclaimer",
+      "items": [
+        {
+          "title": "This is not official Microsoft documentation or software."
+        },
+        {
+          "title": "This is not an endorsement or a sign-off of an architecture or a design."
+        },
+        {
+          "title": "This code-sample is provided \"AS IT IS\" without warranty of any kind, either expressed or implied, including but not limited to the implied warranties of merchantability and/or fitness for a particular purpose."
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

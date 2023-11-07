@@ -1,0 +1,324 @@
+{
+  "id": 109,
+  "header": "iOS-App-Store-Submission-Checklist",
+  "topicList": [
+    "Contents",
+    "Your app…",
+    "iPad specific",
+    "Submission",
+    "Miscellaneous",
+    "Copyright, trademark, ownership",
+    "Acknowledgments"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Contents",
+      "items": [
+        {
+          "title": "<ol>\n<li><a href=\"#app\">Your app…</a>"
+        },
+        {
+          "title": "<a href=\"#ipad\">iPad specific</a>"
+        },
+        {
+          "title": "<a href=\"#submission\">Submission package details</a>"
+        },
+        {
+          "title": "<a href=\"#miscellaneous\">Miscellaneous</a>"
+        },
+        {
+          "title": "<a href=\"#copyright\">Copyright, trademark, ownership</a>"
+        },
+        {
+          "title": "<a href=\"#acknowledgments\">Acknowledgments</a></li>\n</ol><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Your app…",
+      "items": [
+        {
+          "title": "Does not simulate a failure (e.g. crash or cracked screen)"
+        },
+        {
+          "title": "Remains responsive after long/excessive usage"
+        },
+        {
+          "title": "Does not hardcode any price information inside the app"
+        },
+        {
+          "title": "Does not make use of any private APIs in the SDK"
+        },
+        {
+          "title": "Does not make use of any undocumented features in the SDK"
+        },
+        {
+          "title": "Does not refer to hardware capabilities which don't exist on the users device"
+        },
+        {
+          "title": "Warns the user when there is no network connectivity, if it needs a connection"
+        },
+        {
+          "title": "Does not resemble (too closely) any native apps"
+        },
+        {
+          "title": "Does not replicate (too closely) the functionality of a native app"
+        },
+        {
+          "title": "Does not expire (stop working) after a certain time or number of runs"
+        },
+        {
+          "title": "Does not use any unapproved hardware accessories"
+        },
+        {
+          "title": "Does not contain contain racist material, prolonged graphic violence, graphic sexual content or nudity"
+        },
+        {
+          "title": "Does not \"accidentally\" contain such material, e.g. unrestricted web browsing, explicit lyrics, unfiltered collections of books"
+        },
+        {
+          "title": "Does not ridicule well-known public figures, past or present"
+        },
+        {
+          "title": "Does not contain a scripting interpreter, plugin or other runtime that can execute downloaded content"
+        },
+        {
+          "title": "Does not use continuous vibration"
+        },
+        {
+          "title": "Uses the relevant keyboard per input field (e.g. numbers for a phone number field)"
+        },
+        {
+          "title": "Deselects rows in table views after their selection causes another view to be displayed"
+        },
+        {
+          "title": "Restricts video streaming or other big downloads to WiFi connections only"
+        },
+        {
+          "title": "Makes clear to the user when private data will be sent to a server, and provides an opt-out"
+        },
+        {
+          "title": "Does not make covert or non-obvious use of the camera or microphone"
+        },
+        {
+          "title": "Uses Core Location (GPS) for a real user benefit, not just advertising or tracking (if applicable)"
+        },
+        {
+          "title": "Never crashes"
+        },
+        {
+          "title": "Conforms to Apple's Human Interface Guidelines"
+        },
+        {
+          "title": "App looks well designed and of high quality"
+        },
+        {
+          "title": "Native button icons are consistent with their native actions"
+        },
+        {
+          "title": "Activity spinners must not spin indefinitely"
+        },
+        {
+          "title": "Buttons trigger on touch-up"
+        },
+        {
+          "title": "Screen layout can handle the double-height status bar (e.g. during phone call)"
+        },
+        {
+          "title": "App state is saved when stopping the app and restored on next start"
+        },
+        {
+          "title": "Landscape mode, if supported, looks well designed (i.e. is not accidental and bad)<hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "iPad specific",
+      "items": [
+        {
+          "title": "Your app should work in all four orientations, but if only portrait or landscape, must support both ways up"
+        },
+        {
+          "title": "Your app doesn't nest popovers, i.e. selecting something on a popover should not display another popover"
+        },
+        {
+          "title": "Your app doesn't show more than one popover at a time<hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Submission",
+      "items": [
+        {
+          "title": "The name of your app (in the binary package) matches (or is abbreviated version of) the iTunes name"
+        },
+        {
+          "title": "Your iTunes description accurately describes the functionality of the app, i.e. it works as advertised"
+        },
+        {
+          "title": "Your iTunes description does not contain the price"
+        },
+        {
+          "title": "Your iTunes description (and the binary) do not include the names of any competing platforms (e.g. Android, Blackberry)"
+        },
+        {
+          "title": "Your iTunes description does not mention unreleased iOS version numbers"
+        },
+        {
+          "title": "Your iTunes keywords match the functionality of the app"
+        },
+        {
+          "title": "Your iTunes keywords do not contain the names of other apps"
+        },
+        {
+          "title": "If your app's price is over $100 or has in-app purchases over $100, it is rated 17+"
+        },
+        {
+          "title": "The screenshots do not include error states, including iAd errors"
+        },
+        {
+          "title": "The categories the app is in match its functionality"
+        },
+        {
+          "title": "Any easter eggs in the app are innocuous and are disclosed in the 'demo account' field"
+        },
+        {
+          "title": "Icons are provided for each of the sizes: 57, 72 (if on iPad), 114 and 512 pixels"
+        },
+        {
+          "title": "The different sizes of icon all contain the same artwork"
+        },
+        {
+          "title": "Version number (bundle version number) is &gt;= 1.0"
+        },
+        {
+          "title": "The required-device-capabilities entry in the info.plist file match the requirements of the app"
+        },
+        {
+          "title": "Your app matches your claimed OS version compatibility"
+        },
+        {
+          "title": "NSZombieEnabled is set to NO"
+        },
+        {
+          "title": "App IP configured correctly (and signed) for"
+        },
+        {
+          "title": "iCloud enabled/disabled, with correct entitlments if enabled"
+        },
+        {
+          "title": "push notifications, with correct entitlements (for production) if enabled"
+        },
+        {
+          "title": "In App purchasing enabled/disabled"
+        },
+        {
+          "title": "Game Center enabled/disabled"
+        },
+        {
+          "title": "When updating"
+        },
+        {
+          "title": "Your iTunes \"What's New\" description accurately matches the changes to your app"
+        },
+        {
+          "title": "The updates to your app are real and detectable"
+        },
+        {
+          "title": "Version number is greater than the previous version number<hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Miscellaneous",
+      "items": [
+        {
+          "title": "The app has a reasonably sized market, i.e. is not a tiny niche or for a private audience"
+        },
+        {
+          "title": "There are no greyed out buttons or features in your app to do with a future release"
+        },
+        {
+          "title": "Lite versions of apps must not be unusably restricted; they have to \"work\" as is"
+        },
+        {
+          "title": "Lite versions of apps cannot be time limited"
+        },
+        {
+          "title": "Lite versions must not display the price of the full version"
+        },
+        {
+          "title": "Webpages loaded by the app, that are part of the app itself, are online and working"
+        },
+        {
+          "title": "Any associated email addresses exist and are working"
+        },
+        {
+          "title": "All (paid) app upgrades and other transactions use the App Store"
+        },
+        {
+          "title": "The app is not a simple browser window onto a website"
+        },
+        {
+          "title": "The app conforms to any regulatory requirements, e.g. if the app is medical in nature, or contains contests with prizes"
+        },
+        {
+          "title": "If relevant, official rules for sweepstakes and contests are presented in the app"
+        },
+        {
+          "title": "If relevant, the app makes it clear that Apple is not a sponsor or involved with any sweepstakes, contests or their prizes"
+        },
+        {
+          "title": "If you use encryption, you have registered with BIS and can provide documentation"
+        },
+        {
+          "title": "If your app requires signing in, you have provided test account"
+        },
+        {
+          "title": "If your app uses old style MapKit, it does not hide or obscure the Google logo"
+        },
+        {
+          "title": "If using the camera, your app doesn't disable the shutter sound"
+        },
+        {
+          "title": "Any references to Apple's products or apps are spelled correctly<hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Copyright, trademark, ownership",
+      "items": [
+        {
+          "title": "You can prove you own (or have permission to use) all the code in your app"
+        },
+        {
+          "title": "You can prove you own (or have permission to use) all the artwork in your app"
+        },
+        {
+          "title": "You can prove you have permission to use any brand names, names of public figures or other trademarked material"
+        },
+        {
+          "title": "e.g. Images and icons are not framed with a \"polaroid\" style (thicker at the bottom) border"
+        },
+        {
+          "title": "e.g. Images and icons do not include iPhones or other Apple products"
+        },
+        {
+          "title": "You can prove you own (or have permission to use) any videos, music or lyrics in your app<hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Acknowledgments",
+      "items": [
+        {
+          "title": "Initially crafted by TestPad, over <a href=\"https://ontestpad.com/library/201/ios-app-store-submission-checklist\">here</a>."
+        },
+        {
+          "title": "<a href=\"http://www.rossbeale.com\">Ross Beale</a>.<p>Want to improve the list? Submit a <code>Pull Request</code>!</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

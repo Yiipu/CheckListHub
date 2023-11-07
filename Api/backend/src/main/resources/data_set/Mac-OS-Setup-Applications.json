@@ -1,0 +1,409 @@
+{
+  "id": 120,
+  "header": "Mac-OS-Setup-Applications",
+  "topicList": [
+    "Table of content",
+    "Disclaimer",
+    "Usage",
+    "My Hardware",
+    "Setup shell",
+    "Command Line Apps",
+    "Applications",
+    "Mac preferences",
+    "Web Applications",
+    "Inspiration",
+    "Icons and images",
+    "Licence"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of content",
+      "items": [
+        {
+          "title": "<a href=\"#disclaimer\">Disclaimer</a>"
+        },
+        {
+          "title": "<a href=\"#usage\">Usage</a>"
+        },
+        {
+          "title": "<a href=\"#where-to-find-the-right-tool\">Where to find the right tool?</a>"
+        },
+        {
+          "title": "<a href=\"#my-hardware\">My Hardware</a>"
+        },
+        {
+          "title": "<a href=\"#setup-shell\">Setup shell</a>"
+        },
+        {
+          "title": "<a href=\"#command-line-apps\">Command Line Apps</a>"
+        },
+        {
+          "title": "<a href=\"#applications\">Applications</a>"
+        },
+        {
+          "title": "<a href=\"#bare-minimum\">Bare minimum</a>"
+        },
+        {
+          "title": "<a href=\"#browsers\">Browsers</a>"
+        },
+        {
+          "title": "<a href=\"#utilities\">Utilities</a>"
+        },
+        {
+          "title": "<a href=\"#automation\">Automation</a>"
+        },
+        {
+          "title": "<a href=\"#tasks--time-management\">Tasks &amp; time management</a>"
+        },
+        {
+          "title": "<a href=\"#storage--backup-management\">Storage &amp; backup management</a>"
+        },
+        {
+          "title": "<a href=\"#code\">Code</a>"
+        },
+        {
+          "title": "<a href=\"#reading--writing\">Reading &amp; Writing</a>"
+        },
+        {
+          "title": "<a href=\"#communication\">Communication</a>"
+        },
+        {
+          "title": "<a href=\"#social-media\">Social Media</a>"
+        },
+        {
+          "title": "<a href=\"#design--web-design\">Design &amp; Web Design</a>"
+        },
+        {
+          "title": "<a href=\"#audio--video-production\">Audio &amp; Video production</a>"
+        },
+        {
+          "title": "<a href=\"#miscellaneous\">Miscellaneous</a>"
+        },
+        {
+          "title": "<a href=\"#mac-preferences\">Mac preferences</a>"
+        },
+        {
+          "title": "<a href=\"#dock\">Dock</a>"
+        },
+        {
+          "title": "<a href=\"#web-applications\">Web Applications</a>"
+        },
+        {
+          "title": "<a href=\"#inspiration\">Inspiration</a>"
+        },
+        {
+          "title": "<a href=\"#icons-and-images\">Icons and images</a>"
+        },
+        {
+          "title": "<a href=\"#licence\">Licence</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Disclaimer",
+      "items": [
+        {
+          "title": "<p>I have been always passionate about tools. I always loved experimenting until I can find the right tool for the right task. Being a Front-End Developer requires to know the tools that exist and choose the one that will perform the task faster and better.</p><p>Based on hours of research and testing, I'm sharing all the applications I believe suits the best my work and daily workflow. It's a living MacOS configuration that, I hope, will also save you time for you to enjoy life more!</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Usage",
+      "items": [
+        {
+          "title": "I tried to keep the right order you should also follow to install packages and applications on your Mac (particularly the <a href=\"#setup-shell\">setup shell</a> part)"
+        },
+        {
+          "title": "Some tools are free and some are not. I'm lucky to have the ability to pay for licences and subscriptions. But if you are not in that situation, 1) You will find free alternatives in the \"Alternatives\" section of most of the tools, 2) you don't need a paid tool to do an amazing work. Just choose the best tool that suits you and your situation."
+        },
+        {
+          "topic": "Where to find the right tool?",
+          "items": [
+            {
+              "title": "<a href=\"https://www.producthunt.com/?ref=thedaviddias\">Product Hunt</a> - By far the best and well-know website where you can find almost everything you need. You will sometimes find a badge <img alt=\"Upvote on Product Hunt\" src=\"https://img.shields.io/static/v1?style=flat-square&amp;label=Product%20Hunt&amp;message=👍&amp;color=da552f\"/> that redirects to the Product Hunt page. Show some ❤️ to the makers!"
+            },
+            {
+              "title": "<a href=\"https://alternativeto.net/?ref=thedaviddias\">AlternativeTo</a> - I regularly use AlternativeTo but find it limited and not always accurate. The \"ups\" are most of the time not relevant or doesn't reflect what people prefer the most. It's a great place to start if you are looking for a list of alternatives though."
+            },
+            {
+              "title": "<a href=\"https://www.slant.co/?ref=thedaviddias\">Slant</a> and <a href=\"https://stackshare.io/?ref=thedaviddias\">stackshare</a> - Slant and Stackshare are kind of similar but Stackshare is more developer tools focused. It's a nice source of information to compare apps / web apps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "My Hardware",
+      "items": [
+        {
+          "title": "Personal Computer: 13\" Late 2017 Macbook Pro with Touch bar."
+        },
+        {
+          "title": "Personal Monitor: <a href=\"https://www.amazon.ca/gp/product/B06XFXX5JH/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1\">LG 34UM69G-B 34\" 21:9 UltraWide</a></li>\n</ul><p>Personal Keyboards:</p>"
+        },
+        {
+          "title": "At Home 1: <a href=\"https://www.keychron.com/pages/keychron-k3-wireless-mechanical-keyboard\">Keychron K3</a> optical brown switch"
+        },
+        {
+          "title": "At Home 2: <a href=\"https://mechanicalkeyboards.com/shop/index.php?l=product_detail&amp;p=4284\">Ducky One 2 RGB TKL</a></li>\n</ul><p>Mouses:</p>"
+        },
+        {
+          "title": "2 <a href=\"https://www.amazon.ca/dp/B071YZJ1G1/ref=cm_sw_em_r_mt_dp_U_92mNEbX6PD4H0\">Logitech MX Master 2S</a>"
+        },
+        {
+          "title": "1 <a href=\"https://www.amazon.ca/Logitech%C2%AE-Advanced-Wireless-Trackball-910-005177/dp/B0753P1GTS\">Logitech MX Ergo</a></li>\n</ul><p>Accessories:</p>"
+        },
+        {
+          "title": "<a href=\"https://www.amazon.com/dp/B0756CYWWD/ref=cm_sw_em_r_mt_dp_U_XKlQEbZWNE0YW\">Bose QuietComfort 35 II</a>"
+        },
+        {
+          "title": "<a href=\"https://www.apple.com/ca/airpods-pro/\">AirPods Pro</a>"
+        },
+        {
+          "title": "<a href=\"https://www.amazon.ca/dp/B075M1XHCK/ref=cm_sw_em_r_mt_dp_U_bhp4EbSFA2MQS\">Plugable Thunderbolt 3 Dock</a>"
+        },
+        {
+          "title": "<a href=\"https://www.amazon.ca/dp/B06XKNZT1P/ref=cm_sw_em_r_mt_dp_U_64mNEbDTVAA81\">Elgato Stream Deck</a>"
+        },
+        {
+          "title": "<a href=\"https://www.amazon.ca/dp/B0743Z892W/ref=cm_sw_em_r_mt_dp_U_n-mNEbNJ37DDK\">Elgato Green Screen</a>"
+        },
+        {
+          "title": "<a href=\"https://www.amazon.ca/dp/B005OZE9SA/ref=cm_sw_em_r_mt_dp_U_v7mNEb9RZNDFG\">Focusrite Scarlett-2i2 Gen2</a>"
+        },
+        {
+          "title": "<a href=\"https://www.amazon.ca/dp/B004NDFRVC/ref=cm_sw_em_r_mt_dp_U_V7mNEbTJ0E20E\">DBX 286s Microphone Pre-amp Processor</a>"
+        },
+        {
+          "title": "<a href=\"https://www.amazon.com/dp/B001IPUJJI/ref=cm_sw_em_r_mt_dp_U_wLlQEbV5FS1XC\">Rode Procaster</a>"
+        },
+        {
+          "title": "<a href=\"https://www.amazon.ca/dp/B01MYTIPG2/ref=cm_sw_em_r_mt_dp_QQXN7GR51BJ2R9ZWH8QJ?_encoding=UTF8&amp;psc=1\">NETGEAR 8-Port Gigabit Ethernet Smart Managed Pro Switch (GS308T)</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Setup shell",
+      "items": []
+    },
+    {
+      "topic": "Command Line Apps",
+      "items": [
+        {
+          "title": "<p>⚠️ Some of the following packages are not essential but highly recommended. Some applications may depend on the installation of these packages.</p>"
+        },
+        {
+          "topic": "Node packages to install globally",
+          "items": [
+            {
+              "title": "<p>List all NPM package installed globally: <code>npm list -g --depth 0</code></p>"
+            },
+            {
+              "title": "<a href=\"\">Netlify CLI</a> - <code>npm install netlify-cli -g</code>"
+            },
+            {
+              "title": "Gatsby CLI - <code>npm install -g gatsby-cli</code>"
+            },
+            {
+              "title": "NPM-check - <code>npm install -g npm-check</code>"
+            },
+            {
+              "title": "Yarn-check - <code>npm install -g yarn-check</code>"
+            },
+            {
+              "title": "AWS Amplify CLI - <code>npm install -g @aws-amplify/cli</code>"
+            },
+            {
+              "title": "Vercel CLI - <code>npm i -g vercel</code>"
+            },
+            {
+              "title": "Create React App - <code>npx create-react-app my-app</code>"
+            },
+            {
+              "title": "<a href=\"https://www.npmjs.com/package/dotenv-cli\">dotenv-cli</a> - <code>npm install -g dotenv-cli</code>"
+            },
+            {
+              "title": "Gitmoji - <code>npm i -g gitmoji-cli</code>"
+            },
+            {
+              "title": "Release-it - <code>npm install --global release-it</code>"
+            },
+            {
+              "title": "Plop - <code>npm i -g plop</code>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Applications",
+      "items": [
+        {
+          "title": "<p>This is a complete list of all the applications I have on my personal and professional Mac (some apps are only on my personal computer).</p><blockquote>\n<p>🎁 Some applications can be bought individually or you can <a href=\"https://go.setapp.com/invite/yaychk0m\">subscribe Setapp</a> for a 7-day free trial to test multiple applications and decide the one you want to use!</p>\n</blockquote>"
+        },
+        {
+          "topic": "Bare minimum",
+          "items": [
+            {
+              "title": "<p>This is the list of the most essentials apps I would install if I was limited in the number of apps to have.</p><p><img align=\"right\" src=\"media/15878421335213.jpg\" width=\"50\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Browsers",
+          "items": [
+            {
+              "title": "<p><img alt=\"Free\" src=\"https://img.shields.io/static/v1?style=flat-square&amp;label=LICENCE&amp;message=FREE&amp;color=green\"/></p><p><img align=\"right\" src=\"media/chrome.png\" width=\"50\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Utilities",
+          "items": [
+            {
+              "title": "<p><img align=\"right\" src=\"media/bartender.png\" width=\"50\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Automation",
+          "items": [
+            {
+              "title": "<p><img align=\"right\" src=\"media/keyboard-maestro.png\" width=\"50\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Tasks & time management",
+          "items": [
+            {
+              "title": "<p><img align=\"right\" src=\"media/fantastical.png\" width=\"50\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Storage & backup management",
+          "items": [
+            {
+              "title": "<p>I've used Google One many years, but decide to use Dropbox instead. The two main reasons are: integration with most of the apps I used and the offline mode out of the box.</p><p><img align=\"right\" src=\"media/dropbox.png\" width=\"50\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Reading & Writing",
+          "items": [
+            {
+              "title": "<p><img align=\"right\" src=\"media/reeder.png\" width=\"50\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Communication",
+          "items": [
+            {
+              "title": "<p><img align=\"right\" src=\"media/slack.png\" width=\"50\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Social Media",
+          "items": [
+            {
+              "title": "<p>I have a strict rule in regards to social apps on my professional Mac. I usually don't have any social / communication app that is not directly related to work (only Slack). These apps are mostly on my personal MacBook.</p><p><img align=\"right\" src=\"media/signal.png\" width=\"50\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Design & Web Design",
+          "items": [
+            {
+              "title": "<p>I'm not a Web Designer / Designer, but I love studying Photography, UI and UX. I try to practice as much as I can using the following applications.</p><p><img align=\"right\" src=\"media/eagle.png\" width=\"50\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Audio & Video production",
+          "items": [
+            {
+              "title": "<p><img align=\"right\" src=\"media/vlc.png\" width=\"50\"/></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Miscellaneous",
+          "items": [
+            {
+              "title": "<p><img align=\"right\" src=\"media/keykey.png\" width=\"50\"/></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Mac preferences",
+      "items": [
+        {
+          "topic": "Dock",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Web Applications",
+      "items": [
+        {
+          "title": "Invision"
+        },
+        {
+          "title": "<a href=\"https://www.namecheap.com/\">Namecheap</a> - The best domain registrar"
+        },
+        {
+          "title": "<a href=\"https://www.statuscake.com/\">StatusCake</a> - To keep an eye on your website uptime"
+        },
+        {
+          "title": "<a href=\"https://themer.dev/\">Themer.dev</a> - To generate themes (editors, terminals, wallpapers, and more) with ease"
+        },
+        {
+          "title": "<a href=\"https://netlify.com/\">Netlify</a>"
+        },
+        {
+          "title": "<a href=\"https://codeimg.io/\">codeimg</a> - To easily create social media banners"
+        },
+        {
+          "title": "<a href=\"https://www.gradientmagic.com/\">Gradient Magic</a> - Free gallery of CSS Gradients"
+        }
+      ]
+    },
+    {
+      "topic": "Inspiration",
+      "items": [
+        {
+          "title": "<p>Heavily inspired by the works from:</p>"
+        },
+        {
+          "title": "https://github.com/nikitavoloboev/my-mac-os"
+        },
+        {
+          "title": "https://github.com/donnemartin/dev-setup"
+        }
+      ]
+    },
+    {
+      "topic": "Icons and images",
+      "items": [
+        {
+          "title": "<p>All logos and brand/applications names are registered and below to their owners.</p><div>Icons made by <a href=\"https://www.flaticon.com/authors/pixel-perfect\" title=\"Pixel perfect\">Pixel perfect</a> from <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a></div><div>Icons made by <a href=\"https://www.flaticon.com/authors/flat-icons\" title=\"Flat Icons\">Flat Icons</a> from <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a></div><div>Icons made by <a href=\"https://www.flaticon.com/authors/prettycons\" title=\"prettycons\">prettycons</a> from <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a></div>"
+        }
+      ]
+    },
+    {
+      "topic": "Licence",
+      "items": [
+        {
+          "title": "<p>MIT</p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

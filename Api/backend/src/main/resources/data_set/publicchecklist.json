@@ -1,0 +1,66 @@
+{
+  "id": 163,
+  "header": "publicchecklist",
+  "topicList": [
+    "🤔 Problem",
+    "✅ Solution",
+    "⬇️ Instalation",
+    "🛠 Troubleshooting"
+  ],
+  "itemGroups": [
+    {
+      "topic": "🤔 Problem",
+      "items": [
+        {
+          "title": "<p>Procrastinating when try to complete some goal like:\n- Complete coding course\n- Go 30 days to gym\n- Learn Englsih\n- Lose weight</p>"
+        }
+      ]
+    },
+    {
+      "topic": "✅ Solution",
+      "items": [
+        {
+          "title": "<p>Public checklist on your site where you exactly know what was done and how much left and share progress with your friends.</p><p>It's auto sync with Google Sheet so don't need to HTML update it every  time.</p><p>All data is taking from Google Spreedsheet (iFrame) and update it automaticaly every 5 mins.</p><p>DEMO 1 (Coding Course): http://andreyazimov.com/freecodecamp</p><p>DEMO 2 (100 Push-ups Challenge): http://andreyazimov.com/100pushups</p><p><img alt=\"Picture\" src=\"https://raw.githubusercontent.com/AndreyAzimov/myprogress/master/pic.png\"/></p><p><img alt=\"Picture\" src=\"https://raw.githubusercontent.com/AndreyAzimov/myprogress/master/chart.png\"/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "⬇️ Instalation",
+      "items": [
+        {
+          "title": "<ol>\n<li>Make a copy of a spreadsheet (File -&gt; Make a copy). Here are soem teplates but you can make your own:"
+        },
+        {
+          "title": "<a href=\"https://docs.google.com/spreadsheets/d/1OPdKJrqP5Mqb2W-v6GuZIoaPwlOZ5u-j8mp_zBuW_Nw/edit#gid=0\">100 Push-ups Google Checklist (Google Spreedsheet template)</a>"
+        },
+        {
+          "title": "<p><a href=\"https://docs.google.com/spreadsheets/d/1fk4YFSs1f8YnTOpaRJa-2qePHE2J5MWxBzok-dYIVI4/edit?usp=sharing\">Beta Free Code Camp Checklist (Google Spreedsheet template)</a></p>"
+        },
+        {
+          "title": "<p>Get an iframe link of progress bar (File -&gt; Publish to web -&gt; Embeded -&gt; progress-bar (Not Entire Doc)).</p>\n</li>\n</ol><p>2.1 Copy link. Example: \"https://docs.google.com/spreadsheets/d/e/2PACX-1vQanprHEXQ66_r2rflfCrdKcfV6FMLzCoKWJ8gLaU0CJX48Ov7j8Cdow-pSyA6NKwepVJiz-xc7JHBk/pubhtml?gid=2110731770\"</p><p>2.2.1 Between: \"&lt;iframe src\"\" AND \"&amp;amp\". Avoid copy hole iframe link.</p><p>2.3 Paste this link to progress bar section in index.html.</p><ol>\n<li>\n<p>Get an iframe link of of checklist (same as progress-bar).</p>"
+        },
+        {
+          "title": "<p>Open this index.html and check if this works.</p>"
+        },
+        {
+          "title": "<p>Try to change progress in basic-html-and-html5 tab. Put \"DONE\" in any task. Checklist tab in spreedsheet should change. Progress tab in spreedsheet bar should change. Result should be changed in index.html</p>\n</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "🛠 Troubleshooting",
+      "items": [
+        {
+          "title": "If there is an error on iframe make sure you copy correct link"
+        },
+        {
+          "title": "If there is a white boder of iFrame play with width and height below &lt;iframe width=438 height=63 src=\""
+        },
+        {
+          "title": "Ask me: twitter.com/AndreyAzimov"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

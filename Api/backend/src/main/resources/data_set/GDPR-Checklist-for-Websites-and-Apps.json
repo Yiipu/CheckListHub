@@ -1,0 +1,101 @@
+{
+  "id": 94,
+  "header": "GDPR-Checklist-for-Websites-and-Apps",
+  "topicList": [
+    "Checklist",
+    "Rights of the data subject",
+    "Important information for the controller",
+    "Definitions & Examples"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Checklist",
+      "items": [
+        {
+          "title": "[ ] The application has a <a href=\"#privacy-statement\">privacy statement</a>."
+        },
+        {
+          "title": "[ ] The application does not collect or process more data or for a longer duration than is strictly necessary for the intended purpose as communicated to the user."
+        },
+        {
+          "title": "[ ] The end users has explicitly agreed with the <a href=\"#processing\">processing</a> of <a href=\"#personal-data\">personal data</a>. (Pre-ticked boxes are not permitted.)"
+        },
+        {
+          "title": "[ ] The application provides contact information on the <a href=\"#controller\">controller</a> that is easy to find."
+        },
+        {
+          "title": "[ ] The application has a separate checkbox on the registration form for each particular processing activity."
+        },
+        {
+          "title": "[ ] It is clear to the end user on what he/she gives permission for. This is explained transparently, concisely and understandably. Visual support is used where relevant. Especially when information is intended for a child."
+        },
+        {
+          "title": "[ ] If applicable, it is stated that a child may only give permission if he/she is 16 years of age or older. Otherwise, the permission of a parent is needed. It should be reasonably demonstrated that a parent has given permission."
+        },
+        {
+          "title": "[ ] If the application includes decision-making, it should be clear how that decision is taken. <a href=\"#decision-making\">(Example)</a>"
+        },
+        {
+          "title": "[ ] If the application includes programmatic advertisements it must be clearly authorised by the user."
+        },
+        {
+          "title": "[ ] The application allows end users to view and adjust data that is actively shared (by the user)."
+        },
+        {
+          "title": "[ ] An appropriate assessment has been made when data is <a href=\"#pseudonymisation\">pseudonymized</a> and this process is tuned. <a href=\"#pseudonymised-data\">(Example)</a>"
+        },
+        {
+          "title": "[ ] Appropriate technical and organizational measures are taken to ensure a level of security appropriate to the risk, including inter alia as appropriate:"
+        },
+        {
+          "title": "the pseudonymisation and encryption of personal data."
+        },
+        {
+          "title": "the ability to ensure the ongoing confidentiality, integrity, availability, and resilience of processing systems and services."
+        },
+        {
+          "title": "the ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident."
+        },
+        {
+          "title": "a process for regularly testing, assessing and evaluating the effectiveness of technical and organizational measures for ensuring the security of the processing."
+        }
+      ]
+    },
+    {
+      "topic": "Rights of the data subject",
+      "items": [
+        {
+          "title": "<p><strong>Right of access by the data subject</strong> <br/>\nThe data subject has the right to obtain confirmation from a controller that data is being processed about him. In that case, the following information must be provided:\n* the purpose of the processing\n* which categories of personal data are processed\n* which third parties have also received this personal data</p><p>In addition, it is the intention that the person concerned gains 'access' to the data processed about him. This could be done, for example, by exporting the file that was created about the person concerned.</p><p><strong>Right to rectification</strong> <br/>\nThe data subject has the right to have his data rectified if they are not correct or incomplete. If you have shared this information with third parties as controller, then you must inform these parties about this rectification if possible.</p><p><strong>Right to erasure ('right to be forgotten')</strong> <br/>\nDue to the right to erasure, also known as the 'right to be forgotten', the data subject has the right to request the removal of his data. The right can be used in the following cases:\n* the data is no longer needed in relation to the purpose of the processing\n* the data subject withdrew his consent to the processing\n* the data subject objects to the processing, and there is no demonstrable legitimate interest to continue this processing\n* the data has been processed unlawfully\n* the data must be removed because of a legal obligation</p><p><strong>Right to restriction of processing</strong> <br/>\nThe data subject can request a blocking of the processing. This means that except that the data is retained, no other processing may take place (including no deletion).</p><p><strong>Right to data portability</strong> <br/>\nThe data subject has the right to receive the personal data he has made available to the controller, in a structured and widely used format (this format must be machine readable, for example a csv file or in JSON format). He has the right to transfer this data to another controller.</p><p><strong>Right to object</strong> <br/>\nThe data subject may object to the processing of his data if the processing has been effected on the basis of the following points:\n* Processing is necessary for a general interest task or for a task in the exercise of the public authority entrusted to the controller\n* The processing is necessary for the representation of the legitimate interests of the controller or of a third party</p><p>If the objection of a data subject is well-founded, the processing must be discontinued, unless you can prove that there are demonstrable legitimate reasons for continuing with the processing, or because the data are necessary for legal claims. If it concerns an objection related to direct marketing, the processing must be stopped at the moment the objection comes in.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Important information for the controller",
+      "items": [
+        {
+          "title": "If an end user has made the request to delete the data, the controller is responsible for deleting the data from itself and other parties."
+        },
+        {
+          "title": "If the controller pursues a different purpose with the data then has been reported in advance, this must be communicated to the end user before commencing the processing of data for that purpose."
+        },
+        {
+          "title": "In the case of a <a href=\"#personal-data-breach\">personal data breach</a>, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority."
+        },
+        {
+          "title": "The controller needs to take appropriate technical and orgiastic measures and should be able to demonstrate that the processing is carried out in accordance with this regulation."
+        },
+        {
+          "title": "The <a href=\"#processor\">processor</a> does not employ another processor without the prior written consent of the controller."
+        },
+        {
+          "title": "<a href=\"#processing\">Processing</a> of <a href=\"#personal-data\">personal data</a> from <a href=\"#special-categories\">special categories</a> are prohibited unless the person has explicitly given permission for confidentiality of the personal data for one or more well-defined purposes or the data apparently made public by the person himself."
+        }
+      ]
+    },
+    {
+      "topic": "Definitions & Examples",
+      "items": []
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

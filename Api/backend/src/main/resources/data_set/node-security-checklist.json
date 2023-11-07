@@ -1,0 +1,27 @@
+{
+  "id": 133,
+  "header": "node-security-checklist",
+  "topicList": [
+    "References"
+  ],
+  "itemGroups": [
+    {
+      "topic": "References",
+      "items": [
+        {
+          "title": "\"Node Cookbook\", chap. 8 \"Dealing with security\""
+        },
+        {
+          "title": "http://projects.webappsec.org/f/WASC-TC-v2_0.pdf"
+        },
+        {
+          "title": "https://owasp.org/www-project-secure-headers/#div-headers"
+        },
+        {
+          "title": "https://cheatsheetseries.owasp.org/index.html"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

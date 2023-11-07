@@ -1,0 +1,99 @@
+{
+  "id": 66,
+  "header": "devops-onboarding-checklist",
+  "topicList": [
+    "About OSO DevOps",
+    "Our Approach To DevOps Onboarding",
+    "Central DevOps Team",
+    "Sample DevOps Onboarding Checklist",
+    "Product",
+    "Delivery Methodology",
+    "Software Language & Development Frameworks",
+    "Assigning Project Roles",
+    "Validate Request",
+    "Supported DevOps pipeline"
+  ],
+  "itemGroups": [
+    {
+      "topic": "About OSO DevOps",
+      "items": [
+        {
+          "title": "<p>We are a DevOps and Amazon Web Services (AWS) Professional Services\nConsultancy based in London. We build secure bespoke automated big data\nplatforms on AWS using open source tooling, helping businesses to\nextract value from their data in the most cost effective and agile way.\nWe provide self service tooling to enable business workflows to make\ndata driven decisions.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Our Approach To DevOps Onboarding",
+      "items": [
+        {
+          "title": "<p>This onboarding checklist contains sample activities that are good\npractices for onboarding application teams to utilise DevOps\ncapabilities. Alter the checklist to reflect onboarding activities\nspecific your company, and assign owners (e.g., Teams, Service Desk, Cloud\nTechnical Team) for each activity. Once you have customized the\nchecklist appropriately, provide it to the DevOps onboarding team to\nprocess and ensure accountability for completing necessary onboarding\nactivities.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Central DevOps Team",
+      "items": [
+        {
+          "title": "<p>There are many logistical and strategic components to onboard software\ndevelopment teams effectively. Yet, this critical stage often fails to\nreceive the attention it warrants due to divided or unclear\nresponsibilities and a lack of defined tasks and activities. Use this\nframework as a guideline for enrolling team into DevOps and improve and\nautomate the process.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Sample DevOps Onboarding Checklist",
+      "items": [
+        {
+          "title": "<p><strong><em>Import:</em></strong> The team must be software development focused for the\nonboarding to proceed</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Product",
+      "items": [
+        {
+          "title": "<p>What is the current project vision and mission?</p><table>\n<thead>\n<tr class=\"header\">\n<th colspan=\"2\"><strong>Product Information Baseline</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"even\">\n<td>Name of Project<img width=\"50/\"/></td>\n<td style=\"text-align:center\"><img width=\"700/\"/></td>\n</tr>\n<tr class=\"odd\">\n<td>Product Vision</td>\n<td style=\"text-align:center\"><img width=\"700/\"/></td>\n</tr>\n<tr class=\"even\">\n<td>Product Lead</td>\n<td style=\"text-align:center\"><img width=\"700/\"/></td>\n</tr>\n<tr class=\"odd\">\n<td>Product Members</td>\n<td style=\"text-align:center\"><img width=\"700/\"/></td>\n</tr>\n<tr class=\"even\">\n<td>Product Users</td>\n<td style=\"text-align:center\"><img width=\"700/\"/></td>\n</tr>\n<tr class=\"odd\">\n<td>Product Duration</td>\n<td style=\"text-align:center\"><img width=\"700/\"/></td>\n</tr>\n</tbody>\n</table>"
+        }
+      ]
+    },
+    {
+      "topic": "Delivery Methodology",
+      "items": [
+        {
+          "title": "<p>What methodologies does the team use to deliver the software?</p><table>\n<thead>\n<tr class=\"header\">\n<th colspan=\"2\"><strong>Delivery Frameworks used</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td><strong>Framework<img width=\"550/\"/></strong></td>\n<td style=\"text-align:center\"><strong>Used<img width=\"190/\"/></strong></td>\n</tr>\n<tr class=\"even\">\n<td>Jira</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n<tr class=\"odd\">\n<td>Trello</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n<tr class=\"even\">\n<td>Confluence Space</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n<tr class=\"odd\">\n<td>Scrum</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n<tr class=\"even\">\n<td>Kanban</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n<tr class=\"odd\">\n<td>Extreme Programming</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n</tbody>\n</table>"
+        }
+      ]
+    },
+    {
+      "topic": "Software Language & Development Frameworks",
+      "items": [
+        {
+          "title": "<p>What languages and frameworks are the development team using to deliver the software?</p><table>\n<thead>\n<tr class=\"header\">\n<th colspan=\"4\"><strong>Software product and environment Details</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td><strong>Category</strong></td>\n<td><strong>Options</strong></td>\n<td><strong>Owner</strong></td>\n<td><strong>Completion Date</strong></td>\n</tr>\n<tr class=\"even\">\n<td>Project Source Repository Exist</td>\n<td>Git <span style=\"font-size: 25px\">☐</span> / SVN <span style=\"font-size: 25px\">☐</span> / CVS <span style=\"font-size: 25px\">☐</span></td>\n<td></td>\n<td></td>\n</tr>\n<tr class=\"odd\">\n<td>Programming languages</td>\n<td><p>JavaScript <span style=\"font-size: 25px\">☐</span>/ Python <span style=\"font-size: 25px\">☐</span>/ Java <span style=\"font-size: 25px\">☐</span>/ C/C++ <span style=\"font-size: 25px\">☐</span> /PHP <span style=\"font-size: 25px\">☐</span>/ Swift <span style=\"font-size: 25px\">☐</span></p>\n<p>C# <span style=\"font-size: 25px\">☐</span>/ Ruby <span style=\"font-size: 25px\">☐</span>/ Objective-C <span style=\"font-size: 25px\">☐</span>/SQL <span style=\"font-size: 25px\">☐</span></p></td>\n<td></td>\n<td></td>\n</tr>\n<tr class=\"odd\">\n<td>Development Platforms</td>\n<td><p>Unkown <span style=\"font-size: 25px\">☐</span>/ Linux <span style=\"font-size: 25px\">☐</span> / Windows <span style=\"font-size: 25px\">☐</span></p>\n<p>Android <span style=\"font-size: 25px\">☐</span> / AWS <span style=\"font-size: 25px\">☐</span> / MAC OS <span style=\"font-size: 25px\">☐</span> / iOS <span style=\"font-size: 25px\">☐</span></p>\n<p>Rasberry Pi <span style=\"font-size: 25px\">☐</span> / Firebase <span style=\"font-size: 25px\">☐</span> / Azure <span style=\"font-size: 25px\">☐</span> / Heroku <span style=\"font-size: 25px\">☐</span></p>\n<p>Arduino <span style=\"font-size: 25px\">☐</span> / Google Cloud <span style=\"font-size: 25px\">☐</span></p>\n<p>Serverless <span style=\"font-size: 25px\">☐</span> / Drupal <span style=\"font-size: 25px\">☐</span> / Amazon Echo <span style=\"font-size: 25px\">☐</span></p>\n<p>Salesforce <span style=\"font-size: 25px\">☐</span> / SAP <span style=\"font-size: 25px\">☐</span></p>\n<p>Apple Watch or TV <span style=\"font-size: 25px\">☐</span> / IBM Cloud or Watson <span style=\"font-size: 25px\">☐</span></p>\n<p>Google Home <span style=\"font-size: 25px\">☐</span></p>\n<p>Gaming console <span style=\"font-size: 25px\">☐</span> / Mainframe <span style=\"font-size: 25px\">☐</span></p></td>\n<td></td>\n<td></td>\n</tr>\n<tr class=\"even\">\n<td>Types of Software Development</td>\n<td><p>Web Development <span style=\"font-size: 25px\">☐</span></p>\n<p>Mobile Development <span style=\"font-size: 25px\">☐</span></p>\n<p>Data Science <span style=\"font-size: 25px\">☐</span></p>\n<p>Application Development <span style=\"font-size: 25px\">☐</span></p>\n<p>Back-end Development <span style=\"font-size: 25px\">☐</span></p>\n<p>API Development <span style=\"font-size: 25px\">☐</span></p>\n<p>Embedded Systems Development <span style=\"font-size: 25px\">☐</span></p>\n<p>Security Software Development <span style=\"font-size: 25px\">☐</span></p>\n<p>Cloud Computing <span style=\"font-size: 25px\">☐</span></p></td>\n<td></td>\n<td></td>\n</tr>\n<tr class=\"odd\">\n<td>Integrated Developer Environments</td>\n<td><p>Atom <span style=\"font-size: 25px\">☐</span> / CLion <span style=\"font-size: 25px\">☐</span> / Cloud9 <span style=\"font-size: 25px\">☐</span>/ Coda2 <span style=\"font-size: 25px\">☐</span></p>\n<p>Code::Blocks <span style=\"font-size: 25px\">☐</span> / Codefresh <span style=\"font-size: 25px\">☐</span>/ CodeLite <span style=\"font-size: 25px\">☐</span></p>\n<p>/ Eclipse <span style=\"font-size: 25px\">☐</span> / Eric Python IDE <span style=\"font-size: 25px\">☐</span>/ Geany <span style=\"font-size: 25px\">☐</span>/ Idle IDE <span style=\"font-size: 25px\">☐</span></p>\n<p>IntelliJ IDEA <span style=\"font-size: 25px\">☐</span> / JCreator <span style=\"font-size: 25px\">☐</span> / KDevelop <span style=\"font-size: 25px\">☐</span></p>\n<p>Komodo <span style=\"font-size: 25px\">☐</span> / Lazarus <span style=\"font-size: 25px\">☐</span>/ Light Table <span style=\"font-size: 25px\">☐</span></p>\n<p>Microsoft Visual Studio IDE <span style=\"font-size: 25px\">☐</span>/ Monkey Studio <span style=\"font-size: 25px\">☐</span></p>\n<p>MyEclipse <span style=\"font-size: 25px\">☐</span> / NetBeans IDE <span style=\"font-size: 25px\">☐</span> / Nuclide <span style=\"font-size: 25px\">☐</span></p>\n<p>NuSphere PhpED <span style=\"font-size: 25px\">☐</span> / PhpStorm <span style=\"font-size: 25px\">☐</span> / PyCharm <span style=\"font-size: 25px\">☐</span></p>\n<p>Qt Creator <span style=\"font-size: 25px\">☐</span> / RubyMine <span style=\"font-size: 25px\">☐</span> / SapphireSteel <span style=\"font-size: 25px\">☐</span></p>\n<p>Squad <span style=\"font-size: 25px\">☐</span> / Visual LANSA <span style=\"font-size: 25px\">☐</span> / Visual Studio Code <span style=\"font-size: 25px\">☐</span></p>\n<p>WebStorm <span style=\"font-size: 25px\">☐</span> / Xamarin <span style=\"font-size: 25px\">☐</span> / Xcode <span style=\"font-size: 25px\">☐</span>/ Zend Studio <span style=\"font-size: 25px\">☐</span></p>\n<p></p></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>"
+        }
+      ]
+    },
+    {
+      "topic": "Assigning Project Roles",
+      "items": [
+        {
+          "title": "<p>Who will be responsible for what in this project?</p><table>\n<thead>\n<tr class=\"header\">\n<th colspan=\"4\"><strong>Assigned project roles</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td><strong>Role</strong></td>\n<td><strong>Additional Information</strong></td>\n<td><strong>Owner</strong></td>\n<td><strong>Completion Date</strong></td>\n</tr>\n<tr class=\"even\">\n<td>Product Owner</td>\n<td>The Product Owner is the sole person responsible for managing the Product Backlog</td>\n<td></td>\n<td></td>\n</tr>\n<tr class=\"odd\">\n<td><p><br/></p></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr class=\"even\">\n<td><p><br/></p></td>\n<td></td>\n<td></td>\n<td></td>\n</tr><tr class=\"even\">\n<td><p><br/></p></td>\n<td></td>\n<td></td>\n<td></td>\n</tr><tr class=\"even\">\n<td><p><br/></p></td>\n<td></td>\n<td></td>\n<td></td>\n</tr><tr class=\"even\">\n<td><p><br/></p></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>"
+        }
+      ]
+    },
+    {
+      "topic": "Validate Request",
+      "items": [
+        {
+          "title": "<p>Does the requesting team meet all of the onboarding requirements?</p><table>\n<thead>\n<tr class=\"header\">\n<th colspan=\"2\"><strong>Onboarding Requirements</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td><strong>Project Name valid<img width=\"550/\"/></strong></td>\n<td style=\"text-align:center\"><strong>Complete<img width=\"150/\"/></strong></td>\n</tr>\n<tr class=\"even\">\n<td>Project Lead Valid</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n<tr class=\"odd\">\n<td>Project members valid</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n<tr class=\"even\">\n<td>Valid software project</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n<tr class=\"odd\">\n<td>Development Platform Supported</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n<tr class=\"even\">\n<td>Software Development type supported</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n<tr class=\"odd\">\n<td>IDE’s Supported</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n<tr class=\"even\">\n<td>Programming Language Supported</td>\n<td style=\"text-align:center\"><span style=\"font-size: 25px\">☐</span></td>\n</tr>\n</tbody>\n</table>"
+        }
+      ]
+    },
+    {
+      "topic": "Supported DevOps pipeline",
+      "items": [
+        {
+          "title": "<p>The software which is being written by the development team</p><table>\n<thead>\n<tr class=\"header\">\n<th colspan=\"4\"><strong>Supported software product and environment details</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td><strong>Category</strong></td>\n<td><strong>Options</strong></td>\n<td><strong>Owner<img width=\"100/\"/></strong></td>\n<td><strong>Completion Date<img width=\"50/\"/></strong></td>\n</tr>\n<tr class=\"even\">\n<td>Development Platforms</td>\n<td><p>Linux <span style=\"font-size: 25px\">☐</span></p>\n<p>AWS <span style=\"font-size: 25px\">☐</span></p>\n<p>MAC OS <span style=\"font-size: 25px\">☐</span></p>\n<p>Serverless <span style=\"font-size: 25px\">☐</span></p></td>\n<td></td>\n<td></td>\n</tr>\n<tr class=\"odd\">\n<td>Types of Software Development</td>\n<td><p>Web Development <span style=\"font-size: 25px\">☐</span></p>\n<p>Application Development <span style=\"font-size: 25px\">☐</span></p>\n<p>Back-end Development <span style=\"font-size: 25px\">☐</span></p>\n<p>Cloud Computing <span style=\"font-size: 25px\">☐</span></p></td>\n<td></td>\n<td></td>\n</tr>\n<tr class=\"even\">\n<td>Integrated Developer Environments</td>\n<td><p>IntelliJ IDEA <span style=\"font-size: 25px\">☐</span></p>\n<p>Microsoft Visual Studio IDE <span style=\"font-size: 25px\">☐</span></p>\n<p>PhpStorm <span style=\"font-size: 25px\">☐</span> / PyCharm <span style=\"font-size: 25px\">☐</span></p>\n<p>Visual Studio Code <span style=\"font-size: 25px\">☐</span></p></td>\n<td></td>\n<td></td>\n</tr>\n<tr class=\"odd\">\n<td>Programming languages</td>\n<td>\n<p>Python <span style=\"font-size: 25px\">☐</span></p>\n<p>Java / Scala <span style=\"font-size: 25px\">☐</span></p>\n<p>Go <span style=\"font-size: 25px\">☐</span></p>\n<p>JavaScript <span style=\"font-size: 25px\">☐</span></p>\n<p>C++ <span style=\"font-size: 25px\">☐</span></p>\n</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table><p>Have any questions? Require a DevOps assessment? Email us <a href=\"mailto:enquiries@osodevops.io\">enquiries@osodevops.io</a> or <a href=\"https://calendly.com/sionsmith/oso-devops\">schedule a call</a></p>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

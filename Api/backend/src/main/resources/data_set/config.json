@@ -1,0 +1,166 @@
+{
+  "id": 51,
+  "header": "config",
+  "topicList": [
+    "Checkout",
+    "Setup VS Code",
+    "Setup Homebrew",
+    "Setup Ruby",
+    "Setup Node.js",
+    "Setup Git",
+    "Setup GitHub CLI"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Checkout",
+      "items": [
+        {
+          "title": "<p><a href=\"https://support.apple.com/guide/terminal/welcome/mac\">Terminal</a></p>"
+        },
+        {
+          "title": "<p><a href=\"https://developer.apple.com/xcode/resources/\">Xcode Command Line Tools</a></p>"
+        },
+        {
+          "title": "<p><a href=\"https://code.visualstudio.com/\">Visual Studio Code</a>,\n  view source on <a href=\"https://github.com/Microsoft/vscode\">Github</a>.<br/>\n  Essential extension for VS Code: <a href=\"https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig\">EditorConfig</a></p>"
+        },
+        {
+          "title": "<p><a href=\"https://desktop.github.com/\">GitHub Desktop</a>,\n  view source on <a href=\"https://github.com/desktop/desktop#readme\">Github</a><br/>\n  Or, use <a href=\"https://cli.github.com/manual/gh\">GitHub CLI</a>,\n  view source on <a href=\"https://github.com/cli/cli#readme\">Github</a></p>"
+        },
+        {
+          "title": "<p>Setup GitHub Desktop/CLI cloning path: <code>\\home\\milan\\github</code> <br/>\n  (i.e. <code>\\home\\&lt;username&gt;\\github</code>)</p>\n<p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Setup VS Code",
+      "items": [
+        {
+          "title": "<p>Follow the installation process from <a href=\"https://code.visualstudio.com/docs/setup/mac#_installation\">official docs</a>.</p>"
+        },
+        {
+          "title": "<p><a href=\"https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line\">Launching from the command line</a> — you can also run VS Code from the terminal by typing 'code' after adding it to the path:</p>\n<p>i. Launch VS Code. </p><p>ii. Open the Command Palette <code>Cmd+Shift+P</code> and type <code>shell command</code> to find the \"Shell Command: Install 'code' command in PATH command\".</p><p><img alt=\"shell-command\" src=\"https://user-images.githubusercontent.com/9361180/200259875-962b4c55-4329-4104-82e4-8965072be017.png\"/></p><p>iii. Restart the terminal for the new <code>$PATH</code> value to take effect. You'll be able to type <code>code .</code> in any folder to start editing files in that folder.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Setup Homebrew",
+      "items": [
+        {
+          "title": "Open Terminal app and run following commang to install <a href=\"https://brew.sh/\">Homebrew</a> in your system:</li>\n</ul><p><code>zsh\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"</code></p>"
+        },
+        {
+          "title": "Run these three commands in your terminal to add Homebrew to your PATH:<p>```zsh</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Setup Ruby",
+      "items": [
+        {
+          "title": "Install <a href=\"https://github.com/rbenv/rbenv\">rbenv</a> via Homebrew:</li>\n</ul><p><code>zsh\nbrew install rbenv ruby-build</code></p>"
+        },
+        {
+          "title": "Set up rbenv in your shell. Run <code>rbenv init</code> and follow the printed instructions:</li>\n</ul><p><code>zsh\necho '# rbenv' &gt;&gt; ~/.zprofile\necho 'eval \"$(rbenv init -)\"' &gt;&gt; ~/.zprofile</code></p>"
+        },
+        {
+          "title": "Verify rbenv is configured properly:</li>\n</ul><p><code>zsh\ntype rbenv</code></p>"
+        },
+        {
+          "title": "Verify that rbenv is properly set up using <em>rbenv-doctor</em> script:</li>\n</ul><p><code>zsh\ncurl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash</code></p>"
+        },
+        {
+          "title": "Download a version of Ruby via rbenv: See <a href=\"https://gorails.com/setup/macos/13-ventura\">https://gorails.com/setup/macos/13-ventura</a>.<p>```zsh</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Setup Node.js",
+      "items": [
+        {
+          "title": "Install <a href=\"https://github.com/nodenv/nodenv\">nodenv</a> via Homebrew:</li>\n</ul><p><code>zsh\nbrew install nodenv</code></p>"
+        },
+        {
+          "title": "Set up nodenv in your shell. Run  <code>nodenv init</code>:</li>\n</ul><p><code>zsh\necho '# nodenv' &gt;&gt; ~/.zprofile\necho 'eval \"$(nodenv init -)\"' &gt;&gt; ~/.zprofile</code></p>"
+        },
+        {
+          "title": "Verify nodenv is configured properly:</li>\n</ul><p><code>zsh\ntype nodenv</code></p>"
+        },
+        {
+          "title": "Verify that nodenv is properly set up using <em>nodenv-doctor</em> script:</li>\n</ul><p><code>zsh\ncurl -fsSL https://github.com/nodenv/nodenv-installer/raw/master/bin/nodenv-doctor | bash</code></p>"
+        },
+        {
+          "title": "Download a version of Node.js via nodenv:<p>```zsh</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Setup Git",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>Please tell me who you are.</p>\n</blockquote>"
+        },
+        {
+          "title": "Run to set your account's default identity:<p><code>zsh\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"you@example.com\"</code></p><p><em>Omit <code>--global</code> to set the identity only in this repository. For privacy purpose use GitHub private email address <code>id+username@users.noreply.github.com</code> for git config.</em></p><p align=\"right\"><a href=\"#readme\"><b>↥ To the top</b></a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Setup GitHub CLI",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/cli/cli#installation\">Installation</a></li>\n</ul><p><code>zsh\nbrew install gh</code></p>"
+        },
+        {
+          "title": "<a href=\"https://cli.github.com/manual/gh_auth\">gh auth</a></li>\n</ul><p><code>zsh\ngh auth login</code></p>"
+        },
+        {
+          "title": "Follow output of <a href=\"https://cli.github.com/\">GitHub CLI</a></li>\n</ul><p><em><a href=\"gh-auth.md\">See output</a>.</em></p>"
+        },
+        {
+          "title": "<a href=\"https://cli.github.com/manual/gh_gist_clone\">gh repo clone</a></li>\n</ul><p><code>zsh\ngh repo clone milanaryal/config</code></p>"
+        },
+        {
+          "title": "<a href=\"https://cli.github.com/manual/gh_repo_sync\">gh repo sync</a><p><code>zsh\ncd milanaryal/config\ngh repo sync</code></p><p align=\"right\"><a href=\"#readme\"><b>↥ To the top</b></a></p>"
+        },
+        {
+          "topic": "Firefox Configuration Setup",
+          "items": [
+            {
+              "title": "<a href=\"https://www.privacytools.io/private-browser\">Best Privacy Web Browser to Stay Private</a> by Privacy Tools"
+            },
+            {
+              "title": "<a href=\"https://www.privacyguides.org/en/desktop-browsers/#firefox\">Firefox Recommended Configuration</a> by Privacy Guides"
+            },
+            {
+              "title": "<a href=\"https://chrisx.xyz/blog/yet-another-firefox-hardening-guide/\">Firefox Hardening Resources</a>"
+            },
+            {
+              "title": "<a href=\"https://www.youtube.com/watch?v=F7-bW2y6lcI\">The Ultimate Guide to Firefox Hardening!</a>"
+            },
+            {
+              "title": "<code>about:config</code> -&gt; <code>fission.autostart</code> = <code>true</code>"
+            },
+            {
+              "title": "<code>about:config</code> -&gt; <code>extensions.pocket.enabled</code> = <code>false</code>"
+            }
+          ]
+        },
+        {
+          "topic": "Invitation",
+          "items": [
+            {
+              "title": "<p>Sign-up with the following invitation link to get extra 500 MB bonus cloud space:</p>"
+            },
+            {
+              "title": "<a href=\"https://www.dropbox.com/referrals/AADapKnBJpLqYvSvMcBxGAk9N4iiYHh7hJI?src=global9\">Dropbox</a>"
+            },
+            {
+              "title": "<del><a href=\"https://onedrive.live.com?invref=8276ca569c4bc513&amp;invscr=90\">OneDrive</a></del><p><strong>Brother's (<a href=\"https://github.com/kshitizaryal\">@kshitizaryal</a>):</strong>\n- <a href=\"https://onedrive.live.com/?invref=f7e00c70d669a457&amp;invscr=90\">OneDrive</a></p>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

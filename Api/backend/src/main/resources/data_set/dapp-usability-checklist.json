@@ -1,0 +1,114 @@
+{
+  "id": 60,
+  "header": "dapp-usability-checklist",
+  "topicList": [
+    "Onboarding Support",
+    "Transaction Support",
+    "Transaction Notifications",
+    "Gas Estimation",
+    "Error Handling",
+    "Mobile Support",
+    "Network Status"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Onboarding Support",
+      "items": [
+        {
+          "title": "[ ] If you decide to not support mobile browsers, ensure you are checking for this and warning users of mobile browsers"
+        },
+        {
+          "title": "[ ] Warn the user when they are in an unsupported browser"
+        },
+        {
+          "title": "[ ] Warn the user when they do not have a wallet -- e.g. MetaMask -- installed"
+        },
+        {
+          "title": "[ ] Tell the user they need to unlock their wallet"
+        },
+        {
+          "title": "[ ] Tell the user they need to authorize their wallet (EIP-1102)"
+        },
+        {
+          "title": "[ ] Make sure user is on the right network"
+        },
+        {
+          "title": "[ ] Make sure the user has Ether"
+        }
+      ]
+    },
+    {
+      "topic": "Transaction Support",
+      "items": [
+        {
+          "title": "[ ] Notify the user if there is a transaction in MetaMask's queue waiting for confirmation or rejection"
+        },
+        {
+          "title": "[ ] Notify the user if they reject the transaction from the MetaMask window"
+        },
+        {
+          "title": "[ ] Warn the user when it appears they are about to execute a duplicate transaction"
+        },
+        {
+          "title": "[ ] Warn on insufficient funds"
+        }
+      ]
+    },
+    {
+      "topic": "Transaction Notifications",
+      "items": [
+        {
+          "title": "[ ] Notify a user when a transaction is pending"
+        },
+        {
+          "title": "[ ] Notify a user when a transaction has succeeded"
+        },
+        {
+          "title": "[ ] Notify a user when a transaction has failed"
+        },
+        {
+          "title": "[ ] Notify a user when a transaction is taking longer than expected"
+        }
+      ]
+    },
+    {
+      "topic": "Gas Estimation",
+      "items": [
+        {
+          "title": "[ ] Give users a choice in plain english for what their gas price should be in terms of how long the transaction will take"
+        },
+        {
+          "title": "[ ] Warn users if their gas is set much higher than needed (i.e. helping prevent against a developer bug that adds a few zeros to the gas price by accident, for example)"
+        },
+        {
+          "title": "[ ] Warn users if their gas is set super low during times of high network congestion (i.e. so that future, higher nonce, transactions are not blocked)"
+        }
+      ]
+    },
+    {
+      "topic": "Error Handling",
+      "items": [
+        {
+          "title": "[ ] Catch &amp; parse MetaMask errors, and alert users what is happening in easy to understand language"
+        }
+      ]
+    },
+    {
+      "topic": "Mobile Support",
+      "items": [
+        {
+          "title": "[ ] If your dapp supports mobile, make sure you don't tell people to install MetaMask"
+        }
+      ]
+    },
+    {
+      "topic": "Network Status",
+      "items": [
+        {
+          "title": "[ ] Tell users the overall state of the network (e.g. red/yellow/green notificaton)"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

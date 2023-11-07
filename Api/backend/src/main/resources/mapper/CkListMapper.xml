@@ -8,11 +8,15 @@
             <id property="cid" column="cid" jdbcType="INTEGER"/>
             <result property="uid" column="uid" jdbcType="INTEGER"/>
             <result property="header" column="header" jdbcType="VARCHAR"/>
-            <result property="checklist" column="checklist" jdbcType="OTHER"/>
+            <result property="checklist" column="checklist" jdbcType="OTHER" javaType="com.alibaba.fastjson.JSON" typeHandler="com.wallace.utils.JsonTypeHandler"/>
             <result property="version" column="version" jdbcType="INTEGER"/>
             <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
     </resultMap>
 
+
+<!--
+    查询功能
+-->
     <sql id="Base_Column_List">
          cid,uid,header,
          checklist,version,is_deleted

@@ -1,0 +1,363 @@
+{
+  "id": 71,
+  "header": "drupal-development-checklist",
+  "topicList": [
+    "Server type",
+    "Server setup",
+    "Dev Packages (if needed)",
+    "SaaS",
+    "Modules",
+    "Themes (base)",
+    "Drupal Settings",
+    "Site Architecture",
+    "Testing",
+    "Development tasks",
+    "After development tasks"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Server type",
+      "items": [
+        {
+          "title": "[ ] Ubuntu LTS, stable (eg 20.04)"
+        }
+      ]
+    },
+    {
+      "topic": "Server setup",
+      "items": [
+        {
+          "title": "<p>Prefer to install all software globally.</p>"
+        },
+        {
+          "title": "[ ] php8 (see <a href=\"https://drupal.org/docs/8/system-requirements/php-requirements\">required php extensions</a> for drupal 9.x)"
+        },
+        {
+          "title": "[ ] mysql"
+        },
+        {
+          "title": "[ ] apache2"
+        },
+        {
+          "title": "[ ] git"
+        },
+        {
+          "title": "[ ] patch"
+        },
+        {
+          "title": "[ ] <a href=\"https://github.com/drush-ops/drush-launcher\">drush-launcher</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://getcomposer.org\">composer</a>"
+        },
+        {
+          "title": "[ ] openssh-server"
+        },
+        {
+          "title": "[ ] nodejs/npm (if needed)"
+        }
+      ]
+    },
+    {
+      "topic": "Dev Packages (if needed)",
+      "items": [
+        {
+          "title": "[ ] <a href=\"https://sass-lang.com/\">sass-lang.com</a>"
+        }
+      ]
+    },
+    {
+      "topic": "SaaS",
+      "items": [
+        {
+          "title": "[ ] Create Github/Bitbucket/Gitlab repository"
+        },
+        {
+          "title": "[ ] Create Project Management project (eg <a href=\"https://teamwork.com\">TeamWork</a>)"
+        },
+        {
+          "title": "[ ] Create a Trello board (if using Trello)"
+        },
+        {
+          "title": "[ ] Setup Slack"
+        },
+        {
+          "title": "[ ] Setup CI (eg Travis)"
+        }
+      ]
+    },
+    {
+      "topic": "Modules",
+      "items": [
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/admin_toolbar\">admin_toolbar</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/ctools\">ctools</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/pathauto\">pathauto</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/pathologic\">pathologic</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/redirect\">redirect</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/token\">token</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/google_analytics\">google_analytics</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/simple_sitemap\">simple_sitemap</a></li>\n</ul><hr/>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/backup_migrate\">backup_migrate</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/config_update\">config_update</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://drupal.org/project/config_devel\">config_devel</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/devel\">devel</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/features\">features</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/masquerade\">masquerade</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/stage_file_proxy\">stage_file_proxy</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Themes (base)",
+      "items": [
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/omega\">omega</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/bootstrap\">bootstrap</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/zurb_foundation\">zurb_foundation</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://drupal.org/project/kashmir\">kashmir</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/neato\">neato</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/basic\">basic</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/xtheme\">xtheme</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/gesso\">gesso</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/radix\">radix</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/cog\">cog</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/bear_skin\">bear_skin</a>"
+        },
+        {
+          "title": "[ ] classy (core theme)</li>\n</ul><hr/>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.drupal.org/project/adminimal_theme\">adminimal_theme</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Drupal Settings",
+      "items": [
+        {
+          "title": "[ ] Enable dev mode"
+        },
+        {
+          "title": "[ ] Enable php error_log"
+        },
+        {
+          "title": "[ ] Enable apache2 error_log"
+        },
+        {
+          "title": "[ ] Copy ssh keys"
+        }
+      ]
+    },
+    {
+      "topic": "Site Architecture",
+      "items": [
+        {
+          "title": "[ ] Content types"
+        },
+        {
+          "title": "[ ] Vocabularies"
+        },
+        {
+          "title": "[ ] Entity Fields"
+        },
+        {
+          "title": "[ ] Blocks"
+        },
+        {
+          "title": "[ ] Menus and menu links"
+        },
+        {
+          "title": "[ ] View modes"
+        },
+        {
+          "title": "[ ] User Roles"
+        },
+        {
+          "title": "[ ] Views"
+        },
+        {
+          "title": "[ ] Text editor filters"
+        },
+        {
+          "title": "[ ] Text editor widgets/plugins"
+        },
+        {
+          "title": "[ ] Image styles"
+        },
+        {
+          "title": "[ ] REST pages"
+        },
+        {
+          "title": "[ ] Site functionality (eg search, mailchimp etc)"
+        },
+        {
+          "title": "[ ] New things to try (eg a new tool)"
+        }
+      ]
+    },
+    {
+      "topic": "Testing",
+      "items": [
+        {
+          "title": "[ ] User Scenarios/Stories"
+        },
+        {
+          "title": "[ ] Test UI functionality (behat)"
+        },
+        {
+          "title": "[ ] Test user permissions (PhpUnit)"
+        },
+        {
+          "title": "[ ] Test user input (behat)"
+        },
+        {
+          "title": "[ ] Test browsers (browserstack etc)"
+        },
+        {
+          "title": "[ ] Test devices (mobile, tablet, desktop)"
+        },
+        {
+          "title": "[ ] <a href=\"https://validator.w3.org/\">W3C WAI level 1 accessibility validation</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://www.google.com/webmasters/tools/mobile-friendly/\">Google Mobile Friendly</a> test"
+        },
+        {
+          "title": "[ ] <a href=\"https://developers.google.com/speed/pagespeed/insights/\">Google PageSpeed</a> test"
+        },
+        {
+          "title": "[ ] <a href=\"http://tools.pingdom.com/fpt/\">Pingdom Website Speed Test</a>"
+        },
+        {
+          "title": "[ ] <a href=\"https://yellowlab.tools\">Yellow Lab Tools</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Development tasks",
+      "items": [
+        {
+          "title": "[ ] Create Project folder"
+        },
+        {
+          "title": "[ ] Create drush aliases"
+        },
+        {
+          "title": "[ ] git-flow init"
+        },
+        {
+          "title": "[ ] drupal console chain commands"
+        },
+        {
+          "title": "[ ] Setup <strong>cron jobs</strong>"
+        },
+        {
+          "title": "[ ] Set xdebug"
+        },
+        {
+          "title": "[ ] IDE setup (eg Phpstorm)"
+        },
+        {
+          "title": "[ ] Create <a href=\"www.teamocil.com\">teamocil</a> file"
+        },
+        {
+          "title": "[ ] Create bash aliases"
+        }
+      ]
+    },
+    {
+      "topic": "After development tasks",
+      "items": [
+        {
+          "title": "[ ] Disable modules: *_ui, dblog, devel, admin_menu, simplytest, kint."
+        },
+        {
+          "title": "[ ] Enable Caches"
+        },
+        {
+          "title": "[ ] Enable syslog module"
+        },
+        {
+          "title": "[ ] Provide customer credentials"
+        },
+        {
+          "title": "[ ] Maintenance aggreement"
+        },
+        {
+          "title": "[ ] Submit to SE (eg Google), use xmlsitemap"
+        },
+        {
+          "title": "[ ] Submit to <a href=\"https://analytics.google.com\">Google Analytics</a>"
+        },
+        {
+          "title": "[ ] Submit to <a href=\"https://www.google.com/webmasters/tools\">Google Webmaster tools</a>"
+        },
+        {
+          "title": "[ ] Submit to Showcase sites"
+        },
+        {
+          "title": "[ ] Publish on my personal site (work)"
+        },
+        {
+          "title": "[ ] Publish any Open source project that can be useful</li>\n</ul><hr/>"
+        },
+        {
+          "title": "<a href=\"https://raw.githubusercontent.com/theodorosploumis/drupal8-checklist/master/README.md\">Get raw README.md</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/theodorosploumis/drupal8-checklist/edit/master/README.md\">Edit README.md</a>"
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}

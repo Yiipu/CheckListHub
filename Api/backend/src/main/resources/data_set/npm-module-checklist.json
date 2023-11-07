@@ -1,0 +1,164 @@
+{
+  "id": 134,
+  "header": "npm-module-checklist",
+  "topicList": [
+    "Checklist",
+    "Advanced",
+    "Contributing",
+    "Contributors"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Checklist",
+      "items": [
+        {
+          "title": "[ ] watch the <a href=\"https://egghead.io\">egghead.io</a> series <a href=\"https://egghead.io/series/how-to-write-an-open-source-javascript-library\">How to Write an Open Source JavaScript Library</a>;\nit is extremely useful for any NPM project (OSS or closed-sourced)."
+        },
+        {
+          "title": "[ ] start unit testing right away, <a href=\"http://glebbahmutov.com/blog/picking-javascript-testing-framework/\">pick your unit testing framework</a>"
+        },
+        {
+          "title": "[ ] start linting code to prevent obvious problems, like misspelled variable.\n<a href=\"http://eslint.org/\">eslint</a>, <a href=\"http://jshint.com/docs/\">jshint</a>, <a href=\"http://jscs.info/\">jscs</a> or all of them together\n<a href=\"https://github.com/bahmutov/gulp-lint-everything\">gulp-lint-everything</a>"
+        },
+        {
+          "title": "[ ] run linting and unit tests on each commit locally. <a href=\"https://github.com/bahmutov/pre-git\">pre-git</a>, <a href=\"https://www.npmjs.com/package/ghooks\">ghooks</a> and use <a href=\"http://npm.im/ban-sensitive-files\">ban-sensitive-files</a> to avoid committing sensative files (like private keys)."
+        },
+        {
+          "title": "[ ] use code quality as a service tool to fight creeping code complexity. <a href=\"https://codacy.com/\">Codacy</a>,\n<a href=\"https://codeclimate.com/\">CodeClimate</a>, <a href=\"https://www.bithound.io/\">BitHound</a>"
+        },
+        {
+          "title": "[ ] validate commit message using <a href=\"https://github.com/bahmutov/pre-git\">pre-git</a> or <a href=\"https://www.npmjs.com/package/commitizen\">commitizen</a> with <a href=\"https://www.npmjs.com/package/validate-commit-msg\">validate-commit-msg</a>. This\nenables other tools, like intelligent release notes."
+        },
+        {
+          "title": "[ ] use logging library to show more information during debugging or verbose mode.\n<a href=\"https://github.com/visionmedia/debug\">debug</a>, <a href=\"https://github.com/caiogondim/logdown\">logdown</a>"
+        },
+        {
+          "title": "[ ] show the project's GitHub open issues on demand or on commit using <a href=\"https://www.npmjs.com/package/git-issues\">git-issues</a>"
+        },
+        {
+          "title": "[ ] setup continuous integration server, like <a href=\"https://travis-ci.org/\">TravisCI</a> or <a href=\"https://circleci.com/\">CircleCI</a> (or wait until you set up <a href=\"https://github.com/semantic-release/semantic-release\">semantic-release</a> which will set up <a href=\"https://travis-ci.org/\">TravisCI</a> for you)."
+        },
+        {
+          "title": "[ ] <a href=\"http://glebbahmutov.com/blog/tightening-node-project/\">add badges</a> to the README to make broken unit tests or out of date dependencies visible"
+        },
+        {
+          "title": "ci server badge"
+        },
+        {
+          "title": "published NPM package info <a href=\"https://nodei.co/\">NodeICO</a>"
+        },
+        {
+          "title": "production and dev dependencies being out of date <a href=\"https://david-dm.org/\">david-dm</a>"
+        },
+        {
+          "title": "semantic release badge"
+        },
+        {
+          "title": "code quality badges"
+        },
+        {
+          "title": "insecure code or dependencies"
+        },
+        {
+          "title": "[ ] check module published size and white list only necessary files, <a href=\"http://glebbahmutov.com/blog/smaller-published-NPM-modules/\">tutorial</a>"
+        },
+        {
+          "title": "[ ] setup <a href=\"https://github.com/semantic-release/semantic-release\">semantic-release</a> to automate publishing\nand avoid breaking <a href=\"http://semver.org/\">semver</a>. This is <a href=\"https://medium.com/javascript-scene/software-versions-are-broken-3d2dc0da0783#.h96ppopx3\">important</a>,\nbut is currently <a href=\"https://www.youtube.com/watch?v=tc2UgG5L7WM\">broken</a> in too many projects. Even this checklist is using semver!"
+        },
+        {
+          "title": "[ ] avoid surprizes by using exact versions of the top level dependencies.\nUse <a href=\"https://docs.npmjs.com/misc/config#save-exact\">save-exact</a> NPM setting and <a href=\"https://github.com/bahmutov/exact-semver\">exact-semver</a> to enforce it."
+        },
+        {
+          "title": "[ ] setup a script to reliably update out of date dependencies using <a href=\"https://github.com/bahmutov/next-update#install\">next-update</a>"
+        },
+        {
+          "title": "[ ] setup automatic pull requests when newer versions of dependencies appear <a href=\"http://greenkeeper.io/\">greenkeeper.io</a>"
+        },
+        {
+          "title": "[ ] if writing a CLI tool, add a way to check if it is out of date and should be upgraded;\n<a href=\"https://github.com/yeoman/update-notifier\">update-notifier</a>"
+        },
+        {
+          "title": "[ ] scan dependencies and code for known security vulnerabilities. <a href=\"https://www.npmjs.com/package/snyk\">snyk</a>, <a href=\"https://nodesecurity.io/\">NodeSecurity</a>"
+        },
+        {
+          "title": "[ ] catch missing or invalid <code>package.json</code> values using <a href=\"https://github.com/bahmutov/grunt-nice-package\">grunt-nice-package</a>\nor <a href=\"https://github.com/henrikjoreteg/fixpack\">fixpack</a>"
+        },
+        {
+          "title": "[ ] write simple installation commands for your module"
+        },
+        {
+          "title": "[ ] write \"quick intro\" example showing the main feature of your module"
+        },
+        {
+          "title": "[ ] add CONTRIBUTING.md file with clear guidelines how others can add new features or fix bugs\nin your module. <a href=\"https://github.com/atom/atom/blob/master/CONTRIBUTING.md\">Atom editor</a> and <a href=\"https://github.com/lodash/lodash/blob/master/CONTRIBUTING.md\">lodash</a> have excellent examples to follow.\nWhen GitHub finds a CONTRIBUTING.md file it <a href=\"https://github.com/blog/1184-contributing-guidelines\">shows a message</a> to anyone opening an issue."
+        },
+        {
+          "title": "[ ] generate documentation automatically. <a href=\"https://github.com/bahmutov/xplain\">xplain</a> is my own tool for JS to HTML/Markdown\ngeneration"
+        },
+        {
+          "title": "[ ] place most of the public API documentation in README file for simple retrieval.\nThis allows other developers to find relevant sections right from the command line <a href=\"https://github.com/bahmutov/manpm\">manpm</a>\nor by looking up <code>npm home package-name</code>"
+        },
+        {
+          "title": "[ ] use a library to output the correct plural forms of words in the user messages <a href=\"https://github.com/blakeembrey/pluralize\">pluralize</a><p>Source: <a href=\"https://github.com/bahmutov/npm-module-checklist\">npm-module-checklist</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Advanced",
+      "items": [
+        {
+          "title": "<p>If you include the separate checklist file, you can automatically insert / update it inside the README.\nSetup the markdown update as a step in your build process using <a href=\"https://github.com/bahmutov/update-markdown\">update-markdown</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<p>Everyone is welcome to submit pull requests with new content.\nI just ask to check before submitting a new content that:</p>"
+        },
+        {
+          "title": "it is not covered by an item that already is in the list."
+        },
+        {
+          "title": "if there is an <a href=\"https://github.com/bahmutov/npm-module-checklist/issues\">open issue</a>,\nplease reference it in your commit message.\nYou can even check the list of issues from command line before committing <code>npm run issues</code>."
+        },
+        {
+          "title": "has links to an explanation <em>why it is a good idea</em> and tools that help accomplish it."
+        },
+        {
+          "title": "Make sure to run <code>npm run build</code> once to update the checklist inside README.md"
+        }
+      ]
+    },
+    {
+      "topic": "Contributors",
+      "items": [
+        {
+          "title": "Kent C. Dodds <a href=\"https://github.com/kentcdodds\">@kentcdodds</a>"
+        },
+        {
+          "title": "Gleb Bahmutov <a href=\"https://github.com/bahmutov\">@bahmutov</a>"
+        },
+        {
+          "topic": "Small print",
+          "items": [
+            {
+              "title": "<p>Author: Gleb Bahmutov © 2015</p>"
+            },
+            {
+              "title": "<a href=\"https://twitter.com/bahmutov\">@bahmutov</a>"
+            },
+            {
+              "title": "<a href=\"http://glebbahmutov.com\">glebbahmutov.com</a>"
+            },
+            {
+              "title": "<a href=\"http://glebbahmutov.com/blog/\">blog</a><p>License: MIT - do anything with the code, but don't blame me if it does not work.</p><p>Spread the word: tweet, star on github, etc.</p><p>Support: if you find any problems with this module, email / tweet /\n<a href=\"https://github.com/bahmutov/npm-module-checklist/issues\">open issue</a> on Github</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceUrl": "https://example.com"
+}
