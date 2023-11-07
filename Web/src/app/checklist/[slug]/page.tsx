@@ -7,7 +7,6 @@ import { CheckList } from '@/context/CheckListProvider'
 import { Session } from "@/context/SessionProvider"
 
 export default function Page() {
-
     const [priFilter, setPriFilter] = useState<Array<string>>([])
     const [tagFilter, setTagFilter] = useState<Array<string>>([])
     const [disablePriFilter, setDisablePriFilter] = useState<boolean>(true)
@@ -17,10 +16,12 @@ export default function Page() {
     var offset: number = -1
 
     const itemNum = countCheckItems(data)
-    console.log(itemNum)
-
     const userId = useContext(Session)?.id
     const checkListId = data.id
+
+    // why???
+    if (typeof window === "undefined") return <></>;
+
     const progress_LS_Key = `progress_${userId}_${checkListId}`
     const progress_LS_Value = localStorage.getItem(progress_LS_Key)
 
