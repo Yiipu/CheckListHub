@@ -81,7 +81,7 @@ export default function Page() {
                     {checked? '✅':'⬜'}
                 </button>
                 <div className="flex-1">
-                    <h3 className="my-2 text-lg">{item.title}</h3>
+                    <h3 className="my-2 text-lg"><div dangerouslySetInnerHTML = {{ __html: item.title }} /></h3>
                     <p>{item.description}</p>
                     <div className="flex">
                         <span className="mr-4 rounded-2xl bg-orange-700 px-2 text-xs">{item.priority}</span>
