@@ -2,13 +2,13 @@
 import { createContext } from 'react';
 
 
-export const Session = createContext<AzureSession | null>(null);
+export const Session = createContext<GithubSession | null>(null);
 
 export default function SessionProvider({
     children, value,
 }: {
     children: React.ReactNode;
-    value: AzureSession | null;
+    value: GithubSession | null;
 }) {
     return <Session.Provider value={value}>{children}</Session.Provider>;
 }

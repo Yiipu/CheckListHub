@@ -5,19 +5,12 @@ import SessionProvider from '@/context/SessionProvider'
 import SearchBtn from '@/components/button/SearchBtn'
 import LoginBtn from '@/components/button/LoginBtn'
 
-export function getSession() {
+function getSession() {
   const headersList = headers()
-
-  const keysArray = Array.from(headersList.keys())
-
-  keysArray.forEach(key => {
-    console.log(key);
-  })
-
-  const session: AzureSession | null = headersList.get('X-MS-CLIENT-PRINCIPAL-ID') ? {
+  const session: GithubSession | null = headersList.get('X-MS-CLIENT-PRINCIPAL-ID') ? {
     id: headersList.get('X-MS-CLIENT-PRINCIPAL-ID'),
-    name: headersList.get('X-MS-CLIENT-PRINCIPAL-NAME'),
-    idp: headersList.get('X-MS-CLIENT-PRINCIPAL-IDP')
+    idp: headersList.get('X-MS-CLIENT-PRINCIPAL-IDP'),
+    token: headersList.get('X-MS-TOKEN-GITHUB-ACCESS-TOKEN'),
   } : null
   return session
 }

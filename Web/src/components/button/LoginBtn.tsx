@@ -21,7 +21,7 @@ export default function LoginBtn() {
   return (
     session ?
       <>
-        <p>Logged in as {session.name || session.id} with {session.idp}</p>
+        <p>Logged in as {session.id} with {session.idp}</p>
         <a href="/.auth/logout">Log out</a>
       </>
       :

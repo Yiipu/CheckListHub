@@ -5,8 +5,8 @@ interface user{
 }
 
 // session
-interface AzureSession{
+interface GithubSession{
     id: string | null
-    name: string | null
     idp: string | null
+    token: string | null
 }
