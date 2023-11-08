@@ -1,6 +1,6 @@
 import { MockList } from "@/types/samples"
 import { NextRequest } from "next/server"
-import sleep from "../sleeper"
+import sleep from "@/util/sleeper"
 
 export async function GET(request: NextRequest) {
   await sleep(200)

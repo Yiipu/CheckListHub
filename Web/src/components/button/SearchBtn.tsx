@@ -19,7 +19,7 @@ export default function SearchBtn() {
             <Modal hideCloseButton isOpen={isOpen} onOpenChange={onOpenChange}
                 className="dark:text-black fixed"
                 backdrop="blur"
-                onClose={()=>(
+                onClose={() => (
                     setResults(null)
                 )}>
                 <ModalContent>
@@ -33,9 +33,23 @@ export default function SearchBtn() {
                         autoFocus
                         placeholder="search for checklists..."
                         startContent="🔍"
-                        onValueChange={(value) => (
-                            setResults(value?[{ id: value, name: value }, { id: value, name: value }, { id: value, name: value }]:null)
-                        )} />
+                        onValueChange={async (value) => {
+                            if (process.env.NODE_ENV == 'production') {
+                                if (!value) {
+                                    const searchParams = value
+                                    const res = await fetch(`${process.env.BE_URL}/search/${searchParams}`,
+                                        {
+                                            next: { revalidate: 0 },
+                                            method: 'GET',
+                                        })
+                                    return res.json()
+                                } else {
+                                    return null
+                                }
+                            } else {
+                                setResults(value ? [{ id: value, name: value }, { id: value, name: value }, { id: value, name: value }] : null)
+                            }
+                        }} />
                 </ModalContent>
             </Modal>
         </>
