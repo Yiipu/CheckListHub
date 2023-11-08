@@ -20,7 +20,7 @@ export async function CollectionListBody({
 
   async function getData() {
     const res = await fetch(
-      `http://localhost:3000/api/${process.env.NODE_ENV == 'development' && 'mock/'}collection?id=${param}`,
+      `http://localhost:3000/api/${process.env.NODE_ENV == 'development' ? 'mock/' : ''}collection?id=${param}`,
       {
         next: { revalidate: 0 }, // 不缓存。到后期稳定后应该调整
         method: 'GET',

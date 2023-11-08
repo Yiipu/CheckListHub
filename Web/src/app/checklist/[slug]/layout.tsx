@@ -2,7 +2,7 @@ import CheckListProvider from '@/context/CheckListProvider'
 import styles from "./page.module.css"
 
 async function getData(slug: number) {
-    const res = await fetch(`http://localhost:3000/api/${process.env.NODE_ENV == 'development' && 'mock/'}checklist?id=${slug}`,
+    const res = await fetch(`http://localhost:3000/api/${process.env.NODE_ENV == 'development' ? 'mock/' : ''}checklist?id=${slug}`,
         { cache: 'no-store' })
 
     if (!res.ok) {
