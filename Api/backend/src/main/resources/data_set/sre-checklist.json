@@ -15,31 +15,31 @@
           "topic": "Responsibilities",
           "items": [
             {
-              "title": "[ ] <strong>Decide on responsibilities</strong>"
+              "title": " <strong>Decide on responsibilities</strong>"
             },
             {
               "title": "Common"
             },
             {
-              "title": "[ ] Infrastructure management"
+              "title": " Infrastructure management"
             },
             {
-              "title": "[ ] Monitoring"
+              "title": " Monitoring"
             },
             {
-              "title": "[ ] Incident Management"
+              "title": " Incident Management"
             },
             {
-              "title": "[ ] Infra and Reliability related automation</li>\n</ul>"
+              "title": " Infra and Reliability related automation</li>\n</ul>"
             },
             {
-              "title": "[ ] Arguable"
+              "title": " Arguable"
             },
             {
-              "title": "[ ] App Performance - Arguable because some organizations treat it as dev responsibility</li>\n</ul>"
+              "title": " App Performance - Arguable because some organizations treat it as dev responsibility</li>\n</ul>"
             },
             {
-              "title": "[ ] <strong>Documented/Written</strong>"
+              "title": " <strong>Documented/Written</strong>"
             },
             {
               "title": "Make sure to write down the responsibilities of the team somewhere. That will be useful for many things like new members joining, recruiting, clarity for the organization and more."
@@ -54,7 +54,7 @@
           "topic": "Processes",
           "items": [
             {
-              "title": "[ ] Incident Management"
+              "title": " Incident Management"
             },
             {
               "title": "There must be a well defined process to how incidents are managed. Some thoughts:"
@@ -75,13 +75,13 @@
               "title": "Is the process automated?"
             },
             {
-              "title": "[ ] Do you need to manually open a ticket?"
+              "title": " Do you need to manually open a ticket?"
             },
             {
-              "title": "[ ] Do you need to go to incidents platform/page or do you get an alert?"
+              "title": " Do you need to go to incidents platform/page or do you get an alert?"
             },
             {
-              "title": "[ ] Do you schedule a meeting to talk about"
+              "title": " Do you schedule a meeting to talk about"
             }
           ]
         },
@@ -89,10 +89,10 @@
           "topic": "SRE Team Goals",
           "items": [
             {
-              "title": "[ ] Set goals"
+              "title": " Set goals"
             },
             {
-              "title": "[ ] Define SLO (Service Level Objective)"
+              "title": " Define SLO (Service Level Objective)"
             },
             {
               "title": "100% reliability is not a good goal! (not sustainable + not feasible. One example: maybe you can drive 100% reliability for the service you own, but most of the time not for its dependencies)"
@@ -103,13 +103,13 @@
           "topic": "SRE Lead",
           "items": [
             {
-              "title": "[ ] Is there an onboarding page for SREs joining the team?"
+              "title": " Is there an onboarding page for SREs joining the team?"
             },
             {
-              "title": "[ ] Schedule 1:1 meeting with team (probably...manager or lead? TBD)"
+              "title": " Schedule 1:1 meeting with team (probably...manager or lead? TBD)"
             },
             {
-              "title": "[ ] Identify Possible Gaps. Few things to watch our for:"
+              "title": " Identify Possible Gaps. Few things to watch our for:"
             },
             {
               "title": "Does development team waits on SRE for infra related operations?"
@@ -118,10 +118,10 @@
               "title": "Basically going over other check lists in this page :)"
             },
             {
-              "title": "[ ] Identify SRE team maturity and work on improving it"
+              "title": " Identify SRE team maturity and work on improving it"
             },
             {
-              "title": "[ ] Step 1: Operations: SRE is focused on resolving issues, dealing with requests"
+              "title": " Step 1: Operations: SRE is focused on resolving issues, dealing with requests"
             },
             {
               "title": "At this step you'll be mainly focused on making sure you and the team are able to respond to any issue raised"
@@ -130,7 +130,7 @@
               "title": "Slowly you'll automated processes, fixes and move towards step 2</li>\n</ul>"
             },
             {
-              "title": "[ ] Step 2: Automation: SRE is moving towards automation and self-service. Providing tooling, documentation, etc."
+              "title": " Step 2: Automation: SRE is moving towards automation and self-service. Providing tooling, documentation, etc."
             },
             {
               "title": "In this step you focus on building the mindset of automating fixes, documenting what the team and others parties in the organization should be aware of"
@@ -139,7 +139,7 @@
               "title": "This step is probably the most long one. Don't expect to achieve it in short time, just make sure you have consistent progress towards next step</li>\n</ul>"
             },
             {
-              "title": "[ ] Step 3: Product: SRE is focused on improving the product itself - reliability, performances, etc."
+              "title": " Step 3: Product: SRE is focused on improving the product itself - reliability, performances, etc."
             },
             {
               "title": "Congratulations. Processes are automated, you respond quickly to issue, .., you are living the dream. Now you can go deeper and focus on the product itself"
@@ -148,10 +148,10 @@
               "title": "This not for everyone but definitely a feasible step and one to aspire for</li>\n</ul>"
             },
             {
-              "title": "[ ] Keep learning ALL THE TIME"
+              "title": " Keep learning ALL THE TIME"
             },
             {
-              "title": "[ ] Learn how others are doing it!"
+              "title": " Learn how others are doing it!"
             },
             {
               "title": "https://github.com/upgundecha/howtheysre - so many good examples!"
@@ -168,13 +168,13 @@
               "title": "Have a mentor? Great. If not, ask for one"
             },
             {
-              "title": "[ ] Do the onboarding"
+              "title": " Do the onboarding"
             },
             {
-              "title": "[ ] No onboarding? maybe you can be the first to add one"
+              "title": " No onboarding? maybe you can be the first to add one"
             },
             {
-              "title": "[ ] Learn about the product"
+              "title": " Learn about the product"
             },
             {
               "title": "What it does?"
@@ -186,7 +186,7 @@
               "title": "How it's delivered and deployed?"
             },
             {
-              "title": "[ ] Time to deep dive into operations"
+              "title": " Time to deep dive into operations"
             },
             {
               "title": "TODO: add some items :)"
@@ -202,7 +202,7 @@
           "topic": "Requirements",
           "items": [
             {
-              "title": "[ ] What are the requirements for going to production?"
+              "title": " What are the requirements for going to production?"
             }
           ]
         },
@@ -210,7 +210,7 @@
           "topic": "Provisioning",
           "items": [
             {
-              "title": "[ ] How do you provision the infrastructure required for deploying the application? (Terraform, Pulumi, CloudFormation, ...)"
+              "title": " How do you provision the infrastructure required for deploying the application? (Terraform, Pulumi, CloudFormation, ...)"
             }
           ]
         },
@@ -218,7 +218,7 @@
           "topic": "Installation",
           "items": [
             {
-              "title": "[ ] How to install the application and its dependencies? (Container, Bash Script, Ansible, ...)"
+              "title": " How to install the application and its dependencies? (Container, Bash Script, Ansible, ...)"
             }
           ]
         },
@@ -226,7 +226,7 @@
           "topic": "Deployment",
           "items": [
             {
-              "title": "[ ] How to deploy the application or the application service? (k8s, cloud instances)"
+              "title": " How to deploy the application or the application service? (k8s, cloud instances)"
             }
           ]
         },
@@ -234,7 +234,7 @@
           "topic": "Configuration",
           "items": [
             {
-              "title": "[ ] How to configure the application? (k8s, Ansible, ...)"
+              "title": " How to configure the application? (k8s, Ansible, ...)"
             }
           ]
         },
@@ -242,10 +242,10 @@
           "topic": "Resiliency",
           "items": [
             {
-              "title": "[ ] Your app is able to withstand outages (usually by implement multi-region or multi-cloud architectures)"
+              "title": " Your app is able to withstand outages (usually by implement multi-region or multi-cloud architectures)"
             },
             {
-              "title": "[ ] Your app will scale up and down in response to load change"
+              "title": " Your app will scale up and down in response to load change"
             }
           ]
         }
@@ -274,7 +274,7 @@
           "topic": "Monitoring",
           "items": [
             {
-              "title": "[ ] Choose monitoring solution"
+              "title": " Choose monitoring solution"
             },
             {
               "title": "If you can afford it, consider going for ready monitoring solutions like DataDog, NewRelic, ..."
@@ -283,19 +283,19 @@
               "title": "Be aware of maintenance and how much time you are willing to invest in developing and maintaining monitoring solution"
             },
             {
-              "title": "[ ] Alerts/Monitors"
+              "title": " Alerts/Monitors"
             },
             {
-              "title": "[ ] Critical alerts defined"
+              "title": " Critical alerts defined"
             },
             {
-              "title": "[ ] Team gets notifications on critical alerts (Slack, Phone, Email, ... perhaps all.  whatever works best for the team)"
+              "title": " Team gets notifications on critical alerts (Slack, Phone, Email, ... perhaps all.  whatever works best for the team)"
             },
             {
-              "title": "[ ] Incident Management"
+              "title": " Incident Management"
             },
             {
-              "title": "[ ] Dashboards"
+              "title": " Dashboards"
             }
           ]
         },
@@ -325,6 +325,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

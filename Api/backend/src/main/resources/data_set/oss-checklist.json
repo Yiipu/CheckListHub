@@ -62,22 +62,22 @@
           "topic": "Documentation",
           "items": [
             {
-              "title": "[ ]  an open source LICENSE file"
+              "title": "  an open source LICENSE file"
             },
             {
-              "title": "[ ]  basic documentation"
+              "title": "  basic documentation"
             },
             {
-              "title": "[ ]  README"
+              "title": "  README"
             },
             {
-              "title": "[ ]  CONTRIBUTING"
+              "title": "  CONTRIBUTING"
             },
             {
-              "title": "[ ]  CODE_OF_CONDUCT </li>\n</ul>"
+              "title": "  CODE_OF_CONDUCT </li>\n</ul>"
             },
             {
-              "title": "[ ]  The issue queue is up-to-date, with issues clearly organized and labeled"
+              "title": "  The issue queue is up-to-date, with issues clearly organized and labeled"
             }
           ]
         },
@@ -85,13 +85,13 @@
           "topic": "Code",
           "items": [
             {
-              "title": "[ ]  Project uses consistent code conventions and clear function/method/variable names"
+              "title": "  Project uses consistent code conventions and clear function/method/variable names"
             },
             {
-              "title": "[ ]  The code is clearly commented, documenting intentions and edge cases"
+              "title": "  The code is clearly commented, documenting intentions and edge cases"
             },
             {
-              "title": "[ ]  There are no sensitive materials in the revision history, issues, or pull requests (for example, passwords or other non-public information)"
+              "title": "  There are no sensitive materials in the revision history, issues, or pull requests (for example, passwords or other non-public information)"
             }
           ]
         }
@@ -104,34 +104,34 @@
           "topic": "Welcome",
           "items": [
             {
-              "title": "[ ]  Friendly README"
+              "title": "  Friendly README"
             },
             {
-              "title": "[ ]  Clear Code Examples"
+              "title": "  Clear Code Examples"
             },
             {
-              "title": "[ ]  Up to date Issues"
+              "title": "  Up to date Issues"
             },
             {
-              "title": "[ ]  Good First Issues"
+              "title": "  Good First Issues"
             },
             {
-              "title": "[ ]  Initial Contributor Appreciation"
+              "title": "  Initial Contributor Appreciation"
             },
             {
-              "title": "[ ]  Average Response Time"
+              "title": "  Average Response Time"
             },
             {
-              "title": "[ ]  Contributions besides HackTheGibson Code"
+              "title": "  Contributions besides HackTheGibson Code"
             },
             {
-              "title": "[ ]  Interpersonal Communication / Contributions That Don’t Fit"
+              "title": "  Interpersonal Communication / Contributions That Don’t Fit"
             },
             {
-              "title": "[ ]  Online Community Interactions"
+              "title": "  Online Community Interactions"
             },
             {
-              "title": "[ ]  Office Hours"
+              "title": "  Office Hours"
             }
           ]
         },
@@ -139,31 +139,31 @@
           "topic": "Community Development",
           "items": [
             {
-              "title": "[ ]  Zero-Tolerance Policy / How Are People Asked to Leave"
+              "title": "  Zero-Tolerance Policy / How Are People Asked to Leave"
             },
             {
-              "title": "[ ]  Advice for New Contributors"
+              "title": "  Advice for New Contributors"
             },
             {
-              "title": "[ ]  Mentorship Program"
+              "title": "  Mentorship Program"
             },
             {
-              "title": "[ ]  <a href=\"https://github.com/rainleander/oss-checklist/blob/main/RECOGNITION.md\">User Recognition Program</a>"
+              "title": "  <a href=\"https://github.com/rainleander/oss-checklist/blob/main/RECOGNITION.md\">User Recognition Program</a>"
             },
             {
-              "title": "[ ]  Shared Ownership"
+              "title": "  Shared Ownership"
             },
             {
-              "title": "[ ]  Contributors / Authors File"
+              "title": "  Contributors / Authors File"
             },
             {
-              "title": "[ ]  Recognizing External Contributors"
+              "title": "  Recognizing External Contributors"
             },
             {
-              "title": "[ ]  External Contributor Commit Access"
+              "title": "  External Contributor Commit Access"
             },
             {
-              "title": "[ ]  1-2 Maintainer per Repository"
+              "title": "  1-2 Maintainer per Repository"
             }
           ]
         },
@@ -171,13 +171,13 @@
           "topic": "Resolving Conflict",
           "items": [
             {
-              "title": "[ ]  Consensus Seeking Process"
+              "title": "  Consensus Seeking Process"
             },
             {
-              "title": "[ ]  Do Contributors Feel Heard?"
+              "title": "  Do Contributors Feel Heard?"
             },
             {
-              "title": "[ ]  Community Tiebreaker"
+              "title": "  Community Tiebreaker"
             }
           ]
         },
@@ -185,46 +185,46 @@
           "topic": "Messaging",
           "items": [
             {
-              "title": "[ ]  #WhyThisProject"
+              "title": "  #WhyThisProject"
             },
             {
-              "title": "[ ]  Target Audience"
+              "title": "  Target Audience"
             },
             {
-              "title": "[ ]  Request Feedback"
+              "title": "  Request Feedback"
             },
             {
-              "title": "[ ]  Relevant / Related / Tangental Open Source Projects / Communities"
+              "title": "  Relevant / Related / Tangental Open Source Projects / Communities"
             },
             {
-              "title": "[ ]  Online Promotion"
+              "title": "  Online Promotion"
             },
             {
-              "title": "[ ]  Social Media"
+              "title": "  Social Media"
             },
             {
-              "title": "[ ]  <a href=\"https://stackoverflow.com/\">Stack Overflow</a>, <a href=\"https://www.reddit.com/\">Reddit</a>, <a href=\"https://news.ycombinator.com/\">Hacker News</a>, or <a href=\"https://www.quora.com/\">Quora</a></li>\n</ul>"
+              "title": "  <a href=\"https://stackoverflow.com/\">Stack Overflow</a>, <a href=\"https://www.reddit.com/\">Reddit</a>, <a href=\"https://news.ycombinator.com/\">Hacker News</a>, or <a href=\"https://www.quora.com/\">Quora</a></li>\n</ul>"
             },
             {
-              "title": "[ ]  In Person Promotion"
+              "title": "  In Person Promotion"
             },
             {
-              "title": "[ ]  Meetups / Workshops / Conferences</li>\n</ul>"
+              "title": "  Meetups / Workshops / Conferences</li>\n</ul>"
             },
             {
-              "title": "[ ]  Reputation"
+              "title": "  Reputation"
             },
             {
-              "title": "[ ]  How do we help other individuals / projects / companies / communities"
+              "title": "  How do we help other individuals / projects / companies / communities"
             },
             {
-              "title": "[ ]  Develop an Audience"
+              "title": "  Develop an Audience"
             },
             {
-              "title": "[ ]  Share resources"
+              "title": "  Share resources"
             },
             {
-              "title": "[ ]  Develop relationships with other open source projects"
+              "title": "  Develop relationships with other open source projects"
             }
           ]
         }
@@ -237,19 +237,19 @@
           "topic": "Communicates",
           "items": [
             {
-              "title": "[ ]  CoC Expectations"
+              "title": "  CoC Expectations"
             },
             {
-              "title": "[ ]  Location - where the code of conduct takes effect <em>(only on issues and pull requests, or community activities like events?)</em>"
+              "title": "  Location - where the code of conduct takes effect <em>(only on issues and pull requests, or community activities like events?)</em>"
             },
             {
-              "title": "[ ]  To whom the code of conduct applies to <em>(community members and maintainers, but what about sponsors?)</em>"
+              "title": "  To whom the code of conduct applies to <em>(community members and maintainers, but what about sponsors?)</em>"
             },
             {
-              "title": "[ ]  Consequences - what happens if someone violates the code of conduct"
+              "title": "  Consequences - what happens if someone violates the code of conduct"
             },
             {
-              "title": "[ ]  Reporting Process - how someone can report violations"
+              "title": "  Reporting Process - how someone can report violations"
             }
           ]
         },
@@ -257,16 +257,16 @@
           "topic": "Reporting",
           "items": [
             {
-              "title": "[ ]  Main Reporting Email"
+              "title": "  Main Reporting Email"
             },
             {
-              "title": "[ ]  Alternative Reporting Email"
+              "title": "  Alternative Reporting Email"
             },
             {
-              "title": "[ ]  Other Alternative Reporting Email"
+              "title": "  Other Alternative Reporting Email"
             },
             {
-              "title": "[ ]  Report History"
+              "title": "  Report History"
             }
           ]
         },
@@ -274,22 +274,22 @@
           "topic": "Enforcing",
           "items": [
             {
-              "title": "[ ]  Gathering Information"
+              "title": "  Gathering Information"
             },
             {
-              "title": "[ ]  Take Appropriate Action"
+              "title": "  Take Appropriate Action"
             },
             {
-              "title": "[ ]  Public Warning"
+              "title": "  Public Warning"
             },
             {
-              "title": "[ ]  Private Discussion"
+              "title": "  Private Discussion"
             },
             {
-              "title": "[ ]  Suspension"
+              "title": "  Suspension"
             },
             {
-              "title": "[ ]  Permanently Ban"
+              "title": "  Permanently Ban"
             }
           ]
         }
@@ -302,34 +302,34 @@
           "topic": "Processes / Documentation",
           "items": [
             {
-              "title": "[ ]  Project Vision"
+              "title": "  Project Vision"
             },
             {
-              "title": "[ ]  Project Expectations"
+              "title": "  Project Expectations"
             },
             {
-              "title": "[ ]  Contribution Review / Acceptance Process"
+              "title": "  Contribution Review / Acceptance Process"
             },
             {
-              "title": "[ ]  PR Template / Checklist"
+              "title": "  PR Template / Checklist"
             },
             {
-              "title": "[ ]  Open an Issue First, then Submit a PR</li>\n</ul>"
+              "title": "  Open an Issue First, then Submit a PR</li>\n</ul>"
             },
             {
-              "title": "[ ]  Contribution TYPES"
+              "title": "  Contribution TYPES"
             },
             {
-              "title": "[ ]  Follow Up / Escalation Process"
+              "title": "  Follow Up / Escalation Process"
             },
             {
-              "title": "[ ]  Timeline (we only spend five hours a week on this project)"
+              "title": "  Timeline (we only spend five hours a week on this project)"
             },
             {
-              "title": "[ ]  Communication (mailing list or issue tracker)"
+              "title": "  Communication (mailing list or issue tracker)"
             },
             {
-              "title": "[ ]  Meetings (internal only meetings need public notes published)"
+              "title": "  Meetings (internal only meetings need public notes published)"
             }
           ]
         },
@@ -337,109 +337,109 @@
           "topic": "Contribution Methods / Paths",
           "items": [
             {
-              "title": "[ ]  Events"
+              "title": "  Events"
             },
             {
-              "title": "[ ]  workshops / meetups organization"
+              "title": "  workshops / meetups organization"
             },
             {
-              "title": "[ ]  conference organization / volunteering"
+              "title": "  conference organization / volunteering"
             },
             {
-              "title": "[ ]  speaker training / mentorship / CFP</li>\n</ul>"
+              "title": "  speaker training / mentorship / CFP</li>\n</ul>"
             },
             {
-              "title": "[ ]  Design"
+              "title": "  Design"
             },
             {
-              "title": "[ ]  restructure layouts"
+              "title": "  restructure layouts"
             },
             {
-              "title": "[ ]  user research"
+              "title": "  user research"
             },
             {
-              "title": "[ ]  navigation / menus"
+              "title": "  navigation / menus"
             },
             {
-              "title": "[ ]  style guide / consistent visual design"
+              "title": "  style guide / consistent visual design"
             },
             {
-              "title": "[ ]  artwork for swag / logo</li>\n</ul>"
+              "title": "  artwork for swag / logo</li>\n</ul>"
             },
             {
-              "title": "[ ]  Writing"
+              "title": "  Writing"
             },
             {
-              "title": "[ ]  documentation"
+              "title": "  documentation"
             },
             {
-              "title": "[ ]  use cases"
+              "title": "  use cases"
             },
             {
-              "title": "[ ]  blog posts"
+              "title": "  blog posts"
             },
             {
-              "title": "[ ]  newsletter"
+              "title": "  newsletter"
             },
             {
-              "title": "[ ]  mailing list highlights"
+              "title": "  mailing list highlights"
             },
             {
-              "title": "[ ]  tutorials"
+              "title": "  tutorials"
             },
             {
-              "title": "[ ]  l8n / translation</li>\n</ul>"
+              "title": "  l8n / translation</li>\n</ul>"
             },
             {
-              "title": "[ ]  Organization"
+              "title": "  Organization"
             },
             {
-              "title": "[ ]  link to duplicate issues / suggest new issue labels"
+              "title": "  link to duplicate issues / suggest new issue labels"
             },
             {
-              "title": "[ ]  suggest close old / abandoned / outdated issues"
+              "title": "  suggest close old / abandoned / outdated issues"
             },
             {
-              "title": "[ ]  ask clarifying questions on recently opened issues to move the discussion forward</li>\n</ul>"
+              "title": "  ask clarifying questions on recently opened issues to move the discussion forward</li>\n</ul>"
             },
             {
-              "title": "[ ]  Coding"
+              "title": "  Coding"
             },
             {
-              "title": "[ ]  open issues"
+              "title": "  open issues"
             },
             {
-              "title": "[ ]  new features"
+              "title": "  new features"
             },
             {
-              "title": "[ ]  automate project setup"
+              "title": "  automate project setup"
             },
             {
-              "title": "[ ]  improve tooling / testing</li>\n</ul>"
+              "title": "  improve tooling / testing</li>\n</ul>"
             },
             {
-              "title": "[ ]  Helping People"
+              "title": "  Helping People"
             },
             {
-              "title": "[ ]  answer questions on Stack Overflow / Reddit"
+              "title": "  answer questions on Stack Overflow / Reddit"
             },
             {
-              "title": "[ ]  Answer questions about open issues"
+              "title": "  Answer questions about open issues"
             },
             {
-              "title": "[ ]  Moderate the forum</li>\n</ul>"
+              "title": "  Moderate the forum</li>\n</ul>"
             },
             {
-              "title": "[ ]  Help Others Code"
+              "title": "  Help Others Code"
             },
             {
-              "title": "[ ]  Review code"
+              "title": "  Review code"
             },
             {
-              "title": "[ ]  write tutorials"
+              "title": "  write tutorials"
             },
             {
-              "title": "[ ]  mentorship"
+              "title": "  mentorship"
             }
           ]
         },
@@ -447,25 +447,25 @@
           "topic": "Unwanted Contributions",
           "items": [
             {
-              "title": "[ ]  Thank Them for their Contribution"
+              "title": "  Thank Them for their Contribution"
             },
             {
-              "title": "[ ]  Explain Why It Doesn’t Fit"
+              "title": "  Explain Why It Doesn’t Fit"
             },
             {
-              "title": "[ ]  Clear / Specific Suggestions for Improvement, if possible</li>\n</ul>"
+              "title": "  Clear / Specific Suggestions for Improvement, if possible</li>\n</ul>"
             },
             {
-              "title": "[ ]  Link to Relevant Documentation"
+              "title": "  Link to Relevant Documentation"
             },
             {
-              "title": "[ ]  Close the Request"
+              "title": "  Close the Request"
             },
             {
-              "title": "[ ]  Don’t Feel Guilty"
+              "title": "  Don’t Feel Guilty"
             },
             {
-              "title": "[ ]  Be Kind"
+              "title": "  Be Kind"
             }
           ]
         },
@@ -473,25 +473,25 @@
           "topic": "Mentorship Program",
           "items": [
             {
-              "title": "[ ]  Formal vs Informal"
+              "title": "  Formal vs Informal"
             },
             {
-              "title": "[ ]  Goal(s)"
+              "title": "  Goal(s)"
             },
             {
-              "title": "[ ]  Structure (Traditional 1:1 / Group / Peer to Peer / Reverse / Flash)"
+              "title": "  Structure (Traditional 1:1 / Group / Peer to Peer / Reverse / Flash)"
             },
             {
-              "title": "[ ]  Initial Post / Push"
+              "title": "  Initial Post / Push"
             },
             {
-              "title": "[ ]  Registration (Cadence)"
+              "title": "  Registration (Cadence)"
             },
             {
-              "title": "[ ]  Documentation"
+              "title": "  Documentation"
             },
             {
-              "title": "[ ]  Metrics"
+              "title": "  Metrics"
             }
           ]
         }
@@ -501,52 +501,52 @@
       "topic": "Automation",
       "items": [
         {
-          "title": "[ ]  Basic Maintenance Tasks"
+          "title": "  Basic Maintenance Tasks"
         },
         {
-          "title": "[ ]  release"
+          "title": "  release"
         },
         {
-          "title": "[ ]  testing"
+          "title": "  testing"
         },
         {
-          "title": "[ ]  packages"
+          "title": "  packages"
         },
         {
-          "title": "[ ]  no-response"
+          "title": "  no-response"
         },
         {
-          "title": "[ ]  code review"
+          "title": "  code review"
         },
         {
-          "title": "[ ]  contributors agreement / CoC acknowledgement"
+          "title": "  contributors agreement / CoC acknowledgement"
         },
         {
-          "title": "[ ]  dependencies"
+          "title": "  dependencies"
         },
         {
-          "title": "[ ]  triage</li>\n</ul>"
+          "title": "  triage</li>\n</ul>"
         },
         {
-          "title": "[ ]  Issue Templates"
+          "title": "  Issue Templates"
         },
         {
-          "title": "[ ]  Pull Request Templates"
+          "title": "  Pull Request Templates"
         },
         {
           "topic": "Mental Health",
           "items": [
             {
-              "title": "[ ]  Take Breaks"
+              "title": "  Take Breaks"
             },
             {
-              "title": "[ ]  Prioritize Self"
+              "title": "  Prioritize Self"
             },
             {
-              "title": "[ ]  Set Boundaries"
+              "title": "  Set Boundaries"
             },
             {
-              "title": "[ ]  Say No"
+              "title": "  Say No"
             }
           ]
         }
@@ -559,19 +559,19 @@
           "topic": "Awareness",
           "items": [
             {
-              "title": "[ ]  total page views"
+              "title": "  total page views"
             },
             {
-              "title": "[ ]  total unique visitors"
+              "title": "  total unique visitors"
             },
             {
-              "title": "[ ]  referring sites"
+              "title": "  referring sites"
             },
             {
-              "title": "[ ]  popular content"
+              "title": "  popular content"
             },
             {
-              "title": "[ ]  github stars"
+              "title": "  github stars"
             }
           ]
         },
@@ -579,46 +579,46 @@
           "topic": "Usage / Retention",
           "items": [
             {
-              "title": "[ ]  Download Rate"
+              "title": "  Download Rate"
             },
             {
-              "title": "[ ]  Traffic"
+              "title": "  Traffic"
             },
             {
-              "title": "[ ]  Total Contributor Count"
+              "title": "  Total Contributor Count"
             },
             {
-              "title": "[ ]  Number of Commits per Contributor"
+              "title": "  Number of Commits per Contributor"
             },
             {
-              "title": "[ ]  First time / casual vs repeat contributors"
+              "title": "  First time / casual vs repeat contributors"
             },
             {
-              "title": "[ ]  Diversity within the Community / Maintainers / Contributors / Committers"
+              "title": "  Diversity within the Community / Maintainers / Contributors / Committers"
             },
             {
-              "title": "[ ]  Number of Open Issues / PRs"
+              "title": "  Number of Open Issues / PRs"
             },
             {
-              "title": "[ ]  do we need help triaging or doing code reviews?"
+              "title": "  do we need help triaging or doing code reviews?"
             },
             {
-              "title": "[ ]  indicates that someone cares enough to open an issue / PR</li>\n</ul>"
+              "title": "  indicates that someone cares enough to open an issue / PR</li>\n</ul>"
             },
             {
-              "title": "[ ]  types of contributions"
+              "title": "  types of contributions"
             },
             {
-              "title": "[ ]  fixing typos"
+              "title": "  fixing typos"
             },
             {
-              "title": "[ ]  commits"
+              "title": "  commits"
             },
             {
-              "title": "[ ]  bugs"
+              "title": "  bugs"
             },
             {
-              "title": "[ ]  comments"
+              "title": "  comments"
             }
           ]
         },
@@ -626,21 +626,20 @@
           "topic": "Maintainer Activity",
           "items": [
             {
-              "title": "[ ]  Average time an issue remains open"
+              "title": "  Average time an issue remains open"
             },
             {
-              "title": "[ ]  Whether issues get closed by PRs"
+              "title": "  Whether issues get closed by PRs"
             },
             {
-              "title": "[ ]  Whether stale issues get closed"
+              "title": "  Whether stale issues get closed"
             },
             {
-              "title": "[ ]  Average time to merge a pull request"
+              "title": "  Average time to merge a pull request"
             }
           ]
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

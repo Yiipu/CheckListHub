@@ -37,37 +37,37 @@
       "topic": "1.1 HTML",
       "items": [
         {
-          "title": "[ ] Core theme <a href=\"https://git.drupalcode.org/project/drupal/tree/8.8.x/core/themes/classy\">Classy</a> is your friend. Most of the times you could use this a the <strong>base theme</strong> and its templates to make overrides."
+          "title": " Core theme <a href=\"https://git.drupalcode.org/project/drupal/tree/8.8.x/core/themes/classy\">Classy</a> is your friend. Most of the times you could use this a the <strong>base theme</strong> and its templates to make overrides."
         },
         {
-          "title": "[ ] Mobile first design except if there is no need"
+          "title": " Mobile first design except if there is no need"
         },
         {
-          "title": "[ ] Critical link (aka css) tags are in head"
+          "title": " Critical link (aka css) tags are in head"
         },
         {
-          "title": "[ ] Less critical link tags are end of body"
+          "title": " Less critical link tags are end of body"
         },
         {
-          "title": "[ ] Less critical link tags lazy load"
+          "title": " Less critical link tags lazy load"
         },
         {
-          "title": "[ ] <code>&lt;link rel=\"preload\" as=\"style\" onload=\"this.rel='stylesheet'\" id='dashicons-css' &gt;</code>"
+          "title": " <code>&lt;link rel=\"preload\" as=\"style\" onload=\"this.rel='stylesheet'\" id='dashicons-css' &gt;</code>"
         },
         {
-          "title": "[ ] JS loads with the async property"
+          "title": " JS loads with the async property"
         },
         {
-          "title": "[ ] <code>&lt;script async src=\"https://hi.js\"&gt;&lt;/script&gt;</code>"
+          "title": " <code>&lt;script async src=\"https://hi.js\"&gt;&lt;/script&gt;</code>"
         },
         {
-          "title": "[ ] or <code>defer</code> when scripts need to be loaded in order, or require the DOMContentLoaded Event"
+          "title": " or <code>defer</code> when scripts need to be loaded in order, or require the DOMContentLoaded Event"
         },
         {
-          "title": "[ ] Keep DOM simple and small (Maximum DOM Depth &lt; 12). Must \"kill\" some of the default Drupal wrappers"
+          "title": " Keep DOM simple and small (Maximum DOM Depth &lt; 12). Must \"kill\" some of the default Drupal wrappers"
         },
         {
-          "title": "[ ] Create custom and simple 404, 403 error pages using twig template suggestions"
+          "title": " Create custom and simple 404, 403 error pages using twig template suggestions"
         }
       ]
     },
@@ -75,31 +75,31 @@
       "topic": "1.2 Images",
       "items": [
         {
-          "title": "[ ] Always use next gen formats"
+          "title": " Always use next gen formats"
         },
         {
-          "title": "[ ] webp -&gt; chrome/firefox (Also use https://modernizr.com to inspect WebP support)"
+          "title": " webp -&gt; chrome/firefox (Also use https://modernizr.com to inspect WebP support)"
         },
         {
-          "title": "[ ] jpeg xr -&gt; ie11/edge"
+          "title": " jpeg xr -&gt; ie11/edge"
         },
         {
-          "title": "[ ] jpeg 2000 -&gt; safari"
+          "title": " jpeg 2000 -&gt; safari"
         },
         {
-          "title": "[ ] Use jpg for photography, not png"
+          "title": " Use jpg for photography, not png"
         },
         {
-          "title": "[ ] Size images properly"
+          "title": " Size images properly"
         },
         {
-          "title": "[ ] Use srcsets for multiple image sizes"
+          "title": " Use srcsets for multiple image sizes"
         },
         {
-          "title": "[ ] Use the <code>&lt;picture&gt;</code> element to let the browser select the right image for a scenario"
+          "title": " Use the <code>&lt;picture&gt;</code> element to let the browser select the right image for a scenario"
         },
         {
-          "title": "[ ] Lazy load images below the fold (see <a href=\"https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video\">1</a>, <a href=\"https://imagekit.io/blog/lazy-loading-images-complete-guide\">2</a>)"
+          "title": " Lazy load images below the fold (see <a href=\"https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video\">1</a>, <a href=\"https://imagekit.io/blog/lazy-loading-images-complete-guide\">2</a>)"
         }
       ]
     },
@@ -107,55 +107,55 @@
       "topic": "1.3 CSS",
       "items": [
         {
-          "title": "[ ] Avoid using <code>!important</code>"
+          "title": " Avoid using <code>!important</code>"
         },
         {
-          "title": "[ ] Use svg instead of icon fonts like fontawesome"
+          "title": " Use svg instead of icon fonts like fontawesome"
         },
         {
-          "title": "[ ] Create svg sprites (or png sprites if svg are not available)"
+          "title": " Create svg sprites (or png sprites if svg are not available)"
         },
         {
-          "title": "[ ] Do not support olb browsers (remove too old prefixes)"
+          "title": " Do not support olb browsers (remove too old prefixes)"
         },
         {
-          "title": "[ ] Avoid expensive selectors when possible"
+          "title": " Avoid expensive selectors when possible"
         },
         {
-          "title": "[ ]  <code>border-radius</code>"
+          "title": "  <code>border-radius</code>"
         },
         {
-          "title": "[ ]  <code>box-shadow</code>"
+          "title": "  <code>box-shadow</code>"
         },
         {
-          "title": "[ ]  <code>transform</code>"
+          "title": "  <code>transform</code>"
         },
         {
-          "title": "[ ]  <code>filter</code>"
+          "title": "  <code>filter</code>"
         },
         {
-          "title": "[ ]  <code>:nth-child</code>"
+          "title": "  <code>:nth-child</code>"
         },
         {
-          "title": "[ ]  <code>position: fixed;</code>"
+          "title": "  <code>position: fixed;</code>"
         },
         {
-          "title": "[ ]  Partial matching: <code>[class^=\"wrap\"]</code>"
+          "title": "  Partial matching: <code>[class^=\"wrap\"]</code>"
         },
         {
-          "title": "[ ]  Don't use universal selectors"
+          "title": "  Don't use universal selectors"
         },
         {
-          "title": "[ ]  Avoid universal selectors like <code>*, [disabled], [type=“text”]</code>, etc. They are very expensive for the browser to match, as every element in the DOM must be checked."
+          "title": "  Avoid universal selectors like <code>*, [disabled], [type=“text”]</code>, etc. They are very expensive for the browser to match, as every element in the DOM must be checked."
         },
         {
-          "title": "[ ]  Avoid deeply nested dependent selectors"
+          "title": "  Avoid deeply nested dependent selectors"
         },
         {
-          "title": "[ ]  The descendant selector is very costly, as the browser must check for a match with every descendant element. On a complex web page, this can result in thousands and thousands (perhaps even more) of descendant selector searches."
+          "title": "  The descendant selector is very costly, as the browser must check for a match with every descendant element. On a complex web page, this can result in thousands and thousands (perhaps even more) of descendant selector searches."
         },
         {
-          "title": "[ ]  Use media queries to load files based on use case<p><code>css \n&lt;link href=\"style.css\" rel=\"stylesheet\" media=\"all\"&gt;\n&lt;link href=\"portrait.css\" rel=\"stylesheet\" media=\"orientation:portrait\"&gt;\n&lt;link href=\"print.css\" rel=\"stylesheet\" media=\"print\"&gt;\n&lt;link href=\"desktop.css\" rel=\"stylesheet\" media=\"(min-width: 720px)\"&gt;</code>\n- [ ] Investigate using functional css instead of custom styles (eg <a href=\"https://tailwindcss.com\">Tailwind</a>, <a href=\"https://tachyons.io\">Tachyons</a> etc. See more at https://css-tricks.com/need-css-utility-library)\n- [ ] If you are able to run (automated) builds do not include compiled css or js in your vcs code but only their sources</p>"
+          "title": "  Use media queries to load files based on use case<p><code>css \n&lt;link href=\"style.css\" rel=\"stylesheet\" media=\"all\"&gt;\n&lt;link href=\"portrait.css\" rel=\"stylesheet\" media=\"orientation:portrait\"&gt;\n&lt;link href=\"print.css\" rel=\"stylesheet\" media=\"print\"&gt;\n&lt;link href=\"desktop.css\" rel=\"stylesheet\" media=\"(min-width: 720px)\"&gt;</code>\n-  Investigate using functional css instead of custom styles (eg <a href=\"https://tailwindcss.com\">Tailwind</a>, <a href=\"https://tachyons.io\">Tachyons</a> etc. See more at https://css-tricks.com/need-css-utility-library)\n-  If you are able to run (automated) builds do not include compiled css or js in your vcs code but only their sources</p>"
         }
       ]
     },
@@ -163,16 +163,16 @@
       "topic": "1.4 JS",
       "items": [
         {
-          "title": "[ ] Bundles should always be minified"
+          "title": " Bundles should always be minified"
         },
         {
-          "title": "[ ] Bundles should have 0 comments, and all license text extracted to a separate file"
+          "title": " Bundles should have 0 comments, and all license text extracted to a separate file"
         },
         {
-          "title": "[ ] Use <a href=\"https://tagmanager.google.com\">Google Tag Manager</a> for 3rd party scripts like Google Analytics, FB Pixel etc"
+          "title": " Use <a href=\"https://tagmanager.google.com\">Google Tag Manager</a> for 3rd party scripts like Google Analytics, FB Pixel etc"
         },
         {
-          "title": "[ ] Move js on bottom of the html page"
+          "title": " Move js on bottom of the html page"
         }
       ]
     },
@@ -180,34 +180,34 @@
       "topic": "1.5 Assets",
       "items": [
         {
-          "title": "[ ]  All assets should be fingerprinted"
+          "title": "  All assets should be fingerprinted"
         },
         {
-          "title": "[ ]  All assets should have <code>Cache-Control: max-age=365000000, immutable</code> as a header"
+          "title": "  All assets should have <code>Cache-Control: max-age=365000000, immutable</code> as a header"
         },
         {
-          "title": "[ ]  Assets should be served over http/2"
+          "title": "  Assets should be served over http/2"
         },
         {
-          "title": "[ ]  Assets should only be served on a cookieless domain"
+          "title": "  Assets should only be served on a cookieless domain"
         },
         {
-          "title": "[ ]  All files should be cached by a CDN"
+          "title": "  All files should be cached by a CDN"
         },
         {
-          "title": "[ ]  Support Brotli compression if able"
+          "title": "  Support Brotli compression if able"
         },
         {
-          "title": "[ ]  15-30% smaller than gzip"
+          "title": "  15-30% smaller than gzip"
         },
         {
-          "title": "[ ]  Compress with gzip, or zopfli as a fallback to brotli"
+          "title": "  Compress with gzip, or zopfli as a fallback to brotli"
         },
         {
-          "title": "[ ]  Do not ship unused css, js"
+          "title": "  Do not ship unused css, js"
         },
         {
-          "title": "[ ]  Try to clone external js/css to local server and load them from there (eg Google Analytics script)"
+          "title": "  Try to clone external js/css to local server and load them from there (eg Google Analytics script)"
         }
       ]
     },
@@ -215,16 +215,16 @@
       "topic": "1.6 Fonts",
       "items": [
         {
-          "title": "[ ] Fonts should always load <code>woff2</code> first"
+          "title": " Fonts should always load <code>woff2</code> first"
         },
         {
-          "title": "[ ] <code>woff</code> for fallback"
+          "title": " <code>woff</code> for fallback"
         },
         {
-          "title": "[ ] Use <code>font-display: swap;</code> to allow the browser to use a fallback font while custom font files are being downloaded."
+          "title": " Use <code>font-display: swap;</code> to allow the browser to use a fallback font while custom font files are being downloaded."
         },
         {
-          "title": "[ ] eot or truetype is only needed for <code>IE &lt; 10</code>"
+          "title": " eot or truetype is only needed for <code>IE &lt; 10</code>"
         }
       ]
     },
@@ -232,16 +232,16 @@
       "topic": "1.7 PWA",
       "items": [
         {
-          "title": "[ ] Use a service worker to cache assets"
+          "title": " Use a service worker to cache assets"
         },
         {
-          "title": "[ ] Use a service worker to prefetch pages users will most likely navigate to next"
+          "title": " Use a service worker to prefetch pages users will most likely navigate to next"
         },
         {
-          "title": "[ ] Support offline, and spotty networks"
+          "title": " Support offline, and spotty networks"
         },
         {
-          "title": "[ ] Make sure that the tracking or other third party js/css files (eg Google Analytics etc) are not included on the PWA"
+          "title": " Make sure that the tracking or other third party js/css files (eg Google Analytics etc) are not included on the PWA"
         }
       ]
     },
@@ -249,7 +249,7 @@
       "topic": "1.8 Network",
       "items": [
         {
-          "title": "[ ] Test site with Network Throttling. See a <a href=\"https://gist.github.com/theodorosploumis/fd4086ee58369b68aea6b0782dc96a2e\">list of common Network speed</a>"
+          "title": " Test site with Network Throttling. See a <a href=\"https://gist.github.com/theodorosploumis/fd4086ee58369b68aea6b0782dc96a2e\">list of common Network speed</a>"
         }
       ]
     },
@@ -257,7 +257,7 @@
       "topic": "1.9 Server",
       "items": [
         {
-          "title": "[ ] Prefer Nginx over Apache2 (at least as a proxy)<hr/>"
+          "title": " Prefer Nginx over Apache2 (at least as a proxy)<hr/>"
         }
       ]
     },
@@ -838,6 +838,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

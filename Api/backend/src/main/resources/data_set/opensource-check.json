@@ -89,37 +89,37 @@
           "topic": "Documentation",
           "items": [
             {
-              "title": "[ ] Has a README"
+              "title": " Has a README"
             },
             {
-              "title": "[ ] Has a Title"
+              "title": " Has a Title"
             },
             {
-              "title": "[ ] Has an Install section"
+              "title": " Has an Install section"
             },
             {
-              "title": "[ ] Has a Usage section"
+              "title": " Has a Usage section"
             },
             {
-              "title": "[ ] Has a License"
+              "title": " Has a License"
             },
             {
-              "title": "[ ] Has a Code of Conduct"
+              "title": " Has a Code of Conduct"
             },
             {
-              "title": "[ ] Has Contributing Guidelines"
+              "title": " Has Contributing Guidelines"
             },
             {
-              "title": "[ ] Has an Issue template"
+              "title": " Has an Issue template"
             },
             {
-              "title": "[ ] Has a Pull Request template"
+              "title": " Has a Pull Request template"
             },
             {
-              "title": "[ ] Has a Changelog"
+              "title": " Has a Changelog"
             },
             {
-              "title": "[ ] Has Examples"
+              "title": " Has Examples"
             }
           ]
         },
@@ -127,37 +127,37 @@
           "topic": "Development",
           "items": [
             {
-              "title": "[ ] Has a package.json"
+              "title": " Has a package.json"
             },
             {
-              "title": "[ ] Has org namespace, if applicable"
+              "title": " Has org namespace, if applicable"
             },
             {
-              "title": "[ ] Has a version"
+              "title": " Has a version"
             },
             {
-              "title": "[ ] Has a description"
+              "title": " Has a description"
             },
             {
-              "title": "[ ] Has a main or bin"
+              "title": " Has a main or bin"
             },
             {
-              "title": "[ ] Has a link to git repository"
+              "title": " Has a link to git repository"
             },
             {
-              "title": "[ ] Has contributors"
+              "title": " Has contributors"
             },
             {
-              "title": "[ ] Has a license"
+              "title": " Has a license"
             },
             {
-              "title": "[ ] Has a .gitignore"
+              "title": " Has a .gitignore"
             },
             {
-              "title": "[ ] Has a linter"
+              "title": " Has a linter"
             },
             {
-              "title": "[ ] Has a test runner"
+              "title": " Has a test runner"
             }
           ]
         }
@@ -231,6 +231,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

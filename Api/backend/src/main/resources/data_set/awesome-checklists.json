@@ -194,16 +194,16 @@
           "title": "<p>Thanks to <a href=\"https://help.github.com/articles/basic-writing-and-formatting-syntax/\">Github Flavoured Markdown</a>, you can <a href=\"https://github.com/blog/1825-task-lists-in-all-markdown-documents\">create Task lists with ease</a>.\n<code>- Item 1\n - Item 2\n - [x] Item 3 (use an 'x' to put a checkmark)\n - Item 4</code>\nWhich looks like this once rendered:</p>"
         },
         {
-          "title": "[ ] Item 1"
+          "title": " Item 1"
         },
         {
-          "title": "[ ] Item 2"
+          "title": " Item 2"
         },
         {
           "title": "[x] Item 3"
         },
         {
-          "title": "[ ] Item 4<p>As you can see, they render as read-only checkboxes in Markdown files. People with write permissions in the repository can edit the file to select or unselect the checkboxes.</p><p><strong><a href=\"#table-of-contents\">:arrow_up: back to top</a></strong></p>"
+          "title": " Item 4<p>As you can see, they render as read-only checkboxes in Markdown files. People with write permissions in the repository can edit the file to select or unselect the checkboxes.</p><p><strong><a href=\"#table-of-contents\">:arrow_up: back to top</a></strong></p>"
         }
       ]
     },
@@ -223,6 +223,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

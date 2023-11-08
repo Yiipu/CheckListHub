@@ -68,16 +68,16 @@
       "topic": "A. Data Collection",
       "items": [
         {
-          "title": "[ ] <strong>A.1 Informed consent</strong>: If there are human subjects, have they given informed consent, where subjects affirmatively opt-in and have a clear understanding of the data uses to which they consent?"
+          "title": " <strong>A.1 Informed consent</strong>: If there are human subjects, have they given informed consent, where subjects affirmatively opt-in and have a clear understanding of the data uses to which they consent?"
         },
         {
-          "title": "[ ] <strong>A.2 Collection bias</strong>: Have we considered sources of bias that could be introduced during data collection and survey design and taken steps to mitigate those?"
+          "title": " <strong>A.2 Collection bias</strong>: Have we considered sources of bias that could be introduced during data collection and survey design and taken steps to mitigate those?"
         },
         {
-          "title": "[ ] <strong>A.3 Limit PII exposure</strong>: Have we considered ways to minimize exposure of personally identifiable information (PII) for example through anonymization or not collecting information that isn't relevant for analysis?"
+          "title": " <strong>A.3 Limit PII exposure</strong>: Have we considered ways to minimize exposure of personally identifiable information (PII) for example through anonymization or not collecting information that isn't relevant for analysis?"
         },
         {
-          "title": "[ ] <strong>A.4 Downstream bias mitigation</strong>: Have we considered ways to enable testing downstream results for biased outcomes (e.g., collecting data on protected group status like race or gender)?"
+          "title": " <strong>A.4 Downstream bias mitigation</strong>: Have we considered ways to enable testing downstream results for biased outcomes (e.g., collecting data on protected group status like race or gender)?"
         }
       ]
     },
@@ -85,13 +85,13 @@
       "topic": "B. Data Storage",
       "items": [
         {
-          "title": "[ ] <strong>B.1 Data security</strong>: Do we have a plan to protect and secure data (e.g., encryption at rest and in transit, access controls on internal users and third parties, access logs, and up-to-date software)?"
+          "title": " <strong>B.1 Data security</strong>: Do we have a plan to protect and secure data (e.g., encryption at rest and in transit, access controls on internal users and third parties, access logs, and up-to-date software)?"
         },
         {
-          "title": "[ ] <strong>B.2 Right to be forgotten</strong>: Do we have a mechanism through which an individual can request their personal information be removed?"
+          "title": " <strong>B.2 Right to be forgotten</strong>: Do we have a mechanism through which an individual can request their personal information be removed?"
         },
         {
-          "title": "[ ] <strong>B.3 Data retention plan</strong>: Is there a schedule or plan to delete the data after it is no longer needed?"
+          "title": " <strong>B.3 Data retention plan</strong>: Is there a schedule or plan to delete the data after it is no longer needed?"
         }
       ]
     },
@@ -99,19 +99,19 @@
       "topic": "C. Analysis",
       "items": [
         {
-          "title": "[ ] <strong>C.1 Missing perspectives</strong>: Have we sought to address blindspots in the analysis through engagement with relevant stakeholders (e.g., checking assumptions and discussing implications with affected communities and subject matter experts)?"
+          "title": " <strong>C.1 Missing perspectives</strong>: Have we sought to address blindspots in the analysis through engagement with relevant stakeholders (e.g., checking assumptions and discussing implications with affected communities and subject matter experts)?"
         },
         {
-          "title": "[ ] <strong>C.2 Dataset bias</strong>: Have we examined the data for possible sources of bias and taken steps to mitigate or address these biases (e.g., stereotype perpetuation, confirmation bias, imbalanced classes, or omitted confounding variables)?"
+          "title": " <strong>C.2 Dataset bias</strong>: Have we examined the data for possible sources of bias and taken steps to mitigate or address these biases (e.g., stereotype perpetuation, confirmation bias, imbalanced classes, or omitted confounding variables)?"
         },
         {
-          "title": "[ ] <strong>C.3 Honest representation</strong>: Are our visualizations, summary statistics, and reports designed to honestly represent the underlying data?"
+          "title": " <strong>C.3 Honest representation</strong>: Are our visualizations, summary statistics, and reports designed to honestly represent the underlying data?"
         },
         {
-          "title": "[ ] <strong>C.4 Privacy in analysis</strong>: Have we ensured that data with PII are not used or displayed unless necessary for the analysis?"
+          "title": " <strong>C.4 Privacy in analysis</strong>: Have we ensured that data with PII are not used or displayed unless necessary for the analysis?"
         },
         {
-          "title": "[ ] <strong>C.5 Auditability</strong>: Is the process of generating the analysis well documented and reproducible if we discover issues in the future?"
+          "title": " <strong>C.5 Auditability</strong>: Is the process of generating the analysis well documented and reproducible if we discover issues in the future?"
         }
       ]
     },
@@ -119,19 +119,19 @@
       "topic": "D. Modeling",
       "items": [
         {
-          "title": "[ ] <strong>D.1 Proxy discrimination</strong>: Have we ensured that the model does not rely on variables or proxies for variables that are unfairly discriminatory?"
+          "title": " <strong>D.1 Proxy discrimination</strong>: Have we ensured that the model does not rely on variables or proxies for variables that are unfairly discriminatory?"
         },
         {
-          "title": "[ ] <strong>D.2 Fairness across groups</strong>: Have we tested model results for fairness with respect to different affected groups (e.g., tested for disparate error rates)?"
+          "title": " <strong>D.2 Fairness across groups</strong>: Have we tested model results for fairness with respect to different affected groups (e.g., tested for disparate error rates)?"
         },
         {
-          "title": "[ ] <strong>D.3 Metric selection</strong>: Have we considered the effects of optimizing for our defined metrics and considered additional metrics?"
+          "title": " <strong>D.3 Metric selection</strong>: Have we considered the effects of optimizing for our defined metrics and considered additional metrics?"
         },
         {
-          "title": "[ ] <strong>D.4 Explainability</strong>: Can we explain in understandable terms a decision the model made in cases where a justification is needed?"
+          "title": " <strong>D.4 Explainability</strong>: Can we explain in understandable terms a decision the model made in cases where a justification is needed?"
         },
         {
-          "title": "[ ] <strong>D.5 Communicate bias</strong>: Have we communicated the shortcomings, limitations, and biases of the model to relevant stakeholders in ways that can be generally understood?"
+          "title": " <strong>D.5 Communicate bias</strong>: Have we communicated the shortcomings, limitations, and biases of the model to relevant stakeholders in ways that can be generally understood?"
         }
       ]
     },
@@ -139,16 +139,16 @@
       "topic": "E. Deployment",
       "items": [
         {
-          "title": "[ ] <strong>E.1 Monitoring and evaluation</strong>: How are we planning to monitor the model and its impacts after it is deployed (e.g., performance monitoring, regular audit of sample predictions, human review of high-stakes decisions, reviewing downstream impacts of errors or low-confidence decisions, testing for concept drift)?"
+          "title": " <strong>E.1 Monitoring and evaluation</strong>: How are we planning to monitor the model and its impacts after it is deployed (e.g., performance monitoring, regular audit of sample predictions, human review of high-stakes decisions, reviewing downstream impacts of errors or low-confidence decisions, testing for concept drift)?"
         },
         {
-          "title": "[ ] <strong>E.2 Redress</strong>: Have we discussed with our organization a plan for response if users are harmed by the results (e.g., how does the data science team evaluate these cases and update analysis and models to prevent future harm)?"
+          "title": " <strong>E.2 Redress</strong>: Have we discussed with our organization a plan for response if users are harmed by the results (e.g., how does the data science team evaluate these cases and update analysis and models to prevent future harm)?"
         },
         {
-          "title": "[ ] <strong>E.3 Roll back</strong>: Is there a way to turn off or roll back the model in production if necessary?"
+          "title": " <strong>E.3 Roll back</strong>: Is there a way to turn off or roll back the model in production if necessary?"
         },
         {
-          "title": "[ ] <strong>E.4 Unintended use</strong>: Have we taken steps to identify and prevent unintended uses and abuse of the model and do we have a plan to monitor these once the model is deployed?<p><em>Data Science Ethics Checklist generated with <a href=\"http://deon.drivendata.org\">deon</a>.</em></p><hr class=\"checklist-buffer\"/>"
+          "title": " <strong>E.4 Unintended use</strong>: Have we taken steps to identify and prevent unintended uses and abuse of the model and do we have a plan to monitor these once the model is deployed?<p><em>Data Science Ethics Checklist generated with <a href=\"http://deon.drivendata.org\">deon</a>.</em></p><hr class=\"checklist-buffer\"/>"
         }
       ]
     },
@@ -209,6 +209,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

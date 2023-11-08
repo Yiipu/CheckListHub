@@ -13,49 +13,49 @@
       "topic": "Laptop or computer security",
       "items": [
         {
-          "title": "[ ] Use a strong complex password to login to your computer"
+          "title": " Use a strong complex password to login to your computer"
         },
         {
-          "title": "[ ] Configure your computer to require a password after 5 minutes of inactivity"
+          "title": " Configure your computer to require a password after 5 minutes of inactivity"
         },
         {
-          "title": "[ ] Configure your computer to require a password on wake"
+          "title": " Configure your computer to require a password on wake"
         },
         {
-          "title": "[ ] Learn the keyboard shortcut to lock your computer - <a href=\"https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts\">Windows logo + L</a> (Windows), <a href=\"http://www.macworld.co.uk/how-to/mac/how-lock-mac-3639053/\">control + shift + power/escape</a> (Mac), or <a href=\"https://askubuntu.com/questions/126782/keyboard-shortcut-for-lockscreen-not-working\">ctrl + alt + L</a> (Linux)"
+          "title": " Learn the keyboard shortcut to lock your computer - <a href=\"https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts\">Windows logo + L</a> (Windows), <a href=\"http://www.macworld.co.uk/how-to/mac/how-lock-mac-3639053/\">control + shift + power/escape</a> (Mac), or <a href=\"https://askubuntu.com/questions/126782/keyboard-shortcut-for-lockscreen-not-working\">ctrl + alt + L</a> (Linux)"
         },
         {
-          "title": "[ ] Mac: <a href=\"http://osxdaily.com/2011/02/10/lock-mac-desktop-via-menu/\">add keychain status to your menu bar</a> (<code>open /Applications/Utilities/Keychain\\ Access.app/Contents/Resources/Keychain.menu/</code>) for easy screen locking"
+          "title": " Mac: <a href=\"http://osxdaily.com/2011/02/10/lock-mac-desktop-via-menu/\">add keychain status to your menu bar</a> (<code>open /Applications/Utilities/Keychain\\ Access.app/Contents/Resources/Keychain.menu/</code>) for easy screen locking"
         },
         {
-          "title": "[ ] Make a habit of locking your computer when you step away from it"
+          "title": " Make a habit of locking your computer when you step away from it"
         },
         {
-          "title": "[ ] Encrypt your hard drive via <a href=\"https://support.apple.com/en-us/HT204837\">FileVault</a> (Mac), <a href=\"http://www.windowscentral.com/how-use-bitlocker-encryption-windows-10\">BitLocker</a> (Windows), or <a href=\"http://www.pavelkogan.com/2014/05/23/luks-full-disk-encryption/\">LUKS</a> (Linux)"
+          "title": " Encrypt your hard drive via <a href=\"https://support.apple.com/en-us/HT204837\">FileVault</a> (Mac), <a href=\"http://www.windowscentral.com/how-use-bitlocker-encryption-windows-10\">BitLocker</a> (Windows), or <a href=\"http://www.pavelkogan.com/2014/05/23/luks-full-disk-encryption/\">LUKS</a> (Linux)"
         },
         {
-          "title": "[ ] Enable your operating system's firewall"
+          "title": " Enable your operating system's firewall"
         },
         {
-          "title": "[ ] Mac: Enable <a href=\"http://osxdaily.com/2015/11/18/enable-stealth-mode-mac-os-x-firewall/\">stealth mode</a>"
+          "title": " Mac: Enable <a href=\"http://osxdaily.com/2015/11/18/enable-stealth-mode-mac-os-x-firewall/\">stealth mode</a>"
         },
         {
-          "title": "[ ] Enable a device tracking and recovery program like <a href=\"https://support.apple.com/explore/find-my-iphone-ipad-mac-watch\">Find My Mac</a> or <a href=\"https://preyproject.com/\">Prey</a>"
+          "title": " Enable a device tracking and recovery program like <a href=\"https://support.apple.com/explore/find-my-iphone-ipad-mac-watch\">Find My Mac</a> or <a href=\"https://preyproject.com/\">Prey</a>"
         },
         {
-          "title": "[ ] Securely store and encrypt your physical backups"
+          "title": " Securely store and encrypt your physical backups"
         },
         {
-          "title": "[ ] Update your operating system to the latest version"
+          "title": " Update your operating system to the latest version"
         },
         {
-          "title": "[ ] Update your applications to the latest versions"
+          "title": " Update your applications to the latest versions"
         },
         {
-          "title": "[ ] Mac: Don't use your Apple ID to login to your computer, <a href=\"https://www.wired.com/2012/08/apple-amazon-mat-honan-hacking/\">if hacked, it can be used to remotely wipe your Macbook</a>. Instead use a regular Macbook login."
+          "title": " Mac: Don't use your Apple ID to login to your computer, <a href=\"https://www.wired.com/2012/08/apple-amazon-mat-honan-hacking/\">if hacked, it can be used to remotely wipe your Macbook</a>. Instead use a regular Macbook login."
         },
         {
-          "title": "[ ] Mac: Don't forget to frequently <code>brew update &amp;&amp; brew upgrade</code> for Homebrew"
+          "title": " Mac: Don't forget to frequently <code>brew update &amp;&amp; brew upgrade</code> for Homebrew"
         }
       ]
     },
@@ -63,40 +63,40 @@
       "topic": "Smartphone security",
       "items": [
         {
-          "title": "[ ] Use a long passcode on your phone - 12+ characters, preferably alphanumeric"
+          "title": " Use a long passcode on your phone - 12+ characters, preferably alphanumeric"
         },
         {
-          "title": "[ ] Require a passcode immediately after sleep"
+          "title": " Require a passcode immediately after sleep"
         },
         {
-          "title": "[ ] Enable <a href=\"https://www.apple.com/icloud/find-my-iphone.html\">Find My iPhone</a> or <a href=\"https://www.google.com/android/devicemanager\">Android Device Manager</a> to use remote wipe if your phone is stolen or lost"
+          "title": " Enable <a href=\"https://www.apple.com/icloud/find-my-iphone.html\">Find My iPhone</a> or <a href=\"https://www.google.com/android/devicemanager\">Android Device Manager</a> to use remote wipe if your phone is stolen or lost"
         },
         {
-          "title": "[ ] iPhone: Enable erase data after 10 bad passcode attempts (take good backups!)"
+          "title": " iPhone: Enable erase data after 10 bad passcode attempts (take good backups!)"
         },
         {
-          "title": "[ ] iPhone: If you're really, really paranoid don't enable Touch ID"
+          "title": " iPhone: If you're really, really paranoid don't enable Touch ID"
         },
         {
-          "title": "[ ] iPhone: Install and enable <a href=\"https://itunes.apple.com/us/app/ka-block!-block-ads-tracking/id1037173557?mt=8\">Ka-Block!</a> for mobile Safari to enable content blocking (ad blocking) on your phone. Use Safari with Ka-Block! instead of the Chrome iOS app for safer mobile web browsing."
+          "title": " iPhone: Install and enable <a href=\"https://itunes.apple.com/us/app/ka-block!-block-ads-tracking/id1037173557?mt=8\">Ka-Block!</a> for mobile Safari to enable content blocking (ad blocking) on your phone. Use Safari with Ka-Block! instead of the Chrome iOS app for safer mobile web browsing."
         },
         {
-          "title": "[ ] iPhone: Install and use <a href=\"https://itunes.apple.com/us/app/firefox-focus-privacy-browser/id1055677337?mt=8\">Firefox Focus</a> to enable tracking protection and make it easy to delete your browsing history"
+          "title": " iPhone: Install and use <a href=\"https://itunes.apple.com/us/app/firefox-focus-privacy-browser/id1055677337?mt=8\">Firefox Focus</a> to enable tracking protection and make it easy to delete your browsing history"
         },
         {
-          "title": "[ ] Android: Don't use <a href=\"http://www.androidauthority.com/lock-pattern-predictable-636267/\">common and predictable lock patterns</a>"
+          "title": " Android: Don't use <a href=\"http://www.androidauthority.com/lock-pattern-predictable-636267/\">common and predictable lock patterns</a>"
         },
         {
-          "title": "[ ] Android: Encrypt your hard disk"
+          "title": " Android: Encrypt your hard disk"
         },
         {
-          "title": "[ ] Android: Install and enable the <a href=\"https://addons.mozilla.org/en-US/android/addon/ublock-origin/\">uBlock Origin add-on</a> for Firefox on Android for safer mobile web browsing"
+          "title": " Android: Install and enable the <a href=\"https://addons.mozilla.org/en-US/android/addon/ublock-origin/\">uBlock Origin add-on</a> for Firefox on Android for safer mobile web browsing"
         },
         {
-          "title": "[ ] Frequently update your operating system and apps, especially security patches"
+          "title": " Frequently update your operating system and apps, especially security patches"
         },
         {
-          "title": "[ ] Frequently backup your phone and <a href=\"https://support.apple.com/en-us/HT205220\">encrypt your backups</a>"
+          "title": " Frequently backup your phone and <a href=\"https://support.apple.com/en-us/HT205220\">encrypt your backups</a>"
         }
       ]
     },
@@ -104,16 +104,16 @@
       "topic": "Network security",
       "items": [
         {
-          "title": "[ ] Find a reputable VPN service with a laptop &amp; mobile phone client to use for hostile networks (e.g. unencrypted wifi) or as an everyday privacy guard"
+          "title": " Find a reputable VPN service with a laptop &amp; mobile phone client to use for hostile networks (e.g. unencrypted wifi) or as an everyday privacy guard"
         },
         {
-          "title": "[ ] Install the <a href=\"https://www.eff.org/Https-everywhere\">HTTPS Everywhere</a> extension in your browser to prevent inadvertent HTTP connections"
+          "title": " Install the <a href=\"https://www.eff.org/Https-everywhere\">HTTPS Everywhere</a> extension in your browser to prevent inadvertent HTTP connections"
         },
         {
-          "title": "[ ] Install an ad blocker like <a href=\"https://github.com/gorhill/uBlock\">uBlock Origin</a> (<a href=\"https://addons.mozilla.org/firefox/addon/ublock-origin/\">Firefox</a>, <a href=\"https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en\">Chrome</a> or <a href=\"https://github.com/dgraham/Ka-Block\">Ka-Block!</a> (<a href=\"https://safari-extensions.apple.com/details/?id=com.kablock.osx-UYW4V22L7E\">Safari</a>) - internet ads are a common malware vector"
+          "title": " Install an ad blocker like <a href=\"https://github.com/gorhill/uBlock\">uBlock Origin</a> (<a href=\"https://addons.mozilla.org/firefox/addon/ublock-origin/\">Firefox</a>, <a href=\"https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en\">Chrome</a> or <a href=\"https://github.com/dgraham/Ka-Block\">Ka-Block!</a> (<a href=\"https://safari-extensions.apple.com/details/?id=com.kablock.osx-UYW4V22L7E\">Safari</a>) - internet ads are a common malware vector"
         },
         {
-          "title": "[ ] Enable <a href=\"http://arstechnica.com/information-technology/2016/04/edge-to-follow-chromes-lead-make-flash-ads-click-to-play/\">plugin click-to-play</a> on all your browsers, not just your default browser, to protect against Adobe Flash vulnerabilities"
+          "title": " Enable <a href=\"http://arstechnica.com/information-technology/2016/04/edge-to-follow-chromes-lead-make-flash-ads-click-to-play/\">plugin click-to-play</a> on all your browsers, not just your default browser, to protect against Adobe Flash vulnerabilities"
         }
       ]
     },
@@ -124,31 +124,31 @@
           "title": "<p>A strong complex password is at least 16 characters long (the longer the better) and has several special characters (<code>!@#$%^&amp;*()</code>). Two factor authentication (2FA) protects your account even more than a strong password.</p>"
         },
         {
-          "title": "[ ] Use a password manager like <a href=\"https://1password.com/\">1Password</a> or <a href=\"https://spideroak.com/solutions/encryptr\">Encryptr</a>"
+          "title": " Use a password manager like <a href=\"https://1password.com/\">1Password</a> or <a href=\"https://spideroak.com/solutions/encryptr\">Encryptr</a>"
         },
         {
-          "title": "[ ] Use a <a href=\"http://world.std.com/~reinhold/diceware.html\">diceware passphrase</a> as the encryption passphrase for your password manager"
+          "title": " Use a <a href=\"http://world.std.com/~reinhold/diceware.html\">diceware passphrase</a> as the encryption passphrase for your password manager"
         },
         {
-          "title": "[ ] Add all of your account usernames and passwords to your password manager"
+          "title": " Add all of your account usernames and passwords to your password manager"
         },
         {
-          "title": "[ ] Rotate all of your old or insecure passwords with strong passwords generated automatically via 1Password"
+          "title": " Rotate all of your old or insecure passwords with strong passwords generated automatically via 1Password"
         },
         {
-          "title": "[ ] Make sure every password for every account is unique"
+          "title": " Make sure every password for every account is unique"
         },
         {
-          "title": "[ ] Replace any accurate questions to security question with false answers (store false answers in 1Password)"
+          "title": " Replace any accurate questions to security question with false answers (store false answers in 1Password)"
         },
         {
-          "title": "[ ] Download a 2FA app on your smartphone like <a href=\"https://en.wikipedia.org/wiki/Google_Authenticator\">Google Authenticator</a>"
+          "title": " Download a 2FA app on your smartphone like <a href=\"https://en.wikipedia.org/wiki/Google_Authenticator\">Google Authenticator</a>"
         },
         {
-          "title": "[ ] Enable 2FA or two step verification on every account where available (see 2FA audit section) - add the software token to both your smartphone and <a href=\"https://support.1password.com/one-time-passwords/\">1Password</a>"
+          "title": " Enable 2FA or two step verification on every account where available (see 2FA audit section) - add the software token to both your smartphone and <a href=\"https://support.1password.com/one-time-passwords/\">1Password</a>"
         },
         {
-          "title": "[ ] <strong>Immediately store your 2FA backup and recovery codes in 1Password</strong>"
+          "title": " <strong>Immediately store your 2FA backup and recovery codes in 1Password</strong>"
         }
       ]
     },
@@ -159,37 +159,36 @@
           "title": "<p>Make sure 2FA or two step verification is enabled on all of the following accounts:</p>"
         },
         {
-          "title": "[ ] <a href=\"https://myaccount.google.com/security/signinoptions/two-step-verification\">Google</a>"
+          "title": " <a href=\"https://myaccount.google.com/security/signinoptions/two-step-verification\">Google</a>"
         },
         {
-          "title": "[ ] Amazon"
+          "title": " Amazon"
         },
         {
-          "title": "[ ] Facebook - <a href=\"https://www.facebook.com/settings?tab=security&amp;section=approvals\">enable Login Approval</a>"
+          "title": " Facebook - <a href=\"https://www.facebook.com/settings?tab=security&amp;section=approvals\">enable Login Approval</a>"
         },
         {
-          "title": "[ ] <a href=\"https://github.com/settings/security\">GitHub</a>"
+          "title": " <a href=\"https://github.com/settings/security\">GitHub</a>"
         },
         {
-          "title": "[ ] <a href=\"https://www.dropbox.com/account/#security\">Dropbox</a>"
+          "title": " <a href=\"https://www.dropbox.com/account/#security\">Dropbox</a>"
         },
         {
-          "title": "[ ] Apple ID"
+          "title": " Apple ID"
         },
         {
-          "title": "[ ] Slack - all of your Slack teams!"
+          "title": " Slack - all of your Slack teams!"
         },
         {
-          "title": "[ ] Twitter - two step verification with SMS"
+          "title": " Twitter - two step verification with SMS"
         },
         {
-          "title": "[ ] Yahoo! - two step verification with SMS"
+          "title": " Yahoo! - two step verification with SMS"
         },
         {
-          "title": "[ ] LinkedIn - two step verification with SMS<p>This is an incomplete list! For more information about two factor authentication, see <a href=\"https://twofactorauth.org/\">twofactorauth.org</a>, <a href=\"https://www.turnon2fa.com/\">Turn It On</a>, and <a href=\"https://www.lockdownyourlogin.com/\">#LockDownURLogin</a>.</p>"
+          "title": " LinkedIn - two step verification with SMS<p>This is an incomplete list! For more information about two factor authentication, see <a href=\"https://twofactorauth.org/\">twofactorauth.org</a>, <a href=\"https://www.turnon2fa.com/\">Turn It On</a>, and <a href=\"https://www.lockdownyourlogin.com/\">#LockDownURLogin</a>.</p>"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

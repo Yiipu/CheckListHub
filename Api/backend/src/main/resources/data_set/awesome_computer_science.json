@@ -41,7 +41,7 @@
       "topic": "Digital Electronics",
       "items": [
         {
-          "title": "[ ] <strong><a href=\"http://www.uop.edu.pk/ocontents/ELEC-DIGE-S3%20Boolean%20Algebra%20Laws%20.pdf\">Boolean Algebra</a></strong>"
+          "title": " <strong><a href=\"http://www.uop.edu.pk/ocontents/ELEC-DIGE-S3%20Boolean%20Algebra%20Laws%20.pdf\">Boolean Algebra</a></strong>"
         },
         {
           "title": "Number System"
@@ -59,7 +59,7 @@
           "title": "<p>k-maps</p>"
         },
         {
-          "title": "<p>[ ] <strong>Hardware</strong></p>"
+          "title": "<p> <strong>Hardware</strong></p>"
         },
         {
           "title": "Logic Gates"
@@ -88,7 +88,7 @@
       "topic": "Computer Organization and Architecture",
       "items": [
         {
-          "title": "[ ] <strong>Computer Organization</strong>"
+          "title": " <strong>Computer Organization</strong>"
         },
         {
           "title": "Address Bus, Data Bus"
@@ -109,7 +109,7 @@
           "title": "<p>Input - Output Devices</p>"
         },
         {
-          "title": "<p>[ ] <strong>Computer Architecture</strong></p>"
+          "title": "<p> <strong>Computer Architecture</strong></p>"
         },
         {
           "title": "Stack"
@@ -147,7 +147,7 @@
       "topic": "Theory of Computation and Automata",
       "items": [
         {
-          "title": "[ ] <strong>Automata and Languages</strong>"
+          "title": " <strong>Automata and Languages</strong>"
         },
         {
           "title": "NFA - DFA - NDFA"
@@ -183,7 +183,7 @@
       "topic": "Compiler Design",
       "items": [
         {
-          "title": "[ ] <strong>Compiler Design</strong>"
+          "title": " <strong>Compiler Design</strong>"
         },
         {
           "title": "Lexical analysis"
@@ -221,7 +221,7 @@
       "topic": "Programming",
       "items": [
         {
-          "title": "<p>[ ] <strong><a href=\"https://codescracker.com/c/\">Learn C</a></strong>\n    &gt; The language almost every computer knows</p>"
+          "title": "<p> <strong><a href=\"https://codescracker.com/c/\">Learn C</a></strong>\n    &gt; The language almost every computer knows</p>"
         },
         {
           "title": "<a href=\"https://www.cs.fsu.edu/~myers/c++/notes/basics1.html\">Character constants, escape sequences, string constants</a>"
@@ -263,7 +263,7 @@
           "title": "<a href=\"https://pubs.opengroup.org/onlinepubs/009695399/basedefs/math.h.html\"><math.h></math.h></a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong><a href=\"https://www.cs.nmsu.edu/~jcook/tags/c/c++/\">C++</a></strong> (You can try <strong><a href=\"https://docs.python.org/3/tutorial/index.html\">Python</a></strong> for same topics)\n    &gt; Used in almost everything from Games to Browsers to Machine learning and beyond</p>"
+          "title": "<p> <strong><a href=\"https://www.cs.nmsu.edu/~jcook/tags/c/c++/\">C++</a></strong> (You can try <strong><a href=\"https://docs.python.org/3/tutorial/index.html\">Python</a></strong> for same topics)\n    &gt; Used in almost everything from Games to Browsers to Machine learning and beyond</p>"
         },
         {
           "title": "<a href=\"https://google.github.io/styleguide/cppguide.html\">Everything mentioned in C</a>"
@@ -316,22 +316,22 @@
           "title": "<strong>stack</strong> and <strong>queue</strong> and <strong>set</strong>"
         },
         {
-          "title": "[ ] <strong><a href=\"http://math.hws.edu/eck/cs225/s03/binary_trees/\">Trees</a></strong> and <strong>Tries</strong>"
+          "title": " <strong><a href=\"http://math.hws.edu/eck/cs225/s03/binary_trees/\">Trees</a></strong> and <strong>Tries</strong>"
         },
         {
-          "title": "[ ] Self Balancing Trees"
+          "title": " Self Balancing Trees"
         },
         {
-          "title": "[ ] n-ary Trees"
+          "title": " n-ary Trees"
         },
         {
-          "title": "[ ] 2-3 Trees</li>\n</ul>"
+          "title": " 2-3 Trees</li>\n</ul>"
         },
         {
-          "title": "[ ] <strong><a href=\"http://www-h.eng.cam.ac.uk/help/tpl/talks/C++graphs.html\">Graphs</a></strong>"
+          "title": " <strong><a href=\"http://www-h.eng.cam.ac.uk/help/tpl/talks/C++graphs.html\">Graphs</a></strong>"
         },
         {
-          "title": "[ ] Adjacency matrix vs Adjacency list"
+          "title": " Adjacency matrix vs Adjacency list"
         }
       ]
     },
@@ -339,40 +339,40 @@
       "topic": "Algorithms",
       "items": [
         {
-          "title": "[ ] <strong>Searching</strong>"
+          "title": " <strong>Searching</strong>"
         },
         {
-          "title": "[ ] Breadth First Search"
+          "title": " Breadth First Search"
         },
         {
-          "title": "[ ] Depth First Search</li>\n</ul>"
+          "title": " Depth First Search</li>\n</ul>"
         },
         {
-          "title": "[ ] <strong><a href=\"https://en.wikipedia.org/wiki/Sorting_algorithm\">Sorting</a></strong>"
+          "title": " <strong><a href=\"https://en.wikipedia.org/wiki/Sorting_algorithm\">Sorting</a></strong>"
         },
         {
-          "title": "[ ] Merge Sort"
+          "title": " Merge Sort"
         },
         {
-          "title": "[ ] Quick Sort"
+          "title": " Quick Sort"
         },
         {
-          "title": "[ ] Insertion Sort"
+          "title": " Insertion Sort"
         },
         {
-          "title": "[ ] Selection Sort</li>\n</ul>"
+          "title": " Selection Sort</li>\n</ul>"
         },
         {
-          "title": "[ ] <strong>Graph Traversal</strong>"
+          "title": " <strong>Graph Traversal</strong>"
         },
         {
-          "title": "[ ] Minimum Spanning Trees"
+          "title": " Minimum Spanning Trees"
         },
         {
-          "title": "[ ] Shortest Paths</li>\n</ul>"
+          "title": " Shortest Paths</li>\n</ul>"
         },
         {
-          "title": "[ ] <strong>space-time Complexity</strong>"
+          "title": " <strong>space-time Complexity</strong>"
         }
       ]
     },
@@ -380,13 +380,13 @@
       "topic": "Artificial Intelligence",
       "items": [
         {
-          "title": "[ ] <strong>Knowledge Representation</strong> and <strong>Reasoning</strong>"
+          "title": " <strong>Knowledge Representation</strong> and <strong>Reasoning</strong>"
         },
         {
-          "title": "[ ] <strong>State Space</strong>"
+          "title": " <strong>State Space</strong>"
         },
         {
-          "title": "[ ] <strong>Search</strong>"
+          "title": " <strong>Search</strong>"
         },
         {
           "title": "<a href=\"https://www.javatpoint.com/hill-climbing-algorithm-in-ai\">Hill Climbing</a><sup>Must know</sup>"
@@ -398,7 +398,7 @@
           "title": "<a href=\"http://web.mit.edu/sp.268/www/gamesearch.pdf\">MinMax</a><sup>Easiest Algorithm in AI</sup></li>\n</ul>"
         },
         {
-          "title": "[ ] <strong><a href=\"https://stackoverflow.com/questions/2019056/getting-a-simple-neural-network-to-work-from-scratch-in-c\">Neural Networks</a></strong>"
+          "title": " <strong><a href=\"https://stackoverflow.com/questions/2019056/getting-a-simple-neural-network-to-work-from-scratch-in-c\">Neural Networks</a></strong>"
         },
         {
           "title": "Weights and Layers (Neural Networks)"
@@ -410,10 +410,10 @@
           "title": "Convolutional neural networks(https://towardsdatascience.com/convolutional-neural-networks-from-the-ground-up-c67bb41454e1)</li>\n</ul>"
         },
         {
-          "title": "[ ] <a href=\"http://galaxy.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html\">Backpropagation</a>"
+          "title": " <a href=\"http://galaxy.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html\">Backpropagation</a>"
         },
         {
-          "title": "[ ] <a href=\"https://sheepolution.com/learn/book/contents\">Game Dev Basics</a>"
+          "title": " <a href=\"https://sheepolution.com/learn/book/contents\">Game Dev Basics</a>"
         }
       ]
     },
@@ -434,7 +434,7 @@
           "title": "Entity-Relationship model."
         },
         {
-          "title": "[ ] <strong>Integrity Constraints</strong>"
+          "title": " <strong>Integrity Constraints</strong>"
         },
         {
           "title": "Primary Key and Foreign key"
@@ -446,16 +446,16 @@
           "title": "All other types of keys"
         },
         {
-          "title": "[ ] Normal Forms : 1NF to 4 NF"
+          "title": " Normal Forms : 1NF to 4 NF"
         },
         {
-          "title": "[ ] File Organization."
+          "title": " File Organization."
         },
         {
-          "title": "[ ] Indexing (<a href=\"https://www.javatpoint.com/b-tree-vs-bplus-tree\">B- Trees and B+ Trees</a>)"
+          "title": " Indexing (<a href=\"https://www.javatpoint.com/b-tree-vs-bplus-tree\">B- Trees and B+ Trees</a>)"
         },
         {
-          "title": "[ ] <strong>Transactions and Concurrency Control</strong>"
+          "title": " <strong>Transactions and Concurrency Control</strong>"
         },
         {
           "title": "Conflict Serializability"
@@ -487,7 +487,7 @@
           "title": "The Boot Process"
         },
         {
-          "title": "[ ] <strong>Processes and Threads</strong>"
+          "title": " <strong>Processes and Threads</strong>"
         },
         {
           "title": "Process Control Block"
@@ -496,7 +496,7 @@
           "title": "Dispatcher and Scheduler"
         },
         {
-          "title": "[ ] <strong>Inter Process Communication</strong>"
+          "title": " <strong>Inter Process Communication</strong>"
         },
         {
           "title": "Mesage Passing"
@@ -505,7 +505,7 @@
           "title": "Shared Memory"
         },
         {
-          "title": "[ ] <strong>Scheduling Algorithms</strong>"
+          "title": " <strong>Scheduling Algorithms</strong>"
         },
         {
           "title": "Round Robin."
@@ -517,7 +517,7 @@
           "title": "Least Recently Used."
         },
         {
-          "title": "[ ] <strong>Deadlocks</strong>"
+          "title": " <strong>Deadlocks</strong>"
         },
         {
           "title": "MutEx and Locks"
@@ -529,7 +529,7 @@
           "title": "Banker's Algorithm"
         },
         {
-          "title": "[ ] <strong>Memory Management</strong>"
+          "title": " <strong>Memory Management</strong>"
         },
         {
           "title": "Paging and Page tables"
@@ -544,7 +544,7 @@
           "title": "Non-continuous Allocation"
         },
         {
-          "title": "[ ] <strong>Virtual memory</strong>"
+          "title": " <strong>Virtual memory</strong>"
         },
         {
           "title": "Page Faults"
@@ -556,7 +556,7 @@
           "title": "Belady’s Anomaly"
         },
         {
-          "title": "[ ] <strong>File Systems</strong>"
+          "title": " <strong>File Systems</strong>"
         },
         {
           "title": "File Allocation Tables."
@@ -565,7 +565,7 @@
           "title": "Disk Scheduling Algorithms"
         },
         {
-          "title": "[ ] <strong>OS Security</strong>"
+          "title": " <strong>OS Security</strong>"
         },
         {
           "title": "Firewall"
@@ -574,7 +574,7 @@
           "title": "Malware and Antiviruses"
         },
         {
-          "title": "[ ] <a href=\"http://www.ee.surrey.ac.uk/Teaching/Unix/\">Unix commands</a>"
+          "title": " <a href=\"http://www.ee.surrey.ac.uk/Teaching/Unix/\">Unix commands</a>"
         }
       ]
     },
@@ -582,7 +582,7 @@
       "topic": "Computer Networks",
       "items": [
         {
-          "title": "<p>[ ] <strong>Layers of TCP and OSI</strong></p>"
+          "title": "<p> <strong>Layers of TCP and OSI</strong></p>"
         },
         {
           "title": "Application."
@@ -606,7 +606,7 @@
           "title": "Physical.</li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Flow Control</strong></p>"
+          "title": "<p> <strong>Flow Control</strong></p>"
         },
         {
           "title": "Flow Control"
@@ -618,7 +618,7 @@
           "title": "Error Control</li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Routers and Routing Algorithms</strong></p>"
+          "title": "<p> <strong>Routers and Routing Algorithms</strong></p>"
         },
         {
           "title": "DHCP and static routing"
@@ -630,13 +630,13 @@
           "title": "DHCP | ICMP</li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>UDP and Sockets</strong></p>"
+          "title": "<p> <strong>UDP and Sockets</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>IPv4 | IPv6</strong></p>"
+          "title": "<p> <strong>IPv4 | IPv6</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>Application Layer Protocols</strong></p>"
+          "title": "<p> <strong>Application Layer Protocols</strong></p>"
         },
         {
           "title": "HTTP | FTP"
@@ -653,7 +653,7 @@
       "topic": "Software Engineering After learning the above",
       "items": [
         {
-          "title": "<p>[ ] <strong>Software development models</strong></p>"
+          "title": "<p> <strong>Software development models</strong></p>"
         },
         {
           "title": "Waterfall"
@@ -668,16 +668,16 @@
           "title": "Agile</li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Software Cost Estimation</strong></p>"
+          "title": "<p> <strong>Software Cost Estimation</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>COCOMO Model</strong></p>"
+          "title": "<p> <strong>COCOMO Model</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>Risk Management</strong></p>"
+          "title": "<p> <strong>Risk Management</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>Software Requirement</strong></p>"
+          "title": "<p> <strong>Software Requirement</strong></p>"
         },
         {
           "title": "Software Requirement Specifications"
@@ -686,7 +686,7 @@
           "title": "Data Flow Diagrams</li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Software Quality</strong></p>"
+          "title": "<p> <strong>Software Quality</strong></p>"
         },
         {
           "title": "ISO standards 9001, 14001"
@@ -698,7 +698,7 @@
           "title": "Six Sigma</li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Software Design</strong></p>"
+          "title": "<p> <strong>Software Design</strong></p>"
         },
         {
           "title": "Software Design Principles"
@@ -713,7 +713,7 @@
           "title": "User Interface Design</li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Testing</strong></p>"
+          "title": "<p> <strong>Testing</strong></p>"
         }
       ]
     },
@@ -729,40 +729,40 @@
       "topic": "Cryptography and Network Security",
       "items": [
         {
-          "title": "[ ] <strong>Encryption Algorithms</strong>"
+          "title": " <strong>Encryption Algorithms</strong>"
         },
         {
           "title": "DES, AES, Whirlpool, One Time Pad</li>\n</ul>"
         },
         {
-          "title": "[ ] <strong>Hashing Algorithms</strong>"
+          "title": " <strong>Hashing Algorithms</strong>"
         },
         {
           "title": "SHA family</li>\n</ul>"
         },
         {
-          "title": "[ ] <strong>Key Distribution</strong>"
+          "title": " <strong>Key Distribution</strong>"
         },
         {
           "title": "RSA, Kerberos</li>\n</ul>"
         },
         {
-          "title": "[ ] <strong><a href=\"https://cloud.google.com/kms/docs/digital-signatures#:~:text=A%20digital%20signature%20is%20a,a%20signature%20over%20raw%20data\">Digital Signatures</a></strong>"
+          "title": " <strong><a href=\"https://cloud.google.com/kms/docs/digital-signatures#:~:text=A%20digital%20signature%20is%20a,a%20signature%20over%20raw%20data\">Digital Signatures</a></strong>"
         },
         {
           "title": "<a href=\"https://www.ibm.com/docs/en/ibm-mq/7.5?topic=concepts-message-digests\">Message Digest</a> </li>\n</ul>"
         },
         {
-          "title": "[ ] <strong>Compression</strong>"
+          "title": " <strong>Compression</strong>"
         },
         {
           "title": "<a href=\"https://www.hanshq.net/zip.html#huffman\">History</a>.</li>\n</ul>"
         },
         {
-          "title": "[ ] <strong>Firewalls</strong>"
+          "title": " <strong>Firewalls</strong>"
         },
         {
-          "title": "[ ] <strong>Network Security</strong>"
+          "title": " <strong>Network Security</strong>"
         },
         {
           "title": "<a href=\"https://en.wikipedia.org/wiki/Honeypot_(computing)\">Honeypots</a>"
@@ -780,28 +780,28 @@
           "topic": "Data Science and Machine Learning",
           "items": [
             {
-              "title": "<p>[ ] <strong><a href=\"https://svivek.com/teaching/lectures/slides/loss-minimization/bias-variance.pdf\">Bias and Variance</a></strong></p>"
+              "title": "<p> <strong><a href=\"https://svivek.com/teaching/lectures/slides/loss-minimization/bias-variance.pdf\">Bias and Variance</a></strong></p>"
             },
             {
-              "title": "<p>[ ] <strong>Supervised Learning</strong></p>"
+              "title": "<p> <strong>Supervised Learning</strong></p>"
             },
             {
-              "title": "[ ] <a href=\"https://cogitoai.home.blog/2019/08/21/what-is-classification-in-machine-learning/\">Classification</a>"
+              "title": " <a href=\"https://cogitoai.home.blog/2019/08/21/what-is-classification-in-machine-learning/\">Classification</a>"
             },
             {
-              "title": "<p>[ ] <a href=\"https://www.topcoder.com/thrive/articles/introduction-to-linear-regression\">Regression</a></p>"
+              "title": "<p> <a href=\"https://www.topcoder.com/thrive/articles/introduction-to-linear-regression\">Regression</a></p>"
             },
             {
-              "title": "<p>[ ] <strong>Un-supervised Learning</strong></p>"
+              "title": "<p> <strong>Un-supervised Learning</strong></p>"
             },
             {
-              "title": "[ ] <a href=\"https://scikit-learn.org/stable/modules/clustering.html\">Clustering</a>"
+              "title": " <a href=\"https://scikit-learn.org/stable/modules/clustering.html\">Clustering</a>"
             },
             {
-              "title": "<p>[ ] <a href=\"https://web.iitd.ac.in/~bspanda/KNN%20presentation.pdf\">k-Nearest Neighbours</a></p>"
+              "title": "<p> <a href=\"https://web.iitd.ac.in/~bspanda/KNN%20presentation.pdf\">k-Nearest Neighbours</a></p>"
             },
             {
-              "title": "<p>[ ] <strong><a href=\"https://homepages.inf.ed.ac.uk/rbf/HIPR2/wksheets.htm\">Image Processing</a></strong><sup>Worth learning</sup></p>"
+              "title": "<p> <strong><a href=\"https://homepages.inf.ed.ac.uk/rbf/HIPR2/wksheets.htm\">Image Processing</a></strong><sup>Worth learning</sup></p>"
             },
             {
               "title": "<a href=\"http://www.it.hiof.no/~borres/j3d/math/twod/p-twod.html\">Transformation</a> and <a href=\"https://homepages.inf.ed.ac.uk/rbf/HIPR2/translte.htm\">Translation</a>"
@@ -820,7 +820,7 @@
           "title": "<a href=\"https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web\">MDN Getting Started Guide</a>"
         },
         {
-          "title": "<p>[ ] <strong>Front-End</strong></p>"
+          "title": "<p> <strong>Front-End</strong></p>"
         },
         {
           "title": "<a href=\"https://developer.mozilla.org/en-US/docs/Learn/HTML\">HTML5</a>"
@@ -847,7 +847,7 @@
           "title": "<a href=\"https://www.zionandzion.com/json-vs-xml-vs-toml-vs-cson-vs-yaml/\">JSON and other formats</a> and <a href=\"https://yaml.org/\">YAML</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>BackEnd</strong></p>"
+          "title": "<p> <strong>BackEnd</strong></p>"
         },
         {
           "title": "<a href=\"https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/\">Golang</a>"
@@ -861,7 +861,7 @@
           "title": "<blockquote>\n<p>Not mandatory, just get the overview</p>\n</blockquote>"
         },
         {
-          "title": "[ ] <strong>Concepts and principles</strong>"
+          "title": " <strong>Concepts and principles</strong>"
         },
         {
           "title": "<a href=\"https://learnopengl.com/\">OpenGL basics : lines, planes, vertex and edges</a>"
@@ -894,6 +894,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

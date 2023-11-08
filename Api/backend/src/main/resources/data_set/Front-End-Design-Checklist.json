@@ -120,13 +120,13 @@
               "title": "<p><img alt=\"Grid system\" src=\"/images/grid-system.png\"/></p>"
             },
             {
-              "title": "<p>[ ] A <strong>grid</strong> is explicitly provided in the design, and the details of the grid are present in the technical specification (width, gutters, number of columns…). The Web Designer can keep the grid in a transparent layer and use it on all his project.\n    &gt; ℹ️ <a href=\"https://guideguide.me/\">Guide Guide</a> is a plugin for Photoshop that can help you easily build your grid.</p>\n<blockquote>\n<p>ℹ️ On Sketch, you can use the integrated “<a href=\"https://www.sketchapp.com/docs/canvas/rulers-guides-grids/\">Make Grid Tool</a>” to design your desired grid.</p>\n</blockquote>"
+              "title": "<p> A <strong>grid</strong> is explicitly provided in the design, and the details of the grid are present in the technical specification (width, gutters, number of columns…). The Web Designer can keep the grid in a transparent layer and use it on all his project.\n    &gt; ℹ️ <a href=\"https://guideguide.me/\">Guide Guide</a> is a plugin for Photoshop that can help you easily build your grid.</p>\n<blockquote>\n<p>ℹ️ On Sketch, you can use the integrated “<a href=\"https://www.sketchapp.com/docs/canvas/rulers-guides-grids/\">Make Grid Tool</a>” to design your desired grid.</p>\n</blockquote>"
             },
             {
-              "title": "<p>[ ] <strong>Be familiar with the grid system</strong> you’ll use on your project. Most of the time, some options (like alignment, offsetting, nesting…) are ignored by the developer and tend to be replaced by manual padding or margin unnecessarily.</p>"
+              "title": "<p> <strong>Be familiar with the grid system</strong> you’ll use on your project. Most of the time, some options (like alignment, offsetting, nesting…) are ignored by the developer and tend to be replaced by manual padding or margin unnecessarily.</p>"
             },
             {
-              "title": "[ ] Before working on each components of your website, you can <strong>build every templates</strong> used in the creatives only with the grid classes. Building the structure before everything else, will facilitate your work afterwards.</li>\n</ul><p>```html</p><div class=\"container\">\n<div class=\"row\">\n<div class=\"col-sm\">\n<!-- Let empty at first -->\n</div>\n<div class=\"col-sm\">\n<!-- Let empty at first -->\n</div>\n<div class=\"col-sm\">\n<!-- Let empty at first -->\n</div>\n</div>\n</div><p>```</p><p>⚠️ <em>If you want to ensure that the grid and the width of the devices are respected, you may want to generate yourself a PSD template and that you will send it to the Web Designer.</em></p><p><strong>Additional Resources:</strong></p>"
+              "title": " Before working on each components of your website, you can <strong>build every templates</strong> used in the creatives only with the grid classes. Building the structure before everything else, will facilitate your work afterwards.</li>\n</ul><p>```html</p><div class=\"container\">\n<div class=\"row\">\n<div class=\"col-sm\">\n<!-- Let empty at first -->\n</div>\n<div class=\"col-sm\">\n<!-- Let empty at first -->\n</div>\n<div class=\"col-sm\">\n<!-- Let empty at first -->\n</div>\n</div>\n</div><p>```</p><p>⚠️ <em>If you want to ensure that the grid and the width of the devices are respected, you may want to generate yourself a PSD template and that you will send it to the Web Designer.</em></p><p><strong>Additional Resources:</strong></p>"
             },
             {
               "title": "🛠 <a href=\"https://getbootstrap.com/docs/4.0/layout/grid/\">Bootstrap Grid System</a> (v4)"
@@ -146,13 +146,13 @@
               "title": "<p><img alt=\"Colors\" src=\"/images/colors.png\"/></p>"
             },
             {
-              "title": "[ ] <strong>All colors used in the creatives are named</strong> ($gray-light, $gray-dark, $green) or accordingly with their use ($body-background, $body-copy, $text-paragraph…). They can be exported in an <a href=\"https://www.lifewire.com/aco-file-2619477\">ACO file</a> (if use Photoshop or on a symbol page for Sketch) and shared with the developers.</li>\n</ul><p><img alt=\"Color Swatches\" src=\"/images/color-swatches.jpg\"/></p>"
+              "title": " <strong>All colors used in the creatives are named</strong> ($gray-light, $gray-dark, $green) or accordingly with their use ($body-background, $body-copy, $text-paragraph…). They can be exported in an <a href=\"https://www.lifewire.com/aco-file-2619477\">ACO file</a> (if use Photoshop or on a symbol page for Sketch) and shared with the developers.</li>\n</ul><p><img alt=\"Color Swatches\" src=\"/images/color-swatches.jpg\"/></p>"
             },
             {
-              "title": "<p>[ ] The different <strong>color state</strong> of some elements (like buttons, links, inputs...) are defined and worked in the context of a light or dark background and with a light or a dark text.</p>"
+              "title": "<p> The different <strong>color state</strong> of some elements (like buttons, links, inputs...) are defined and worked in the context of a light or dark background and with a light or a dark text.</p>"
             },
             {
-              "title": "<p>[ ] All or the most important/used <strong>colors are accessible</strong> in the design to allow a fluid navigation on the website/webapp.</p>\n<p><strong>Additional Resources:</strong>\n* 🛠 <a href=\"https://contrastchecker.com/\">WCAG - Contrast Checker</a>\n* 🛠 <a href=\"http://colorsafe.co/\">Color Safe - accessible web color combinations</a>\n* 🛠 <a href=\"https://coolors.co/\">Coolors.co - The super fast color schemes generator</a></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+              "title": "<p> All or the most important/used <strong>colors are accessible</strong> in the design to allow a fluid navigation on the website/webapp.</p>\n<p><strong>Additional Resources:</strong>\n* 🛠 <a href=\"https://contrastchecker.com/\">WCAG - Contrast Checker</a>\n* 🛠 <a href=\"http://colorsafe.co/\">Color Safe - accessible web color combinations</a>\n* 🛠 <a href=\"https://coolors.co/\">Coolors.co - The super fast color schemes generator</a></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
             }
           ]
         },
@@ -163,13 +163,13 @@
               "title": "<p><img alt=\"Fonts\" src=\"/images/fonts.png\"/></p><p>Fonts are an essential part of every design, they shouldn’t be chosen without discernment. Choosing the wrong font for a project could have financial and legal impacts.</p><p>It is recommended to ask your client to buy these fonts to avoid possible future issues and take into consideration the condition of use. Some webfonts are limited in terms of pageviews and can’t be hosted (<a href=\"https://aeolidia.com/understanding-webfont-licensing-structures/\">Understanding Webfont Licensing Structures</a>).</p>"
             },
             {
-              "title": "[ ] The fonts for desktop (TTF or OTF in general) and the webfonts, in <strong>WOFF, WOFF2 and TTF format</strong> were provided (in a Zip file or given access to the website where they were bought).\n    &gt; ℹ️ TTF format for desktop is not the same than TTF for Web.</li>\n</ul><p><strong>Resources:</strong>\n    * 📖 <a href=\"https://css-tricks.com/snippets/css/using-font-face/\">Using @font-face | CSS-Tricks</a>\n* [ ] <a href=\"https://en.wikipedia.org/wiki/Fallback_font\">Fallback font</a> stacks were specified in a document (ideally the Style Guide) to the Front-End Developer.</p><p><strong>Resources:</strong>\n  * 📖 <a href=\"https://css-tricks.com/css-basics-fallback-font-stacks-robust-web-typography/\">CSS Basics: Fallback Font Stacks for More Robust Web Typography | CSS-Tricks</a>\n  * <a href=\"https://www.fontsquirrel.com/tools/webfont-generator\">Create Your Own @font-face Kits » Font Squirrel</a></p>"
+              "title": " The fonts for desktop (TTF or OTF in general) and the webfonts, in <strong>WOFF, WOFF2 and TTF format</strong> were provided (in a Zip file or given access to the website where they were bought).\n    &gt; ℹ️ TTF format for desktop is not the same than TTF for Web.</li>\n</ul><p><strong>Resources:</strong>\n    * 📖 <a href=\"https://css-tricks.com/snippets/css/using-font-face/\">Using @font-face | CSS-Tricks</a>\n*  <a href=\"https://en.wikipedia.org/wiki/Fallback_font\">Fallback font</a> stacks were specified in a document (ideally the Style Guide) to the Front-End Developer.</p><p><strong>Resources:</strong>\n  * 📖 <a href=\"https://css-tricks.com/css-basics-fallback-font-stacks-robust-web-typography/\">CSS Basics: Fallback Font Stacks for More Robust Web Typography | CSS-Tricks</a>\n  * <a href=\"https://www.fontsquirrel.com/tools/webfont-generator\">Create Your Own @font-face Kits » Font Squirrel</a></p>"
             },
             {
-              "title": "<p>[ ] The <strong>total weight</strong> of the all webfonts don’t exceed 1-2 Mb (all variants included: italic, bold etc).</p>"
+              "title": "<p> The <strong>total weight</strong> of the all webfonts don’t exceed 1-2 Mb (all variants included: italic, bold etc).</p>"
             },
             {
-              "title": "<p>[ ] As far as possible, <strong>all texts are provided in the proper language</strong> instead of dummy texts in English (Lorem Ipsum and affiliates).</p>\n<blockquote>\n<p>ℹ️ In case of a multilingual website, always ask yourself how the design can react if the text is longer than it was previously define. Remember that Web Designers use to create perfect designs and don’t always think about possible issues or situation with too much text.</p>\n</blockquote>\n<p><strong>Additional Resources:</strong>\n* 📖 <a href=\"https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization\">Web Font Optimization  |  Web Fundamentals  |  Google Developers</a>\n* <a href=\"https://css-tricks.com/font-display-masses/\"><code>font-display</code> for the Masses | CSS-Tricks</a>\n* <a href=\"https://betterwebtype.com/rhythm-in-web-typography\">Rhythm in Typography | improve legibility, readability, and visual hierarchy</a></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+              "title": "<p> As far as possible, <strong>all texts are provided in the proper language</strong> instead of dummy texts in English (Lorem Ipsum and affiliates).</p>\n<blockquote>\n<p>ℹ️ In case of a multilingual website, always ask yourself how the design can react if the text is longer than it was previously define. Remember that Web Designers use to create perfect designs and don’t always think about possible issues or situation with too much text.</p>\n</blockquote>\n<p><strong>Additional Resources:</strong>\n* 📖 <a href=\"https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization\">Web Font Optimization  |  Web Fundamentals  |  Google Developers</a>\n* <a href=\"https://css-tricks.com/font-display-masses/\"><code>font-display</code> for the Masses | CSS-Tricks</a>\n* <a href=\"https://betterwebtype.com/rhythm-in-web-typography\">Rhythm in Typography | improve legibility, readability, and visual hierarchy</a></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
             }
           ]
         },
@@ -180,10 +180,10 @@
               "title": "<p><img alt=\"Links and navigation\" src=\"/images/links.png\"/></p>"
             },
             {
-              "title": "[ ] All <strong>links have a default, hover, focus, active and visited state</strong> clearly defined (the Style Guide is the best document to specified these)."
+              "title": " All <strong>links have a default, hover, focus, active and visited state</strong> clearly defined (the Style Guide is the best document to specified these)."
             },
             {
-              "title": "[ ] Alternate views of all navigation states (hover, active/current page)."
+              "title": " Alternate views of all navigation states (hover, active/current page)."
             }
           ]
         },
@@ -194,13 +194,13 @@
               "title": "<p><img alt=\"Images\" src=\"/images/images.png\"/></p>"
             },
             {
-              "title": "[ ] A <strong>favicon image</strong> with at least 512px X 512px is provided in PNG format. The generation of all the others Favicons can be easily done with online tools.</li>\n</ul><p><strong>Resources:</strong>\n  * <a href=\"https://realfavicongenerator.net/\">Favicon Generator for all platforms: iOS, Android, PC/Mac...</a></p>"
+              "title": " A <strong>favicon image</strong> with at least 512px X 512px is provided in PNG format. The generation of all the others Favicons can be easily done with online tools.</li>\n</ul><p><strong>Resources:</strong>\n  * <a href=\"https://realfavicongenerator.net/\">Favicon Generator for all platforms: iOS, Android, PC/Mac...</a></p>"
             },
             {
-              "title": "[ ] All icons are provided in <strong>SVG format</strong>, each in the same square dimension, in black and in a separated folder.</li>\n</ul><p><strong>Resources:</strong>\n  * 🛠 <a href=\"https://jakearchibald.github.io/svgomg/\">SVGOMG - SVGO's Missing GUI</a></p>"
+              "title": " All icons are provided in <strong>SVG format</strong>, each in the same square dimension, in black and in a separated folder.</li>\n</ul><p><strong>Resources:</strong>\n  * 🛠 <a href=\"https://jakearchibald.github.io/svgomg/\">SVGOMG - SVGO's Missing GUI</a></p>"
             },
             {
-              "title": "[ ] The <strong>name of each icon</strong> starts with <code>icon-</code> and is entirely in lowercase (without any space and using dashes to separate each word).<p><strong>Additional Resources:</strong>\n* 📖 <a href=\"https://images.guide/\">Essential Image Optimization</a></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+              "title": " The <strong>name of each icon</strong> starts with <code>icon-</code> and is entirely in lowercase (without any space and using dashes to separate each word).<p><strong>Additional Resources:</strong>\n* 📖 <a href=\"https://images.guide/\">Essential Image Optimization</a></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
             }
           ]
         },
@@ -211,31 +211,31 @@
               "title": "<p><img alt=\"Forms\" src=\"/images/forms.png\"/></p>"
             },
             {
-              "title": "[ ] All forms possess a title that can be used as a legend"
+              "title": " All forms possess a title that can be used as a legend"
             },
             {
-              "title": "[ ] An example of the <strong>different states of all input fields</strong> were provided (at least focus and inactive/disabled state)."
+              "title": " An example of the <strong>different states of all input fields</strong> were provided (at least focus and inactive/disabled state)."
             },
             {
-              "title": "[ ] <strong>All error messages</strong> were provided, the text (eventually in a separated document) the position and the color are clearly identifiable in the creatives and consistent. Some messages should be different according to the error.\n  <strong>Resources:</strong>"
+              "title": " <strong>All error messages</strong> were provided, the text (eventually in a separated document) the position and the color are clearly identifiable in the creatives and consistent. Some messages should be different according to the error.\n  <strong>Resources:</strong>"
             },
             {
               "title": "📖 <a href=\"https://uxdesign.cc/forms-need-validation-2ecbccbacea1\">Forms Need Validation – UX Collective</a>"
             },
             {
-              "title": "[ ] <strong>Indicators of required/optional</strong> fields are provided."
+              "title": " <strong>Indicators of required/optional</strong> fields are provided."
             },
             {
-              "title": "[ ] The <strong>primary and secondary buttons</strong> are clearly identifiable and are used following common practices.\n  <strong>Resources:</strong>"
+              "title": " The <strong>primary and secondary buttons</strong> are clearly identifiable and are used following common practices.\n  <strong>Resources:</strong>"
             },
             {
               "title": "📖 <a href=\"https://uxplanet.org/primary-secondary-action-buttons-c16df9b36150\">Primary &amp; Secondary Action Buttons – UX Planet</a>"
             },
             {
-              "title": "[ ] An example of the <strong>different states of a button</strong> were provided (Normal, hover, focused, pressed and inactive state)."
+              "title": " An example of the <strong>different states of a button</strong> were provided (Normal, hover, focused, pressed and inactive state)."
             },
             {
-              "title": "[ ] Buttons with built-in <strong>loading indicators</strong> are provided and can be applied to any button.</li>\n</ul><p><strong>Additional Resources:</strong></p>"
+              "title": " Buttons with built-in <strong>loading indicators</strong> are provided and can be applied to any button.</li>\n</ul><p><strong>Additional Resources:</strong></p>"
             },
             {
               "title": "📖 <a href=\"https://uxdesign.cc/design-better-forms-96fadca0f49c\">Design Better Forms – UX Collective</a>"
@@ -264,7 +264,7 @@
               "title": "<p><img alt=\"Responsive\" src=\"/images/responsive.png\"/></p>"
             },
             {
-              "title": "<p>[ ] The <strong>mobile version</strong> of the design is provided before or at the same time of the desktop version.</p>\n<blockquote>\n<p>If the “<strong>mobile first</strong>” thinking was not followed by the creative team, some irregularities and inconsistencies may appear between the mobile and the desktop version. Check and flag these issues before starting the development of the project.\n* [ ] The <strong>tablet version</strong> of the design in certain cases should be provide too.</p>\n</blockquote>\n</li>\n</ul><p>⚠️ <em>The </em><em>pixel perfect</em><em> notion is today in a certain way deprecated. Today, it’s impossible to have a design that worked the same facing the multitude of the screen sizes.</em></p><p><strong>Additional Resources:</strong></p>"
+              "title": "<p> The <strong>mobile version</strong> of the design is provided before or at the same time of the desktop version.</p>\n<blockquote>\n<p>If the “<strong>mobile first</strong>” thinking was not followed by the creative team, some irregularities and inconsistencies may appear between the mobile and the desktop version. Check and flag these issues before starting the development of the project.\n*  The <strong>tablet version</strong> of the design in certain cases should be provide too.</p>\n</blockquote>\n</li>\n</ul><p>⚠️ <em>The </em><em>pixel perfect</em><em> notion is today in a certain way deprecated. Today, it’s impossible to have a design that worked the same facing the multitude of the screen sizes.</em></p><p><strong>Additional Resources:</strong></p>"
             },
             {
               "title": "📖 <a href=\"https://webmasters.googleblog.com/2016/11/mobile-first-indexing.html\">Official Google Webmaster Central Blog: Mobile-first Indexing</a><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
@@ -278,10 +278,10 @@
               "title": "<p><img alt=\"Styleguide\" src=\"/images/styleguide.png\"/></p>"
             },
             {
-              "title": "[ ] All components designed on each page were created with the <strong>component based approach</strong>  (Atomic Design). If not, issues can occur in terms of performance, maintainability of the project...</li>\n</ul><p><strong>Resources:</strong>\n  * 📖 <a href=\"http://bradfrost.com/blog/post/atomic-web-design/\">Atomic design</a>\n  * 📖 <a href=\"https://www.tandemseven.com/technology/6-reasons-component-based-ui-development/\">6 Reasons for Component-Based UI Development</a></p>"
+              "title": " All components designed on each page were created with the <strong>component based approach</strong>  (Atomic Design). If not, issues can occur in terms of performance, maintainability of the project...</li>\n</ul><p><strong>Resources:</strong>\n  * 📖 <a href=\"http://bradfrost.com/blog/post/atomic-web-design/\">Atomic design</a>\n  * 📖 <a href=\"https://www.tandemseven.com/technology/6-reasons-component-based-ui-development/\">6 Reasons for Component-Based UI Development</a></p>"
             },
             {
-              "title": "[ ] A <strong>Style Guide</strong> needs to be provided listing all elements, components, styles, dimensions. Some boilerplates like <a href=\"https://www.uxpower.tools/\">UX Power Tools</a> can help saving time and keep consistency in the designs.</li>\n</ul><p>⚠️ <em>In the case where the Style Guide is missing, it's a good practice to build yourself a <a href=\"https://github.com/davidhund/styleguide-generators\">living Style Guide</a> to facilitate your work. Some CMS like Drupal, for example, have plugins that allow to develop a living Style Guide using <a href=\"https://drupal-pattern-lab.github.io/\">Pattern Lab</a>.</em></p><p><strong>Additional Resources:</strong></p>"
+              "title": " A <strong>Style Guide</strong> needs to be provided listing all elements, components, styles, dimensions. Some boilerplates like <a href=\"https://www.uxpower.tools/\">UX Power Tools</a> can help saving time and keep consistency in the designs.</li>\n</ul><p>⚠️ <em>In the case where the Style Guide is missing, it's a good practice to build yourself a <a href=\"https://github.com/davidhund/styleguide-generators\">living Style Guide</a> to facilitate your work. Some CMS like Drupal, for example, have plugins that allow to develop a living Style Guide using <a href=\"https://drupal-pattern-lab.github.io/\">Pattern Lab</a>.</em></p><p><strong>Additional Resources:</strong></p>"
             },
             {
               "title": "📖 <a href=\"https://medium.com/sketch-app-sources/tagged/style-guides\">Style Guides – Design + Sketch – Medium</a>"
@@ -304,16 +304,16 @@
               "title": "<p><img alt=\"Delivery files\" src=\"/images/delivery-files.png\"/></p>"
             },
             {
-              "title": "<p>[ ] For all websites, the web designer needs to provide at least <strong>2 PSD</strong> (mobile, desktop and eventually tablet) or at least <strong>1 Sketch file</strong> which needs to be delivered with the dimension below (if you have Photoshop CC 2015 and above, I recommend using artboards).</p>\n<blockquote>\n<p>ℹ️ Some web designers could eventually create multiple PSD corresponding to each components used and import them in a single PSD as “smart layer”. In that case, you’ll have multiple PSD linked to one or two files. In the case of Sketch, since the <strong>libraries</strong> exist since version 47, it is possible to link multiples files with symbols ……..</p>\n</blockquote>"
+              "title": "<p> For all websites, the web designer needs to provide at least <strong>2 PSD</strong> (mobile, desktop and eventually tablet) or at least <strong>1 Sketch file</strong> which needs to be delivered with the dimension below (if you have Photoshop CC 2015 and above, I recommend using artboards).</p>\n<blockquote>\n<p>ℹ️ Some web designers could eventually create multiple PSD corresponding to each components used and import them in a single PSD as “smart layer”. In that case, you’ll have multiple PSD linked to one or two files. In the case of Sketch, since the <strong>libraries</strong> exist since version 47, it is possible to link multiples files with symbols ……..</p>\n</blockquote>"
             },
             {
-              "title": "<p>[ ] The <strong>creative files are cleaned</strong> before delivering to developers (empty and unnecessary layer needs to be removed to avoid large files).</p>"
+              "title": "<p> The <strong>creative files are cleaned</strong> before delivering to developers (empty and unnecessary layer needs to be removed to avoid large files).</p>"
             },
             {
-              "title": "<p>[ ] The <strong>404 error</strong> (and eventually the page 500 error) page were designed.</p>"
+              "title": "<p> The <strong>404 error</strong> (and eventually the page 500 error) page were designed.</p>"
             },
             {
-              "title": "[ ] All <strong>popins, popups and alert boxes</strong> were designed and can be enable throw layers of compositions.</li>\n</ul><p><strong>Additional Resources:</strong></p>"
+              "title": " All <strong>popins, popups and alert boxes</strong> were designed and can be enable throw layers of compositions.</li>\n</ul><p><strong>Additional Resources:</strong></p>"
             },
             {
               "title": "📖 <a href=\"http://photoshopetiquette.com/\">Photoshop Etiquette: A Guide to Discernible Web Design</a>"
@@ -367,7 +367,7 @@
           "topic": "2.2 - Pre-development phase",
           "items": [
             {
-              "title": "[ ] According to the specifications, <strong>plugins needed were defined</strong> in an early stage. Having a pre-list of possible plugins before starting the development can help the developer to stay focus and not spend too much time in doing research during the development phase. Obviously, some plugins may not perfectly fit and will be changed accordingly.</li>\n</ul><p><strong>Additional Resources:</strong></p>"
+              "title": " According to the specifications, <strong>plugins needed were defined</strong> in an early stage. Having a pre-list of possible plugins before starting the development can help the developer to stay focus and not spend too much time in doing research during the development phase. Obviously, some plugins may not perfectly fit and will be changed accordingly.</li>\n</ul><p><strong>Additional Resources:</strong></p>"
             },
             {
               "title": "🛠 <a href=\"https://js.libhunt.com/\">Awesome JS</a>"
@@ -391,13 +391,13 @@
       "topic": "4. - Development phase",
       "items": [
         {
-          "title": "<p>[ ] All <strong>medias can be cut and saved</strong> before starting the development phase. That can help you to avoid back and forth between your creative software and your code editor.</p>"
+          "title": "<p> All <strong>medias can be cut and saved</strong> before starting the development phase. That can help you to avoid back and forth between your creative software and your code editor.</p>"
         },
         {
-          "title": "<p>[ ] <strong>The image folder has a clear architecture</strong> where you  arranged the layout's images. It is important to stay consistent between projects in general. Defining a structure for that folder and a naming convention can be helpful.</p>\n</li>\n</ul><p>You can find an example of a possible structure with prefixes used to recognise each image appurtenance.</p><p><code>bash\n.\n└── images\n    ├── background\n    ├── banners\n    ├── icons\n    └── layout</code></p>"
+          "title": "<p> <strong>The image folder has a clear architecture</strong> where you  arranged the layout's images. It is important to stay consistent between projects in general. Defining a structure for that folder and a naming convention can be helpful.</p>\n</li>\n</ul><p>You can find an example of a possible structure with prefixes used to recognise each image appurtenance.</p><p><code>bash\n.\n└── images\n    ├── background\n    ├── banners\n    ├── icons\n    └── layout</code></p>"
         },
         {
-          "title": "[ ] <strong>A naming convention is used</strong> like adding prefixes to differentiate types of images, all images used for background can be prefixed by <code>bg-</code>, icons by <code>icon-</code>, hero banners by <code>hero-</code> or <code>banner-</code> and so on."
+          "title": " <strong>A naming convention is used</strong> like adding prefixes to differentiate types of images, all images used for background can be prefixed by <code>bg-</code>, icons by <code>icon-</code>, hero banners by <code>hero-</code> or <code>banner-</code> and so on."
         }
       ]
     },
@@ -467,6 +467,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

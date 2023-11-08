@@ -19,97 +19,97 @@
       "topic": "Checkliste",
       "items": [
         {
-          "title": "[ ] <strong>Verwendung von Google Fonts vermeiden oder in den Datenschutzerklärung erwähnen</strong>"
+          "title": " <strong>Verwendung von Google Fonts vermeiden oder in den Datenschutzerklärung erwähnen</strong>"
         },
         {
-          "title": "[ ] <strong>Cookie-Hinweis einbinden</strong>"
+          "title": " <strong>Cookie-Hinweis einbinden</strong>"
         },
         {
           "title": "Hinweis darf nicht Link zu Impressum oder Datenschutzerklärung verdecken</li>\n</ul>"
         },
         {
-          "title": "[ ] <strong>Datenschutzerklärung</strong> ergänzen/aktualisieren"
+          "title": " <strong>Datenschutzerklärung</strong> ergänzen/aktualisieren"
         },
         {
           "title": "Möglicher Generator: https://dsgvo-muster-datenschutzerklaerung.dg-datenschutz.de/ oder https://datenschutz-generator.de/</li>\n</ul>"
         },
         {
-          "title": "[ ] <strong>Impressum</strong> überprüfen"
+          "title": " <strong>Impressum</strong> überprüfen"
         },
         {
-          "title": "[ ] <strong>SSL-Verschlüsselung</strong> aktivieren"
+          "title": " <strong>SSL-Verschlüsselung</strong> aktivieren"
         },
         {
-          "title": "[ ] <strong>Google-Analytics</strong> rechtskonform einsetzen (<a href=\"https://drschwenke.de/google-analytics-datenschutz-muster-faq\">Mehr zu dem Thema</a>)"
+          "title": " <strong>Google-Analytics</strong> rechtskonform einsetzen (<a href=\"https://drschwenke.de/google-analytics-datenschutz-muster-faq\">Mehr zu dem Thema</a>)"
         },
         {
-          "title": "[ ] Vertrag zur Auftragsdatenverarbeitung abschließen (schriftlich und digital)"
+          "title": " Vertrag zur Auftragsdatenverarbeitung abschließen (schriftlich und digital)"
         },
         {
-          "title": "[ ] IP Anonymisierung einbinden"
+          "title": " IP Anonymisierung einbinden"
         },
         {
-          "title": "[ ] Datenschutzerklärung anpassen"
+          "title": " Datenschutzerklärung anpassen"
         },
         {
-          "title": "[ ] Opt Out Cookies + Link zu Browser PlugIn setzen</li>\n</ul>"
+          "title": " Opt Out Cookies + Link zu Browser PlugIn setzen</li>\n</ul>"
         },
         {
-          "title": "[ ] <strong>statische Share-Buttons</strong> einsetzen"
+          "title": " <strong>statische Share-Buttons</strong> einsetzen"
         },
         {
-          "title": "<p>[ ] <strong>Impressum und Datenschutz von Suchmaschinen ausschließen</strong></p>"
+          "title": "<p> <strong>Impressum und Datenschutz von Suchmaschinen ausschließen</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>Double-Opt-In-Verfahren für das Abonnieren der Kommentare via Mail</strong></p>"
+          "title": "<p> <strong>Double-Opt-In-Verfahren für das Abonnieren der Kommentare via Mail</strong></p>"
         },
         {
           "title": "<p>Mögliches WordPress-Plugin: <a href=\"https://de.wordpress.org/plugins/subscribe-to-comments-reloaded/\">Subscribe To Comments Reloaded</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>Akismet Anit-Spam darf nicht verwendet werden</strong></p>"
+          "title": "<p> <strong>Akismet Anit-Spam darf nicht verwendet werden</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>Verwendung von dem WordPress-Plugins Jetpack vermeiden</strong></p>"
+          "title": "<p> <strong>Verwendung von dem WordPress-Plugins Jetpack vermeiden</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>Double-Opt-In für Newsletter</strong></p>"
+          "title": "<p> <strong>Double-Opt-In für Newsletter</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>Auftragsdatenverarbeitungsvertrag mit Newsletter-Anbieter</strong> abschließen</p>"
+          "title": "<p> <strong>Auftragsdatenverarbeitungsvertrag mit Newsletter-Anbieter</strong> abschließen</p>"
         },
         {
-          "title": "<p>[ ] <strong>Auftragsdatenverarbeitungsvertrag mit Web-Hoster</strong> abschließen</p>"
+          "title": "<p> <strong>Auftragsdatenverarbeitungsvertrag mit Web-Hoster</strong> abschließen</p>"
         },
         {
-          "title": "<p>[ ] <strong>Gravatar deaktivieren oder in den Datenschutzerklärung erwähnen</strong></p>"
+          "title": "<p> <strong>Gravatar deaktivieren oder in den Datenschutzerklärung erwähnen</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>Emojis von WordPress deaktivieren oder in den Datenschutzerklärung erwähnen</strong></p>"
+          "title": "<p> <strong>Emojis von WordPress deaktivieren oder in den Datenschutzerklärung erwähnen</strong></p>"
         },
         {
           "title": "Mögliches Plugin: <a href=\"https://de.wordpress.org/plugins/disable-emojis/\">Disable Emojis</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Überprüfung von externen Ressourcen</strong></p>"
+          "title": "<p> <strong>Überprüfung von externen Ressourcen</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>Plugins, die personenbezogene Daten erheben und speichern in den Datenschutzbestimmungen aufführen</strong></p>"
+          "title": "<p> <strong>Plugins, die personenbezogene Daten erheben und speichern in den Datenschutzbestimmungen aufführen</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>IP-Adressen von Kommentaren nicht speichern oder nach 7 Tagen löschen</strong></p>"
+          "title": "<p> <strong>IP-Adressen von Kommentaren nicht speichern oder nach 7 Tagen löschen</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>Alte IP-Adressen bei Kommentaren löschen</strong></p>"
+          "title": "<p> <strong>Alte IP-Adressen bei Kommentaren löschen</strong></p>"
         },
         {
-          "title": "<p>[ ] <strong>REST-API schließen</strong> Es können darüber z.B. alle Benutzer ausgelesen werden.</p>"
+          "title": "<p> <strong>REST-API schließen</strong> Es können darüber z.B. alle Benutzer ausgelesen werden.</p>"
         },
         {
           "title": "Mögliches Plugin: <a href=\"https://de.wordpress.org/plugins/disable-json-api/\">Disable REST API</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Verzeichnis von Datenverarbeitungstätigkeiten</strong> anlegen und führen</p>"
+          "title": "<p> <strong>Verzeichnis von Datenverarbeitungstätigkeiten</strong> anlegen und führen</p>"
         }
       ]
     },
@@ -181,6 +181,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

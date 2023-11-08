@@ -1,5 +1,6 @@
 package com.wallace.mapper;
 
+import com.wallace.config.MyBaseMapper;
 import com.wallace.pojo.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -9,7 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @createDate 2023-11-03 14:03:34
 * @Entity com.wallace.pojo.User
 */
-public interface UserMapper extends BaseMapper<User> {
+public interface UserMapper extends MyBaseMapper<User> {
 
 }
 

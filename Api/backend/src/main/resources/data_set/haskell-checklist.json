@@ -14,61 +14,61 @@
           "topic": "Code things",
           "items": [
             {
-              "title": "[ ] Do you have 1+ tests? Seriously, write at least one! The rest will usually come more easily after that."
+              "title": " Do you have 1+ tests? Seriously, write at least one! The rest will usually come more easily after that."
             },
             {
-              "title": "[ ] Do you have some documentation in each module?"
+              "title": " Do you have some documentation in each module?"
             },
             {
-              "title": "[ ] Does your code have examples for anything that's not immediately obvious how to use for the uninitiated?"
+              "title": " Does your code have examples for anything that's not immediately obvious how to use for the uninitiated?"
             },
             {
-              "title": "[ ] Does everything that throws an exception document what can be thrown?"
+              "title": " Does everything that throws an exception document what can be thrown?"
             },
             {
-              "title": "[ ] Do type classes and functions with mathematical laws document the appropriate laws that they should follow?"
+              "title": " Do type classes and functions with mathematical laws document the appropriate laws that they should follow?"
             },
             {
-              "title": "[ ] Ensure that there is a statement of the code's purpose or utility."
+              "title": " Ensure that there is a statement of the code's purpose or utility."
             },
             {
-              "title": "[ ] Ensure that there is an example of how typically to use it, not just an abstract description of the API signature."
+              "title": " Ensure that there is an example of how typically to use it, not just an abstract description of the API signature."
             },
             {
-              "title": "[ ] Do functions provide friendly interfaces to use?"
+              "title": " Do functions provide friendly interfaces to use?"
             },
             {
-              "title": "[ ] If there are lots of values of the same type being passed around, consider using type synonyms or newtypes to disambiguate them."
+              "title": " If there are lots of values of the same type being passed around, consider using type synonyms or newtypes to disambiguate them."
             },
             {
-              "title": "[ ] Are your functions sufficiently general in their types, but not so general as to be incomprehensible?"
+              "title": " Are your functions sufficiently general in their types, but not so general as to be incomprehensible?"
             },
             {
-              "title": "[ ] Do you provide the facilities to extend and add new features on top of the library where possible? This is a bit hard to quantify, but worth thinking about."
+              "title": " Do you provide the facilities to extend and add new features on top of the library where possible? This is a bit hard to quantify, but worth thinking about."
             },
             {
-              "title": "[ ] Some code should explicitly not be extensible. Make sure that you explain why, and do your best to prevent it or at least provide cautionary warnings."
+              "title": " Some code should explicitly not be extensible. Make sure that you explain why, and do your best to prevent it or at least provide cautionary warnings."
             },
             {
-              "title": "[ ] Is performance important? If yes, write some criterion benchmarks."
+              "title": " Is performance important? If yes, write some criterion benchmarks."
             },
             {
-              "title": "[ ] Does anything \"algorithmic\" or \"data-structure-y\" document its big-O performance characteristics?"
+              "title": " Does anything \"algorithmic\" or \"data-structure-y\" document its big-O performance characteristics?"
             },
             {
-              "title": "[ ] Turn on -Wall. You can selectively disable any warnings with the <code>-fno-warn-</code> <a href=\"https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/options-sanity.html\">family of flags</a>."
+              "title": " Turn on -Wall. You can selectively disable any warnings with the <code>-fno-warn-</code> <a href=\"https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/options-sanity.html\">family of flags</a>."
             },
             {
-              "title": "[ ] Ensure that the code is consistently formatted to your taste &amp; linted."
+              "title": " Ensure that the code is consistently formatted to your taste &amp; linted."
             },
             {
-              "title": "[ ] Ensure that the code explicitly exports anything that should be publicly exposed."
+              "title": " Ensure that the code explicitly exports anything that should be publicly exposed."
             },
             {
-              "title": "[ ] Ensure that your functions are total."
+              "title": " Ensure that your functions are total."
             },
             {
-              "title": "[ ] If your code wants to log things, ensure they aren't being logged to stdout &amp; stderr. Use a logging facility (<a href=\"http://hackage.haskell.org/packages/search?terms=logging\">of which there are many!</a>). This gives production users better flexibility in dealing with data in a way which suits them."
+              "title": " If your code wants to log things, ensure they aren't being logged to stdout &amp; stderr. Use a logging facility (<a href=\"http://hackage.haskell.org/packages/search?terms=logging\">of which there are many!</a>). This gives production users better flexibility in dealing with data in a way which suits them."
             }
           ]
         },
@@ -76,49 +76,49 @@
           "topic": "Non-code things",
           "items": [
             {
-              "title": "[ ] Do you have CI set up for your project?"
+              "title": " Do you have CI set up for your project?"
             },
             {
-              "title": "[ ] Does your CI run tests against all versions of GHC that your library claims to support (e.g. the version range for <code>base</code>)?"
+              "title": " Does your CI run tests against all versions of GHC that your library claims to support (e.g. the version range for <code>base</code>)?"
             },
             {
               "title": "For Travis, there's <a href=\"https://github.com/hvr/multi-ghc-travis\">multi-ghc-travis</a> to simplify this.</li>\n</ul>"
             },
             {
-              "title": "[ ] Consider enabling -Werror in test."
+              "title": " Consider enabling -Werror in test."
             },
             {
-              "title": "[ ] Do you have a README?"
+              "title": " Do you have a README?"
             },
             {
-              "title": "[ ] Does your README make the license obvious?"
+              "title": " Does your README make the license obvious?"
             },
             {
-              "title": "[ ] Does your README explain what the library does?"
+              "title": " Does your README explain what the library does?"
             },
             {
-              "title": "[ ] Does your README explain why you might want to use it? Or any of the pros/cons?"
+              "title": " Does your README explain why you might want to use it? Or any of the pros/cons?"
             },
             {
-              "title": "[ ] Does your README provide examples?"
+              "title": " Does your README provide examples?"
             },
             {
-              "title": "[ ] Does your README cite prior art or inspiration?"
+              "title": " Does your README cite prior art or inspiration?"
             },
             {
-              "title": "[ ] Does your README provide contribution guidelines?"
+              "title": " Does your README provide contribution guidelines?"
             },
             {
-              "title": "[ ] Does your README have badges and links to Haddock docs, CI &amp; other immediately relevant pages?"
+              "title": " Does your README have badges and links to Haddock docs, CI &amp; other immediately relevant pages?"
             },
             {
-              "title": "[ ] Add a sufficient introduction to the cabal description."
+              "title": " Add a sufficient introduction to the cabal description."
             },
             {
-              "title": "[ ] Do you have a blog? Write a blog post about it!"
+              "title": " Do you have a blog? Write a blog post about it!"
             },
             {
-              "title": "[ ] Ditto for twitter, reddit, whatever else you use... nobody will know about it if you don't point it out."
+              "title": " Ditto for twitter, reddit, whatever else you use... nobody will know about it if you don't point it out."
             }
           ]
         }
@@ -128,40 +128,40 @@
       "topic": "Update checklist",
       "items": [
         {
-          "title": "[ ] Re-check the initial release guidelines and update accordingly."
+          "title": " Re-check the initial release guidelines and update accordingly."
         },
         {
-          "title": "[ ] Search your code for any TODOs and delete the ones that don't apply anymore."
+          "title": " Search your code for any TODOs and delete the ones that don't apply anymore."
         },
         {
-          "title": "[ ] Similarly, close out any issues in your issue tracker that are fixed or no longer relevant."
+          "title": " Similarly, close out any issues in your issue tracker that are fixed or no longer relevant."
         },
         {
-          "title": "[ ] Are there any dependencies that need to be removed from the .cabal file?"
+          "title": " Are there any dependencies that need to be removed from the .cabal file?"
         },
         {
-          "title": "[ ] Add changes to the CHANGELOG."
+          "title": " Add changes to the CHANGELOG."
         },
         {
-          "title": "[ ] If you have contributions to your library from others, add them to a CONTRIBUTORS file"
+          "title": " If you have contributions to your library from others, add them to a CONTRIBUTORS file"
         },
         {
-          "title": "[ ] Update the version in your cabal file."
+          "title": " Update the version in your cabal file."
         },
         {
-          "title": "[ ] If you any libraries that build upon this library, ensure that they build, tests pass, and bump versions accordingly if any changes need to be made."
+          "title": " If you any libraries that build upon this library, ensure that they build, tests pass, and bump versions accordingly if any changes need to be made."
         },
         {
-          "title": "[ ] If you believe in the <a href=\"https://wiki.haskell.org/Package_versioning_policy\">package versioning policy</a>, update your depency ranges."
+          "title": " If you believe in the <a href=\"https://wiki.haskell.org/Package_versioning_policy\">package versioning policy</a>, update your depency ranges."
         },
         {
-          "title": "[ ] Tag your release in git / the SCM of your choice"
+          "title": " Tag your release in git / the SCM of your choice"
         },
         {
-          "title": "[ ] <code>cabal sdist</code> and <code>cabal upload</code>!"
+          "title": " <code>cabal sdist</code> and <code>cabal upload</code>!"
         },
         {
-          "title": "[ ] :beers:"
+          "title": " :beers:"
         }
       ]
     },
@@ -169,25 +169,24 @@
       "topic": "Ongoing maintenance checklist",
       "items": [
         {
-          "title": "[ ] Can the library be added to Stackage? You probably want to know when breaking changes in your dependencies necessitate a new release!"
+          "title": " Can the library be added to Stackage? You probably want to know when breaking changes in your dependencies necessitate a new release!"
         },
         {
-          "title": "[ ] If there's a new release of GHC, does your code still compile with it?"
+          "title": " If there's a new release of GHC, does your code still compile with it?"
         },
         {
-          "title": "[ ] Have any issues or pull requests passed under the radar? Are there any issues that you're realistically never going deal with? Triage accordingly."
+          "title": " Have any issues or pull requests passed under the radar? Are there any issues that you're realistically never going deal with? Triage accordingly."
         },
         {
-          "title": "[ ] If your code makes heavy use of the FFI, are you up-to-date with the latest release of the underlying C/C++/whatever libraries?"
+          "title": " If your code makes heavy use of the FFI, are you up-to-date with the latest release of the underlying C/C++/whatever libraries?"
         },
         {
-          "title": "[ ] Are you not interested in the library anymore? Find a new maintainer."
+          "title": " Are you not interested in the library anymore? Find a new maintainer."
         },
         {
-          "title": "[ ] Is the code obsolete for some reason? Deprecate it."
+          "title": " Is the code obsolete for some reason? Deprecate it."
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

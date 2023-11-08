@@ -23,37 +23,37 @@
       "topic": "Preparation",
       "items": [
         {
-          "title": "[ ] Developers are in control of the Software and they own the code."
+          "title": " Developers are in control of the Software and they own the code."
         },
         {
-          "title": "[ ] Only small units of work every time. Fix, deploy, Develop."
+          "title": " Only small units of work every time. Fix, deploy, Develop."
         },
         {
-          "title": "[ ] Only few people in each project no more than 6."
+          "title": " Only few people in each project no more than 6."
         },
         {
-          "title": "[ ] Every project has a win condition."
+          "title": " Every project has a win condition."
         },
         {
-          "title": "[ ] Show feasability of the project by working on an initial seed no longer than 3-4 days."
+          "title": " Show feasability of the project by working on an initial seed no longer than 3-4 days."
         },
         {
-          "title": "[ ] Gamble any new technology sensibly."
+          "title": " Gamble any new technology sensibly."
         },
         {
-          "title": "[ ] Define scope of project. Make sure is not too broad."
+          "title": " Define scope of project. Make sure is not too broad."
         },
         {
-          "title": "[ ] Define feature extensions of each project."
+          "title": " Define feature extensions of each project."
         },
         {
-          "title": "[ ] Make experiments and flag them as analysis pre-planning work to the real project."
+          "title": " Make experiments and flag them as analysis pre-planning work to the real project."
         },
         {
-          "title": "[ ] Be on guard and look for bad APIS."
+          "title": " Be on guard and look for bad APIS."
         },
         {
-          "title": "[ ] Data should be clean and not garbage."
+          "title": " Data should be clean and not garbage."
         }
       ]
     },
@@ -61,13 +61,13 @@
       "topic": "Process & People",
       "items": [
         {
-          "title": "[ ] Pick the parts of Agile/XP/SCRUM/Kanban that work for the team and kill the rest."
+          "title": " Pick the parts of Agile/XP/SCRUM/Kanban that work for the team and kill the rest."
         },
         {
-          "title": "[ ] Prefer asynchronous communication."
+          "title": " Prefer asynchronous communication."
         },
         {
-          "title": "[ ] Know how different people on your team likes to work with the code base."
+          "title": " Know how different people on your team likes to work with the code base."
         }
       ]
     },
@@ -75,85 +75,85 @@
       "topic": "System Planning",
       "items": [
         {
-          "title": "[ ] The system is built for production."
+          "title": " The system is built for production."
         },
         {
-          "title": "[ ] Design a shared-nothing architecture."
+          "title": " Design a shared-nothing architecture."
         },
         {
-          "title": "[ ] You build your system as a 12 factor app."
+          "title": " You build your system as a 12 factor app."
         },
         {
-          "title": "[ ] Use revision control with many deploys."
+          "title": " Use revision control with many deploys."
         },
         {
-          "title": "[ ] Declare dependancies with package managers."
+          "title": " Declare dependancies with package managers."
         },
         {
-          "title": "[ ] Store configuration in the environment."
+          "title": " Store configuration in the environment."
         },
         {
-          "title": "[ ] Track backend services as resources."
+          "title": " Track backend services as resources."
         },
         {
-          "title": "[ ] Use seperate build, and run stages."
+          "title": " Use seperate build, and run stages."
         },
         {
-          "title": "[ ] Execute the app as one or more stateless processes."
+          "title": " Execute the app as one or more stateless processes."
         },
         {
-          "title": "[ ] Export services via port binding."
+          "title": " Export services via port binding."
         },
         {
-          "title": "[ ] Scale out via the process model. Never daemonize or write PID files. Use process managers."
+          "title": " Scale out via the process model. Never daemonize or write PID files. Use process managers."
         },
         {
-          "title": "[ ] Processes shut down gracefully when they receive a SIGTERM. They have a fast startup and graceful shutdown."
+          "title": " Processes shut down gracefully when they receive a SIGTERM. They have a fast startup and graceful shutdown."
         },
         {
-          "title": "[ ] Keep development, staging, and production as similar as possible. Vagrant allow developers to run local environments."
+          "title": " Keep development, staging, and production as similar as possible. Vagrant allow developers to run local environments."
         },
         {
-          "title": "[ ] Treat logs as event streams."
+          "title": " Treat logs as event streams."
         },
         {
-          "title": "[ ] Run admin/management tasks as one-off processes. For example django manage.py commands.</li>\n</ul>"
+          "title": " Run admin/management tasks as one-off processes. For example django manage.py commands.</li>\n</ul>"
         },
         {
-          "title": "[ ] The system is a set of modules with loose coupling."
+          "title": " The system is a set of modules with loose coupling."
         },
         {
-          "title": "[ ] Modules communicate loosely via a protocol."
+          "title": " Modules communicate loosely via a protocol."
         },
         {
-          "title": "[ ] Design protocols for future extension. Design each module for independence. Design each module so it could be ripped out and placed in another system and still work."
+          "title": " Design protocols for future extension. Design each module for independence. Design each module so it could be ripped out and placed in another system and still work."
         },
         {
-          "title": "[ ] Avoid deep dependency hierarchies."
+          "title": " Avoid deep dependency hierarchies."
         },
         {
-          "title": "[ ] Avoid intermediaries parsing and interpreting on data."
+          "title": " Avoid intermediaries parsing and interpreting on data."
         },
         {
-          "title": "[ ] Have a supervision/restart strategy."
+          "title": " Have a supervision/restart strategy."
         },
         {
-          "title": "[ ] Prefer ratcheting methods via idempotence."
+          "title": " Prefer ratcheting methods via idempotence."
         },
         {
-          "title": "[ ] Uses a unique ID on all messages which means you can always retry said message in case of a timeout and be sure it won’t be rerun by the receiving system, if the receiver keeps a log of what it has already done."
+          "title": " Uses a unique ID on all messages which means you can always retry said message in case of a timeout and be sure it won’t be rerun by the receiving system, if the receiver keeps a log of what it has already done."
         },
         {
-          "title": "[ ] UNIX principle: each tool does one thing well."
+          "title": " UNIX principle: each tool does one thing well."
         },
         {
-          "title": "[ ] Define the capacity of the system up front."
+          "title": " Define the capacity of the system up front."
         },
         {
-          "title": "[ ] Decouple your SLA."
+          "title": " Decouple your SLA."
         },
         {
-          "title": "[ ] Put limits into other application-level protocols. HTTP, RPC, etc."
+          "title": " Put limits into other application-level protocols. HTTP, RPC, etc."
         }
       ]
     },
@@ -161,43 +161,43 @@
       "topic": "Setup",
       "items": [
         {
-          "title": "[ ] First you build an empty project."
+          "title": " First you build an empty project."
         },
         {
-          "title": "[ ] Add this empty project to continuous integration."
+          "title": " Add this empty project to continuous integration."
         },
         {
-          "title": "[ ] Deploy the empty project into staging."
+          "title": " Deploy the empty project into staging."
         },
         {
-          "title": "[ ] Once this works, you start building the application."
+          "title": " Once this works, you start building the application."
         },
         {
-          "title": "[ ] Preconfigure your systems so you need no external dependencies when deploying."
+          "title": " Preconfigure your systems so you need no external dependencies when deploying."
         },
         {
-          "title": "[ ] The same artifact is deployed to staging and production. It picks up a context from the environment and this context configures it."
+          "title": " The same artifact is deployed to staging and production. It picks up a context from the environment and this context configures it."
         },
         {
-          "title": "[ ] Don’t use advanced technology too early on."
+          "title": " Don’t use advanced technology too early on."
         },
         {
-          "title": "[ ] Lock dependencies to specific tags/versions."
+          "title": " Lock dependencies to specific tags/versions."
         },
         {
-          "title": "[ ] Make upgrading dependencies a decision on your part."
+          "title": " Make upgrading dependencies a decision on your part."
         },
         {
-          "title": "[ ] Vendor everything."
+          "title": " Vendor everything."
         },
         {
-          "title": "[ ] Make a production deploy take less than 1 minute from button-push-to-operational-on-the-first-instance."
+          "title": " Make a production deploy take less than 1 minute from button-push-to-operational-on-the-first-instance."
         },
         {
-          "title": "[ ] Build a default library you include in every application you write."
+          "title": " Build a default library you include in every application you write."
         },
         {
-          "title": "[ ] Let every application use the same library."
+          "title": " Let every application use the same library."
         }
       ]
     },
@@ -217,40 +217,40 @@
           "title": "<p>Fast is not really important.</p>"
         },
         {
-          "title": "<p>[ ] Build your system to collect metrics about itself as it runs.</p>"
+          "title": "<p> Build your system to collect metrics about itself as it runs.</p>"
         },
         {
-          "title": "[ ] Ship metrics to a central point for further analysis."
+          "title": " Ship metrics to a central point for further analysis."
         },
         {
-          "title": "[ ] Unit test, property based test, type systems, static analysis, and profiling."
+          "title": " Unit test, property based test, type systems, static analysis, and profiling."
         },
         {
-          "title": "[ ] No vendor lock-in."
+          "title": " No vendor lock-in."
         },
         {
-          "title": "[ ] Use proven synchronization primitives."
+          "title": " Use proven synchronization primitives."
         },
         {
-          "title": "[ ] No code formatting disputes."
+          "title": " No code formatting disputes."
         },
         {
-          "title": "[ ] Use load regulation in the border of the system."
+          "title": " Use load regulation in the border of the system."
         },
         {
-          "title": "[ ] Use a retry policy for failed requests. Consider delayed retries with exp back off."
+          "title": " Use a retry policy for failed requests. Consider delayed retries with exp back off."
         },
         {
-          "title": "[ ] Use a timeout policy for slow requests."
+          "title": " Use a timeout policy for slow requests."
         },
         {
-          "title": "[ ] Use circuit breakers to break cascading dependency failure."
+          "title": " Use circuit breakers to break cascading dependency failure."
         },
         {
-          "title": "[ ] Use Bulkheads to partition systems. Protect critical clients by giving them their own pool to call. Virtual servers provide an excellent mechanism for implementing bulkheads. For smaller scale Bind process to CPU."
+          "title": " Use Bulkheads to partition systems. Protect critical clients by giving them their own pool to call. Virtual servers provide an excellent mechanism for implementing bulkheads. For smaller scale Bind process to CPU."
         },
         {
-          "title": "[ ] Try to utilize Soft/Weak references in order to minimize memory footprint."
+          "title": " Try to utilize Soft/Weak references in order to minimize memory footprint."
         }
       ]
     },
@@ -258,19 +258,19 @@
       "topic": "Picking a database",
       "items": [
         {
-          "title": "[ ] Pick postgresql as default.If you need MongoDB-like functionality you create a jsonb column."
+          "title": " Pick postgresql as default.If you need MongoDB-like functionality you create a jsonb column."
         },
         {
-          "title": "[ ] Export to elasticsearch from postgres."
+          "title": " Export to elasticsearch from postgres."
         },
         {
-          "title": "[ ] Use pg_bouncer."
+          "title": " Use pg_bouncer."
         },
         {
-          "title": "[ ] Isolate complex transactional interactions to a few parts of the store."
+          "title": " Isolate complex transactional interactions to a few parts of the store."
         },
         {
-          "title": "[ ] Look for idempotent ratcheting methods as an alternative."
+          "title": " Look for idempotent ratcheting methods as an alternative."
         }
       ]
     },
@@ -278,16 +278,16 @@
       "topic": "Picking a programming language",
       "items": [
         {
-          "title": "[ ] Avoid the monoculture."
+          "title": " Avoid the monoculture."
         },
         {
-          "title": "[ ] Know the weaknesses of a language."
+          "title": " Know the weaknesses of a language."
         },
         {
-          "title": "[ ] The deployment tooling must be in place before use."
+          "title": " The deployment tooling must be in place before use."
         },
         {
-          "title": "[ ] Use make. Use the same make targets for all projects in the organization."
+          "title": " Use make. Use the same make targets for all projects in the organization."
         }
       ]
     },
@@ -295,10 +295,10 @@
       "topic": "Picking Architecture",
       "items": [
         {
-          "title": "[ ] Use REST."
+          "title": " Use REST."
         },
         {
-          "title": "[ ] Use REST Specifications like OpenApi, RAML."
+          "title": " Use REST Specifications like OpenApi, RAML."
         }
       ]
     },
@@ -306,25 +306,25 @@
       "topic": "Configuration",
       "items": [
         {
-          "title": "[ ] Secure defaults."
+          "title": " Secure defaults."
         },
         {
-          "title": "[ ] Persistent data lives outside of the artifact path, on a dedicated disk with dedicated quota."
+          "title": " Persistent data lives outside of the artifact path, on a dedicated disk with dedicated quota."
         },
         {
-          "title": "[ ] Log rotation."
+          "title": " Log rotation."
         },
         {
-          "title": "[ ] The artifact path is not writable by the application."
+          "title": " The artifact path is not writable by the application."
         },
         {
-          "title": "[ ] Use different credentials in production and staging."
+          "title": " Use different credentials in production and staging."
         },
         {
-          "title": "[ ] Deny developers laptops easy access to the production environment."
+          "title": " Deny developers laptops easy access to the production environment."
         },
         {
-          "title": "[ ] Avoid the temptation of too early etcd/Consul/chubby setups."
+          "title": " Avoid the temptation of too early etcd/Consul/chubby setups."
         }
       ]
     },
@@ -332,34 +332,34 @@
       "topic": "Operations",
       "items": [
         {
-          "title": "[ ] Optimize for sleep.The system must avoid waking people up in the middle of the night at all costs."
+          "title": " Optimize for sleep.The system must avoid waking people up in the middle of the night at all costs."
         },
         {
-          "title": "[ ] The system must be able to gracefully degrade."
+          "title": " The system must be able to gracefully degrade."
         },
         {
-          "title": "[ ] The system runs out of monit, supervise, upstart, systemd, rcNG, SMF, or the like."
+          "title": " The system runs out of monit, supervise, upstart, systemd, rcNG, SMF, or the like."
         },
         {
-          "title": "[ ] The application must gracefully stop and start if given the command to do so."
+          "title": " The application must gracefully stop and start if given the command to do so."
         },
         {
-          "title": "[ ] Every log file is shipped and indexed outside of the system. Every interesting metric too."
+          "title": " Every log file is shipped and indexed outside of the system. Every interesting metric too."
         },
         {
-          "title": "[ ] Don’t leave log files on production systems. Copy them to a staging area for analysis."
+          "title": " Don’t leave log files on production systems. Copy them to a staging area for analysis."
         },
         {
-          "title": "[ ] The only way to make changes to a production host is to redeploy."
+          "title": " The only way to make changes to a production host is to redeploy."
         },
         {
-          "title": "[ ] Make it easy to roll back and downgrade a deployment."
+          "title": " Make it easy to roll back and downgrade a deployment."
         },
         {
-          "title": "[ ] In a production system you must be able to query its state in an ad-hoc fashion."
+          "title": " In a production system you must be able to query its state in an ad-hoc fashion."
         },
         {
-          "title": "[ ] If you enable ad-hoc query and tracing on the system and then disable it again, there must no segfaults, no kernel crashes and no long-term impact."
+          "title": " If you enable ad-hoc query and tracing on the system and then disable it again, there must no segfaults, no kernel crashes and no long-term impact."
         }
       ]
     },
@@ -367,19 +367,19 @@
       "topic": "Site Reliability",
       "items": [
         {
-          "title": "[ ] Hire Coders only."
+          "title": " Hire Coders only."
         },
         {
-          "title": "[ ] Have an SLA for your service."
+          "title": " Have an SLA for your service."
         },
         {
-          "title": "[ ] Measure performance based on your SLA."
+          "title": " Measure performance based on your SLA."
         },
         {
-          "title": "[ ] Share 5% Operations work with developers."
+          "title": " Share 5% Operations work with developers."
         },
         {
-          "title": "[ ] Do Postmortems after each event and focus only on processes not people."
+          "title": " Do Postmortems after each event and focus only on processes not people."
         }
       ]
     },
@@ -414,22 +414,22 @@
           "topic": "Database",
           "items": [
             {
-              "title": "[ ] Use encryption for sensitive data."
+              "title": " Use encryption for sensitive data."
             },
             {
-              "title": "[ ] All backups are stored encrypted as well."
+              "title": " All backups are stored encrypted as well."
             },
             {
-              "title": "[ ] Use minimal privilege for the database access user account."
+              "title": " Use minimal privilege for the database access user account."
             },
             {
-              "title": "[ ] Store and distribute secrets using a key store designed for the purpose."
+              "title": " Store and distribute secrets using a key store designed for the purpose."
             },
             {
-              "title": "[ ] Don’t hard code in your applications."
+              "title": " Don’t hard code in your applications."
             },
             {
-              "title": "[ ] Only using SQL prepared statements."
+              "title": " Only using SQL prepared statements."
             }
           ]
         },
@@ -437,16 +437,16 @@
           "topic": "Development",
           "items": [
             {
-              "title": "[ ] Use vulnerability scanners for every version pushed to production."
+              "title": " Use vulnerability scanners for every version pushed to production."
             },
             {
-              "title": "[ ] Use memory leak analyzers to your to your production runtime binaries."
+              "title": " Use memory leak analyzers to your to your production runtime binaries."
             },
             {
-              "title": "[ ] Use race condition detection in your runtime binaries."
+              "title": " Use race condition detection in your runtime binaries."
             },
             {
-              "title": "[ ] Acquire and investigate any vendor libraries for surprises and failure modes."
+              "title": " Acquire and investigate any vendor libraries for surprises and failure modes."
             }
           ]
         },
@@ -454,13 +454,13 @@
           "topic": "Authentication",
           "items": [
             {
-              "title": "[ ] Ensure all passwords are hashed using appropriate crypto such as bcrypt. Use secure random bytes."
+              "title": " Ensure all passwords are hashed using appropriate crypto such as bcrypt. Use secure random bytes."
             },
             {
-              "title": "[ ] Apply password rules that encourage users to have long, random passwords."
+              "title": " Apply password rules that encourage users to have long, random passwords."
             },
             {
-              "title": "[ ] Use multi-factor authentication for your logins to all your service providers."
+              "title": " Use multi-factor authentication for your logins to all your service providers."
             }
           ]
         },
@@ -468,22 +468,22 @@
           "topic": "Denial of Service Protection",
           "items": [
             {
-              "title": "[ ] At a minimum, have rate limiters on your slower API paths and authentication related APIs like login and token generation routines."
+              "title": " At a minimum, have rate limiters on your slower API paths and authentication related APIs like login and token generation routines."
             },
             {
-              "title": "[ ] Use CAPTCHA in front end."
+              "title": " Use CAPTCHA in front end."
             },
             {
-              "title": "[ ] Enforce sanity limits on the size and structure of user submitted data and requests."
+              "title": " Enforce sanity limits on the size and structure of user submitted data and requests."
             },
             {
-              "title": "[ ] Use a global caching proxy service like CloudFlare."
+              "title": " Use a global caching proxy service like CloudFlare."
             },
             {
-              "title": "[ ] No single points of failure. Have redundancy on machines."
+              "title": " No single points of failure. Have redundancy on machines."
             },
             {
-              "title": "[ ] Use Bulkhead server partitioning. In essense assign limited resources to specific (groups of) clients, applications, operations, client endpoints, and so on."
+              "title": " Use Bulkhead server partitioning. In essense assign limited resources to specific (groups of) clients, applications, operations, client endpoints, and so on."
             }
           ]
         },
@@ -491,31 +491,31 @@
           "topic": "Web Traffic",
           "items": [
             {
-              "title": "[ ] Use the strict-transport-security header to force HTTPS on all requests."
+              "title": " Use the strict-transport-security header to force HTTPS on all requests."
             },
             {
-              "title": "[ ] Cookies must be httpOnly and secure and be scoped by path and domain."
+              "title": " Cookies must be httpOnly and secure and be scoped by path and domain."
             },
             {
-              "title": "[ ] Use Content Security Policy without allowing unsafe-* backdoors."
+              "title": " Use Content Security Policy without allowing unsafe-* backdoors."
             },
             {
-              "title": "[ ] Use CSP Subresource Integrity for CDN content."
+              "title": " Use CSP Subresource Integrity for CDN content."
             },
             {
-              "title": "[ ] Use X-Frame-Option, X-XSS-Protection headers in client responses."
+              "title": " Use X-Frame-Option, X-XSS-Protection headers in client responses."
             },
             {
-              "title": "[ ] Use CSRF tokens in all forms."
+              "title": " Use CSRF tokens in all forms."
             },
             {
-              "title": "[ ] Use the new SameSite Cookie response header which fixes CSRF once and for all newer browsers."
+              "title": " Use the new SameSite Cookie response header which fixes CSRF once and for all newer browsers."
             },
             {
-              "title": "[ ] Keep as little in the session state as possible."
+              "title": " Keep as little in the session state as possible."
             },
             {
-              "title": "[ ] Use a robots.txt file to keep legitimate bots away."
+              "title": " Use a robots.txt file to keep legitimate bots away."
             }
           ]
         },
@@ -523,13 +523,13 @@
           "topic": "APIs",
           "items": [
             {
-              "title": "[ ] No resources are enumerable in your public API."
+              "title": " No resources are enumerable in your public API."
             },
             {
-              "title": "[ ] All users are fully authenticated and authorized appropriately when using your API."
+              "title": " All users are fully authenticated and authorized appropriately when using your API."
             },
             {
-              "title": "[ ] Use canary checks in APIs to detect illegal or abnormal requests that indicate attacks."
+              "title": " Use canary checks in APIs to detect illegal or abnormal requests that indicate attacks."
             }
           ]
         },
@@ -537,10 +537,10 @@
           "topic": "Validation and Encoding",
           "items": [
             {
-              "title": "[ ] Do client-side input validation."
+              "title": " Do client-side input validation."
             },
             {
-              "title": "[ ] Escape text before showing."
+              "title": " Escape text before showing."
             }
           ]
         },
@@ -548,28 +548,28 @@
           "topic": "Cloud Configuration",
           "items": [
             {
-              "title": "[ ] Ensure all services have minimum ports open."
+              "title": " Ensure all services have minimum ports open."
             },
             {
-              "title": "[ ] Host backend database and services on private VPCs that are not visible on any public network."
+              "title": " Host backend database and services on private VPCs that are not visible on any public network."
             },
             {
-              "title": "[ ] Isolate logical services in separate VPCs and peer VPCs to provide inter-service communication."
+              "title": " Isolate logical services in separate VPCs and peer VPCs to provide inter-service communication."
             },
             {
-              "title": "[ ] Ensure all services only accept data from a minimal set of IP addresses."
+              "title": " Ensure all services only accept data from a minimal set of IP addresses."
             },
             {
-              "title": "[ ] Restrict outgoing IP and port traffic to minimize APTs and “botification”."
+              "title": " Restrict outgoing IP and port traffic to minimize APTs and “botification”."
             },
             {
-              "title": "[ ] No root credentials."
+              "title": " No root credentials."
             },
             {
-              "title": "[ ] Use minimal access privilege for all ops and developer staff."
+              "title": " Use minimal access privilege for all ops and developer staff."
             },
             {
-              "title": "[ ] Regularly rotate passwords and access keys according to a schedule."
+              "title": " Regularly rotate passwords and access keys according to a schedule."
             }
           ]
         },
@@ -577,25 +577,25 @@
           "topic": "Infrastructure",
           "items": [
             {
-              "title": "[ ] Ensure you can do upgrades without downtime. Automated."
+              "title": " Ensure you can do upgrades without downtime. Automated."
             },
             {
-              "title": "[ ] Create all infrastructure using a tool such as Terraform, and not via the cloud console. Have zero tolerance for any resource created in the cloud by hand."
+              "title": " Create all infrastructure using a tool such as Terraform, and not via the cloud console. Have zero tolerance for any resource created in the cloud by hand."
             },
             {
-              "title": "[ ] Use centralized logging for all services. You should never need SSH to access or retrieve logs."
+              "title": " Use centralized logging for all services. You should never need SSH to access or retrieve logs."
             },
             {
-              "title": "[ ] Don’t SSH into services except for one-off diagnosis. Using SSH regularly, typically means you have not automated an important task."
+              "title": " Don’t SSH into services except for one-off diagnosis. Using SSH regularly, typically means you have not automated an important task."
             },
             {
-              "title": "[ ]  Don’t keep port 22 open on any AWS service groups on a permanent basis. If you must use SSH, only use public key authentication and not passwords."
+              "title": "  Don’t keep port 22 open on any AWS service groups on a permanent basis. If you must use SSH, only use public key authentication and not passwords."
             },
             {
-              "title": "[ ] Create immutable hosts instead of long-lived servers that you patch and upgrade."
+              "title": " Create immutable hosts instead of long-lived servers that you patch and upgrade."
             },
             {
-              "title": "[ ] Protect infrastructure secrets with Centralized secret management tools like Vault or Keywhiz."
+              "title": " Protect infrastructure secrets with Centralized secret management tools like Vault or Keywhiz."
             }
           ]
         },
@@ -603,10 +603,10 @@
           "topic": "Operation",
           "items": [
             {
-              "title": "[ ] Power off unused services and servers."
+              "title": " Power off unused services and servers."
             },
             {
-              "title": "[ ] Have a practiced security incident plan."
+              "title": " Have a practiced security incident plan."
             }
           ]
         },
@@ -614,19 +614,19 @@
           "topic": "Test",
           "items": [
             {
-              "title": "[ ] Do Penetration Testing."
+              "title": " Do Penetration Testing."
             },
             {
-              "title": "[ ] Do fuzz testing."
+              "title": " Do fuzz testing."
             },
             {
-              "title": "[ ] Everything is Auditable."
+              "title": " Everything is Auditable."
             },
             {
-              "title": "[ ] Identify whatever your most expensive transactions are, and double or triple the proportion of those transactions to see how your system handles stress."
+              "title": " Identify whatever your most expensive transactions are, and double or triple the proportion of those transactions to see how your system handles stress."
             },
             {
-              "title": "[ ] Do Stress Tests."
+              "title": " Do Stress Tests."
             }
           ]
         },
@@ -690,6 +690,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

@@ -16,31 +16,31 @@
           "title": "<blockquote>\n<p><strong><em>Software architecture is the set of design decisions which, if made incorrectly, may cause your project to be cancelled. — Eoin Woods</em></strong></p>\n</blockquote>"
         },
         {
-          "title": "[ ] Take architectural decisions. Finalize tech stack."
+          "title": " Take architectural decisions. Finalize tech stack."
         },
         {
-          "title": "[ ] Create a multi-module Maven or Gradle project for your development. Start with two modules — <code>backend</code> and <code>frontend</code>.  You can refer to <a href=\"https://github.com/shekhargulati/spring-boot-react-maven-starter\">spring-boot-react-maven-starter</a> for inspiration. <code>backend</code> contains Java code of the application. <code>frontend</code> contains all React/Angular JavaScript/TypeScript code of the application."
+          "title": " Create a multi-module Maven or Gradle project for your development. Start with two modules — <code>backend</code> and <code>frontend</code>.  You can refer to <a href=\"https://github.com/shekhargulati/spring-boot-react-maven-starter\">spring-boot-react-maven-starter</a> for inspiration. <code>backend</code> contains Java code of the application. <code>frontend</code> contains all React/Angular JavaScript/TypeScript code of the application."
         },
         {
-          "title": "[ ] You should use <a href=\"https://github.com/takari/maven-wrapper\">Maven</a> or <a href=\"https://docs.gradle.org/current/userguide/gradle_wrapper.html\">Gradle</a> wrapper scripts so that a new developer do not need to install Maven or Gradle on their machine before executing the build."
+          "title": " You should use <a href=\"https://github.com/takari/maven-wrapper\">Maven</a> or <a href=\"https://docs.gradle.org/current/userguide/gradle_wrapper.html\">Gradle</a> wrapper scripts so that a new developer do not need to install Maven or Gradle on their machine before executing the build."
         },
         {
-          "title": "[ ] Build project as a single jar/war using a single command i.e. if I am using Maven as my build tool then I should be able to run <code>./mvnw clean install</code> in the project root to build the executable."
+          "title": " Build project as a single jar/war using a single command i.e. if I am using Maven as my build tool then I should be able to run <code>./mvnw clean install</code> in the project root to build the executable."
         },
         {
-          "title": "[ ] Set up CI server and make sure it can build the project as a single executable."
+          "title": " Set up CI server and make sure it can build the project as a single executable."
         },
         {
-          "title": "[ ] Fix standup time and make sure it works for everyone."
+          "title": " Fix standup time and make sure it works for everyone."
         },
         {
-          "title": "[ ] Finalise your sprint duration."
+          "title": " Finalise your sprint duration."
         },
         {
-          "title": "[ ] Finalise your testing strategy both manual and automated."
+          "title": " Finalise your testing strategy both manual and automated."
         },
         {
-          "title": "[ ] Each team member should come up with their learning goal."
+          "title": " Each team member should come up with their learning goal."
         }
       ]
     },
@@ -51,37 +51,37 @@
           "topic": "Git",
           "items": [
             {
-              "title": "[ ] Work on feature branches."
+              "title": " Work on feature branches."
             },
             {
-              "title": "[ ] Branch out from <code>develop</code> branch."
+              "title": " Branch out from <code>develop</code> branch."
             },
             {
-              "title": "[ ] Never push to <code>master</code> or <code>develop</code>. Make a pull request."
+              "title": " Never push to <code>master</code> or <code>develop</code>. Make a pull request."
             },
             {
-              "title": "[ ] Create PR on the <code>develop</code> branch and once it is tested then only merge to master. You can use different strategy like merge to <code>master</code> once sprint finishes."
+              "title": " Create PR on the <code>develop</code> branch and once it is tested then only merge to master. You can use different strategy like merge to <code>master</code> once sprint finishes."
             },
             {
-              "title": "[ ] Delete local and remote branches after merging. You can automate this process as well."
+              "title": " Delete local and remote branches after merging. You can automate this process as well."
             },
             {
-              "title": "[ ] Before raising PR, run the build locally and make sure all tests pass."
+              "title": " Before raising PR, run the build locally and make sure all tests pass."
             },
             {
-              "title": "[ ] Use <code>.gitignore</code> file."
+              "title": " Use <code>.gitignore</code> file."
             },
             {
-              "title": "[ ] Protect your <code>master</code> branch."
+              "title": " Protect your <code>master</code> branch."
             },
             {
-              "title": "[ ] Never commit binary files to Git."
+              "title": " Never commit binary files to Git."
             },
             {
-              "title": "[ ] Write meaningful Git commit messages. <a href=\"https://chris.beams.io/posts/git-commit/\">Read Chris Beam post on it</a>."
+              "title": " Write meaningful Git commit messages. <a href=\"https://chris.beams.io/posts/git-commit/\">Read Chris Beam post on it</a>."
             },
             {
-              "title": "[ ] Feature branches should be short lived."
+              "title": " Feature branches should be short lived."
             }
           ]
         },
@@ -92,25 +92,25 @@
               "title": "<blockquote>\n<p><strong><em>The most important practice for continuous integration to work properly is frequent check-ins to trunk or mainline. You should be checking in your code at least a couple of times a day. — David Farley</em></strong></p>\n</blockquote>"
             },
             {
-              "title": "[ ] Every code committed to version control system mainline should trigger a continuous integration job that runs on the integration server."
+              "title": " Every code committed to version control system mainline should trigger a continuous integration job that runs on the integration server."
             },
             {
-              "title": "[ ] Continuous integration job should build the project and run all unit test cases. It should happen on each code commit to mainline."
+              "title": " Continuous integration job should build the project and run all unit test cases. It should happen on each code commit to mainline."
             },
             {
-              "title": "[ ] Fix broken builds immediately. CI server should always be in healthy green state."
+              "title": " Fix broken builds immediately. CI server should always be in healthy green state."
             },
             {
-              "title": "[ ] Make CI server visible and transparent to whole team."
+              "title": " Make CI server visible and transparent to whole team."
             },
             {
-              "title": "[ ] Maintain build jobs as code use <code>Jenkinsfile</code> if you are using Jenkins"
+              "title": " Maintain build jobs as code use <code>Jenkinsfile</code> if you are using Jenkins"
             },
             {
-              "title": "[ ] You should be able to create build jobs on a new CI server using code."
+              "title": " You should be able to create build jobs on a new CI server using code."
             },
             {
-              "title": "[ ] Use pull request builder to build the project when pull request is raised."
+              "title": " Use pull request builder to build the project when pull request is raised."
             }
           ]
         },
@@ -121,28 +121,28 @@
               "title": "<blockquote>\n<p><strong><em>Documentation is the castor oil of programming. Managers think it is good for programmers and programmers hate it!. — Gerald Weinberg</em></strong></p>\n</blockquote>"
             },
             {
-              "title": "[ ] Create <code>README.md</code> file in root of your project and keep it updated. The README file should have following:"
+              "title": " Create <code>README.md</code> file in root of your project and keep it updated. The README file should have following:"
             },
             {
-              "title": "[ ] Couple of lines describing purpose of the project."
+              "title": " Couple of lines describing purpose of the project."
             },
             {
-              "title": "[ ] Instruction to grab the latest code and detailed instructions to build it."
+              "title": " Instruction to grab the latest code and detailed instructions to build it."
             },
             {
-              "title": "[ ] Instructions to run the project on local machine."
+              "title": " Instructions to run the project on local machine."
             },
             {
-              "title": "[ ] Link to Continuous integration server."
+              "title": " Link to Continuous integration server."
             },
             {
-              "title": "[ ] Instruction to do any setup required for the project."
+              "title": " Instruction to do any setup required for the project."
             },
             {
-              "title": "[ ] Instruction to grab project documentation."
+              "title": " Instruction to grab project documentation."
             },
             {
-              "title": "[ ] Any other relevant information that can help a new developer get started with the project."
+              "title": " Any other relevant information that can help a new developer get started with the project."
             }
           ]
         },
@@ -153,13 +153,13 @@
               "title": "<blockquote>\n<p><strong><em>Style distinguishes excellence from accomplishment. — James Coplien</em></strong></p>\n</blockquote>"
             },
             {
-              "title": "[ ] For backend, use <a href=\"http://checkstyle.sourceforge.net/\">Checkstyle</a> in your project. Make sure you it is integrated with the build."
+              "title": " For backend, use <a href=\"http://checkstyle.sourceforge.net/\">Checkstyle</a> in your project. Make sure you it is integrated with the build."
             },
             {
-              "title": "[ ] For frontend, use ESLint or <a href=\"https://palantir.github.io/tslint/\">TSLint</a>."
+              "title": " For frontend, use ESLint or <a href=\"https://palantir.github.io/tslint/\">TSLint</a>."
             },
             {
-              "title": "[ ] Format your code before committing."
+              "title": " Format your code before committing."
             }
           ]
         },
@@ -170,19 +170,19 @@
               "title": "<blockquote>\n<p><strong><em>Program testing can be used to show the presence of bugs, but never to show their absence! — Edsger Dijkstra</em></strong></p>\n</blockquote>"
             },
             {
-              "title": "[ ] Write one automated functional test per user story."
+              "title": " Write one automated functional test per user story."
             },
             {
-              "title": "[ ] Cover business logic with unit/Integration tests."
+              "title": " Cover business logic with unit/Integration tests."
             },
             {
-              "title": "[ ] Understand different between unit testing and integration testing."
+              "title": " Understand different between unit testing and integration testing."
             },
             {
-              "title": "[ ] Use consistent names for tests. I prefer to use <code>*Tests</code> as suffix for my tests."
+              "title": " Use consistent names for tests. I prefer to use <code>*Tests</code> as suffix for my tests."
             },
             {
-              "title": "[ ] Use consistent naming strategy for tests like <code>shouldRegisterNewUser</code> or <code>registerNewUser</code> or <code>should_register_new_user</code>"
+              "title": " Use consistent naming strategy for tests like <code>shouldRegisterNewUser</code> or <code>registerNewUser</code> or <code>should_register_new_user</code>"
             }
           ]
         },
@@ -190,13 +190,13 @@
           "topic": "Dependencies",
           "items": [
             {
-              "title": "[ ] Add a new dependency to the project after discussing with the team."
+              "title": " Add a new dependency to the project after discussing with the team."
             },
             {
-              "title": "[ ] Use <a href=\"https://snyk.io/\">Snyk</a> to check security vulnerabilities."
+              "title": " Use <a href=\"https://snyk.io/\">Snyk</a> to check security vulnerabilities."
             },
             {
-              "title": "[ ] Don't add dependency for each problem you face. First check if you already have some dependency that solves the problem."
+              "title": " Don't add dependency for each problem you face. First check if you already have some dependency that solves the problem."
             }
           ]
         },
@@ -207,13 +207,13 @@
               "title": "<blockquote>\n<p><strong><em>You have to learn the rules of the game. And then you have to play better than anyone else. — Albert Einstein</em></strong></p>\n</blockquote>"
             },
             {
-              "title": "[ ] Spend one hour on learning every day."
+              "title": " Spend one hour on learning every day."
             },
             {
-              "title": "[ ] Give session at your office or local meetup."
+              "title": " Give session at your office or local meetup."
             },
             {
-              "title": "[ ] Write blogs."
+              "title": " Write blogs."
             }
           ]
         },
@@ -224,13 +224,13 @@
               "title": "<blockquote>\n<p><strong><em>There are only two hard things in computer science: Cache Invalidation and Naming Things — Phil Karlton</em></strong></p>\n</blockquote>"
             },
             {
-              "title": "[ ] Think and discuss with team before choosing a name for public member."
+              "title": " Think and discuss with team before choosing a name for public member."
             },
             {
-              "title": "[ ] Java and JavaScript use PascalCase for classes, interfaces, enums, annotations."
+              "title": " Java and JavaScript use PascalCase for classes, interfaces, enums, annotations."
             },
             {
-              "title": "[ ] Java and JavaScript use camelCase for methods and variables."
+              "title": " Java and JavaScript use camelCase for methods and variables."
             }
           ]
         },
@@ -238,25 +238,25 @@
           "topic": "Exception Handling",
           "items": [
             {
-              "title": "[ ] Catch any checked exception thrown by the code."
+              "title": " Catch any checked exception thrown by the code."
             },
             {
-              "title": "[ ] Convert checked exception to unchecked exception."
+              "title": " Convert checked exception to unchecked exception."
             },
             {
-              "title": "[ ] Throw the unchecked exception. Unchecked exception could be custom or plain RuntimeException."
+              "title": " Throw the unchecked exception. Unchecked exception could be custom or plain RuntimeException."
             },
             {
-              "title": "[ ] Always use two arguments constructor of RuntimeException. The first take a message, second is the actual exception."
+              "title": " Always use two arguments constructor of RuntimeException. The first take a message, second is the actual exception."
             },
             {
-              "title": "[ ] Catch all exceptions thrown by code in your Controller or Resource classes."
+              "title": " Catch all exceptions thrown by code in your Controller or Resource classes."
             },
             {
-              "title": "[ ] Log exceptions only in the Controller or Resource classes."
+              "title": " Log exceptions only in the Controller or Resource classes."
             },
             {
-              "title": "[ ] Log both the message and exception. If using slf4j, then use <code>log.error(“message”,e)</code>."
+              "title": " Log both the message and exception. If using slf4j, then use <code>log.error(“message”,e)</code>."
             }
           ]
         },
@@ -264,13 +264,13 @@
           "topic": "Logging",
           "items": [
             {
-              "title": "[ ] Use slf4j with logback for logging."
+              "title": " Use slf4j with logback for logging."
             },
             {
-              "title": "[ ] My applications logs all errors"
+              "title": " My applications logs all errors"
             },
             {
-              "title": "[ ] The log files are rotated"
+              "title": " The log files are rotated"
             }
           ]
         },
@@ -278,34 +278,34 @@
           "topic": "REST API Design",
           "items": [
             {
-              "title": "[ ] Pick a versioning strategy. If you don't understand pros and cons of different strategies then pick URL versioning scheme <code>/api/v1</code>. Twitter uses this versioning scheme."
+              "title": " Pick a versioning strategy. If you don't understand pros and cons of different strategies then pick URL versioning scheme <code>/api/v1</code>. Twitter uses this versioning scheme."
             },
             {
-              "title": "[ ] Resources are nouns."
+              "title": " Resources are nouns."
             },
             {
-              "title": "[ ] Use HTTP <code>POST</code> for creating a resource on the server or for taking action. Always return location of created entity in the <code>Location</code> header."
+              "title": " Use HTTP <code>POST</code> for creating a resource on the server or for taking action. Always return location of created entity in the <code>Location</code> header."
             },
             {
-              "title": "[ ] Use <code>PATCH</code> HTTP method for update for partial update."
+              "title": " Use <code>PATCH</code> HTTP method for update for partial update."
             },
             {
-              "title": "[ ] Use <code>PUT</code> HTTP method when you do full update i.e. when client sends all the information in the request."
+              "title": " Use <code>PUT</code> HTTP method when you do full update i.e. when client sends all the information in the request."
             },
             {
-              "title": "[ ] Use <code>DELETE</code> HTTP method to delete a resource on the server"
+              "title": " Use <code>DELETE</code> HTTP method to delete a resource on the server"
             },
             {
-              "title": "[ ] For mapping actions use a consistent strategy. I recommend using <code>resource_name/actions/:action</code> strategy. For example, REST API for implementing <code>like</code> functionality you will make HTTP POST request to  <code>/api/v1/posts/123/actions/like</code> URL."
+              "title": " For mapping actions use a consistent strategy. I recommend using <code>resource_name/actions/:action</code> strategy. For example, REST API for implementing <code>like</code> functionality you will make HTTP POST request to  <code>/api/v1/posts/123/actions/like</code> URL."
             },
             {
-              "title": "[ ] In the above example if you have to implement undo action then you can make HTTP DELETE operation to <code>/api/v1/posts/actions/unlike</code>."
+              "title": " In the above example if you have to implement undo action then you can make HTTP DELETE operation to <code>/api/v1/posts/actions/unlike</code>."
             },
             {
-              "title": "[ ] For testing RESTful clients, use mock server. Use <a href=\"https://github.com/square/okhttp/tree/master/mockwebserver\">MockWebServer</a> JUnit rule for testing HTTP interactions."
+              "title": " For testing RESTful clients, use mock server. Use <a href=\"https://github.com/square/okhttp/tree/master/mockwebserver\">MockWebServer</a> JUnit rule for testing HTTP interactions."
             },
             {
-              "title": "[ ] Learn how great REST APIs are designed. I refer to <a href=\"https://developer.github.com/v3/\">Github REST API</a> when in doubt. I find it the best designed REST API."
+              "title": " Learn how great REST APIs are designed. I refer to <a href=\"https://developer.github.com/v3/\">Github REST API</a> when in doubt. I find it the best designed REST API."
             }
           ]
         },
@@ -316,19 +316,19 @@
               "title": "<blockquote>\n<p><strong><em>Code reviews are about code not people. Don't take code criticism personally.</em></strong></p>\n</blockquote>"
             },
             {
-              "title": "[ ] Are there any obvious logic errors in the code?"
+              "title": " Are there any obvious logic errors in the code?"
             },
             {
-              "title": "[ ] Are unit tests written for the business logic?"
+              "title": " Are unit tests written for the business logic?"
             },
             {
-              "title": "[ ] Does all the functional requirements met?"
+              "title": " Does all the functional requirements met?"
             },
             {
-              "title": "[ ] Does the code conform to existing style guidelines?"
+              "title": " Does the code conform to existing style guidelines?"
             },
             {
-              "title": "[ ] Propose better way to do certain tasks. It could be a library function that developer can use."
+              "title": " Propose better way to do certain tasks. It could be a library function that developer can use."
             }
           ]
         }
@@ -338,37 +338,37 @@
       "topic": "Front-end",
       "items": [
         {
-          "title": "[ ] Commit <code>yarn.lock</code> file"
+          "title": " Commit <code>yarn.lock</code> file"
         },
         {
-          "title": "[ ] Remove all <code>console.log</code> statements in the code."
+          "title": " Remove all <code>console.log</code> statements in the code."
         },
         {
-          "title": "[ ] Use linter and integrate it with the build tool."
+          "title": " Use linter and integrate it with the build tool."
         },
         {
-          "title": "[ ] Make sure there are no warnings and errors in the console."
+          "title": " Make sure there are no warnings and errors in the console."
         },
         {
-          "title": "[ ] Test on all the four major browsers — Chrome, Firefox, IE, and Safari."
+          "title": " Test on all the four major browsers — Chrome, Firefox, IE, and Safari."
         },
         {
-          "title": "[ ] Check spellings."
+          "title": " Check spellings."
         },
         {
-          "title": "[ ] Make sure grammar is correct in the messages."
+          "title": " Make sure grammar is correct in the messages."
         },
         {
-          "title": "[ ] Add Google Analytics into your project."
+          "title": " Add Google Analytics into your project."
         },
         {
-          "title": "[ ] Use jQuery 3 instead of earlier versions of jQuery."
+          "title": " Use jQuery 3 instead of earlier versions of jQuery."
         },
         {
-          "title": "[ ] Prefer Angular 4+ over Angular 1.x."
+          "title": " Prefer Angular 4+ over Angular 1.x."
         },
         {
-          "title": "[ ] Don't use Bower. Use npm to manage client side dependencies."
+          "title": " Don't use Bower. Use npm to manage client side dependencies."
         }
       ]
     },
@@ -376,13 +376,13 @@
       "topic": "Website performance optimization",
       "items": [
         {
-          "title": "[ ] Run <a href=\"https://developers.google.com/web/tools/lighthouse/\">Lighthouse</a> tool on your website."
+          "title": " Run <a href=\"https://developers.google.com/web/tools/lighthouse/\">Lighthouse</a> tool on your website."
         },
         {
-          "title": "[ ] Go through <a href=\"https://browserdiet.com/en/\">BrowserDiet</a> guide."
+          "title": " Go through <a href=\"https://browserdiet.com/en/\">BrowserDiet</a> guide."
         },
         {
-          "title": "[ ] All my application web pages load under 3 seconds."
+          "title": " All my application web pages load under 3 seconds."
         }
       ]
     },
@@ -390,10 +390,9 @@
       "topic": "License",
       "items": [
         {
-          "title": "[ ] Make sure you do not violate 3rd-party dependencies licenses. Your can use <a href=\"https://github.com/pivotal/LicenseFinder\">LicenseFinder</a> to compare licenses against a user-defined whitelist.<hr/><p>You can follow me on twitter at <a href=\"https://twitter.com/shekhargulati\">https://twitter.com/shekhargulati</a> or email me at <a href=\"mailto:shekhargulati84@gmail.com\">shekhargulati84@gmail.com</a>. Also, you can read my blogs at <a href=\"http://shekhargulati.com/\">http://shekhargulati.com/</a></p>"
+          "title": " Make sure you do not violate 3rd-party dependencies licenses. Your can use <a href=\"https://github.com/pivotal/LicenseFinder\">LicenseFinder</a> to compare licenses against a user-defined whitelist.<hr/><p>You can follow me on twitter at <a href=\"https://twitter.com/shekhargulati\">https://twitter.com/shekhargulati</a> or email me at <a href=\"mailto:shekhargulati84@gmail.com\">shekhargulati84@gmail.com</a>. Also, you can read my blogs at <a href=\"http://shekhargulati.com/\">http://shekhargulati.com/</a></p>"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

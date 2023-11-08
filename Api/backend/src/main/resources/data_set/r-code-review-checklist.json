@@ -23,16 +23,16 @@
       "topic": "General",
       "items": [
         {
-          "title": "[ ] The code is readable / easy to understand"
+          "title": " The code is readable / easy to understand"
         },
         {
-          "title": "[ ] The project executes / produces the intended deliverable on an independent machine (i.e. not the developer's computer) using only the code and resources embedded in the repository"
+          "title": " The project executes / produces the intended deliverable on an independent machine (i.e. not the developer's computer) using only the code and resources embedded in the repository"
         },
         {
-          "title": "[ ] All code is necessary; e.g. functions are not written which accomplish tasks already covered by other approved code bases"
+          "title": " All code is necessary; e.g. functions are not written which accomplish tasks already covered by other approved code bases"
         },
         {
-          "title": "[ ] Run-time is not prohibitively long / is appropriate given the nature of the project"
+          "title": " Run-time is not prohibitively long / is appropriate given the nature of the project"
         }
       ]
     },
@@ -40,28 +40,28 @@
       "topic": "Documentation and organization",
       "items": [
         {
-          "title": "[ ] The repository contains a <code>readme</code> which includes, at minimum, the purpose of the project (e.g. deliverables) and a set of instructions for executing the project from the code in the repository"
+          "title": " The repository contains a <code>readme</code> which includes, at minimum, the purpose of the project (e.g. deliverables) and a set of instructions for executing the project from the code in the repository"
         },
         {
-          "title": "[ ] File names succinctly describe the purpose of the file"
+          "title": " File names succinctly describe the purpose of the file"
         },
         {
-          "title": "[ ] File names do not contain special characters other than <code>-</code> or <code>_</code>, ideally with <code>-</code> used to separate words and <code>_</code> used to separate categories"
+          "title": " File names do not contain special characters other than <code>-</code> or <code>_</code>, ideally with <code>-</code> used to separate words and <code>_</code> used to separate categories"
         },
         {
-          "title": "[ ] Files that are to be run sequentially are prefixed with numbers, and single digits are padded with leading <code>0</code>s"
+          "title": " Files that are to be run sequentially are prefixed with numbers, and single digits are padded with leading <code>0</code>s"
         },
         {
-          "title": "[ ] Within files, logically separated chunks of code are divided by commented lines of <code>-</code> and/or <code>=</code> with a chunk descriptor"
+          "title": " Within files, logically separated chunks of code are divided by commented lines of <code>-</code> and/or <code>=</code> with a chunk descriptor"
         },
         {
-          "title": "[ ] Comments within chunks begin with <code>#</code> and a single space, and are in sentence case ending in <code>.</code> only when they contain at least 2 sentences"
+          "title": " Comments within chunks begin with <code>#</code> and a single space, and are in sentence case ending in <code>.</code> only when they contain at least 2 sentences"
         },
         {
-          "title": "[ ] All package dependencies required for a given script are loaded at the beginning of the file"
+          "title": " All package dependencies required for a given script are loaded at the beginning of the file"
         },
         {
-          "title": "[ ] Programs are appropriately decomposed into files/functions; ideally, each file is no more than 1 page long (approximately 60 lines)"
+          "title": " Programs are appropriately decomposed into files/functions; ideally, each file is no more than 1 page long (approximately 60 lines)"
         }
       ]
     },
@@ -69,16 +69,16 @@
       "topic": "Data management",
       "items": [
         {
-          "title": "[ ] External locations of raw data (if the data are too large or are not permitted to be stored directly in the repository) are clearly annotated with written verification that the locations and raw data will not be modified"
+          "title": " External locations of raw data (if the data are too large or are not permitted to be stored directly in the repository) are clearly annotated with written verification that the locations and raw data will not be modified"
         },
         {
-          "title": "[ ] All steps used to process data are clearly identifiable (e.g. through good file naming and organization) and reproducible"
+          "title": " All steps used to process data are clearly identifiable (e.g. through good file naming and organization) and reproducible"
         },
         {
-          "title": "[ ] Data are not hard-coded/manually written into any script"
+          "title": " Data are not hard-coded/manually written into any script"
         },
         {
-          "title": "[ ] Appropriate policy for data storage and access, particularly PHI, is followed"
+          "title": " Appropriate policy for data storage and access, particularly PHI, is followed"
         }
       ]
     },
@@ -86,43 +86,43 @@
       "topic": "Syntax",
       "items": [
         {
-          "title": "[ ] Variable and function names use only lowercase letters, numbers, and <code>_</code> (to separate words within a name)"
+          "title": " Variable and function names use only lowercase letters, numbers, and <code>_</code> (to separate words within a name)"
         },
         {
-          "title": "[ ] Variable names are nouns and function names are verbs"
+          "title": " Variable names are nouns and function names are verbs"
         },
         {
-          "title": "[ ] Commas always have a space after, and not before"
+          "title": " Commas always have a space after, and not before"
         },
         {
-          "title": "[ ] A space is used before and after <code>()</code> with <code>if</code>, <code>for</code>, or <code>while</code> (and no spaces appear on either side of <code>(</code> or <code>)</code> with regular function calls)"
+          "title": " A space is used before and after <code>()</code> with <code>if</code>, <code>for</code>, or <code>while</code> (and no spaces appear on either side of <code>(</code> or <code>)</code> with regular function calls)"
         },
         {
-          "title": "[ ] Infix operators <code>==</code>, <code>+</code>, <code>-</code>, <code>&lt;-</code>, and <code>=</code> are surrounded by spaces"
+          "title": " Infix operators <code>==</code>, <code>+</code>, <code>-</code>, <code>&lt;-</code>, and <code>=</code> are surrounded by spaces"
         },
         {
-          "title": "[ ] <code>{</code> and <code>}</code> are the last and first characters on lines and nested contents are indented by two spaces"
+          "title": " <code>{</code> and <code>}</code> are the last and first characters on lines and nested contents are indented by two spaces"
         },
         {
-          "title": "[ ] The first <code>%&gt;%</code> in a series is followed by a new line which is indented two spaces"
+          "title": " The first <code>%&gt;%</code> in a series is followed by a new line which is indented two spaces"
         },
         {
-          "title": "[ ] Styling for <code>+</code> in ggplot layers follows the styling format of <code>%&gt;%</code>"
+          "title": " Styling for <code>+</code> in ggplot layers follows the styling format of <code>%&gt;%</code>"
         },
         {
-          "title": "[ ] Code is limited to 80 characters per line, and multiple commands are not combined into one line with <code>;</code>"
+          "title": " Code is limited to 80 characters per line, and multiple commands are not combined into one line with <code>;</code>"
         },
         {
-          "title": "[ ] If arguments to a function don't all fit on one line, each argument is on its own indented line"
+          "title": " If arguments to a function don't all fit on one line, each argument is on its own indented line"
         },
         {
-          "title": "[ ] Assignment is made with <code>&lt;-</code> not <code>=</code>"
+          "title": " Assignment is made with <code>&lt;-</code> not <code>=</code>"
         },
         {
-          "title": "[ ] Text is quoted with <code>\"</code> not <code>'</code>, unless text already contains <code>\"</code>"
+          "title": " Text is quoted with <code>\"</code> not <code>'</code>, unless text already contains <code>\"</code>"
         },
         {
-          "title": "[ ] <code>TRUE</code> and <code>FALSE</code> are used, not <code>T</code> and <code>F</code>"
+          "title": " <code>TRUE</code> and <code>FALSE</code> are used, not <code>T</code> and <code>F</code>"
         }
       ]
     },
@@ -130,10 +130,10 @@
       "topic": "Change control",
       "items": [
         {
-          "title": "[ ] Iterative development in the project is annotated through descriptive commits"
+          "title": " Iterative development in the project is annotated through descriptive commits"
         },
         {
-          "title": "[ ] Major, minor, and patch modifications to the project are captured in release notes with corresponding release numbering (<code>major.minor.patch</code>)"
+          "title": " Major, minor, and patch modifications to the project are captured in release notes with corresponding release numbering (<code>major.minor.patch</code>)"
         }
       ]
     },
@@ -141,28 +141,27 @@
       "topic": "Pitfalls",
       "items": [
         {
-          "title": "[ ] No redundant code blocks or comments"
+          "title": " No redundant code blocks or comments"
         },
         {
-          "title": "[ ] Extraneous data are not stored in the repository or loaded in the project"
+          "title": " Extraneous data are not stored in the repository or loaded in the project"
         },
         {
-          "title": "[ ] No assignment in function calls"
+          "title": " No assignment in function calls"
         },
         {
-          "title": "[ ] <code>else</code> is used sparingly, if at all (i.e. for readability, it is avoided in favor of <code>if</code> with a guard clause or <code>case_when</code> when the logic is needed in a <code>mutate</code>)"
+          "title": " <code>else</code> is used sparingly, if at all (i.e. for readability, it is avoided in favor of <code>if</code> with a guard clause or <code>case_when</code> when the logic is needed in a <code>mutate</code>)"
         },
         {
-          "title": "[ ] No instances of <code>attach()</code> or <code>setwd()</code>"
+          "title": " No instances of <code>attach()</code> or <code>setwd()</code>"
         },
         {
-          "title": "[ ] No reliance on a system-specific startup file, such as <code>.Rprofile</code>"
+          "title": " No reliance on a system-specific startup file, such as <code>.Rprofile</code>"
         },
         {
-          "title": "[ ] No use of magrittr shortcuts <code>%&lt;&gt;%</code> and omission of <code>()</code> on functions that don’t have arguments"
+          "title": " No use of magrittr shortcuts <code>%&lt;&gt;%</code> and omission of <code>()</code> on functions that don’t have arguments"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

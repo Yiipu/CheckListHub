@@ -10,76 +10,76 @@
       "topic": "First submission and resubmission",
       "items": [
         {
-          "title": "[ ] Are all tables/figures (including supplementary!) referenced in the text?"
+          "title": " Are all tables/figures (including supplementary!) referenced in the text?"
         },
         {
-          "title": "[ ] Does the order of figures, tables, supplementary tables follow the order they're mentioned in the text?"
+          "title": " Does the order of figures, tables, supplementary tables follow the order they're mentioned in the text?"
         },
         {
-          "title": "[ ] Are the tables in your Supplementary Tables file in the right order, i.e., does Table S2 still follow Table S1?"
+          "title": " Are the tables in your Supplementary Tables file in the right order, i.e., does Table S2 still follow Table S1?"
         },
         {
-          "title": "[ ] The publisher often asks for the figure legends in the main text along with the same legends in the separate (Supplementary) Figures and Tables file, are the two legends still identical?"
+          "title": " The publisher often asks for the figure legends in the main text along with the same legends in the separate (Supplementary) Figures and Tables file, are the two legends still identical?"
         },
         {
-          "title": "[ ] If you have any paper-wide set orders of things (like species B, species C, species D), are they consistent in the text, tables, figures?"
+          "title": " If you have any paper-wide set orders of things (like species B, species C, species D), are they consistent in the text, tables, figures?"
         },
         {
-          "title": "[ ] Are all special words consistently spelled? for example, does the text switch from 'AA-genome' to 'A-genome', or from 'A-genome' to 'A genome'?"
+          "title": " Are all special words consistently spelled? for example, does the text switch from 'AA-genome' to 'A-genome', or from 'A-genome' to 'A genome'?"
         },
         {
-          "title": "[ ] Is the paper-title in the coverletter still the same as in the manuscript? Read the coverletter again"
+          "title": " Is the paper-title in the coverletter still the same as in the manuscript? Read the coverletter again"
         },
         {
-          "title": "[ ] Are your figures color-blind friendly? Check with tools like http://mapeper.github.io/jsColorblindSimulator/ (thanks @Psy_Fer_, @AgnieszkaGolicz, @_erikaroper!)"
+          "title": " Are your figures color-blind friendly? Check with tools like http://mapeper.github.io/jsColorblindSimulator/ (thanks @Psy_Fer_, @AgnieszkaGolicz, @_erikaroper!)"
         },
         {
-          "title": "[ ] Is there any leftover placeholder text like (CITATION), doi://XYZ, Table X, [TODO]?"
+          "title": " Is there any leftover placeholder text like (CITATION), doi://XYZ, Table X, [TODO]?"
         },
         {
-          "title": "[ ] Have you forgotten a co-author?"
+          "title": " Have you forgotten a co-author?"
         },
         {
-          "title": "[ ] Is it obvious from the author order who the corresponding author is/are? I.e., a star, or a cross, or a line with 'Corresponding author: A. Person, a_person@bla'"
+          "title": " Is it obvious from the author order who the corresponding author is/are? I.e., a star, or a cross, or a line with 'Corresponding author: A. Person, a_person@bla'"
         },
         {
-          "title": "[ ] Is everyone's name spelled as in their other papers? What about their affiliations?"
+          "title": " Is everyone's name spelled as in their other papers? What about their affiliations?"
         },
         {
-          "title": "[ ] Reread the journal's formatting rules - are you really following them? Are you sure about the order of your sections, and that you have all required sections?"
+          "title": " Reread the journal's formatting rules - are you really following them? Are you sure about the order of your sections, and that you have all required sections?"
         },
         {
-          "title": "[ ] Are your references in the right format? Do you have in-text references not in your References block? Are species names in italics?"
+          "title": " Are your references in the right format? Do you have in-text references not in your References block? Are species names in italics?"
         },
         {
-          "title": "[ ] Do you have duplicated references? (You can have Person 2016a and Person 2016b, but they're just two slightly differently spelled entries in your library)"
+          "title": " Do you have duplicated references? (You can have Person 2016a and Person 2016b, but they're just two slightly differently spelled entries in your library)"
         },
         {
-          "title": "[ ] Are species names in your text/figures/tables in italics?"
+          "title": " Are species names in your text/figures/tables in italics?"
         },
         {
-          "title": "[ ] Is your data deposited in the required repositories (SRA, Zenodo etc.), and is the link in the manuscript? (thanks @sarvenaz_s!)"
+          "title": " Is your data deposited in the required repositories (SRA, Zenodo etc.), and is the link in the manuscript? (thanks @sarvenaz_s!)"
         },
         {
-          "title": "[ ] Is your coloring scheme consistent across figures, where applicable?"
+          "title": " Is your coloring scheme consistent across figures, where applicable?"
         },
         {
-          "title": "[ ] Are the supplementary tables/figures pretty enough, numbers correctly formatted, table headers detailed enough?"
+          "title": " Are the supplementary tables/figures pretty enough, numbers correctly formatted, table headers detailed enough?"
         },
         {
-          "title": "[ ] In the acknowledgments, are all grants acknowledged with correct IDs? Are students' scholarships acknowledged? Are your institutions (HPC!) acknowledged?"
+          "title": " In the acknowledgments, are all grants acknowledged with correct IDs? Are students' scholarships acknowledged? Are your institutions (HPC!) acknowledged?"
         },
         {
-          "title": "[ ] Have you run the spellchecker manually one last time?"
+          "title": " Have you run the spellchecker manually one last time?"
         },
         {
-          "title": "[ ] Have you uploaded all files the text references, including the coverletter?"
+          "title": " Have you uploaded all files the text references, including the coverletter?"
         },
         {
-          "title": "[ ] Have you clicked the submit button?"
+          "title": " Have you clicked the submit button?"
         },
         {
-          "title": "[ ] Have you been kind to yourself and others?"
+          "title": " Have you been kind to yourself and others?"
         }
       ]
     },
@@ -87,25 +87,24 @@
       "topic": "Resubmission",
       "items": [
         {
-          "title": "[ ] When resubmitting, have all co-authors had enough time to comment on the revised manuscript? Should you follow up with co-authors who haven't sent anything?"
+          "title": " When resubmitting, have all co-authors had enough time to comment on the revised manuscript? Should you follow up with co-authors who haven't sent anything?"
         },
         {
-          "title": "[ ] Reread the reviewers' comments in the original email/file - have you missed any in your response?"
+          "title": " Reread the reviewers' comments in the original email/file - have you missed any in your response?"
         },
         {
-          "title": "[ ] If you're submitting somewhere else, is the coverletter sufficiently changed? Do you still mention some special issue that doesn't exist in the resubmission?"
+          "title": " If you're submitting somewhere else, is the coverletter sufficiently changed? Do you still mention some special issue that doesn't exist in the resubmission?"
         },
         {
-          "title": "[ ] If your co-authors have sent you their suggestions in separate files, have you included them all? Easy to miss one when you have 20 almost-identical Word files! Check your inbox, too!"
+          "title": " If your co-authors have sent you their suggestions in separate files, have you included them all? Easy to miss one when you have 20 almost-identical Word files! Check your inbox, too!"
         },
         {
-          "title": "[ ] Have any tables/figures/supplementary table numbers changed, and are these correctly referenced in the text? Is (Table 2) in the text still (Table 2), or should it be (Table 4) now?"
+          "title": " Have any tables/figures/supplementary table numbers changed, and are these correctly referenced in the text? Is (Table 2) in the text still (Table 2), or should it be (Table 4) now?"
         },
         {
-          "title": "[ ] If you were the reviewer, would you feel like your concerns were sufficiently addressed?"
+          "title": " If you were the reviewer, would you feel like your concerns were sufficiently addressed?"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

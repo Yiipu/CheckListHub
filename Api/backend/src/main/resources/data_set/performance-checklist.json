@@ -50,7 +50,7 @@
       "topic": "Set your objectives",
       "items": [
         {
-          "title": "[ ] Define the <strong>performance metrics and objectives</strong> that are important to your business"
+          "title": " Define the <strong>performance metrics and objectives</strong> that are important to your business"
         },
         {
           "title": "The <a href=\"https://developers.google.com/web/fundamentals/performance/rail\">RAIL model</a> is generally a good model to start with."
@@ -59,10 +59,10 @@
           "title": "If speed is an advantage you want to have against competitors, know that users usually will feel you are faster if you are at least 20% faster than them.</li>\n</ul>"
         },
         {
-          "title": "[ ] Plan out a <strong>loading sequence</strong>; this way you can define early what is really important in your content, what to load first and what to load later"
+          "title": " Plan out a <strong>loading sequence</strong>; this way you can define early what is really important in your content, what to load first and what to load later"
         },
         {
-          "title": "[ ] Make a <strong>performance budget</strong>"
+          "title": " Make a <strong>performance budget</strong>"
         },
         {
           "title": "The <a href=\"http://www.performancebudget.io\">performance budget calculator</a> is useful to estimate your budget depending on the performance you want to obtain. <a href=\"https://codepen.io/bradfrost/full/EPQVBp\">This one</a> is nice too."
@@ -85,22 +85,22 @@
           "topic": "Frontend",
           "items": [
             {
-              "title": "[ ] If choosing between SPA frameworks, <strong>take in account features like server side rendering</strong>; these features will be hard to add later"
+              "title": " If choosing between SPA frameworks, <strong>take in account features like server side rendering</strong>; these features will be hard to add later"
             },
             {
-              "title": "[ ] Take in account <strong>how much every library / framework will take on your performance budget</strong>; don't use too much of them"
+              "title": " Take in account <strong>how much every library / framework will take on your performance budget</strong>; don't use too much of them"
             },
             {
               "title": "<a href=\"https://bundlephobia.com\">Bundlephobia</a> can help you estimate the size of a new dependency.</li>\n</ul>"
             },
             {
-              "title": "[ ] <strong>Make sure you need custom fonts</strong> before using them"
+              "title": " <strong>Make sure you need custom fonts</strong> before using them"
             },
             {
               "title": "<a href=\"https://hackernoon.com/web-fonts-when-you-need-them-when-you-dont-a3b4b39fe0ae\">This article</a> can help you</li>\n</ul>"
             },
             {
-              "title": "[ ] Consider technologies like <strong><a href=\"https://www.ampproject.org/fr/\">AMP</a></strong> and <strong><a href=\"https://instantarticles.fb.com/\">Instant Articles</a></strong>, but be aware of their pros and cons"
+              "title": " Consider technologies like <strong><a href=\"https://www.ampproject.org/fr/\">AMP</a></strong> and <strong><a href=\"https://instantarticles.fb.com/\">Instant Articles</a></strong>, but be aware of their pros and cons"
             },
             {
               "title": "Keep also in mind these solutions are not mandatory to obtain correct performances."
@@ -111,7 +111,7 @@
           "topic": "Backend",
           "items": [
             {
-              "title": "[ ] When choosing a web framework / library / language, take in account the following points:"
+              "title": " When choosing a web framework / library / language, take in account the following points:"
             },
             {
               "title": "How <strong>fast</strong> is the library / underlying language (but be aware that benchmarks are usually biased)?"
@@ -128,7 +128,7 @@
           "topic": "Database",
           "items": [
             {
-              "title": "[ ] Make sure you <strong>use the right DBMS</strong> for your needs"
+              "title": " Make sure you <strong>use the right DBMS</strong> for your needs"
             },
             {
               "title": "Usually a relational database will cover most needs, but in some cases a NoSQL database may be a better fit."
@@ -150,19 +150,19 @@
               "title": "<p>Images represent in average ~60% of a page's weight, thus it's an important part to optimize.</p>"
             },
             {
-              "title": "[ ] Use <strong>WebP compression</strong> format for browsers that accept it"
+              "title": " Use <strong>WebP compression</strong> format for browsers that accept it"
             },
             {
-              "title": "[ ] Use <strong>responsive images</strong> with <code>img</code>'s' <code>srcset</code> and <code>size</code> attributes"
+              "title": " Use <strong>responsive images</strong> with <code>img</code>'s' <code>srcset</code> and <code>size</code> attributes"
             },
             {
-              "title": "[ ] <strong>Optimize</strong> manually <strong>important images</strong> or script their optimization"
+              "title": " <strong>Optimize</strong> manually <strong>important images</strong> or script their optimization"
             },
             {
-              "title": "[ ] <strong>Lazy load</strong> images"
+              "title": " <strong>Lazy load</strong> images"
             },
             {
-              "title": "[ ] Replacing animated <strong>gifs by videos</strong> can reduce their size dramatically (details <a href=\"https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video/\">here</a>)"
+              "title": " Replacing animated <strong>gifs by videos</strong> can reduce their size dramatically (details <a href=\"https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video/\">here</a>)"
             }
           ]
         },
@@ -170,16 +170,16 @@
           "topic": "Reduce code size",
           "items": [
             {
-              "title": "[ ] <strong>Minimize</strong> the source code"
+              "title": " <strong>Minimize</strong> the source code"
             },
             {
-              "title": "[ ] Use <strong>tree shaking</strong> (e.g. with <a href=\"https://webpack.js.org/\">webpack</a>) to remove unused code"
+              "title": " Use <strong>tree shaking</strong> (e.g. with <a href=\"https://webpack.js.org/\">webpack</a>) to remove unused code"
             },
             {
-              "title": "[ ] If your bundled code file is too big, use <strong>code splitting</strong> to load only what's needed first and lazy load the rest"
+              "title": " If your bundled code file is too big, use <strong>code splitting</strong> to load only what's needed first and lazy load the rest"
             },
             {
-              "title": "[ ] Serving <strong>ES2015 code to browsers supporting it</strong> and ES5 code to browsers that don't, using <code>type=\"module\"</code> and <code>nomodule</code>, can improve the bundle size and parsing time (details <a href=\"https://philipwalton.com/articles/deploying-es2015-code-in-production-today/\">here</a>)"
+              "title": " Serving <strong>ES2015 code to browsers supporting it</strong> and ES5 code to browsers that don't, using <code>type=\"module\"</code> and <code>nomodule</code>, can improve the bundle size and parsing time (details <a href=\"https://philipwalton.com/articles/deploying-es2015-code-in-production-today/\">here</a>)"
             }
           ]
         },
@@ -187,16 +187,16 @@
           "topic": "Reduce number of requests",
           "items": [
             {
-              "title": "[ ] Replace third parties components (like sharing buttons, maps...) by <strong>static components</strong>"
+              "title": " Replace third parties components (like sharing buttons, maps...) by <strong>static components</strong>"
             },
             {
               "title": "Tools like the <a href=\"https://simplesharingbuttons.com\">Simple sharing buttons generator</a> can help you.</li>\n</ul>"
             },
             {
-              "title": "[ ] Cache requests client side using <strong>service workers</strong>"
+              "title": " Cache requests client side using <strong>service workers</strong>"
             },
             {
-              "title": "[ ] Bundle common images using <strong>CSS sprites</strong>"
+              "title": " Bundle common images using <strong>CSS sprites</strong>"
             }
           ]
         },
@@ -207,25 +207,25 @@
               "title": "<p>You can use prefetching to prepare the browser to next requests and make them faster or even instant. <a href=\"https://css-tricks.com/prefetching-preloading-prebrowsing/\">This article</a> is a few old but explains well the following techniques.</p>"
             },
             {
-              "title": "[ ] Use <strong>dns-prefetch</strong> to resolve the domain of services you may need"
+              "title": " Use <strong>dns-prefetch</strong> to resolve the domain of services you may need"
             },
             {
-              "title": "[ ] Use <strong>preconnect</strong> to do DNS lookup, TCP handshake and TLS negociation with services you know you will need soon"
+              "title": " Use <strong>preconnect</strong> to do DNS lookup, TCP handshake and TLS negociation with services you know you will need soon"
             },
             {
-              "title": "[ ] Use <strong>prefetch</strong> to request specific resources that are likely to be needed soon, like images and scripts"
+              "title": " Use <strong>prefetch</strong> to request specific resources that are likely to be needed soon, like images and scripts"
             },
             {
               "title": "This technique makes an especially good combination with lazy loading.</li>\n</ul>"
             },
             {
-              "title": "[ ] Use <strong>preload</strong> to request specific resources that will be needed in the current page, e.g. <code>&lt;script&gt;</code> tags at the end of the body"
+              "title": " Use <strong>preload</strong> to request specific resources that will be needed in the current page, e.g. <code>&lt;script&gt;</code> tags at the end of the body"
             },
             {
               "title": "The difference between <code>prefetch</code> and <code>preload</code> is explained <a href=\"https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf\">here</a>.</li>\n</ul>"
             },
             {
-              "title": "[ ] Use <strong>prerender</strong> to request and prerender pages that are very likely to be visited soon, like homepage or user dashboard"
+              "title": " Use <strong>prerender</strong> to request and prerender pages that are very likely to be visited soon, like homepage or user dashboard"
             },
             {
               "title": "Be aware that this technique is quite heavy, make sure you know what you are doing before applying it."
@@ -239,31 +239,31 @@
               "title": "<p>Ideally the critical code should fit in 14KB in order to be server in the first TCP roundtrip (<a href=\"https://tylercipriani.com/blog/2016/09/25/the-14kb-in-the-tcp-initial-window/\">why 14KB?</a>). These techniques help to achieve this goal.</p>"
             },
             {
-              "title": "[ ] <strong>Inline critical CSS</strong> in the <code>&lt;head&gt;</code> of your pages"
+              "title": " <strong>Inline critical CSS</strong> in the <code>&lt;head&gt;</code> of your pages"
             },
             {
               "title": "Tools like <a href=\"https://github.com/filamentgroup/criticalCSS\">CriticalCSS</a> and <a href=\"https://github.com/addyosmani/critical\">critical</a> can help you defining your site's critical CSS</li>\n</ul>"
             },
             {
-              "title": "[ ] If critical CSS is inlined, you can then <strong>defer the CSS files loading</strong>"
+              "title": " If critical CSS is inlined, you can then <strong>defer the CSS files loading</strong>"
             },
             {
               "title": "<a href=\"https://github.com/filamentgroup/loadCSS\">loadCSS</a> can help you achieving that</li>\n</ul>"
             },
             {
-              "title": "[ ] When the CSS files are loaded, <strong>set a cookie to avoid using inlined critical CSS anymore</strong>; this way you will benefit from browser cache"
+              "title": " When the CSS files are loaded, <strong>set a cookie to avoid using inlined critical CSS anymore</strong>; this way you will benefit from browser cache"
             },
             {
               "title": "More explanations on this technique <a href=\"https://gomakethings.com/inlining-critical-css-for-better-web-performance/#what-about-browser-caching\">here</a></li>\n</ul>"
             },
             {
-              "title": "[ ] <strong>Defer scripts execution</strong>, especially social media buttons and ads"
+              "title": " <strong>Defer scripts execution</strong>, especially social media buttons and ads"
             },
             {
-              "title": "[ ] <strong>Defer fonts loading</strong>; the technique is explained <a href=\"https://www.sitepoint.com/improving-font-performance-subsetting-local-storage/\">here</a>"
+              "title": " <strong>Defer fonts loading</strong>; the technique is explained <a href=\"https://www.sitepoint.com/improving-font-performance-subsetting-local-storage/\">here</a>"
             },
             {
-              "title": "[ ] Use <strong>server side rendering</strong> if making an SPA"
+              "title": " Use <strong>server side rendering</strong> if making an SPA"
             }
           ]
         },
@@ -271,10 +271,10 @@
           "topic": "Optimize fonts",
           "items": [
             {
-              "title": "[ ] <strong>Subset your fonts</strong> using <a href=\"https://www.fontsquirrel.com/tools/webfont-generator\">Font Squirrel's font generator</a>"
+              "title": " <strong>Subset your fonts</strong> using <a href=\"https://www.fontsquirrel.com/tools/webfont-generator\">Font Squirrel's font generator</a>"
             },
             {
-              "title": "[ ] Use <strong>WOFF2</strong> with fallback to WOFF and OTF"
+              "title": " Use <strong>WOFF2</strong> with fallback to WOFF and OTF"
             }
           ]
         },
@@ -282,13 +282,13 @@
           "topic": "Make animations smooth",
           "items": [
             {
-              "title": "[ ] Prefer animating using CSS' <strong>transform</strong> and <strong>opacity</strong>; more explanations <a href=\"https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/\">here</a>"
+              "title": " Prefer animating using CSS' <strong>transform</strong> and <strong>opacity</strong>; more explanations <a href=\"https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/\">here</a>"
             },
             {
-              "title": "[ ] If animating with JS, use <strong>requestAnimationFrame</strong> instead of <code>setInterval</code>"
+              "title": " If animating with JS, use <strong>requestAnimationFrame</strong> instead of <code>setInterval</code>"
             },
             {
-              "title": "[ ] <strong>Avoid animating during high network activity</strong>; for example wait your page is fully loaded"
+              "title": " <strong>Avoid animating during high network activity</strong>; for example wait your page is fully loaded"
             }
           ]
         },
@@ -299,19 +299,19 @@
               "title": "<p>User perceived performance is often disregarded but can be more important than actual performance. These techniques allow to improve it.</p>"
             },
             {
-              "title": "[ ] You should use a <strong>loader only on \"long\" / \"heavy\" tasks</strong>, i.e. tasks the user can imagine they are heavy (e.g. account creation)"
+              "title": " You should use a <strong>loader only on \"long\" / \"heavy\" tasks</strong>, i.e. tasks the user can imagine they are heavy (e.g. account creation)"
             },
             {
-              "title": "[ ] Instead you can use <strong>animations</strong> to illustrate the transitions following user's action, for example transition from a page to another"
+              "title": " Instead you can use <strong>animations</strong> to illustrate the transitions following user's action, for example transition from a page to another"
             },
             {
-              "title": "[ ] Show <strong>app shell before content</strong> if needed; more explanations <a href=\"https://developers.google.com/web/fundamentals/architecture/app-shell\">here</a>"
+              "title": " Show <strong>app shell before content</strong> if needed; more explanations <a href=\"https://developers.google.com/web/fundamentals/architecture/app-shell\">here</a>"
             },
             {
-              "title": "[ ] If using JPG images, you can use <strong>progressive JPGs</strong> to improve their loading perception"
+              "title": " If using JPG images, you can use <strong>progressive JPGs</strong> to improve their loading perception"
             },
             {
-              "title": "[ ] If not using especially JPG, you can <strong>replace your images by cheaper components</strong> until they are loaded"
+              "title": " If not using especially JPG, you can <strong>replace your images by cheaper components</strong> until they are loaded"
             },
             {
               "title": "You can replace an image by a canvas filled with its main color."
@@ -323,7 +323,7 @@
               "title": "You can also simply use a low-quality version of it.</li>\n</ul>"
             },
             {
-              "title": "[ ] Make an <strong>optimistic UI</strong> to make some interactions feel instant; a quick explanation can be found <a href=\"https://uxplanet.org/optimistic-1000-34d9eefe4c05\">here</a>"
+              "title": " Make an <strong>optimistic UI</strong> to make some interactions feel instant; a quick explanation can be found <a href=\"https://uxplanet.org/optimistic-1000-34d9eefe4c05\">here</a>"
             }
           ]
         }
@@ -336,25 +336,25 @@
           "topic": "General",
           "items": [
             {
-              "title": "[ ] Provide <strong>batch queries / transactions</strong> instead of making the client send multiple requests"
+              "title": " Provide <strong>batch queries / transactions</strong> instead of making the client send multiple requests"
             },
             {
-              "title": "[ ] <strong>Identify &amp; optimize</strong> slow resources"
+              "title": " <strong>Identify &amp; optimize</strong> slow resources"
             },
             {
-              "title": "[ ] <strong>Parallelize</strong> slow tasks"
+              "title": " <strong>Parallelize</strong> slow tasks"
             },
             {
-              "title": "[ ] Use relevant <strong>data structures</strong>"
+              "title": " Use relevant <strong>data structures</strong>"
             },
             {
-              "title": "[ ] Don't overuse <strong>serialization</strong>"
+              "title": " Don't overuse <strong>serialization</strong>"
             },
             {
-              "title": "[ ] <strong>Generate static content when deploying</strong> so that it will be computed only once"
+              "title": " <strong>Generate static content when deploying</strong> so that it will be computed only once"
             },
             {
-              "title": "[ ] If possible, use <a href=\"http://jemalloc.net/\">jemalloc</a> to improve memory allocation"
+              "title": " If possible, use <a href=\"http://jemalloc.net/\">jemalloc</a> to improve memory allocation"
             }
           ]
         },
@@ -362,16 +362,16 @@
           "topic": "Cache",
           "items": [
             {
-              "title": "[ ] Use <strong>HTTP cache</strong>; the different caching techniques are explained in <a href=\"https://developer.mozilla.org/docs/Web/HTTP/Caching\">this guide</a>"
+              "title": " Use <strong>HTTP cache</strong>; the different caching techniques are explained in <a href=\"https://developer.mozilla.org/docs/Web/HTTP/Caching\">this guide</a>"
             },
             {
-              "title": "[ ] Consider using <strong>ESI</strong> if your app is not a SPA"
+              "title": " Consider using <strong>ESI</strong> if your app is not a SPA"
             },
             {
-              "title": "[ ] <strong>Cache calls to other services</strong> using Redis, a reverse proxy..."
+              "title": " <strong>Cache calls to other services</strong> using Redis, a reverse proxy..."
             },
             {
-              "title": "[ ] <strong>Cache data</strong> slow to compute and <strong>memoize</strong> slow functions"
+              "title": " <strong>Cache data</strong> slow to compute and <strong>memoize</strong> slow functions"
             }
           ]
         },
@@ -379,10 +379,10 @@
           "topic": "Don’t loose time with non urgent tasks",
           "items": [
             {
-              "title": "[ ] <strong>Defer tasks</strong> to workers using a queue or use event based patterns like Event Sourcing"
+              "title": " <strong>Defer tasks</strong> to workers using a queue or use event based patterns like Event Sourcing"
             },
             {
-              "title": "[ ] Use <strong>UDP</strong> for immediate but not vital tasks like logging"
+              "title": " Use <strong>UDP</strong> for immediate but not vital tasks like logging"
             }
           ]
         },
@@ -390,13 +390,13 @@
           "topic": "Don’t loose time with errors",
           "items": [
             {
-              "title": "[ ] <strong>Fail fast</strong> by validating request inputs as soon as possible"
+              "title": " <strong>Fail fast</strong> by validating request inputs as soon as possible"
             },
             {
-              "title": "[ ] Use the <strong>circuit breaker</strong> pattern to avoid waiting timeout when needing another service"
+              "title": " Use the <strong>circuit breaker</strong> pattern to avoid waiting timeout when needing another service"
             },
             {
-              "title": "[ ] On sensible resources, <strong>detect suspicious requests as attacks before actually handling them</strong>; attacks can cause heavy resources consumption"
+              "title": " On sensible resources, <strong>detect suspicious requests as attacks before actually handling them</strong>; attacks can cause heavy resources consumption"
             },
             {
               "title": "For example, detect a login request as part of a brute force attack before fetching user data from the database."
@@ -409,16 +409,16 @@
       "topic": "Database",
       "items": [
         {
-          "title": "[ ] First, use <strong>indexes</strong> smartly"
+          "title": " First, use <strong>indexes</strong> smartly"
         },
         {
           "title": "<a href=\"http://use-the-index-luke.com\">Use the Index, Luke</a> provides a complete guide on this subject for common RDBMS.\n <a href=\"http://use-the-index-luke.com/sql/partial-results/fetch-next-page\">here</a></li>\n</ul>"
         },
         {
-          "title": "[ ] <strong>Tune</strong> the DB; tools like <a href=\"https://github.com/major/MySQLTuner-perl\">MySQLTuner</a> and the experimental <a href=\"https://github.com/cmu-db/ottertune\">OtterTune</a> can help you"
+          "title": " <strong>Tune</strong> the DB; tools like <a href=\"https://github.com/major/MySQLTuner-perl\">MySQLTuner</a> and the experimental <a href=\"https://github.com/cmu-db/ottertune\">OtterTune</a> can help you"
         },
         {
-          "title": "[ ] <strong>Identify &amp; optimize critical and slow queries</strong> (e.g. code that produces n+1 queries)"
+          "title": " <strong>Identify &amp; optimize critical and slow queries</strong> (e.g. code that produces n+1 queries)"
         },
         {
           "title": "In most SQL databases, <code>EXPLAIN</code> can help by showing the execution plan for a query"
@@ -427,25 +427,25 @@
           "title": "In PostgreSQL, <code>EXPLAIN ANALYZE</code> can help further by executing the explained query"
         },
         {
-          "title": "[ ] If using pagination, <strong>use last row instead of <code>offset</code></strong> as a starting point; more explanations <a href=\"http://use-the-index-luke.com/\">here</a>"
+          "title": " If using pagination, <strong>use last row instead of <code>offset</code></strong> as a starting point; more explanations <a href=\"http://use-the-index-luke.com/\">here</a>"
         },
         {
-          "title": "[ ] Once you are sure the used DBMS is the good one for your needs, <strong>take advantage of its advanced features</strong> (e.g. materialized views in Oracle, hyperloglogs in Redis...)"
+          "title": " Once you are sure the used DBMS is the good one for your needs, <strong>take advantage of its advanced features</strong> (e.g. materialized views in Oracle, hyperloglogs in Redis...)"
         },
         {
-          "title": "[ ] <strong>Don’t use ORM for complex queries</strong>, unless you know what you’re doing"
+          "title": " <strong>Don’t use ORM for complex queries</strong>, unless you know what you’re doing"
         },
         {
-          "title": "[ ] If possible, <strong>defer heavy tasks</strong> to moments of the day where there is less load on the database (at night for example) to save resources when needed"
+          "title": " If possible, <strong>defer heavy tasks</strong> to moments of the day where there is less load on the database (at night for example) to save resources when needed"
         },
         {
-          "title": "[ ] If possible, enable <a href=\"http://jemalloc.net/\">jemalloc</a> to improve memory allocation"
+          "title": " If possible, enable <a href=\"http://jemalloc.net/\">jemalloc</a> to improve memory allocation"
         },
         {
-          "title": "[ ] If using UUIDs, reorder them before storing them; more explanations <a href=\"https://www.percona.com/blog/2014/12/19/store-uuid-optimized-way/\">here</a>"
+          "title": " If using UUIDs, reorder them before storing them; more explanations <a href=\"https://www.percona.com/blog/2014/12/19/store-uuid-optimized-way/\">here</a>"
         },
         {
-          "title": "[ ] Try different storage engines"
+          "title": " Try different storage engines"
         },
         {
           "title": "On many DBMSs <a href=\"http://rocksdb.org/\">RocksDB</a> often gives interesting results."
@@ -456,34 +456,34 @@
       "topic": "Network and Infrastructure",
       "items": [
         {
-          "title": "[ ] Serve static content using a <strong>CDN</strong> to shorten the distance between the client and the server"
+          "title": " Serve static content using a <strong>CDN</strong> to shorten the distance between the client and the server"
         },
         {
           "title": "When using your CDN take into consideration features like HTTP/2 support, compression...</li>\n</ul>"
         },
         {
-          "title": "[ ] Deploy your app on <strong>several datacenters</strong>, also to shorten the distance between the client and the server"
+          "title": " Deploy your app on <strong>several datacenters</strong>, also to shorten the distance between the client and the server"
         },
         {
-          "title": "[ ] Serve resources compressed using <strong>Brotli</strong> if it's supported, <strong>Gzip</strong> otherwise"
+          "title": " Serve resources compressed using <strong>Brotli</strong> if it's supported, <strong>Gzip</strong> otherwise"
         },
         {
-          "title": "[ ] Compress resources that are rarely changed using <strong>Zopfli</strong>"
+          "title": " Compress resources that are rarely changed using <strong>Zopfli</strong>"
         },
         {
-          "title": "[ ] Use <strong>HTTP/2</strong> and its features like <strong>server push</strong> and enable <strong>HPACK</strong> to compress HTTP headers"
+          "title": " Use <strong>HTTP/2</strong> and its features like <strong>server push</strong> and enable <strong>HPACK</strong> to compress HTTP headers"
         },
         {
-          "title": "[ ] Use <strong>OCSP stapling</strong> to fasten TLS shaking"
+          "title": " Use <strong>OCSP stapling</strong> to fasten TLS shaking"
         },
         {
-          "title": "[ ] Use <strong><a href=\"https://blog.cloudflare.com/introducing-0-rtt/\">0-RTT resumption</a></strong> to avoid round trips during TLS negotiations"
+          "title": " Use <strong><a href=\"https://blog.cloudflare.com/introducing-0-rtt/\">0-RTT resumption</a></strong> to avoid round trips during TLS negotiations"
         },
         {
-          "title": "[ ] <strong>Avoid redirects</strong> as they increase the number of needed requests"
+          "title": " <strong>Avoid redirects</strong> as they increase the number of needed requests"
         },
         {
-          "title": "[ ] If using a microservices architecture, <strong>bring services needing each other often closer</strong>, ideally in the same machine"
+          "title": " If using a microservices architecture, <strong>bring services needing each other often closer</strong>, ideally in the same machine"
         },
         {
           "title": "Kubernetes' pods can help achieve this goal"
@@ -494,25 +494,25 @@
       "topic": "Measuring",
       "items": [
         {
-          "title": "[ ] Measure <strong>server side</strong> performance; this is usually already done by the web framework"
+          "title": " Measure <strong>server side</strong> performance; this is usually already done by the web framework"
         },
         {
-          "title": "[ ] Measure <strong>client side</strong> performance; tools like <a href=\"http://www.webpagetest.org\">Web Page Test</a> can help you"
+          "title": " Measure <strong>client side</strong> performance; tools like <a href=\"http://www.webpagetest.org\">Web Page Test</a> can help you"
         },
         {
-          "title": "[ ] Measure client side performance <strong>by country</strong>; results may hugely differ from one to another"
+          "title": " Measure client side performance <strong>by country</strong>; results may hugely differ from one to another"
         },
         {
-          "title": "[ ] Use tools like <a href=\"https://developers.google.com/web/tools/lighthouse/\">Lighthouse</a> to <strong>audit</strong> your site"
+          "title": " Use tools like <a href=\"https://developers.google.com/web/tools/lighthouse/\">Lighthouse</a> to <strong>audit</strong> your site"
         },
         {
-          "title": "[ ] <strong>Load test</strong> your servers as they probably won't have same perfs under 10rps and 1000rps"
+          "title": " <strong>Load test</strong> your servers as they probably won't have same perfs under 10rps and 1000rps"
         },
         {
           "title": "<a href=\"https://gatling.io/\">Gatling</a> and <a href=\"https://locust.io/\">Locust</a> are good tools to perform these tests.</li>\n</ul>"
         },
         {
-          "title": "[ ] Keep track of <strong>queries to the databases</strong> to ease slow queries discovery"
+          "title": " Keep track of <strong>queries to the databases</strong> to ease slow queries discovery"
         }
       ]
     },
@@ -520,10 +520,10 @@
       "topic": "Misc",
       "items": [
         {
-          "title": "[ ] Keep your <strong>dependencies up-to-date</strong> as their performance is often improved by their maintainers"
+          "title": " Keep your <strong>dependencies up-to-date</strong> as their performance is often improved by their maintainers"
         },
         {
-          "title": "[ ] Take in account the <strong><a href=\"https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/save-data/\"><code>Save-Data</code></a></strong> request header to serve lighter assets to clients with limited resources"
+          "title": " Take in account the <strong><a href=\"https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/save-data/\"><code>Save-Data</code></a></strong> request header to serve lighter assets to clients with limited resources"
         }
       ]
     },
@@ -538,6 +538,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

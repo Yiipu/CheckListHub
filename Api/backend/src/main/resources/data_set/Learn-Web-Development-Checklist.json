@@ -13,145 +13,145 @@
       "topic": "HTML",
       "items": [
         {
-          "title": "[ ] HTML main tags <a href=\"https://www.youtube.com/playlist?list=PLblA84xge2_xNtaFnZhefjFbnDrpySKD3\">Playlist</a>"
+          "title": " HTML main tags <a href=\"https://www.youtube.com/playlist?list=PLblA84xge2_xNtaFnZhefjFbnDrpySKD3\">Playlist</a>"
         },
         {
-          "title": "[ ] <code>&lt;html&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-html-tag.html\">Link</a>"
+          "title": " <code>&lt;html&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-html-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;head&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-head-tag.html\">Link</a>"
+          "title": " <code>&lt;head&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-head-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;body&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-body-tag.html\">Link</a>"
+          "title": " <code>&lt;body&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-body-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;script&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-script-tag.html\">Link</a>"
+          "title": " <code>&lt;script&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-script-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;style&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-style-tag.html\">Link</a>"
+          "title": " <code>&lt;style&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-style-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;link&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-link-tag.html\">Link</a>"
+          "title": " <code>&lt;link&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-link-tag.html\">Link</a>"
         },
         {
-          "title": "<p>[ ] <code>&lt;meta&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-meta-tag.html\">Link</a></p>"
+          "title": "<p> <code>&lt;meta&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-meta-tag.html\">Link</a></p>"
         },
         {
-          "title": "<p>[ ] HTML5 Structural / Semantic elements</p>"
+          "title": "<p> HTML5 Structural / Semantic elements</p>"
         },
         {
-          "title": "[ ] <code>&lt;article&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-article-tag.html\">Link</a>"
+          "title": " <code>&lt;article&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-article-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;address&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-address-tag.html\">Link</a>"
+          "title": " <code>&lt;address&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-address-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;aside&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-aside-tag.html\">Link</a>"
+          "title": " <code>&lt;aside&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-aside-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;dialog&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-dialog-tag.html\">Link</a>"
+          "title": " <code>&lt;dialog&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-dialog-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;details&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-details-tag.html\">Link</a>"
+          "title": " <code>&lt;details&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-details-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;figure&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-figure-tag.html\">Link</a>"
+          "title": " <code>&lt;figure&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-figure-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;main&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-main-tag.html\">Link</a>"
+          "title": " <code>&lt;main&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-main-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;nav&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-nav-tag.html\">Link</a>"
+          "title": " <code>&lt;nav&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-nav-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;header&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-header-tag.html\">Link</a>"
+          "title": " <code>&lt;header&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-header-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;footer&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-footer-tag.html\">Link</a>"
+          "title": " <code>&lt;footer&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-footer-tag.html\">Link</a>"
         },
         {
-          "title": "<p>[ ] <code>&lt;summary&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-summary-tag.html\">Link</a></p>"
+          "title": "<p> <code>&lt;summary&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-summary-tag.html\">Link</a></p>"
         },
         {
-          "title": "<p>[ ] HTML Elements and their attributes</p>"
+          "title": "<p> HTML Elements and their attributes</p>"
         },
         {
-          "title": "[ ] Documents <code>&lt;!DOCTYPE&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-doctype-declaration.html\">Link</a>"
+          "title": " Documents <code>&lt;!DOCTYPE&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-doctype-declaration.html\">Link</a>"
         },
         {
-          "title": "[ ] Headings <code>&lt;h1&gt; - &lt;h6&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-h1-h6-tags.html\">Link</a>"
+          "title": " Headings <code>&lt;h1&gt; - &lt;h6&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-h1-h6-tags.html\">Link</a>"
         },
         {
-          "title": "[ ] Paragraph <code>&lt;p&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-p-tag.html\">Link</a>"
+          "title": " Paragraph <code>&lt;p&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-p-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] Lists <code>&lt;li&gt;, &lt;ul&gt;, &lt;dl&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-lists.html\">Link</a>"
+          "title": " Lists <code>&lt;li&gt;, &lt;ul&gt;, &lt;dl&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-lists.html\">Link</a>"
         },
         {
-          "title": "[ ] Links <code>&lt;a&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-a-tag.html\">Link</a>"
+          "title": " Links <code>&lt;a&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-a-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] Images <code>&lt;img&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-images.html\">Link</a>"
+          "title": " Images <code>&lt;img&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-images.html\">Link</a>"
         },
         {
-          "title": "<p>[ ] Table <code>&lt;table&gt;</code><a href=\"https://www.w3docs.com/learn-html/html-table.html\">Link</a></p>"
+          "title": "<p> Table <code>&lt;table&gt;</code><a href=\"https://www.w3docs.com/learn-html/html-table.html\">Link</a></p>"
         },
         {
-          "title": "<p>[ ] HTML Formatting</p>"
+          "title": "<p> HTML Formatting</p>"
         },
         {
-          "title": "[ ] <code>&lt;b&gt;</code> - Bold text <a href=\"https://www.w3docs.com/learn-html/html-b-tag.html\">Link</a>"
+          "title": " <code>&lt;b&gt;</code> - Bold text <a href=\"https://www.w3docs.com/learn-html/html-b-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;strong&gt;</code> - Important text <a href=\"https://www.w3docs.com/learn-html/html-strong-tag.html\">Link</a>"
+          "title": " <code>&lt;strong&gt;</code> - Important text <a href=\"https://www.w3docs.com/learn-html/html-strong-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;small&gt;</code> - Smaller text"
+          "title": " <code>&lt;small&gt;</code> - Smaller text"
         },
         {
-          "title": "[ ] <code>&lt;i&gt;</code> - Italic text <a href=\"https://www.w3docs.com/learn-html/html-i-tag.html\">Link</a>"
+          "title": " <code>&lt;i&gt;</code> - Italic text <a href=\"https://www.w3docs.com/learn-html/html-i-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;em&gt;</code> - Emphasized text <a href=\"https://www.w3docs.com/learn-html/html-em-tag.html\">Link</a>"
+          "title": " <code>&lt;em&gt;</code> - Emphasized text <a href=\"https://www.w3docs.com/learn-html/html-em-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;sub&gt;</code> - Subscript <a href=\"https://www.w3docs.com/learn-html/html-sub-tag.html\">Link</a>"
+          "title": " <code>&lt;sub&gt;</code> - Subscript <a href=\"https://www.w3docs.com/learn-html/html-sub-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;sup&gt;</code> - superscript <a href=\"https://www.w3docs.com/learn-html/html-sup-tag.html\">Link</a>"
+          "title": " <code>&lt;sup&gt;</code> - superscript <a href=\"https://www.w3docs.com/learn-html/html-sup-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;pre&gt;</code> - preformatted text <a href=\"https://www.w3docs.com/learn-html/html-pre-tag.html\">Link</a>"
+          "title": " <code>&lt;pre&gt;</code> - preformatted text <a href=\"https://www.w3docs.com/learn-html/html-pre-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] HTML Comments <code>&lt;!-- --&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-comments.html\">Link</a>"
+          "title": " HTML Comments <code>&lt;!-- --&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-comments.html\">Link</a>"
         },
         {
-          "title": "[ ] HTML forms <a href=\"https://www.w3docs.com/learn-html/html-form-tag.html\">Link</a>"
+          "title": " HTML forms <a href=\"https://www.w3docs.com/learn-html/html-form-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;input&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-input-tag.html\">Link</a></li>\n</ul>"
+          "title": " <code>&lt;input&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-input-tag.html\">Link</a></li>\n</ul>"
         },
         {
-          "title": "[ ] <code>&lt;textarea&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-textarea-tag.html\">Link</a>"
+          "title": " <code>&lt;textarea&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-textarea-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;button&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-button-tag.html\">Link</a>"
+          "title": " <code>&lt;button&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-button-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;select&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-select-tag.html\">Link</a>"
+          "title": " <code>&lt;select&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-select-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;option&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-option-tag.html\">Link</a>"
+          "title": " <code>&lt;option&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-option-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;fieldset&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-fieldset-tag.html\">Link</a>"
+          "title": " <code>&lt;fieldset&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-fieldset-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;label&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-label-tag.html\">Link</a>"
+          "title": " <code>&lt;label&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-label-tag.html\">Link</a>"
         },
         {
-          "title": "[ ] <code>&lt;legend&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-legend-tag.html\">Link</a>"
+          "title": " <code>&lt;legend&gt;</code> <a href=\"https://www.w3docs.com/learn-html/html-legend-tag.html\">Link</a>"
         }
       ]
     },
@@ -159,121 +159,121 @@
       "topic": "CSS",
       "items": [
         {
-          "title": "[ ] Adding a CSS stylesheet to an HTML page using <code>&lt;link&gt;</code>"
+          "title": " Adding a CSS stylesheet to an HTML page using <code>&lt;link&gt;</code>"
         },
         {
-          "title": "[ ] CSS Selectors <a href=\"https://css-tricks.com/how-css-selectors-work/\">Article</a> <a href=\"https://youtu.be/qj20o5UQ3qI\">Video</a>"
+          "title": " CSS Selectors <a href=\"https://css-tricks.com/how-css-selectors-work/\">Article</a> <a href=\"https://youtu.be/qj20o5UQ3qI\">Video</a>"
         },
         {
-          "title": "[ ] Color <a href=\"https://css-tricks.com/almanac/properties/c/color/\">Article</a>"
+          "title": " Color <a href=\"https://css-tricks.com/almanac/properties/c/color/\">Article</a>"
         },
         {
-          "title": "[ ] using hex eg: <code>#ff0000</code>"
+          "title": " using hex eg: <code>#ff0000</code>"
         },
         {
-          "title": "[ ] rgb eg: <code>rgb(0,0,255)</code>"
+          "title": " rgb eg: <code>rgb(0,0,255)</code>"
         },
         {
-          "title": "[ ] common color names eg: <code>red, pink, brown</code></li>\n</ul>"
+          "title": " common color names eg: <code>red, pink, brown</code></li>\n</ul>"
         },
         {
-          "title": "[ ] Font <a href=\"https://css-tricks.com/almanac/properties/f/font/\">Article</a>"
+          "title": " Font <a href=\"https://css-tricks.com/almanac/properties/f/font/\">Article</a>"
         },
         {
-          "title": "[ ] Family"
+          "title": " Family"
         },
         {
-          "title": "[ ] Size"
+          "title": " Size"
         },
         {
-          "title": "[ ] Weight</li>\n</ul>"
+          "title": " Weight</li>\n</ul>"
         },
         {
-          "title": "[ ] Text-decoration <a href=\"https://css-tricks.com/almanac/properties/t/text-decoration/\">Article</a>"
+          "title": " Text-decoration <a href=\"https://css-tricks.com/almanac/properties/t/text-decoration/\">Article</a>"
         },
         {
-          "title": "[ ] Text-transform <a href=\"https://css-tricks.com/almanac/properties/t/text-transform/\">Article</a>"
+          "title": " Text-transform <a href=\"https://css-tricks.com/almanac/properties/t/text-transform/\">Article</a>"
         },
         {
-          "title": "[ ] Line-height <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/line-height\">Article</a>"
+          "title": " Line-height <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/line-height\">Article</a>"
         },
         {
-          "title": "[ ] Letter-spacing <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing\">Article</a>"
+          "title": " Letter-spacing <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing\">Article</a>"
         },
         {
-          "title": "[ ] Word-spacing <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing\">Article</a>"
+          "title": " Word-spacing <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing\">Article</a>"
         },
         {
-          "title": "[ ] Background-color <a href=\"https://cssreference.io/property/background-color/\">Article</a>"
+          "title": " Background-color <a href=\"https://cssreference.io/property/background-color/\">Article</a>"
         },
         {
-          "title": "[ ] Background-image <a href=\"https://cssreference.io/property/background-image/\">Article</a>"
+          "title": " Background-image <a href=\"https://cssreference.io/property/background-image/\">Article</a>"
         },
         {
-          "title": "[ ] Margin <a href=\"https://css-tricks.com/almanac/properties/m/margin/\">Article</a> <a href=\"https://cssreference.io/property/margin/\">Article</a>"
+          "title": " Margin <a href=\"https://css-tricks.com/almanac/properties/m/margin/\">Article</a> <a href=\"https://cssreference.io/property/margin/\">Article</a>"
         },
         {
-          "title": "[ ] Padding <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/padding\">Article</a> <a href=\"https://cssreference.io/property/padding/\">Article</a>"
+          "title": " Padding <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/padding\">Article</a> <a href=\"https://cssreference.io/property/padding/\">Article</a>"
         },
         {
-          "title": "[ ] Border <a href=\"https://css-tricks.com/almanac/properties/b/border/\">Article</a>"
+          "title": " Border <a href=\"https://css-tricks.com/almanac/properties/b/border/\">Article</a>"
         },
         {
-          "title": "[ ] Width <a href=\"https://css-tricks.com/almanac/properties/w/width/\">Article</a>"
+          "title": " Width <a href=\"https://css-tricks.com/almanac/properties/w/width/\">Article</a>"
         },
         {
-          "title": "[ ] Height <a href=\"https://css-tricks.com/almanac/properties/h/height/\">Article</a>"
+          "title": " Height <a href=\"https://css-tricks.com/almanac/properties/h/height/\">Article</a>"
         },
         {
-          "title": "[ ] percentage, pixel, em <a href=\"https://youtu.be/fi81bovqxXI\">Video</a>"
+          "title": " percentage, pixel, em <a href=\"https://youtu.be/fi81bovqxXI\">Video</a>"
         },
         {
-          "title": "[ ] Box model <a href=\"https://css-tricks.com/the-css-box-model/\">Article</a> <a href=\"https://youtu.be/M1xEi_BBW1I\">Video</a>"
+          "title": " Box model <a href=\"https://css-tricks.com/the-css-box-model/\">Article</a> <a href=\"https://youtu.be/M1xEi_BBW1I\">Video</a>"
         },
         {
-          "title": "[ ] list-style <a href=\"https://css-tricks.com/almanac/properties/l/list-style/\">Article</a></li>\n</ul>"
+          "title": " list-style <a href=\"https://css-tricks.com/almanac/properties/l/list-style/\">Article</a></li>\n</ul>"
         },
         {
-          "title": "[ ] Pseudo class <a href=\"https://css-tricks.com/pseudo-class-selectors/\">Article</a>"
+          "title": " Pseudo class <a href=\"https://css-tricks.com/pseudo-class-selectors/\">Article</a>"
         },
         {
-          "title": "[ ] hover"
+          "title": " hover"
         },
         {
-          "title": "[ ] active"
+          "title": " active"
         },
         {
-          "title": "[ ] visited</li>\n</ul>"
+          "title": " visited</li>\n</ul>"
         },
         {
-          "title": "[ ] Position <a href=\"https://css-tricks.com/almanac/properties/p/position/\">Article</a> <a href=\"https://youtu.be/gD3G67oPg-w\">Video</a>"
+          "title": " Position <a href=\"https://css-tricks.com/almanac/properties/p/position/\">Article</a> <a href=\"https://youtu.be/gD3G67oPg-w\">Video</a>"
         },
         {
-          "title": "[ ] relative"
+          "title": " relative"
         },
         {
-          "title": "[ ] absolute"
+          "title": " absolute"
         },
         {
-          "title": "[ ] fixed</li>\n</ul>"
+          "title": " fixed</li>\n</ul>"
         },
         {
-          "title": "[ ] Display <a href=\"https://css-tricks.com/almanac/properties/d/display/\">Article</a>"
+          "title": " Display <a href=\"https://css-tricks.com/almanac/properties/d/display/\">Article</a>"
         },
         {
-          "title": "[ ] block"
+          "title": " block"
         },
         {
-          "title": "[ ] inline"
+          "title": " inline"
         },
         {
-          "title": "[ ] grid"
+          "title": " grid"
         },
         {
-          "title": "[ ] none</li>\n</ul>"
+          "title": " none</li>\n</ul>"
         },
         {
-          "title": "[ ] class vs id <a href=\"https://css-tricks.com/the-difference-between-id-and-class/\">Article</a>"
+          "title": " class vs id <a href=\"https://css-tricks.com/the-difference-between-id-and-class/\">Article</a>"
         }
       ]
     },
@@ -377,6 +377,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

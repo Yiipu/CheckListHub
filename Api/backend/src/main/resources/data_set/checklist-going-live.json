@@ -23,10 +23,10 @@
       "topic": "1. Browserstack tests",
       "items": [
         {
-          "title": "<p>[ ] Desktop: test on latest versions of Chrome, IE/Edge, Firefox, Safari</p>"
+          "title": "<p> Desktop: test on latest versions of Chrome, IE/Edge, Firefox, Safari</p>"
         },
         {
-          "title": "<p>[ ] Mobile: test on latest versions of Mobile Safari, Android</p>"
+          "title": "<p> Mobile: test on latest versions of Mobile Safari, Android</p>"
         }
       ]
     },
@@ -37,19 +37,19 @@
           "topic": "Assets",
           "items": [
             {
-              "title": "<p>[ ] Search sources for <code>http://</code>. Replace by <code>https://</code></p>"
+              "title": "<p> Search sources for <code>http://</code>. Replace by <code>https://</code></p>"
             },
             {
-              "title": "<p>[ ] Lint (s)css sources</p>"
+              "title": "<p> Lint (s)css sources</p>"
             },
             {
-              "title": "<p>[ ] Webfonts: is the live domain configured in services like Typekit, Fonts.com etc.?</p>"
+              "title": "<p> Webfonts: is the live domain configured in services like Typekit, Fonts.com etc.?</p>"
             },
             {
-              "title": "<p>[ ] Is the browserlist properly configured for autoprefixer and babel-preset-env?</p>"
+              "title": "<p> Is the browserlist properly configured for autoprefixer and babel-preset-env?</p>"
             },
             {
-              "title": "<p>[ ] When using PurgeCSS: check if layout is preserved.</p>"
+              "title": "<p> When using PurgeCSS: check if layout is preserved.</p>"
             }
           ]
         },
@@ -57,13 +57,13 @@
           "topic": "Scripts",
           "items": [
             {
-              "title": "<p>[ ] Is <code>yarn.lock</code> present?</p>"
+              "title": "<p> Is <code>yarn.lock</code> present?</p>"
             },
             {
-              "title": "<p>[ ] Check JS lint errors. Remove all <code>console.log</code> lines in scripts</p>"
+              "title": "<p> Check JS lint errors. Remove all <code>console.log</code> lines in scripts</p>"
             },
             {
-              "title": "<p>[ ] Check for console errors</p>"
+              "title": "<p> Check for console errors</p>"
             }
           ]
         },
@@ -71,13 +71,13 @@
           "topic": "Page weight",
           "items": [
             {
-              "title": "<p>[ ] Evaluate total weight of at least homepage</p>"
+              "title": "<p> Evaluate total weight of at least homepage</p>"
             },
             {
-              "title": "<p>[ ] Open Inspector network/timeline tab to identify heavy assets </p>"
+              "title": "<p> Open Inspector network/timeline tab to identify heavy assets </p>"
             },
             {
-              "title": "<p>[ ] Check if heavy assets are cached </p>"
+              "title": "<p> Check if heavy assets are cached </p>"
             }
           ]
         },
@@ -85,10 +85,10 @@
           "topic": "Audits",
           "items": [
             {
-              "title": "<p>[ ] Use the Chrome DevTools (in incognito mode) and perform a mobile audit (with throttling) to fix common problems.</p>"
+              "title": "<p> Use the Chrome DevTools (in incognito mode) and perform a mobile audit (with throttling) to fix common problems.</p>"
             },
             {
-              "title": "<p>[ ] Repeat with a desktop audit.</p>"
+              "title": "<p> Repeat with a desktop audit.</p>"
             }
           ]
         }
@@ -98,28 +98,28 @@
       "topic": "3. Check content (with an open console)",
       "items": [
         {
-          "title": "<p>[ ] Are all strings / images present (and translated)?</p>"
+          "title": "<p> Are all strings / images present (and translated)?</p>"
         },
         {
-          "title": "<p>[ ] Does menu/submenu have a correct active state on every page?</p>"
+          "title": "<p> Does menu/submenu have a correct active state on every page?</p>"
         },
         {
-          "title": "<p>[ ] Are 404, 500 and 503 pages provided? Do they provide useful content like 'back to home', search or a navigation tree?</p>"
+          "title": "<p> Are 404, 500 and 503 pages provided? Do they provide useful content like 'back to home', search or a navigation tree?</p>"
         },
         {
-          "title": "<p>[ ] Check all pages for n+1 problems</p>"
+          "title": "<p> Check all pages for n+1 problems</p>"
         },
         {
           "topic": "Meta",
           "items": [
             {
-              "title": "<p>[ ] Check page titles / descriptions</p>"
+              "title": "<p> Check page titles / descriptions</p>"
             },
             {
-              "title": "<p>[ ] Test Facebook sharing. Provide og-tags if needed</p>"
+              "title": "<p> Test Facebook sharing. Provide og-tags if needed</p>"
             },
             {
-              "title": "<p>[ ] Does Favicon load? Pin the tab in Safari to check pinned icon</p>\n<p><em>Repeat this section for all languages</em></p>"
+              "title": "<p> Does Favicon load? Pin the tab in Safari to check pinned icon</p>\n<p><em>Repeat this section for all languages</em></p>"
             }
           ]
         },
@@ -127,34 +127,34 @@
           "topic": "Components",
           "items": [
             {
-              "title": "<p>[ ] Google Maps</p>"
+              "title": "<p> Google Maps</p>"
             },
             {
-              "title": "<p>[ ] API key needed/configured?</p>"
+              "title": "<p> API key needed/configured?</p>"
             },
             {
-              "title": "<p>[ ] Check info windows</p>"
+              "title": "<p> Check info windows</p>"
             },
             {
-              "title": "<p>[ ] Prevent zoom out beyond 1x world</p>"
+              "title": "<p> Prevent zoom out beyond 1x world</p>"
             },
             {
-              "title": "<p>[ ] Try clicking on markers</p>\n</li>\n</ul>"
+              "title": "<p> Try clicking on markers</p>\n</li>\n</ul>"
             },
             {
-              "title": "<p>[ ] Forms: fill out with wrong/right values</p>"
+              "title": "<p> Forms: fill out with wrong/right values</p>"
             },
             {
-              "title": "<p>[ ] Video: check with sound on</p>"
+              "title": "<p> Video: check with sound on</p>"
             },
             {
-              "title": "<p>[ ] Try subscribing to a newsletter with incorrect &amp; correct email (use correct mail twice to get 'already subscribed' message)</p>"
+              "title": "<p> Try subscribing to a newsletter with incorrect &amp; correct email (use correct mail twice to get 'already subscribed' message)</p>"
             },
             {
-              "title": "<p>[ ] Check layout of emails</p>"
+              "title": "<p> Check layout of emails</p>"
             },
             {
-              "title": "<p>[ ] Check structured data for news, events, products,... https://search.google.com/structured-data/testing-tool/</p>"
+              "title": "<p> Check structured data for news, events, products,... https://search.google.com/structured-data/testing-tool/</p>"
             }
           ]
         }
@@ -164,31 +164,31 @@
       "topic": "4. Back end checklist",
       "items": [
         {
-          "title": "<p>[ ] Open up <code>/blender</code></p>"
+          "title": "<p> Open up <code>/blender</code></p>"
         },
         {
-          "title": "<p>[ ] Remove unused modules from main menu </p>"
+          "title": "<p> Remove unused modules from main menu </p>"
         },
         {
-          "title": "<p>[ ] Configure Analytics dashboard</p>"
+          "title": "<p> Configure Analytics dashboard</p>"
         },
         {
-          "title": "<p>[ ] Create a new admin and try to log in</p>"
+          "title": "<p> Create a new admin and try to log in</p>"
         },
         {
-          "title": "<p>[ ] Try the password reset flow for existing user</p>"
+          "title": "<p> Try the password reset flow for existing user</p>"
         },
         {
-          "title": "<p>[ ] Try saving article / news / ...</p>"
+          "title": "<p> Try saving article / news / ...</p>"
         },
         {
-          "title": "<p>[ ] Verify all e-mail recipients are correct</p>"
+          "title": "<p> Verify all e-mail recipients are correct</p>"
         },
         {
-          "title": "<p>[ ] Scan database for urls to development domain</p>"
+          "title": "<p> Scan database for urls to development domain</p>"
         },
         {
-          "title": "<p>[ ] Check client's logo in header</p>"
+          "title": "<p> Check client's logo in header</p>"
         }
       ]
     },
@@ -196,52 +196,52 @@
       "topic": "5. Server, DNS & Services",
       "items": [
         {
-          "title": "<p>[ ] Add redirects from old to new pages if necessary.</p>"
+          "title": "<p> Add redirects from old to new pages if necessary.</p>"
         },
         {
-          "title": "<p>[ ] Install Let's Encrypt certificate</p>"
+          "title": "<p> Install Let's Encrypt certificate</p>"
         },
         {
-          "title": "<p>[ ] Check SSL certificate health https://www.ssllabs.com/ssltest/</p>"
+          "title": "<p> Check SSL certificate health https://www.ssllabs.com/ssltest/</p>"
         },
         {
-          "title": "<p>[ ] Check your hostfile to make sure you're looking at the live site</p>"
+          "title": "<p> Check your hostfile to make sure you're looking at the live site</p>"
         },
         {
-          "title": "<p>[ ] Try visiting <code>www</code> domain, should redirect to <code>non-www</code></p>"
+          "title": "<p> Try visiting <code>www</code> domain, should redirect to <code>non-www</code></p>"
         },
         {
-          "title": "<p>[ ] Try out visiting <code>http</code>, should redirect to <code>https</code></p>"
+          "title": "<p> Try out visiting <code>http</code>, should redirect to <code>https</code></p>"
         },
         {
-          "title": "<p>[ ] Verify that all http status codes are ok with https://github.com/spatie/http-status-check</p>"
+          "title": "<p> Verify that all http status codes are ok with https://github.com/spatie/http-status-check</p>"
         },
         {
-          "title": "<p>[ ] Scan for mixed content with https://github.com/spatie/mixed-content-scanner-cli</p>"
+          "title": "<p> Scan for mixed content with https://github.com/spatie/mixed-content-scanner-cli</p>"
         },
         {
-          "title": "<p>[ ] Verify that indexing is not prohibited with <code>x-robots-tag: none</code> by checking <code>curl -I https://url | grep 'x-robots-tag'</code>. Allow robots in <code>.env</code></p>"
+          "title": "<p> Verify that indexing is not prohibited with <code>x-robots-tag: none</code> by checking <code>curl -I https://url | grep 'x-robots-tag'</code>. Allow robots in <code>.env</code></p>"
         },
         {
-          "title": "<p>[ ] Remove development DNS record</p>"
+          "title": "<p> Remove development DNS record</p>"
         },
         {
-          "title": "<p>[ ] Check dns propagation with https://www.whatsmydns.net/</p>"
+          "title": "<p> Check dns propagation with https://www.whatsmydns.net/</p>"
         },
         {
-          "title": "<p>[ ] Verify Tag Manager / Analytics have been correctly set up</p>"
+          "title": "<p> Verify Tag Manager / Analytics have been correctly set up</p>"
         },
         {
           "topic": "Google Search Console",
           "items": [
             {
-              "title": "<p>[ ] Submit all www/non-www http/https variations</p>"
+              "title": "<p> Submit all www/non-www http/https variations</p>"
             },
             {
-              "title": "<p>[ ] Set up non-www https as the preferred domain </p>"
+              "title": "<p> Set up non-www https as the preferred domain </p>"
             },
             {
-              "title": "<p>[ ] Crawl &gt; Fetch as Google &gt; Submit to index to kickstart index</p>"
+              "title": "<p> Crawl &gt; Fetch as Google &gt; Submit to index to kickstart index</p>"
             }
           ]
         },
@@ -249,25 +249,25 @@
           "topic": "Server",
           "items": [
             {
-              "title": "<p>[ ] Are DigitalOcean backups enabled?</p>"
+              "title": "<p> Are DigitalOcean backups enabled?</p>"
             },
             {
-              "title": "<p>[ ] Are Amazon backups enabled?</p>"
+              "title": "<p> Are Amazon backups enabled?</p>"
             },
             {
-              "title": "<p>[ ] Is the output of artisan task <code>backup:run</code> ok?</p>"
+              "title": "<p> Is the output of artisan task <code>backup:run</code> ok?</p>"
             },
             {
-              "title": "<p>[ ] Is artisan scheduled on Forge?</p>"
+              "title": "<p> Is artisan scheduled on Forge?</p>"
             },
             {
-              "title": "<p>[ ] Is Horizon configured in Supervisor on Forge? Command should be <code>php artisan horizon</code>. Path should be <code>/home/forge/my-new-site.com/current</code></p>"
+              "title": "<p> Is Horizon configured in Supervisor on Forge? Command should be <code>php artisan horizon</code>. Path should be <code>/home/forge/my-new-site.com/current</code></p>"
             },
             {
-              "title": "<p>[ ] Is the url being monitored by <a href=\"https://ohdearapp.com/\">Oh Dear!</a>?</p>"
+              "title": "<p> Is the url being monitored by <a href=\"https://ohdearapp.com/\">Oh Dear!</a>?</p>"
             },
             {
-              "title": "<p>[ ] Is the server being monitored by our server-monitor?</p>"
+              "title": "<p> Is the server being monitored by our server-monitor?</p>"
             }
           ]
         },
@@ -275,7 +275,7 @@
           "topic": "Github",
           "items": [
             {
-              "title": "[ ] Remove <code>develop</code> branch or other stale branches"
+              "title": " Remove <code>develop</code> branch or other stale branches"
             }
           ]
         }
@@ -289,6 +289,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

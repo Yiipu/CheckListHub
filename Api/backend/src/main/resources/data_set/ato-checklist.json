@@ -18,19 +18,19 @@
           "title": "<p>Backend systems we rely on for detection and mitigation.</p>"
         },
         {
-          "title": "[ ] General Rate Limiting"
+          "title": " General Rate Limiting"
         },
         {
-          "title": "[ ] User Event / Authentication Logs"
+          "title": " User Event / Authentication Logs"
         },
         {
-          "title": "[ ] Device Identification (Cookie)"
+          "title": " Device Identification (Cookie)"
         },
         {
           "title": "See reference like <a href=\"https://github.com/magoo/AuthTables\">AuthTables</a></li>\n</ul>"
         },
         {
-          "title": "[ ] Browser Fingerprinting (No Cookie)"
+          "title": " Browser Fingerprinting (No Cookie)"
         },
         {
           "title": "See <a href=\"https://amiunique.org/\">AmIUnique</a>, <a href=\"https://coveryourtracks.eff.org/\">Cover Your Tracks</a>"
@@ -39,25 +39,25 @@
           "title": "🚨 Do not mix with ads infra 🚨</li>\n</ul>"
         },
         {
-          "title": "[ ] Device Verification (Email confirmation, SMS, Snail Mail)"
+          "title": " Device Verification (Email confirmation, SMS, Snail Mail)"
         },
         {
-          "title": "[ ] Customer Session, Password Reset Workflows (Backend)"
+          "title": " Customer Session, Password Reset Workflows (Backend)"
         },
         {
-          "title": "[ ] Link Shim"
+          "title": " Link Shim"
         },
         {
-          "title": "[ ] Leaked Credential Pipeline (Backend)"
+          "title": " Leaked Credential Pipeline (Backend)"
         },
         {
-          "title": "[ ] Scraping (Pastebin, torrents, etc)"
+          "title": " Scraping (Pastebin, torrents, etc)"
         },
         {
-          "title": "[ ] D a R k W e B and UnDErGroUnD"
+          "title": " D a R k W e B and UnDErGroUnD"
         },
         {
-          "title": "[ ] Periodically accessible dumps"
+          "title": " Periodically accessible dumps"
         }
       ]
     },
@@ -68,34 +68,34 @@
           "title": "<p>This section describes useful data that often needs to be acquired externally. These can be used in automated classification or to decorate investigation workflows with correlating info. </p>"
         },
         {
-          "title": "[ ] Known proxies, tor, vps &amp; colocation"
+          "title": " Known proxies, tor, vps &amp; colocation"
         },
         {
-          "title": "[ ] Observed malicious or  compromised (Paid)"
+          "title": " Observed malicious or  compromised (Paid)"
         },
         {
-          "title": "[ ] Known Leaked Credentials"
+          "title": " Known Leaked Credentials"
         },
         {
-          "title": "[ ] Recent Sim Swap"
+          "title": " Recent Sim Swap"
         },
         {
-          "title": "[ ] Domain intelligence"
+          "title": " Domain intelligence"
         },
         {
-          "title": "[ ] New domains"
+          "title": " New domains"
         },
         {
-          "title": "[ ] Disposable"
+          "title": " Disposable"
         },
         {
-          "title": "[ ] Previously abused</li>\n</ul>"
+          "title": " Previously abused</li>\n</ul>"
         },
         {
-          "title": "[ ] Address verification"
+          "title": " Address verification"
         },
         {
-          "title": "[ ] Cellular verification (VoIP detection)"
+          "title": " Cellular verification (VoIP detection)"
         }
       ]
     },
@@ -106,19 +106,19 @@
           "title": "<p>All user facing experiences to help reduce risk within a product.</p>"
         },
         {
-          "title": "[ ] MFA Options"
+          "title": " MFA Options"
         },
         {
           "title": "Security keys, MFA, SMS, backup codes, etc.</li>\n</ul>"
         },
         {
-          "title": "[ ] Knowledge Base and self-support"
+          "title": " Knowledge Base and self-support"
         },
         {
           "title": "Reducing outreach to support for questions.</li>\n</ul>"
         },
         {
-          "title": "[ ] Link Shim"
+          "title": " Link Shim"
         },
         {
           "title": "Allows for disabling of external links when copy-pasted, emailed, or otherwise brought off platform."
@@ -127,7 +127,7 @@
           "title": "Allows for warning messages before leaving platform.</li>\n</ul>"
         },
         {
-          "title": "[ ] Victim and Witness escalation (Report Abuse)"
+          "title": " Victim and Witness escalation (Report Abuse)"
         },
         {
           "title": "Where victims of ATO report their issue."
@@ -136,70 +136,70 @@
           "title": "Where witnesses of abuse report off-platform impact of on-platform ATO.</li>\n</ul>"
         },
         {
-          "title": "[ ] Forced Password Reset Workflows"
+          "title": " Forced Password Reset Workflows"
         },
         {
-          "title": "[ ] Retroactively ask users to change leaked passwords"
+          "title": " Retroactively ask users to change leaked passwords"
         },
         {
           "title": "Existing customers will have weak passwords.</li>\n</ul>"
         },
         {
-          "title": "[ ] Handle newly found customers from a leaked credential backend"
+          "title": " Handle newly found customers from a leaked credential backend"
         },
         {
           "title": "Newly leaked credentials will cause a regular need to change customer passwords.</li>\n</ul>"
         },
         {
-          "title": "[ ] \"Reset the password to your email\""
+          "title": " \"Reset the password to your email\""
         },
         {
           "title": "Some investigations will indicate a customer's email is compromised, not their password.</li>\n</ul>"
         },
         {
-          "title": "[ ] Account re-enable"
+          "title": " Account re-enable"
         },
         {
           "title": "Self service workflows to get back online after you have intervened.</li>\n</ul>\n</li>\n</ul>"
         },
         {
-          "title": "[ ] Enforce <a href=\"https://github.com/dropbox/zxcvbn\">password strength</a> to prevent future weak passwords"
+          "title": " Enforce <a href=\"https://github.com/dropbox/zxcvbn\">password strength</a> to prevent future weak passwords"
         },
         {
-          "title": "[ ] New Registration"
+          "title": " New Registration"
         },
         {
-          "title": "[ ] Password Change"
+          "title": " Password Change"
         },
         {
-          "title": "[ ] Ongoing leaked / Newly weak</li>\n</ul>"
+          "title": " Ongoing leaked / Newly weak</li>\n</ul>"
         },
         {
-          "title": "[ ] Developer console prompts w/ a warning message"
+          "title": " Developer console prompts w/ a warning message"
         },
         {
           "title": "Example: <a href=\"https://security.stackexchange.com/questions/158106/facebooks-warning-of-self-xss\">Facebook</a></li>\n</ul>"
         },
         {
-          "title": "[ ] Verification / Challenge workflows"
+          "title": " Verification / Challenge workflows"
         },
         {
           "title": "When you are uncertain of the customer's location or device."
         },
         {
-          "title": "[ ] SMS"
+          "title": " SMS"
         },
         {
-          "title": "[ ] Email"
+          "title": " Email"
         },
         {
-          "title": "[ ] Account / Identity Knowledge"
+          "title": " Account / Identity Knowledge"
         },
         {
-          "title": "[ ] ID Submission"
+          "title": " ID Submission"
         },
         {
-          "title": "[ ] CAPTCHA"
+          "title": " CAPTCHA"
         }
       ]
     },
@@ -210,25 +210,25 @@
           "title": "<p>Operational customer service interactions (Support tickets). Support organizations often escalate abuse at scale to engineering and have the most visibility into what is, or is not, working.</p>"
         },
         {
-          "title": "[ ] Standard Org Language"
+          "title": " Standard Org Language"
         },
         {
           "title": "What counts as ATO?</li>\n</ul>"
         },
         {
-          "title": "[ ] Metrics / KPI"
+          "title": " Metrics / KPI"
         },
         {
           "title": "Tracking abuse going up or down.</li>\n</ul>"
         },
         {
-          "title": "[ ] IR Escalation"
+          "title": " IR Escalation"
         },
         {
           "title": "Playbooks / Plans for creating an outage or getting engineering resources involved.</li>\n</ul>"
         },
         {
-          "title": "[ ] Reset Workflows (Administrative Frontends)"
+          "title": " Reset Workflows (Administrative Frontends)"
         },
         {
           "title": "Empowering scalable operations to mitigate abuse scenarios."
@@ -242,22 +242,22 @@
           "title": "<p>There will be periodic deep dives into ATO attacks to ask \"what happened?\". This section pertains to that perspective of work.</p>"
         },
         {
-          "title": "[ ] Authentications are searchable by device, ip, user agent"
+          "title": " Authentications are searchable by device, ip, user agent"
         },
         {
-          "title": "[ ] Searches can pivot: Device to IP, IP to device, etc."
+          "title": " Searches can pivot: Device to IP, IP to device, etc."
         },
         {
-          "title": "[ ] Bonus: Actions / Events are searchable"
+          "title": " Bonus: Actions / Events are searchable"
         },
         {
-          "title": "[ ] Bonus: All routes / Endpoints are searchable</li>\n</ul>"
+          "title": " Bonus: All routes / Endpoints are searchable</li>\n</ul>"
         },
         {
-          "title": "[ ] Tooling exists to reset bulk accounts that meet criteria"
+          "title": " Tooling exists to reset bulk accounts that meet criteria"
         },
         {
-          "title": "[ ] Tooling exists to reverse transactions / changes that meet criteria."
+          "title": " Tooling exists to reverse transactions / changes that meet criteria."
         }
       ]
     },
@@ -268,16 +268,16 @@
           "title": "<p>Tying everything together for operational ATO systems. Engineering time is the least scalable, customer support hours are more scalable, fully automated systems are the most scalable.</p>"
         },
         {
-          "title": "[ ] Customer service classifies abuse cases"
+          "title": " Customer service classifies abuse cases"
         },
         {
-          "title": "[ ] AI systems classifies authentication events"
+          "title": " AI systems classifies authentication events"
         },
         {
-          "title": "[ ] Suspicious cases push customers to verify activity"
+          "title": " Suspicious cases push customers to verify activity"
         },
         {
-          "title": "[ ] XFN meetings between groups to improve anti-abuse systematically"
+          "title": " XFN meetings between groups to improve anti-abuse systematically"
         }
       ]
     },
@@ -288,28 +288,27 @@
           "title": "<p>Raising the bar against trivial credential stealing attacks which cause the most problems for unprepared organizations.</p>"
         },
         {
-          "title": "[ ] SPF / DMARC / DKIM"
+          "title": " SPF / DMARC / DKIM"
         },
         {
-          "title": "[ ] Brand protection (Internet scanning for your brand being spoofed)"
+          "title": " Brand protection (Internet scanning for your brand being spoofed)"
         },
         {
-          "title": "[ ] spoofed@ and customer phish reporting"
+          "title": " spoofed@ and customer phish reporting"
         },
         {
-          "title": "[ ] App store hunting"
+          "title": " App store hunting"
         },
         {
-          "title": "[ ] Domain / ISP Takedowns"
+          "title": " Domain / ISP Takedowns"
         },
         {
-          "title": "[ ] Browser blacklisting"
+          "title": " Browser blacklisting"
         },
         {
-          "title": "[ ] Referer, hotlinks, adversary leaks"
+          "title": " Referer, hotlinks, adversary leaks"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

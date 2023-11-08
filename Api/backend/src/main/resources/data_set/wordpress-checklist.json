@@ -45,103 +45,103 @@
       "topic": "Backend",
       "items": [
         {
-          "title": "[ ] Use latest WordPress version"
+          "title": " Use latest WordPress version"
         },
         {
-          "title": "[ ] Change <code>admin</code> username"
+          "title": " Change <code>admin</code> username"
         },
         {
-          "title": "[ ] Set correct admin's email"
+          "title": " Set correct admin's email"
         },
         {
-          "title": "[ ] Enable two-factor authentication"
+          "title": " Enable two-factor authentication"
         },
         {
-          "title": "[ ] Limit login attempts"
+          "title": " Limit login attempts"
         },
         {
-          "title": "[ ] Delete unused plugins (Hello Dolly, etc.)"
+          "title": " Delete unused plugins (Hello Dolly, etc.)"
         },
         {
-          "title": "[ ] Delete unused themes"
+          "title": " Delete unused themes"
         },
         {
-          "title": "[ ] Disable pingbacks and trackbacks"
+          "title": " Disable pingbacks and trackbacks"
         },
         {
-          "title": "[ ] Delete all Lorem Ipsum posts, pages and comments"
+          "title": " Delete all Lorem Ipsum posts, pages and comments"
         },
         {
-          "title": "[ ] Delete empty pages without content"
+          "title": " Delete empty pages without content"
         },
         {
-          "title": "[ ] Update admin's last name and first name"
+          "title": " Update admin's last name and first name"
         },
         {
-          "title": "[ ] Add favicon"
+          "title": " Add favicon"
         },
         {
-          "title": "[ ] Enable site to be crawled (Settings -&gt; Reading)"
+          "title": " Enable site to be crawled (Settings -&gt; Reading)"
         },
         {
-          "title": "[ ] Configure the permalinks settings"
+          "title": " Configure the permalinks settings"
         },
         {
-          "title": "[ ] Use SEO friendly urls"
+          "title": " Use SEO friendly urls"
         },
         {
-          "title": "[ ] Disable <code>WP_DEBUG</code>"
+          "title": " Disable <code>WP_DEBUG</code>"
         },
         {
-          "title": "[ ] Place <code>define( 'DISALLOW_FILE_EDIT', true )</code> in the <code>wp-config.php</code> file"
+          "title": " Place <code>define( 'DISALLOW_FILE_EDIT', true )</code> in the <code>wp-config.php</code> file"
         },
         {
-          "title": "[ ] Delete <code>wp-config-sample.php</code> file"
+          "title": " Delete <code>wp-config-sample.php</code> file"
         },
         {
-          "title": "[ ] Delete <code>readme.txt</code> file"
+          "title": " Delete <code>readme.txt</code> file"
         },
         {
-          "title": "[ ] Delete <code>xmlrpc.php</code> file (https://www.iplocation.net/defend-wordpress-from-ddos)"
+          "title": " Delete <code>xmlrpc.php</code> file (https://www.iplocation.net/defend-wordpress-from-ddos)"
         },
         {
-          "title": "[ ] Check 404 page HTTP status"
+          "title": " Check 404 page HTTP status"
         },
         {
-          "title": "[ ] Test search page (https://domain.tld/?s=query)"
+          "title": " Test search page (https://domain.tld/?s=query)"
         },
         {
-          "title": "[ ] Check loading speed"
+          "title": " Check loading speed"
         },
         {
-          "title": "[ ] Check <code>robots.txt</code> file"
+          "title": " Check <code>robots.txt</code> file"
         },
         {
-          "title": "[ ] Prevent directory access"
+          "title": " Prevent directory access"
         },
         {
-          "title": "[ ] Delete install &amp; upgrade files (<code>/wp-admin/install.php</code>, <code>/wp-admin/upgrade.php</code>)"
+          "title": " Delete install &amp; upgrade files (<code>/wp-admin/install.php</code>, <code>/wp-admin/upgrade.php</code>)"
         },
         {
-          "title": "[ ] Ensure file permissions are correct"
+          "title": " Ensure file permissions are correct"
         },
         {
-          "title": "[ ] Hide login error messages"
+          "title": " Hide login error messages"
         },
         {
-          "title": "[ ] Check broken links"
+          "title": " Check broken links"
         },
         {
-          "title": "[ ] Add \"Privacy Policy\" and \"Terms and Conditions\" pages"
+          "title": " Add \"Privacy Policy\" and \"Terms and Conditions\" pages"
         },
         {
-          "title": "[ ] Ensure you've set WordPress secret authentication keys"
+          "title": " Ensure you've set WordPress secret authentication keys"
         },
         {
-          "title": "[ ] Check RSS feeds"
+          "title": " Check RSS feeds"
         },
         {
-          "title": "[ ] Implement cookie warning"
+          "title": " Implement cookie warning"
         }
       ]
     },
@@ -152,7 +152,7 @@
           "topic": "Akismet",
           "items": [
             {
-              "title": "[ ] Get free license"
+              "title": " Get free license"
             }
           ]
         },
@@ -160,34 +160,34 @@
           "topic": "WordPress SEO by Yoast",
           "items": [
             {
-              "title": "[ ] Generate XML sitemap"
+              "title": " Generate XML sitemap"
             },
             {
-              "title": "[ ] Remove tags from sitemap"
+              "title": " Remove tags from sitemap"
             },
             {
-              "title": "[ ] Don't index image attachment pages"
+              "title": " Don't index image attachment pages"
             },
             {
-              "title": "[ ] Send sitemap to search engines"
+              "title": " Send sitemap to search engines"
             },
             {
-              "title": "[ ] Provide Open Graph meta tags"
+              "title": " Provide Open Graph meta tags"
             },
             {
-              "title": "[ ] <a href=\"https://www.wpbeginner.com/wp-themes/how-to-add-facebook-open-graph-meta-data-in-wordpress-themes/\">Facebook</a>"
+              "title": " <a href=\"https://www.wpbeginner.com/wp-themes/how-to-add-facebook-open-graph-meta-data-in-wordpress-themes/\">Facebook</a>"
             },
             {
-              "title": "[ ] <a href=\"https://www.wpbeginner.com/wp-tutorials/how-to-add-twitter-cards-in-wordpress/\">Twitter</a>"
+              "title": " <a href=\"https://www.wpbeginner.com/wp-tutorials/how-to-add-twitter-cards-in-wordpress/\">Twitter</a>"
             },
             {
-              "title": "[ ] Test Facebook sharing"
+              "title": " Test Facebook sharing"
             },
             {
-              "title": "[ ] Test Twitter sharing"
+              "title": " Test Twitter sharing"
             },
             {
-              "title": "[ ] Test VK sharing"
+              "title": " Test VK sharing"
             }
           ]
         },
@@ -203,7 +203,7 @@
           "topic": "Contact Form 7",
           "items": [
             {
-              "title": "[ ] Check all forms are working correctly"
+              "title": " Check all forms are working correctly"
             }
           ]
         },
@@ -215,7 +215,7 @@
           "topic": "BackWPup",
           "items": [
             {
-              "title": "[ ] Create a backup"
+              "title": " Create a backup"
             }
           ]
         },
@@ -229,25 +229,25 @@
       "topic": "Server",
       "items": [
         {
-          "title": "[ ] Install Let's Encrypt certificate"
+          "title": " Install Let's Encrypt certificate"
         },
         {
-          "title": "[ ] <a href=\"https://www.ssllabs.com/ssltest/\">Check SSL certificate health</a> daily"
+          "title": " <a href=\"https://www.ssllabs.com/ssltest/\">Check SSL certificate health</a> daily"
         },
         {
-          "title": "[ ] Test redirect from HTTP to HTTPS"
+          "title": " Test redirect from HTTP to HTTPS"
         },
         {
-          "title": "[ ] Test redirect from www to non-www domain"
+          "title": " Test redirect from www to non-www domain"
         },
         {
-          "title": "[ ] Is external monitoring enabled?"
+          "title": " Is external monitoring enabled?"
         },
         {
-          "title": "[ ] Are Yandex.Disk backups enabled?"
+          "title": " Are Yandex.Disk backups enabled?"
         },
         {
-          "title": "[ ] Are Amazon backups enabled?"
+          "title": " Are Amazon backups enabled?"
         }
       ]
     },
@@ -255,34 +255,33 @@
       "topic": "Services",
       "items": [
         {
-          "title": "[ ] Add <a href=\"https://analytics.google.com/\">Google Analytics</a>"
+          "title": " Add <a href=\"https://analytics.google.com/\">Google Analytics</a>"
         },
         {
-          "title": "[ ] Add <a href=\"https://www.google.com/webmasters/\">Google Webmasters</a>"
+          "title": " Add <a href=\"https://www.google.com/webmasters/\">Google Webmasters</a>"
         },
         {
-          "title": "[ ] Add sitemap to Google Webmasters"
+          "title": " Add sitemap to Google Webmasters"
         },
         {
-          "title": "[ ] Set up non-www https as the preferred domain"
+          "title": " Set up non-www https as the preferred domain"
         },
         {
-          "title": "[ ] Add <a href=\"https://metrika.yandex.ru/\">Yandex.Metrika</a>"
+          "title": " Add <a href=\"https://metrika.yandex.ru/\">Yandex.Metrika</a>"
         },
         {
-          "title": "[ ] Add <a href=\"https://webmaster.yandex.ru/\">Yandex.Webmaster</a>"
+          "title": " Add <a href=\"https://webmaster.yandex.ru/\">Yandex.Webmaster</a>"
         },
         {
-          "title": "[ ] Add sitemap to Yandex.Webmaster"
+          "title": " Add sitemap to Yandex.Webmaster"
         },
         {
-          "title": "[ ] Add <a href=\"https://managewp.com/\">ManageWP</a>"
+          "title": " Add <a href=\"https://managewp.com/\">ManageWP</a>"
         },
         {
-          "title": "[ ] Try subscribing to a newsletter (with MailChimp widget, etc.)"
+          "title": " Try subscribing to a newsletter (with MailChimp widget, etc.)"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

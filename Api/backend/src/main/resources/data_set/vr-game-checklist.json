@@ -32,13 +32,13 @@
           "topic": "Crouching",
           "items": [
             {
-              "title": "<p>[ ] My game allows players to physically crouch in real life, adjusting the in-game hitbox and movement speed accordingly.</p>"
+              "title": "<p> My game allows players to physically crouch in real life, adjusting the in-game hitbox and movement speed accordingly.</p>"
             },
             {
-              "title": "<p>[ ] My game allows players to toggle crouching by pressing an arbitrary button (chosen by players).</p>"
+              "title": "<p> My game allows players to toggle crouching by pressing an arbitrary button (chosen by players).</p>"
             },
             {
-              "title": "<p>[ ] My game allows players to tweak their character's posture (from standing up to crouching) by using a thumbstick.</p>"
+              "title": "<p> My game allows players to tweak their character's posture (from standing up to crouching) by using a thumbstick.</p>"
             }
           ]
         },
@@ -46,10 +46,10 @@
           "topic": "Controller Angle Adjustments",
           "items": [
             {
-              "title": "[ ] My game allows players to finely tweak the in-game pitch of held objects and weapons. [^controller_pitch_adjustment]</li>\n</ul><p>[^controller_pitch_adjustment]: This is massively important to guarantee that a weapon will point in the exact direction player expect it to, and to ensure consistent aiming between games. Some games, for example \"Stride\", aim the weapon too low (towards the ground) when using Valve Index controllers compared to Oculus Rift controllers. Providing an adjustable pitch allows players to decide where they want their weapon to aim. </p><pre><code>Frankly, this should be something supported by the runtime (e.g. SteamVR). However, [they do not seem to care](https://github.com/ValveSoftware/openvr/issues/1262).\n</code></pre>"
+              "title": " My game allows players to finely tweak the in-game pitch of held objects and weapons. [^controller_pitch_adjustment]</li>\n</ul><p>[^controller_pitch_adjustment]: This is massively important to guarantee that a weapon will point in the exact direction player expect it to, and to ensure consistent aiming between games. Some games, for example \"Stride\", aim the weapon too low (towards the ground) when using Valve Index controllers compared to Oculus Rift controllers. Providing an adjustable pitch allows players to decide where they want their weapon to aim. </p><pre><code>Frankly, this should be something supported by the runtime (e.g. SteamVR). However, [they do not seem to care](https://github.com/ValveSoftware/openvr/issues/1262).\n</code></pre>"
             },
             {
-              "title": "[ ] My game allows players to finely tweak the in-game yaw and roll of held objects and weapons. [^controller_yaw_roll_adjustment]<p>[^controller_yaw_roll_adjustment]: This issue is less common than the pitch one, but some games have incorrect yaw/roll rotation of a held weapon in respect to the controller. \"Crisis VRigade 2\", for example, points the weapon a few extra degrees towards the left with Valve Index controllers, forcing players to uncomfortably aim in the wrong direction to hit the target. Providing an adjustable yaw/roll allows players to decide where they want their weapon to aim.</p>"
+              "title": " My game allows players to finely tweak the in-game yaw and roll of held objects and weapons. [^controller_yaw_roll_adjustment]<p>[^controller_yaw_roll_adjustment]: This issue is less common than the pitch one, but some games have incorrect yaw/roll rotation of a held weapon in respect to the controller. \"Crisis VRigade 2\", for example, points the weapon a few extra degrees towards the left with Valve Index controllers, forcing players to uncomfortably aim in the wrong direction to hit the target. Providing an adjustable yaw/roll allows players to decide where they want their weapon to aim.</p>"
             }
           ]
         },
@@ -57,10 +57,10 @@
           "topic": "Height Adjustment",
           "items": [
             {
-              "title": "<p>[ ] My game allows players to calibrate their character's height to their real-life height.</p>"
+              "title": "<p> My game allows players to calibrate their character's height to their real-life height.</p>"
             },
             {
-              "title": "[ ] The automatically chosen height can be manually tweaked by the player in the options."
+              "title": " The automatically chosen height can be manually tweaked by the player in the options."
             }
           ]
         },
@@ -68,7 +68,7 @@
           "topic": "World Scale Adjustment",
           "items": [
             {
-              "title": "[ ] My game allows players to scale the game world by an arbitrary factor in the options. [^why_world_scale]<p>[^why_world_scale]: People come in all sizes and shapes. As a developer, you design the scale of the world to suit your size and shape. Your players might be \"giants\" compared to you, or \"tiny\" compared to you. If you are worried about the balance of the game or worried about unfair advantages, use common sense. If the game is single-player, then it doesn't really matter -- the goal is for players to have fun and feel comfortable. If the game is multi-player, either limit the scaling factor to a narrow range, or do not introduce it at all.</p><pre><code>A reasonable way of implementing world scale is by simply scaling the player and related values, rather than scaling the world.\n</code></pre>"
+              "title": " My game allows players to scale the game world by an arbitrary factor in the options. [^why_world_scale]<p>[^why_world_scale]: People come in all sizes and shapes. As a developer, you design the scale of the world to suit your size and shape. Your players might be \"giants\" compared to you, or \"tiny\" compared to you. If you are worried about the balance of the game or worried about unfair advantages, use common sense. If the game is single-player, then it doesn't really matter -- the goal is for players to have fun and feel comfortable. If the game is multi-player, either limit the scaling factor to a narrow range, or do not introduce it at all.</p><pre><code>A reasonable way of implementing world scale is by simply scaling the player and related values, rather than scaling the world.\n</code></pre>"
             }
           ]
         },
@@ -76,13 +76,13 @@
           "topic": "Player Profile Management",
           "items": [
             {
-              "title": "<p>[ ] My game allows different players to store their settings and tweaks in profiles.</p>"
+              "title": "<p> My game allows different players to store their settings and tweaks in profiles.</p>"
             },
             {
-              "title": "<p>[ ] Profiles can be changed on the fly to make it easier for multiple people to swap in and out of gameplay.</p>"
+              "title": "<p> Profiles can be changed on the fly to make it easier for multiple people to swap in and out of gameplay.</p>"
             },
             {
-              "title": "<p>[ ] There is no limit to how many profiles can be saved and loaded.</p>"
+              "title": "<p> There is no limit to how many profiles can be saved and loaded.</p>"
             }
           ]
         },
@@ -90,7 +90,7 @@
           "topic": "Controller Offset Adjustments",
           "items": [
             {
-              "title": "[ ] My game allows players to specify arbitrary X, Y, and Z offsets for the controller positions. [^controller_offset_adjustment]<p>[^controller_offset_adjustment]: This issue is way less common than controller angle issues, but it still possible to encounter it with games that were tested on only a specific set of controllers. Sometimes the in-game hands' positions do not match the controller positions in the real world. Rather than hardcoding offsets for each possible VR setup in existence, let players specify them in the options.</p>"
+              "title": " My game allows players to specify arbitrary X, Y, and Z offsets for the controller positions. [^controller_offset_adjustment]<p>[^controller_offset_adjustment]: This issue is way less common than controller angle issues, but it still possible to encounter it with games that were tested on only a specific set of controllers. Sometimes the in-game hands' positions do not match the controller positions in the real world. Rather than hardcoding offsets for each possible VR setup in existence, let players specify them in the options.</p>"
             }
           ]
         },
@@ -98,16 +98,16 @@
           "topic": "Weapon Handling",
           "items": [
             {
-              "title": "[ ] My game allows players to hold/use/drop weapons with any hand. [^any_hand_weapon_handling]</li>\n</ul><p>[^any_hand_weapon_handling]: Some games, such as \"Half-Life: Alyx\", arbitrarily decide to glue a weapon to one of the player's hands, preventing them from performing many interesting and immersive actions (e.g. dual-wielding, temporarily holding the weapon with the non-dominant hand, corner-peeking from the non-dominant hand side, temporarily dropping the weapon to do something else, throwing the weapon as a last resort or as a stylish move, etc.). While an option to glue a weapon to the player's hand might be a good idea as an accessibility option, it should not be the default.</p><pre><code>If your game doesn't support dropping weapons, it is still a good idea to let players hold them and de-spawn them (or automatically return them to holsters/inventory) when they are not being held. Examples of games doing this are \"Until You Fall\" and \"Resident Evil 4 VR\".\n</code></pre>"
+              "title": " My game allows players to hold/use/drop weapons with any hand. [^any_hand_weapon_handling]</li>\n</ul><p>[^any_hand_weapon_handling]: Some games, such as \"Half-Life: Alyx\", arbitrarily decide to glue a weapon to one of the player's hands, preventing them from performing many interesting and immersive actions (e.g. dual-wielding, temporarily holding the weapon with the non-dominant hand, corner-peeking from the non-dominant hand side, temporarily dropping the weapon to do something else, throwing the weapon as a last resort or as a stylish move, etc.). While an option to glue a weapon to the player's hand might be a good idea as an accessibility option, it should not be the default.</p><pre><code>If your game doesn't support dropping weapons, it is still a good idea to let players hold them and de-spawn them (or automatically return them to holsters/inventory) when they are not being held. Examples of games doing this are \"Until You Fall\" and \"Resident Evil 4 VR\".\n</code></pre>"
             },
             {
-              "title": "<p>[ ] For accessibility reasons, my game allows to keep holding a weapon even if the controller is not being held (e.g. not pressing the side button on Oculus controllers or not physically grabbing the Valve Index controller).</p>"
+              "title": "<p> For accessibility reasons, my game allows to keep holding a weapon even if the controller is not being held (e.g. not pressing the side button on Oculus controllers or not physically grabbing the Valve Index controller).</p>"
             },
             {
               "title": "<p>If my game ends up with a system where the current weapon is glued to the player's hand: </p>"
             },
             {
-              "title": "[ ] Left-handed players will be able to switch the default hand."
+              "title": " Left-handed players will be able to switch the default hand."
             }
           ]
         },
@@ -115,7 +115,7 @@
           "topic": "Performance",
           "items": [
             {
-              "title": "[ ] My game reuses the right/left eye render for the PC monitor instead of rendering a third time."
+              "title": " My game reuses the right/left eye render for the PC monitor instead of rendering a third time."
             }
           ]
         },
@@ -123,7 +123,7 @@
           "topic": "UI",
           "items": [
             {
-              "title": "[ ] UI elements in my game are drawn at an appropriate distance, in order to be in focus. [^ui_focus_distance]<p>[^ui_focus_distance]: Different HMDs have different in-game distances from the player camera at which the image will appear in focus. Your UI should be drawn at those distances to ensure readability.</p>"
+              "title": " UI elements in my game are drawn at an appropriate distance, in order to be in focus. [^ui_focus_distance]<p>[^ui_focus_distance]: Different HMDs have different in-game distances from the player camera at which the image will appear in focus. Your UI should be drawn at those distances to ensure readability.</p>"
             }
           ]
         }
@@ -136,10 +136,10 @@
           "topic": "Computer Interaction",
           "items": [
             {
-              "title": "<p>[ ] My game allows settings to be configured on the computer via mouse/keyboard on the fly, while the game is running.</p>"
+              "title": "<p> My game allows settings to be configured on the computer via mouse/keyboard on the fly, while the game is running.</p>"
             },
             {
-              "title": "<p>[ ] Spectators can interact on the computer while players are in VR, for example by changing or restarting levels, or tweaking options.</p>"
+              "title": "<p> Spectators can interact on the computer while players are in VR, for example by changing or restarting levels, or tweaking options.</p>"
             }
           ]
         }
@@ -161,6 +161,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

@@ -51,46 +51,46 @@
           "topic": "Information Gathering",
           "items": [
             {
-              "title": "[ ] Manually explore the site"
+              "title": " Manually explore the site"
             },
             {
-              "title": "[ ] Spider/crawl for missed or hidden content"
+              "title": " Spider/crawl for missed or hidden content"
             },
             {
-              "title": "[ ] Check for files that expose content, such as robots.txt, sitemap.xml, .DS_Store"
+              "title": " Check for files that expose content, such as robots.txt, sitemap.xml, .DS_Store"
             },
             {
-              "title": "[ ] Check the caches of major search engines for publicly accessible sites"
+              "title": " Check the caches of major search engines for publicly accessible sites"
             },
             {
-              "title": "[ ] Check for differences in content based on User Agent (eg, Mobile sites, access as a Search engine Crawler)"
+              "title": " Check for differences in content based on User Agent (eg, Mobile sites, access as a Search engine Crawler)"
             },
             {
-              "title": "[ ] Perform Web Application Fingerprinting"
+              "title": " Perform Web Application Fingerprinting"
             },
             {
-              "title": "[ ] Identify technologies used"
+              "title": " Identify technologies used"
             },
             {
-              "title": "[ ] Identify user roles"
+              "title": " Identify user roles"
             },
             {
-              "title": "[ ] Identify application entry points"
+              "title": " Identify application entry points"
             },
             {
-              "title": "[ ] Identify client-side code"
+              "title": " Identify client-side code"
             },
             {
-              "title": "[ ] Identify multiple versions/channels (e.g. web, mobile web, mobile app, web services)"
+              "title": " Identify multiple versions/channels (e.g. web, mobile web, mobile app, web services)"
             },
             {
-              "title": "[ ] Identify co-hosted and related applications"
+              "title": " Identify co-hosted and related applications"
             },
             {
-              "title": "[ ] Identify all hostnames and ports"
+              "title": " Identify all hostnames and ports"
             },
             {
-              "title": "[ ] Identify third-party hosted content"
+              "title": " Identify third-party hosted content"
             }
           ]
         },
@@ -98,28 +98,28 @@
           "topic": "Configuration Management",
           "items": [
             {
-              "title": "[ ] Check for commonly used application and administrative URLs"
+              "title": " Check for commonly used application and administrative URLs"
             },
             {
-              "title": "[ ] Check for old, backup and unreferenced files"
+              "title": " Check for old, backup and unreferenced files"
             },
             {
-              "title": "[ ] Check HTTP methods supported and Cross Site Tracing (XST)"
+              "title": " Check HTTP methods supported and Cross Site Tracing (XST)"
             },
             {
-              "title": "[ ] Test file extensions handling"
+              "title": " Test file extensions handling"
             },
             {
-              "title": "[ ] Test for security HTTP headers (e.g. CSP, X-Frame-Options, HSTS)"
+              "title": " Test for security HTTP headers (e.g. CSP, X-Frame-Options, HSTS)"
             },
             {
-              "title": "[ ] Test for policies (e.g. Flash, Silverlight, robots)"
+              "title": " Test for policies (e.g. Flash, Silverlight, robots)"
             },
             {
-              "title": "[ ] Test for non-production data in live environment, and vice-versa"
+              "title": " Test for non-production data in live environment, and vice-versa"
             },
             {
-              "title": "[ ] Check for sensitive data in client-side code (e.g. API keys, credentials)"
+              "title": " Check for sensitive data in client-side code (e.g. API keys, credentials)"
             }
           ]
         },
@@ -127,22 +127,22 @@
           "topic": "Secure Transmission",
           "items": [
             {
-              "title": "[ ] Check SSL Version, Algorithms, Key length"
+              "title": " Check SSL Version, Algorithms, Key length"
             },
             {
-              "title": "[ ] Check for Digital Certificate Validity (Duration, Signature and CN)"
+              "title": " Check for Digital Certificate Validity (Duration, Signature and CN)"
             },
             {
-              "title": "[ ] Check credentials only delivered over HTTPS"
+              "title": " Check credentials only delivered over HTTPS"
             },
             {
-              "title": "[ ] Check that the login form is delivered over HTTPS"
+              "title": " Check that the login form is delivered over HTTPS"
             },
             {
-              "title": "[ ] Check session tokens only delivered over HTTPS"
+              "title": " Check session tokens only delivered over HTTPS"
             },
             {
-              "title": "[ ] Check if HTTP Strict Transport Security (HSTS) in use"
+              "title": " Check if HTTP Strict Transport Security (HSTS) in use"
             }
           ]
         },
@@ -150,52 +150,52 @@
           "topic": "Authentication",
           "items": [
             {
-              "title": "[ ] Test for user enumeration"
+              "title": " Test for user enumeration"
             },
             {
-              "title": "[ ] Test for authentication bypass"
+              "title": " Test for authentication bypass"
             },
             {
-              "title": "[ ] Test for bruteforce protection"
+              "title": " Test for bruteforce protection"
             },
             {
-              "title": "[ ] Test password quality rules"
+              "title": " Test password quality rules"
             },
             {
-              "title": "[ ] Test remember me functionality"
+              "title": " Test remember me functionality"
             },
             {
-              "title": "[ ] Test for autocomplete on password forms/input"
+              "title": " Test for autocomplete on password forms/input"
             },
             {
-              "title": "[ ] Test password reset and/or recovery"
+              "title": " Test password reset and/or recovery"
             },
             {
-              "title": "[ ] Test password change process"
+              "title": " Test password change process"
             },
             {
-              "title": "[ ] Test CAPTCHA"
+              "title": " Test CAPTCHA"
             },
             {
-              "title": "[ ] Test multi factor authentication"
+              "title": " Test multi factor authentication"
             },
             {
-              "title": "[ ] Test for logout functionality presence"
+              "title": " Test for logout functionality presence"
             },
             {
-              "title": "[ ] Test for cache management on HTTP (eg Pragma, Expires, Max-age)"
+              "title": " Test for cache management on HTTP (eg Pragma, Expires, Max-age)"
             },
             {
-              "title": "[ ] Test for default logins"
+              "title": " Test for default logins"
             },
             {
-              "title": "[ ] Test for user-accessible authentication history"
+              "title": " Test for user-accessible authentication history"
             },
             {
-              "title": "[ ] Test for out-of channel notification of account lockouts and successful password changes"
+              "title": " Test for out-of channel notification of account lockouts and successful password changes"
             },
             {
-              "title": "[ ] Test for consistent authentication across applications with shared authentication schema / SSO"
+              "title": " Test for consistent authentication across applications with shared authentication schema / SSO"
             }
           ]
         },
@@ -203,43 +203,43 @@
           "topic": "Session Management",
           "items": [
             {
-              "title": "[ ] Establish how session management is handled in the application (eg, tokens in cookies, token in URL)"
+              "title": " Establish how session management is handled in the application (eg, tokens in cookies, token in URL)"
             },
             {
-              "title": "[ ] Check session tokens for cookie flags (httpOnly and secure)"
+              "title": " Check session tokens for cookie flags (httpOnly and secure)"
             },
             {
-              "title": "[ ] Check session cookie scope (path and domain)"
+              "title": " Check session cookie scope (path and domain)"
             },
             {
-              "title": "[ ] Check session cookie duration (expires and max-age)"
+              "title": " Check session cookie duration (expires and max-age)"
             },
             {
-              "title": "[ ] Check session termination after a maximum lifetime"
+              "title": " Check session termination after a maximum lifetime"
             },
             {
-              "title": "[ ] Check session termination after relative timeout"
+              "title": " Check session termination after relative timeout"
             },
             {
-              "title": "[ ] Check session termination after logout"
+              "title": " Check session termination after logout"
             },
             {
-              "title": "[ ] Test to see if users can have multiple simultaneous sessions"
+              "title": " Test to see if users can have multiple simultaneous sessions"
             },
             {
-              "title": "[ ] Test session cookies for randomness"
+              "title": " Test session cookies for randomness"
             },
             {
-              "title": "[ ] Confirm that new session tokens are issued on login, role change and logout"
+              "title": " Confirm that new session tokens are issued on login, role change and logout"
             },
             {
-              "title": "[ ] Test for consistent session management across applications with shared session management"
+              "title": " Test for consistent session management across applications with shared session management"
             },
             {
-              "title": "[ ] Test for session puzzling"
+              "title": " Test for session puzzling"
             },
             {
-              "title": "[ ] Test for CSRF and clickjacking"
+              "title": " Test for CSRF and clickjacking"
             }
           ]
         },
@@ -247,19 +247,19 @@
           "topic": "Authorization",
           "items": [
             {
-              "title": "[ ] Test for path traversal"
+              "title": " Test for path traversal"
             },
             {
-              "title": "[ ] Test for bypassing authorization schema"
+              "title": " Test for bypassing authorization schema"
             },
             {
-              "title": "[ ] Test for vertical Access control problems (a.k.a. Privilege Escalation)"
+              "title": " Test for vertical Access control problems (a.k.a. Privilege Escalation)"
             },
             {
-              "title": "[ ] Test for horizontal Access control problems (between two users at the same privilege level)"
+              "title": " Test for horizontal Access control problems (between two users at the same privilege level)"
             },
             {
-              "title": "[ ] Test for missing authorization"
+              "title": " Test for missing authorization"
             }
           ]
         },
@@ -267,100 +267,100 @@
           "topic": "Data Validation",
           "items": [
             {
-              "title": "[ ] Test for Reflected Cross Site Scripting"
+              "title": " Test for Reflected Cross Site Scripting"
             },
             {
-              "title": "[ ] Test for Stored Cross Site Scripting"
+              "title": " Test for Stored Cross Site Scripting"
             },
             {
-              "title": "[ ] Test for DOM based Cross Site Scripting"
+              "title": " Test for DOM based Cross Site Scripting"
             },
             {
-              "title": "[ ] Test for Cross Site Flashing"
+              "title": " Test for Cross Site Flashing"
             },
             {
-              "title": "[ ] Test for HTML Injection"
+              "title": " Test for HTML Injection"
             },
             {
-              "title": "[ ] Test for SQL Injection"
+              "title": " Test for SQL Injection"
             },
             {
-              "title": "[ ] Test for SOQL Injection"
+              "title": " Test for SOQL Injection"
             },
             {
-              "title": "[ ] Test for LDAP Injection"
+              "title": " Test for LDAP Injection"
             },
             {
-              "title": "[ ] Test for ORM Injection"
+              "title": " Test for ORM Injection"
             },
             {
-              "title": "[ ] Test for XML Injection"
+              "title": " Test for XML Injection"
             },
             {
-              "title": "[ ] Test for XXE Injection"
+              "title": " Test for XXE Injection"
             },
             {
-              "title": "[ ] Test for SSI Injection"
+              "title": " Test for SSI Injection"
             },
             {
-              "title": "[ ] Test for XPath Injection"
+              "title": " Test for XPath Injection"
             },
             {
-              "title": "[ ] Test for XQuery Injection"
+              "title": " Test for XQuery Injection"
             },
             {
-              "title": "[ ] Test for IMAP/SMTP Injection"
+              "title": " Test for IMAP/SMTP Injection"
             },
             {
-              "title": "[ ] Test for Code Injection"
+              "title": " Test for Code Injection"
             },
             {
-              "title": "[ ] Test for Expression Language Injection"
+              "title": " Test for Expression Language Injection"
             },
             {
-              "title": "[ ] Test for Command Injection"
+              "title": " Test for Command Injection"
             },
             {
-              "title": "[ ] Test for Overflow (Stack, Heap and Integer)"
+              "title": " Test for Overflow (Stack, Heap and Integer)"
             },
             {
-              "title": "[ ] Test for Format String"
+              "title": " Test for Format String"
             },
             {
-              "title": "[ ] Test for incubated vulnerabilities"
+              "title": " Test for incubated vulnerabilities"
             },
             {
-              "title": "[ ] Test for HTTP Splitting/Smuggling"
+              "title": " Test for HTTP Splitting/Smuggling"
             },
             {
-              "title": "[ ] Test for HTTP Verb Tampering"
+              "title": " Test for HTTP Verb Tampering"
             },
             {
-              "title": "[ ] Test for Open Redirection"
+              "title": " Test for Open Redirection"
             },
             {
-              "title": "[ ] Test for Local File Inclusion"
+              "title": " Test for Local File Inclusion"
             },
             {
-              "title": "[ ] Test for Remote File Inclusion"
+              "title": " Test for Remote File Inclusion"
             },
             {
-              "title": "[ ] Compare client-side and server-side validation rules"
+              "title": " Compare client-side and server-side validation rules"
             },
             {
-              "title": "[ ] Test for NoSQL injection"
+              "title": " Test for NoSQL injection"
             },
             {
-              "title": "[ ] Test for HTTP parameter pollution"
+              "title": " Test for HTTP parameter pollution"
             },
             {
-              "title": "[ ] Test for auto-binding"
+              "title": " Test for auto-binding"
             },
             {
-              "title": "[ ] Test for Mass Assignment"
+              "title": " Test for Mass Assignment"
             },
             {
-              "title": "[ ] Test for NULL/Invalid Session Cookie"
+              "title": " Test for NULL/Invalid Session Cookie"
             }
           ]
         },
@@ -368,16 +368,16 @@
           "topic": "Denial of Service",
           "items": [
             {
-              "title": "[ ] Test for anti-automation"
+              "title": " Test for anti-automation"
             },
             {
-              "title": "[ ] Test for account lockout"
+              "title": " Test for account lockout"
             },
             {
-              "title": "[ ] Test for HTTP protocol DoS"
+              "title": " Test for HTTP protocol DoS"
             },
             {
-              "title": "[ ] Test for SQL wildcard DoS"
+              "title": " Test for SQL wildcard DoS"
             }
           ]
         },
@@ -385,19 +385,19 @@
           "topic": "Business Logic",
           "items": [
             {
-              "title": "[ ] Test for feature misuse"
+              "title": " Test for feature misuse"
             },
             {
-              "title": "[ ] Test for lack of non-repudiation"
+              "title": " Test for lack of non-repudiation"
             },
             {
-              "title": "[ ] Test for trust relationships"
+              "title": " Test for trust relationships"
             },
             {
-              "title": "[ ] Test for integrity of data"
+              "title": " Test for integrity of data"
             },
             {
-              "title": "[ ] Test segregation of duties"
+              "title": " Test segregation of duties"
             }
           ]
         },
@@ -405,19 +405,19 @@
           "topic": "Cryptography",
           "items": [
             {
-              "title": "[ ] Check if data which should be encrypted is not"
+              "title": " Check if data which should be encrypted is not"
             },
             {
-              "title": "[ ] Check for wrong algorithms usage depending on context"
+              "title": " Check for wrong algorithms usage depending on context"
             },
             {
-              "title": "[ ] Check for weak algorithms usage"
+              "title": " Check for weak algorithms usage"
             },
             {
-              "title": "[ ] Check for proper use of salting"
+              "title": " Check for proper use of salting"
             },
             {
-              "title": "[ ] Check for randomness functions"
+              "title": " Check for randomness functions"
             }
           ]
         },
@@ -425,28 +425,28 @@
           "topic": "Risky Functionality - File Uploads",
           "items": [
             {
-              "title": "[ ] Test that acceptable file types are whitelisted"
+              "title": " Test that acceptable file types are whitelisted"
             },
             {
-              "title": "[ ] Test that file size limits, upload frequency and total file counts are defined and are enforced"
+              "title": " Test that file size limits, upload frequency and total file counts are defined and are enforced"
             },
             {
-              "title": "[ ] Test that file contents match the defined file type"
+              "title": " Test that file contents match the defined file type"
             },
             {
-              "title": "[ ] Test that all file uploads have Anti-Virus scanning in-place."
+              "title": " Test that all file uploads have Anti-Virus scanning in-place."
             },
             {
-              "title": "[ ] Test that unsafe filenames are sanitised"
+              "title": " Test that unsafe filenames are sanitised"
             },
             {
-              "title": "[ ] Test that uploaded files are not directly accessible within the web root"
+              "title": " Test that uploaded files are not directly accessible within the web root"
             },
             {
-              "title": "[ ] Test that uploaded files are not served on the same hostname/port"
+              "title": " Test that uploaded files are not served on the same hostname/port"
             },
             {
-              "title": "[ ] Test that files and other media are integrated with the authentication and authorisation schemas"
+              "title": " Test that files and other media are integrated with the authentication and authorisation schemas"
             }
           ]
         },
@@ -454,37 +454,37 @@
           "topic": "Risky Functionality - Card Payment",
           "items": [
             {
-              "title": "[ ] Test for known vulnerabilities and configuration issues on Web Server and Web Application"
+              "title": " Test for known vulnerabilities and configuration issues on Web Server and Web Application"
             },
             {
-              "title": "[ ] Test for default or guessable password"
+              "title": " Test for default or guessable password"
             },
             {
-              "title": "[ ] Test for non-production data in live environment, and vice-versa"
+              "title": " Test for non-production data in live environment, and vice-versa"
             },
             {
-              "title": "[ ] Test for Injection vulnerabilities"
+              "title": " Test for Injection vulnerabilities"
             },
             {
-              "title": "[ ] Test for Buffer Overflows"
+              "title": " Test for Buffer Overflows"
             },
             {
-              "title": "[ ] Test for Insecure Cryptographic Storage"
+              "title": " Test for Insecure Cryptographic Storage"
             },
             {
-              "title": "[ ] Test for Insufficient Transport Layer Protection"
+              "title": " Test for Insufficient Transport Layer Protection"
             },
             {
-              "title": "[ ] Test for Improper Error Handling"
+              "title": " Test for Improper Error Handling"
             },
             {
-              "title": "[ ] Test for all vulnerabilities with a CVSS v2 score &gt; 4.0"
+              "title": " Test for all vulnerabilities with a CVSS v2 score &gt; 4.0"
             },
             {
-              "title": "[ ] Test for Authentication and Authorization issues"
+              "title": " Test for Authentication and Authorization issues"
             },
             {
-              "title": "[ ] Test for CSRF"
+              "title": " Test for CSRF"
             }
           ]
         },
@@ -492,21 +492,20 @@
           "topic": "HTML 5",
           "items": [
             {
-              "title": "[ ] Test Web Messaging"
+              "title": " Test Web Messaging"
             },
             {
-              "title": "[ ] Test for Web Storage SQL injection"
+              "title": " Test for Web Storage SQL injection"
             },
             {
-              "title": "[ ] Check CORS implementation"
+              "title": " Check CORS implementation"
             },
             {
-              "title": "[ ] Check Offline Web Application<p>Source: <a href=\"https://www.owasp.org/index.php/Web_Application_Security_Testing_Cheat_Sheet\">OWASP</a></p>"
+              "title": " Check Offline Web Application<p>Source: <a href=\"https://www.owasp.org/index.php/Web_Application_Security_Testing_Cheat_Sheet\">OWASP</a></p>"
             }
           ]
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

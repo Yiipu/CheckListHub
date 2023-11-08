@@ -3,6 +3,7 @@ package com.wallace.service.impl;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wallace.pojo.CkList;
+import com.wallace.pojo.CollectionToChecklist;
 import com.wallace.service.CkListService;
 import com.wallace.mapper.CkListMapper;
 import com.wallace.utils.JsonTypeHandler;
@@ -18,9 +19,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.JarURLConnection;
 import java.net.URL;
-import java.util.Arrays;
-import java.util.Enumeration;
-import java.util.Properties;
+import java.util.*;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
@@ -66,7 +65,7 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
 //        if (insert > 0)
 //            return Result.ok(null);
 //        return Result.build(null, ResultCodeEnum.FAILED);
-
+        List<CkList> ckLists = new ArrayList<>();
         String directoryPath = "data_set";
         try {
             Enumeration<URL> resources = Thread.currentThread().getContextClassLoader().getResources(directoryPath);
@@ -83,13 +82,14 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
                             String name = jarEntry.getName();
                             JSONObject json = JsonTypeHandler.fileToJson(name);
                             String header = json.getString("header");
+
                             CkList ckList = new CkList();
                             ckList.setChecklist(json);
                             ckList.setHeader(header);
                             ckList.setUid(1);
-                            int insert = ckListMapper.insert(ckList);
-                            if (insert < 1)
-                                return Result.build(null, ResultCodeEnum.FAILED);
+                            ckList.setVersion(1);
+                            ckList.setIsDeleted(0);
+                            ckLists.add(ckList);
                         }
                     }
                 } else if (url.getProtocol().equals("file")) {
@@ -99,18 +99,21 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
                     if (files != null) {
                         for (File file : files) {
                             // 遍历data_set中的所有文件
-                            JSONObject json = JsonTypeHandler.fileToJson(directoryPath +'/'+ file.getName());
+                            JSONObject json = JsonTypeHandler.fileToJson(directoryPath + '/' + file.getName());
                             String header = json.getString("header");
                             CkList ckList = new CkList();
                             ckList.setChecklist(json);
                             ckList.setHeader(header);
                             ckList.setUid(1);
-                            int insert = ckListMapper.insert(ckList);
-                            if (insert < 1)
-                                return Result.build(null, ResultCodeEnum.FAILED);
+                            ckList.setVersion(1);
+                            ckList.setIsDeleted(0);
+                            ckLists.add(ckList);
                         }
                     }
                 }
+                int i = ckListMapper.insertBatchSomeColumn(ckLists);
+                if (i < 1)
+                    return Result.build(null, ResultCodeEnum.FAILED);
             }
         } catch (IOException e) {
             System.out.println(directoryPath + "文件读取异常" + e);

@@ -72,10 +72,10 @@
       "topic": "Responsabilidade",
       "items": [
         {
-          "title": "[ ] <strong>Foi indicado um responsável, Encarregado de proteção de dados?</strong>"
+          "title": " <strong>Foi indicado um responsável, Encarregado de proteção de dados?</strong>"
         },
         {
-          "title": "[ ] As informações do responsável estão publicadas no website?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
+          "title": " As informações do responsável estão publicadas no website?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
         }
       ]
     },
@@ -83,16 +83,16 @@
       "topic": "Documentação",
       "items": [
         {
-          "title": "[ ] Existe relatório de impacto à proteção de dados pessoais?"
+          "title": " Existe relatório de impacto à proteção de dados pessoais?"
         },
         {
-          "title": "[ ] Caso exista, o relatório contém a descrição dos processos de tratamento de dados pessoais que podem gerar riscos às liberdades civis e aos direitos fundamentais, bem como medidas, salvaguardas e mecanismos de mitigação de risco?"
+          "title": " Caso exista, o relatório contém a descrição dos processos de tratamento de dados pessoais que podem gerar riscos às liberdades civis e aos direitos fundamentais, bem como medidas, salvaguardas e mecanismos de mitigação de risco?"
         },
         {
-          "title": "[ ] Os procedimentos de proteção dos dados estão documentados?"
+          "title": " Os procedimentos de proteção dos dados estão documentados?"
         },
         {
-          "title": "[ ] Se existe compartilhamento de dados com terceiros, os contratos já foram revisados para estarem de acordo com a LGPD?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
+          "title": " Se existe compartilhamento de dados com terceiros, os contratos já foram revisados para estarem de acordo com a LGPD?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
         }
       ]
     },
@@ -100,28 +100,28 @@
       "topic": "Abrangência",
       "items": [
         {
-          "title": "[ ] Sua empresa faz coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação, controle, modificação, comunicação, transferência, difusão e extração de dados pessoais (nome, email, telefone, CPF, etc...)"
+          "title": " Sua empresa faz coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação, controle, modificação, comunicação, transferência, difusão e extração de dados pessoais (nome, email, telefone, CPF, etc...)"
         },
         {
           "topic": "Quais departamentos:",
           "items": [
             {
-              "title": "[ ] Markeing e vendas"
+              "title": " Markeing e vendas"
             },
             {
-              "title": "[ ] RH"
+              "title": " RH"
             },
             {
-              "title": "[ ] Compras"
+              "title": " Compras"
             },
             {
-              "title": "[ ] Financeiro"
+              "title": " Financeiro"
             },
             {
-              "title": "[ ] Legal"
+              "title": " Legal"
             },
             {
-              "title": "[ ] Portaria"
+              "title": " Portaria"
             }
           ]
         },
@@ -129,13 +129,13 @@
           "topic": "Avaliação",
           "items": [
             {
-              "title": "[ ] Foi feita avaliação se somente os dados extritamente necessários estão sendo tratados?"
+              "title": " Foi feita avaliação se somente os dados extritamente necessários estão sendo tratados?"
             },
             {
-              "title": "[ ] Quais medidas para garaantir a trasnparência são tomadas? Existe registro em procedimento?"
+              "title": " Quais medidas para garaantir a trasnparência são tomadas? Existe registro em procedimento?"
             },
             {
-              "title": "[ ] A empresa trata dados pessoais sensíveis (origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural).<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
+              "title": " A empresa trata dados pessoais sensíveis (origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural).<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
             }
           ]
         }
@@ -145,10 +145,10 @@
       "topic": "Eliminação dos dados",
       "items": [
         {
-          "title": "[ ] Os dados são eliminados ao fim do tratamento?"
+          "title": " Os dados são eliminados ao fim do tratamento?"
         },
         {
-          "title": "[ ] Existe procedimento que determine por quanto tempo os dados serão armazenados?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
+          "title": " Existe procedimento que determine por quanto tempo os dados serão armazenados?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
         }
       ]
     },
@@ -156,40 +156,40 @@
       "topic": "Consentimento",
       "items": [
         {
-          "title": "[ ] Quando se usam dados pessoais, é obtido o consentimento?"
+          "title": " Quando se usam dados pessoais, é obtido o consentimento?"
         },
         {
-          "title": "[ ] Existe registro deste consentimento (escrito ou eletrônico)?"
+          "title": " Existe registro deste consentimento (escrito ou eletrônico)?"
         },
         {
-          "title": "[ ] Caso o consentimento seja por escrito, está em uma cláusula destacada das demais cláusulas contratuais?"
+          "title": " Caso o consentimento seja por escrito, está em uma cláusula destacada das demais cláusulas contratuais?"
         },
         {
-          "title": "[ ] O consentimento é específico?"
+          "title": " O consentimento é específico?"
         },
         {
-          "title": "[ ] O consentimento é obtido de forma clara, sem ambiguidades quanto à finalidade?"
+          "title": " O consentimento é obtido de forma clara, sem ambiguidades quanto à finalidade?"
         },
         {
-          "title": "[ ] Existe procedimento para informar o titular no caso de mudança de finalidade do uso dos dados pessoais?"
+          "title": " Existe procedimento para informar o titular no caso de mudança de finalidade do uso dos dados pessoais?"
         },
         {
-          "title": "[ ] Existe procedimento para revogar o consentimento?"
+          "title": " Existe procedimento para revogar o consentimento?"
         },
         {
-          "title": "[ ] Se os dados forem compartilhados, existe consentimento específico para isso?"
+          "title": " Se os dados forem compartilhados, existe consentimento específico para isso?"
         },
         {
-          "title": "[ ] Para o tratamento de dados para fins legais, o titular é informado?"
+          "title": " Para o tratamento de dados para fins legais, o titular é informado?"
         },
         {
-          "title": "[ ] Se são tratados dados de crianças, é obtido o consentimento de ao menos um dos responsáveis?"
+          "title": " Se são tratados dados de crianças, é obtido o consentimento de ao menos um dos responsáveis?"
         },
         {
-          "title": "[ ] Se houver transferência internacional de dados, existe consentimento específico e em destaque para a transferência, com informação prévia sobre o caráter internacional da operação, distinguindo claramente esta de outras finalidades?"
+          "title": " Se houver transferência internacional de dados, existe consentimento específico e em destaque para a transferência, com informação prévia sobre o caráter internacional da operação, distinguindo claramente esta de outras finalidades?"
         },
         {
-          "title": "[ ] Os usuários do site são informados sobre quais dados são coletados, de forma ativa ou passiva, ao entrar no site?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
+          "title": " Os usuários do site são informados sobre quais dados são coletados, de forma ativa ou passiva, ao entrar no site?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
         }
       ]
     },
@@ -197,67 +197,67 @@
       "topic": "Acesso",
       "items": [
         {
-          "title": "[ ] Existe canal facilitado para consulta dos dados pelo titular?</li>\n</ul><p>Neste canal tem acesso a:</p>"
+          "title": " Existe canal facilitado para consulta dos dados pelo titular?</li>\n</ul><p>Neste canal tem acesso a:</p>"
         },
         {
-          "title": "[ ] I - finalidade específica do tratamento;"
+          "title": " I - finalidade específica do tratamento;"
         },
         {
-          "title": "[ ] II - forma e duração do tratamento, observados os segredos comercial e industrial;"
+          "title": " II - forma e duração do tratamento, observados os segredos comercial e industrial;"
         },
         {
-          "title": "[ ] III - identificação do controlador;"
+          "title": " III - identificação do controlador;"
         },
         {
-          "title": "[ ] IV - informações de contato do controlador;"
+          "title": " IV - informações de contato do controlador;"
         },
         {
-          "title": "[ ] V - informações acerca do uso compartilhado de dados pelo controlador e a finalidade;"
+          "title": " V - informações acerca do uso compartilhado de dados pelo controlador e a finalidade;"
         },
         {
-          "title": "[ ] VI - responsabilidades dos agentes que realizarão o tratamento; e"
+          "title": " VI - responsabilidades dos agentes que realizarão o tratamento; e"
         },
         {
-          "title": "[ ] VII - direitos do titular. </li>\n</ul><p><br/></p>"
+          "title": " VII - direitos do titular. </li>\n</ul><p><br/></p>"
         },
         {
-          "title": "<p>[ ] Existe canal para fornecer ao tituar as seguintes informações sobre seus direitos? </p>"
+          "title": "<p> Existe canal para fornecer ao tituar as seguintes informações sobre seus direitos? </p>"
         },
         {
-          "title": "<p>[ ] I - confirmação da existência de tratamento; </p>"
+          "title": "<p> I - confirmação da existência de tratamento; </p>"
         },
         {
-          "title": "[ ] II - acesso aos dados;"
+          "title": " II - acesso aos dados;"
         },
         {
-          "title": "[ ] III - correção de dados incompletos, inexatos ou desatualizados;"
+          "title": " III - correção de dados incompletos, inexatos ou desatualizados;"
         },
         {
-          "title": "[ ] IV - anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a lei;"
+          "title": " IV - anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a lei;"
         },
         {
-          "title": "[ ] V - portabilidade dos dados a outro fornecedor de serviço ou produto, mediante requisição expressa e observados os segredos comercial e industrial;"
+          "title": " V - portabilidade dos dados a outro fornecedor de serviço ou produto, mediante requisição expressa e observados os segredos comercial e industrial;"
         },
         {
-          "title": "[ ] VI - eliminação dos dados pessoais tratados com o consentimento do titular, exceto nas hipóteses previstas no art. 16 da Lei;"
+          "title": " VI - eliminação dos dados pessoais tratados com o consentimento do titular, exceto nas hipóteses previstas no art. 16 da Lei;"
         },
         {
-          "title": "[ ] VII - informação das entidades públicas e privadas com as quais o controlador realizou uso compartilhado de dados;"
+          "title": " VII - informação das entidades públicas e privadas com as quais o controlador realizou uso compartilhado de dados;"
         },
         {
-          "title": "[ ] VIII - informação sobre a possibilidade de não fornecer consentimento e sobre as consequências da negativa;"
+          "title": " VIII - informação sobre a possibilidade de não fornecer consentimento e sobre as consequências da negativa;"
         },
         {
-          "title": "[ ] IX - revogação do consentimento.</li>\n</ul><p><br/></p>"
+          "title": " IX - revogação do consentimento.</li>\n</ul><p><br/></p>"
         },
         {
-          "title": "[ ] Existe modelo de prestação de informações simplificadas e procedimento para acesso? Qual o canal utilizado?"
+          "title": " Existe modelo de prestação de informações simplificadas e procedimento para acesso? Qual o canal utilizado?"
         },
         {
-          "title": "[ ] Existe modelo de prestação de informações por meio de declaração clara e completa, que indique a origem dos dados, a inexistência de registro, os critérios utilizados e a finalidade do tratamento, observados os segredos comercial e industrial, fornecida no prazo de até 15 dias contado da data do requerimento do titular?"
+          "title": " Existe modelo de prestação de informações por meio de declaração clara e completa, que indique a origem dos dados, a inexistência de registro, os critérios utilizados e a finalidade do tratamento, observados os segredos comercial e industrial, fornecida no prazo de até 15 dias contado da data do requerimento do titular?"
         },
         {
-          "title": "[ ] Os usuários têm conhecimento dos dados compartilhados com outras instituições?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
+          "title": " Os usuários têm conhecimento dos dados compartilhados com outras instituições?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
         }
       ]
     },
@@ -265,10 +265,10 @@
       "topic": "Transferência Internacional",
       "items": [
         {
-          "title": "[ ] Se existir transferência intenacional de dados, é feita para países com proteção compatível?"
+          "title": " Se existir transferência intenacional de dados, é feita para países com proteção compatível?"
         },
         {
-          "title": "[ ] Existe garantia do regime de proteção de dados através de cláusulas contratuais, normas corporativas globais, selos, certificaos e códigos de conduta regularmente emitidos?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
+          "title": " Existe garantia do regime de proteção de dados através de cláusulas contratuais, normas corporativas globais, selos, certificaos e códigos de conduta regularmente emitidos?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
         }
       ]
     },
@@ -276,40 +276,40 @@
       "topic": "Sigilo e segurança",
       "items": [
         {
-          "title": "[ ] Existem procedimentos para garantir o sigilo dos dados?"
+          "title": " Existem procedimentos para garantir o sigilo dos dados?"
         },
         {
-          "title": "[ ] Existem assessments quanto ao acesso de dados eletrônicos por terceiros não autorizados?"
+          "title": " Existem assessments quanto ao acesso de dados eletrônicos por terceiros não autorizados?"
         },
         {
-          "title": "[ ] Existe log de quem acessou e/ou alterou dados pessoais?"
+          "title": " Existe log de quem acessou e/ou alterou dados pessoais?"
         },
         {
-          "title": "[ ] O acesso aos dados pessoais é protegido, portanto só pessoas autorizadas podem ter acesso?"
+          "title": " O acesso aos dados pessoais é protegido, portanto só pessoas autorizadas podem ter acesso?"
         },
         {
-          "title": "[ ] Existe procedimento de informação aos titulares caso haja vazamento dos dados?"
+          "title": " Existe procedimento de informação aos titulares caso haja vazamento dos dados?"
         },
         {
-          "title": "[ ] O armazenamento dos dados é feitos com criptografia ou outro método que garanta o sigilo?"
+          "title": " O armazenamento dos dados é feitos com criptografia ou outro método que garanta o sigilo?"
         },
         {
-          "title": "[ ] Se existe política de privacidade, ela está de acordo com a LGPD?"
+          "title": " Se existe política de privacidade, ela está de acordo com a LGPD?"
         },
         {
           "topic": "GERENCIAMENTO DAS INFORMAÇÕES DA EMPRESA - Burocracia",
           "items": [
             {
-              "title": "[ ] É efetuado algum gerenciamento de riscos na organização ?"
+              "title": " É efetuado algum gerenciamento de riscos na organização ?"
             },
             {
-              "title": "[ ] A política de segurança da informação é bem definida e entendido por todos ?"
+              "title": " A política de segurança da informação é bem definida e entendido por todos ?"
             },
             {
-              "title": "[ ] É feito revisão periódica dos itens de segurança pelo comitê responsável ?"
+              "title": " É feito revisão periódica dos itens de segurança pelo comitê responsável ?"
             },
             {
-              "title": "[ ] Os riscos terceirizados estão embasados em contrato para garantir a proteção dos dados pessoais ?"
+              "title": " Os riscos terceirizados estão embasados em contrato para garantir a proteção dos dados pessoais ?"
             }
           ]
         },
@@ -317,7 +317,7 @@
           "topic": "CIÊNCIA DA RESPONSABILIDADE - Conscientização",
           "items": [
             {
-              "title": "[ ] Os funcionários recebem treinamentos periódicos para garantir o conhecimento de suas responsabilidades ?"
+              "title": " Os funcionários recebem treinamentos periódicos para garantir o conhecimento de suas responsabilidades ?"
             }
           ]
         },
@@ -325,7 +325,7 @@
           "topic": "CONTROLES DE ACESSO - Segurança física",
           "items": [
             {
-              "title": "[ ] Existe na empresa hábito de restrição de acesso físico somente para quem é permitido ?"
+              "title": " Existe na empresa hábito de restrição de acesso físico somente para quem é permitido ?"
             }
           ]
         },
@@ -333,16 +333,16 @@
           "topic": "CONTROLES DE ACESSO - Segurança digital",
           "items": [
             {
-              "title": "[ ] Existe na empresa hábito de restrição de acesso digital somente para os administradores de rede ?"
+              "title": " Existe na empresa hábito de restrição de acesso digital somente para os administradores de rede ?"
             },
             {
-              "title": "[ ] Os dados são mascarados para técnicos de atendimento terem acesso somente ao que precisam ?"
+              "title": " Os dados são mascarados para técnicos de atendimento terem acesso somente ao que precisam ?"
             },
             {
-              "title": "[ ] Existe um processo de descarte de equipamentos cuidadoso para que os dados não sejam roubados ?"
+              "title": " Existe um processo de descarte de equipamentos cuidadoso para que os dados não sejam roubados ?"
             },
             {
-              "title": "[ ] Existe uma área isolada só para guardar dados pessoais ?"
+              "title": " Existe uma área isolada só para guardar dados pessoais ?"
             }
           ]
         },
@@ -350,46 +350,46 @@
           "topic": "MEIOS DE PROTEÇÃO - Segurança em computador e rede",
           "items": [
             {
-              "title": "[ ] Os computadores tem antivírus ?"
+              "title": " Os computadores tem antivírus ?"
             },
             {
-              "title": "[ ] Existe autenticação por FSSO ?"
+              "title": " Existe autenticação por FSSO ?"
             },
             {
-              "title": "[ ] Existem controles para midia removível ?"
+              "title": " Existem controles para midia removível ?"
             },
             {
-              "title": "[ ] Os softwares e o sistema operacional são atualizados com frequência ?"
+              "title": " Os softwares e o sistema operacional são atualizados com frequência ?"
             },
             {
-              "title": "[ ] Existem métodos de desenvolvimento seguro para os sistemas ?"
+              "title": " Existem métodos de desenvolvimento seguro para os sistemas ?"
             },
             {
-              "title": "[ ] Existe limitação com o mínimo possível de administradores masters na rede ?"
+              "title": " Existe limitação com o mínimo possível de administradores masters na rede ?"
             },
             {
-              "title": "[ ] As credenciais têm características de senha forte ?"
+              "title": " As credenciais têm características de senha forte ?"
             },
             {
-              "title": "[ ] Existe monitoramento que mapeia quem está violando dados pessoais ?"
+              "title": " Existe monitoramento que mapeia quem está violando dados pessoais ?"
             },
             {
-              "title": "[ ] É feito periodicamente backups e a validação do mesmo ?"
+              "title": " É feito periodicamente backups e a validação do mesmo ?"
             },
             {
-              "title": "[ ] A comunicação com o controlador é feito periodicamente para realizar um levantamento dos eventos ocorridos naquele período ?"
+              "title": " A comunicação com o controlador é feito periodicamente para realizar um levantamento dos eventos ocorridos naquele período ?"
             },
             {
-              "title": "[ ] Existem firewalls na borda da rede ?"
+              "title": " Existem firewalls na borda da rede ?"
             },
             {
-              "title": "[ ] É utilizado algum tipo de detecção e prevenção de violação de dados pessoais por meio do IPS ?"
+              "title": " É utilizado algum tipo de detecção e prevenção de violação de dados pessoais por meio do IPS ?"
             },
             {
-              "title": "[ ] São aplicadas medidas de regulamentação às normas mais conhecidas de padronização dos itens de segurança ?"
+              "title": " São aplicadas medidas de regulamentação às normas mais conhecidas de padronização dos itens de segurança ?"
             },
             {
-              "title": "[ ] Os logs são guardados em um gerenciador de logs ?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
+              "title": " Os logs são guardados em um gerenciador de logs ?<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
             }
           ]
         }
@@ -399,7 +399,7 @@
       "topic": "Governança",
       "items": [
         {
-          "title": "[ ] Existem regras de boas práticas e de governança que estabeleçam as condições de organização, o regime de funcionamento, os procedimentos, incluindo reclamações e petições de titulares, as normas de segurança, os padrões técnicos, as obrigações específicas para os diversos envolvidos no tratamento, as ações educativas, os mecanismos internos de supervisão e de mitigação de riscos e outros aspectos relacionados ao tratamento de dados pessoais.<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
+          "title": " Existem regras de boas práticas e de governança que estabeleçam as condições de organização, o regime de funcionamento, os procedimentos, incluindo reclamações e petições de titulares, as normas de segurança, os padrões técnicos, as obrigações específicas para os diversos envolvidos no tratamento, as ações educativas, os mecanismos internos de supervisão e de mitigação de riscos e outros aspectos relacionados ao tratamento de dados pessoais.<p><strong><a href=\"#índice\">⬆ back to top</a></strong></p><hr/>"
         }
       ]
     },
@@ -452,6 +452,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

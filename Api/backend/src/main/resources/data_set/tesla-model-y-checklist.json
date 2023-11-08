@@ -27,64 +27,64 @@
           "topic": "Locked",
           "items": [
             {
-              "title": "[ ] Vehicle VIN matches the assigned VIN"
+              "title": " Vehicle VIN matches the assigned VIN"
             },
             {
-              "title": "[ ] Color is as ordered"
+              "title": " Color is as ordered"
             },
             {
-              "title": "[ ] Wheel style is as ordered (19\" 'Gemini' Wheel, 20\" Induction Wheel, etc)."
+              "title": " Wheel style is as ordered (19\" 'Gemini' Wheel, 20\" Induction Wheel, etc)."
             },
             {
-              "title": "[ ] A sleeve with <em>two</em> keys is provided"
+              "title": " A sleeve with <em>two</em> keys is provided"
             },
             {
-              "title": "[ ] Check the head light fit"
+              "title": " Check the head light fit"
             },
             {
-              "title": "[ ] Inspect the paint around intake vents on the front bumper"
+              "title": " Inspect the paint around intake vents on the front bumper"
             },
             {
-              "title": "[ ] Inspect the frunk, look for paint defects, dents and signs of improper closing by the sides of the T logo"
+              "title": " Inspect the frunk, look for paint defects, dents and signs of improper closing by the sides of the T logo"
             },
             {
-              "title": "[ ] Make sure the hood sits flush with the quarter panels and frunk"
+              "title": " Make sure the hood sits flush with the quarter panels and frunk"
             },
             {
-              "title": "[ ] Inspect that the windshield isn't installed shifted (the gaps between the glass and A pillar on either side\nshould be approximately equal). An improperly installed windshield causes significant wind noise at highway speeds."
+              "title": " Inspect that the windshield isn't installed shifted (the gaps between the glass and A pillar on either side\nshould be approximately equal). An improperly installed windshield causes significant wind noise at highway speeds."
             },
             {
-              "title": "[ ] Check for uneven/wide panel gaps and that panels are flush to car"
+              "title": " Check for uneven/wide panel gaps and that panels are flush to car"
             },
             {
-              "title": "[ ] Check that the trim along the bottom of the sides of the vehicle are flush with the bottom of the doors"
+              "title": " Check that the trim along the bottom of the sides of the vehicle are flush with the bottom of the doors"
             },
             {
-              "title": "[ ] Check for trim stains"
+              "title": " Check for trim stains"
             },
             {
-              "title": "[ ] Check all 4 door levers"
+              "title": " Check all 4 door levers"
             },
             {
-              "title": "[ ] Check all wheels, ensure they are not scratched"
+              "title": " Check all wheels, ensure they are not scratched"
             },
             {
-              "title": "[ ] Check all wheels, ensure there is nothing lodged in the tread (screws, nails, debris, etc.)"
+              "title": " Check all wheels, ensure there is nothing lodged in the tread (screws, nails, debris, etc.)"
             },
             {
-              "title": "[ ] Confirm all 4 hubcaps are present and properly attached"
+              "title": " Confirm all 4 hubcaps are present and properly attached"
             },
             {
-              "title": "[ ] Check for dings on pillars"
+              "title": " Check for dings on pillars"
             },
             {
-              "title": "[ ] Inspect the paint on the outside and the door jams, ensure panel corners do not have chips"
+              "title": " Inspect the paint on the outside and the door jams, ensure panel corners do not have chips"
             },
             {
-              "title": "[ ] Check for damage to black rocker panels"
+              "title": " Check for damage to black rocker panels"
             },
             {
-              "title": "[ ] Check the tail light fit<blockquote>"
+              "title": " Check the tail light fit<blockquote>"
             },
             {
               "title": "<strong>Photo:</strong> <a href=\"https://imgur.com/aPzCKKG\">tail light (passenger side) not flush with panel</a>"
@@ -93,13 +93,13 @@
               "title": "<strong>Fix:</strong> not yet available</li>\n</ul>\n</blockquote>"
             },
             {
-              "title": "[ ] Check charging port fit (driver side)"
+              "title": " Check charging port fit (driver side)"
             },
             {
-              "title": "[ ] Inspect the tail lights for condensation"
+              "title": " Inspect the tail lights for condensation"
             },
             {
-              "title": "[ ] Inspect the undercarriage, look for damage, missing screws, or screws that are sticking out<blockquote>"
+              "title": " Inspect the undercarriage, look for damage, missing screws, or screws that are sticking out<blockquote>"
             },
             {
               "title": "<strong>Photo:</strong> <a href=\"https://imgur.com/TozVn9I\">undercarriage screw found sticking out, not fully tightened</a>"
@@ -108,7 +108,7 @@
               "title": "<strong>Fix:</strong> requires a 10mm wrench; should you spot anything that needs attention ask the SC staff to inspect all screws and clips (they should've done it already) </li>\n</ul>\n</blockquote>"
             },
             {
-              "title": "[ ] Inspect all wheel wells. Each wheel well is fitted with noise dampener covers that are attached to the body with a combination of plastic\npins (pushed in all the way) and metal threaded pins (sticking out) with plastic nuts. Confirm that all plastic pins are present\n(there are no empty holes) and all metal pins (2 in each front wheel well, 4 in each rear wheel well) are present and properly attached.<blockquote>"
+              "title": " Inspect all wheel wells. Each wheel well is fitted with noise dampener covers that are attached to the body with a combination of plastic\npins (pushed in all the way) and metal threaded pins (sticking out) with plastic nuts. Confirm that all plastic pins are present\n(there are no empty holes) and all metal pins (2 in each front wheel well, 4 in each rear wheel well) are present and properly attached.<blockquote>"
             },
             {
               "title": "<strong>Photo:</strong> <a href=\"https://imgur.com/6KqcVg4\">threaded pins with and without plastic nuts</a>"
@@ -122,25 +122,25 @@
           "topic": "Unlocked",
           "items": [
             {
-              "title": "[ ] Turn on the lights on the car including: fog lights, head lights, tail lights, reverse light, brake, signal lights (head light signal and side signal lights)"
+              "title": " Turn on the lights on the car including: fog lights, head lights, tail lights, reverse light, brake, signal lights (head light signal and side signal lights)"
             },
             {
-              "title": "[ ] Check that wipers function correctly and look for potential wiper dings on hood"
+              "title": " Check that wipers function correctly and look for potential wiper dings on hood"
             },
             {
-              "title": "[ ] Inspect every glass and make sure there are no scratches or cracks"
+              "title": " Inspect every glass and make sure there are no scratches or cracks"
             },
             {
-              "title": "[ ] Check for trim scratches on windows due to a software bug that doesn't automatically lower the window when opening the door"
+              "title": " Check for trim scratches on windows due to a software bug that doesn't automatically lower the window when opening the door"
             },
             {
-              "title": "[ ] Express Pickup: Check the charge of the vehicle. It comes from the factory at ~50% but the local distributor should charge it to 80%-90% for a \"full tank.\""
+              "title": " Express Pickup: Check the charge of the vehicle. It comes from the factory at ~50% but the local distributor should charge it to 80%-90% for a \"full tank.\""
             },
             {
-              "title": "[ ] Verify that the charge port opens and closes"
+              "title": " Verify that the charge port opens and closes"
             },
             {
-              "title": "[ ] Verify that the rubber seal is properly attached to the bottom of all 4 doors.<blockquote>"
+              "title": " Verify that the rubber seal is properly attached to the bottom of all 4 doors.<blockquote>"
             },
             {
               "title": "<strong>Photo:</strong> <a href=\"https://imgur.com/AodUDfg\">rubber seal loose on driver door bottom</a>"
@@ -156,91 +156,91 @@
       "topic": "Interior",
       "items": [
         {
-          "title": "[ ] Inspect the screen for scratches"
+          "title": " Inspect the screen for scratches"
         },
         {
-          "title": "[ ] Inspect the center console scratches, dings, etc."
+          "title": " Inspect the center console scratches, dings, etc."
         },
         {
-          "title": "[ ] Inspect the dash for scratches"
+          "title": " Inspect the dash for scratches"
         },
         {
-          "title": "[ ] Verify that wireless charging works on both sides"
+          "title": " Verify that wireless charging works on both sides"
         },
         {
-          "title": "[ ] Confirm wired charging works (2 x USB-C in front, 2 x USB-C in back)"
+          "title": " Confirm wired charging works (2 x USB-C in front, 2 x USB-C in back)"
         },
         {
-          "title": "[ ] Open and close the glovebox"
+          "title": " Open and close the glovebox"
         },
         {
-          "title": "[ ] Make sure USB drive for Sentry Mode / Dashcam is present"
+          "title": " Make sure USB drive for Sentry Mode / Dashcam is present"
         },
         {
-          "title": "[ ] Open and close windows using one click open close and manually open and close (make sure there are no noises and they stay up when you close, and when they\ngo down they do all the way down for front two windows. The rear two windows don't go down all the way."
+          "title": " Open and close windows using one click open close and manually open and close (make sure there are no noises and they stay up when you close, and when they\ngo down they do all the way down for front two windows. The rear two windows don't go down all the way."
         },
         {
-          "title": "[ ] Verify backup camera"
+          "title": " Verify backup camera"
         },
         {
-          "title": "[ ] Play a familiar track through the sound system and confirm that all speakers work (use the balance and fader controls) and there\nare no unexpected clicks, etc."
+          "title": " Play a familiar track through the sound system and confirm that all speakers work (use the balance and fader controls) and there\nare no unexpected clicks, etc."
         },
         {
-          "title": "[ ] Fold mirrors"
+          "title": " Fold mirrors"
         },
         {
-          "title": "[ ] Check all interior lights, and that all reading lights turn on with a press"
+          "title": " Check all interior lights, and that all reading lights turn on with a press"
         },
         {
-          "title": "[ ] Check windshield all around"
+          "title": " Check windshield all around"
         },
         {
-          "title": "[ ] Inspect the headliner all around (no grease, damage or scuffs)"
+          "title": " Inspect the headliner all around (no grease, damage or scuffs)"
         },
         {
-          "title": "[ ] Inspect both coat hooks (should extend, retract and latch)"
+          "title": " Inspect both coat hooks (should extend, retract and latch)"
         },
         {
-          "title": "[ ] Inspect the steering wheel, check front &amp; back for scratches or tears"
+          "title": " Inspect the steering wheel, check front &amp; back for scratches or tears"
         },
         {
-          "title": "[ ] Check that turn signal and drive selection stalks work and actuate smoothly"
+          "title": " Check that turn signal and drive selection stalks work and actuate smoothly"
         },
         {
-          "title": "[ ] Check that the car can be put into reverse, neutral, park"
+          "title": " Check that the car can be put into reverse, neutral, park"
         },
         {
-          "title": "[ ] Look for scratches on the passenger side door sill"
+          "title": " Look for scratches on the passenger side door sill"
         },
         {
-          "title": "[ ] Check seats for scuffs/damage/bad seams"
+          "title": " Check seats for scuffs/damage/bad seams"
         },
         {
-          "title": "[ ] Verify all front seat adjustments, including lumbar support"
+          "title": " Verify all front seat adjustments, including lumbar support"
         },
         {
-          "title": "[ ] Confirm seat warmers work"
+          "title": " Confirm seat warmers work"
         },
         {
-          "title": "[ ] Verify third row seats work correctly if included in your order"
+          "title": " Verify third row seats work correctly if included in your order"
         },
         {
-          "title": "[ ] Confirm the middle seat on back row is flush at both ends"
+          "title": " Confirm the middle seat on back row is flush at both ends"
         },
         {
-          "title": "[ ] Confirm that back seats recline adjustment works correctly"
+          "title": " Confirm that back seats recline adjustment works correctly"
         },
         {
-          "title": "[ ] Inspect the floor mats for rips, stains, etc."
+          "title": " Inspect the floor mats for rips, stains, etc."
         },
         {
-          "title": "[ ] Inspect the metal accelerator and brake pedal arms; there have been\n<a href=\"https://www.reddit.com/r/TeslaModelY/comments/gyhim1/is_this_normal_my_brake_pedal_arm_has_a_welded/\">reports</a> of\ndifferent finish on pedals (matte on accelerator, glossy on brake) and a conspicuous weld in the middle of the brake pedal"
+          "title": " Inspect the metal accelerator and brake pedal arms; there have been\n<a href=\"https://www.reddit.com/r/TeslaModelY/comments/gyhim1/is_this_normal_my_brake_pedal_arm_has_a_welded/\">reports</a> of\ndifferent finish on pedals (matte on accelerator, glossy on brake) and a conspicuous weld in the middle of the brake pedal"
         },
         {
-          "title": "[ ] Turn on climate control, force the heat pump to kick in by taking the temperature to either end of the scale and listen for loud noises"
+          "title": " Turn on climate control, force the heat pump to kick in by taking the temperature to either end of the scale and listen for loud noises"
         },
         {
-          "title": "[ ] Confirm (car battery) charging works"
+          "title": " Confirm (car battery) charging works"
         }
       ]
     },
@@ -248,13 +248,13 @@
       "topic": "Frunk",
       "items": [
         {
-          "title": "[ ] Open and close the frunk"
+          "title": " Open and close the frunk"
         },
         {
-          "title": "[ ] Verify the clips holding the trim area around the frunk"
+          "title": " Verify the clips holding the trim area around the frunk"
         },
         {
-          "title": "[ ] Confirm the tow hook isn't missing"
+          "title": " Confirm the tow hook isn't missing"
         }
       ]
     },
@@ -262,28 +262,28 @@
       "topic": "Trunk",
       "items": [
         {
-          "title": "[ ] Open &amp; close the lift gate; sometimes the weather seal gets caught in the molding, causing a click"
+          "title": " Open &amp; close the lift gate; sometimes the weather seal gets caught in the molding, causing a click"
         },
         {
-          "title": "[ ] Confirm the lift gate opens and closes without \"shuddering\" and that the button on the hatch works to close it"
+          "title": " Confirm the lift gate opens and closes without \"shuddering\" and that the button on the hatch works to close it"
         },
         {
-          "title": "[ ] Inspect the cargo covers and verify they're properly attached"
+          "title": " Inspect the cargo covers and verify they're properly attached"
         },
         {
-          "title": "[ ] Confirm that seat &amp; trunk buttons fold the back seats"
+          "title": " Confirm that seat &amp; trunk buttons fold the back seats"
         },
         {
-          "title": "[ ] Confirm folding rear seats do not catch on the rear trunk floor carpeting"
+          "title": " Confirm folding rear seats do not catch on the rear trunk floor carpeting"
         },
         {
-          "title": "[ ] Inspect the back seat covers and verify they're properly attached"
+          "title": " Inspect the back seat covers and verify they're properly attached"
         },
         {
-          "title": "[ ] Confirm the <a href=\"https://shop.tesla.com/product/sae-j1772-charging-adapter\">J1772 adapter</a> isn't missing"
+          "title": " Confirm the <a href=\"https://shop.tesla.com/product/sae-j1772-charging-adapter\">J1772 adapter</a> isn't missing"
         },
         {
-          "title": "[ ] Check for tow hitch if you included it on your order."
+          "title": " Check for tow hitch if you included it on your order."
         }
       ]
     },
@@ -326,6 +326,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

@@ -44,298 +44,298 @@
           "topic": "Pre-Launch",
           "items": [
             {
-              "title": "<p>[ ] <b> Content and Style </b> </p>"
+              "title": "<p> <b> Content and Style </b> </p>"
             },
             {
-              "title": "<p>[ ] <b> Typography and layout   </b></p>"
+              "title": "<p> <b> Typography and layout   </b></p>"
             },
             {
-              "title": "<p>[ ] Check for incorrect punctuation marks, particularly apostrophes, quotation marks and hyphens/dashes  </p>"
+              "title": "<p> Check for incorrect punctuation marks, particularly apostrophes, quotation marks and hyphens/dashes  </p>"
             },
             {
-              "title": "<p>[ ] Check headings for where you could potentially use ligatures     </p>"
+              "title": "<p> Check headings for where you could potentially use ligatures     </p>"
             },
             {
-              "title": "<p>[ ] Check for widow/orphan terms in important paragraphs     </p>\n</li>\n</ul>"
+              "title": "<p> Check for widow/orphan terms in important paragraphs     </p>\n</li>\n</ul>"
             },
             {
-              "title": "<p>[ ] <b> Spelling and grammar  </b></p>"
+              "title": "<p> <b> Spelling and grammar  </b></p>"
             },
             {
-              "title": "<p>[ ] <b> Consistency    </b></p>"
+              "title": "<p> <b> Consistency    </b></p>"
             },
             {
-              "title": "<p>[ ]  Capitalisation (especially of main headings)  </p>"
+              "title": "<p>  Capitalisation (especially of main headings)  </p>"
             },
             {
-              "title": "<p>[ ]  Tense/Style of writing    </p>"
+              "title": "<p>  Tense/Style of writing    </p>"
             },
             {
-              "title": "<p>[ ]  Recurring/common phrases (e.g. ‘More about X’ links)  </p>\n</li>\n</ul>"
+              "title": "<p>  Recurring/common phrases (e.g. ‘More about X’ links)  </p>\n</li>\n</ul>"
             },
             {
-              "title": "<p>[ ]   Variations in words (e.g. Websites vs Web Sites, or UK vs US spelling)    </p>"
+              "title": "<p>   Variations in words (e.g. Websites vs Web Sites, or UK vs US spelling)    </p>"
             },
             {
-              "title": "[ ]  Treatment of bulleted lists (e.g. periods or commas at end of each item)  </li>\n</ul>"
+              "title": "  Treatment of bulleted lists (e.g. periods or commas at end of each item)  </li>\n</ul>"
             },
             {
-              "title": "<p>[ ]  Check for hard-coded links to staging domain (i.e. ensure all links will change to ‘live’ URL/domain when site is launched)</p>"
+              "title": "<p>  Check for hard-coded links to staging domain (i.e. ensure all links will change to ‘live’ URL/domain when site is launched)</p>"
             },
             {
-              "title": "<p>[ ] Ensure no test content on site    </p>"
+              "title": "<p> Ensure no test content on site    </p>"
             },
             {
-              "title": "<p>[ ] Check how important pages (e.g. content items) print  </p>"
+              "title": "<p> Check how important pages (e.g. content items) print  </p>"
             },
             {
-              "title": "<p>[ ] For re-designs, ensure important old/existing URLs are redirected to relevant new URLs, if the URL scheme is changing</p>"
+              "title": "<p> For re-designs, ensure important old/existing URLs are redirected to relevant new URLs, if the URL scheme is changing</p>"
             },
             {
-              "title": "<p>[ ] Check all ‘Hidden Copy’ (e.g. alt text, transcriptions, text in JavaScript functions)     </p>"
+              "title": "<p> Check all ‘Hidden Copy’ (e.g. alt text, transcriptions, text in JavaScript functions)     </p>"
             },
             {
-              "title": "<p>[ ] <b> Standards and Validation </b></p>"
+              "title": "<p> <b> Standards and Validation </b></p>"
             },
             {
-              "title": "[ ] Accessibility  </li>\n</ul>"
+              "title": " Accessibility  </li>\n</ul>"
             },
             {
-              "title": "[ ]  HTML validation"
+              "title": "  HTML validation"
             },
             {
-              "title": "[ ]  JavaScript validation"
+              "title": "  JavaScript validation"
             },
             {
-              "title": "<p>[ ]  CSS validation     </p>"
+              "title": "<p>  CSS validation     </p>"
             },
             {
-              "title": "<p>[ ] <b> Search Engine Visibility, SEO and Metrics </b></p>"
+              "title": "<p> <b> Search Engine Visibility, SEO and Metrics </b></p>"
             },
             {
-              "title": "<p>[ ] Disable Indexing On Development Server </p>"
+              "title": "<p> Disable Indexing On Development Server </p>"
             },
             {
-              "title": "<p>[ ] Page Titles are important; ensure they make sense and have relevant keywords in them.    </p>"
+              "title": "<p> Page Titles are important; ensure they make sense and have relevant keywords in them.    </p>"
             },
             {
-              "title": "<p>[ ]  Create metadata descriptions for important pages.     </p>"
+              "title": "<p>  Create metadata descriptions for important pages.     </p>"
             },
             {
-              "title": "<p>[ ]  Check for canonical domain issues (e.g. variations in links to http://site.com http://www.site.com http://www.site.com/index.html should be reduced to a single   consistent style)   </p>"
+              "title": "<p>  Check for canonical domain issues (e.g. variations in links to http://site.com http://www.site.com http://www.site.com/index.html should be reduced to a single   consistent style)   </p>"
             },
             {
-              "title": "<p>[ ]  Ensure content is marked-up semantically/correctly (h1, etc.)     </p>"
+              "title": "<p>  Ensure content is marked-up semantically/correctly (h1, etc.)     </p>"
             },
             {
-              "title": "<p>[ ] Check for target keyword usage in general content     </p>"
+              "title": "<p> Check for target keyword usage in general content     </p>"
             },
             {
-              "title": "<p>[ ] Check format (user/search engine friendliness) of URLs    </p>"
+              "title": "<p> Check format (user/search engine friendliness) of URLs    </p>"
             },
             {
-              "title": "<p>[ ]  Set up Analytics, FeedBurner, and any other packages for measuring ongoing success    </p>"
+              "title": "<p>  Set up Analytics, FeedBurner, and any other packages for measuring ongoing success    </p>"
             },
             {
-              "title": "<p>[ ]  Create an XML Sitemap     </p>"
+              "title": "<p>  Create an XML Sitemap     </p>"
             },
             {
-              "title": "<p>[ ] Configure Google Webmaster Console and Yahoo! Site Explorer   </p>"
+              "title": "<p> Configure Google Webmaster Console and Yahoo! Site Explorer   </p>"
             },
             {
-              "title": "<p>[ ] <b> Sharing &amp; Rich Snippets</b></p>"
+              "title": "<p> <b> Sharing &amp; Rich Snippets</b></p>"
             },
             {
-              "title": "<p>[ ] Create a share card using <a href=\"https://photopea.com/\">Photopea</a> or a similar tool</p>"
+              "title": "<p> Create a share card using <a href=\"https://photopea.com/\">Photopea</a> or a similar tool</p>"
             },
             {
-              "title": "<p>[ ] Set up Facebook meta tags &amp; validate <a href=\"https://developers.facebook.com/tools/debug/\">here</a></p>"
+              "title": "<p> Set up Facebook meta tags &amp; validate <a href=\"https://developers.facebook.com/tools/debug/\">here</a></p>"
             },
             {
-              "title": "<p>[ ] Set up Twitter meta tags &amp; validate <a href=\"https://cards-dev.twitter.com/validator\">here</a></p>\n</li>\n</ul>\n</li>\n</ul>\n<p><b> Facebook Tag </b> <br>\n<code>html\n&lt;meta property=\"og:type\" content=\"website\"&gt;\n&lt;meta property=\"og:site_name\" content=\"${SITE_NAME}\"&gt;\n&lt;meta property=\"og:description\" content=\"${SITE_DESCRIPTION}\"&gt;\n&lt;meta property=\"og:image\" content=\"${SHARE_CARD_URL}\"&gt;\n&lt;meta property=\"og:title\" content=\"${PAGE_TITLE}\"&gt;\n&lt;meta property=\"og:url\" content=\"${PAGE_URL}\"&gt;</code></br></p>\n</li>\n</ul><p><b> Twitter Tag</b>\n<code>html\n    &lt;meta name=\"twitter:card\" content=\"summary_large_image\"&gt;\n    &lt;meta name=\"twitter:site\" content=\"${SITE_NAME}\"&gt;\n    &lt;meta name=\"twitter:creator\" content=\"${SITE_AUTHOR}\"&gt;\n    &lt;meta name=\"twitter:description\" content=\"${SITE_DESCRIPTION}\"&gt;\n    &lt;meta name=\"twitter:image\" content=\"${SHARE_CARD_URL}\"&gt;\n    &lt;meta name=\"twitter:title\" content=\"${PAGE_TITLE}\"&gt;\n    &lt;meta name=\"twitter:url\" content=\"${PAGE_URL}\"&gt;</code></p>"
+              "title": "<p> Set up Twitter meta tags &amp; validate <a href=\"https://cards-dev.twitter.com/validator\">here</a></p>\n</li>\n</ul>\n</li>\n</ul>\n<p><b> Facebook Tag </b> <br>\n<code>html\n&lt;meta property=\"og:type\" content=\"website\"&gt;\n&lt;meta property=\"og:site_name\" content=\"${SITE_NAME}\"&gt;\n&lt;meta property=\"og:description\" content=\"${SITE_DESCRIPTION}\"&gt;\n&lt;meta property=\"og:image\" content=\"${SHARE_CARD_URL}\"&gt;\n&lt;meta property=\"og:title\" content=\"${PAGE_TITLE}\"&gt;\n&lt;meta property=\"og:url\" content=\"${PAGE_URL}\"&gt;</code></br></p>\n</li>\n</ul><p><b> Twitter Tag</b>\n<code>html\n    &lt;meta name=\"twitter:card\" content=\"summary_large_image\"&gt;\n    &lt;meta name=\"twitter:site\" content=\"${SITE_NAME}\"&gt;\n    &lt;meta name=\"twitter:creator\" content=\"${SITE_AUTHOR}\"&gt;\n    &lt;meta name=\"twitter:description\" content=\"${SITE_DESCRIPTION}\"&gt;\n    &lt;meta name=\"twitter:image\" content=\"${SHARE_CARD_URL}\"&gt;\n    &lt;meta name=\"twitter:title\" content=\"${PAGE_TITLE}\"&gt;\n    &lt;meta name=\"twitter:url\" content=\"${PAGE_URL}\"&gt;</code></p>"
             },
             {
-              "title": "<p>[ ] <b> Functional Testing </b></p>"
+              "title": "<p> <b> Functional Testing </b></p>"
             },
             {
-              "title": "<p>[ ] Check all bespoke/complex functionality    </p>"
+              "title": "<p> Check all bespoke/complex functionality    </p>"
             },
             {
-              "title": "<p>[ ] Check search functionality (including relevance of results)    </p>"
+              "title": "<p> Check search functionality (including relevance of results)    </p>"
             },
             {
-              "title": "<p>[ ] Check on common variations of browser (Internet Explorer, Firefox, Safari, Chrome etc.), version (6, 7, 2.2, 3.1 etc.) and platform (Windows, OSX, Linux)  </p>"
+              "title": "<p> Check on common variations of browser (Internet Explorer, Firefox, Safari, Chrome etc.), version (6, 7, 2.2, 3.1 etc.) and platform (Windows, OSX, Linux)  </p>"
             },
             {
-              "title": "<p>[ ] Check on common variations of Screen Resolution    </p>"
+              "title": "<p> Check on common variations of Screen Resolution    </p>"
             },
             {
-              "title": "<p>[ ] Test all forms (e.g. contact us, blog comments), including anti-spam features, response emails/text, etc.</p>"
+              "title": "<p> Test all forms (e.g. contact us, blog comments), including anti-spam features, response emails/text, etc.</p>"
             },
             {
-              "title": "<p>[ ] Test without JavaScript, Flash, and other plug-ins    </p>"
+              "title": "<p> Test without JavaScript, Flash, and other plug-ins    </p>"
             },
             {
-              "title": "<p>[ ] Check all external links are valid     </p>"
+              "title": "<p> Check all external links are valid     </p>"
             },
             {
-              "title": "<p>[ ] Run the site through Google's <a href=\"https://developers.google.com/speed/pagespeed/insights/\">PageSpeed Insights</a></p>"
+              "title": "<p> Run the site through Google's <a href=\"https://developers.google.com/speed/pagespeed/insights/\">PageSpeed Insights</a></p>"
             },
             {
-              "title": "<p>[ ] Write a script to load test your site</p>"
+              "title": "<p> Write a script to load test your site</p>"
             },
             {
               "title": "Check out <a href=\"https://docs.locust.io/en/stable/\">Locust</a> for this. See <a href=\"https://github.com/datamade/la-metro-councilmatic#load-testing\">LA Metro Councilmatic</a> for a basic example.</li>\n</ul>"
             },
             {
-              "title": "<p>[ ] <b> Printer Friendliness </b> </p>\n<p>Dynamic sizing, dark backgrounds, and interactivity don't play well with printers.</p>"
+              "title": "<p> <b> Printer Friendliness </b> </p>\n<p>Dynamic sizing, dark backgrounds, and interactivity don't play well with printers.</p>"
             },
             {
-              "title": "<p>[ ] <b> Pick one option to solve this: </b></p>"
+              "title": "<p> <b> Pick one option to solve this: </b></p>"
             },
             {
-              "title": "[ ] Make a print stylesheet using a <code>@media print {}</code> media query, then add it to your site with <code>&lt;link rel=\"stylesheet\" type=\"text/css\" href=\"css/print.css\" media=\"print\"&gt;</code></li>\n</ul>"
+              "title": " Make a print stylesheet using a <code>@media print {}</code> media query, then add it to your site with <code>&lt;link rel=\"stylesheet\" type=\"text/css\" href=\"css/print.css\" media=\"print\"&gt;</code></li>\n</ul>"
             },
             {
               "title": "<p><b> OR </b></p>"
             },
             {
-              "title": "[ ] Use your browser's dev tools to remove offending elements (like sticky footers), alter colors where needed, and [screenshot the entire page]  (https://stackoverflow.com/a/14830242).</li>\n</ul>"
+              "title": " Use your browser's dev tools to remove offending elements (like sticky footers), alter colors where needed, and [screenshot the entire page]  (https://stackoverflow.com/a/14830242).</li>\n</ul>"
             },
             {
-              "title": "<p>[ ] Add a link to the printer-friendly version to your website.</p>\n</li>\n</ul>"
+              "title": "<p> Add a link to the printer-friendly version to your website.</p>\n</li>\n</ul>"
             },
             {
-              "title": "<p>[ ] <b> Browser and mobile compatibility </b></p>"
+              "title": "<p> <b> Browser and mobile compatibility </b></p>"
             },
             {
-              "title": "<p>[ ] Use BrowserStack to confirm that your site is compatible with the browsers you wish to support</p>"
+              "title": "<p> Use BrowserStack to confirm that your site is compatible with the browsers you wish to support</p>"
             },
             {
-              "title": "<p>[ ] <b> Using BrowserStack's mobile device emulators and/or your own mobile device, confirm that: </b></p>"
+              "title": "<p> <b> Using BrowserStack's mobile device emulators and/or your own mobile device, confirm that: </b></p>"
             },
             {
-              "title": "<p>[ ] Scrolling is easy</p>"
+              "title": "<p> Scrolling is easy</p>"
             },
             {
-              "title": "<p>[ ] Nav bar works</p>"
+              "title": "<p> Nav bar works</p>"
             },
             {
-              "title": "<p>[ ] Hoverable things are tappable</p>"
+              "title": "<p> Hoverable things are tappable</p>"
             },
             {
-              "title": "<p>[ ] Charts and maps look ok</p>\n</li>\n</ul>\n</li>\n</ul>"
+              "title": "<p> Charts and maps look ok</p>\n</li>\n</ul>\n</li>\n</ul>"
             },
             {
-              "title": "<p>[ ] <b> Security/Risk </b></p>"
+              "title": "<p> <b> Security/Risk </b></p>"
             },
             {
-              "title": "<p>[ ]  Configure backup schedule, and test recovery from backup.     </p>"
+              "title": "<p>  Configure backup schedule, and test recovery from backup.     </p>"
             },
             {
-              "title": "<p>[ ] Protect any sensitive pages (e.g. administration area)    </p>"
+              "title": "<p> Protect any sensitive pages (e.g. administration area)    </p>"
             },
             {
-              "title": "<p>[ ] Use robots.txt where necessary    </p>\n</li>\n</ul>"
+              "title": "<p> Use robots.txt where necessary    </p>\n</li>\n</ul>"
             },
             {
-              "title": "<p>[ ] <b> Security/Penetration test    </b> </p>"
+              "title": "<p> <b> Security/Penetration test    </b> </p>"
             },
             {
-              "title": "<p>[ ]  Turn-off verbose error reporting  </p>"
+              "title": "<p>  Turn-off verbose error reporting  </p>"
             },
             {
-              "title": "<p>[ ] Check disk space/capacity     </p>"
+              "title": "<p> Check disk space/capacity     </p>"
             },
             {
-              "title": "<p>[ ] Set-up email/SMS monitoring/alerts (e.g. for errors, server warnings); consider internal and external monitoring services     </p>\n</li>\n</ul>"
+              "title": "<p> Set-up email/SMS monitoring/alerts (e.g. for errors, server warnings); consider internal and external monitoring services     </p>\n</li>\n</ul>"
             },
             {
-              "title": "<p>[ ] <b> Performance </b></p>"
+              "title": "<p> <b> Performance </b></p>"
             },
             {
-              "title": "<p>[ ]  Load test  </p>"
+              "title": "<p>  Load test  </p>"
             },
             {
-              "title": "<p>[ ] Check image optimisation   </p>"
+              "title": "<p> Check image optimisation   </p>"
             },
             {
-              "title": "<p>[ ] Check and implement caching where necessary    </p>"
+              "title": "<p> Check and implement caching where necessary    </p>"
             },
             {
-              "title": "<p>[ ] Check total page size/download time    </p>"
+              "title": "<p> Check total page size/download time    </p>"
             },
             {
-              "title": "<p>[ ] Minify/compress static (JavaScript/HTML/CSS) files     </p>\n</li>\n</ul>"
+              "title": "<p> Minify/compress static (JavaScript/HTML/CSS) files     </p>\n</li>\n</ul>"
             },
             {
-              "title": "<p>[ ]  Optimise your CSS: use short image paths; make full-use ‘cascading’ nature of CSS, etc.    </p>"
+              "title": "<p>  Optimise your CSS: use short image paths; make full-use ‘cascading’ nature of CSS, etc.    </p>"
             },
             {
-              "title": "<p>[ ] Check correct database indexing    </p>"
+              "title": "<p> Check correct database indexing    </p>"
             },
             {
-              "title": "<p>[ ] Check configuration at every level (Web server, Database, any other software e.g. Content Management System)  </p>\n</li>\n</ul>"
+              "title": "<p> Check configuration at every level (Web server, Database, any other software e.g. Content Management System)  </p>\n</li>\n</ul>"
             },
             {
-              "title": "<p>[ ]  Configure server-based logging/measurement tools (e.g. database/web server logging)    </p>"
+              "title": "<p>  Configure server-based logging/measurement tools (e.g. database/web server logging)    </p>"
             },
             {
-              "title": "<p>[ ] <b> Finishing Touches </b></p>"
+              "title": "<p> <b> Finishing Touches </b></p>"
             },
             {
-              "title": "<p>[ ] Create custom 404 &amp; 500 &amp; other error pages   </p>"
+              "title": "<p> Create custom 404 &amp; 500 &amp; other error pages   </p>"
             },
             {
-              "title": "<p>[ ] <b> Favicons </b></p>"
+              "title": "<p> <b> Favicons </b></p>"
             },
             {
-              "title": "<p>[ ] Create a favicon</p>"
+              "title": "<p> Create a favicon</p>"
             },
             {
-              "title": "<p>[ ] Add favicons and Apple touch icons (http://www.favicomatic.com/)</p>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul><p><br/></p><p>### Post-Launch\n * [ ] <b> Marketing </b>\n    * [ ] Social Marketing: Twitter, LinkedIn, Digg, Facebook, Stumbleupon, etc.     </p><pre><code>* [ ] Submit to search engines\n</code></pre>"
+              "title": "<p> Add favicons and Apple touch icons (http://www.favicomatic.com/)</p>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul><p><br/></p><p>### Post-Launch\n *  <b> Marketing </b>\n    *  Social Marketing: Twitter, LinkedIn, Digg, Facebook, Stumbleupon, etc.     </p><pre><code>*  Submit to search engines\n</code></pre>"
             },
             {
-              "title": "<p>[ ]  Set-up PPC/Google Adwords where necessary  </p>"
+              "title": "<p>  Set-up PPC/Google Adwords where necessary  </p>"
             },
             {
-              "title": "[ ] Check formatting of site results in SERPs  </li>\n</ul>\n</li>\n</ul><p><br/></p><p>### Launch\n* [ ] <b> Deployment </b>\n    * [ ] Create a production deployment</p><pre><code>* [ ] Double check that production-level resources have been provisioned\n\n* [ ] Purchase your domain and create the DNS record to point it at your production deployment\n\n* [ ] Ensure HTTPS / SSL is correctly set.\n</code></pre>"
+              "title": " Check formatting of site results in SERPs  </li>\n</ul>\n</li>\n</ul><p><br/></p><p>### Launch\n*  <b> Deployment </b>\n    *  Create a production deployment</p><pre><code>*  Double check that production-level resources have been provisioned\n\n*  Purchase your domain and create the DNS record to point it at your production deployment\n\n*  Ensure HTTPS / SSL is correctly set.\n</code></pre>"
             },
             {
-              "title": "<p>[ ] <b> Web Search Indexing </b></p>"
+              "title": "<p> <b> Web Search Indexing </b></p>"
             },
             {
-              "title": "<p>[ ] Allow indexing of your production site</p>"
+              "title": "<p> Allow indexing of your production site</p>"
             },
             {
-              "title": "<p>[ ] Redirect the www subdomain to your root domain</p>"
+              "title": "<p> Redirect the www subdomain to your root domain</p>"
             },
             {
-              "title": "<p>[ ] <a href=\"https://developers.google.com/search/docs/advanced/crawling/consolidate-duplicate-urls\">Set a canonical URL</a> to prevent duplicate search results</p>\n</li>\n</ul>"
+              "title": "<p> <a href=\"https://developers.google.com/search/docs/advanced/crawling/consolidate-duplicate-urls\">Set a canonical URL</a> to prevent duplicate search results</p>\n</li>\n</ul>"
             },
             {
-              "title": "<p>[ ] <b> Google Analytics </b></p>"
+              "title": "<p> <b> Google Analytics </b></p>"
             },
             {
-              "title": "<p>[ ] Create a <a href=\"http://www.google.com/analytics/\">Google Analytics</a> account (if you do not have one)</p>"
+              "title": "<p> Create a <a href=\"http://www.google.com/analytics/\">Google Analytics</a> account (if you do not have one)</p>"
             },
             {
-              "title": "<p>[ ] Add <a href=\"https://developers.google.com/analytics/devguides/collection/analyticsjs\">the Google Analytics script</a> to your site</p>"
+              "title": "<p> Add <a href=\"https://developers.google.com/analytics/devguides/collection/analyticsjs\">the Google Analytics script</a> to your site</p>"
             },
             {
-              "title": "<p>[ ] Set up <a href=\"https://www.google.com/webmasters/tools/home?hl=en\">Google Webmaster Tools</a> and <a href=\"https://support.google.com/webmasters/answer/9008080?hl=en\">verify site</a></p>"
+              "title": "<p> Set up <a href=\"https://www.google.com/webmasters/tools/home?hl=en\">Google Webmaster Tools</a> and <a href=\"https://support.google.com/webmasters/answer/9008080?hl=en\">verify site</a></p>"
             },
             {
-              "title": "[ ] Link Webmaster Tools to Google Analytics</li>\n</ul>\n</li>\n</ul><p><br/></p><p>### Ongoing\n * [ ] Monitor and respond to feedback (direct feedback, on Social Media sites, check for chatter through Google, etc.)  </p>"
+              "title": " Link Webmaster Tools to Google Analytics</li>\n</ul>\n</li>\n</ul><p><br/></p><p>### Ongoing\n *  Monitor and respond to feedback (direct feedback, on Social Media sites, check for chatter through Google, etc.)  </p>"
             },
             {
-              "title": "<p>[ ] Check analytics for problems, popular pages etc. and adjust as necessary  </p>"
+              "title": "<p> Check analytics for problems, popular pages etc. and adjust as necessary  </p>"
             },
             {
-              "title": "<p>[ ] Update content</p>"
+              "title": "<p> Update content</p>"
             },
             {
-              "title": "<p>[ ] <b> Optional: </b> Set up relevant Goals and Funnels in Google Analytics</p>\n<p><br/></p>"
+              "title": "<p> <b> Optional: </b> Set up relevant Goals and Funnels in Google Analytics</p>\n<p><br/></p>"
             }
           ]
         }
@@ -353,6 +353,5 @@
       "topic": "Copyright and Attribution",
       "items": []
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

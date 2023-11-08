@@ -13,13 +13,13 @@
       "topic": "Before Building",
       "items": [
         {
-          "title": "[ ] Have clear idea of the business requirements"
+          "title": " Have clear idea of the business requirements"
         },
         {
-          "title": "[ ] Get UX/UI designer's mock ups and understand what the designer's visions are, and how they fit in our current design system"
+          "title": " Get UX/UI designer's mock ups and understand what the designer's visions are, and how they fit in our current design system"
         },
         {
-          "title": "[ ] Understand the current design system, and what are the possible impacts for current layouts"
+          "title": " Understand the current design system, and what are the possible impacts for current layouts"
         }
       ]
     },
@@ -27,19 +27,19 @@
       "topic": "During Development Process",
       "items": [
         {
-          "title": "[ ] Have conistent naming convention, preferablly enforced by a linter (e.g. eslint)"
+          "title": " Have conistent naming convention, preferablly enforced by a linter (e.g. eslint)"
         },
         {
-          "title": "[ ] Used preferred way for layouts (grid &gt; flexbox &gt; absolute/relative position)"
+          "title": " Used preferred way for layouts (grid &gt; flexbox &gt; absolute/relative position)"
         },
         {
-          "title": "[ ] Consolidate similar elements or make them re-usable"
+          "title": " Consolidate similar elements or make them re-usable"
         },
         {
-          "title": "[ ] The boy scout rule: everywhere you touched is cleaner than before"
+          "title": " The boy scout rule: everywhere you touched is cleaner than before"
         },
         {
-          "title": "[ ] <a href=\"https://en.wikipedia.org/wiki/SOLID\">SOLID</a> and <a href=\"https://en.wikipedia.org/wiki/Don%27t_repeat_yourself\">DRY</a>?"
+          "title": " <a href=\"https://en.wikipedia.org/wiki/SOLID\">SOLID</a> and <a href=\"https://en.wikipedia.org/wiki/Don%27t_repeat_yourself\">DRY</a>?"
         }
       ]
     },
@@ -47,31 +47,31 @@
       "topic": "Before Testing/QA",
       "items": [
         {
-          "title": "[ ] Created pull request for code review"
+          "title": " Created pull request for code review"
         },
         {
-          "title": "[ ] Check in different browsers (Check on Chrome, FireFox, Safari, Edge)"
+          "title": " Check in different browsers (Check on Chrome, FireFox, Safari, Edge)"
         },
         {
-          "title": "[ ] Check in native apps (iOS/Android)"
+          "title": " Check in native apps (iOS/Android)"
         },
         {
-          "title": "[ ] Works well in different break points (Mobile, Tablet, Desktop) and different length of text sizes"
+          "title": " Works well in different break points (Mobile, Tablet, Desktop) and different length of text sizes"
         },
         {
-          "title": "[ ] Check voice over in Safari for your feature"
+          "title": " Check voice over in Safari for your feature"
         },
         {
-          "title": "[ ] Profile in ChromeDevTool to see any performance issues"
+          "title": " Profile in ChromeDevTool to see any performance issues"
         },
         {
-          "title": "[ ] Check color contrast"
+          "title": " Check color contrast"
         },
         {
-          "title": "[ ] Add unit tests to your feature"
+          "title": " Add unit tests to your feature"
         },
         {
-          "title": "[ ] Add documentation for future/peer developers"
+          "title": " Add documentation for future/peer developers"
         }
       ]
     },
@@ -79,10 +79,10 @@
       "topic": "Before Deployment",
       "items": [
         {
-          "title": "[ ] Feature branch is synchronized with master"
+          "title": " Feature branch is synchronized with master"
         },
         {
-          "title": "[ ] Add configuration changes"
+          "title": " Add configuration changes"
         }
       ]
     },
@@ -90,10 +90,9 @@
       "topic": "After Deployment",
       "items": [
         {
-          "title": "[ ] 🎉 Celebrate and watch what kind of impact/usage the feature going to bring."
+          "title": " 🎉 Celebrate and watch what kind of impact/usage the feature going to bring."
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

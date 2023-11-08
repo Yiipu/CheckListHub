@@ -14,25 +14,25 @@
           "topic": "Project",
           "items": [
             {
-              "title": "[ ] The project has a clear, codified business goal/metric"
+              "title": " The project has a clear, codified business goal/metric"
             },
             {
-              "title": "[ ] There is a person who is ultimately responsible for the success/failure of the project"
+              "title": " There is a person who is ultimately responsible for the success/failure of the project"
             },
             {
-              "title": "[ ] We have a plan for how to reach a first deployed end product as fast as possible"
+              "title": " We have a plan for how to reach a first deployed end product as fast as possible"
             },
             {
-              "title": "[ ] We have decided on how and when to keep the team in sync (daily/weekly standups, retrospectives, planning meetings, etc)"
+              "title": " We have decided on how and when to keep the team in sync (daily/weekly standups, retrospectives, planning meetings, etc)"
             },
             {
-              "title": "[ ] We have assessed how the product will impact stakeholders (e.g. people, society, world)"
+              "title": " We have assessed how the product will impact stakeholders (e.g. people, society, world)"
             },
             {
-              "title": "[ ] We have identified relevant regulation and translated it to requirements"
+              "title": " We have identified relevant regulation and translated it to requirements"
             },
             {
-              "title": "[ ] We have identified requirements related to fairness, accountability, and transparency"
+              "title": " We have identified requirements related to fairness, accountability, and transparency"
             }
           ]
         },
@@ -40,37 +40,37 @@
           "topic": "Problem understanding",
           "items": [
             {
-              "title": "[ ] We have decided on one single metric on which to rank our models"
+              "title": " We have decided on one single metric on which to rank our models"
             },
             {
-              "title": "[ ] We have clarified the costs of the different kinds of erroneous predictions"
+              "title": " We have clarified the costs of the different kinds of erroneous predictions"
             },
             {
-              "title": "[ ] We have an understanding of how good performance is \"good enough\""
+              "title": " We have an understanding of how good performance is \"good enough\""
             },
             {
-              "title": "[ ] We know the constraints in serving time w.r.t. memory usage"
+              "title": " We know the constraints in serving time w.r.t. memory usage"
             },
             {
-              "title": "[ ] We know the constraints in serving time w.r.t. latency"
+              "title": " We know the constraints in serving time w.r.t. latency"
             },
             {
-              "title": "[ ] We know the constraints in serving time w.r.t. throughput"
+              "title": " We know the constraints in serving time w.r.t. throughput"
             },
             {
-              "title": "[ ] We know if we’re doing streaming- or batch prediction"
+              "title": " We know if we’re doing streaming- or batch prediction"
             },
             {
-              "title": "[ ] We understand the current state of ML applied to the problem we’re trying to solve"
+              "title": " We understand the current state of ML applied to the problem we’re trying to solve"
             },
             {
-              "title": "[ ] We have an idea of how important freshness is. How often will we need to change the model?"
+              "title": " We have an idea of how important freshness is. How often will we need to change the model?"
             },
             {
-              "title": "[ ] We have domain experts who can help us understand the problem and error modes"
+              "title": " We have domain experts who can help us understand the problem and error modes"
             },
             {
-              "title": "[ ] We know where the model will be deployed (server / client, browser / on device)"
+              "title": " We know where the model will be deployed (server / client, browser / on device)"
             }
           ]
         },
@@ -78,25 +78,25 @@
           "topic": "Data",
           "items": [
             {
-              "title": "[ ] We have selected a dev- and test set that are reflective of the real task we're trying to solve"
+              "title": " We have selected a dev- and test set that are reflective of the real task we're trying to solve"
             },
             {
-              "title": "[ ] Our dev- and test sets are from the same distribution"
+              "title": " Our dev- and test sets are from the same distribution"
             },
             {
-              "title": "[ ] Our dev set is large enough, so that we can detect improvements to the desired accuracy"
+              "title": " Our dev set is large enough, so that we can detect improvements to the desired accuracy"
             },
             {
-              "title": "[ ] We understand how to split the data into train/val/test to avoid data leakage"
+              "title": " We understand how to split the data into train/val/test to avoid data leakage"
             },
             {
-              "title": "[ ] If we need to collect data, we know how difficult and costly it will be to collect and annotate"
+              "title": " If we need to collect data, we know how difficult and costly it will be to collect and annotate"
             },
             {
-              "title": "[ ] We have a plan for how to store and version our data, dataset splits, models, and change in annotations"
+              "title": " We have a plan for how to store and version our data, dataset splits, models, and change in annotations"
             },
             {
-              "title": "[ ] We get a reasonable <a href=\"https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf\">“ML Test Score”</a>, table 1"
+              "title": " We get a reasonable <a href=\"https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf\">“ML Test Score”</a>, table 1"
             }
           ]
         }
@@ -106,16 +106,16 @@
       "topic": "Modelling",
       "items": [
         {
-          "title": "[ ] We have one or several well thought out baselines in place. These are not good enough, so there’s an actual need to use ML"
+          "title": " We have one or several well thought out baselines in place. These are not good enough, so there’s an actual need to use ML"
         },
         {
-          "title": "[ ] There’s a metrics webpage where we can compare runs and the url is <strong><em>_</em></strong><strong><em>_</em></strong>_____"
+          "title": " There’s a metrics webpage where we can compare runs and the url is <strong><em>_</em></strong><strong><em>_</em></strong>_____"
         },
         {
-          "title": "[ ] We can (approximately) reproduce a model if needed"
+          "title": " We can (approximately) reproduce a model if needed"
         },
         {
-          "title": "[ ] We get a reasonable <a href=\"https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf\">“ML Test Score”</a>, table 2"
+          "title": " We get a reasonable <a href=\"https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf\">“ML Test Score”</a>, table 2"
         }
       ]
     },
@@ -123,58 +123,57 @@
       "topic": "Deployment",
       "items": [
         {
-          "title": "[ ] We have CI in place"
+          "title": " We have CI in place"
         },
         {
-          "title": "[ ] We have tests for the full training pipeline"
+          "title": " We have tests for the full training pipeline"
         },
         {
-          "title": "[ ] We have validation tests"
+          "title": " We have validation tests"
         },
         {
-          "title": "[ ] We have functionality tests"
+          "title": " We have functionality tests"
         },
         {
-          "title": "[ ] We have unit tests"
+          "title": " We have unit tests"
         },
         {
-          "title": "[ ] We have CD in place"
+          "title": " We have CD in place"
         },
         {
-          "title": "[ ] We have CT in place"
+          "title": " We have CT in place"
         },
         {
-          "title": "[ ] Blue/green deployment in place"
+          "title": " Blue/green deployment in place"
         },
         {
-          "title": "[ ] We can deploy a model in shadow mode"
+          "title": " We can deploy a model in shadow mode"
         },
         {
-          "title": "[ ] Monitoring in place for memory consumption"
+          "title": " Monitoring in place for memory consumption"
         },
         {
-          "title": "[ ] Monitoring in place for CPU consumption"
+          "title": " Monitoring in place for CPU consumption"
         },
         {
-          "title": "[ ] Monitoring in place for latency"
+          "title": " Monitoring in place for latency"
         },
         {
-          "title": "[ ] Monitoring in place for downtime"
+          "title": " Monitoring in place for downtime"
         },
         {
-          "title": "[ ] Monitoring in place for requests per second"
+          "title": " Monitoring in place for requests per second"
         },
         {
-          "title": "[ ] Monitoring in place for prediction confidence over time"
+          "title": " Monitoring in place for prediction confidence over time"
         },
         {
-          "title": "[ ] We have a way of detecting if a model will fail on a given datapoint, and a corresponding fallback"
+          "title": " We have a way of detecting if a model will fail on a given datapoint, and a corresponding fallback"
         },
         {
-          "title": "[ ] We get a reasonable <a href=\"https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf\">“ML Test Score”</a>, table 3-4"
+          "title": " We get a reasonable <a href=\"https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf\">“ML Test Score”</a>, table 3-4"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

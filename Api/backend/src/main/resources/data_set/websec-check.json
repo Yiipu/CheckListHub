@@ -16,28 +16,28 @@
       "topic": "Infrastructure",
       "items": [
         {
-          "title": "[ ] Access and application logs must be archived for a minimum of 90 days"
+          "title": " Access and application logs must be archived for a minimum of 90 days"
         },
         {
-          "title": "[ ] Use <a href=\"https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility\">Modern</a> or <a href=\"https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility\">Intermediate</a> TLS"
+          "title": " Use <a href=\"https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility\">Modern</a> or <a href=\"https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility\">Intermediate</a> TLS"
         },
         {
-          "title": "[ ] Set HSTS to 31536000 (1 year)"
+          "title": " Set HSTS to 31536000 (1 year)"
         },
         {
           "title": "<code>strict-transport-security: max-age=31536000</code>"
         },
         {
-          "title": "[ ] If the service is not hosted under <code>services.mozilla.com</code>, it must be manually added to <a href=\"https://dxr.mozilla.org/mozilla-central/source/security/manager/tools/PreloadedHPKPins.json#184\">Firefox's preloaded pins</a>. This only applies to production services, not short-lived experiments."
+          "title": " If the service is not hosted under <code>services.mozilla.com</code>, it must be manually added to <a href=\"https://dxr.mozilla.org/mozilla-central/source/security/manager/tools/PreloadedHPKPins.json#184\">Firefox's preloaded pins</a>. This only applies to production services, not short-lived experiments."
         },
         {
-          "title": "[ ] Correctly set client IP"
+          "title": " Correctly set client IP"
         },
         {
-          "title": "[ ] Confirm client ip is in the proper location in <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For\">X-Forwarded-For</a>, modifying what is sent from the client if needed. AWS and GCP's load balancers will do this automatically."
+          "title": " Confirm client ip is in the proper location in <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For\">X-Forwarded-For</a>, modifying what is sent from the client if needed. AWS and GCP's load balancers will do this automatically."
         },
         {
-          "title": "[ ] Make sure the web server and the application get the true client IP by configuring trusted IP's within Nginx or Apache"
+          "title": " Make sure the web server and the application get the true client IP by configuring trusted IP's within Nginx or Apache"
         },
         {
           "title": "Nginx: <a href=\"https://nginx.org/en/docs/http/ngx_http_realip_module.html\">ngx_http_realip_module</a>"
@@ -46,22 +46,22 @@
           "title": "Apache: <a href=\"https://httpd.apache.org/docs/2.4/mod/mod_remoteip.html\">mod_remoteip</a></li>\n</ul>"
         },
         {
-          "title": "[ ] If you have a service-oriented architecture, you must always be able to find the IP of the client that sent the initial request. We recommend passing along the <code>X-Forwarded-For</code> to all back-end services."
+          "title": " If you have a service-oriented architecture, you must always be able to find the IP of the client that sent the initial request. We recommend passing along the <code>X-Forwarded-For</code> to all back-end services."
         },
         {
           "title": "If service has an admin panels, it must:"
         },
         {
-          "title": "[ ] only be available behind Mozilla VPN (which provides MFA)"
+          "title": " only be available behind Mozilla VPN (which provides MFA)"
         },
         {
-          "title": "[ ] require Auth0 authentication"
+          "title": " require Auth0 authentication"
         },
         {
-          "title": "[ ] Enforce a CSP with <code>frame-ancestors 'none'</code> to prevent iframe related attacks, such as <a href=\"https://www.youtube.com/watch?v=Femsrx0m9bU\">DOM-Based CSRF</a>"
+          "title": " Enforce a CSP with <code>frame-ancestors 'none'</code> to prevent iframe related attacks, such as <a href=\"https://www.youtube.com/watch?v=Femsrx0m9bU\">DOM-Based CSRF</a>"
         },
         {
-          "title": "[ ] Build and deploy main or -slim variants of official language-specific base docker images e.g. <a href=\"https://hub.docker.com/_/node/\">node</a>, <a href=\"https://hub.docker.com/_/python/\">python</a>, or <a href=\"https://hub.docker.com/_/rust/\">rust</a> and contact secops@ if you want to use other variants"
+          "title": " Build and deploy main or -slim variants of official language-specific base docker images e.g. <a href=\"https://hub.docker.com/_/node/\">node</a>, <a href=\"https://hub.docker.com/_/python/\">python</a>, or <a href=\"https://hub.docker.com/_/rust/\">rust</a> and contact secops@ if you want to use other variants"
         }
       ]
     },
@@ -69,16 +69,16 @@
       "topic": "Development",
       "items": [
         {
-          "title": "[ ] Ensure your code repository is configured and located appropriately:"
+          "title": " Ensure your code repository is configured and located appropriately:"
         },
         {
-          "title": "[ ] Application built internally should be hosted in trusted GitHub organizations (mozilla, mozilla-services, mozilla-bteam, mozilla-conduit, mozilla-mobile, taskcluster). Sometimes we build and deploy applications we don't fully control. In those cases, the Dockerfile that builds the application container should be hosted in its own repository in a trusted organization."
+          "title": " Application built internally should be hosted in trusted GitHub organizations (mozilla, mozilla-services, mozilla-bteam, mozilla-conduit, mozilla-mobile, taskcluster). Sometimes we build and deploy applications we don't fully control. In those cases, the Dockerfile that builds the application container should be hosted in its own repository in a trusted organization."
         },
         {
-          "title": "[ ] Secure your repository by implementing <a href=\"https://github.com/mozilla-services/GitHub-Audit/blob/master/docs/checklist.md\">Mozilla's GitHub security standard</a>."
+          "title": " Secure your repository by implementing <a href=\"https://github.com/mozilla-services/GitHub-Audit/blob/master/docs/checklist.md\">Mozilla's GitHub security standard</a>."
         },
         {
-          "title": "[ ] Sign all release tags, and ideally commits as well"
+          "title": " Sign all release tags, and ideally commits as well"
         },
         {
           "title": "Developers should <a href=\"http://micropipes.com/blog//2016/08/31/signing-your-commits-on-github-with-a-gpg-key/\">configure git to sign all tags</a> and upload their PGP fingerprint to https://login.mozilla.com"
@@ -87,10 +87,10 @@
           "title": "The signature verification will eventually become a requirement to shipping a release to staging &amp; prod: the tag being deployed in the pipeline must have a matching tag in git signed by a project owner. This control is designed to reduce the risk of a 3rd party GitHub integration from compromising our source code."
         },
         {
-          "title": "[ ] Enable <a href=\"https://help.github.com/en/articles/configuring-automated-security-fixes#managing-automated-security-fixes-for-your-repository\">automated security fix PRs on GitHub</a> for vulnerabilities in 3rd-party dependencies"
+          "title": " Enable <a href=\"https://help.github.com/en/articles/configuring-automated-security-fixes#managing-automated-security-fixes-for-your-repository\">automated security fix PRs on GitHub</a> for vulnerabilities in 3rd-party dependencies"
         },
         {
-          "title": "[ ] Keep 3rd-party libraries up to date (in addition to the security updates)"
+          "title": " Keep 3rd-party libraries up to date (in addition to the security updates)"
         },
         {
           "title": "For NodeJS applications, use <a href=\"https://dependabot.com/\">dependabot</a>, <a href=\"https://renovateapp.com/\">renovate</a>, or <a href=\"https://greenkeeper.io/\">GreenKeeper</a>"
@@ -102,7 +102,7 @@
           "title": "For Rust, use <code>cargo update</code> and <a href=\"https://github.com/killercup/cargo-edit#cargo-upgrade\">cargo upgrade</a> when changing versions"
         },
         {
-          "title": "[ ] Integrate static code analysis in CI, and avoid merging code with issues"
+          "title": " Integrate static code analysis in CI, and avoid merging code with issues"
         },
         {
           "title": "Javascript applications should use ESLint with the <a href=\"https://developer.mozilla.org/en-US/docs/ESLint\">Mozilla ruleset</a>"
@@ -122,7 +122,7 @@
       "topic": "Dual Sign Off",
       "items": [
         {
-          "title": "[ ] Services that push data to Firefox clients must require a dual sign off on every change, implemented in their admin panels"
+          "title": " Services that push data to Firefox clients must require a dual sign off on every change, implemented in their admin panels"
         },
         {
           "title": "This mechanism must be reviewed and approved by the Firefox Operations Security team before being enabled in production"
@@ -133,7 +133,7 @@
       "topic": "Logging",
       "items": [
         {
-          "title": "[ ] Publish detailed logs in <a href=\"https://github.com/mozilla-services/Dockerflow/blob/master/docs/mozlog.md\">mozlog</a> format (<strong>APP-MOZLOG</strong>)"
+          "title": " Publish detailed logs in <a href=\"https://github.com/mozilla-services/Dockerflow/blob/master/docs/mozlog.md\">mozlog</a> format (<strong>APP-MOZLOG</strong>)"
         },
         {
           "title": "Business logic must be logged with app specific codes (see <a href=\"https://github.com/mozilla/fxa-auth-server/blob/master/docs/api.md#defined-errors\">FxA</a>)"
@@ -147,52 +147,52 @@
       "topic": "Web Applications",
       "items": [
         {
-          "title": "[ ] Must have a <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy\">Content Security Policy (CSP)</a>. The policy:"
+          "title": " Must have a <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy\">Content Security Policy (CSP)</a>. The policy:"
         },
         {
-          "title": "[ ] should set <code>default-src none</code> or only allow specific origins and set <code>frame-src</code> and <code>object-src</code> to <code>none</code> if default-src is not <code>none</code>"
+          "title": " should set <code>default-src none</code> or only allow specific origins and set <code>frame-src</code> and <code>object-src</code> to <code>none</code> if default-src is not <code>none</code>"
         },
         {
-          "title": "[ ] web API responses should return <code>default-src 'none'; frame-ancestors 'none'; base-uri 'none'</code> to disallow content rendering and framing/redressing"
+          "title": " web API responses should return <code>default-src 'none'; frame-ancestors 'none'; base-uri 'none'</code> to disallow content rendering and framing/redressing"
         },
         {
-          "title": "[ ] should not use <code>unsafe-inline</code> or <code>unsafe-eval</code> in <code>script-src</code>, <code>style-src</code>, or <code>img-src</code> directives ("
+          "title": " should not use <code>unsafe-inline</code> or <code>unsafe-eval</code> in <code>script-src</code>, <code>style-src</code>, or <code>img-src</code> directives ("
         },
         {
-          "title": "<p>[ ] may include a <code>report-uri</code> directive to provide visibility into CSP violations</p>"
+          "title": "<p> may include a <code>report-uri</code> directive to provide visibility into CSP violations</p>"
         },
         {
-          "title": "<p>[ ] Third-party javascript must be pinned to specific versions using <a href=\"https://infosec.mozilla.org/guidelines/web_security#subresource-integrity\">Subresource Integrity (SRI)</a></p>"
+          "title": "<p> Third-party javascript must be pinned to specific versions using <a href=\"https://infosec.mozilla.org/guidelines/web_security#subresource-integrity\">Subresource Integrity (SRI)</a></p>"
         },
         {
-          "title": "[ ] Web APIs:"
+          "title": " Web APIs:"
         },
         {
-          "title": "[ ] must set a non-HTML content-type on all responses, including 300s, 400s and 500s"
+          "title": " must set a non-HTML content-type on all responses, including 300s, 400s and 500s"
         },
         {
-          "title": "[ ] Web APIs should export an OpenAPI (Swagger) to facilitate automated vulnerability tests"
+          "title": " Web APIs should export an OpenAPI (Swagger) to facilitate automated vulnerability tests"
         },
         {
-          "title": "[ ] Should use authentication tokens with a unique pattern which is easily parsed with a regexp. This should allow inclusion into a token scanning service in the future. (E.g. prefix <code>mgp-</code> + 20 hex digits would match the regexp <code>\\bmgp-[0-9A-Fa-f]{20}\\b</code>)"
+          "title": " Should use authentication tokens with a unique pattern which is easily parsed with a regexp. This should allow inclusion into a token scanning service in the future. (E.g. prefix <code>mgp-</code> + 20 hex digits would match the regexp <code>\\bmgp-[0-9A-Fa-f]{20}\\b</code>)"
         },
         {
-          "title": "[ ] for <a href=\"https://wiki.mozilla.org/Security/Guidelines/Web_Security#Cookies\">Cookies</a>:"
+          "title": " for <a href=\"https://wiki.mozilla.org/Security/Guidelines/Web_Security#Cookies\">Cookies</a>:"
         },
         {
-          "title": "[ ] Set the Secure and HTTPOnly flags"
+          "title": " Set the Secure and HTTPOnly flags"
         },
         {
-          "title": "[ ] Use a sensible Expiration"
+          "title": " Use a sensible Expiration"
         },
         {
-          "title": "[ ] Use the prefix <code>__Host-</code> for the cookie name"
+          "title": " Use the prefix <code>__Host-</code> for the cookie name"
         },
         {
-          "title": "[ ] Make sure your application gets an A+ on the <a href=\"https://observatory.mozilla.org/\">Mozilla Observatory</a>"
+          "title": " Make sure your application gets an A+ on the <a href=\"https://observatory.mozilla.org/\">Mozilla Observatory</a>"
         },
         {
-          "title": "[ ] Confirm your application doesn't fail the <a href=\"https://github.com/zaproxy/zaproxy/wiki/ZAP-Baseline-Scan\">ZAP Security Baseline</a>:"
+          "title": " Confirm your application doesn't fail the <a href=\"https://github.com/zaproxy/zaproxy/wiki/ZAP-Baseline-Scan\">ZAP Security Baseline</a>:"
         },
         {
           "title": "Register your service as described in the Risk Management section (if you are not registering your service you can run the scan as described at: https://github.com/zaproxy/zaproxy/wiki/ZAP-Baseline-Scan)"
@@ -212,10 +212,10 @@
       "topic": "Security Features",
       "items": [
         {
-          "title": "[ ] Authentication of end-users should be via FxA. Authentication of Mozillians should be via Auth0/SSO. Any exceptions must be approved by the security team."
+          "title": " Authentication of end-users should be via FxA. Authentication of Mozillians should be via Auth0/SSO. Any exceptions must be approved by the security team."
         },
         {
-          "title": "[ ] Session Management should be via existing and well regarded frameworks. In all cases you should contact the security team for a design and implementation review"
+          "title": " Session Management should be via existing and well regarded frameworks. In all cases you should contact the security team for a design and implementation review"
         },
         {
           "title": "Store session keys server side (typically in a db) so that they can be revoked immediately."
@@ -230,7 +230,7 @@
           "title": "For more information about potential pitfalls see the <a href=\"https://www.owasp.org/index.php/Session_Management_Cheat_Sheet\">OWASP Session Management Cheat Sheet</a>"
         },
         {
-          "title": "[ ] When using cookies for session management, make sure you have CSRF protections in place, which in 99% of cases is <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies\">SameSite cookies</a>. If you can't use SameSite, use anti CSRF tokens. There are two exceptions to implementing CSRF protection:"
+          "title": " When using cookies for session management, make sure you have CSRF protections in place, which in 99% of cases is <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies\">SameSite cookies</a>. If you can't use SameSite, use anti CSRF tokens. There are two exceptions to implementing CSRF protection:"
         },
         {
           "title": "Forms that don't change state (e.g. search forms) don't need CSRF protection and can indicate that by setting the 'data-no-csrf' form attribute (this tells our ZAP scanner to ignore those forms when testing for CSRF)."
@@ -239,10 +239,10 @@
           "title": "Sites that don't use cookies for anything sensitive can ignore CSRF protection. A lot of modern sites prefer to use local-storage JWTs for session management, which aren't vulnerable to CSRF (but must have a rock solid CSP)."
         },
         {
-          "title": "[ ] Access Control should be via existing and well regarded frameworks. If you really do need to roll your own then contact the security team for a design and implementation review."
+          "title": " Access Control should be via existing and well regarded frameworks. If you really do need to roll your own then contact the security team for a design and implementation review."
         },
         {
-          "title": "[ ] If you are building a core Firefox service, consider adding it to the list of restricted domains in the preference <code>extensions.webextensions.restrictedDomains</code>. This will prevent a malicious extension from being able to steal sensitive information from it, see <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1415644\">bug 1415644</a>."
+          "title": " If you are building a core Firefox service, consider adding it to the list of restricted domains in the preference <code>extensions.webextensions.restrictedDomains</code>. This will prevent a malicious extension from being able to steal sensitive information from it, see <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1415644\">bug 1415644</a>."
         }
       ]
     },
@@ -250,10 +250,10 @@
       "topic": "Databases",
       "items": [
         {
-          "title": "[ ] All SQL queries must be parameterized, not concatenated"
+          "title": " All SQL queries must be parameterized, not concatenated"
         },
         {
-          "title": "[ ] Applications must use accounts with limited GRANTS when connecting to databases"
+          "title": " Applications must use accounts with limited GRANTS when connecting to databases"
         },
         {
           "title": "In particular, applications <strong>must not use admin or owner accounts</strong>, to decrease the impact of a sql injection vulnerability."
@@ -264,7 +264,7 @@
       "topic": "Common issues",
       "items": [
         {
-          "title": "[ ] User data must be <a href=\"https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet#XSS_Prevention_Rules_Summary\">escaped for the right context</a> prior to reflecting it"
+          "title": " User data must be <a href=\"https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet#XSS_Prevention_Rules_Summary\">escaped for the right context</a> prior to reflecting it"
         },
         {
           "title": "When inserting user generated html into an html context:"
@@ -276,37 +276,36 @@
           "title": "Javascript applications should use <a href=\"https://github.com/cure53/DOMPurify/\">DOMPurify</a></li>\n</ul>"
         },
         {
-          "title": "[ ] Apply sensible limits to user inputs, see <a href=\"https://wiki.mozilla.org/WebAppSec/Secure_Coding_Guidelines#Input_Validation\">input validation</a>"
+          "title": " Apply sensible limits to user inputs, see <a href=\"https://wiki.mozilla.org/WebAppSec/Secure_Coding_Guidelines#Input_Validation\">input validation</a>"
         },
         {
           "title": "POST body size should be small (&lt;500kB) unless explicitly needed"
         },
         {
-          "title": "[ ] When allowing users to upload or generate content, make sure to host that content on a separate domain (eg. firefoxusercontent.com, etc.). This will prevent malicious content from having access to storage and cookies from the origin."
+          "title": " When allowing users to upload or generate content, make sure to host that content on a separate domain (eg. firefoxusercontent.com, etc.). This will prevent malicious content from having access to storage and cookies from the origin."
         },
         {
           "title": "Also use this technique to host rich content you can't protect with a CSP, such as metrics reports, wiki pages, etc."
         },
         {
-          "title": "[ ] When managing permissions, make sure access controls are enforced server-side"
+          "title": " When managing permissions, make sure access controls are enforced server-side"
         },
         {
-          "title": "[ ] If an authenticated user accesses protected resource, make sure the pages with those resource arent cached and served up to unauthenticated users (like via a CDN)."
+          "title": " If an authenticated user accesses protected resource, make sure the pages with those resource arent cached and served up to unauthenticated users (like via a CDN)."
         },
         {
-          "title": "[ ] If handling cryptographic keys, must have a mechanism to handle quarterly key rotations"
+          "title": " If handling cryptographic keys, must have a mechanism to handle quarterly key rotations"
         },
         {
           "title": "Keys used to sign sessions don't need a rotation mechanism if destroying all sessions is acceptable in case of emergency."
         },
         {
-          "title": "[ ] Do not proxy requests from users without strong limitations and filtering (see <a href=\"https://www.gnu.gl/blog/Posts/multiple-vulnerabilities-in-pocket/\">Pocket UserData vulnerability</a>). Don't proxy requests to <a href=\"https://en.wikipedia.org/wiki/Reserved_IP_addresses#IPv4\">link local, loopback, or private networks</a> or DNS that resolves to addresses in those ranges (i.e. 169.254.0.0/16, 127.0.0.0/8, 10.0.0.0/8, 100.64.0.0/10, 172.16.0.0/12, 192.168.0.0/16, 198.18.0.0/15)."
+          "title": " Do not proxy requests from users without strong limitations and filtering (see <a href=\"https://www.gnu.gl/blog/Posts/multiple-vulnerabilities-in-pocket/\">Pocket UserData vulnerability</a>). Don't proxy requests to <a href=\"https://en.wikipedia.org/wiki/Reserved_IP_addresses#IPv4\">link local, loopback, or private networks</a> or DNS that resolves to addresses in those ranges (i.e. 169.254.0.0/16, 127.0.0.0/8, 10.0.0.0/8, 100.64.0.0/10, 172.16.0.0/12, 192.168.0.0/16, 198.18.0.0/15)."
         },
         {
-          "title": "[ ] Do not use <code>target=\"_blank\"</code> in external links unless you also use <code>rel=\"noopener noreferrer\"</code> (to prevent <a href=\"https://www.owasp.org/index.php/Reverse_Tabnabbing\">Reverse Tabnabbing</a>)\n```"
+          "title": " Do not use <code>target=\"_blank\"</code> in external links unless you also use <code>rel=\"noopener noreferrer\"</code> (to prevent <a href=\"https://www.owasp.org/index.php/Reverse_Tabnabbing\">Reverse Tabnabbing</a>)\n```"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

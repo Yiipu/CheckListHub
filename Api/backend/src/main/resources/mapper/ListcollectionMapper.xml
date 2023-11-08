@@ -2,21 +2,22 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.wallace.mapper.CkListCollectionMapper">
+<mapper namespace="com.wallace.mapper.ListcollectionMapper">
 
-    <resultMap id="BaseResultMap" type="com.wallace.pojo.CkListCollection">
+    <resultMap id="BaseResultMap" type="com.wallace.pojo.Listcollection">
             <id property="colid" column="colid" jdbcType="INTEGER"/>
-            <result property="cid" column="cid" jdbcType="INTEGER"/>
             <result property="uid" column="uid" jdbcType="INTEGER"/>
-            <result property="viewTime" column="view_time" jdbcType="TIMESTAMP"/>
             <result property="isTeam" column="is_team" jdbcType="INTEGER"/>
+            <result property="isRecent" column="is_recent" jdbcType="INTEGER"/>
             <result property="version" column="version" jdbcType="INTEGER"/>
             <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        colid,cid,uid,
-        view_time,is_team,version,
-        is_deleted
+        colid,uid,is_team,
+        is_recent,version,is_deleted
     </sql>
+    <select id="selectByUid" resultType="com.wallace.pojo.CkList">
+        select * from checklist_db.ck_list where uid = #{uid};
+    </select>
 </mapper>

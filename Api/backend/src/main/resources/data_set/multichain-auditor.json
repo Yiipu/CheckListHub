@@ -342,22 +342,21 @@
           "title": "<p>If you'd like to contribute, I would greatly appreciate the following:</p>"
         },
         {
-          "title": "[ ] Add examples from public audits"
+          "title": " Add examples from public audits"
         },
         {
-          "title": "[ ] Add documentation of differences from other chains"
+          "title": " Add documentation of differences from other chains"
         },
         {
-          "title": "[ ] Add more observations"
+          "title": " Add more observations"
         },
         {
-          "title": "[ ] Add cases where contracts behave different (like the mentioned decimals on ERC20 tokens, or the token0 and token1 on Uniswap)"
+          "title": " Add cases where contracts behave different (like the mentioned decimals on ERC20 tokens, or the token0 and token1 on Uniswap)"
         },
         {
-          "title": "[ ] Add documentation on how different chains behave for the current observations"
+          "title": " Add documentation on how different chains behave for the current observations"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

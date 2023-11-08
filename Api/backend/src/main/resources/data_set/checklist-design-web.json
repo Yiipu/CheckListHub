@@ -73,10 +73,10 @@
       "topic": "1.2 - Styleguide et composants",
       "items": [
         {
-          "title": "[ ] Tous les <strong>composants</strong> sont créés avec l'approche « <a href=\"https://bradfrost.com/blog/post/atomic-web-design/\">Atomic Design</a> ». Dans le cas contraire, des problèmes peuvent survenir en termes de performance et de maintenabilité du projet."
+          "title": " Tous les <strong>composants</strong> sont créés avec l'approche « <a href=\"https://bradfrost.com/blog/post/atomic-web-design/\">Atomic Design</a> ». Dans le cas contraire, des problèmes peuvent survenir en termes de performance et de maintenabilité du projet."
         },
         {
-          "title": "[ ] Un <strong>styleguide</strong> (aussi appelé « guide de style ») au format <strong>Figma</strong> ou <strong>Adobe XD</strong> est fourni : il regroupe tous les éléments, composants, styles et dimensions utilisés dans le design.</li>\n</ul><p><strong>Ressources</strong> :</p>"
+          "title": " Un <strong>styleguide</strong> (aussi appelé « guide de style ») au format <strong>Figma</strong> ou <strong>Adobe XD</strong> est fourni : il regroupe tous les éléments, composants, styles et dimensions utilisés dans le design.</li>\n</ul><p><strong>Ressources</strong> :</p>"
         },
         {
           "title": "📖 <a href=\"https://atomicdesign.bradfrost.com/table-of-contents/\">Atomic Design : Complete Guide</a> – Brad Frost"
@@ -96,10 +96,10 @@
       "topic": "1.3 - Grille",
       "items": [
         {
-          "title": "[ ] Pour les <strong>mises en page standard</strong> (colonnes et lignes), tous les éléments sont gérés via des « <a href=\"https://help.figma.com/hc/fr/articles/360040451373-Cr%C3%A9ation-de-designs-dynamiques-avec-la-disposition-automatique\">Auto Layout</a> » sur <strong>Figma</strong> ou « <a href=\"https://helpx.adobe.com/fr/xd/help/create-dynamic-designs-with-stacks.html\">Stacks</a> » sur <strong>Adobe XD</strong>"
+          "title": " Pour les <strong>mises en page standard</strong> (colonnes et lignes), tous les éléments sont gérés via des « <a href=\"https://help.figma.com/hc/fr/articles/360040451373-Cr%C3%A9ation-de-designs-dynamiques-avec-la-disposition-automatique\">Auto Layout</a> » sur <strong>Figma</strong> ou « <a href=\"https://helpx.adobe.com/fr/xd/help/create-dynamic-designs-with-stacks.html\">Stacks</a> » sur <strong>Adobe XD</strong>"
         },
         {
-          "title": "[ ] Pour les <strong>mises en page complexes</strong>, notamment des éléments qui se chevauchent, des <strong>grille standardisées</strong> sont utilisées. Tous les détails de celles-ci (largeur, gouttières, nombre de colonnes, marges) doivent être spécifiés. Le standard actuel est d’utiliser un multiple de 8 pour les gouttières et un nombre pair de colonnes (4 pour mobile et 12 pour desktop).</li>\n</ul><div align=\"center\">\n<img alt=\"Proposition de configuration de grille se basant sur les tailles d’écrans standards\" src=\"./images/grid.png\" width=\"500px\"/>\n<p>Proposition de configuration de grille se basant sur les tailles d’écrans standards</p>\n</div><div align=\"center\">\n<img align=\"top\" alt=\"Exemple d’utilisation d’une grille (desktop)\" src=\"./images/grid-example-desktop.jpg\" width=\"400px\"/>\n<img align=\"top\" alt=\"Exemple d’utilisation d’une grille (mobile)\" src=\"./images/grid-example-mobile.jpg\" width=\"400px\"/>\n</div><div align=\"center\">\n<p>Exemple de l'utilisation d’une grille avec sa déclinaison mobile</p>\n</div><p><strong>Ressources :</strong></p>"
+          "title": " Pour les <strong>mises en page complexes</strong>, notamment des éléments qui se chevauchent, des <strong>grille standardisées</strong> sont utilisées. Tous les détails de celles-ci (largeur, gouttières, nombre de colonnes, marges) doivent être spécifiés. Le standard actuel est d’utiliser un multiple de 8 pour les gouttières et un nombre pair de colonnes (4 pour mobile et 12 pour desktop).</li>\n</ul><div align=\"center\">\n<img alt=\"Proposition de configuration de grille se basant sur les tailles d’écrans standards\" src=\"./images/grid.png\" width=\"500px\"/>\n<p>Proposition de configuration de grille se basant sur les tailles d’écrans standards</p>\n</div><div align=\"center\">\n<img align=\"top\" alt=\"Exemple d’utilisation d’une grille (desktop)\" src=\"./images/grid-example-desktop.jpg\" width=\"400px\"/>\n<img align=\"top\" alt=\"Exemple d’utilisation d’une grille (mobile)\" src=\"./images/grid-example-mobile.jpg\" width=\"400px\"/>\n</div><div align=\"center\">\n<p>Exemple de l'utilisation d’une grille avec sa déclinaison mobile</p>\n</div><p><strong>Ressources :</strong></p>"
         },
         {
           "title": "📖 <a href=\"https://uxdesign.cc/responsive-layout-grid-guide-for-designers-c3ba7d161bdf\">Responsive layouts grid guide for designers</a> pour comprendre le fonctionnement d’une grille"
@@ -119,10 +119,10 @@
       "topic": "1.4 - Couleurs",
       "items": [
         {
-          "title": "[ ] Toutes les couleurs utilisées dans les créations sont <strong>nommées en anglais</strong> de manière cohérente.<blockquote>\n<p>gray-light, gray-dark, green <br/>\nbody-background, body-copy, text-paragraph</p>\n</blockquote>"
+          "title": " Toutes les couleurs utilisées dans les créations sont <strong>nommées en anglais</strong> de manière cohérente.<blockquote>\n<p>gray-light, gray-dark, green <br/>\nbody-background, body-copy, text-paragraph</p>\n</blockquote>"
         },
         {
-          "title": "[ ] Le <strong>niveau de contraste</strong> pour tous les éléments graphiques est au minimum « AA »</li>\n</ul><p><strong>Ressources :</strong></p>"
+          "title": " Le <strong>niveau de contraste</strong> pour tous les éléments graphiques est au minimum « AA »</li>\n</ul><p><strong>Ressources :</strong></p>"
         },
         {
           "title": "🛠 <a href=\"https://contrastchecker.com/\">WCAG : Contrast Checker</a> pour vérifier le niveau de contraste"
@@ -136,19 +136,19 @@
       "topic": "1.5 - Typographie",
       "items": [
         {
-          "title": "[ ] Deux polices de caractères maximum (trois en cas d’application très complexe) sont utilisées pour le design et celles-ci sont optimisées pour le web."
+          "title": " Deux polices de caractères maximum (trois en cas d’application très complexe) sont utilisées pour le design et celles-ci sont optimisées pour le web."
         },
         {
-          "title": "[ ] Les polices pour le bureau (TTF ou OTF en général) et les polices pour le web, au format <strong>WOFF et WOFF2</strong> ont été fournies (toutes variantes comprises)."
+          "title": " Les polices pour le bureau (TTF ou OTF en général) et les polices pour le web, au format <strong>WOFF et WOFF2</strong> ont été fournies (toutes variantes comprises)."
         },
         {
-          "title": "[ ] Des <strong>polices de secours</strong> (aussi appelées « <a href=\"https://en.wikipedia.org/wiki/Fallback_font\">fallback fonts</a> ») sont spécifiées."
+          "title": " Des <strong>polices de secours</strong> (aussi appelées « <a href=\"https://en.wikipedia.org/wiki/Fallback_font\">fallback fonts</a> ») sont spécifiées."
         },
         {
-          "title": "[ ] Le <strong>poids total</strong> de toutes les polices ne dépasse pas 1 à 2 Mo, toutes variantes comprises."
+          "title": " Le <strong>poids total</strong> de toutes les polices ne dépasse pas 1 à 2 Mo, toutes variantes comprises."
         },
         {
-          "title": "[ ] Dans la mesure du possible, tous les textes sont fournis dans la <strong>langue appropriée</strong> au lieu de textes factices comme du Lorem Ipsum. Cela est encore plus important pour les applications multilingues car la longueur d’une section ou d’un titre peut varier d’une langue à l’autre.</li>\n</ul><p><strong>Ressources :</strong></p>"
+          "title": " Dans la mesure du possible, tous les textes sont fournis dans la <strong>langue appropriée</strong> au lieu de textes factices comme du Lorem Ipsum. Cela est encore plus important pour les applications multilingues car la longueur d’une section ou d’un titre peut varier d’une langue à l’autre.</li>\n</ul><p><strong>Ressources :</strong></p>"
         },
         {
           "title": "📖 <a href=\"https://raidboxes.io/fr/blog/webdesign-development/typographie-grundlagen-webfonts-tipps/\">Les bases de la typographie web</a> – Raidboxes"
@@ -165,16 +165,16 @@
       "topic": "1.6 - Images et icônes",
       "items": [
         {
-          "title": "[ ] Toutes les <strong>images</strong> (JPEG, PNG) doivent être fournies en résolution 1x et 2x afin de supporter <a href=\"https://www.anthedesign.fr/creation-de-sites-internet/retina-design-web/\">les écrans Retina</a>. Je m’occupe ensuite de convertir les images en format « Next Gen » (WEBP, AVIF) avec <a href=\"https://squoosh.app/\">Squoosh</a> ou similaire."
+          "title": " Toutes les <strong>images</strong> (JPEG, PNG) doivent être fournies en résolution 1x et 2x afin de supporter <a href=\"https://www.anthedesign.fr/creation-de-sites-internet/retina-design-web/\">les écrans Retina</a>. Je m’occupe ensuite de convertir les images en format « Next Gen » (WEBP, AVIF) avec <a href=\"https://squoosh.app/\">Squoosh</a> ou similaire."
         },
         {
-          "title": "[ ] Une <strong>image de favicon</strong> d'au moins <code>512px</code> * <code>512px</code> est fournie au format PNG, JPG ou SVG. La génération de tous les autres favicons peut être facilement réalisée avec des <a href=\"https://realfavicongenerator.net/\">Favicon Generator</a>."
+          "title": " Une <strong>image de favicon</strong> d'au moins <code>512px</code> * <code>512px</code> est fournie au format PNG, JPG ou SVG. La génération de tous les autres favicons peut être facilement réalisée avec des <a href=\"https://realfavicongenerator.net/\">Favicon Generator</a>."
         },
         {
-          "title": "[ ] Une image « <a href=\"https://simplified.co/blog/design-hacks/open-graph-image-everything-you-need-to-know/\">open graph</a> » de <code>1200px</code> * <code>630px</code> est fourni au format JPEG. Elle sera utilisée par défaut lorsque le site sera partagé sur les réseaux sociaux."
+          "title": " Une image « <a href=\"https://simplified.co/blog/design-hacks/open-graph-image-everything-you-need-to-know/\">open graph</a> » de <code>1200px</code> * <code>630px</code> est fourni au format JPEG. Elle sera utilisée par défaut lorsque le site sera partagé sur les réseaux sociaux."
         },
         {
-          "title": "[ ] Toutes les <strong>icônes</strong> sont fournies au <strong>format SVG</strong>, chacune ayant le même ratio, en noir et optimisés pour le web avec <a href=\"https://jakearchibald.github.io/svgomg/\">SVGOMG</a> (tout cocher sauf les cases qui modifient le rendu final). Le nom de chaque icône commence par <code>icon-</code> et est entièrement en minuscules (sans espace et en utilisant des tirets pour séparer chaque mot).</li>\n</ul><p><strong>Ressources :</strong></p>"
+          "title": " Toutes les <strong>icônes</strong> sont fournies au <strong>format SVG</strong>, chacune ayant le même ratio, en noir et optimisés pour le web avec <a href=\"https://jakearchibald.github.io/svgomg/\">SVGOMG</a> (tout cocher sauf les cases qui modifient le rendu final). Le nom de chaque icône commence par <code>icon-</code> et est entièrement en minuscules (sans espace et en utilisant des tirets pour séparer chaque mot).</li>\n</ul><p><strong>Ressources :</strong></p>"
         },
         {
           "title": "🛠 <a href=\"**https**://realfavicongenerator.net/\">Favicon Generator</a> pour générer toutes les versions du <strong>favicon</strong>"
@@ -188,13 +188,13 @@
       "topic": "1.7 - Liens et navigation",
       "items": [
         {
-          "title": "[ ] Tous les <strong>liens</strong> ont quatre états définis : l’état par défaut, l’état de survol, l’état focus et l’état inactif."
+          "title": " Tous les <strong>liens</strong> ont quatre états définis : l’état par défaut, l’état de survol, l’état focus et l’état inactif."
         },
         {
-          "title": "[ ] Tous les <strong>éléments du menu</strong> ont six états définis : l’état par défaut, l’état actif (page courante) l’état de survol, l’état cliqué, l’état focus et l’état inactif."
+          "title": " Tous les <strong>éléments du menu</strong> ont six états définis : l’état par défaut, l’état actif (page courante) l’état de survol, l’état cliqué, l’état focus et l’état inactif."
         },
         {
-          "title": "[ ] Tous les <strong>liens externes</strong> (qui renvoient vers un autre site) sont identifiables par leur style. Je recommande l’utilisation d’un icône SVG comme <a href=\"./images/external_link.svg\">celui utilisé par Mozilla</a>, à placer sur la droite du lien."
+          "title": " Tous les <strong>liens externes</strong> (qui renvoient vers un autre site) sont identifiables par leur style. Je recommande l’utilisation d’un icône SVG comme <a href=\"./images/external_link.svg\">celui utilisé par Mozilla</a>, à placer sur la droite du lien."
         }
       ]
     },
@@ -202,19 +202,19 @@
       "topic": "1.8 - Formulaires et boutons",
       "items": [
         {
-          "title": "[ ] Tous les <strong>champs de saisie</strong> ont cinq états définis : l’état par défaut, l’état de survol, l’état focus, l’état erreur et l’état inactif."
+          "title": " Tous les <strong>champs de saisie</strong> ont cinq états définis : l’état par défaut, l’état de survol, l’état focus, l’état erreur et l’état inactif."
         },
         {
-          "title": "[ ] Tous les <strong>boutons</strong> ont cinq états définis : l’état par défaut, l’état de survol, l’état cliqué, l’état focus et l’état inactif."
+          "title": " Tous les <strong>boutons</strong> ont cinq états définis : l’état par défaut, l’état de survol, l’état cliqué, l’état focus et l’état inactif."
         },
         {
-          "title": "[ ] Les <strong>boutons primaires et secondaires</strong> sont clairement identifiables et sont utilisés selon les bonnes pratiques web."
+          "title": " Les <strong>boutons primaires et secondaires</strong> sont clairement identifiables et sont utilisés selon les bonnes pratiques web."
         },
         {
-          "title": "[ ] Les <strong>champs obligatoires</strong> sont identifiables par le style grâce à une icône et/ou une couleur."
+          "title": " Les <strong>champs obligatoires</strong> sont identifiables par le style grâce à une icône et/ou une couleur."
         },
         {
-          "title": "[ ] Des <strong>exemples de messages</strong> d’erreurs sont fournis. Leur position et leur couleur sont clairement identifiables.</li>\n</ul><p><strong>Ressources :</strong></p>"
+          "title": " Des <strong>exemples de messages</strong> d’erreurs sont fournis. Leur position et leur couleur sont clairement identifiables.</li>\n</ul><p><strong>Ressources :</strong></p>"
         },
         {
           "title": "📖 <a href=\"https://medium.com/nextux/forms-need-validation-2ecbccbacea1\">Forms Need Validation</a> – Andrew Coyle"
@@ -240,10 +240,10 @@
       "topic": "1.9 - Responsive",
       "items": [
         {
-          "title": "[ ] La <strong>version mobile</strong> de la conception est fournie avant ou en même temps que la version de desktop.<blockquote>\n<p>Si l'équipe de création n'a pas suivi le principe du « <a href=\"https://www.anthedesign.fr/webdesign-2/mobile-first/\">mobile first</a> », certaines irrégularités et incohérences peuvent apparaître entre la version mobile et la version de bureau. Vérifiez et signalez ces problèmes avant de commencer le développement du projet.</p>\n</blockquote>"
+          "title": " La <strong>version mobile</strong> de la conception est fournie avant ou en même temps que la version de desktop.<blockquote>\n<p>Si l'équipe de création n'a pas suivi le principe du « <a href=\"https://www.anthedesign.fr/webdesign-2/mobile-first/\">mobile first</a> », certaines irrégularités et incohérences peuvent apparaître entre la version mobile et la version de bureau. Vérifiez et signalez ces problèmes avant de commencer le développement du projet.</p>\n</blockquote>"
         },
         {
-          "title": "[ ] En cas de structure de page complexe ou d’animations spécifiques, la <strong>version tablette</strong> du design doit également être prévue.<p>⚠️ La notion de « pixel perfect » est d'une certaine manière dépréciée. Aujourd'hui, il est impossible d'avoir un design qui fonctionne de la même manière face à la multitude des tailles d'écran et de technologies.</p>"
+          "title": " En cas de structure de page complexe ou d’animations spécifiques, la <strong>version tablette</strong> du design doit également être prévue.<p>⚠️ La notion de « pixel perfect » est d'une certaine manière dépréciée. Aujourd'hui, il est impossible d'avoir un design qui fonctionne de la même manière face à la multitude des tailles d'écran et de technologies.</p>"
         },
         {
           "topic": "Crédits",
@@ -264,6 +264,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

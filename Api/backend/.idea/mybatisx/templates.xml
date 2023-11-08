@@ -15,7 +15,7 @@
             <option name="ignoreFieldSuffix" value="" />
             <option name="ignoreTablePrefix" value="" />
             <option name="ignoreTableSuffix" value="" />
-            <option name="moduleName" value="checklist" />
+            <option name="moduleName" value="backend" />
             <option name="modulePath" value="$PROJECT_DIR$" />
             <option name="moduleUIInfoList">
               <list>
@@ -67,16 +67,8 @@
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
-                  <option name="className" value="CkList" />
-                  <option name="tableName" value="ck_list" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="CkListCollection" />
-                  <option name="tableName" value="ck_list_collection" />
-                </TableUIInfo>
-                <TableUIInfo>
-                  <option name="className" value="User" />
-                  <option name="tableName" value="user" />
+                  <option name="className" value="Listcollection" />
+                  <option name="tableName" value="listcollection" />
                 </TableUIInfo>
               </list>
             </option>
@@ -84,7 +76,7 @@
             <option name="useLombokPlugin" value="true" />
           </GenerateConfig>
         </option>
-        <option name="moduleName" value="checklist" />
+        <option name="moduleName" value="backend" />
         <option name="projectPath" value="$PROJECT_DIR$" />
         <option name="templateName" value="mybatis-plus3" />
       </TemplateContext>

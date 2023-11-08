@@ -13,43 +13,43 @@
       "topic": "HTML",
       "items": [
         {
-          "title": "[ ] Titles (content and lenght)"
+          "title": " Titles (content and lenght)"
         },
         {
-          "title": "[ ] Descriptions (content and lenght)"
+          "title": " Descriptions (content and lenght)"
         },
         {
-          "title": "[ ] H1"
+          "title": " H1"
         },
         {
-          "title": "[ ] H2, H3..."
+          "title": " H2, H3..."
         },
         {
-          "title": "[ ] Link anchor and title"
+          "title": " Link anchor and title"
         },
         {
-          "title": "[ ] Image alt"
+          "title": " Image alt"
         },
         {
-          "title": "[ ] Image size and weight"
+          "title": " Image size and weight"
         },
         {
-          "title": "[ ] 404 and 500 page"
+          "title": " 404 and 500 page"
         },
         {
-          "title": "[ ] Compress HTML"
+          "title": " Compress HTML"
         },
         {
-          "title": "[ ] Rich Snippets"
+          "title": " Rich Snippets"
         },
         {
-          "title": "[ ] Logo (Content and link)"
+          "title": " Logo (Content and link)"
         },
         {
-          "title": "[ ] Favicon"
+          "title": " Favicon"
         },
         {
-          "title": "[ ] <head> elements order: charset, viewport, title, description, Google Analytics script, css, others</head>"
+          "title": " <head> elements order: charset, viewport, title, description, Google Analytics script, css, others</head>"
         }
       ]
     },
@@ -57,28 +57,28 @@
       "topic": "URLs",
       "items": [
         {
-          "title": "[ ] URL name"
+          "title": " URL name"
         },
         {
-          "title": "[ ] URL size"
+          "title": " URL size"
         },
         {
-          "title": "[ ] URLs without ending <code>/</code>"
+          "title": " URLs without ending <code>/</code>"
         },
         {
-          "title": "[ ] Unique urls"
+          "title": " Unique urls"
         },
         {
-          "title": "[ ] Absolute URLs"
+          "title": " Absolute URLs"
         },
         {
-          "title": "[ ] Sitemap"
+          "title": " Sitemap"
         },
         {
-          "title": "[ ] Follow/Nofollow links"
+          "title": " Follow/Nofollow links"
         },
         {
-          "title": "[ ] Image url"
+          "title": " Image url"
         }
       ]
     },
@@ -86,16 +86,16 @@
       "topic": "JS and CSS",
       "items": [
         {
-          "title": "[ ] Minimize and merge JS files"
+          "title": " Minimize and merge JS files"
         },
         {
-          "title": "[ ] Minimize and merge CSS files"
+          "title": " Minimize and merge CSS files"
         },
         {
-          "title": "[ ] Fonts should be loaded after the CSS in a separate file"
+          "title": " Fonts should be loaded after the CSS in a separate file"
         },
         {
-          "title": "[ ] Use a CDN for statics"
+          "title": " Use a CDN for statics"
         }
       ]
     },
@@ -103,31 +103,31 @@
       "topic": "Others",
       "items": [
         {
-          "title": "[ ] robots.txt"
+          "title": " robots.txt"
         },
         {
-          "title": "[ ] Google Analytics"
+          "title": " Google Analytics"
         },
         {
-          "title": "[ ] Web master tools"
+          "title": " Web master tools"
         },
         {
-          "title": "[ ] All links must return a 200"
+          "title": " All links must return a 200"
         },
         {
-          "title": "[ ] Check PageSpeed https://developers.google.com/speed/pagespeed/insights/"
+          "title": " Check PageSpeed https://developers.google.com/speed/pagespeed/insights/"
         },
         {
-          "title": "[ ] HTTPS"
+          "title": " HTTPS"
         },
         {
-          "title": "[ ] non-www or www"
+          "title": " non-www or www"
         },
         {
-          "title": "[ ] Uptime monitor"
+          "title": " Uptime monitor"
         },
         {
-          "title": "[ ] Backend errors tracker"
+          "title": " Backend errors tracker"
         }
       ]
     },
@@ -135,10 +135,9 @@
       "topic": "Optionals",
       "items": [
         {
-          "title": "[ ] Redirects from old site to new site"
+          "title": " Redirects from old site to new site"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

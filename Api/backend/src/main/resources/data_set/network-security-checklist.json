@@ -26,34 +26,34 @@
           "title": "<p>You should match this section against all operating systems.</p>"
         },
         {
-          "title": "[ ] Ensure system is patched and up to date"
+          "title": " Ensure system is patched and up to date"
         },
         {
-          "title": "[ ] Implement proper least privilege"
+          "title": " Implement proper least privilege"
         },
         {
-          "title": "[ ] Run a layered endpoint defense strategy"
+          "title": " Run a layered endpoint defense strategy"
         },
         {
-          "title": "[ ] Enforce complex passwords"
+          "title": " Enforce complex passwords"
         },
         {
-          "title": "[ ] If no application protecting IPv6, disable IPv6 [[1]]"
+          "title": " If no application protecting IPv6, disable IPv6 [[1]]"
         },
         {
-          "title": "[ ] Enable password rotation"
+          "title": " Enable password rotation"
         },
         {
-          "title": "[ ] Disable user accounts after login failures"
+          "title": " Disable user accounts after login failures"
         },
         {
-          "title": "[ ] Use dual factor authentication if possible"
+          "title": " Use dual factor authentication if possible"
         },
         {
-          "title": "[ ] Centralized authentication service"
+          "title": " Centralized authentication service"
         },
         {
-          "title": "[ ] Monitor log messages with Logwatch"
+          "title": " Monitor log messages with Logwatch"
         }
       ]
     },
@@ -61,106 +61,106 @@
       "topic": "Windows",
       "items": [
         {
-          "title": "[ ] Remove PowerShell v2 [[2]]"
+          "title": " Remove PowerShell v2 [[2]]"
         },
         {
-          "title": "[ ] Limit execution of script content (WSH)"
+          "title": " Limit execution of script content (WSH)"
         },
         {
-          "title": "[ ] Constrained language"
+          "title": " Constrained language"
         },
         {
-          "title": "[ ] block powershell interpreter"
+          "title": " block powershell interpreter"
         },
         {
-          "title": "[ ] Enable system wide transcript files"
+          "title": " Enable system wide transcript files"
         },
         {
-          "title": "[ ] Restrict macro execution"
+          "title": " Restrict macro execution"
         },
         {
-          "title": "[ ] Disable local administrator accounts"
+          "title": " Disable local administrator accounts"
         },
         {
-          "title": "[ ] Disable NTLM [[3]]"
+          "title": " Disable NTLM [[3]]"
         },
         {
-          "title": "[ ] Enable Kerberos with AES encryption"
+          "title": " Enable Kerberos with AES encryption"
         },
         {
-          "title": "[ ] Disable SMBv1"
+          "title": " Disable SMBv1"
         },
         {
-          "title": "[ ] Enable SMB signing"
+          "title": " Enable SMB signing"
         },
         {
-          "title": "[ ] Deploy Microsoft <a href=\"https://technet.microsoft.com/en-us/mt227395.aspx\">LAPS</a>"
+          "title": " Deploy Microsoft <a href=\"https://technet.microsoft.com/en-us/mt227395.aspx\">LAPS</a>"
         },
         {
-          "title": "[ ] Use fine grained password policy"
+          "title": " Use fine grained password policy"
         },
         {
-          "title": "[ ] Disable <a href=\"https://en.wikipedia.org/wiki/Link-Local_Multicast_Name_Resolution\">LLMNR</a>"
+          "title": " Disable <a href=\"https://en.wikipedia.org/wiki/Link-Local_Multicast_Name_Resolution\">LLMNR</a>"
         },
         {
-          "title": "[ ] Disable <a href=\"https://en.wikipedia.org/wiki/NetBIOS\">NetBIOS-NS</a>"
+          "title": " Disable <a href=\"https://en.wikipedia.org/wiki/NetBIOS\">NetBIOS-NS</a>"
         },
         {
-          "title": "[ ] Disable WDigest and caching of cleartext credentials"
+          "title": " Disable WDigest and caching of cleartext credentials"
         },
         {
-          "title": "[ ] Create an entry for <a href=\"https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol\">WPAD</a> deweaponize poisoning [[4]]"
+          "title": " Create an entry for <a href=\"https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol\">WPAD</a> deweaponize poisoning [[4]]"
         },
         {
-          "title": "[ ] Limit use of privileged accounts to only manage explicit privileged machines"
+          "title": " Limit use of privileged accounts to only manage explicit privileged machines"
         },
         {
-          "title": "[ ] Make use of Read-Only Domain Controllers (<a href=\"https://docs.microsoft.com/en-us/windows/desktop/ad/rodc-and-active-directory-schema\">RODC</a>) [[5]]"
+          "title": " Make use of Read-Only Domain Controllers (<a href=\"https://docs.microsoft.com/en-us/windows/desktop/ad/rodc-and-active-directory-schema\">RODC</a>) [[5]]"
         },
         {
-          "title": "[ ] Change DSRM account password or create DSRM account on DC"
+          "title": " Change DSRM account password or create DSRM account on DC"
         },
         {
-          "title": "[ ] Set DsrmAdminLogonBehavior = 1 (force stop AD for DSRM logon)"
+          "title": " Set DsrmAdminLogonBehavior = 1 (force stop AD for DSRM logon)"
         },
         {
-          "title": "[ ] Enable UNC hardening (MS15-011)"
+          "title": " Enable UNC hardening (MS15-011)"
         },
         {
-          "title": "[ ] No computer accounts in admin groups"
+          "title": " No computer accounts in admin groups"
         },
         {
-          "title": "[ ] Identify who has AD admin rights (domain/forest)"
+          "title": " Identify who has AD admin rights (domain/forest)"
         },
         {
-          "title": "[ ] Identify who can logon to Domain Controllers (and admin rights to virtual environment hosting virtual DCs)"
+          "title": " Identify who can logon to Domain Controllers (and admin rights to virtual environment hosting virtual DCs)"
         },
         {
-          "title": "[ ] Scan ADs, OUs, AdminSDHolder, and GPOs for inappropriate custom permissions"
+          "title": " Scan ADs, OUs, AdminSDHolder, and GPOs for inappropriate custom permissions"
         },
         {
-          "title": "[ ] Ensure AD administrators (Domain Admins) protect their credentials by not logging into untrusted systems (workstations)."
+          "title": " Ensure AD administrators (Domain Admins) protect their credentials by not logging into untrusted systems (workstations)."
         },
         {
-          "title": "[ ] Limit service account rights that are currently DA (or equivalent)."
+          "title": " Limit service account rights that are currently DA (or equivalent)."
         },
         {
-          "title": "[ ] Enable compound authentication"
+          "title": " Enable compound authentication"
         },
         {
-          "title": "[ ] Enable Dynamic access control"
+          "title": " Enable Dynamic access control"
         },
         {
-          "title": "[ ] Check <a href=\"https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection\">LSA protection</a>"
+          "title": " Check <a href=\"https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection\">LSA protection</a>"
         },
         {
-          "title": "[ ] Add administrator accounts to \"Protected Users\" security group"
+          "title": " Add administrator accounts to \"Protected Users\" security group"
         },
         {
-          "title": "[ ] Configure Just Enough Administration (<a href=\"https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/jea/overview\">JEA</a>)"
+          "title": " Configure Just Enough Administration (<a href=\"https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/jea/overview\">JEA</a>)"
         },
         {
-          "title": "[ ] Enable Privileged Access Management feature"
+          "title": " Enable Privileged Access Management feature"
         }
       ]
     },
@@ -168,67 +168,67 @@
       "topic": "Linux",
       "items": [
         {
-          "title": "[ ] Minimize packages"
+          "title": " Minimize packages"
         },
         {
-          "title": "[ ] Check listening ports"
+          "title": " Check listening ports"
         },
         {
-          "title": "[ ] Disable unnecessary services"
+          "title": " Disable unnecessary services"
         },
         {
-          "title": "[ ] Disable root login"
+          "title": " Disable root login"
         },
         {
-          "title": "[ ] Login whitelist"
+          "title": " Login whitelist"
         },
         {
-          "title": "[ ] SSHv2 enabled"
+          "title": " SSHv2 enabled"
         },
         {
-          "title": "[ ] Deny users from using Cronjobs"
+          "title": " Deny users from using Cronjobs"
         },
         {
-          "title": "[ ] enable <code>SELinux</code>"
+          "title": " enable <code>SELinux</code>"
         },
         {
-          "title": "[ ] Enable <code>iptables</code> (<code>ufw</code>)"
+          "title": " Enable <code>iptables</code> (<code>ufw</code>)"
         },
         {
-          "title": "[ ] Disable Ctrl+Alt+Delete in <code>/etc/inittab</code>"
+          "title": " Disable Ctrl+Alt+Delete in <code>/etc/inittab</code>"
         },
         {
-          "title": "[ ] Disable interactive hotkey startup at boot"
+          "title": " Disable interactive hotkey startup at boot"
         },
         {
-          "title": "[ ] Check accounts for empty passwords"
+          "title": " Check accounts for empty passwords"
         },
         {
-          "title": "[ ] Keep <code>/boot</code> read-only"
+          "title": " Keep <code>/boot</code> read-only"
         },
         {
-          "title": "[ ] Ignore ICMP / Broadcast request"
+          "title": " Ignore ICMP / Broadcast request"
         },
         {
-          "title": "[ ] Check file permissions (777, SUID, SGID)"
+          "title": " Check file permissions (777, SUID, SGID)"
         },
         {
-          "title": "[ ] Check files with no owners"
+          "title": " Check files with no owners"
         },
         {
-          "title": "[ ] Deploy security pakcages (<code>tiger</code>, <code>tripwire</code>, <code>rkhunter</code>)"
+          "title": " Deploy security pakcages (<code>tiger</code>, <code>tripwire</code>, <code>rkhunter</code>)"
         },
         {
-          "title": "[ ] Deploy <code>auditd</code> to check for read / write events"
+          "title": " Deploy <code>auditd</code> to check for read / write events"
         },
         {
-          "title": "[ ] Deploy <code>fail2ban</code> / <code>denyhost</code> as IDS"
+          "title": " Deploy <code>fail2ban</code> / <code>denyhost</code> as IDS"
         },
         {
-          "title": "[ ] Set GRUB bootloader password"
+          "title": " Set GRUB bootloader password"
         },
         {
-          "title": "[ ] Configure sysctl (<a href=\"https://www.cyberciti.biz/faq/linux-kernel-etcsysctl-conf-security-hardening/\">Linux Kernel /etc/sysctl.conf Security Hardening</a>)"
+          "title": " Configure sysctl (<a href=\"https://www.cyberciti.biz/faq/linux-kernel-etcsysctl-conf-security-hardening/\">Linux Kernel /etc/sysctl.conf Security Hardening</a>)"
         }
       ]
     },
@@ -236,31 +236,31 @@
       "topic": "Networking",
       "items": [
         {
-          "title": "[ ] Set up ARP poisoning mitigation (<a href=\"https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-6500-series-switches/white_paper_c11_603839.html\">ARP Poisoning Attack and Mitigation Techniques</a>)"
+          "title": " Set up ARP poisoning mitigation (<a href=\"https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-6500-series-switches/white_paper_c11_603839.html\">ARP Poisoning Attack and Mitigation Techniques</a>)"
         },
         {
-          "title": "[ ] Check ACL items"
+          "title": " Check ACL items"
         },
         {
-          "title": "[ ] No split tunneling"
+          "title": " No split tunneling"
         },
         {
-          "title": "[ ] Check DMZ"
+          "title": " Check DMZ"
         },
         {
-          "title": "[ ] Check OOB"
+          "title": " Check OOB"
         },
         {
-          "title": "[ ] Routing protocol authentication"
+          "title": " Routing protocol authentication"
         },
         {
-          "title": "[ ] STP Enabled"
+          "title": " STP Enabled"
         },
         {
-          "title": "[ ] VLAN configured properly"
+          "title": " VLAN configured properly"
         },
         {
-          "title": "[ ] Segregate legacy technology"
+          "title": " Segregate legacy technology"
         }
       ]
     },
@@ -430,6 +430,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

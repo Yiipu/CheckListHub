@@ -19,25 +19,25 @@
           "title": "<p><img alt=\"html\" src=\"images/html.png\"/></p>"
         },
         {
-          "title": "[ ] <strong>Minified HTML:</strong> <img alt=\"medium\" src=\"images/medium.svg\"> The HTML code is minified, comments, white spaces and new lines are removed from production files.</img>"
+          "title": " <strong>Minified HTML:</strong> <img alt=\"medium\" src=\"images/medium.svg\"> The HTML code is minified, comments, white spaces and new lines are removed from production files.</img>"
         },
         {
-          "title": "[ ] <strong>Remove unnecessary comments:</strong> <img alt=\"low\" src=\"images/low.svg\"/> Ensure that comments are removed from your pages."
+          "title": " <strong>Remove unnecessary comments:</strong> <img alt=\"low\" src=\"images/low.svg\"/> Ensure that comments are removed from your pages."
         },
         {
-          "title": "<p>[ ] <strong>Remove unnecessary attributes:</strong> <img alt=\"low\" src=\"images/low.svg\"/> Type attributes like <code>type=\"text/javascript\"</code> or <code>type=\"text/css\"</code> are not required anymore and should be removed.</p>\n<p>```html\n<!-- Before HTML5 -->\n<script type=\"text/javascript\">\n    // JavaScript code\n</script></p>\n<p><!-- Today -->\n<script>\n    // JavaScript code\n</script>\n```</p>"
+          "title": "<p> <strong>Remove unnecessary attributes:</strong> <img alt=\"low\" src=\"images/low.svg\"/> Type attributes like <code>type=\"text/javascript\"</code> or <code>type=\"text/css\"</code> are not required anymore and should be removed.</p>\n<p>```html\n<!-- Before HTML5 -->\n<script type=\"text/javascript\">\n    // JavaScript code\n</script></p>\n<p><!-- Today -->\n<script>\n    // JavaScript code\n</script>\n```</p>"
         },
         {
-          "title": "<p>[ ] <strong>Favicon present:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Does Favicon load? Pin the tab in Safari to check pinned icon</p>"
+          "title": "<p> <strong>Favicon present:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Does Favicon load? Pin the tab in Safari to check pinned icon</p>"
         },
         {
           "title": "🛠 <a href=\"https://realfavicongenerator.net\">Real Favicon Generator</a>"
         },
         {
-          "title": "[ ] <strong>Meta Title / Description Available:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Check page titles / descriptions"
+          "title": " <strong>Meta Title / Description Available:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Check page titles / descriptions"
         },
         {
-          "title": "<p>[ ] <strong>Social Tags Present:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Test Facebook sharing. Provide og-tags if needed</p>"
+          "title": "<p> <strong>Social Tags Present:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Test Facebook sharing. Provide og-tags if needed</p>"
         },
         {
           "title": "<p>🛠 <a href=\"http://www.heymeta.com/\">HEY META - Website Meta Tag Check</a></p>\n<p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
@@ -51,22 +51,22 @@
           "title": "<p><img alt=\"css\" src=\"images/css.png\"/></p>"
         },
         {
-          "title": "<p>[ ] <strong>Minification:</strong> <img alt=\"high\" src=\"images/high.svg\"/> All CSS files are minified, comments, white spaces and new lines are removed from production files.</p>"
+          "title": "<p> <strong>Minification:</strong> <img alt=\"high\" src=\"images/high.svg\"/> All CSS files are minified, comments, white spaces and new lines are removed from production files.</p>"
         },
         {
           "title": "🛠 <a href=\"https://cssnano.co/\">cssnano: A modular minifier based on the PostCSS ecosystem.</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Concatenation:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> CSS files are concatenated in a single file <em>(Not always valid for HTTP/2)</em>.</p>\n<p>```html</p>\n<p><!-- Not recommended -->\n<link href=\"foo.css\" rel=\"stylesheet\"/>\n<link href=\"bar.css\" rel=\"stylesheet\"/></p>\n<p><!-- Recommended -->\n<link href=\"foobar.css\" rel=\"stylesheet\"/>\n```</p>"
+          "title": "<p> <strong>Concatenation:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> CSS files are concatenated in a single file <em>(Not always valid for HTTP/2)</em>.</p>\n<p>```html</p>\n<p><!-- Not recommended -->\n<link href=\"foo.css\" rel=\"stylesheet\"/>\n<link href=\"bar.css\" rel=\"stylesheet\"/></p>\n<p><!-- Recommended -->\n<link href=\"foobar.css\" rel=\"stylesheet\"/>\n```</p>"
         },
         {
-          "title": "<p>[ ] <strong>Non-blocking:</strong> <img alt=\"high\" src=\"images/high.svg\"/> CSS files need to be non-blocking to prevent the DOM from taking time to load.</p>\n<p><code>html\n&lt;link rel=\"preload\" href=\"global.min.css\" as=\"style\" onload=\"this.rel='stylesheet'\"&gt;\n&lt;noscript&gt;&lt;link rel=\"stylesheet\" href=\"global.min.css\"&gt;&lt;/noscript&gt;</code></p>\n<blockquote>\n<p>⁃ You need to add the <code>rel</code> attribute with the <code>preload</code> value and add <code>as=\"style\"</code> on the <code>&lt;link&gt;</code> element.</p>\n</blockquote>"
+          "title": "<p> <strong>Non-blocking:</strong> <img alt=\"high\" src=\"images/high.svg\"/> CSS files need to be non-blocking to prevent the DOM from taking time to load.</p>\n<p><code>html\n&lt;link rel=\"preload\" href=\"global.min.css\" as=\"style\" onload=\"this.rel='stylesheet'\"&gt;\n&lt;noscript&gt;&lt;link rel=\"stylesheet\" href=\"global.min.css\"&gt;&lt;/noscript&gt;</code></p>\n<blockquote>\n<p>⁃ You need to add the <code>rel</code> attribute with the <code>preload</code> value and add <code>as=\"style\"</code> on the <code>&lt;link&gt;</code> element.</p>\n</blockquote>"
         },
         {
           "title": "🛠 <a href=\"https://github.com/GoogleChromeLabs/preload-webpack-plugin\">preload-webpack-plugin</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Unused CSS:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Remove unused CSS selectors.</p>"
+          "title": "<p> <strong>Unused CSS:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Remove unused CSS selectors.</p>"
         },
         {
           "title": "🛠 <a href=\"https://github.com/purifycss/purifycss\">PurifyCSS</a>"
@@ -86,10 +86,10 @@
           "title": "<p>📖 <a href=\"https://abookapart.com/products/webfont-handbook\">A Book Apart, Webfont Handbook</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>Webfont formats:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> You are using WOFF2 on your web project or application.</p>"
+          "title": "<p> <strong>Webfont formats:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> You are using WOFF2 on your web project or application.</p>"
         },
         {
-          "title": "<p>[ ] <strong>Use <code>preconnect</code> to load your fonts faster:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/></p>\n<p><code>html\n&lt;link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin&gt;</code></p>\n<blockquote>\n<p>⁃ Before prefetching your webfonts, use webpagetest to evaluate your website <br/>\n⁃ Look for teal colored DNS lookups and note the host that are being requested <br/>\n⁃ Prefetch your webfonts in your <code>&lt;head&gt;</code> and add eventually these hostnames that you should prefetch too</p>\n</blockquote>"
+          "title": "<p> <strong>Use <code>preconnect</code> to load your fonts faster:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/></p>\n<p><code>html\n&lt;link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin&gt;</code></p>\n<blockquote>\n<p>⁃ Before prefetching your webfonts, use webpagetest to evaluate your website <br/>\n⁃ Look for teal colored DNS lookups and note the host that are being requested <br/>\n⁃ Prefetch your webfonts in your <code>&lt;head&gt;</code> and add eventually these hostnames that you should prefetch too</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/\">Faster Google Fonts with Preconnect - CDN Planet</a>"
@@ -101,7 +101,7 @@
           "title": "📖 <a href=\"https://www.machmetrics.com/speed-blog/guide-to-browser-hints-preload-preconnect-prefetch/\">Ultimate Guide to Browser Hints: Preload, Prefetch, and Preconnect - MachMetrics Speed Blog</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Webfont size:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Webfont sizes don't exceed 300kb (all variants included)</p>"
+          "title": "<p> <strong>Webfont size:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Webfont sizes don't exceed 300kb (all variants included)</p>"
         },
         {
           "title": "<p>📖 <a href=\"https://httparchive.org/reports/page-weight#bytesFont\">Font Bytes - Page Weight</a></p>\n<p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
@@ -115,19 +115,19 @@
           "title": "<p><img alt=\"javascript\" src=\"images/javascript.png\"/></p>"
         },
         {
-          "title": "<p>[ ] <strong>JS Minification:</strong> <img alt=\"high\" src=\"images/high.svg\"/> All JavaScript files are minified, comments, white spaces and new lines are removed from production files <em>(still valid if using HTTP/2)</em>.</p>"
+          "title": "<p> <strong>JS Minification:</strong> <img alt=\"high\" src=\"images/high.svg\"/> All JavaScript files are minified, comments, white spaces and new lines are removed from production files <em>(still valid if using HTTP/2)</em>.</p>"
         },
         {
           "title": "🛠 <a href=\"https://www.npmjs.com/package/uglify-js\">uglify-js - npm</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>No JavaScript inside:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> <em>(Only valid for website)</em> Avoid having multiple JavaScript codes embedded in the middle of your body. Regroup your JavaScript code inside external files or eventually in the <code>&lt;head&gt;</code> or at the end of your page (before <code>&lt;/body&gt;</code>).</p>\n<blockquote>\n<p>Ensure that all your files are loaded using <code>async</code> or <code>defer</code> and decide wisely the code that you will need to inject in your <code>&lt;head&gt;</code>.</p>\n</blockquote>"
+          "title": "<p> <strong>No JavaScript inside:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> <em>(Only valid for website)</em> Avoid having multiple JavaScript codes embedded in the middle of your body. Regroup your JavaScript code inside external files or eventually in the <code>&lt;head&gt;</code> or at the end of your page (before <code>&lt;/body&gt;</code>).</p>\n<blockquote>\n<p>Ensure that all your files are loaded using <code>async</code> or <code>defer</code> and decide wisely the code that you will need to inject in your <code>&lt;head&gt;</code>.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://www.upwork.com/hiring/development/11-tips-to-optimize-javascript-and-improve-website-loading-speeds/\">11 Tips to Optimize JavaScript and Improve Website Loading Speeds</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Non-blocking JavaScript:</strong> <img alt=\"high\" src=\"images/high.svg\"/> JavaScript files are loaded asynchronously using <code>async</code> or deferred using <code>defer</code> attribute.</p>\n<p>```html\n<!-- Defer Attribute -->\n<script defer=\"\" src=\"foo.js\"></script></p>\n<p><!-- Async Attribute -->\n<script async=\"\" src=\"foo.js\"></script>\n```</p>\n<blockquote>\n<p>⁃ Add <code>async</code> (if the script don't rely on other scripts) or <code>defer</code> (if the script relies upon or relied upon by an async script) as an attribute to your script tag. <br/>\n⁃ If you have small scripts, maybe use inline script place above async scripts.</p>\n</blockquote>"
+          "title": "<p> <strong>Non-blocking JavaScript:</strong> <img alt=\"high\" src=\"images/high.svg\"/> JavaScript files are loaded asynchronously using <code>async</code> or deferred using <code>defer</code> attribute.</p>\n<p>```html\n<!-- Defer Attribute -->\n<script defer=\"\" src=\"foo.js\"></script></p>\n<p><!-- Async Attribute -->\n<script async=\"\" src=\"foo.js\"></script>\n```</p>\n<blockquote>\n<p>⁃ Add <code>async</code> (if the script don't rely on other scripts) or <code>defer</code> (if the script relies upon or relied upon by an async script) as an attribute to your script tag. <br/>\n⁃ If you have small scripts, maybe use inline script place above async scripts.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://developers.google.com/speed/docs/insights/BlockingJS\">Remove Render-Blocking JavaScript</a>"
@@ -136,13 +136,13 @@
           "title": "📖 <a href=\"https://varvy.com/pagespeed/defer-loading-javascript.html\">Defer loading JavaScript</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Check dependencies size limit:</strong> <img alt=\"low\" src=\"images/low.svg\"/> Ensure to use wisely external libraries, most of the time, you can use a lighter library for a same functionality.</p>"
+          "title": "<p> <strong>Check dependencies size limit:</strong> <img alt=\"low\" src=\"images/low.svg\"/> Ensure to use wisely external libraries, most of the time, you can use a lighter library for a same functionality.</p>"
         },
         {
-          "title": "<p>[ ] <strong>JavaScript Profiling:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Check for performance problems in your JavaScript files (and CSS too).</p>"
+          "title": "<p> <strong>JavaScript Profiling:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Check for performance problems in your JavaScript files (and CSS too).</p>"
         },
         {
-          "title": "<p>[ ] <strong>Use of Service Workers:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> You are using Service Workers in your PWA to cache data or execute possible heavy tasks without impacting the user experience of your application.</p>\n<p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+          "title": "<p> <strong>Use of Service Workers:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> You are using Service Workers in your PWA to cache data or execute possible heavy tasks without impacting the user experience of your application.</p>\n<p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
         }
       ]
     },
@@ -153,34 +153,34 @@
           "title": "<p><img alt=\"server-side\" src=\"images/server-side.png\"/></p>"
         },
         {
-          "title": "[ ] <strong>Your website is using HTTPS:</strong> <img alt=\"high\" src=\"images/high.svg\"/>"
+          "title": " <strong>Your website is using HTTPS:</strong> <img alt=\"high\" src=\"images/high.svg\"/>"
         },
         {
-          "title": "[ ] <strong>Page weight &lt; 1500 KB (ideally &lt; 500 KB):</strong> <img alt=\"high\" src=\"images/high.svg\"/> Reduce the size of your page + resources as much as you can."
+          "title": " <strong>Page weight &lt; 1500 KB (ideally &lt; 500 KB):</strong> <img alt=\"high\" src=\"images/high.svg\"/> Reduce the size of your page + resources as much as you can."
         },
         {
-          "title": "<p>[ ] <strong>Page load times &lt; 3 seconds:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Reduce as much as possible your page load times to quickly deliver your content to your users.</p>\n<blockquote>\n<p>Use online tools like <a href=\"https://developers.google.com/speed/pagespeed/insights/\">Page Speed Insight</a> or <a href=\"https://www.webpagetest.org/\">WebPageTest</a> to analyze what could be slowing you down and use the Front-End Performance Checklist to improve your load times.</p>\n</blockquote>"
+          "title": "<p> <strong>Page load times &lt; 3 seconds:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Reduce as much as possible your page load times to quickly deliver your content to your users.</p>\n<blockquote>\n<p>Use online tools like <a href=\"https://developers.google.com/speed/pagespeed/insights/\">Page Speed Insight</a> or <a href=\"https://www.webpagetest.org/\">WebPageTest</a> to analyze what could be slowing you down and use the Front-End Performance Checklist to improve your load times.</p>\n</blockquote>"
         },
         {
-          "title": "<p>[ ] <strong>Time To First Byte &lt; 1.3 seconds:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Reduce as much as you can the time your browser waits before receiving data.</p>"
+          "title": "<p> <strong>Time To First Byte &lt; 1.3 seconds:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Reduce as much as you can the time your browser waits before receiving data.</p>"
         },
         {
           "title": "📖 <a href=\"https://scaleyourcode.com/blog/article/27\">What is Waiting (TTFB) in DevTools, and what to do about it</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Minimizing HTTP requests:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Always ensure that every file requested are essential for your website or application.</p>"
+          "title": "<p> <strong>Minimizing HTTP requests:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Always ensure that every file requested are essential for your website or application.</p>"
         },
         {
-          "title": "<p>[ ] <strong>Use a CDN to deliver your assets:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Use a CDN to deliver faster your content over the world.</p>"
+          "title": "<p> <strong>Use a CDN to deliver your assets:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Use a CDN to deliver faster your content over the world.</p>"
         },
         {
-          "title": "<p>[ ] <strong>Set HTTP cache headers properly:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Set HTTP headers to avoid expensive number of roundtrips between your browser and the server.</p>"
+          "title": "<p> <strong>Set HTTP cache headers properly:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Set HTTP headers to avoid expensive number of roundtrips between your browser and the server.</p>"
         },
         {
           "title": "<p>📖 <a href=\"https://varvy.com/pagespeed/cache-control.html\">Using cache-control for browser caching</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>GZIP / Brotli compression is enabled:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Use a compression method such as Gzip or Brotli to reduce the size of your JavaScript files. With a smaller sizes file, users will be able to download the asset faster, resulting in improved performance.</p>"
+          "title": "<p> <strong>GZIP / Brotli compression is enabled:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Use a compression method such as Gzip or Brotli to reduce the size of your JavaScript files. With a smaller sizes file, users will be able to download the asset faster, resulting in improved performance.</p>"
         },
         {
           "title": "<p>🛠 <a href=\"https://checkgzipcompression.com/\">Check GZIP compression</a></p>"
@@ -200,46 +200,46 @@
           "title": "<p><img alt=\"meta\" src=\"images/meta.png\"/></p>"
         },
         {
-          "title": "<p>[ ] <strong>Content Security:</strong> <img alt=\"low\" src=\"images/low.svg\"/> Content Security Policy 101</p>"
+          "title": "<p> <strong>Content Security:</strong> <img alt=\"low\" src=\"images/low.svg\"/> Content Security Policy 101</p>"
         },
         {
           "title": "<p>📖 <a href=\"https://christoph-rumpel.com/2018/03/content-security-policy-101\">Content Security Policy 101</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>Robots.txt:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Verify robots.txt is present and allow's all robots</p>"
+          "title": "<p> <strong>Robots.txt:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Verify robots.txt is present and allow's all robots</p>"
         },
         {
-          "title": "[ ] <strong>Sitemap:</strong> <img alt=\"high\" src=\"images/high.svg\"/> ensure that a sitemap is present and if the content is dynamic, proper functionality is there to auto update it"
+          "title": " <strong>Sitemap:</strong> <img alt=\"high\" src=\"images/high.svg\"/> ensure that a sitemap is present and if the content is dynamic, proper functionality is there to auto update it"
         },
         {
-          "title": "[ ] <strong>Analytics:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Verify Tag Manager / Analytics have been correctly set up"
+          "title": " <strong>Analytics:</strong> <img alt=\"high\" src=\"images/high.svg\"/> Verify Tag Manager / Analytics have been correctly set up"
         },
         {
           "topic": "Cloudflare",
           "items": [
             {
-              "title": "[ ] <img alt=\"high\" src=\"images/high.svg\"/> Set CloudFlare and do that necessary configurations"
+              "title": " <img alt=\"high\" src=\"images/high.svg\"/> Set CloudFlare and do that necessary configurations"
             },
             {
-              "title": "[ ]  <strong>SSL/TLS:</strong>"
+              "title": "  <strong>SSL/TLS:</strong>"
             },
             {
-              "title": "[ ]  Your SSL/TLS encryption mode =&gt; Flexible</li>\n</ul>"
+              "title": "  Your SSL/TLS encryption mode =&gt; Flexible</li>\n</ul>"
             },
             {
-              "title": "[ ]  <strong>SSL/TLS -&gt; Edge Certificates:</strong>"
+              "title": "  <strong>SSL/TLS -&gt; Edge Certificates:</strong>"
             },
             {
-              "title": "[ ]  Always use HTTPS =&gt; YES"
+              "title": "  Always use HTTPS =&gt; YES"
             },
             {
-              "title": "[ ]  Automatic HTTPS Rewrites =&gt; YES</li>\n</ul>"
+              "title": "  Automatic HTTPS Rewrites =&gt; YES</li>\n</ul>"
             },
             {
-              "title": "[ ]  <strong>Firewall -&gt; Settings:</strong>"
+              "title": "  <strong>Firewall -&gt; Settings:</strong>"
             },
             {
-              "title": "[ ]  Security Level =&gt; Essentially Off"
+              "title": "  Security Level =&gt; Essentially Off"
             }
           ]
         },
@@ -247,13 +247,13 @@
           "topic": "Google Search Console",
           "items": [
             {
-              "title": "[ ] <img alt=\"low\" src=\"images/low.svg\"/> Submit all www/non-www http/https variations"
+              "title": " <img alt=\"low\" src=\"images/low.svg\"/> Submit all www/non-www http/https variations"
             },
             {
-              "title": "[ ] <img alt=\"low\" src=\"images/low.svg\"/> Set up one non-www/www https as the preferred domain"
+              "title": " <img alt=\"low\" src=\"images/low.svg\"/> Set up one non-www/www https as the preferred domain"
             },
             {
-              "title": "[ ] <img alt=\"low\" src=\"images/low.svg\"/> Crawl &gt; Fetch as Google &gt; Submit to index to kickstart index"
+              "title": " <img alt=\"low\" src=\"images/low.svg\"/> Crawl &gt; Fetch as Google &gt; Submit to index to kickstart index"
             }
           ]
         },
@@ -261,7 +261,7 @@
           "topic": "Bing Webmaster Tools",
           "items": [
             {
-              "title": "[ ] <img alt=\"low\" src=\"images/low.svg\"/> Submit the site to <a href=\"https://www.bing.com/webmaster/home/\">Bing Webmaster</a> OR Import from Google"
+              "title": " <img alt=\"low\" src=\"images/low.svg\"/> Submit the site to <a href=\"https://www.bing.com/webmaster/home/\">Bing Webmaster</a> OR Import from Google"
             }
           ]
         },
@@ -269,10 +269,10 @@
           "topic": "Backups",
           "items": [
             {
-              "title": "[ ] <strong>Server:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Are Server backups enabled?"
+              "title": " <strong>Server:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Are Server backups enabled?"
             },
             {
-              "title": "[ ] <strong>Database:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Are Amazon S3 backups enabled for database?"
+              "title": " <strong>Database:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> Are Amazon S3 backups enabled for database?"
             }
           ]
         },
@@ -280,10 +280,10 @@
           "topic": "Github",
           "items": [
             {
-              "title": "[ ]  <strong>Branches Cleanup:</strong> <img alt=\"low\" src=\"images/low.svg\"/> Remove <code>develop</code> branch or other stale branches"
+              "title": "  <strong>Branches Cleanup:</strong> <img alt=\"low\" src=\"images/low.svg\"/> Remove <code>develop</code> branch or other stale branches"
             },
             {
-              "title": "[ ]  <strong>Write a solid README:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> <a href=\"https://m.dotdev.co/how-to-write-a-readme-that-rocks-bc29f279611a\">How to write a README that rocks</a>"
+              "title": "  <strong>Write a solid README:</strong> <img alt=\"medium\" src=\"images/medium.svg\"/> <a href=\"https://m.dotdev.co/how-to-write-a-readme-that-rocks-bc29f279611a\">How to write a README that rocks</a>"
             }
           ]
         },
@@ -291,7 +291,7 @@
           "topic": "Twitter",
           "items": [
             {
-              "title": "[ ] Finally, let the world know... <p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p><hr/>"
+              "title": " Finally, let the world know... <p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p><hr/>"
             }
           ]
         }
@@ -313,6 +313,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

@@ -4,29 +4,31 @@ server:
   servlet:
     context-path: /
 
-# 连接池配置
-spring:
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    druid:
-      url: jdbc:mysql://checklisthub-db.mysql.database.azure.com:3306/checklist_db?useSSL=true
-      username: db_admin
-      password: Hualaishi7788
-      driver-class-name: com.mysql.cj.jdbc.Driver
-
-## 测试数据库连接池配置
+## 连接池配置
 #spring:
 #  datasource:
 #    type: com.alibaba.druid.pool.DruidDataSource
 #    druid:
-#      url: jdbc:mysql:///checklist_db
-#      username: root
-#      password: 246850
+#      url: jdbc:mysql://checklisthub-db.mysql.database.azure.com:3306/checklist_db?useSSL=true
+#      username: db_admin
+#      password: Hualaishi7788
 #      driver-class-name: com.mysql.cj.jdbc.Driver
+
+# 测试数据库 连接池配置
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      url: jdbc:mysql:///checklist_db
+      username: root
+      password: 246850
+      driver-class-name: com.mysql.cj.jdbc.Driver
 
 
 # mybatis-plus的配置
 mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
   type-aliases-package: com.wallace.pojo
   global-config:
     db-config:

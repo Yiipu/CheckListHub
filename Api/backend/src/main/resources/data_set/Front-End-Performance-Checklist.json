@@ -196,7 +196,7 @@
           "title": "<p><img alt=\"html\" src=\"images/html.png\"/></p>"
         },
         {
-          "title": "<p>[ ] <strong>HTML 압축:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> HTML 코드를 압축하고, 최종 파일에서 주석, 공백, 줄바꿈을 제거합니다.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>불필요한 공백, 주석, 속성을 제거하면 HTML의 크기를 줄이고 페이지의 로딩 속도를 높일 수 있으며 사용자의 다운로드 시간을 줄일 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>대부분의 프레임워크에는 웹페이지를 압축시키는 플러그인이 있으며, 여러 NPM 모듈을 사용해 이 작업을 자동으로 처리할 수 있습니다.</p>\n</blockquote>"
+          "title": "<p> <strong>HTML 압축:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> HTML 코드를 압축하고, 최종 파일에서 주석, 공백, 줄바꿈을 제거합니다.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>불필요한 공백, 주석, 속성을 제거하면 HTML의 크기를 줄이고 페이지의 로딩 속도를 높일 수 있으며 사용자의 다운로드 시간을 줄일 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>대부분의 프레임워크에는 웹페이지를 압축시키는 플러그인이 있으며, 여러 NPM 모듈을 사용해 이 작업을 자동으로 처리할 수 있습니다.</p>\n</blockquote>"
         },
         {
           "title": "🛠 <a href=\"http://minifycode.com/html-minifier/\">HTML minifier | Minify Code</a>"
@@ -208,16 +208,16 @@
           "title": "📖 <a href=\"http://perfectionkills.com/experimenting-with-html-minifier/#use_short_doctype\">Experimenting with HTML minifier — Perfection Kills</a>"
         },
         {
-          "title": "[ ] <strong>CSS 태그를 자바스크립트 태그 앞에 두기:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> CSS가 항상 자바스크립트 코드 전에 로드되는지 확인하세요.</li>\n</ul>\n<p>```html\n<!-- Not recommended -->\n<script src=\"jquery.js\"></script>\n<script src=\"foo.js\"></script>\n<link href=\"foo.css\" rel=\"stylesheet\"/></p>\n<p><!-- Recommended -->\n<link href=\"foo.css\" rel=\"stylesheet\"/>\n<script src=\"jquery.js\"></script>\n<script src=\"foo.js\"></script>\n```</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>자바스크립트 전에 CSS 태그를 두면 브라우저의 렌더링 속도를 높이는 병렬 다운로드가 가능해집니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p><code>&lt;head&gt;</code>의 <code>&lt;link&gt;</code>와 <code>&lt;style&gt;</code>이 <code>&lt;script&gt;</code> 앞에 있는지 확인하세요.</p>\n</blockquote>"
+          "title": " <strong>CSS 태그를 자바스크립트 태그 앞에 두기:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> CSS가 항상 자바스크립트 코드 전에 로드되는지 확인하세요.</li>\n</ul>\n<p>```html\n<!-- Not recommended -->\n<script src=\"jquery.js\"></script>\n<script src=\"foo.js\"></script>\n<link href=\"foo.css\" rel=\"stylesheet\"/></p>\n<p><!-- Recommended -->\n<link href=\"foo.css\" rel=\"stylesheet\"/>\n<script src=\"jquery.js\"></script>\n<script src=\"foo.js\"></script>\n```</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>자바스크립트 전에 CSS 태그를 두면 브라우저의 렌더링 속도를 높이는 병렬 다운로드가 가능해집니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p><code>&lt;head&gt;</code>의 <code>&lt;link&gt;</code>와 <code>&lt;style&gt;</code>이 <code>&lt;script&gt;</code> 앞에 있는지 확인하세요.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://varvy.com/pagespeed/style-script-order.html\">Ordering your styles and scripts for pagespeed</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>iframe 최소화:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 다른 기술적 가능성이 없을 때만 iframe을 사용하고, 최대한 iframe을 사용하지 않도록 하세요.</p>"
+          "title": "<p> <strong>iframe 최소화:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 다른 기술적 가능성이 없을 때만 iframe을 사용하고, 최대한 iframe을 사용하지 않도록 하세요.</p>"
         },
         {
-          "title": "<p>[ ] <strong>Pre-load optimization with prefetch, dns-prefetch and prerender:</strong> <img alt=\"low\" src=\"images/priority/low.svg\"/> Popular browsers can use directive on <code>&lt;link&gt;</code> tag and \"rel\" attribute with certain keywords to pre-load specific URLs.</p>\n<p><em>Why:</em></p>\n<blockquote>\n<p>Prefetching allows a browser to silently fetch the necessary resources needed to display content that a user might access in the near future. The browser is able to store these resources in its cache and speed up the way web pages load when they are using different domains for page resources. When a web page has finished loading and the idle time has passed, the browser begins downloading other resources. When a user go in a particular link (already prefetched), the content will be instantly served.</p>\n</blockquote>\n<p><em>How:</em></p>\n<blockquote>\n<p>⁃ Ensure that <code>&lt;link&gt;</code> is in your <code>&lt;head&gt;</code> section.</p>\n</blockquote>"
+          "title": "<p> <strong>Pre-load optimization with prefetch, dns-prefetch and prerender:</strong> <img alt=\"low\" src=\"images/priority/low.svg\"/> Popular browsers can use directive on <code>&lt;link&gt;</code> tag and \"rel\" attribute with certain keywords to pre-load specific URLs.</p>\n<p><em>Why:</em></p>\n<blockquote>\n<p>Prefetching allows a browser to silently fetch the necessary resources needed to display content that a user might access in the near future. The browser is able to store these resources in its cache and speed up the way web pages load when they are using different domains for page resources. When a web page has finished loading and the idle time has passed, the browser begins downloading other resources. When a user go in a particular link (already prefetched), the content will be instantly served.</p>\n</blockquote>\n<p><em>How:</em></p>\n<blockquote>\n<p>⁃ Ensure that <code>&lt;link&gt;</code> is in your <code>&lt;head&gt;</code> section.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://www.keycdn.com/support/prefetching\">What Is Prefetching and Why Use It</a>"
@@ -237,7 +237,7 @@
           "title": "<p><img alt=\"css\" src=\"images/css.png\"/></p>"
         },
         {
-          "title": "<p>[ ] <strong>CSS 압축:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> CSS 파일을 압축하고, 최종 파일에서 주석, 공백, 줄바꿈을 제거합니다.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>CSS 파일을 압축하면 클라이언트에게 더 적은 데이터를 전송하게 되며, 콘텐츠가 더 빨리 로드됩니다. 운영에서 CSS 파일을 압축하는 것은 중요한 일입니다. 이는 대역폭과 리소스 사용을 줄이고자 하는 모든 비즈니스에 있어 사용자에게 도움이 됩니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>개발이나 빌드 중, 또는 그 전에 파일을 자동으로 압축해주는 툴을 사용하세요.</p>\n</blockquote>"
+          "title": "<p> <strong>CSS 압축:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> CSS 파일을 압축하고, 최종 파일에서 주석, 공백, 줄바꿈을 제거합니다.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>CSS 파일을 압축하면 클라이언트에게 더 적은 데이터를 전송하게 되며, 콘텐츠가 더 빨리 로드됩니다. 운영에서 CSS 파일을 압축하는 것은 중요한 일입니다. 이는 대역폭과 리소스 사용을 줄이고자 하는 모든 비즈니스에 있어 사용자에게 도움이 됩니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>개발이나 빌드 중, 또는 그 전에 파일을 자동으로 압축해주는 툴을 사용하세요.</p>\n</blockquote>"
         },
         {
           "title": "🛠 <a href=\"https://cssnano.co/\">cssnano: A modular minifier based on the PostCSS ecosystem. - cssnano</a>"
@@ -249,7 +249,7 @@
           "title": "🛠 <a href=\"http://refresh-sf.com\">Online CSS Compressor</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>합치기:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 여러 CSS 파일들을 하나의 파일로 합치세요. <em>(HTTP/2 에서는 항상 유효하진 않습니다.)</em>.</p>\n<p>```html</p>\n<p><!-- Not recommended -->\n<link href=\"foo.css\" rel=\"stylesheet\"/>\n<link href=\"bar.css\" rel=\"stylesheet\"/></p>\n<p><!-- Recommended -->\n<link href=\"foobar.css\" rel=\"stylesheet\"/>\n```</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>여전히 HTTP/1을 사용하고 있다면 파일을 합칠 필요가 있습니다. 다만 서버가 HTTP/2라면 꼭 그렇지 않습니다. (테스트를 해봐야 합니다.)</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>개발이나 빌드 중, 또는 그 전에 파일을 합쳐주는 온라인 툴, 플러그인을 사용하세요. <br/>\n⁃ 물론 합치는 작업이 프로젝트를 방해하지는 않도록 하세요.</p>\n</blockquote>"
+          "title": "<p> <strong>합치기:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 여러 CSS 파일들을 하나의 파일로 합치세요. <em>(HTTP/2 에서는 항상 유효하진 않습니다.)</em>.</p>\n<p>```html</p>\n<p><!-- Not recommended -->\n<link href=\"foo.css\" rel=\"stylesheet\"/>\n<link href=\"bar.css\" rel=\"stylesheet\"/></p>\n<p><!-- Recommended -->\n<link href=\"foobar.css\" rel=\"stylesheet\"/>\n```</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>여전히 HTTP/1을 사용하고 있다면 파일을 합칠 필요가 있습니다. 다만 서버가 HTTP/2라면 꼭 그렇지 않습니다. (테스트를 해봐야 합니다.)</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>개발이나 빌드 중, 또는 그 전에 파일을 합쳐주는 온라인 툴, 플러그인을 사용하세요. <br/>\n⁃ 물론 합치는 작업이 프로젝트를 방해하지는 않도록 하세요.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://hpbn.co/optimizing-application-delivery/#optimizing-for-http2\">HTTP: Optimizing Application Delivery - High Performance Browser Networking (O'Reilly)</a>"
@@ -258,7 +258,7 @@
           "title": "📖 <a href=\"https://deliciousbrains.com/performance-best-practices-http2/\">Performance Best Practices in the HTTP/2 Era</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Non-blocking:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> DOM이 로드되는데 시간이 걸리지 않도록 CSS 파일은 non-blocking 되어야 합니다.</p>\n<p><code>html\n&lt;link rel=\"preload\" href=\"global.min.css\" as=\"style\" onload=\"this.rel='stylesheet'\"&gt;\n&lt;noscript&gt;&lt;link rel=\"stylesheet\" href=\"global.min.css\"&gt;&lt;/noscript&gt;</code></p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>CSS 파일은 페이지 로드와 렌더링을 지연시킬 수 있습니다. <code>preload</code>를 통해 브라우저가 페이지의 콘텐츠를 보여주기 전에 CSS 파일을 로드할 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p><code>rel</code> 속성의 값을 <code>preload</code>로 주고, <code>as=\"style\"</code>를 <code>&lt;link&gt;</code> 태그에 넣습니다.</p>\n</blockquote>"
+          "title": "<p> <strong>Non-blocking:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> DOM이 로드되는데 시간이 걸리지 않도록 CSS 파일은 non-blocking 되어야 합니다.</p>\n<p><code>html\n&lt;link rel=\"preload\" href=\"global.min.css\" as=\"style\" onload=\"this.rel='stylesheet'\"&gt;\n&lt;noscript&gt;&lt;link rel=\"stylesheet\" href=\"global.min.css\"&gt;&lt;/noscript&gt;</code></p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>CSS 파일은 페이지 로드와 렌더링을 지연시킬 수 있습니다. <code>preload</code>를 통해 브라우저가 페이지의 콘텐츠를 보여주기 전에 CSS 파일을 로드할 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p><code>rel</code> 속성의 값을 <code>preload</code>로 주고, <code>as=\"style\"</code>를 <code>&lt;link&gt;</code> 태그에 넣습니다.</p>\n</blockquote>"
         },
         {
           "title": "🛠 <a href=\"https://github.com/filamentgroup/loadCSS\">loadCSS by filament group</a>"
@@ -273,7 +273,7 @@
           "title": "📖 <a href=\"https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/\">Preload: What Is It Good For? — Smashing Magazine</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Unused CSS:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> Remove unused CSS selectors.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>사용하지 않는 CSS 선택자를 지우면 파일의 크기를 줄일 수 있으며, 로딩 속도를 높일 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⚠️ 항상 사용하려는 CSS 프레임워크에 이미 reset / normalize 코드가 포함되어있지 않은지 체크하세요. 경우에 따라 reset / normalize 파일에 있는 것이 필요하지 않을 수도 있습니다.</p>\n</blockquote>"
+          "title": "<p> <strong>Unused CSS:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> Remove unused CSS selectors.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>사용하지 않는 CSS 선택자를 지우면 파일의 크기를 줄일 수 있으며, 로딩 속도를 높일 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⚠️ 항상 사용하려는 CSS 프레임워크에 이미 reset / normalize 코드가 포함되어있지 않은지 체크하세요. 경우에 따라 reset / normalize 파일에 있는 것이 필요하지 않을 수도 있습니다.</p>\n</blockquote>"
         },
         {
           "title": "🛠 <a href=\"https://uncss-online.com/\">UnCSS Online</a>"
@@ -288,7 +288,7 @@
           "title": "🛠 <a href=\"https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage\">Chrome DevTools Coverage</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>CSS 크리티컬:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> CSS 크리티컬 (또는 \"어보브 더 폴드\")은 페이지의 보이는 부분을 렌더링하는 데 사용되는 모든 CSS를 수집합니다. 이는 주요 CSS 호출 전, 그리고 <code>&lt;style&gt;&lt;/style&gt;</code> 사이에 한 줄로 임베디드됩니다. (가능하면 압축됩니다.)</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>중요한 CSS를 인라인으로 넣으면 서버 요청을 줄여 웹 페이지의 렌더링 속도를 높일 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>온라인 툴이나 Addy Osmani가 개발한 것과 같은 플러그인을 사용해 CSS 크리티컬을 생성하세요.</p>\n</blockquote>"
+          "title": "<p> <strong>CSS 크리티컬:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> CSS 크리티컬 (또는 \"어보브 더 폴드\")은 페이지의 보이는 부분을 렌더링하는 데 사용되는 모든 CSS를 수집합니다. 이는 주요 CSS 호출 전, 그리고 <code>&lt;style&gt;&lt;/style&gt;</code> 사이에 한 줄로 임베디드됩니다. (가능하면 압축됩니다.)</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>중요한 CSS를 인라인으로 넣으면 서버 요청을 줄여 웹 페이지의 렌더링 속도를 높일 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>온라인 툴이나 Addy Osmani가 개발한 것과 같은 플러그인을 사용해 CSS 크리티컬을 생성하세요.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://www.smashingmagazine.com/2015/08/understanding-critical-css/\">Understanding Critical CSS</a>"
@@ -306,13 +306,13 @@
           "title": "📖 <a href=\"https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent\">Reduce the size of the above-the-fold content\n</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>외부 또는 인라인 CSS:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 외부 또는 인라인 CSS를 <code>&lt;body&gt;</code> 안에 두지 마세요. <em>(HTTP/2에서는 유효하지 않습니다.)</em></p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>이렇게 해야하는 첫 번째 이유는 <strong>디자인에서 콘텐츠를 분리</strong>하는 것이 좋은 관행이기 때문입니다. 또한 이는 코드 유지보수를 쉽게 만들고 사이트 접근성을 높이는 데도 도움이 됩니다. 성능과 관련해서는, 이것이 HTML 페이지의 파일 크기와 로딩 시간을 줄이기 때문입니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>항상 외부 스타일 시트를 사용하거나 CSS를 <code>&lt;head&gt;</code>에 임베드하세요. (그리고 다른 CSS 성능 규칙을 따르세요.)</p>\n</blockquote>"
+          "title": "<p> <strong>외부 또는 인라인 CSS:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 외부 또는 인라인 CSS를 <code>&lt;body&gt;</code> 안에 두지 마세요. <em>(HTTP/2에서는 유효하지 않습니다.)</em></p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>이렇게 해야하는 첫 번째 이유는 <strong>디자인에서 콘텐츠를 분리</strong>하는 것이 좋은 관행이기 때문입니다. 또한 이는 코드 유지보수를 쉽게 만들고 사이트 접근성을 높이는 데도 도움이 됩니다. 성능과 관련해서는, 이것이 HTML 페이지의 파일 크기와 로딩 시간을 줄이기 때문입니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>항상 외부 스타일 시트를 사용하거나 CSS를 <code>&lt;head&gt;</code>에 임베드하세요. (그리고 다른 CSS 성능 규칙을 따르세요.)</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://www.lifewire.com/avoid-inline-styles-for-css-3466846\">Observe CSS Best Practices: Avoid CSS Inline Styles</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>스타일시트 복잡도 분석:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 스타일시트를 분석하는 것은 불필요한 중복 CSS 선택자를 찾는 데 도움이 됩니다. </p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>종종 중복, 또는 유효성 에러가 CSS 코드에서 발생할 수 있는데, CSS 파일을 분석하고 복잡성을 해결하면 CSS 파일의 속도를 높일 수 있습니다. (브라우저가 더 빨리 읽어 들이기 때문이죠.)</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>CSS 전처리기를 사용해 CSS를 조직해야 합니다. 아래에 나열된 일부 온라인 툴이 코드를 분석하고 바로 잡는데 도움이 될 수도 있습니다.</p>\n</blockquote>"
+          "title": "<p> <strong>스타일시트 복잡도 분석:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 스타일시트를 분석하는 것은 불필요한 중복 CSS 선택자를 찾는 데 도움이 됩니다. </p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>종종 중복, 또는 유효성 에러가 CSS 코드에서 발생할 수 있는데, CSS 파일을 분석하고 복잡성을 해결하면 CSS 파일의 속도를 높일 수 있습니다. (브라우저가 더 빨리 읽어 들이기 때문이죠.)</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>CSS 전처리기를 사용해 CSS를 조직해야 합니다. 아래에 나열된 일부 온라인 툴이 코드를 분석하고 바로 잡는데 도움이 될 수도 있습니다.</p>\n</blockquote>"
         },
         {
           "title": "🛠 <a href=\"http://www.testmycss.com/\">TestMyCSS | Optimize and Check CSS Performance</a>"
@@ -338,7 +338,7 @@
           "title": "<p>📖 <a href=\"https://abookapart.com/products/webfont-handbook\">A Book Apart, Webfont Handbook</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>웹폰트 포맷:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 웹 프로젝트 또는 어플리케이션에서 WOFF2를 사용하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>Check before buying your new font that the provider gives you the WOFF2 format. If you are using a free font, you can always use Font Squirrel to generate all the formats you need.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>새로운 폰트를 구매하기 전에 제공자가 WOFF2 포맷을 제공하는지 체크하세요. 만약 무료 폰트를 사용한다면, Font Squirrel을 통해 필요한 포맷을 생성할 수 있습니다. </p>\n</blockquote>"
+          "title": "<p> <strong>웹폰트 포맷:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 웹 프로젝트 또는 어플리케이션에서 WOFF2를 사용하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>Check before buying your new font that the provider gives you the WOFF2 format. If you are using a free font, you can always use Font Squirrel to generate all the formats you need.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>새로운 폰트를 구매하기 전에 제공자가 WOFF2 포맷을 제공하는지 체크하세요. 만약 무료 폰트를 사용한다면, Font Squirrel을 통해 필요한 포맷을 생성할 수 있습니다. </p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://gist.github.com/sergejmueller/cf6b4f2133bcb3e2f64a\">WOFF 2.0 – Learn more about the next generation Web Font Format and convert TTF to WOFF2</a>"
@@ -356,7 +356,7 @@
           "title": "📖 <a href=\"https://caniuse.com/#feat=woff2\">Can I use... WOFF2</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>폰트를 더 빨리 로드하기 위해 <code>preconnect</code>를 사용:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/></p>\n<p><code>html\n&lt;link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin&gt;</code></p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>웹 사이트에 접속하면, 디바이스는 사이트의 위치와 연결해야 하는 서버를 찾아야 합니다. 브라우저는 DNS 서버를 찾고, 리소스 (폰트, CSS 파일...) 수집이 끝나기 전, 조회가 완료될 때까지 대기해야 합니다. 이때 prefetches와 preconnects는 브라우저가 DNS 정보를 찾고 폰트 파일을 호스팅하는 서버에 대한 TCP 연결을 허용합니다. 이렇게 하면 브라우저가 폰트 정보와 서버에 요청해야 하는 폰트 파일이 담긴 css 파일을 파싱할 때 미리 DNS 정보를 확인하고, 커넥션 풀에 있는 서버에 대한 개방형 연결을 준비함으로써 성능을 높일 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ 웹폰트를 사전 수집하기 전에, 웹사이트를 평가하기 위해 웹 페이지 테스트를 사용하세요. <br/>\n⁃ teal colored DNS를 찾고 요청 중인 호스트를 확인하세요. <br/>\n⁃ <code>&lt;head&gt;</code>에 둔 웹폰트를 사전 수집하고 함께 사전 수집할 호스트네임을 추가하세요. </p>\n</blockquote>"
+          "title": "<p> <strong>폰트를 더 빨리 로드하기 위해 <code>preconnect</code>를 사용:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/></p>\n<p><code>html\n&lt;link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin&gt;</code></p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>웹 사이트에 접속하면, 디바이스는 사이트의 위치와 연결해야 하는 서버를 찾아야 합니다. 브라우저는 DNS 서버를 찾고, 리소스 (폰트, CSS 파일...) 수집이 끝나기 전, 조회가 완료될 때까지 대기해야 합니다. 이때 prefetches와 preconnects는 브라우저가 DNS 정보를 찾고 폰트 파일을 호스팅하는 서버에 대한 TCP 연결을 허용합니다. 이렇게 하면 브라우저가 폰트 정보와 서버에 요청해야 하는 폰트 파일이 담긴 css 파일을 파싱할 때 미리 DNS 정보를 확인하고, 커넥션 풀에 있는 서버에 대한 개방형 연결을 준비함으로써 성능을 높일 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ 웹폰트를 사전 수집하기 전에, 웹사이트를 평가하기 위해 웹 페이지 테스트를 사용하세요. <br/>\n⁃ teal colored DNS를 찾고 요청 중인 호스트를 확인하세요. <br/>\n⁃ <code>&lt;head&gt;</code>에 둔 웹폰트를 사전 수집하고 함께 사전 수집할 호스트네임을 추가하세요. </p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/\">Faster Google Fonts with Preconnect - CDN Planet</a>"
@@ -374,13 +374,13 @@
           "title": "🛠 <a href=\"https://github.com/typekit/webfontloader\">typekit/webfontloader: Web Font Loader gives you added control when using linked fonts via @font-face.</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>웹 폰트 크기:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 웹폰트 크기가 300kb를 넘지 않도록 하세요. (모든 파생 요소 포함)</p>"
+          "title": "<p> <strong>웹 폰트 크기:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 웹폰트 크기가 300kb를 넘지 않도록 하세요. (모든 파생 요소 포함)</p>"
         },
         {
           "title": "<p>📖 <a href=\"https://httparchive.org/reports/page-weight#bytesFont\">Font Bytes - Page Weight</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>플래시 또는 보이지 않는 텍스트 방지:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 웹폰트가 로드될 때까지 투명한 텍스트를 사용하지 마세요.</p>"
+          "title": "<p> <strong>플래시 또는 보이지 않는 텍스트 방지:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 웹폰트가 로드될 때까지 투명한 텍스트를 사용하지 마세요.</p>"
         },
         {
           "title": "<p>📖 <a href=\"https://css-tricks.com/font-display-masses/\"><code>font-display</code> for the Masses</a></p>"
@@ -400,7 +400,7 @@
           "title": "<p>📖 <a href=\"https://httparchive.org/reports/page-weight#bytesImg\">Image Bytes in 2018</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>이미지 최적화:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 이미지는 최적화되어야 하며, 최종 사용자에게 영향을 미치지 않는 선에서 압축되어야 합니다. </p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>압축된 이미지는 브라우저에서 더 빨리 로드되고, 보다 적은 데이터를 소비합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ 가능하다면 CSS3 효과를 사용하세요. (작은 이미지 대신) <br/>\n⁃ 가능하면, 이미지에 인코딩된 텍스트 대신 폰트를 사용하세요. <br/>\n⁃ SVG를 사용하세요. <br/>\n⁃ 툴을 사용하고 압축 레벨을 85 미만으로 하세요.</p>\n</blockquote>"
+          "title": "<p> <strong>이미지 최적화:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 이미지는 최적화되어야 하며, 최종 사용자에게 영향을 미치지 않는 선에서 압축되어야 합니다. </p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>압축된 이미지는 브라우저에서 더 빨리 로드되고, 보다 적은 데이터를 소비합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ 가능하다면 CSS3 효과를 사용하세요. (작은 이미지 대신) <br/>\n⁃ 가능하면, 이미지에 인코딩된 텍스트 대신 폰트를 사용하세요. <br/>\n⁃ SVG를 사용하세요. <br/>\n⁃ 툴을 사용하고 압축 레벨을 85 미만으로 하세요.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization\">Image Optimization | Web Fundamentals | Google Developers</a>"
@@ -427,7 +427,7 @@
           "title": "🛠 <a href=\"https://jakearchibald.github.io/svgomg/\">SVGOMG - Optimize SVG vector graphics files</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>이미지 형식:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 적절한 이미지 형식을 선택하세요.    </p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>To ensure that your images don't slow your website, choose the format that will correspond to your image. If it's a photo, JPEG is most of the time more appropriate than PNG or GIF. But don't forget to look a the nex-gen formats which can reduce the size of your files. Each image format has pros and cons, it's important to know these to make the best choice possible.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ <a href=\"https://developers.google.com/web/tools/lighthouse/\">Lighthouse</a>를 사용해 이미지가 최종적으로 <strong>차세대 포맷</strong>(JPEG 2000m JPEG XR 또는 WebP)을 사용할 수 있는지 확인하세요. <br/>\n⁃ 다른 포맷을 비교하세요. 어떨 때는 PNG8을 사용하는 것이 PNG16을 사용하는 것보다 낫고, 어떨 때는 그렇지 않습니다.</p>\n</blockquote>"
+          "title": "<p> <strong>이미지 형식:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 적절한 이미지 형식을 선택하세요.    </p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>To ensure that your images don't slow your website, choose the format that will correspond to your image. If it's a photo, JPEG is most of the time more appropriate than PNG or GIF. But don't forget to look a the nex-gen formats which can reduce the size of your files. Each image format has pros and cons, it's important to know these to make the best choice possible.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ <a href=\"https://developers.google.com/web/tools/lighthouse/\">Lighthouse</a>를 사용해 이미지가 최종적으로 <strong>차세대 포맷</strong>(JPEG 2000m JPEG XR 또는 WebP)을 사용할 수 있는지 확인하세요. <br/>\n⁃ 다른 포맷을 비교하세요. 어떨 때는 PNG8을 사용하는 것이 PNG16을 사용하는 것보다 낫고, 어떨 때는 그렇지 않습니다.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://developers.google.com/web/tools/lighthouse/audits/webp\">Serve Images in Next-Gen Formats  |  Tools for Web Developers  |  Google Developers</a>"
@@ -442,13 +442,13 @@
           "title": "📖 <a href=\"https://www.diyphotography.net/8-bit-vs-16-bit-color-depth-use-matters/\">8-bit vs 16-bit - What Color Depth You Should Use And Why It Matters - DIY Photography</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>벡터 이미지 vs 래스터/비트맵:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 비트맵 이미지보다는 벡터 이미지를 사용하세요. (가능하다면)</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>벡터 이미지 (SVG)는 다른 이미지보다 작고, SVG는 반응성이 뛰어나며 완벽하게 크기가 변할 수 있습니다. 벡터 이미지는 CSS에 의해 수정되거나 움직일 수 있습니다.</p>\n</blockquote>"
+          "title": "<p> <strong>벡터 이미지 vs 래스터/비트맵:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 비트맵 이미지보다는 벡터 이미지를 사용하세요. (가능하다면)</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>벡터 이미지 (SVG)는 다른 이미지보다 작고, SVG는 반응성이 뛰어나며 완벽하게 크기가 변할 수 있습니다. 벡터 이미지는 CSS에 의해 수정되거나 움직일 수 있습니다.</p>\n</blockquote>"
         },
         {
-          "title": "<p>[ ] <strong>이미지 크기:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 최종적으로 나타나는 이미지 크기를 안다면 <code>&lt;img&gt;</code>에 <code>width</code>와 <code>height</code> 속성을 명시하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>높이와 너비가 설정되어 있으면 페이지가 로드됐을 때 이미지가 필요로하는 공간이 예약됩니다. 하지만, 이 속성이 없다면, 브라우저는 이미지의 크기를 알 수 없고, 적절한 공간을 예약해 둘 수 없습니다. 그러면 페이지를 로딩하는 중에 레이아웃이 변하는 현상이 발생합니다. (이미지를 로드하는 동안)</p>\n</blockquote>"
+          "title": "<p> <strong>이미지 크기:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 최종적으로 나타나는 이미지 크기를 안다면 <code>&lt;img&gt;</code>에 <code>width</code>와 <code>height</code> 속성을 명시하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>높이와 너비가 설정되어 있으면 페이지가 로드됐을 때 이미지가 필요로하는 공간이 예약됩니다. 하지만, 이 속성이 없다면, 브라우저는 이미지의 크기를 알 수 없고, 적절한 공간을 예약해 둘 수 없습니다. 그러면 페이지를 로딩하는 중에 레이아웃이 변하는 현상이 발생합니다. (이미지를 로드하는 동안)</p>\n</blockquote>"
         },
         {
-          "title": "<p>[ ] <strong>Base64 이미지 사용 지양:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> base64를 통해 결과적으로 작은 이미지를 얻을 수 있지만, 이것이 최고의 방법은 아닙니다.</p>"
+          "title": "<p> <strong>Base64 이미지 사용 지양:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> base64를 통해 결과적으로 작은 이미지를 얻을 수 있지만, 이것이 최고의 방법은 아닙니다.</p>"
         },
         {
           "title": "📖 <a href=\"https://csswizardry.com/2017/02/base64-encoding-and-performance/\">Base64 Encoding &amp; Performance, Part 1 and 2 by Harry Roberts</a>"
@@ -463,7 +463,7 @@
           "title": "📖 <a href=\"https://varvy.com/pagespeed/base64-images.html\">Base64 encoding images for faster pages | Performance and seo factors</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>레이지 로딩:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 이미지를 레이지 로딩시키세요. (noscript 폴백이 언제나 제공됩니다.)</p>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ <a href=\"https://developers.google.com/web/tools/lighthouse/\">Lighthouse</a>를 사용해 얼마나 많은 <strong>이미지가 오프스크린되는 지</strong> 확인하세요. <br/>\n⁃ 이미지를 레이지 로드시켜주는 자바스크립트 플러그인을 사용하세요. Make sure you target offscreen images only. <br/>\n⁃ Also make sure to lazyload alternative images shown at mouseover or upon other user actions.</p>\n</blockquote>"
+          "title": "<p> <strong>레이지 로딩:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 이미지를 레이지 로딩시키세요. (noscript 폴백이 언제나 제공됩니다.)</p>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ <a href=\"https://developers.google.com/web/tools/lighthouse/\">Lighthouse</a>를 사용해 얼마나 많은 <strong>이미지가 오프스크린되는 지</strong> 확인하세요. <br/>\n⁃ 이미지를 레이지 로드시켜주는 자바스크립트 플러그인을 사용하세요. Make sure you target offscreen images only. <br/>\n⁃ Also make sure to lazyload alternative images shown at mouseover or upon other user actions.</p>\n</blockquote>"
         },
         {
           "title": "🛠 <a href=\"https://github.com/verlok/lazyload\">verlok/lazyload: GitHub</a>"
@@ -481,7 +481,7 @@
           "title": "📖 <a href=\"http://blog.dynamicdrive.com/5-brilliant-ways-to-lazy-load-images-for-faster-page-loads/\">5 Brilliant Ways to Lazy Load Images For Faster Page Loads - Dynamic Drive Blog</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>반응형 이미지:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 디스플레이 크기에 맞는 이미지를 사용하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>작은 디바이스에서는 뷰포트보다 큰 이미지가 필요하지 않습니다. 서로 다른 크기의 이미지를 여러 버전으로 제공하는 것을 추천합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ 원하는 타겟 디바이스에 따라 다른 크기의 이미지를 만드세요. <br/>\n⁃ <code>srcset</code>과 <code>picture</code>를 사용해 각 이미지의 여러 버전을 제공하세요.</p>\n</blockquote>"
+          "title": "<p> <strong>반응형 이미지:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 디스플레이 크기에 맞는 이미지를 사용하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>작은 디바이스에서는 뷰포트보다 큰 이미지가 필요하지 않습니다. 서로 다른 크기의 이미지를 여러 버전으로 제공하는 것을 추천합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ 원하는 타겟 디바이스에 따라 다른 크기의 이미지를 만드세요. <br/>\n⁃ <code>srcset</code>과 <code>picture</code>를 사용해 각 이미지의 여러 버전을 제공하세요.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images\">Responsive images - Learn web development | MDN</a>\n<p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
@@ -495,7 +495,7 @@
           "title": "<p><img alt=\"javascript\" src=\"images/javascript.png\"/></p>"
         },
         {
-          "title": "<p>[ ] <strong>JS 압축:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> JavaScript 파일을 압축하고, 최종 파일에서 주석, 공백, 줄바꿈을 제거합니다. <em>(HTTP/2에서도 여전히 유효합니다.)</em></p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>불필요한 공백, 주석, 개행을 제거하면 자바스크립트 파일의 크기를 줄이고 페이지의 로딩 속도를 높일 수 있습니다.그리고 사용자의 다운로드 시간을 줄일 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>개발이나 빌드 중, 또는 그 전에 파일을 자동으로 압축해주는 툴을 사용하세요.</p>\n</blockquote>"
+          "title": "<p> <strong>JS 압축:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> JavaScript 파일을 압축하고, 최종 파일에서 주석, 공백, 줄바꿈을 제거합니다. <em>(HTTP/2에서도 여전히 유효합니다.)</em></p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>불필요한 공백, 주석, 개행을 제거하면 자바스크립트 파일의 크기를 줄이고 페이지의 로딩 속도를 높일 수 있습니다.그리고 사용자의 다운로드 시간을 줄일 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>개발이나 빌드 중, 또는 그 전에 파일을 자동으로 압축해주는 툴을 사용하세요.</p>\n</blockquote>"
         },
         {
           "title": "🛠 <a href=\"https://www.npmjs.com/package/uglify-js\">uglify-js - npm</a>"
@@ -507,13 +507,13 @@
           "title": "📖 <a href=\"https://scaleyourcode.com/blog/article/28\">Short read: How is HTTP/2 different? Should we still minify and concatenate?</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>JavaScript 안에 두지 않기:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> <em>(웹사이트에서만 유효합니다.)</em> 여러 자바스크립트 코드를 바디 중간에 두지 마세요. 자바스크립트 코드를 다시 그룹화해 외부 파일이나 <code>&lt;head&gt;</code> 또는 페이지의 마지막(<code>&lt;/body&gt;</code> 이전)에 두도록 하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>자바스트립트 임베디드 코드를 <code>&lt;body&gt;</code>에 두면 DOM이 구성되는 과정에서 코드가 로드되기 때문에 페이지 속도를 떨어뜨릴 수 있습니다. 가장 좋은 옵션은 외부 파일을 <code>async</code> 또는 <code>defer</code> 속성과 함께 사용하여 DOM 로딩을 막지 않도록하는 것입니다. 또 다른 옵션은 스크립트를 <code>&lt;head&gt;</code>에 두는 것입니다. 대부분의 시간 분석 코드 또는 DOM이 주요 처리부분에 도달하기 전에 로드되어야 하는 작은 스크립트를 둘 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>모든 파일이 <code>async</code> 또는 <code>defer</code>를 통해 로드되는지 확인하세요. 그리고 <code>&lt;head&gt;</code>에 삽입할 코드를 현명하게 결정하세요.</p>\n</blockquote>"
+          "title": "<p> <strong>JavaScript 안에 두지 않기:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> <em>(웹사이트에서만 유효합니다.)</em> 여러 자바스크립트 코드를 바디 중간에 두지 마세요. 자바스크립트 코드를 다시 그룹화해 외부 파일이나 <code>&lt;head&gt;</code> 또는 페이지의 마지막(<code>&lt;/body&gt;</code> 이전)에 두도록 하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>자바스트립트 임베디드 코드를 <code>&lt;body&gt;</code>에 두면 DOM이 구성되는 과정에서 코드가 로드되기 때문에 페이지 속도를 떨어뜨릴 수 있습니다. 가장 좋은 옵션은 외부 파일을 <code>async</code> 또는 <code>defer</code> 속성과 함께 사용하여 DOM 로딩을 막지 않도록하는 것입니다. 또 다른 옵션은 스크립트를 <code>&lt;head&gt;</code>에 두는 것입니다. 대부분의 시간 분석 코드 또는 DOM이 주요 처리부분에 도달하기 전에 로드되어야 하는 작은 스크립트를 둘 수 있습니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>모든 파일이 <code>async</code> 또는 <code>defer</code>를 통해 로드되는지 확인하세요. 그리고 <code>&lt;head&gt;</code>에 삽입할 코드를 현명하게 결정하세요.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://www.upwork.com/hiring/development/11-tips-to-optimize-javascript-and-improve-website-loading-speeds/\">11 Tips to Optimize JavaScript and Improve Website Loading Speeds</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Non-blocking 자바스크립트:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 자바스크립트 파일을 비동기적으로 로드하기 위해 <code>async</code>를 사용하거나 지연시키기 위해 <code>defer</code> 속성을 사용하세요.</p>\n<p>```html\n<!-- Defer Attribute -->\n<script defer=\"\" src=\"foo.js\"></script></p>\n<p><!-- Async Attribute -->\n<script async=\"\" src=\"foo.js\"></script>\n```</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>자바스크립트는 HTML 문서의 파싱을 차단하기 때문에, 파서는 <code>&lt;script&gt;</code> 태그에 도달할 때 (특히 <code>&lt;head&gt;</code> 안에 있을 때) 파싱을 멈추고 스크립트를 실행합니다. 스크립트를 페이지의 상단에 두는 경우 <code>async</code> 또는 <code>defer</code>를 사용하는 것이 적극 권장됩니다만, 만약 <code>&lt;/body&gt;</code> 태그 바로 앞에 스크립트를 두는 경우 중요도가 떨어집니다. 하지만 언제나 이 속성을 사용하여 성능 이슈를 피하는 것은 좋은 습관입니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ <code>async</code> (만약 스크립트가 다른 스크립트에 의존하지 않을 경우) 또는 <code>defer</code> (만약 스크립트가 비동기 스크립트에 의존할 경우) 속성을 스크립트 태그에 추가하세요. <br/>\n⁃ 만약 스크립트가 작다면, 비동기 스크립트 위에 인라인 스크립트를 둘 수도 있습니다.</p>\n</blockquote>"
+          "title": "<p> <strong>Non-blocking 자바스크립트:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 자바스크립트 파일을 비동기적으로 로드하기 위해 <code>async</code>를 사용하거나 지연시키기 위해 <code>defer</code> 속성을 사용하세요.</p>\n<p>```html\n<!-- Defer Attribute -->\n<script defer=\"\" src=\"foo.js\"></script></p>\n<p><!-- Async Attribute -->\n<script async=\"\" src=\"foo.js\"></script>\n```</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>자바스크립트는 HTML 문서의 파싱을 차단하기 때문에, 파서는 <code>&lt;script&gt;</code> 태그에 도달할 때 (특히 <code>&lt;head&gt;</code> 안에 있을 때) 파싱을 멈추고 스크립트를 실행합니다. 스크립트를 페이지의 상단에 두는 경우 <code>async</code> 또는 <code>defer</code>를 사용하는 것이 적극 권장됩니다만, 만약 <code>&lt;/body&gt;</code> 태그 바로 앞에 스크립트를 두는 경우 중요도가 떨어집니다. 하지만 언제나 이 속성을 사용하여 성능 이슈를 피하는 것은 좋은 습관입니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>⁃ <code>async</code> (만약 스크립트가 다른 스크립트에 의존하지 않을 경우) 또는 <code>defer</code> (만약 스크립트가 비동기 스크립트에 의존할 경우) 속성을 스크립트 태그에 추가하세요. <br/>\n⁃ 만약 스크립트가 작다면, 비동기 스크립트 위에 인라인 스크립트를 둘 수도 있습니다.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://developers.google.com/speed/docs/insights/BlockingJS\">Remove Render-Blocking JavaScript</a>"
@@ -522,7 +522,7 @@
           "title": "📖 <a href=\"https://varvy.com/pagespeed/defer-loading-javascript.html\">Defer loading Javascript</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>최적화와 JS 라이브러리 업데이트:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 프로젝트에는 라이브러리가 필요하며 (단순한 기능을 위해 바닐라 자바스크립트를 지향하세요.), 이들을 최신버전으로 업데이트하고 불필요한 메소드들이 당신의 자바스크립트 코드를 압도하지 않도록 하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>대부분의 경우, 새로운 버전은 최적화되고 보안 패치가 적용됩니다. 페이지의 속도를 높이기 위해 코드를 최적화해야 하며, 웹사이트나 앱을 느리게 만들지 않기 위해 오래된 플러그인을 사용하지 않는지 확인해야 합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>만약 프로젝트가 NPM 패키지들을 사용한다면, <a href=\"https://www.npmjs.com/package/npm-check\">npm-check</a>가 라이브러리를 업그레이드 / 업데이트하는 데 유용할 것입니다.\n<a href=\"https://greenkeeper.io/\">Greenkeeper</a> can automatically look for your dependencies and suggest an update every time a new version is out.</p>\n</blockquote>"
+          "title": "<p> <strong>최적화와 JS 라이브러리 업데이트:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 프로젝트에는 라이브러리가 필요하며 (단순한 기능을 위해 바닐라 자바스크립트를 지향하세요.), 이들을 최신버전으로 업데이트하고 불필요한 메소드들이 당신의 자바스크립트 코드를 압도하지 않도록 하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>대부분의 경우, 새로운 버전은 최적화되고 보안 패치가 적용됩니다. 페이지의 속도를 높이기 위해 코드를 최적화해야 하며, 웹사이트나 앱을 느리게 만들지 않기 위해 오래된 플러그인을 사용하지 않는지 확인해야 합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>만약 프로젝트가 NPM 패키지들을 사용한다면, <a href=\"https://www.npmjs.com/package/npm-check\">npm-check</a>가 라이브러리를 업그레이드 / 업데이트하는 데 유용할 것입니다.\n<a href=\"https://greenkeeper.io/\">Greenkeeper</a> can automatically look for your dependencies and suggest an update every time a new version is out.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"http://youmightnotneedjquery.com/\">You may not need jQuery</a>"
@@ -531,7 +531,7 @@
           "title": "📖 <a href=\"https://plainjs.com/\">Vanilla JavaScript for building powerful web applications</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>디펜던시 크기 제한:</strong> <img alt=\"low\" src=\"images/priority/low.svg\"/> 외부 라이브러리를 현명하게 사용하세요. 대부분의 경우, 똑같은 기능을 하지만 더 가벼운 라이브러리를 찾을 수 있습니다.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>745 000 패키지 중 사용하려는 패키지 하나를 <a href=\"https://www.npmjs.com/\">npm</a>에서 찾을 수 있습니다. 하지만 가장 좋은 패키지를 골라야 합니다. 예를 들어, MomentJS는 굉장한 라이브러리지만, 많은 메소드를 사용하지 않을 것입니다. Day.js가 만들어진 이유죠. Day.js 2kB vs Moment 16.4kB gz 입니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>항상 더 가볍고 좋은 라이브러리를 찾기 위해 비교하세요. <a href=\"http://www.npmtrends.com/\">npm trends</a>와 같은 툴을 이용해 NPM 다운로드 수를 비교하거나 <a href=\"https://bundlephobia.com/\">Bundlephobia</a>를 통해 디펜던시의 크기를 알 수 있습니다.</p>\n</blockquote>"
+          "title": "<p> <strong>디펜던시 크기 제한:</strong> <img alt=\"low\" src=\"images/priority/low.svg\"/> 외부 라이브러리를 현명하게 사용하세요. 대부분의 경우, 똑같은 기능을 하지만 더 가벼운 라이브러리를 찾을 수 있습니다.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>745 000 패키지 중 사용하려는 패키지 하나를 <a href=\"https://www.npmjs.com/\">npm</a>에서 찾을 수 있습니다. 하지만 가장 좋은 패키지를 골라야 합니다. 예를 들어, MomentJS는 굉장한 라이브러리지만, 많은 메소드를 사용하지 않을 것입니다. Day.js가 만들어진 이유죠. Day.js 2kB vs Moment 16.4kB gz 입니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>항상 더 가볍고 좋은 라이브러리를 찾기 위해 비교하세요. <a href=\"http://www.npmtrends.com/\">npm trends</a>와 같은 툴을 이용해 NPM 다운로드 수를 비교하거나 <a href=\"https://bundlephobia.com/\">Bundlephobia</a>를 통해 디펜던시의 크기를 알 수 있습니다.</p>\n</blockquote>"
         },
         {
           "title": "🛠 <a href=\"https://github.com/ai/size-limit\">ai/size-limit: Prevent JS libraries bloat. If you accidentally add a massive dependency, Size Limit will throw an error.</a>"
@@ -546,7 +546,7 @@
           "title": "📖 <a href=\"https://evilmartians.com/chronicles/size-limit-make-the-web-lighter\">Size Limit: Make the Web lighter — Martian Chronicles, Evil Martians’ team blog</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>JavaScript 프로파일링:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 자바스크립트 파일의 성능 문제를 체크하세요. (CSS도 같이 체크하세요.)</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>자바스크립트 복잡도는 런타임 성능을 떨어뜨릴 수 있습니다. 위험성이 있는 이슈를 확인하는 것은 매끄러운 사용자 경험을 제공하는 데 필수적입니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>크롬 개발자 도구의 타임라인 툴을 이용해 스크립트 이벤트를 테스트하고 너무 오랜 시간을 소모하는 이벤트를 찾아내세요.</p>\n</blockquote>"
+          "title": "<p> <strong>JavaScript 프로파일링:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 자바스크립트 파일의 성능 문제를 체크하세요. (CSS도 같이 체크하세요.)</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>자바스크립트 복잡도는 런타임 성능을 떨어뜨릴 수 있습니다. 위험성이 있는 이슈를 확인하는 것은 매끄러운 사용자 경험을 제공하는 데 필수적입니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>크롬 개발자 도구의 타임라인 툴을 이용해 스크립트 이벤트를 테스트하고 너무 오랜 시간을 소모하는 이벤트를 찾아내세요.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution\">Speed Up JavaScript Execution  |  Tools for Web Developers  |  Google Developers</a>"
@@ -564,7 +564,7 @@
           "title": "📖 <a href=\"http://www.monitis.com/blog/30-tips-to-improve-javascript-performance/\">30 Tips To Improve Javascript Performance</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>Use of Service Workers:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> You are using Service Workers in your PWA to cache data or execute possible heavy tasks without impacting the user experience of your application.\n   </p>"
+          "title": "<p> <strong>Use of Service Workers:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> You are using Service Workers in your PWA to cache data or execute possible heavy tasks without impacting the user experience of your application.\n   </p>"
         },
         {
           "title": "📖 <a href=\"https://developers.google.com/web/fundamentals/primers/service-workers/\">Service Workers: an Introduction  |  Web Fundamentals  |  Google Developers</a>"
@@ -587,7 +587,7 @@
           "title": "<p><img alt=\"server-side\" src=\"images/server-side.png\"/></p>"
         },
         {
-          "title": "<p>[ ] <strong>Your website is using HTTPS:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/></p>\n<p><em>Why:</em></p>\n<blockquote>\n<p>HTTPS is not only for ecommerce websites, but for all websites that are exchanging data. Data shared by a user or data shared to an external entity. Modern browsers today limit functionalities for sites that are not secure. For example: geolocation, push notifications and service workers don't work if your instance is not using HTTPS. And today is much more easy to setup a project with an SSL certificate than it was before (and for free, thanks to <a href=\"https://letsencrypt.org/\">Let's Encrypt</a>).</p>\n</blockquote>"
+          "title": "<p> <strong>Your website is using HTTPS:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/></p>\n<p><em>Why:</em></p>\n<blockquote>\n<p>HTTPS is not only for ecommerce websites, but for all websites that are exchanging data. Data shared by a user or data shared to an external entity. Modern browsers today limit functionalities for sites that are not secure. For example: geolocation, push notifications and service workers don't work if your instance is not using HTTPS. And today is much more easy to setup a project with an SSL certificate than it was before (and for free, thanks to <a href=\"https://letsencrypt.org/\">Let's Encrypt</a>).</p>\n</blockquote>"
         },
         {
           "title": "<p>📖 <a href=\"https://www.cloudflare.com/learning/security/why-use-https/\">Why Use HTTPS? | Cloudflare</a></p>"
@@ -605,7 +605,7 @@
           "title": "<p>📖 <a href=\"https://www.httpvshttps.com/\">HTTP vs HTTPS — Test them both yourself</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>웹페이지 크기 &lt; 1500 KB:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> (이상적인 크기 &lt; 500 KB) 페이지의 크기 + 리소스를 최대한 줄이세요 </p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>500 KB 미만이 이상적이지만 웹의 상태에 따라 킬로바이트의 중앙값이 1500 KB 정도로 표시됩니다. (모바일에서도 그렇습니다.) 최상의 사용자 경험을 제공하려면 타겟 사용자, 네트워크 연결, 디바이스에 따라 총 킬로바이트를 최대한 줄여야 합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>프론트엔드 성능 체크리스트의 모든 규칙들은 리소스와 코드를 최대한 줄이도록 하고 있습니다.</p>\n</blockquote>"
+          "title": "<p> <strong>웹페이지 크기 &lt; 1500 KB:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> (이상적인 크기 &lt; 500 KB) 페이지의 크기 + 리소스를 최대한 줄이세요 </p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>500 KB 미만이 이상적이지만 웹의 상태에 따라 킬로바이트의 중앙값이 1500 KB 정도로 표시됩니다. (모바일에서도 그렇습니다.) 최상의 사용자 경험을 제공하려면 타겟 사용자, 네트워크 연결, 디바이스에 따라 총 킬로바이트를 최대한 줄여야 합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>프론트엔드 성능 체크리스트의 모든 규칙들은 리소스와 코드를 최대한 줄이도록 하고 있습니다.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://httparchive.org/reports/page-weight#bytesTotal\">Page Weight</a>"
@@ -617,7 +617,7 @@
           "title": "🛠 <a href=\"https://stackoverflow.com/questions/38239980/measure-full-page-size-in-chrome-devtools\">web - Measure full page size in Chrome DevTools - Stack Overflow</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>페이지 로드 시간 &lt; 3초:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 페이지 로드 시간을 최대한 줄여 사용자에게 콘텐츠가 빠르게 전송되도록 하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>웹사이트나 앱이 빨라질수록 바운스 증가 가능성이 줄어듭니다. 한편 사용자나 미래의 클라이언트를 잃을 가능성도 줄어듭니다. 이 주제에 대한 많은 연구가 이를 증명합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p><a href=\"https://developers.google.com/speed/pagespeed/insights/\">Page Speed Insight</a> 또는 <a href=\"https://www.webpagetest.org/\">WebPageTest</a>와 같은 온라인 툴을 이용해 무엇이 페이지를 느리게 만드는지 분석하고, 프론트엔드 체크 리스트를 이용해 로드 시간을 개선하세요.</p>\n</blockquote>"
+          "title": "<p> <strong>페이지 로드 시간 &lt; 3초:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 페이지 로드 시간을 최대한 줄여 사용자에게 콘텐츠가 빠르게 전송되도록 하세요.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>웹사이트나 앱이 빨라질수록 바운스 증가 가능성이 줄어듭니다. 한편 사용자나 미래의 클라이언트를 잃을 가능성도 줄어듭니다. 이 주제에 대한 많은 연구가 이를 증명합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p><a href=\"https://developers.google.com/speed/pagespeed/insights/\">Page Speed Insight</a> 또는 <a href=\"https://www.webpagetest.org/\">WebPageTest</a>와 같은 온라인 툴을 이용해 무엇이 페이지를 느리게 만드는지 분석하고, 프론트엔드 체크 리스트를 이용해 로드 시간을 개선하세요.</p>\n</blockquote>"
         },
         {
           "title": "🛠 <a href=\"https://www.thinkwithgoogle.com/feature/mobile/\">Compare your mobile site speed</a>"
@@ -629,7 +629,7 @@
           "title": "📖 <a href=\"https://www.machmetrics.com/speed-blog/average-page-load-times-websites-2018/\">Average Page Load Times for 2018 - How does yours compare? - MachMetrics Speed Blog</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>첫 번째 바이트 시간(TTFB) &lt; 1.3초:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 브라우저가 데이터를 받기 전까지 대기하는 시간을 최대한 줄이세요.</p>"
+          "title": "<p> <strong>첫 번째 바이트 시간(TTFB) &lt; 1.3초:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 브라우저가 데이터를 받기 전까지 대기하는 시간을 최대한 줄이세요.</p>"
         },
         {
           "title": "📖 <a href=\"https://scaleyourcode.com/blog/article/27\">What is Waiting (TTFB) in DevTools, and what to do about it</a>"
@@ -644,7 +644,7 @@
           "title": "🛠 <a href=\"https://latency.apex.sh\">Global latency testing tool</a> </li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>쿠키 크기:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 만약 쿠키를 사용한다면 각 쿠키가 4096 바이트를 넘어서는 안 되며, 도메인 네임이 20개 이상의 쿠키를 가져서는 안 됩니다.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>쿠키는 HTTP 헤더에서 웹 서버와 브라우저 사이에 교환됩니다. 사용자의 응답 시간에 미치는 영향을 최소화하기 위해서는 쿠키의 크기를 최대한 줄여야 합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>불필요한 쿠키를 제거하세요.</p>\n</blockquote>"
+          "title": "<p> <strong>쿠키 크기:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 만약 쿠키를 사용한다면 각 쿠키가 4096 바이트를 넘어서는 안 되며, 도메인 네임이 20개 이상의 쿠키를 가져서는 안 됩니다.</p>\n<p><em>왜:</em></p>\n<blockquote>\n<p>쿠키는 HTTP 헤더에서 웹 서버와 브라우저 사이에 교환됩니다. 사용자의 응답 시간에 미치는 영향을 최소화하기 위해서는 쿠키의 크기를 최대한 줄여야 합니다.</p>\n</blockquote>\n<p><em>어떻게:</em></p>\n<blockquote>\n<p>불필요한 쿠키를 제거하세요.</p>\n</blockquote>"
         },
         {
           "title": "📖 <a href=\"https://tools.ietf.org/html/rfc6265\">Cookie specification: RFC 6265</a>"
@@ -662,7 +662,7 @@
           "title": "📖 <a href=\"https://www.globaldots.com/googles-web-performance-best-practices-3-minimize-request-overhead/\">Google's Web Performance Best Practices #3: Minimize Request Overhead - GlobalDots Blog</a></li>\n</ul>"
         },
         {
-          "title": "<p>[ ] <strong>HTTP 요청 최소화:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 항상 모든 파일의 요청이 웹사이트나 어플리케이션에 필수적인지 확인하세요.</p>"
+          "title": "<p> <strong>HTTP 요청 최소화:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 항상 모든 파일의 요청이 웹사이트나 어플리케이션에 필수적인지 확인하세요.</p>"
         },
         {
           "title": "<p>📖 <a href=\"https://varvy.com/pagespeed/combine-external-css.html\">Combine external CSS</a></p>"
@@ -671,7 +671,7 @@
           "title": "<p>📖 <a href=\"https://varvy.com/pagespeed/combine-external-javascript.html\">Combine external Javascript</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>CDN을 통한 어셋 제공:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 전 세계에 콘텐츠를 더 빠르게 제공하기 위해 CDN을 사용하세요.</p>"
+          "title": "<p> <strong>CDN을 통한 어셋 제공:</strong> <img alt=\"medium\" src=\"images/priority/medium.svg\"/> 전 세계에 콘텐츠를 더 빠르게 제공하기 위해 CDN을 사용하세요.</p>"
         },
         {
           "title": "<p>📖 <a href=\"https://www.cdnplanet.com/blog/10-tips-optimize-cdn-performance/\">10 Tips to Optimize CDN Performance - CDN Planet</a></p>"
@@ -680,22 +680,22 @@
           "title": "<p>📖 <a href=\"https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching\">HTTP Caching  |  Web Fundamentals  |  Google Developers</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>동일한 프로토콜에서 파일 제공:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> Avoid having your website serving files coming from source using HTTP on your website which is using HTTPS for example. If your website is using HTTPS, external files should come from the same protocol.</p>"
+          "title": "<p> <strong>동일한 프로토콜에서 파일 제공:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> Avoid having your website serving files coming from source using HTTP on your website which is using HTTPS for example. If your website is using HTTPS, external files should come from the same protocol.</p>"
         },
         {
-          "title": "<p>[ ] <strong>연결 가능한 파일 제공:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 연결 불가능한 파일(404)을 요청하지 마세요.</p>"
+          "title": "<p> <strong>연결 가능한 파일 제공:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 연결 불가능한 파일(404)을 요청하지 마세요.</p>"
         },
         {
           "title": "<p>📖 <a href=\"https://varvy.com/pagespeed/avoid-bad-requests.html\">How to avoid bad requests</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>올바른 HTTP 캐시 헤더 설정:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 브라우저와 서버 사이 비용이 큰 왕복을 피하도록 HTTP 헤더를 설정하세요.</p>"
+          "title": "<p> <strong>올바른 HTTP 캐시 헤더 설정:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> 브라우저와 서버 사이 비용이 큰 왕복을 피하도록 HTTP 헤더를 설정하세요.</p>"
         },
         {
           "title": "<p>📖 <a href=\"https://varvy.com/pagespeed/cache-control.html\">Using cache-control for browser caching</a></p>"
         },
         {
-          "title": "<p>[ ] <strong>GZIP / Brotli 압축 활성화:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> Use a compression method such as Gzip or Brotli to reduce the size of your JavaScript files. With a smaller sizes file, users will be able to download the asset faster, resulting in improved performance.</p>"
+          "title": "<p> <strong>GZIP / Brotli 압축 활성화:</strong> <img alt=\"high\" src=\"images/priority/high.svg\"/> Use a compression method such as Gzip or Brotli to reduce the size of your JavaScript files. With a smaller sizes file, users will be able to download the asset faster, resulting in improved performance.</p>"
         },
         {
           "title": "<p>🛠 <a href=\"https://checkgzipcompression.com/\">Check GZIP compression</a></p>"
@@ -887,6 +887,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

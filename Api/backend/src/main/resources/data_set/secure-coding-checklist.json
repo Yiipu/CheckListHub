@@ -18,49 +18,48 @@
       "topic": "Secure Coding Checklist",
       "items": [
         {
-          "title": "<p>[ ] Input Validation</p>"
+          "title": "<p> Input Validation</p>"
         },
         {
-          "title": "<p>[ ] Output Encoding</p>"
+          "title": "<p> Output Encoding</p>"
         },
         {
-          "title": "<p>[ ] Authentication and Password Management</p>"
+          "title": "<p> Authentication and Password Management</p>"
         },
         {
-          "title": "<p>[ ] Session Management</p>"
+          "title": "<p> Session Management</p>"
         },
         {
-          "title": "<p>[ ] Access Control</p>"
+          "title": "<p> Access Control</p>"
         },
         {
-          "title": "<p>[ ] Cryptographic Practices</p>"
+          "title": "<p> Cryptographic Practices</p>"
         },
         {
-          "title": "<p>[ ] Error Handling and Logging</p>"
+          "title": "<p> Error Handling and Logging</p>"
         },
         {
-          "title": "<p>[ ] Data Protection</p>"
+          "title": "<p> Data Protection</p>"
         },
         {
-          "title": "<p>[ ] Communication Security</p>"
+          "title": "<p> Communication Security</p>"
         },
         {
-          "title": "<p>[ ] System Configuration</p>"
+          "title": "<p> System Configuration</p>"
         },
         {
-          "title": "<p>[ ] Database Security</p>"
+          "title": "<p> Database Security</p>"
         },
         {
-          "title": "<p>[ ] File Management</p>"
+          "title": "<p> File Management</p>"
         },
         {
-          "title": "<p>[ ] Memory Management</p>"
+          "title": "<p> Memory Management</p>"
         },
         {
-          "title": "<p>[ ] General Coding Practices</p>\n<p>```</p><p>If you don't know how to add a PR template to your repository there is a handy dandy article on github (https://docs.github.com/en/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository#adding-a-pull-request-template)</p>"
+          "title": "<p> General Coding Practices</p>\n<p>```</p><p>If you don't know how to add a PR template to your repository there is a handy dandy article on github (https://docs.github.com/en/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository#adding-a-pull-request-template)</p>"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

@@ -127,16 +127,15 @@
       "topic": "Roadmap",
       "items": [
         {
-          "title": "[ ] Include all ES5 to ES6+ instructions for React"
+          "title": " Include all ES5 to ES6+ instructions for React"
         },
         {
-          "title": "[ ] We may Implement ESlint plugin like ESlint-Plugin-React-5-to-6"
+          "title": " We may Implement ESlint plugin like ESlint-Plugin-React-5-to-6"
         },
         {
-          "title": "[ ] We may Include instructions for configuring Babel with different stages"
+          "title": " We may Include instructions for configuring Babel with different stages"
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

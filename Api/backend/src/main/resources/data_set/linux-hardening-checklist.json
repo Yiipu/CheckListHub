@@ -51,10 +51,10 @@
       "topic": "Todo",
       "items": [
         {
-          "title": "[ ] Add rationale (e.g. url's, external resources)"
+          "title": " Add rationale (e.g. url's, external resources)"
         },
         {
-          "title": "[ ] Review levels of priority"
+          "title": " Review levels of priority"
         }
       ]
     },
@@ -385,6 +385,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

@@ -75,25 +75,25 @@
       "topic": "Management",
       "items": [
         {
-          "title": "<p>[ ] :red_circle: <strong>Choose Bucket Policy vs IAM Policy vs ACL:</strong> Setting up the right access controls for your S3 buckets and objects.</p>"
+          "title": "<p> :red_circle: <strong>Choose Bucket Policy vs IAM Policy vs ACL:</strong> Setting up the right access controls for your S3 buckets and objects.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/\">IAM Policies and Bucket Policies and ACLs! Oh, My! (Controlling Access to S3 Resources)</a></p>"
         },
         {
-          "title": "<p>[ ] :yellow_circle: <strong>Use Access Points:</strong> Simplifies managing data access at scale for applications using shared data sets on S3.</p>"
+          "title": "<p> :yellow_circle: <strong>Use Access Points:</strong> Simplifies managing data access at scale for applications using shared data sets on S3.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://aws.amazon.com/s3/features/access-points/\">Amazon S3 Access Points</a></p>"
         },
         {
-          "title": "<p>[ ] :yellow_circle: <strong>Create object lifecycle policies:</strong> Implement data lifecycle needs according to frequency, durability, and latency requirements. Object lifecycle policies will move data between the various storage classes, including Glacier and even the deletion of objects.</p>"
+          "title": "<p> :yellow_circle: <strong>Create object lifecycle policies:</strong> Implement data lifecycle needs according to frequency, durability, and latency requirements. Object lifecycle policies will move data between the various storage classes, including Glacier and even the deletion of objects.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html\">Object lifecycle management</a></p>"
         },
         {
-          "title": "<p>[ ] :green_circle: <strong>Have an object tagging policy:</strong> Object tagging is a powerful mechanism to attach metadata to objects managed in S3.</p>"
+          "title": "<p> :green_circle: <strong>Have an object tagging policy:</strong> Object tagging is a powerful mechanism to attach metadata to objects managed in S3.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/object-tagging.html\">Object tagging</a></p>\n<p><a href=\"#table-of-contents\">:arrow_up: back to top</a></p><hr/>"
@@ -104,13 +104,13 @@
       "topic": "Availability",
       "items": [
         {
-          "title": "<p>[ ] :red_circle: <strong>Have a backup plan:</strong> 11 9s of durability is not bulletproof. Consider cross-region replication or multi-cloud backups.</p>"
+          "title": "<p> :red_circle: <strong>Have a backup plan:</strong> 11 9s of durability is not bulletproof. Consider cross-region replication or multi-cloud backups.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/replication.html\">Replication</a></p>"
         },
         {
-          "title": "<p>[ ] :yellow_circle: <strong>Enable object versioning:</strong> Object versioning, in conjunction with lifecycle management enhances application resilience.</p>"
+          "title": "<p> :yellow_circle: <strong>Enable object versioning:</strong> Object versioning, in conjunction with lifecycle management enhances application resilience.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectVersioning.html\">Object Versioning</a></p>\n<p><a href=\"#table-of-contents\">:arrow_up: back to top</a></p><hr/>"
@@ -121,19 +121,19 @@
       "topic": "Monitoring",
       "items": [
         {
-          "title": "<p>[ ] :red_circle: <strong>Have a monitoring plan:</strong> What metrics are recorded? Who is notified? How often are metrics monitored?</p>"
+          "title": "<p> :red_circle: <strong>Have a monitoring plan:</strong> What metrics are recorded? Who is notified? How often are metrics monitored?</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/monitoring-overview.html\">Monitoring Amazon S3</a></p>"
         },
         {
-          "title": "<p>[ ] :red_circle: <strong>Enable CloudTrail:</strong> CloudTrail logs cover general interactions with the S3 service.</p>"
+          "title": "<p> :red_circle: <strong>Enable CloudTrail:</strong> CloudTrail logs cover general interactions with the S3 service.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/logging-with-S3.html\">Logging with Amazon S3</a></p>"
         },
         {
-          "title": "<p>[ ] :red_circle: <strong>Enable server access logging:</strong> Server access logging provides detailed records for the requests that are made to a bucket.</p>"
+          "title": "<p> :red_circle: <strong>Enable server access logging:</strong> Server access logging provides detailed records for the requests that are made to a bucket.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/logging-with-S3.html\">Logging with Amazon S3</a></p>"
@@ -147,13 +147,13 @@
       "topic": "Security",
       "items": [
         {
-          "title": "<p>[ ] :red_circle: <strong>Enable block all public access:</strong> Blocks public access to S3 buckets and prevents S3 buckets from being made public unless this setting is turned off.</p>"
+          "title": "<p> :red_circle: <strong>Enable block all public access:</strong> Blocks public access to S3 buckets and prevents S3 buckets from being made public unless this setting is turned off.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html\">Using Amazon S3 block public access</a></p>"
         },
         {
-          "title": "<p>[ ] :red_circle: <strong>Enforce server-side or client-side encryption:</strong> Enabling SSE-S3, SSE-KMS or SSE-C to encrypt data at rest by AWS, or use envelope encryption (client-side) to encrypt data prior to it landing on S3.</p>"
+          "title": "<p> :red_circle: <strong>Enforce server-side or client-side encryption:</strong> Enabling SSE-S3, SSE-KMS or SSE-C to encrypt data at rest by AWS, or use envelope encryption (client-side) to encrypt data prior to it landing on S3.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html\">Protecting data using encryption</a></p>"
@@ -168,37 +168,37 @@
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#enveloping\">Envelope encryption</a></p>"
         },
         {
-          "title": "<p>[ ] :red_circle: <strong>Enforce encryption in-transit:</strong> Enforce the use of Secure Socket Layer/Transport Layer Security (SSL/TLS) for all S3 requests.</p>"
+          "title": "<p> :red_circle: <strong>Enforce encryption in-transit:</strong> Enforce the use of Secure Socket Layer/Transport Layer Security (SSL/TLS) for all S3 requests.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-ssl-requests-only.html\">s3-bucket-ssl-requests-only</a></p>"
         },
         {
-          "title": "<p>[ ] :yellow_circle: <strong>Enable MFA delete:</strong> Adds another layer of security requiring additional authentication.</p>"
+          "title": "<p> :yellow_circle: <strong>Enable MFA delete:</strong> Adds another layer of security requiring additional authentication.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.amazonaws.cn/en_us/AmazonS3/latest/dev/Versioning.html#MultiFactorAuthenticationDelete\">MFA delete</a></p>"
         },
         {
-          "title": "<p>[ ] :yellow_circle: <strong>Use VPC endpoints:</strong> Where traffic being routed over the Internet is undesirable, VPC endpoints should be used to access S3.</p>"
+          "title": "<p> :yellow_circle: <strong>Use VPC endpoints:</strong> Where traffic being routed over the Internet is undesirable, VPC endpoints should be used to access S3.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html\">VPC endpoints</a></p>"
         },
         {
-          "title": "<p>[ ] :yellow_circle: <strong>:new: Use Amazon GuardDuty:</strong> Detect suspicious activities such as requests coming from an unusual geo-location, disabling of preventative controls such as S3 block public access, or API call patterns consistent with an attempt to discover misconfigured bucket permissions.</p>"
+          "title": "<p> :yellow_circle: <strong>:new: Use Amazon GuardDuty:</strong> Detect suspicious activities such as requests coming from an unusual geo-location, disabling of preventative controls such as S3 block public access, or API call patterns consistent with an attempt to discover misconfigured bucket permissions.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://aws.amazon.com/blogs/aws/new-using-amazon-guardduty-to-protect-your-s3-buckets/\">Using Amazon GuardDuty to Protect Your S3 Buckets</a></p>"
         },
         {
-          "title": "<p>[ ] :green_circle: <strong>Use Glacier Vault Lock:</strong> Immutable policy for enforcing controls such as \"write once read many\" (WORM).</p>"
+          "title": "<p> :green_circle: <strong>Use Glacier Vault Lock:</strong> Immutable policy for enforcing controls such as \"write once read many\" (WORM).</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html\">Amazon S3 Glacier Vault Lock</a></p>"
         },
         {
-          "title": "<p>[ ] :green_circle: <strong>Use Amazon Macie:</strong> Macie automates the discovery of sensitive data, such as personally identifiable information (PII) and intellectual property, to provide you with a better understanding of the data that your organization stores in Amazon S3.</p>"
+          "title": "<p> :green_circle: <strong>Use Amazon Macie:</strong> Macie automates the discovery of sensitive data, such as personally identifiable information (PII) and intellectual property, to provide you with a better understanding of the data that your organization stores in Amazon S3.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html\">What is Amazon Macie?</a></p>\n<p><a href=\"#table-of-contents\">:arrow_up: back to top</a></p><hr/>"
@@ -209,7 +209,7 @@
       "topic": "Performance",
       "items": [
         {
-          "title": "<p>[ ] :yellow_circle: <strong>Have a partitioning strategy:</strong> Consider storing your data in a fit-for-purpose directory structure for better read and write performance.</p>"
+          "title": "<p> :yellow_circle: <strong>Have a partitioning strategy:</strong> Consider storing your data in a fit-for-purpose directory structure for better read and write performance.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/optimizing-performance.html\">Best Practices Design Patterns: Optimizing Amazon S3 Performance</a></p>"
@@ -218,13 +218,13 @@
           "title": "<p>:book: <a href=\"https://aws.amazon.com/blogs/aws/amazon-s3-performance-tips-tricks-seattle-hiring-event/\">Amazon S3 Performance Tips &amp; Tricks</a></p>"
         },
         {
-          "title": "<p>[ ] :green_circle: <strong>Use S3 Select:</strong> Enables applications to retrieve only a subset of data from an object by using simple SQL expressions.</p>"
+          "title": "<p> :green_circle: <strong>Use S3 Select:</strong> Enables applications to retrieve only a subset of data from an object by using simple SQL expressions.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/selecting-content-from-objects.html\">Selecting content from objects</a></p>"
         },
         {
-          "title": "<p>[ ] :green_circle: <strong>Use Glacier Select:</strong> Allows you to to perform filtering directly against a Glacier object using standard SQL statements.</p>"
+          "title": "<p> :green_circle: <strong>Use Glacier Select:</strong> Allows you to to perform filtering directly against a Glacier object using standard SQL statements.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://aws.amazon.com/glacier/features/#amazon-glacier-select\">Amazon S3 Glacier features</a></p>\n<p><a href=\"#table-of-contents\">:arrow_up: back to top</a></p><hr/>"
@@ -235,13 +235,13 @@
       "topic": "Cost",
       "items": [
         {
-          "title": "<p>[ ] :red_circle: <strong>Use Intelligent-Tiering:</strong> Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier.</p>"
+          "title": "<p> :red_circle: <strong>Use Intelligent-Tiering:</strong> Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://aws.amazon.com/s3/storage-classes/\">Amazon S3 Storage Classes</a></p>"
         },
         {
-          "title": "<p>[ ] :green_circle: <strong>Retrieve S3 inventory:</strong> Outputs files that list your objects and their corresponding metadata on a daily or weekly basis. Can be useful to setup your own lifecycle management or for big data jobs that require S3 object metadata without having to call individual object APIs.</p>"
+          "title": "<p> :green_circle: <strong>Retrieve S3 inventory:</strong> Outputs files that list your objects and their corresponding metadata on a daily or weekly basis. Can be useful to setup your own lifecycle management or for big data jobs that require S3 object metadata without having to call individual object APIs.</p>"
         },
         {
           "title": "<p>:book: <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html\">Amazon S3 inventory</a></p>\n<p><a href=\"#table-of-contents\">:arrow_up: back to top</a></p><hr/>"
@@ -256,6 +256,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

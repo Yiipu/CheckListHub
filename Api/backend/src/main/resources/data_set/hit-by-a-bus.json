@@ -15,13 +15,13 @@
       "topic": "Who should have access to these items?",
       "items": [
         {
-          "title": "[ ] Founders"
+          "title": " Founders"
         },
         {
-          "title": "[ ] Director"
+          "title": " Director"
         },
         {
-          "title": "[ ] Lawyer"
+          "title": " Lawyer"
         }
       ]
     },
@@ -29,34 +29,34 @@
       "topic": "Passwords",
       "items": [
         {
-          "title": "[ ] Passwords are stored centrally (1Password, LastPass, etc)"
+          "title": " Passwords are stored centrally (1Password, LastPass, etc)"
         },
         {
-          "title": "[ ] Admin access to billing/accounting portals"
+          "title": " Admin access to billing/accounting portals"
         },
         {
-          "title": "[ ] Admin access to company email management"
+          "title": " Admin access to company email management"
         },
         {
-          "title": "[ ] Admin access to all repos"
+          "title": " Admin access to all repos"
         },
         {
-          "title": "[ ] Admin access to all documentation - wiki, trello, ticketing, support, CRM, etc"
+          "title": " Admin access to all documentation - wiki, trello, ticketing, support, CRM, etc"
         },
         {
-          "title": "[ ] Admin access for all servers"
+          "title": " Admin access for all servers"
         },
         {
-          "title": "[ ] Admin access for all support services (hosting company, domains, apis, data, stats, backup)"
+          "title": " Admin access for all support services (hosting company, domains, apis, data, stats, backup)"
         },
         {
-          "title": "[ ] Admin access to all banking"
+          "title": " Admin access to all banking"
         },
         {
-          "title": "[ ] Admin access to all IP assets - patents, licenses, etc"
+          "title": " Admin access to all IP assets - patents, licenses, etc"
         },
         {
-          "title": "[ ] 2FA that are phone based- Are you able to access or claim other founders cell phone #.  Better yet - centralize any 2FA to a shared phone #."
+          "title": " 2FA that are phone based- Are you able to access or claim other founders cell phone #.  Better yet - centralize any 2FA to a shared phone #."
         }
       ]
     },
@@ -64,13 +64,13 @@
       "topic": "Insurance",
       "items": [
         {
-          "title": "[ ] Do you have key person insurance? (<a href=\"https://en.wikipedia.org/wiki/Key_person_insurance\">Ref</a>)"
+          "title": " Do you have key person insurance? (<a href=\"https://en.wikipedia.org/wiki/Key_person_insurance\">Ref</a>)"
         },
         {
-          "title": "[ ] Do you have term life insurance for your family?"
+          "title": " Do you have term life insurance for your family?"
         },
         {
-          "title": "[ ] Do you have disability insurance?"
+          "title": " Do you have disability insurance?"
         }
       ]
     },
@@ -78,7 +78,7 @@
       "topic": "Code",
       "items": [
         {
-          "title": "[ ] Is all your code in version control?"
+          "title": " Is all your code in version control?"
         }
       ]
     },
@@ -86,7 +86,7 @@
       "topic": "Design",
       "items": [
         {
-          "title": "[ ] Are all design files backed up in cloud storage?"
+          "title": " Are all design files backed up in cloud storage?"
         }
       ]
     },
@@ -94,7 +94,7 @@
       "topic": "Legal",
       "items": [
         {
-          "title": "[ ] Access to contracts for ext consultants, freelancers, recruiters, IT, etc"
+          "title": " Access to contracts for ext consultants, freelancers, recruiters, IT, etc"
         }
       ]
     },
@@ -106,6 +106,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

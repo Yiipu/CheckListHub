@@ -11,16 +11,16 @@
       "topic": "Development",
       "items": [
         {
-          "title": "[ ] Source Code Repository"
+          "title": " Source Code Repository"
         },
         {
-          "title": "[ ] Continuous Integration"
+          "title": " Continuous Integration"
         },
         {
-          "title": "[ ] <a href=\"#cross-browser-testing\">Cross Browser Testing</a>"
+          "title": " <a href=\"#cross-browser-testing\">Cross Browser Testing</a>"
         },
         {
-          "title": "[ ] <a href=\"#api\">API</a>"
+          "title": " <a href=\"#api\">API</a>"
         }
       ]
     },
@@ -28,52 +28,52 @@
       "topic": "Deployment",
       "items": [
         {
-          "title": "[ ] <a href=\"#domain-name\">Domain Name</a>"
+          "title": " <a href=\"#domain-name\">Domain Name</a>"
         },
         {
-          "title": "[ ] <a href=\"#hosting\">Hosting</a>"
+          "title": " <a href=\"#hosting\">Hosting</a>"
         },
         {
-          "title": "[ ] <a href=\"#automated-deployment\">Automated Deployment</a>"
+          "title": " <a href=\"#automated-deployment\">Automated Deployment</a>"
         },
         {
-          "title": "[ ] <a href=\"#backup\">Backups</a>"
+          "title": " <a href=\"#backup\">Backups</a>"
         },
         {
-          "title": "[ ] <a href=\"#redundancy-and-failover\">Redundancy and Failover</a>"
+          "title": " <a href=\"#redundancy-and-failover\">Redundancy and Failover</a>"
         },
         {
-          "title": "[ ] <a href=\"#alert-and-monitoring\">Alert and Monitoring</a>"
+          "title": " <a href=\"#alert-and-monitoring\">Alert and Monitoring</a>"
         },
         {
-          "title": "[ ] <a href=\"#ssl-certificate\">Transport Layer Security</a>"
+          "title": " <a href=\"#ssl-certificate\">Transport Layer Security</a>"
         },
         {
-          "title": "[ ] <a href=\"#content-delivery-network\">Content Delivery Network</a>"
+          "title": " <a href=\"#content-delivery-network\">Content Delivery Network</a>"
         },
         {
-          "title": "[ ] <a href=\"#yslow!-web-performance-best-practices-and-rules\">YSlow! Web Performance Best Practices and Rules</a>"
+          "title": " <a href=\"#yslow!-web-performance-best-practices-and-rules\">YSlow! Web Performance Best Practices and Rules</a>"
         },
         {
-          "title": "[ ] <a href=\"#application-performance-monitoring\">Application Performance Monitoring</a>"
+          "title": " <a href=\"#application-performance-monitoring\">Application Performance Monitoring</a>"
         },
         {
-          "title": "[ ] <a href=\"#error-tracking\">Error Tracking</a>"
+          "title": " <a href=\"#error-tracking\">Error Tracking</a>"
         },
         {
-          "title": "[ ] <a href=\"#analytics\">Analytics</a>"
+          "title": " <a href=\"#analytics\">Analytics</a>"
         },
         {
-          "title": "[ ] <a href=\"#social-media\">Social Media</a>"
+          "title": " <a href=\"#social-media\">Social Media</a>"
         },
         {
-          "title": "[ ] <a href=\"#status-page\">Status Page</a>"
+          "title": " <a href=\"#status-page\">Status Page</a>"
         },
         {
-          "title": "[ ] <a href=\"#image-optimisation\">Image Optimisation</a>"
+          "title": " <a href=\"#image-optimisation\">Image Optimisation</a>"
         },
         {
-          "title": "[ ] <a href=\"#feedback-form\">Feedback Form</a>"
+          "title": " <a href=\"#feedback-form\">Feedback Form</a>"
         }
       ]
     },
@@ -320,6 +320,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

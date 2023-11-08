@@ -14,106 +14,106 @@
       "topic": "Progress Section",
       "items": [
         {
-          "title": "[ ] Resume"
+          "title": " Resume"
         },
         {
-          "title": "[ ] Header"
+          "title": " Header"
         },
         {
-          "title": "[ ] Summary"
+          "title": " Summary"
         },
         {
-          "title": "[ ] Accomplishments"
+          "title": " Accomplishments"
         },
         {
-          "title": "[ ] Experience"
+          "title": " Experience"
         },
         {
-          "title": "[ ] Education"
+          "title": " Education"
         },
         {
-          "title": "<p>[ ] Other stuff</p>"
+          "title": "<p> Other stuff</p>"
         },
         {
-          "title": "<p>[ ] GitHub</p>"
+          "title": "<p> GitHub</p>"
         },
         {
-          "title": "[ ] Followings (20+)"
+          "title": " Followings (20+)"
         },
         {
-          "title": "[ ] Followers (10+)"
+          "title": " Followers (10+)"
         },
         {
-          "title": "[ ] Stars (50+)"
+          "title": " Stars (50+)"
         },
         {
-          "title": "[ ] Forks (10+)"
+          "title": " Forks (10+)"
         },
         {
-          "title": "[ ] PRs (5+)"
+          "title": " PRs (5+)"
         },
         {
-          "title": "<p>[ ] Avatar</p>"
+          "title": "<p> Avatar</p>"
         },
         {
-          "title": "<p>[ ] LinkedIn</p>"
+          "title": "<p> LinkedIn</p>"
         },
         {
-          "title": "[ ] Contacts (50+)"
+          "title": " Contacts (50+)"
         },
         {
-          "title": "<p>[ ] Photo</p>"
+          "title": "<p> Photo</p>"
         },
         {
-          "title": "<p>[ ] Portfolio (TODO)</p>"
+          "title": "<p> Portfolio (TODO)</p>"
         },
         {
-          "title": "[ ] Sandboxes (10+) (TODO)"
+          "title": " Sandboxes (10+) (TODO)"
         },
         {
-          "title": "[ ] Libraries (1+) (TODO)"
+          "title": " Libraries (1+) (TODO)"
         },
         {
-          "title": "[ ] Applications (1+) (TODO)"
+          "title": " Applications (1+) (TODO)"
         },
         {
-          "title": "[ ] Games and puzzles (TODO)"
+          "title": " Games and puzzles (TODO)"
         },
         {
-          "title": "[ ] Flagship project (1) (TODO)"
+          "title": " Flagship project (1) (TODO)"
         },
         {
-          "title": "<p>[ ] Common errors (TODO)</p>"
+          "title": "<p> Common errors (TODO)</p>"
         },
         {
-          "title": "<p>[ ] Other Formats</p>"
+          "title": "<p> Other Formats</p>"
         },
         {
-          "title": "[ ] Tutorials (TODO)"
+          "title": " Tutorials (TODO)"
         },
         {
-          "title": "[ ] Articles (TODO)"
+          "title": " Articles (TODO)"
         },
         {
-          "title": "[ ] Interviews (TODO)"
+          "title": " Interviews (TODO)"
         },
         {
-          "title": "[ ] Polls (TODO)"
+          "title": " Polls (TODO)"
         },
         {
-          "title": "[ ] Tech reviews (TODO)"
+          "title": " Tech reviews (TODO)"
         },
         {
-          "title": "[ ] Book editing"
+          "title": " Book editing"
         },
         {
-          "title": "[ ] Recommendations (TODO)"
+          "title": " Recommendations (TODO)"
         },
         {
-          "title": "[ ] Competitions (TODO)"
+          "title": " Competitions (TODO)"
         },
         {
-          "title": "[ ] Ranks (TODO)"
+          "title": " Ranks (TODO)"
         }
       ]
     },
@@ -444,6 +444,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

@@ -55,142 +55,142 @@
       "topic": "General Review Approach:",
       "items": [
         {
-          "title": "[ ] All functions are <code>internal</code> except where explictly required to be <code>public</code>/<code>external</code>. [<a href=\"https://blog.zeppelin.solutions/on-the-parity-wallet-multisig-hack-405a8c12e8f7\">?</a>]"
+          "title": " All functions are <code>internal</code> except where explictly required to be <code>public</code>/<code>external</code>. [<a href=\"https://blog.zeppelin.solutions/on-the-parity-wallet-multisig-hack-405a8c12e8f7\">?</a>]"
         },
         {
-          "title": "[ ] There are no arithmetic overflows/underflows in math operations."
+          "title": " There are no arithmetic overflows/underflows in math operations."
         },
         {
-          "title": "[ ] Using the OpenZeppelin safe math library [<a href=\"https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/math\">?</a>]."
+          "title": " Using the OpenZeppelin safe math library [<a href=\"https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/math\">?</a>]."
         },
         {
-          "title": "[ ] Ether or tokens cannot be accidentally sent to the address <code>0x0</code>."
+          "title": " Ether or tokens cannot be accidentally sent to the address <code>0x0</code>."
         },
         {
-          "title": "[ ] Conditions are checked using <code>require</code> before operations and state changes."
+          "title": " Conditions are checked using <code>require</code> before operations and state changes."
         },
         {
-          "title": "[ ] State is being set before and performing actions."
+          "title": " State is being set before and performing actions."
         },
         {
-          "title": "[ ] Protected from reentry attacks (A calling B calling A). [<a href=\"https://medium.com/@gus_tavo_guim/reentrancy-attack-on-smart-contracts-how-to-identify-the-exploitable-and-an-example-of-an-attack-4470a2d8dfe4\">?</a>]"
+          "title": " Protected from reentry attacks (A calling B calling A). [<a href=\"https://medium.com/@gus_tavo_guim/reentrancy-attack-on-smart-contracts-how-to-identify-the-exploitable-and-an-example-of-an-attack-4470a2d8dfe4\">?</a>]"
         },
         {
-          "title": "[ ] Properly implements the ERC20 interface [<a href=\"https://github.com/ethereum/eips/issues/20\">?</a>]."
+          "title": " Properly implements the ERC20 interface [<a href=\"https://github.com/ethereum/eips/issues/20\">?</a>]."
         },
         {
-          "title": "[ ] Only using modifier if necessary in more than one place."
+          "title": " Only using modifier if necessary in more than one place."
         },
         {
-          "title": "[ ] All types are being explicitly set (e.g. using <code>uint256</code> instead of <code>uint</code>)."
+          "title": " All types are being explicitly set (e.g. using <code>uint256</code> instead of <code>uint</code>)."
         },
         {
-          "title": "[ ] All methods and loops are within the maximum allowed gas limt."
+          "title": " All methods and loops are within the maximum allowed gas limt."
         },
         {
-          "title": "[ ] There are no unnecessary initalizations in the constructor (remember, default values are set)."
+          "title": " There are no unnecessary initalizations in the constructor (remember, default values are set)."
         },
         {
-          "title": "[ ] There is complete test coverage; every smart contract method and every possible type of input is being tested."
+          "title": " There is complete test coverage; every smart contract method and every possible type of input is being tested."
         },
         {
-          "title": "[ ] Performed fuzz testing by using random inputs."
+          "title": " Performed fuzz testing by using random inputs."
         },
         {
-          "title": "[ ] Tested all the possible different states that the contract can be in."
+          "title": " Tested all the possible different states that the contract can be in."
         },
         {
-          "title": "[ ] Ether and token amounts are dealt in wei units."
+          "title": " Ether and token amounts are dealt in wei units."
         },
         {
-          "title": "[ ] The crowdsale end block/timestamp comes after start block/timestamp."
+          "title": " The crowdsale end block/timestamp comes after start block/timestamp."
         },
         {
-          "title": "[ ] The crowdsale token exchange/conversion rate is properly set."
+          "title": " The crowdsale token exchange/conversion rate is properly set."
         },
         {
-          "title": "[ ] The crowdsale soft/hard cap is set."
+          "title": " The crowdsale soft/hard cap is set."
         },
         {
-          "title": "[ ] The crowdsale min/max contribution allowed is set and tested."
+          "title": " The crowdsale min/max contribution allowed is set and tested."
         },
         {
-          "title": "[ ] The crowdsale whitelisting functionality is tested."
+          "title": " The crowdsale whitelisting functionality is tested."
         },
         {
-          "title": "[ ] The crowdsale refund logic is tested."
+          "title": " The crowdsale refund logic is tested."
         },
         {
-          "title": "[ ] Crowdsale participants are given their proportional token amounts or are allowed to claim their contribution."
+          "title": " Crowdsale participants are given their proportional token amounts or are allowed to claim their contribution."
         },
         {
-          "title": "[ ] The length of each stage of the crowdsale is properly configured (e.g. presale, public sale)."
+          "title": " The length of each stage of the crowdsale is properly configured (e.g. presale, public sale)."
         },
         {
-          "title": "[ ] Specified which functions are intented to be controlled by the owner only (e.g. pausing crowdsale, progressing crowdsale stage, enabling distribution of tokens, etc..)."
+          "title": " Specified which functions are intented to be controlled by the owner only (e.g. pausing crowdsale, progressing crowdsale stage, enabling distribution of tokens, etc..)."
         },
         {
-          "title": "[ ] The crowdsale vesting logic is tested."
+          "title": " The crowdsale vesting logic is tested."
         },
         {
-          "title": "[ ] The crowdsale has a fail-safe mode that when enabled by owner, restricts calls to function and enables refund functionality."
+          "title": " The crowdsale has a fail-safe mode that when enabled by owner, restricts calls to function and enables refund functionality."
         },
         {
-          "title": "[ ] The crowdsale has a fallback function in place if it makes reasonable sense."
+          "title": " The crowdsale has a fallback function in place if it makes reasonable sense."
         },
         {
-          "title": "[ ] The fallback function does not accept call data or only accepts prefixed data to avoid function signature collisions."
+          "title": " The fallback function does not accept call data or only accepts prefixed data to avoid function signature collisions."
         },
         {
-          "title": "[ ] Imported libraries have been previously audited and don't contain dyanmic parts that can be swapped out in future versions which can be be used maliciously. [<a href=\"http://swende.se/blog/Devcon1-and-contract-security.html\">?</a>]"
+          "title": " Imported libraries have been previously audited and don't contain dyanmic parts that can be swapped out in future versions which can be be used maliciously. [<a href=\"http://swende.se/blog/Devcon1-and-contract-security.html\">?</a>]"
         },
         {
-          "title": "[ ] Token transfer statements are wrapped in a <code>require</code>."
+          "title": " Token transfer statements are wrapped in a <code>require</code>."
         },
         {
-          "title": "[ ] Using <code>require</code> and <code>assert</code> properly. Only use <code>assert</code> for things that should never happen, typically used to validate state after making changes."
+          "title": " Using <code>require</code> and <code>assert</code> properly. Only use <code>assert</code> for things that should never happen, typically used to validate state after making changes."
         },
         {
-          "title": "[ ] Using <code>keccak256</code> instead of the alias <code>sha3</code>."
+          "title": " Using <code>keccak256</code> instead of the alias <code>sha3</code>."
         },
         {
-          "title": "[ ] Protected from ERC20 short address attack. [<a href=\"https://vessenes.com/the-erc20-short-address-attack-explained/\">?</a>]."
+          "title": " Protected from ERC20 short address attack. [<a href=\"https://vessenes.com/the-erc20-short-address-attack-explained/\">?</a>]."
         },
         {
-          "title": "[ ] Protected from recursive call attacks."
+          "title": " Protected from recursive call attacks."
         },
         {
-          "title": "[ ] Arbitrary string inputs have length limits."
+          "title": " Arbitrary string inputs have length limits."
         },
         {
-          "title": "[ ] No secret data is exposed (all data on the blockchain is public)."
+          "title": " No secret data is exposed (all data on the blockchain is public)."
         },
         {
-          "title": "[ ] Avoided using array where possible and using mappings instead."
+          "title": " Avoided using array where possible and using mappings instead."
         },
         {
-          "title": "[ ] Does not rely on block hashes for randomness (miners have influence on this)."
+          "title": " Does not rely on block hashes for randomness (miners have influence on this)."
         },
         {
-          "title": "[ ] Does not use <code>tx.origin</code> anywhere. [<a href=\"https://vessenes.com/tx-origin-and-ethereum-oh-my/\">?</a>]"
+          "title": " Does not use <code>tx.origin</code> anywhere. [<a href=\"https://vessenes.com/tx-origin-and-ethereum-oh-my/\">?</a>]"
         },
         {
-          "title": "[ ] Array items are shifted down when an item is deleted to avoid leaving a gap."
+          "title": " Array items are shifted down when an item is deleted to avoid leaving a gap."
         },
         {
-          "title": "[ ] Use <code>revert</code> instead of <code>throw</code>."
+          "title": " Use <code>revert</code> instead of <code>throw</code>."
         },
         {
-          "title": "[ ] Functions exit immediately when conditions aren't meant."
+          "title": " Functions exit immediately when conditions aren't meant."
         },
         {
-          "title": "[ ] Using the latest stable version of Solidity."
+          "title": " Using the latest stable version of Solidity."
         },
         {
-          "title": "[ ] Prefer pattern where receipient withdrawals funds instead of contract sending funds, however not always applicable."
+          "title": " Prefer pattern where receipient withdrawals funds instead of contract sending funds, however not always applicable."
         },
         {
-          "title": "[ ] Resolved warnings from compiler."
+          "title": " Resolved warnings from compiler."
         }
       ]
     },
@@ -198,34 +198,34 @@
       "topic": "Variables",
       "items": [
         {
-          "title": "[ ] <code>V1</code> - Can it be <code>internal</code>?"
+          "title": " <code>V1</code> - Can it be <code>internal</code>?"
         },
         {
-          "title": "[ ] <code>V2</code> - Can it be <code>constant</code>?"
+          "title": " <code>V2</code> - Can it be <code>constant</code>?"
         },
         {
-          "title": "[ ] <code>V3</code> - Can it be <code>immutable</code>?"
+          "title": " <code>V3</code> - Can it be <code>immutable</code>?"
         },
         {
-          "title": "[ ] <code>V4</code> - Is its visibility set? (SWC-108)"
+          "title": " <code>V4</code> - Is its visibility set? (SWC-108)"
         },
         {
-          "title": "[ ] <code>V5</code> - Is the purpose of the variable and other important information documented using natspec?"
+          "title": " <code>V5</code> - Is the purpose of the variable and other important information documented using natspec?"
         },
         {
-          "title": "[ ] <code>V6</code> - Can it be packed with an adjacent storage variable?"
+          "title": " <code>V6</code> - Can it be packed with an adjacent storage variable?"
         },
         {
-          "title": "[ ] [ ] <code>V7</code> - Can it be packed in a struct with more than 1 other variable?"
+          "title": "  <code>V7</code> - Can it be packed in a struct with more than 1 other variable?"
         },
         {
-          "title": "[ ] <code>V8</code> - Use full 256 bit types unless packing with other variables."
+          "title": " <code>V8</code> - Use full 256 bit types unless packing with other variables."
         },
         {
-          "title": "[ ] <code>V9</code> - If it's a public array, is a separate function provided to return the full array?"
+          "title": " <code>V9</code> - If it's a public array, is a separate function provided to return the full array?"
         },
         {
-          "title": "[ ] <code>V10</code> - Only use <code>private</code> to intentionally prevent child contracts from accessing the variable, prefer <code>internal</code> for flexibility."
+          "title": " <code>V10</code> - Only use <code>private</code> to intentionally prevent child contracts from accessing the variable, prefer <code>internal</code> for flexibility."
         }
       ]
     },
@@ -233,13 +233,13 @@
       "topic": "Structs",
       "items": [
         {
-          "title": "[ ] <code>S1</code> - Is a struct necessary? Can the variable be packed raw in storage?"
+          "title": " <code>S1</code> - Is a struct necessary? Can the variable be packed raw in storage?"
         },
         {
-          "title": "[ ] <code>S2</code> - Are its fields packed together (if possible)?"
+          "title": " <code>S2</code> - Are its fields packed together (if possible)?"
         },
         {
-          "title": "[ ] <code>S3</code> - Is the purpose of the struct and all fields documented using natspec?"
+          "title": " <code>S3</code> - Is the purpose of the struct and all fields documented using natspec?"
         }
       ]
     },
@@ -247,61 +247,61 @@
       "topic": "Functions",
       "items": [
         {
-          "title": "[ ] <code>F1</code> - Can it be <code>external</code>?"
+          "title": " <code>F1</code> - Can it be <code>external</code>?"
         },
         {
-          "title": "[ ] <code>F2</code> - Should it be <code>internal</code>?"
+          "title": " <code>F2</code> - Should it be <code>internal</code>?"
         },
         {
-          "title": "[ ] <code>F3</code> - Should it be <code>payable</code>?"
+          "title": " <code>F3</code> - Should it be <code>payable</code>?"
         },
         {
-          "title": "[ ] <code>F4</code> - Can it be combined with another similar function?"
+          "title": " <code>F4</code> - Can it be combined with another similar function?"
         },
         {
-          "title": "[ ] <code>F5</code> - Validate all parameters are within safe bounds, even if the function can only be called by a trusted users."
+          "title": " <code>F5</code> - Validate all parameters are within safe bounds, even if the function can only be called by a trusted users."
         },
         {
-          "title": "[ ] <code>F6</code> - Is the checks before effects pattern followed? (SWC-107)"
+          "title": " <code>F6</code> - Is the checks before effects pattern followed? (SWC-107)"
         },
         {
-          "title": "[ ]- <code>F7</code> - Check for front-running possibilities, such as the approve function. (SWC-114)"
+          "title": "- <code>F7</code> - Check for front-running possibilities, such as the approve function. (SWC-114)"
         },
         {
-          "title": "[ ] <code>F8</code> - Is insufficient gas griefing possible? (SWC-126)"
+          "title": " <code>F8</code> - Is insufficient gas griefing possible? (SWC-126)"
         },
         {
-          "title": "[ ] <code>F9</code> - Are the correct modifiers applied, such as <code>onlyOwner</code>/<code>requiresAuth</code>?"
+          "title": " <code>F9</code> - Are the correct modifiers applied, such as <code>onlyOwner</code>/<code>requiresAuth</code>?"
         },
         {
-          "title": "[ ] <code>F10</code> - Are return values always assigned?"
+          "title": " <code>F10</code> - Are return values always assigned?"
         },
         {
-          "title": "[ ] <code>F11</code> - Write down and test invariants about state before a function can run correctly."
+          "title": " <code>F11</code> - Write down and test invariants about state before a function can run correctly."
         },
         {
-          "title": "[ ] <code>F12</code> - Write down and test invariants about the return or any changes to state after a function has run."
+          "title": " <code>F12</code> - Write down and test invariants about the return or any changes to state after a function has run."
         },
         {
-          "title": "[ ] <code>F13</code> - Take care when naming functions, because people will assume behavior based on the name."
+          "title": " <code>F13</code> - Take care when naming functions, because people will assume behavior based on the name."
         },
         {
-          "title": "[ ] <code>F14</code> - If a function is intentionally unsafe (to save gas, etc), use an unwieldy name to draw attention to its risk."
+          "title": " <code>F14</code> - If a function is intentionally unsafe (to save gas, etc), use an unwieldy name to draw attention to its risk."
         },
         {
-          "title": "[ ] <code>F15</code> - Are all arguments, return values, side effects and other information documented using natspec?"
+          "title": " <code>F15</code> - Are all arguments, return values, side effects and other information documented using natspec?"
         },
         {
-          "title": "[ ] <code>F16</code> - If the function allows operating on another user in the system, do not assume <code>msg.sender</code> is the user being operated on."
+          "title": " <code>F16</code> - If the function allows operating on another user in the system, do not assume <code>msg.sender</code> is the user being operated on."
         },
         {
-          "title": "[ ] <code>F17</code> - If the function requires the contract be in an uninitialized state, check an explicit <code>initialized</code> variable. Do not use <code>owner == address(0)</code> or other similar checks as substitutes."
+          "title": " <code>F17</code> - If the function requires the contract be in an uninitialized state, check an explicit <code>initialized</code> variable. Do not use <code>owner == address(0)</code> or other similar checks as substitutes."
         },
         {
-          "title": "[ ] <code>F18</code> - Only use <code>private</code> to intentionally prevent child contracts from calling the function, prefer <code>internal</code> for flexibility."
+          "title": " <code>F18</code> - Only use <code>private</code> to intentionally prevent child contracts from calling the function, prefer <code>internal</code> for flexibility."
         },
         {
-          "title": "[ ] <code>F19</code> - Use <code>virtual</code> if there are legitimate (and safe) instances where a child contract may wish to override the function's behavior."
+          "title": " <code>F19</code> - Use <code>virtual</code> if there are legitimate (and safe) instances where a child contract may wish to override the function's behavior."
         }
       ]
     },
@@ -309,13 +309,13 @@
       "topic": "Modifiers",
       "items": [
         {
-          "title": "[ ] <code>M1</code> - Are no storage updates made (except in a reentrancy lock)?"
+          "title": " <code>M1</code> - Are no storage updates made (except in a reentrancy lock)?"
         },
         {
-          "title": "[ ] <code>M2</code> - Are external calls avoided?"
+          "title": " <code>M2</code> - Are external calls avoided?"
         },
         {
-          "title": "[ ] <code>M3</code> - Is the purpose of the modifier and other important information documented using natspec?"
+          "title": " <code>M3</code> - Is the purpose of the modifier and other important information documented using natspec?"
         }
       ]
     },
@@ -323,154 +323,154 @@
       "topic": "Code",
       "items": [
         {
-          "title": "[ ] <code>C1</code> - Using SafeMath or 0.8 checked math? (SWC-101)"
+          "title": " <code>C1</code> - Using SafeMath or 0.8 checked math? (SWC-101)"
         },
         {
-          "title": "[ ] <code>C2</code> - Are any storage slots read multiple times?"
+          "title": " <code>C2</code> - Are any storage slots read multiple times?"
         },
         {
-          "title": "[ ] <code>C3</code> - Are any unbounded loops/arrays used that can cause DoS? (SWC-128)"
+          "title": " <code>C3</code> - Are any unbounded loops/arrays used that can cause DoS? (SWC-128)"
         },
         {
-          "title": "[ ] <code>C4</code> - Use <code>block.timestamp</code> only for long intervals. (SWC-116)"
+          "title": " <code>C4</code> - Use <code>block.timestamp</code> only for long intervals. (SWC-116)"
         },
         {
-          "title": "[ ] <code>C5</code> - Don't use block.number for elapsed time. (SWC-116)"
+          "title": " <code>C5</code> - Don't use block.number for elapsed time. (SWC-116)"
         },
         {
-          "title": "[ ] <code>C7</code> - Avoid delegatecall wherever possible, especially to external (even if trusted) contracts. (SWC-112)"
+          "title": " <code>C7</code> - Avoid delegatecall wherever possible, especially to external (even if trusted) contracts. (SWC-112)"
         },
         {
-          "title": "[ ] <code>C8</code> - Do not update the length of an array while iterating over it."
+          "title": " <code>C8</code> - Do not update the length of an array while iterating over it."
         },
         {
-          "title": "[ ] <code>C9</code> - Don't use <code>blockhash()</code>, etc for randomness. (SWC-120)"
+          "title": " <code>C9</code> - Don't use <code>blockhash()</code>, etc for randomness. (SWC-120)"
         },
         {
-          "title": "[ ] <code>C10</code> - Are signatures protected against replay with a nonce and <code>block.chainid</code> (SWC-121)"
+          "title": " <code>C10</code> - Are signatures protected against replay with a nonce and <code>block.chainid</code> (SWC-121)"
         },
         {
-          "title": "[ ] <code>C11</code> - Ensure all signatures use EIP-712. (SWC-117 SWC-122)"
+          "title": " <code>C11</code> - Ensure all signatures use EIP-712. (SWC-117 SWC-122)"
         },
         {
-          "title": "[ ] <code>C12</code> - Output of <code>abi.encodePacked()</code> shouldn't be hashed if using &gt;2 dynamic types. Prefer using <code>abi.encode()</code> in general. (SWC-133)"
+          "title": " <code>C12</code> - Output of <code>abi.encodePacked()</code> shouldn't be hashed if using &gt;2 dynamic types. Prefer using <code>abi.encode()</code> in general. (SWC-133)"
         },
         {
-          "title": "[ ] <code>C13</code> - Careful with assembly, don't use any arbitrary data. (SWC-127)"
+          "title": " <code>C13</code> - Careful with assembly, don't use any arbitrary data. (SWC-127)"
         },
         {
-          "title": "[ ] <code>C14</code> - Don't assume a specific ETH balance. (SWC-132)"
+          "title": " <code>C14</code> - Don't assume a specific ETH balance. (SWC-132)"
         },
         {
-          "title": "[ ] <code>C15</code> - Avoid insufficient gas griefing. (SWC-126)"
+          "title": " <code>C15</code> - Avoid insufficient gas griefing. (SWC-126)"
         },
         {
-          "title": "[ ] <code>C16</code> - Private data isn't private. (SWC-136)"
+          "title": " <code>C16</code> - Private data isn't private. (SWC-136)"
         },
         {
-          "title": "[ ] <code>C17</code> - Updating a struct/array in memory won't modify it in storage."
+          "title": " <code>C17</code> - Updating a struct/array in memory won't modify it in storage."
         },
         {
-          "title": "[ ] <code>C18</code> - Never shadow state variables. (SWC-119)"
+          "title": " <code>C18</code> - Never shadow state variables. (SWC-119)"
         },
         {
-          "title": "[ ] <code>C19</code> - Do not mutate function parameters."
+          "title": " <code>C19</code> - Do not mutate function parameters."
         },
         {
-          "title": "[ ] <code>C20</code> - Is calculating a value on the fly cheaper than storing it?"
+          "title": " <code>C20</code> - Is calculating a value on the fly cheaper than storing it?"
         },
         {
-          "title": "[ ] <code>C21</code> - Are all state variables read from the correct contract (master vs. clone)?"
+          "title": " <code>C21</code> - Are all state variables read from the correct contract (master vs. clone)?"
         },
         {
-          "title": "[ ] <code>C22</code> - Are comparison operators used correctly (<code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>), especially to prevent off-by-one errors?"
+          "title": " <code>C22</code> - Are comparison operators used correctly (<code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>), especially to prevent off-by-one errors?"
         },
         {
-          "title": "[ ] <code>C23</code> - Are logical operators used correctly (<code>==</code>, <code>!=</code>, <code>&amp;&amp;</code>, <code>||</code>, <code>!</code>), especially to prevent off-by-one errors?"
+          "title": " <code>C23</code> - Are logical operators used correctly (<code>==</code>, <code>!=</code>, <code>&amp;&amp;</code>, <code>||</code>, <code>!</code>), especially to prevent off-by-one errors?"
         },
         {
-          "title": "[ ] <code>C24</code> - Always multiply before dividing, unless the multiplication could overflow."
+          "title": " <code>C24</code> - Always multiply before dividing, unless the multiplication could overflow."
         },
         {
-          "title": "[ ] <code>C25</code> - Are magic numbers replaced by a constant with an intuitive name?"
+          "title": " <code>C25</code> - Are magic numbers replaced by a constant with an intuitive name?"
         },
         {
-          "title": "[ ] <code>C26</code> - If the recipient of ETH had a fallback function that reverted, could it cause DoS? (SWC-113)"
+          "title": " <code>C26</code> - If the recipient of ETH had a fallback function that reverted, could it cause DoS? (SWC-113)"
         },
         {
-          "title": "[ ] <code>C27</code> - Use SafeERC20 or check return values safely."
+          "title": " <code>C27</code> - Use SafeERC20 or check return values safely."
         },
         {
-          "title": "[ ] <code>C28</code> - Don't use <code>msg.value</code> in a loop."
+          "title": " <code>C28</code> - Don't use <code>msg.value</code> in a loop."
         },
         {
-          "title": "[ ] <code>C29</code> - Don't use <code>msg.value</code> if recursive delegatecalls are possible (like if the contract inherits <code>Multicall</code>/<code>Batchable</code>)."
+          "title": " <code>C29</code> - Don't use <code>msg.value</code> if recursive delegatecalls are possible (like if the contract inherits <code>Multicall</code>/<code>Batchable</code>)."
         },
         {
-          "title": "[ ] <code>C30</code> - Don't assume <code>msg.sender</code> is always a relevant user."
+          "title": " <code>C30</code> - Don't assume <code>msg.sender</code> is always a relevant user."
         },
         {
-          "title": "[ ] <code>C31</code> - Don't use <code>assert()</code> unless for fuzzing or formal verification. (SWC-110)"
+          "title": " <code>C31</code> - Don't use <code>assert()</code> unless for fuzzing or formal verification. (SWC-110)"
         },
         {
-          "title": "[ ] <code>C32</code> - Don't use <code>tx.origin</code> for authorization. (SWC-115)"
+          "title": " <code>C32</code> - Don't use <code>tx.origin</code> for authorization. (SWC-115)"
         },
         {
-          "title": "[ ] <code>C33</code> - Don't use <code>address.transfer()</code> or <code>address.send()</code>. Use <code>.call.value(...)(\"\")</code> instead. (SWC-134)"
+          "title": " <code>C33</code> - Don't use <code>address.transfer()</code> or <code>address.send()</code>. Use <code>.call.value(...)(\"\")</code> instead. (SWC-134)"
         },
         {
-          "title": "[ ] <code>C34</code> - When using low-level calls, ensure the contract exists before calling."
+          "title": " <code>C34</code> - When using low-level calls, ensure the contract exists before calling."
         },
         {
-          "title": "[ ] <code>C35</code> - When calling a function with many parameters, use the named argument syntax."
+          "title": " <code>C35</code> - When calling a function with many parameters, use the named argument syntax."
         },
         {
-          "title": "[ ] <code>C36</code> - Do not use assembly for create2. Prefer the modern salted contract creation syntax."
+          "title": " <code>C36</code> - Do not use assembly for create2. Prefer the modern salted contract creation syntax."
         },
         {
-          "title": "[ ] <code>C37</code> - Do not use assembly to access chainid or contract code/size/hash. Prefer the modern Solidity syntax."
+          "title": " <code>C37</code> - Do not use assembly to access chainid or contract code/size/hash. Prefer the modern Solidity syntax."
         },
         {
-          "title": "[ ] <code>C38</code> - Use the <code>delete</code> keyword when setting a variable to a zero value (<code>0</code>, <code>false</code>, <code>\"\"</code>, etc)."
+          "title": " <code>C38</code> - Use the <code>delete</code> keyword when setting a variable to a zero value (<code>0</code>, <code>false</code>, <code>\"\"</code>, etc)."
         },
         {
-          "title": "[ ] <code>C39</code> - Comment the \"why\" as much as possible."
+          "title": " <code>C39</code> - Comment the \"why\" as much as possible."
         },
         {
-          "title": "[ ] <code>C40</code> - Comment the \"what\" if using obscure syntax or writing unconventional code."
+          "title": " <code>C40</code> - Comment the \"what\" if using obscure syntax or writing unconventional code."
         },
         {
-          "title": "[ ] <code>C41</code> - Comment explanations + example inputs/outputs next to complex and fixed point math."
+          "title": " <code>C41</code> - Comment explanations + example inputs/outputs next to complex and fixed point math."
         },
         {
-          "title": "[ ] <code>C42</code> - Comment explanations wherever optimizations are done, along with an estimate of much gas they save."
+          "title": " <code>C42</code> - Comment explanations wherever optimizations are done, along with an estimate of much gas they save."
         },
         {
-          "title": "[ ] <code>C43</code> - Comment explanations wherever certain optimizations are purposely avoided, along with an estimate of much gas they would/wouldn't save if implemented."
+          "title": " <code>C43</code> - Comment explanations wherever certain optimizations are purposely avoided, along with an estimate of much gas they would/wouldn't save if implemented."
         },
         {
-          "title": "[ ] <code>C44</code> - Use <code>unchecked</code> blocks where overflow/underflow is impossible, or where an overflow/underflow is unrealistic on human timescales (counters, etc). Comment explanations wherever <code>unchecked</code> is used, along with an estimate of how much gas it saves (if relevant)."
+          "title": " <code>C44</code> - Use <code>unchecked</code> blocks where overflow/underflow is impossible, or where an overflow/underflow is unrealistic on human timescales (counters, etc). Comment explanations wherever <code>unchecked</code> is used, along with an estimate of how much gas it saves (if relevant)."
         },
         {
-          "title": "[ ] <code>C45</code> - Do not depend on Solidity's arithmetic operator precedence rules. In addition to the use of parentheses to override default operator precedence, parentheses should also be used to emphasise it."
+          "title": " <code>C45</code> - Do not depend on Solidity's arithmetic operator precedence rules. In addition to the use of parentheses to override default operator precedence, parentheses should also be used to emphasise it."
         },
         {
-          "title": "[ ] <code>C46</code> - Expressions passed to logical/comparison operators (<code>&amp;&amp;</code>/<code>||</code>/<code>&gt;=</code>/<code>==</code>/etc) should not have side-effects."
+          "title": " <code>C46</code> - Expressions passed to logical/comparison operators (<code>&amp;&amp;</code>/<code>||</code>/<code>&gt;=</code>/<code>==</code>/etc) should not have side-effects."
         },
         {
-          "title": "[ ] <code>C47</code> - Wherever arithmetic operations are performed that could result in precision loss, ensure it benefits the right actors in the system, and document it with comments."
+          "title": " <code>C47</code> - Wherever arithmetic operations are performed that could result in precision loss, ensure it benefits the right actors in the system, and document it with comments."
         },
         {
-          "title": "[ ] <code>C48</code> - Document the reason why a reentrancy lock is necessary whenever it's used with an inline or <code>@dev</code> natspec comment."
+          "title": " <code>C48</code> - Document the reason why a reentrancy lock is necessary whenever it's used with an inline or <code>@dev</code> natspec comment."
         },
         {
-          "title": "[ ] <code>C49</code> - When fuzzing functions that only operate on specific numerical ranges use modulo to tighten the fuzzer's inputs (such as <code>x = x % 10000 + 1</code> to restrict from 1 to 10,000)."
+          "title": " <code>C49</code> - When fuzzing functions that only operate on specific numerical ranges use modulo to tighten the fuzzer's inputs (such as <code>x = x % 10000 + 1</code> to restrict from 1 to 10,000)."
         },
         {
-          "title": "[ ] <code>C50</code> - Use ternary expressions to simplify branching logic wherever possible."
+          "title": " <code>C50</code> - Use ternary expressions to simplify branching logic wherever possible."
         },
         {
-          "title": "[ ] <code>C51</code> - When operating on more than one address, ask yourself what happens if they're the same."
+          "title": " <code>C51</code> - When operating on more than one address, ask yourself what happens if they're the same."
         }
       ]
     },
@@ -478,28 +478,28 @@
       "topic": "External Calls",
       "items": [
         {
-          "title": "[ ] <code>X1</code> - Is an external contract call actually needed?"
+          "title": " <code>X1</code> - Is an external contract call actually needed?"
         },
         {
-          "title": "[ ] <code>X2</code> - If there is an error, could it cause DoS? Like <code>balanceOf()</code> reverting. (SWC-113)"
+          "title": " <code>X2</code> - If there is an error, could it cause DoS? Like <code>balanceOf()</code> reverting. (SWC-113)"
         },
         {
-          "title": "[ ] <code>X3</code> - Would it be harmful if the call reentered into the current function?"
+          "title": " <code>X3</code> - Would it be harmful if the call reentered into the current function?"
         },
         {
-          "title": "[ ] <code>X4</code> - Would it be harmful if the call reentered into another function?"
+          "title": " <code>X4</code> - Would it be harmful if the call reentered into another function?"
         },
         {
-          "title": "[ ] <code>X5</code> - Is the result checked and errors dealt with? (SWC-104)"
+          "title": " <code>X5</code> - Is the result checked and errors dealt with? (SWC-104)"
         },
         {
-          "title": "[ ] <code>X6</code> - What if it uses all the gas provided?"
+          "title": " <code>X6</code> - What if it uses all the gas provided?"
         },
         {
-          "title": "[ ] <code>X7</code> - Could it cause an out-of-gas in the calling contract if it returns a massive amount of data?"
+          "title": " <code>X7</code> - Could it cause an out-of-gas in the calling contract if it returns a massive amount of data?"
         },
         {
-          "title": "[ ] <code>X8</code> - If you are calling a particular function, do not assume that <code>success</code> implies that the function exists (phantom functions)."
+          "title": " <code>X8</code> - If you are calling a particular function, do not assume that <code>success</code> implies that the function exists (phantom functions)."
         }
       ]
     },
@@ -507,16 +507,16 @@
       "topic": "Static Calls",
       "items": [
         {
-          "title": "[ ] <code>S1</code> - Is an external contract call actually needed?"
+          "title": " <code>S1</code> - Is an external contract call actually needed?"
         },
         {
-          "title": "[ ] <code>S2</code> - Is it actually marked as view in the interface?"
+          "title": " <code>S2</code> - Is it actually marked as view in the interface?"
         },
         {
-          "title": "[ ] <code>S3</code> - If there is an error, could it cause DoS? Like <code>balanceOf()</code> reverting. (SWC-113)"
+          "title": " <code>S3</code> - If there is an error, could it cause DoS? Like <code>balanceOf()</code> reverting. (SWC-113)"
         },
         {
-          "title": "[ ] <code>S4</code> - If the call entered an infinite loop, could it cause DoS?"
+          "title": " <code>S4</code> - If the call entered an infinite loop, could it cause DoS?"
         }
       ]
     },
@@ -524,19 +524,19 @@
       "topic": "Events",
       "items": [
         {
-          "title": "[ ] <code>E1</code> - Should any fields be indexed?"
+          "title": " <code>E1</code> - Should any fields be indexed?"
         },
         {
-          "title": "[ ] <code>E2</code> - Is the creator of the relevant action included as an indexed field?"
+          "title": " <code>E2</code> - Is the creator of the relevant action included as an indexed field?"
         },
         {
-          "title": "[ ] <code>E3</code> - Do not index dynamic types like strings or bytes."
+          "title": " <code>E3</code> - Do not index dynamic types like strings or bytes."
         },
         {
-          "title": "[ ] <code>E4</code> - Is when the event emitted and all fields documented using natspec?"
+          "title": " <code>E4</code> - Is when the event emitted and all fields documented using natspec?"
         },
         {
-          "title": "[ ] <code>E5</code> - Are all users/ids that are operated on in functions that emit the event stored as indexed fields?"
+          "title": " <code>E5</code> - Are all users/ids that are operated on in functions that emit the event stored as indexed fields?"
         }
       ]
     },
@@ -544,40 +544,40 @@
       "topic": "Contract",
       "items": [
         {
-          "title": "[ ] <code>T1</code> - Use an SPDX license identifier."
+          "title": " <code>T1</code> - Use an SPDX license identifier."
         },
         {
-          "title": "[ ] <code>T2</code> - Are events emitted for every storage mutating function?"
+          "title": " <code>T2</code> - Are events emitted for every storage mutating function?"
         },
         {
-          "title": "[ ] <code>T3</code> - Check for correct inheritance, keep it simple and linear. (SWC-125)"
+          "title": " <code>T3</code> - Check for correct inheritance, keep it simple and linear. (SWC-125)"
         },
         {
-          "title": "[ ] <code>T4</code> - Use a <code>receive() external payable</code> function if the contract should accept transferred ETH."
+          "title": " <code>T4</code> - Use a <code>receive() external payable</code> function if the contract should accept transferred ETH."
         },
         {
-          "title": "[ ] <code>T5</code> - Write down and test invariants about relationships between stored state."
+          "title": " <code>T5</code> - Write down and test invariants about relationships between stored state."
         },
         {
-          "title": "[ ] <code>T6</code> - Is the purpose of the contract and how it interacts with others documented using natspec?"
+          "title": " <code>T6</code> - Is the purpose of the contract and how it interacts with others documented using natspec?"
         },
         {
-          "title": "[ ] <code>T7</code> - The contract should be marked <code>abstract</code> if another contract must inherit it to unlock its full functionality."
+          "title": " <code>T7</code> - The contract should be marked <code>abstract</code> if another contract must inherit it to unlock its full functionality."
         },
         {
-          "title": "[ ] <code>T8</code> - Emit an appropriate event for any non-immutable variable set in the constructor that emits an event when mutated elsewhere."
+          "title": " <code>T8</code> - Emit an appropriate event for any non-immutable variable set in the constructor that emits an event when mutated elsewhere."
         },
         {
-          "title": "[ ] <code>T9</code> - Avoid over-inheritance as it masks complexity and encourages over-abstraction."
+          "title": " <code>T9</code> - Avoid over-inheritance as it masks complexity and encourages over-abstraction."
         },
         {
-          "title": "[ ] <code>T10</code> - Always use the named import syntax to explicitly declare which contracts are being imported from another file."
+          "title": " <code>T10</code> - Always use the named import syntax to explicitly declare which contracts are being imported from another file."
         },
         {
-          "title": "[ ] <code>T11</code> - Group imports by their folder/package. Separate groups with an empty line. Groups of external dependencies should come first, then mock/testing contracts (if relevant), and finally local imports."
+          "title": " <code>T11</code> - Group imports by their folder/package. Separate groups with an empty line. Groups of external dependencies should come first, then mock/testing contracts (if relevant), and finally local imports."
         },
         {
-          "title": "[ ] <code>T12</code> - Summarize the purpose and functionality of the contract with a <code>@notice</code> natspec comment. Document how the contract interacts with other contracts inside/outside the project in a <code>@dev</code> natspec comment."
+          "title": " <code>T12</code> - Summarize the purpose and functionality of the contract with a <code>@notice</code> natspec comment. Document how the contract interacts with other contracts inside/outside the project in a <code>@dev</code> natspec comment."
         }
       ]
     },
@@ -585,19 +585,19 @@
       "topic": "Project",
       "items": [
         {
-          "title": "[ ] <code>P1</code> - Use the right license (you must use GPL if you depend on GPL code, etc)."
+          "title": " <code>P1</code> - Use the right license (you must use GPL if you depend on GPL code, etc)."
         },
         {
-          "title": "[ ] <code>P2</code> - Unit test everything."
+          "title": " <code>P2</code> - Unit test everything."
         },
         {
-          "title": "[ ] <code>P3</code> - Fuzz test as much as possible."
+          "title": " <code>P3</code> - Fuzz test as much as possible."
         },
         {
-          "title": "[ ] <code>P4</code> - Use symbolic execution where possible."
+          "title": " <code>P4</code> - Use symbolic execution where possible."
         },
         {
-          "title": "[ ] <code>P5</code> - Run Slither/Solhint and review all findings."
+          "title": " <code>P5</code> - Run Slither/Solhint and review all findings."
         }
       ]
     },
@@ -605,37 +605,37 @@
       "topic": "DeFi",
       "items": [
         {
-          "title": "[ ] <code>D1</code> - Check your assumptions about what other contracts do and return."
+          "title": " <code>D1</code> - Check your assumptions about what other contracts do and return."
         },
         {
-          "title": "[ ] <code>D2</code> - Don't mix internal accounting with actual balances."
+          "title": " <code>D2</code> - Don't mix internal accounting with actual balances."
         },
         {
-          "title": "[ ] <code>D3</code> - Don't use spot price from an AMM as an oracle."
+          "title": " <code>D3</code> - Don't use spot price from an AMM as an oracle."
         },
         {
-          "title": "[ ] <code>D4</code> - Do not trade on AMMs without receiving a price target off-chain or via an oracle."
+          "title": " <code>D4</code> - Do not trade on AMMs without receiving a price target off-chain or via an oracle."
         },
         {
-          "title": "[ ] <code>D5</code> - Use sanity checks to prevent oracle/price manipulation."
+          "title": " <code>D5</code> - Use sanity checks to prevent oracle/price manipulation."
         },
         {
-          "title": "[ ] <code>D6</code> - Watch out for rebasing tokens. If they are unsupported, ensure that property is documented."
+          "title": " <code>D6</code> - Watch out for rebasing tokens. If they are unsupported, ensure that property is documented."
         },
         {
-          "title": "[ ] <code>D7</code> - Watch out for ERC-777 tokens. Even a token you trust could preform reentrancy if it's an ERC-777."
+          "title": " <code>D7</code> - Watch out for ERC-777 tokens. Even a token you trust could preform reentrancy if it's an ERC-777."
         },
         {
-          "title": "[ ] <code>D8</code> - Watch out for fee-on-transfer tokens. If they are unsupported, ensure that property is documented."
+          "title": " <code>D8</code> - Watch out for fee-on-transfer tokens. If they are unsupported, ensure that property is documented."
         },
         {
-          "title": "[ ] <code>D9</code> - Watch out for tokens that use too many or too few decimals. Ensure the max and min supported values are documented."
+          "title": " <code>D9</code> - Watch out for tokens that use too many or too few decimals. Ensure the max and min supported values are documented."
         },
         {
-          "title": "[ ] <code>D10</code> - Be careful of relying on the raw token balance of a contract to determine earnings. Contracts which provide a way to recover assets sent directly to them can mess up share price functions that rely on the raw Ether or token balances of an address."
+          "title": " <code>D10</code> - Be careful of relying on the raw token balance of a contract to determine earnings. Contracts which provide a way to recover assets sent directly to them can mess up share price functions that rely on the raw Ether or token balances of an address."
         },
         {
-          "title": "[ ] <code>D11</code> - If your contract is a target for token approvals, do not make arbitrary calls from user input."
+          "title": " <code>D11</code> - If your contract is a target for token approvals, do not make arbitrary calls from user input."
         }
       ]
     },
@@ -765,6 +765,5 @@
         }
       ]
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }

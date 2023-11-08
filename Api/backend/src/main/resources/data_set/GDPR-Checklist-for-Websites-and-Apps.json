@@ -12,40 +12,40 @@
       "topic": "Checklist",
       "items": [
         {
-          "title": "[ ] The application has a <a href=\"#privacy-statement\">privacy statement</a>."
+          "title": " The application has a <a href=\"#privacy-statement\">privacy statement</a>."
         },
         {
-          "title": "[ ] The application does not collect or process more data or for a longer duration than is strictly necessary for the intended purpose as communicated to the user."
+          "title": " The application does not collect or process more data or for a longer duration than is strictly necessary for the intended purpose as communicated to the user."
         },
         {
-          "title": "[ ] The end users has explicitly agreed with the <a href=\"#processing\">processing</a> of <a href=\"#personal-data\">personal data</a>. (Pre-ticked boxes are not permitted.)"
+          "title": " The end users has explicitly agreed with the <a href=\"#processing\">processing</a> of <a href=\"#personal-data\">personal data</a>. (Pre-ticked boxes are not permitted.)"
         },
         {
-          "title": "[ ] The application provides contact information on the <a href=\"#controller\">controller</a> that is easy to find."
+          "title": " The application provides contact information on the <a href=\"#controller\">controller</a> that is easy to find."
         },
         {
-          "title": "[ ] The application has a separate checkbox on the registration form for each particular processing activity."
+          "title": " The application has a separate checkbox on the registration form for each particular processing activity."
         },
         {
-          "title": "[ ] It is clear to the end user on what he/she gives permission for. This is explained transparently, concisely and understandably. Visual support is used where relevant. Especially when information is intended for a child."
+          "title": " It is clear to the end user on what he/she gives permission for. This is explained transparently, concisely and understandably. Visual support is used where relevant. Especially when information is intended for a child."
         },
         {
-          "title": "[ ] If applicable, it is stated that a child may only give permission if he/she is 16 years of age or older. Otherwise, the permission of a parent is needed. It should be reasonably demonstrated that a parent has given permission."
+          "title": " If applicable, it is stated that a child may only give permission if he/she is 16 years of age or older. Otherwise, the permission of a parent is needed. It should be reasonably demonstrated that a parent has given permission."
         },
         {
-          "title": "[ ] If the application includes decision-making, it should be clear how that decision is taken. <a href=\"#decision-making\">(Example)</a>"
+          "title": " If the application includes decision-making, it should be clear how that decision is taken. <a href=\"#decision-making\">(Example)</a>"
         },
         {
-          "title": "[ ] If the application includes programmatic advertisements it must be clearly authorised by the user."
+          "title": " If the application includes programmatic advertisements it must be clearly authorised by the user."
         },
         {
-          "title": "[ ] The application allows end users to view and adjust data that is actively shared (by the user)."
+          "title": " The application allows end users to view and adjust data that is actively shared (by the user)."
         },
         {
-          "title": "[ ] An appropriate assessment has been made when data is <a href=\"#pseudonymisation\">pseudonymized</a> and this process is tuned. <a href=\"#pseudonymised-data\">(Example)</a>"
+          "title": " An appropriate assessment has been made when data is <a href=\"#pseudonymisation\">pseudonymized</a> and this process is tuned. <a href=\"#pseudonymised-data\">(Example)</a>"
         },
         {
-          "title": "[ ] Appropriate technical and organizational measures are taken to ensure a level of security appropriate to the risk, including inter alia as appropriate:"
+          "title": " Appropriate technical and organizational measures are taken to ensure a level of security appropriate to the risk, including inter alia as appropriate:"
         },
         {
           "title": "the pseudonymisation and encryption of personal data."
@@ -96,6 +96,5 @@
       "topic": "Definitions & Examples",
       "items": []
     }
-  ],
-  "sourceUrl": "https://example.com"
+  ]
 }
