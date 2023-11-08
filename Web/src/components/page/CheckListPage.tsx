@@ -1,11 +1,12 @@
 'use client'
 
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import styles from "./page.module.css"
 import CollapseBox from "@/components/container/CollapseBox"
 import { CheckList } from '@/context/CheckListProvider'
 import { Session } from "@/context/SessionProvider"
 import useLocalStorage from "@/util/useLocalStorage"
+import CheckItem from "../button/CheckItem"
 
 export default function CheckListPage() {
 
@@ -19,6 +20,16 @@ export default function CheckListPage() {
     const progress_LS_Key = `progress_${userId}_${checkListId}`
 
     const [progress, setProgress] = useLocalStorage(progress_LS_Key, JSON.stringify(Array(itemNum).fill(false)))
+
+    function onProgressUpdate(position:number, state:boolean) {
+        setProgress(progress.map((b: any, i: number) => {
+            if (i == position)
+                return state
+            else
+                return b
+        }))
+        localStorage.setItem(progress_LS_Key, JSON.stringify(progress))
+    }
 
     return (
         <>
@@ -48,7 +59,12 @@ export default function CheckListPage() {
                     group.items
                         .map((item, index) => {
                             offset = offset + 1
-                            return CheckItem(index, item, offset)
+                            return <CheckItem 
+                            key={index} 
+                            item={item} 
+                            offset={offset} 
+                            state={progress.at(offset)}
+                            onProgressUpdate={onProgressUpdate}/>
                         })
                     :
                     <ul key={index}>
@@ -58,41 +74,6 @@ export default function CheckListPage() {
                     </ul>}
             </>
         </CollapseBox>
-
-        function CheckItem(index: number, item: Item, offset: number) {
-
-            const [checked, setChecked] = useState(progress.at(offset))
-
-            function HandleClickEvent() {
-                setChecked(!checked)
-                setProgress(progress.map((b: any, i: number) => {
-                    if (i == offset)
-                        return !checked
-                    else
-                        return b
-                }))
-                localStorage.setItem(progress_LS_Key, JSON.stringify(progress))
-            }
-
-            return <div key={index} className="my-2 flex">
-                <button onClick={() => (HandleClickEvent())}
-                    className="mr-4">
-                    {checked ? '✅' : '⬜'}
-                </button>
-                <div className="flex-1">
-                    <h3 className="my-2 text-lg"><div dangerouslySetInnerHTML={{ __html: item.title }} /></h3>
-                    <p>{item.description}</p>
-                    <div className="flex">
-                        <span className="mr-4 rounded-2xl bg-orange-700 px-2 text-xs">{item.priority}</span>
-                        <ul className="flex flex-1">
-                            {item.tags?.map((tag, index) => (
-                                <li key={index} className="mr-2 rounded-2xl bg-blue-400 px-2 text-xs">{tag}</li>
-                            ))}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        }
     }
 }
 

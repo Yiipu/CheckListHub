@@ -6,14 +6,14 @@ export default function useLocalStorage(key: string, initialValue: string) {
     const [storedValue, setStoredValue] = useState(() => {
         if (isBrowser) {
             const item = localStorage.getItem(key)
-            return item ? JSON.parse(item) : initialValue
+            return item ? JSON.parse(item) : JSON.parse(initialValue)
         }
-        return initialValue
+        return JSON.parse(initialValue)
     })
 
     useEffect(() => {
-        localStorage.setItem(key, JSON.stringify(storedValue));
-    }, [key, storedValue]);
+        localStorage.setItem(key, JSON.stringify(storedValue))
+    }, [key, storedValue])
 
     return [storedValue, setStoredValue]
 }
