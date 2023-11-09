@@ -2,21 +2,20 @@
 
 import { useContext } from "react"
 import CollapseBox from "@/components/container/CollapseBox"
-import { CheckList } from '@/context/StateCheckListProvider'
+import { StateCheckList } from '@/context/StateCheckListProvider'
 import { Session } from "@/context/SessionProvider"
 import useLocalStorage from "@/util/useLocalStorage"
 import CheckItem from "../button/CheckItem"
-import ShareBtn from "../button/ShareBtn"
-import MarkBtn from "../button/MarkBtn"
+import ProgressBar from "../container/ProgressBar"
+import useClient from "@/util/useClient"
 
-export default function CheckListPage() {
-
-    const data = useContext(CheckList)
+export default function TeamCheckListPage() {
+    const checklist = useContext(StateCheckList).checklist
     var offset = -1
 
-    const itemNum = countCheckItems(data)
+    const itemNum = countCheckItems(checklist)
     const userId = useContext(Session)?.id
-    const checkListId = data.id
+    const checkListId = checklist.id
 
     const progress_LS_Key = `progress_${userId}_${checkListId}`
 
@@ -33,20 +32,21 @@ export default function CheckListPage() {
 
     return (
         <>
+            {useClient()&&<ProgressBar progress={progress} />}
             <div className="grid md:grid-cols-3 gap-1 m-2">
-                <ul className="grid grid-cols-4 divide-x md:col-span-2 border-2 border-sky-500">
-                    {data.topicList?.map((item, index) => (
-                        <li key={index}><a href={`#section-${item}`} className="block w-full h-[2rem] text-center leading-[2rem]"># {item}</a></li>
+                <ul className="grid grid-cols-4 divide-x divide-y md:col-span-2 border-2 border-sky-500">
+                    {checklist.topicList?.map((item, index) => (
+                        <li key={index}><a href={`#section-${item}`} className="block w-full h-fit text-center align-middle"># {item}</a></li>
                     ))}
                 </ul>
                 <div className="grid grid-cols-2 gap-1">
-                    <ShareBtn>👌 Share</ShareBtn>
-                    <MarkBtn added_prompt={"📚 remove Mark"} not_added_prompt={"📚 Mark"} />
+                    <></>
+                    <></>
                 </div>
             </div>
             <div>
                 <ul>
-                    {data.itemGroups.map((group, index) => (
+                    {checklist.itemGroups.map((group, index) => (
                         renderGroups(group, index, 0)
                     ))}
                 </ul>
@@ -56,7 +56,7 @@ export default function CheckListPage() {
 
     function renderGroups(group: ItemGroup | TopicGroup, index: number, depth: number) {
 
-        return <CollapseBox key={index} title={<h2 className={`text-xl`}>{group.topic}</h2>}>
+        return <CollapseBox key={index} title={<h2 className={`text-xl`} id={depth == 0 ? `section-${group.topic}` : ''}>{group.topic}</h2>}>
             <>
                 {isItemGroup(group) ?
                     group.items
@@ -107,5 +107,5 @@ function countCheckItems(checklist: CheckList): number {
     它表示函数 isItemGroup 将用于确定传入的参数 group 是否为 ItemGroup 类型。
     如果谓词返回 true，则 TypeScript 将在调用该函数后将参数 group 视为 ItemGroup 类型。*/
 function isItemGroup(group: TopicGroup | ItemGroup): group is ItemGroup {
-    return (group as ItemGroup).items[0].title !== undefined;
+    return (group as ItemGroup).items[0]?.title !== undefined;
 }

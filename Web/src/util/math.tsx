@@ -3,18 +3,15 @@
  * @param progress 一个布尔数组
  * @returns 布尔数组中 true 的比例，用分数表示
  */
-function calculateTrueRatio(progress: Array<boolean>):string {
+function calculateTrueRatio(progress: Array<boolean>):number {
     // 使用reduce函数计算为true的元素个数
     const trueCount = progress.reduce((count, value) => count + (value ? 1 : 0), 0)
     const total = progress.length
 
-    // 使用最大公约数函数来简化分数
-    const divisor = gcd(trueCount, total)
-    const numerator = trueCount / divisor
-    const denominator = total / divisor
+    const ratio = (trueCount/total)*100
 
     // 返回分数表示的结果
-    return `${numerator}/${denominator}`
+    return keepTwoDecimalWithReg(ratio)
 }
 
 /**
@@ -26,5 +23,9 @@ function calculateTrueRatio(progress: Array<boolean>):string {
 function gcd(a: number, b: number): number {
     return b === 0 ? a : gcd(b, a % b)
 }
+
+function keepTwoDecimalWithReg(num: number){
+    return Number(num.toString().match(/^\d+(?:\.\d{0,2})?/));
+  };
 
 export {calculateTrueRatio}

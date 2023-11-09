@@ -10,8 +10,3 @@ interface GithubSession{
     idp: string | null
     token: string | null
 }
-
-// team
-interface Team{
-    id: string
-}

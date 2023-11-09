@@ -40,11 +40,12 @@ interface ChecklistCollection {
 // 清单的状态
 interface ChecklistState {
     marked: boolean,
+    teamid: string,
     progress: Array<boolean>,
 }
 
 // 有状态的清单
-interface StateChecklist{
-    checklist:CheckList,
-    state:ChecklistState,
+interface StateChecklist {
+    checklist: CheckList,
+    state: ChecklistState,
 }

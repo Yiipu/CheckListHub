@@ -4,7 +4,7 @@ import { MockList } from '@/types/samples';
 
 export const StateCheckList = createContext<StateChecklist>({
     checklist: MockList,
-    state: { marked: false, progress: [] }
+    state: { marked: false, progress: [], teamid: '0' }
 })
 
 export default function CheckListProvider({

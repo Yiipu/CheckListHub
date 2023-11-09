@@ -1,5 +1,4 @@
 import '@/styles/globals.css'
-import { headers } from 'next/headers'
 import { UIProvider } from '@/context/UIProvider'
 import SessionProvider from '@/context/SessionProvider'
 import SearchBtn from '@/components/button/SearchBtn'

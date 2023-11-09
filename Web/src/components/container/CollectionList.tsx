@@ -41,7 +41,6 @@ export async function CollectionListBody({
           'uid': `${session?.id}`,
         }
       })
-    console.debug(`${process.env.BE_URL}collection/${param}`)
     const res = await fetch(
       `${process.env.BE_URL}collection/${param}`,
       {
@@ -65,7 +64,6 @@ export async function CollectionListBody({
     id: '',
     count: res.data.length
   }
-  console.log(collection)
 
   return (
     !error ? <ol className="overflow-auto h-full">

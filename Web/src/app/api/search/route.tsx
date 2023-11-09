@@ -15,7 +15,5 @@ export async function GET(request: NextRequest) {
     throw new Error('Failed to fetch data')
   }
 
-  console.log(`${process.env.BE_URL}search/${query}`)
-
   return res
 }

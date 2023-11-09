@@ -18,7 +18,6 @@ export async function PUT(request: NextRequest) {
     return res
 }
 export async function DELETE(request: NextRequest) {
-    console.log('del')
     const res = await fetch(
         `${process.env.BE_URL}/checklist/favor/delete/${request.headers.get('cid')}`,
         {

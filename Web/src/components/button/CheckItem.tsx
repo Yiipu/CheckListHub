@@ -1,3 +1,4 @@
+import useClient from "@/util/useClient"
 import { useEffect, useState } from "react"
 
 export default function CheckItem({
@@ -13,11 +14,7 @@ export default function CheckItem({
 }) {
 
     const [checked, setChecked] = useState(state)
-    const [isClient, setIsClient] = useState(false)
-
-    useEffect(() => {
-        setIsClient(true)
-    }, [])
+    const isClient = useClient()
 
     function HandleClickEvent() {
         setChecked(!checked)

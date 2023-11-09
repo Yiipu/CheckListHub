@@ -15,7 +15,7 @@ export default function ShareBtn({
     const checklist = useContext(StateCheckList).checklist
 
     const [isLoading, setIsLoading] = useState(false)
-    const [team, setTeam] = useState<Team>()
+    const [team, setTeam] = useState<string>(useContext(StateCheckList).state.teamid)
 
     async function getData() {
         const res = await fetch(
@@ -41,12 +41,12 @@ export default function ShareBtn({
                     <p className="mb-[1rem]">Cooperate with team on this checklist</p>
                     {!team ? <Button className="w-full" onClick={async () => {
                         setIsLoading(true)
-                        const res: {'data':Team} = await getData()
+                        const res: { 'data': string } = await getData()
                         setIsLoading(false)
                         setTeam(res.data)
-                    }}>{isLoading ? 'Loading...' : 'Generate Link'}</Button>
+                    }}>{isLoading ? 'Working...' : 'Generate Link'}</Button>
                         :
-                        <Snippet>{team.id}</Snippet>}
+                        <Snippet variant="bordered" className="text-white">{`${process.env.NEXT_PUBLIC_HOME_URL}team/${team}`}</Snippet>}
                 </div>
             </PopoverContent>
         </Popover>

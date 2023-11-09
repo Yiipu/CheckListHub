@@ -1,5 +1,5 @@
-import TeamCheckListPage from "@/components/page/TeamCheckListPage"
+import CheckListPage from "@/components/page/CheckListPage"
 
 export default function Page() {
-    return <TeamCheckListPage />
+    return <CheckListPage />
 }

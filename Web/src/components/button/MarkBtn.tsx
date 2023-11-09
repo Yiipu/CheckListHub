@@ -53,7 +53,7 @@ export default function MarkBtn({
                 } else {
                     setError(true)
                 }
-            }}>{isLoading? 'Loading...' : isAdded ? added_prompt : not_added_prompt}</Button >
+            }}>{isLoading? 'Working...' : isAdded ? added_prompt : not_added_prompt}</Button >
             :
             <Button isDisabled>{not_added_prompt}</Button>
     )
