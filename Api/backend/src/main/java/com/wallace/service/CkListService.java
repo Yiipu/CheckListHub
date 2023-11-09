@@ -19,4 +19,6 @@ public interface CkListService extends IService<CkList> {
     Result searchByHeader(String header);
 
     boolean CidExisted(Integer cid);
+
+    Result selectBycid(Integer cid);
 }

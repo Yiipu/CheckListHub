@@ -10,13 +10,17 @@ package com.wallace.controller;
 
 import com.wallace.pojo.CkList;
 import com.wallace.pojo.CollectionToChecklist;
+import com.wallace.pojo.Progress;
 import com.wallace.service.CkListService;
 import com.wallace.service.CollectionToChecklistService;
 import com.wallace.service.ProgressService;
 import com.wallace.service.UserService;
 import com.wallace.utils.Result;
+import com.wallace.utils.StringToArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("checklist")
@@ -39,10 +43,14 @@ public class CkListController {
      * @return com.wallace.utils.Result
      **/
     @GetMapping("/{cid}")
-    public Result findCkByCid(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid, @RequestHeader(name = "tid", required = false) Integer tid) {
+    public Result findCkByCid(@PathVariable(name = "cid") Integer cid, @RequestHeader(name = "uid", required = false) Integer uid, @RequestHeader(name = "tid", required = false) Integer tid) {
         if (tid == null)
             tid = 0;
         if (ckListService.CidExisted(cid)) {
+            if(uid==null){
+                Result result = ckListService.selectBycid(cid);
+                return Result.ok(result);
+            }
 
             // 更新最近浏览表
             Result r1 = collectionToChecklistService.updateRecent(cid, uid);
@@ -112,7 +120,8 @@ public class CkListController {
      * @return com.wallace.utils.Result
      **/
     @PostMapping("/progress/{cid}")
-    public Result updateProgress(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid, @RequestHeader(name = "tid", required = false) Integer tid, @RequestBody String progress) {
+    public Result updateProgress(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid, @RequestHeader(name = "tid", required = false) Integer tid, @RequestBody List<Boolean> p) {
+        String progress = StringToArray.booleanListToString(p);
         if (tid == null)
             tid = 0;
         if (ckListService.CidExisted(cid)) {

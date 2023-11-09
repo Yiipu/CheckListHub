@@ -11,6 +11,7 @@ import com.wallace.mapper.CkListMapper;
 import com.wallace.utils.JsonTypeHandler;
 import com.wallace.utils.Result;
 import com.wallace.utils.ResultCodeEnum;
+import com.wallace.utils.StringToArray;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -48,7 +49,7 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
         CkList ck = ckListMapper.selectById(cid);
         // 查找progress
         Progress progress = progressMapper.selectProgress(tid, uid, cid);
-        CkListView ckListView = new CkListView(ck, progress.getMark());
+        CkListView ckListView = new CkListView(ck, StringToArray.stringToBooleanList(progress.getMark()));
 
         return Result.ok(ckListView);
     }
@@ -150,6 +151,15 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
     public boolean CidExisted(Integer cid) {
         CkList ckList = ckListMapper.selectById(cid);
         return ckList != null;
+    }
+
+    @Override
+    public Result selectBycid(Integer cid) {
+        CkList ck = ckListMapper.selectById(cid);
+
+        CkListView ckListView = new CkListView(ck, StringToArray.stringToBooleanList("[]"));
+
+        return Result.ok(ckListView);
     }
 }
 

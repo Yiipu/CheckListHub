@@ -5,6 +5,7 @@ import com.wallace.pojo.Progress;
 import com.wallace.service.ProgressService;
 import com.wallace.mapper.ProgressMapper;
 import com.wallace.utils.Result;
+import com.wallace.utils.StringToArray;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +30,7 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
         if (mark != null)
             progressMapper.updateMark(tid, uid, cid, mark);
         else {
-            int i = progressMapper.CreateMark(tid, uid, cid, mark);
+            int i = progressMapper.CreateMark(tid, uid, cid, "[]");
         }
 
         return Result.ok(returnEmpty);
@@ -75,7 +76,7 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
     public Result findTeamExist(Integer uid, Integer cid) {
         Progress progress = progressMapper.selectTidByUidAndCid(uid,cid);
         if(progress==null)
-            return  Result.ok(returnEmpty);
+            return  Result.ok(-1);
         return Result.ok(progress.getTid());
     }
 

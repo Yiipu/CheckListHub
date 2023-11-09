@@ -10,6 +10,7 @@ import com.wallace.utils.JsonTypeHandler;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * ClassName: CkListView
@@ -33,9 +34,9 @@ public class CkListView{
     private Integer isDeleted;
 
     // 新增的成员变量 progress
-    private String progress;
+    private List<Boolean> progress;
 
-    public CkListView(CkList ck, String progress){
+    public CkListView(CkList ck, List<Boolean> progress){
         this.setUid(ck.getUid());
         this.setCid(ck.getCid());
         this.setHeader(ck.getHeader());
