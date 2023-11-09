@@ -24,7 +24,7 @@ export default function ShareBtn({
                 method: 'GET',
                 headers: {
                     'uid': `${session?.id}`,
-                    'checklist-id': `${checklist.id}`
+                    'cid': `${checklist.id}`
                 }
             })
         if (!res.ok) {

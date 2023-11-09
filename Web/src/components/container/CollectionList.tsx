@@ -27,6 +27,15 @@ export async function CollectionListBody({
       </div>)
   }
   async function getData() {
+    const verify = await fetch(
+      `${process.env.BE_URL}user`,
+      {
+        next: { revalidate: 0 }, // 不缓存。到后期稳定后应该调整
+        method: 'GET',
+        headers: {
+          'uid': `${session?.id}`,
+        }
+      })
     const res = await fetch(
       `${process.env.BE_URL}collection/${param}`,
       {
@@ -37,7 +46,7 @@ export async function CollectionListBody({
         }
       })
 
-    if (!res.ok) {
+    if (!res.ok || !verify.ok) {
       throw new Error('Failed to fetch data')
     }
 

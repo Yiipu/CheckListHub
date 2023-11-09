@@ -6,5 +6,5 @@ export async function GET(request: NextRequest, slug: number) {
   await sleep(200)
   const query = slug.toString()
   MockList.id = query || ''
-  return Response.json(MockList)
+  return Response.json({'data':MockList})
 }
