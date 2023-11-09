@@ -48,7 +48,7 @@ public class CollectionController {
     }
     /*
      * @Author yajuxi
-     * @Description
+     * @Description 查询收藏集合
      * @Param
      * @return
      **/
@@ -61,7 +61,7 @@ public class CollectionController {
 
     /*
      * @Author yajuxi
-     * @Description
+     * @Description 查询最近浏览集合
      * @Param [uid]
      * @return com.wallace.utils.Result
      **/
@@ -72,8 +72,8 @@ public class CollectionController {
     }
     /*
      * @Author yajuxi
-     * @Description 
-     * @Param 
+     * @Description 查询团队合作集合
+     * @Param
      * @return 
      **/
 

@@ -24,7 +24,7 @@ public class SearchController {
     private CkListService ckListService;
     /*
      * @Author yajuxi
-     * @Description 根据cid查找checklist
+     * @Description 根据header查找checklist返回集合
      * @Param [cid]
      * @return com.wallace.utils.Result
      **/

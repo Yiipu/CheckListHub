@@ -26,7 +26,7 @@ public class UserController {
      * @return com.wallace.utils.Result
      **/
     @GetMapping("")
-    public Result findCkByCid(@RequestHeader("uid") Integer uid){
+    public Result userInit(@RequestHeader("uid") Integer uid){
         Result result = userService.userInit(uid);
         return result;
     }

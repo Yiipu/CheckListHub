@@ -133,9 +133,11 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
     @Override
     public Result searchByHeader(String header) {
         List<CkList> ckLists = ckListMapper.selectByHeader(header);
-        Map<Integer, String> result = new HashMap<>();
+        List<Map<Integer, String>> result = new ArrayList<>();
         for (CkList ckList : ckLists) {
-            result.put(ckList.getCid(), ckList.getHeader());
+            Map<Integer, String> hashMap = new HashMap<>();
+            hashMap.put(ckList.getCid(), ckList.getHeader());
+            result.add(hashMap);
         }
         if (!result.isEmpty()) {
             return Result.ok(result);

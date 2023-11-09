@@ -23,6 +23,12 @@ public class TeamController {
     @Autowired
     private CollectionToChecklistService collectionToChecklistService;
 
+    /*
+     * @Author yajuxi
+     * @Description 创建团队(团队初始化)
+     * @Param [uid, cid]
+     * @return com.wallace.utils.Result
+     **/
     @GetMapping("")
     public Result CreateTeam(@RequestHeader("uid") Integer uid, @RequestHeader("cid") Integer cid) {
         // 创建合作progreess
@@ -32,6 +38,12 @@ public class TeamController {
         return result;
     }
 
+    /*
+     * @Author yajuxi
+     * @Description 加入团队
+     * @Param [uid, tid]
+     * @return com.wallace.utils.Result
+     **/
     @GetMapping("/{tid}")
     public Result AddTeam(@RequestHeader("uid") Integer uid, @PathVariable(name = "tid") Integer tid) {
         // 查询cid
@@ -42,6 +54,12 @@ public class TeamController {
         collectionToChecklistService.putTeam(cid, uid);
         return Result.ok(cid);
     }
+    /*
+     * @Author yajuxi
+     * @Description 退出团队
+     * @Param
+     * @return
+     **/
 
     @GetMapping("/delete/{tid}")
     public Result QuitTeam(@RequestHeader("uid") Integer uid, @RequestHeader("cid") Integer cid, @PathVariable(name = "tid") Integer tid) {
