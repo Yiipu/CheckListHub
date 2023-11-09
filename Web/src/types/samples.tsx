@@ -59,39 +59,39 @@ export const MockStarList: ChecklistCollection = {
     ckLists: [
         {
             header: "Checklist 1",
-            id: '1'
+            cid: '1'
         },
         {
             header: "Checklist 2",
-            id: '2'
+            cid: '2'
         },
         {
             header: "Checklist 3",
-            id: '3'
+            cid: '3'
         },
         {
             header: "Checklist 4",
-            id: '4'
+            cid: '4'
         },
         {
             header: "Checklist 5",
-            id: '5'
+            cid: '5'
         },
         {
             header: "Checklist 6",
-            id: '6'
+            cid: '6'
         },
         {
             header: "Checklist 7",
-            id: '7'
+            cid: '7'
         },
         {
             header: "Checklist 8",
-            id: '8'
+            cid: '8'
         },
         {
             header: "Checklist 9",
-            id: '9'
+            cid: '9'
         },
     ]
 };
