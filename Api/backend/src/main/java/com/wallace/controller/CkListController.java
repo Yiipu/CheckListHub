@@ -39,7 +39,9 @@ public class CkListController {
      * @return com.wallace.utils.Result
      **/
     @GetMapping("/{cid}")
-    public Result findCkByCid(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid, @RequestHeader("tid") Integer tid) {
+    public Result findCkByCid(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid, @RequestHeader(name = "tid", required = false) Integer tid) {
+        if (tid == null)
+            tid = 0;
         if (ckListService.CidExisted(cid)) {
 
             // 更新最近浏览表
