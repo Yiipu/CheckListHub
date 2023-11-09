@@ -26,7 +26,7 @@ public class StringToArray {
     // 将字符串转换为布尔列表
     public static List<Boolean> stringToBooleanList(String booleanListString) {
         List<Boolean> emptyBooleanList = Collections.emptyList();
-        if(Objects.equals(booleanListString, "[]")){
+        if (Objects.equals(booleanListString, "[]") || booleanListString == null) {
             return emptyBooleanList;
         }
         // 去除字符串中的方括号并按逗号分割
