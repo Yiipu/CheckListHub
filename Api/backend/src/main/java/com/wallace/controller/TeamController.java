@@ -24,9 +24,31 @@ public class TeamController {
     private CollectionToChecklistService collectionToChecklistService;
 
     @GetMapping("")
-    public Result CreateTeam(@RequestHeader("uid") Integer uid,@RequestHeader("cid") Integer cid){
+    public Result CreateTeam(@RequestHeader("uid") Integer uid, @RequestHeader("cid") Integer cid) {
+        // 创建合作progreess
+        Result result = progressService.CreateTeamProgress(uid, cid);
+        // 加入teamcollection
+        collectionToChecklistService.putTeam(cid, uid);
+        return result;
+    }
+
+    @GetMapping("/{tid}")
+    public Result AddTeam(@RequestHeader("uid") Integer uid, @PathVariable(name = "tid") Integer tid) {
+        // 查询cid
+        Integer cid = progressService.findCidByTid(tid);
         // 加入合作progreess
-        Result result = progressService.CreateTeamProgress(uid,cid);
+        Result result = progressService.addTeamProgress(tid, uid, cid);
+        // 加入teamcollection
+        collectionToChecklistService.putTeam(cid, uid);
+        return Result.ok(cid);
+    }
+
+    @GetMapping("/delete/{tid}")
+    public Result QuitTeam(@RequestHeader("uid") Integer uid, @RequestHeader("cid") Integer cid, @PathVariable(name = "tid") Integer tid) {
+        // 退出合作progreess
+        Result result = progressService.QuitTeamProgress(tid, uid, cid);
+        // 清除teamcollection
+        collectionToChecklistService.deleteTeam(cid, uid);
         return result;
     }
 }

@@ -16,13 +16,19 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
         implements ProgressService {
+
     String[] returnEmpty = new String[0];
     @Resource
     private ProgressMapper progressMapper;
 
     @Override
     public Result updateprogress(int tid, Integer uid, Integer cid, String mark) {
-        int i = progressMapper.updateMark(tid, uid, cid, mark);
+        if (mark != null)
+            progressMapper.updateMark(tid, uid, cid, mark);
+        else {
+            int i = progressMapper.CreateMark(tid, uid, cid, mark);
+        }
+
         return Result.ok(returnEmpty);
     }
 
@@ -33,8 +39,30 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
         progress.setCid(cid);
         int i = progressMapper.CreateTeamProgress(progress);
         int j = progressMapper.updateTid(progress.getId(), progress.getId());
+        return Result.ok(progress.getId());
+    }
+
+    @Override
+    public Result QuitTeamProgress(Integer tid, Integer uid, Integer cid) {
+        int i = progressMapper.deleteByTidAndUidAndCid(tid, uid, cid);
         return Result.ok(returnEmpty);
     }
+
+    @Override
+    public Integer findCidByTid(Integer tid) {
+        Progress progress = progressMapper.selectCidByTid(tid);
+        return progress.getCid();
+    }
+
+    @Override
+    public Result addTeamProgress(Integer tid, Integer uid, Integer cid) {
+
+        int i = progressMapper.updateMark(tid, uid, cid, null);
+        return Result.ok(returnEmpty);
+
+    }
+
+
 }
 
 

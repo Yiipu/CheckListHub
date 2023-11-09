@@ -24,6 +24,8 @@ public interface CollectionToChecklistMapper extends MyBaseMapper<CollectionToCh
     List<Map<Integer, String>> selectCklistBycolidFromCollectionToChecklistOrderByTime(Integer colid);
 
     int deleteByCidAndUid(Integer colid, Integer cid);
+
+    CollectionToChecklist selectByColidAndCid(Integer colid, Integer cid);
 }
 
 

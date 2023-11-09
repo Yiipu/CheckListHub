@@ -18,6 +18,13 @@ public interface ProgressMapper extends MyBaseMapper<Progress> {
     int CreateTeamProgress(Progress progress);
 
     int updateTid(Integer tid, Integer id);
+
+    int deleteByTidAndUidAndCid(Integer tid, Integer uid, Integer cid);
+
+
+    int CreateMark(int tid, Integer uid, Integer cid, String mark);
+
+    Progress selectCidByTid(Integer tid);
 }
 
 

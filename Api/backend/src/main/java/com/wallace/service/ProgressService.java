@@ -14,4 +14,11 @@ public interface ProgressService extends IService<Progress> {
     Result updateprogress(int tid, Integer uid, Integer cid, String mark);
 
     Result CreateTeamProgress(Integer uid, Integer cid);
+
+    Result QuitTeamProgress(Integer tid, Integer uid, Integer cid);
+
+
+    Integer findCidByTid(Integer tid);
+
+    Result addTeamProgress(Integer tid, Integer uid, Integer cid);
 }

@@ -58,4 +58,10 @@
         order BY view_time DESC
         limit 10;
     </select>
+    <select id="selectByColidAndCid" resultType="com.wallace.pojo.CollectionToChecklist">
+        select *
+        from checklist_db.collection_to_checklist
+        where colid = #{colid}
+          and cid = #{cid};
+    </select>
 </mapper>

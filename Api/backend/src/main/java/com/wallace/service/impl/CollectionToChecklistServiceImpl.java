@@ -2,13 +2,11 @@ package com.wallace.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wallace.mapper.ListcollectionMapper;
-import com.wallace.pojo.CkList;
 import com.wallace.pojo.CollectionToChecklist;
 import com.wallace.pojo.Listcollection;
 import com.wallace.service.CollectionToChecklistService;
 import com.wallace.mapper.CollectionToChecklistMapper;
 import com.wallace.utils.Result;
-import com.wallace.utils.ResultCodeEnum;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -36,8 +34,8 @@ public class CollectionToChecklistServiceImpl extends ServiceImpl<CollectionToCh
 
     @Override
     public Result insertByInit() {
-        List<CkList> cklists = new ArrayList<>();
-        cklists = listcollectionMapper.selectByUid(1);
+//        List<CkList> cklists = new ArrayList<>();
+//        cklists = listcollectionMapper.selectByUid(1);
 
         List<CollectionToChecklist> collectionToChecklists = new ArrayList<>();
         List<Integer> bestIds = asList(6, 7, 11, 21, 68, 115, 191, 225, 232);
@@ -56,7 +54,7 @@ public class CollectionToChecklistServiceImpl extends ServiceImpl<CollectionToCh
 
         int i = collectionToChecklistMapper.insertBatchSomeColumn(collectionToChecklists);
         if (i > 0) return Result.ok(returnEmpty);
-        return Result.build(returnEmpty, 404,"null");
+        return Result.build(returnEmpty, 404, "null");
 
     }
 
@@ -82,8 +80,34 @@ public class CollectionToChecklistServiceImpl extends ServiceImpl<CollectionToCh
     @Override
     public Result deleteFavor(Integer cid, Integer uid) {
         Listcollection listcollection = listcollectionMapper.selectByTypeAndUid("favor", uid);
-        int i = collectionToChecklistMapper.deleteByCidAndUid(listcollection.getColid(),cid);
+        int i = collectionToChecklistMapper.deleteByCidAndUid(listcollection.getColid(), cid);
         return Result.ok(returnEmpty);
+    }
+
+    @Override
+    public Result putTeam(Integer cid, Integer uid) {
+        Listcollection listcollection = listcollectionMapper.selectByTypeAndUid("team", uid);
+        Date currentDate = new Date();
+        Timestamp timestamp = new Timestamp(currentDate.getTime());
+        int i = collectionToChecklistMapper.updateTime(listcollection.getColid(), cid, timestamp);
+        return Result.ok(returnEmpty);
+    }
+
+    @Override
+    public Result deleteTeam(Integer cid, Integer uid) {
+        Listcollection listcollection = listcollectionMapper.selectByTypeAndUid("team", uid);
+        int i = collectionToChecklistMapper.deleteByCidAndUid(listcollection.getColid(), cid);
+        return Result.ok(returnEmpty);
+    }
+
+    @Override
+    public Result searchFavor(Integer cid, Integer uid) {
+        Listcollection listcollection = listcollectionMapper.selectByTypeAndUid("favor", uid);
+        Date currentDate = new Date();
+        Timestamp timestamp = new Timestamp(currentDate.getTime());
+        CollectionToChecklist collectionToChecklist = collectionToChecklistMapper.selectByColidAndCid(listcollection.getColid(), cid);
+        boolean b = collectionToChecklist != null;
+        return Result.ok(b);
     }
 }
 

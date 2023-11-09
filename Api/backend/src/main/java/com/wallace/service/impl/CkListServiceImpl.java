@@ -44,10 +44,10 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
      * @return com.wallace.utils.Result
      **/
     @Override
-    public Result findByCid(Integer cid, Integer uid) {
+    public Result findByCid(Integer tid,Integer cid, Integer uid) {
         CkList ck = ckListMapper.selectById(cid);
         // 查找progress
-        Progress progress = progressMapper.selectProgress(0, uid, cid);
+        Progress progress = progressMapper.selectProgress(tid, uid, cid);
         CkListView ckListView = new CkListView(ck, progress.getMark());
 
         return Result.ok(ckListView);

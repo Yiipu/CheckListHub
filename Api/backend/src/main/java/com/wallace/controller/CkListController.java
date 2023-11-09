@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("checklist")
 @CrossOrigin
 public class CkListController {
+    String[] returnEmpty = new String[0];
     @Autowired
     private CkListService ckListService;
 
@@ -38,19 +39,18 @@ public class CkListController {
      * @return com.wallace.utils.Result
      **/
     @GetMapping("/{cid}")
-    public Result findCkByCid(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid) {
-        if(ckListService.CidExisted(cid)){
+    public Result findCkByCid(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid, @RequestHeader("tid") Integer tid) {
+        if (ckListService.CidExisted(cid)) {
 
             // 更新最近浏览表
             Result r1 = collectionToChecklistService.updateRecent(cid, uid);
-            // 更新progress表
-            Result r2 = progressService.updateprogress(0, uid, cid, null);
+            // 创建progress表
+            Result r2 = progressService.updateprogress(tid, uid, cid, null);
 
-            Result result = ckListService.findByCid(cid, uid);
+            Result result = ckListService.findByCid(tid, cid, uid);
 
             return result;
-        }
-        else return Result.build(null,404,"请求的checklist不存在");
+        } else return Result.build(returnEmpty, 404, "请求的checklist不存在");
     }
 
 
@@ -66,15 +66,21 @@ public class CkListController {
         return result;
     }
 
-    @PutMapping("/favor/{cid}")
+    @GetMapping("/favor/put/{cid}")
     public Result putFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid) {
-        Result result = collectionToChecklistService.putFavor(cid,uid);
+        Result result = collectionToChecklistService.putFavor(cid, uid);
         return result;
     }
 
-    @DeleteMapping("/favor/{cid}")
+    @GetMapping("/favor/delete/{cid}")
     public Result deleteFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid) {
-        Result result = collectionToChecklistService.deleteFavor(cid,uid);
+        Result result = collectionToChecklistService.deleteFavor(cid, uid);
+        return result;
+    }
+
+    @GetMapping("/favor/{cid}")
+    public Result searchFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid) {
+        Result result = collectionToChecklistService.searchFavor(cid, uid);
         return result;
     }
 
