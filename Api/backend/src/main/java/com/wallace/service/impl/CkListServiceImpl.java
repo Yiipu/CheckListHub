@@ -30,6 +30,7 @@ import java.util.jar.JarFile;
 @Service
 public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
         implements CkListService {
+    String[] returnEmpty = new String[0];
     @Resource
     private CkListMapper ckListMapper;
 
@@ -60,6 +61,7 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
      **/
     @Override
     public Result insertByInit() {
+
 //        String fileName = "data_set/address-change-checklist.json";
 //        JSONObject json = JsonTypeHandler.fileToJson(fileName);
 //        String header = json.getString("header");
@@ -119,13 +121,13 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
                 }
                 int i = ckListMapper.insertBatchSomeColumn(ckLists);
                 if (i < 1)
-                    return Result.build(null, ResultCodeEnum.FAILED);
+                    return Result.build(returnEmpty, 404,null);
             }
         } catch (IOException e) {
             System.out.println(directoryPath + "文件读取异常" + e);
-            return Result.build(null, ResultCodeEnum.FAILED);
+            return Result.build(returnEmpty, ResultCodeEnum.FAILED);
         }
-        return Result.ok(null);
+        return Result.ok(returnEmpty);
     }
 
     @Override
@@ -138,13 +140,13 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
         if (!result.isEmpty()) {
             return Result.ok(result);
         }
-        return Result.build(null, 200, "搜索结果为空");
+        return Result.build(returnEmpty, 200, "搜索结果为空");
     }
 
     @Override
     public boolean CidExisted(Integer cid) {
         CkList ckList = ckListMapper.selectById(cid);
-        return ckList!=null;
+        return ckList != null;
     }
 }
 

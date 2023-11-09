@@ -25,6 +25,7 @@ import java.util.*;
 @Service
 public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper, Listcollection>
         implements ListcollectionService {
+    String[] returnEmpty = new String[0];
 
     @Resource
     private ListcollectionMapper listcollectionMapper;
@@ -40,7 +41,7 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklist(colid);
         if (!result.isEmpty())
             return Result.ok(result);
-        return Result.build(null, 404,"不存在best");
+        return Result.build(returnEmpty, 404,"不存在best");
     }
 
     @Override
@@ -51,7 +52,7 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklist(colid);
         if (!result.isEmpty())
             return Result.ok(result);
-        return Result.ok(null);
+        return Result.ok(returnEmpty);
     }
 
     @Override
@@ -62,7 +63,7 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklistOrderByTime(colid);
         if (!result.isEmpty())
             return Result.ok(result);
-        return Result.ok(null);
+        return Result.ok(returnEmpty);
     }
 
     @Override
@@ -73,7 +74,7 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklistOrderByTime(colid);
         if (!result.isEmpty())
             return Result.ok(result);
-        return Result.ok(null);
+        return Result.ok(returnEmpty);
     }
 
 }

@@ -16,14 +16,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
         implements ProgressService {
-
+    String[] returnEmpty = new String[0];
     @Resource
     private ProgressMapper progressMapper;
 
     @Override
     public Result updateprogress(int tid, Integer uid, Integer cid, String mark) {
         int i = progressMapper.updateMark(tid, uid, cid, mark);
-        return Result.ok(i);
+        return Result.ok(returnEmpty);
     }
 
     @Override
@@ -33,7 +33,7 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
         progress.setCid(cid);
         int i = progressMapper.CreateTeamProgress(progress);
         int j = progressMapper.updateTid(progress.getId(), progress.getId());
-        return Result.ok(progress.getId());
+        return Result.ok(returnEmpty);
     }
 }
 

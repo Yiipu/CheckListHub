@@ -27,6 +27,7 @@ import static java.util.Arrays.asList;
 @Service
 public class CollectionToChecklistServiceImpl extends ServiceImpl<CollectionToChecklistMapper, CollectionToChecklist>
         implements CollectionToChecklistService {
+    String[] returnEmpty = new String[0];
 
     @Resource
     private ListcollectionMapper listcollectionMapper;
@@ -54,8 +55,8 @@ public class CollectionToChecklistServiceImpl extends ServiceImpl<CollectionToCh
         }
 
         int i = collectionToChecklistMapper.insertBatchSomeColumn(collectionToChecklists);
-        if (i > 0) return Result.ok(null);
-        return Result.build(404, ResultCodeEnum.FAILED);
+        if (i > 0) return Result.ok(returnEmpty);
+        return Result.build(returnEmpty, 404,"null");
 
     }
 
@@ -66,7 +67,7 @@ public class CollectionToChecklistServiceImpl extends ServiceImpl<CollectionToCh
         Date currentDate = new Date();
         Timestamp timestamp = new Timestamp(currentDate.getTime());
         int i = collectionToChecklistMapper.updateTime(listcollection.getColid(), cid, timestamp);
-        return Result.ok(i);
+        return Result.ok(returnEmpty);
     }
 
     @Override
@@ -75,14 +76,14 @@ public class CollectionToChecklistServiceImpl extends ServiceImpl<CollectionToCh
         Date currentDate = new Date();
         Timestamp timestamp = new Timestamp(currentDate.getTime());
         int i = collectionToChecklistMapper.updateTime(listcollection.getColid(), cid, timestamp);
-        return Result.ok(i);
+        return Result.ok(returnEmpty);
     }
 
     @Override
     public Result deleteFavor(Integer cid, Integer uid) {
         Listcollection listcollection = listcollectionMapper.selectByTypeAndUid("favor", uid);
         int i = collectionToChecklistMapper.deleteByCidAndUid(listcollection.getColid(),cid);
-        return Result.ok(i);
+        return Result.ok(returnEmpty);
     }
 }
 

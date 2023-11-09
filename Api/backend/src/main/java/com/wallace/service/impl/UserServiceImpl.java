@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         implements UserService {
+    String[] returnEmpty = new String[0];
     @Resource
     private UserMapper userMapper;
 
@@ -56,9 +57,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             listcollection2.setIsDeleted(0);
             listcollection2.setType("favor");
             listcollectionmapper.insert(listcollection2);
-            return Result.ok(null);
+            return Result.ok(returnEmpty);
         } else {
-            return Result.build(null, 404, "用户已存在");
+            return Result.build(returnEmpty, 404, "用户已存在");
         }
 
 
