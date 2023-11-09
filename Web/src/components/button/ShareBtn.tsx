@@ -23,7 +23,7 @@ export default function ShareBtn({
             {
                 method: 'GET',
                 headers: {
-                    'x-ms-client-principal-id': `${session?.id}`,
+                    'uid': `${session?.id}`,
                     'checklist-id': `${checklist.id}`
                 }
             })

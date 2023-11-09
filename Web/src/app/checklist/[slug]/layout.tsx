@@ -7,7 +7,7 @@ async function getData(slug: number) {
         {
             next: { revalidate: 0 },
             headers: {
-                'x-ms-client-principal-id': `${getSession()?.id}`
+                'uid': `${getSession()?.id}`
             }
         })
 

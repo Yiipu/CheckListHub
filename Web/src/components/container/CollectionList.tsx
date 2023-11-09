@@ -33,7 +33,7 @@ export async function CollectionListBody({
         next: { revalidate: 0 }, // 不缓存。到后期稳定后应该调整
         method: 'GET',
         headers: {
-          'x-ms-client-principal-id': `${session?.id}`,
+          'uid': `${session?.id}`,
         }
       })
 

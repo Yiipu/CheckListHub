@@ -29,7 +29,7 @@ export default function MarkBtn({
                                 next: { revalidate: 0 },
                                 method: 'GET',
                                 headers: {
-                                    'x-ms-client-principal-id': `${session?.id}`,
+                                    'uid': `${session?.id}`,
                                     'checklist-id': `${checklist.id}`
                                 }
                             })
