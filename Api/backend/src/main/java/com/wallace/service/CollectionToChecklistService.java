@@ -10,6 +10,8 @@ import com.wallace.utils.Result;
 * @createDate 2023-11-07 23:52:24
 */
 public interface CollectionToChecklistService extends IService<CollectionToChecklist> {
+    Result insertByInit();
 
     Result updateRecent(Integer cid, Integer uid);
+
 }

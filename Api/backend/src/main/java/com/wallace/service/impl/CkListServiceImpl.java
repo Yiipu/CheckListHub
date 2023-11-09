@@ -127,6 +127,19 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
         }
         return Result.ok(null);
     }
+
+    @Override
+    public Result searchByHeader(String header) {
+        List<CkList> ckLists = ckListMapper.selectByHeader(header);
+        Map<Integer, String> result =new HashMap<>();
+        for(CkList ckList :ckLists){
+            result.put(ckList.getCid(),ckList.getHeader());
+        }
+        if(!result.isEmpty()){
+            return Result.ok(result);
+        }
+        return  Result.build(null,200,"搜索结果为空");
+    }
 }
 
 

@@ -40,7 +40,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             listcollection.setUid(uid);
             listcollection.setVersion(1);
             listcollection.setIsDeleted(0);
-
             listcollection.setType("recent");
             listcollectionmapper.insert(listcollection);
 
@@ -58,10 +57,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             listcollection2.setType("favor");
             listcollectionmapper.insert(listcollection2);
             return Result.ok("用户初始化成功");
-        }else{
-            return Result.build(null,404,"用户已存在");
+        } else {
+            return Result.build(null, 404, "用户已存在");
         }
-
 
 
     }

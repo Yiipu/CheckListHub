@@ -11,6 +11,7 @@ import com.wallace.utils.Result;
 import com.wallace.utils.ResultCodeEnum;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
+import static java.util.Arrays.asList;
 
 import java.sql.Timestamp;
 import java.util.*;
@@ -29,32 +30,6 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
 
     @Resource
     private CollectionToChecklistMapper collectionToChecklistMapper;
-
-    @Override
-    public Result insertByInit() {
-        List<CkList> cklists = new ArrayList<>();
-        cklists = listcollectionMapper.selectByUid(1);
-
-        System.out.println("cklists = " + cklists);
-        List<CollectionToChecklist> collectionToChecklists = new ArrayList<>();
-
-        for (CkList cklist : cklists) {
-            CollectionToChecklist collectionToChecklist = new CollectionToChecklist();
-            collectionToChecklist.setCid(cklist.getCid());
-            collectionToChecklist.setColid(1);
-            collectionToChecklist.setIsDeleted(0);
-            collectionToChecklist.setVersion(1);
-            Date currentDate = new Date();
-            Timestamp timestamp = new Timestamp(currentDate.getTime());
-            collectionToChecklist.setViewTime(timestamp);
-            collectionToChecklists.add(collectionToChecklist);
-        }
-
-        int i = collectionToChecklistMapper.insertBatchSomeColumn(collectionToChecklists);
-        if (i > 0) return Result.ok(null);
-        return Result.build(404, ResultCodeEnum.FAILED);
-
-    }
 
     @Override
     public Result findBest() {
@@ -80,14 +55,26 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
 
     @Override
     public Result findRecent(Integer uid) {
-        Listcollection best = listcollectionMapper.selectByTypeAndUid("recent",uid);
-        Integer colid = best.getColid();
+        Listcollection recent = listcollectionMapper.selectByTypeAndUid("recent",uid);
+        Integer colid = recent.getColid();
         Map<Integer, String> result
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklistOrderByTime(colid);
         if (!result.isEmpty())
             return Result.ok(result);
         return Result.ok("最近浏览为空!");
     }
+
+    @Override
+    public Result findTeam(Integer uid) {
+        Listcollection team = listcollectionMapper.selectByTypeAndUid("team",uid);
+        Integer colid = team.getColid();
+        Map<Integer, String> result
+                = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklistOrderByTime(colid);
+        if (!result.isEmpty())
+            return Result.ok(result);
+        return Result.ok("团队列表为空!");
+    }
+
 }
 
 

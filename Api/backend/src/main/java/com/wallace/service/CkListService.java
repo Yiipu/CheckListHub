@@ -16,4 +16,5 @@ public interface CkListService extends IService<CkList> {
 
     Result insertByInit();
 
+    Result searchByHeader(String header);
 }
