@@ -11,6 +11,7 @@ import com.wallace.utils.Result;
 import com.wallace.utils.ResultCodeEnum;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
+
 import static java.util.Arrays.asList;
 
 import java.sql.Timestamp;
@@ -35,7 +36,7 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
     public Result findBest() {
         Listcollection best = listcollectionMapper.selectByType("best");
         Integer colid = best.getColid();
-        Map<Integer, String> result
+        List<Map<Integer, String>> result
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklist(colid);
         if (!result.isEmpty())
             return Result.ok(result);
@@ -44,9 +45,9 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
 
     @Override
     public Result findFavor(Integer uid) {
-        Listcollection best = listcollectionMapper.selectByTypeAndUid("favor",uid);
+        Listcollection best = listcollectionMapper.selectByTypeAndUid("favor", uid);
         Integer colid = best.getColid();
-        Map<Integer, String> result
+        List<Map<Integer, String>> result
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklist(colid);
         if (!result.isEmpty())
             return Result.ok(result);
@@ -55,9 +56,9 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
 
     @Override
     public Result findRecent(Integer uid) {
-        Listcollection recent = listcollectionMapper.selectByTypeAndUid("recent",uid);
+        Listcollection recent = listcollectionMapper.selectByTypeAndUid("recent", uid);
         Integer colid = recent.getColid();
-        Map<Integer, String> result
+        List<Map<Integer, String>> result
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklistOrderByTime(colid);
         if (!result.isEmpty())
             return Result.ok(result);
@@ -66,9 +67,9 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
 
     @Override
     public Result findTeam(Integer uid) {
-        Listcollection team = listcollectionMapper.selectByTypeAndUid("team",uid);
+        Listcollection team = listcollectionMapper.selectByTypeAndUid("team", uid);
         Integer colid = team.getColid();
-        Map<Integer, String> result
+        List<Map<Integer, String>> result
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklistOrderByTime(colid);
         if (!result.isEmpty())
             return Result.ok(result);

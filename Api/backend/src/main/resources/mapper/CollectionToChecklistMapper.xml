@@ -5,23 +5,23 @@
 <mapper namespace="com.wallace.mapper.CollectionToChecklistMapper">
 
     <resultMap id="BaseResultMap" type="com.wallace.pojo.CollectionToChecklist">
-            <id property="id" column="id" jdbcType="INTEGER"/>
-            <result property="colid" column="colid" jdbcType="INTEGER"/>
-            <result property="cid" column="cid" jdbcType="INTEGER"/>
-            <result property="viewTime" column="view_time" jdbcType="TIMESTAMP"/>
-            <result property="version" column="version" jdbcType="INTEGER"/>
-            <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
-<!--            <association property="ckList" javaType="CkList">-->
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="colid" column="colid" jdbcType="INTEGER"/>
+        <result property="cid" column="cid" jdbcType="INTEGER"/>
+        <result property="viewTime" column="view_time" jdbcType="TIMESTAMP"/>
+        <result property="version" column="version" jdbcType="INTEGER"/>
+        <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
+        <!--            <association property="ckList" javaType="CkList">-->
 
-<!--                &lt;!&ndash; 配置CkList类的属性和字段名之间的对应关系 &ndash;&gt;-->
-<!--                <id property="cid" column="cid" jdbcType="INTEGER"/>-->
-<!--                <result property="uid" column="uid" jdbcType="INTEGER"/>-->
-<!--                <result property="header" column="header" jdbcType="VARCHAR"/>-->
-<!--                <result property="checklist" column="checklist" jdbcType="OTHER" javaType="com.alibaba.fastjson.JSON" typeHandler="com.wallace.utils.JsonTypeHandler"/>-->
-<!--                <result property="version" column="version" jdbcType="INTEGER"/>-->
-<!--                <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>-->
+        <!--                &lt;!&ndash; 配置CkList类的属性和字段名之间的对应关系 &ndash;&gt;-->
+        <!--                <id property="cid" column="cid" jdbcType="INTEGER"/>-->
+        <!--                <result property="uid" column="uid" jdbcType="INTEGER"/>-->
+        <!--                <result property="header" column="header" jdbcType="VARCHAR"/>-->
+        <!--                <result property="checklist" column="checklist" jdbcType="OTHER" javaType="com.alibaba.fastjson.JSON" typeHandler="com.wallace.utils.JsonTypeHandler"/>-->
+        <!--                <result property="version" column="version" jdbcType="INTEGER"/>-->
+        <!--                <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>-->
 
-<!--            </association>-->
+        <!--            </association>-->
     </resultMap>
 
     <sql id="Base_Column_List">
@@ -31,10 +31,15 @@
     <insert id="updateTime">
         INSERT INTO checklist_db.collection_to_checklist (cid, colid, view_time)
         VALUES (#{cid}, #{colid}, #{viewTime})
-        ON DUPLICATE KEY UPDATE
-            view_time = VALUES(view_time);
+        ON DUPLICATE KEY UPDATE view_time = VALUES(view_time);
     </insert>
-    <select id="selectCklistBycolidFromCollectionToChecklist" resultType="Map">
+    <delete id="deleteByCidAndUid">
+        DELETE
+        FROM checklist_db.collection_to_checklist
+        WHERE colid = #{colid}
+          AND cid = #{cid};
+    </delete>
+    <select id="selectCklistBycolidFromCollectionToChecklist" resultType="HashMap">
         select c1.cid, header
         from checklist_db.collection_to_checklist c1
                  left join checklist_db.ck_list c2

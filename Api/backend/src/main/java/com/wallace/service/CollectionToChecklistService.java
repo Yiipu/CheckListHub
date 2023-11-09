@@ -14,4 +14,7 @@ public interface CollectionToChecklistService extends IService<CollectionToCheck
 
     Result updateRecent(Integer cid, Integer uid);
 
+    Result putFavor(Integer cid, Integer uid);
+
+    Result deleteFavor(Integer cid, Integer uid);
 }

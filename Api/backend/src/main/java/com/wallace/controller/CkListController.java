@@ -42,9 +42,9 @@ public class CkListController {
         // 更新最近浏览表
         Result r1 = collectionToChecklistService.updateRecent(cid, uid);
         // 更新progress表
-        Result r2 = progressService.updateprogress(0,uid,cid,null);
+        Result r2 = progressService.updateprogress(0, uid, cid, null);
 
-        Result result = ckListService.findByCid(cid,uid);
+        Result result = ckListService.findByCid(cid, uid);
 
         return result;
     }
@@ -59,6 +59,18 @@ public class CkListController {
     @GetMapping("/init")
     public Result insertByInit() {
         Result result = ckListService.insertByInit();
+        return result;
+    }
+
+    @PutMapping("/favor/{cid}")
+    public Result putFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("x-ms-client-principal-id") Integer uid) {
+        Result result = collectionToChecklistService.putFavor(cid,uid);
+        return result;
+    }
+
+    @DeleteMapping("/favor/{cid}")
+    public Result deleteFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("x-ms-client-principal-id") Integer uid) {
+        Result result = collectionToChecklistService.deleteFavor(cid,uid);
         return result;
     }
 

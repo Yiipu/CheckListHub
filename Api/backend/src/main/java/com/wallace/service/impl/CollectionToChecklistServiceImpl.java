@@ -39,7 +39,7 @@ public class CollectionToChecklistServiceImpl extends ServiceImpl<CollectionToCh
         cklists = listcollectionMapper.selectByUid(1);
 
         List<CollectionToChecklist> collectionToChecklists = new ArrayList<>();
-        List<Integer> bestIds = asList(1, 2, 6, 16, 63, 110, 186, 220, 227);
+        List<Integer> bestIds = asList(6, 7, 11, 21, 68, 115, 191, 225, 232);
 
         for (Integer bestId : bestIds) {
             CollectionToChecklist collectionToChecklist = new CollectionToChecklist();
@@ -66,6 +66,22 @@ public class CollectionToChecklistServiceImpl extends ServiceImpl<CollectionToCh
         Date currentDate = new Date();
         Timestamp timestamp = new Timestamp(currentDate.getTime());
         int i = collectionToChecklistMapper.updateTime(listcollection.getColid(), cid, timestamp);
+        return Result.ok(i);
+    }
+
+    @Override
+    public Result putFavor(Integer cid, Integer uid) {
+        Listcollection listcollection = listcollectionMapper.selectByTypeAndUid("favor", uid);
+        Date currentDate = new Date();
+        Timestamp timestamp = new Timestamp(currentDate.getTime());
+        int i = collectionToChecklistMapper.updateTime(listcollection.getColid(), cid, timestamp);
+        return Result.ok(i);
+    }
+
+    @Override
+    public Result deleteFavor(Integer cid, Integer uid) {
+        Listcollection listcollection = listcollectionMapper.selectByTypeAndUid("favor", uid);
+        int i = collectionToChecklistMapper.deleteByCidAndUid(listcollection.getColid(),cid);
         return Result.ok(i);
     }
 }
