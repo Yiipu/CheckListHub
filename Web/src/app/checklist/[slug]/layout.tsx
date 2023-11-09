@@ -1,9 +1,15 @@
 import CheckListProvider from '@/context/CheckListProvider'
 import styles from "./page.module.css"
+import getSession from '@/util/getSession'
 
 async function getData(slug: number) {
-    const res = await fetch(`${process.env.FE_URL}checklist?id=${slug}`,
-        { cache: 'no-store' })
+    const res = await fetch(`${process.env.BE_URL}checklist/${slug}`,
+        {
+            next: { revalidate: 0 },
+            headers: {
+                'x-ms-client-principal-id': `${getSession()?.id}`
+            }
+        })
 
     if (!res.ok) {
         throw new Error('Failed to fetch data')

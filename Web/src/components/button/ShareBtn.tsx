@@ -19,17 +19,17 @@ export default function ShareBtn({
 
     async function getData() {
         console.log('res')
+        console.log(`${process.env.NEXT_PUBLIC_FE_URL}share`)
         const res = await fetch(
             `${process.env.FE_URL}share`,
             {
-                next: { revalidate: 0 },
                 method: 'GET',
                 headers: {
                     'x-ms-client-principal-id': `${session?.id}`,
                     'checklist-id': `${checklist.id}`
                 }
             })
-        console.log(res)
+        console.log(res.json())
         if (!res.ok) {
             throw new Error('Failed to fetch data')
         }

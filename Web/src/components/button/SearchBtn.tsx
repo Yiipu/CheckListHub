@@ -34,20 +34,10 @@ export default function SearchBtn() {
                         placeholder="search for checklists..."
                         startContent="🔍"
                         onValueChange={async (value) => {
-                            if (process.env.NODE_ENV == 'production') {
-                                if (!value) {
-                                    const searchParams = value
-                                    const res = await fetch(`${process.env.FE_URL}search/${searchParams}`,
-                                        {
-                                            next: { revalidate: 0 },
-                                            method: 'GET',
-                                        })
-                                    return res.json()
-                                } else {
-                                    return null
-                                }
-                            } else {
-                                setResults(value ? [{ id: value, name: value }, { id: value, name: value }, { id: value, name: value }] : null)
+                            if (!value) {
+                                const searchParams = value
+                                const res = await fetch(`${process.env.NEXT_PUBLIC_FE_URL}search?q=${searchParams}`)
+                                return res.json()
                             }
                         }} />
                 </ModalContent>

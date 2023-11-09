@@ -28,7 +28,7 @@ export async function CollectionListBody({
   }
   async function getData() {
     const res = await fetch(
-      `${process.env.FE_URL}collection?id=${param}`,
+      `${process.env.BE_URL}collection/${param}`,
       {
         next: { revalidate: 0 }, // 不缓存。到后期稳定后应该调整
         method: 'GET',
