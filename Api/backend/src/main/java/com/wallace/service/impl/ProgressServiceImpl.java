@@ -8,6 +8,9 @@ import com.wallace.utils.Result;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * @author y1693
  * @description 针对表【progress】的数据库操作Service实现
@@ -74,6 +77,16 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
         if(progress==null)
             return  Result.ok(returnEmpty);
         return Result.ok(progress.getTid());
+    }
+
+    @Override
+    public Result getTeamCollection(Integer uid) {
+        List<Map<Object, Object>> result
+                = progressMapper.selectTidAndCidAndHeaderByUid(uid);
+        if (!result.isEmpty())
+            return Result.ok(result);
+        return Result.ok(returnEmpty);
+
     }
 
 

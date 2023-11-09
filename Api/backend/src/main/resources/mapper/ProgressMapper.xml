@@ -66,4 +66,17 @@
         and cid = #{cid}
         limit 1;
     </select>
+    <select id="selectTidCidByUid" resultType="com.wallace.pojo.Progress">
+        select *
+        from checklist_db.progress
+        where uid = #{uid};
+    </select>
+    <select id="selectTidAndCidAndHeaderByUid" resultType="java.util.Map">
+        select c1.tid, c1.cid, header
+        from checklist_db.progress c1
+                 left join checklist_db.ck_list c2
+                           on c1.cid = c2.cid
+        where c1.uid = #{uid};
+
+    </select>
 </mapper>

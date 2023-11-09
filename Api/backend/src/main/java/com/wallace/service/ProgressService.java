@@ -23,4 +23,6 @@ public interface ProgressService extends IService<Progress> {
     Result addTeamProgress(Integer tid, Integer uid, Integer cid);
 
     Result findTeamExist(Integer uid, Integer cid);
+
+    Result getTeamCollection(Integer uid);
 }

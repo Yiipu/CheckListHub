@@ -1,8 +1,10 @@
 package com.wallace.controller;
 
 import com.wallace.pojo.CollectionToChecklist;
+import com.wallace.pojo.Progress;
 import com.wallace.service.CollectionToChecklistService;
 import com.wallace.service.ListcollectionService;
+import com.wallace.service.ProgressService;
 import com.wallace.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +24,8 @@ public class CollectionController {
     private ListcollectionService listcollectionService;
     @Autowired
     private CollectionToChecklistService collectionToChecklistService;
+    @Autowired
+    private ProgressService progressService;
 
     /*
      * @Author yajuxi
@@ -79,7 +83,7 @@ public class CollectionController {
 
     @GetMapping("/team")
     public Result findTeam(@RequestHeader("uid") Integer uid) {
-        Result result = listcollectionService.findTeam(uid);
+        Result result = progressService.getTeamCollection(uid);
         return result;
     }
 
