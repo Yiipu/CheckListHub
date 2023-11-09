@@ -1,9 +1,9 @@
 'use client'
 import { Button } from "@nextui-org/react"
 
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { Session } from "@/context/SessionProvider"
-import { CheckList } from "@/context/CheckListProvider"
+import { StateCheckList } from "@/context/StateCheckListProvider"
 
 export default function MarkBtn({
     added_prompt,
@@ -14,10 +14,10 @@ export default function MarkBtn({
 }) {
 
     const session = useContext(Session)
-    const checklist = useContext(CheckList)
+    const checklist = useContext(StateCheckList).checklist
 
     const [isLoading, setIsLoading] = useState(false)
-    const [isAdded, setIsAdded] = useState(false)
+    const [isAdded, setIsAdded] = useState(useContext(StateCheckList).state.marked)
 
     const [error, setError] = useState(false)
 
@@ -35,20 +35,26 @@ export default function MarkBtn({
     }
 
     return (
-        session ? <Button onClick={async () => {
-            setIsLoading(true)
-            var res
-            if (isAdded) {
-                res = await getData('DELETE')
-            } else {
-                res = await getData('PUT')
-            }
-            setIsLoading(false)
-            if (res.ok) {
-                setIsAdded(!isAdded)
-            }else{
-                setError(true)
-            }
-        }}>{isAdded ? added_prompt : not_added_prompt}</Button > : <Button isDisabled>{not_added_prompt}</Button>
+        session ?
+            <Button onClick={async () => {
+                if (isLoading)
+                    return
+                setIsLoading(true)
+                var res
+                if (isAdded) {
+                    res = await getData('DELETE')
+                } else {
+                    res = await getData('PUT')
+                }
+                setIsLoading(false)
+                if (res.ok) {
+                    setIsAdded(!isAdded)
+                    console.log(isAdded)
+                } else {
+                    setError(true)
+                }
+            }}>{isLoading? 'Loading...' : isAdded ? added_prompt : not_added_prompt}</Button >
+            :
+            <Button isDisabled>{not_added_prompt}</Button>
     )
 }

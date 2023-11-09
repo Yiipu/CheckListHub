@@ -1,8 +1,8 @@
 import { NextRequest } from "next/server"
 
-export async function GET(request: NextRequest, slug: string) {
-
-  const query = slug.toString()
+export async function GET(request: NextRequest) {
+  const searchParams = request.nextUrl.searchParams
+  const query = searchParams.get('q')
 
   const res = await fetch(
     `${process.env.BE_URL}search/${query}`,
@@ -15,5 +15,7 @@ export async function GET(request: NextRequest, slug: string) {
     throw new Error('Failed to fetch data')
   }
 
-  return res.json()
+  console.log(`${process.env.BE_URL}search/${query}`)
+
+  return res
 }

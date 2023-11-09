@@ -13,7 +13,7 @@ interface ItemGroup {
 }
 
 // 有子级集合的集合
-interface TopicGroup{
+interface TopicGroup {
     topic: string
     items: Array<TopicGroup | ItemGroup>
 }
@@ -35,4 +35,16 @@ interface ChecklistCollection {
     id: string
     count: number
     ckLists: Array<{ header: string; cid: string }>
+}
+
+// 清单的状态
+interface ChecklistState {
+    marked: boolean,
+    progress: Array<boolean>,
+}
+
+// 有状态的清单
+interface StateChecklist{
+    checklist:CheckList,
+    state:ChecklistState,
 }

@@ -17,7 +17,7 @@ export default function CheckItem({
 
     useEffect(() => {
         setIsClient(true)
-      }, [])
+    }, [])
 
     function HandleClickEvent() {
         setChecked(!checked)
@@ -27,10 +27,10 @@ export default function CheckItem({
     return <div className="my-2 flex">
         <button onClick={() => (HandleClickEvent())}
             className="mr-4">
-            {isClient?(checked ? '✅' : '⬜'):'🔳'}
+            {isClient ? (checked ? '✅' : '⬜') : '🔳'}
         </button>
         <div className="flex-1">
-            <h3 className="my-2 text-lg"><div dangerouslySetInnerHTML={{ __html: item.title }} /></h3>
+            <h3 className="my-2 text-lg">{isClient && <div dangerouslySetInnerHTML={{ __html: item.title }} />}</h3>
             <p>{item.description}</p>
             <div className="flex">
                 <span className="mr-4 rounded-2xl bg-orange-700 px-2 text-xs">{item.priority}</span>

@@ -11,7 +11,20 @@ import { useState } from "react";
 export default function SearchBtn() {
 
     const { isOpen, onOpen, onOpenChange } = useDisclosure()
-    const [results, setResults] = useState<{ id: string, name: string }[] | null>(null)
+    const [results, setResults] = useState<ChecklistCollection['ckLists'] | null>()
+
+    async function getData(url: string) {
+        const res = await fetch(url,
+            {
+                next: { revalidate: 0 },
+            })
+
+        if (!res.ok) {
+            throw new Error('Failed to fetch data')
+        }
+
+        return res.json()
+    }
 
     return (
         <>
@@ -24,9 +37,9 @@ export default function SearchBtn() {
                 )}>
                 <ModalContent>
                     <ul>
-                        {results?.map((item, index) => (
-                            <li key={index} className="m-2"><a href={`/checklist/${item.id}`}>{item.name}</a></li>
-                        ))}
+                        {results?.map((item, index) => {
+                            return <li key={index} className="m-2"><a href={`/checklist/${item.cid}`}>{item.header}</a></li>
+                        })}
                     </ul>
                     <Input
                         isClearable
@@ -34,10 +47,13 @@ export default function SearchBtn() {
                         placeholder="search for checklists..."
                         startContent="🔍"
                         onValueChange={async (value) => {
-                            if (!value) {
+                            if (value) {
+                                console.log(value)
                                 const searchParams = value
-                                const res = await fetch(`${process.env.NEXT_PUBLIC_FE_URL}search?q=${searchParams}`)
-                                return res.json()
+                                const res: { 'data': ChecklistCollection['ckLists'] } = await getData(`${process.env.NEXT_PUBLIC_FE_URL}search?q=${searchParams}`)
+                                const data = res.data
+                                console.log(data)
+                                setResults(data)
                             }
                         }} />
                 </ModalContent>

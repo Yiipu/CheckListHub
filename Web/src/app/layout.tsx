@@ -4,16 +4,7 @@ import { UIProvider } from '@/context/UIProvider'
 import SessionProvider from '@/context/SessionProvider'
 import SearchBtn from '@/components/button/SearchBtn'
 import LoginBtn from '@/components/button/LoginBtn'
-
-function getSession() {
-  const headersList = headers()
-  const session: GithubSession | null = headersList.get('X-MS-CLIENT-PRINCIPAL-ID') ? {
-    id: headersList.get('X-MS-CLIENT-PRINCIPAL-ID'),
-    idp: headersList.get('X-MS-CLIENT-PRINCIPAL-IDP'),
-    token: headersList.get('X-MS-TOKEN-GITHUB-ACCESS-TOKEN'),
-  } : null
-  return session
-}
+import getSession from '@/util/getSession'
 
 /* 如何使用 session 上下文
 在客户端组件:

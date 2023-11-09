@@ -16,7 +16,7 @@ export async function CollectionListBody({
   session,
   param,
 }: {
-  session?: GithubSession,
+  session?: GithubSession | null,
   param?: string,
 }) {
 

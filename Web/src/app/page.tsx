@@ -1,15 +1,5 @@
 import { CollectionListHeader, CollectionListBody } from "@/components/container/CollectionList"
-import { headers } from "next/headers"
-
-function getSession() {
-  const headersList = headers()
-  const session: GithubSession | undefined = headersList.get('X-MS-CLIENT-PRINCIPAL-ID') ? {
-    id: headersList.get('X-MS-CLIENT-PRINCIPAL-ID'),
-    idp: headersList.get('X-MS-CLIENT-PRINCIPAL-IDP'),
-    token: headersList.get('X-MS-TOKEN-GITHUB-ACCESS-TOKEN'),
-  } : undefined
-  return session
-}
+import getSession from "@/util/getSession"
 
 export default async function Home() {
 
@@ -44,14 +34,14 @@ export default async function Home() {
           <CollectionListHeader>📤 Upload</CollectionListHeader>
           <div className="divider" />
           <div className="h-[15rem]">
-            <CollectionListBody param="upload" session={session} />
+            {/* <CollectionListBody param="upload" session={session} /> */}
           </div>
         </div>
         <div className="border-2 border-sky-500 p-2">
           <CollectionListHeader>📚 Marked</CollectionListHeader>
           <div className="divider" />
           <div className="h-[15rem]">
-            <CollectionListBody param="upload" session={session} />
+            <CollectionListBody param="favor" session={session} />
           </div>
         </div>
       </main>

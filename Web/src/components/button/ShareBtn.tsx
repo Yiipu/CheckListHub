@@ -3,7 +3,7 @@ import { Button, Popover, PopoverContent, PopoverTrigger, Snippet, useDisclosure
 
 import { useContext, useState } from "react"
 import { Session } from "@/context/SessionProvider"
-import { CheckList } from "@/context/CheckListProvider"
+import { StateCheckList } from "@/context/StateCheckListProvider"
 
 export default function ShareBtn({
     children,
@@ -12,7 +12,7 @@ export default function ShareBtn({
 }) {
 
     const session = useContext(Session)
-    const checklist = useContext(CheckList)
+    const checklist = useContext(StateCheckList).checklist
 
     const [isLoading, setIsLoading] = useState(false)
     const [team, setTeam] = useState<Team>()
