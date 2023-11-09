@@ -41,7 +41,7 @@ export default function CheckListPage() {
                 </ul>
                 <div className="grid grid-cols-2 gap-1">
                     <ShareBtn>👌 Share</ShareBtn>
-                    <MarkBtn>📚 Mark</MarkBtn>
+                    <MarkBtn added_prompt={"📚 remove Mark"} not_added_prompt={"📚 Mark"} />
                 </div>
             </div>
             <div>

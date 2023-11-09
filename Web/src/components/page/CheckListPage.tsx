@@ -41,7 +41,7 @@ export default function CheckListPage() {
                 </ul>
                 <div className="grid grid-cols-2 gap-1">
                     <ShareBtn>👌 Share</ShareBtn>
-                    <MarkBtn>📚 Mark</MarkBtn>
+                    <MarkBtn added_prompt={"📚 remove Mark"} not_added_prompt={"📚 Mark"} />
                 </div>
             </div>
             <div>
@@ -56,7 +56,7 @@ export default function CheckListPage() {
 
     function renderGroups(group: ItemGroup | TopicGroup, index: number, depth: number) {
 
-        return <CollapseBox key={index} title={<h2 className={`text-xl`}>{group.topic}</h2>}>
+        return <CollapseBox key={index} title={<h2 className={`text-xl`} id={depth==0?'':''}>{group.topic}</h2>}>
             <>
                 {isItemGroup(group) ?
                     group.items

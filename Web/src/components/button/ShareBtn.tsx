@@ -35,7 +35,7 @@ export default function ShareBtn({
 
     return (
         <Popover placement="bottom">
-            {!session ? <PopoverTrigger><Button>{children}</Button></PopoverTrigger> : <Button isDisabled>{children}</Button>}
+            {session ? <PopoverTrigger><Button>{children}</Button></PopoverTrigger> : <Button isDisabled>{children}</Button>}
             <PopoverContent className="dark:bg-black">
                 <div className="px-1 py-2">
                     <p className="mb-[1rem]">Cooperate with team on this checklist</p>

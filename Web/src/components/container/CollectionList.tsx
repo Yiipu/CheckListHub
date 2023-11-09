@@ -1,5 +1,6 @@
 import React from "react"
 import { UseLogin } from "../button/LoginBtn"
+import CatchedError from "./CatchedError"
 
 export function CollectionListHeader({
   children,
@@ -18,7 +19,11 @@ export async function CollectionListBody({
   session?: GithubSession,
   param?: string,
 }) {
-  if (param != 'best' && !session) {
+
+  let error = false
+  const isPublic = param == 'best'
+
+  if (!isPublic && !session) {
     return (
       <div className="h-full">
         <UseLogin>
@@ -30,12 +35,13 @@ export async function CollectionListBody({
     const verify = await fetch(
       `${process.env.BE_URL}user`,
       {
-        next: { revalidate: 0 }, // 不缓存。到后期稳定后应该调整
+        next: { revalidate: 0 },
         method: 'GET',
         headers: {
           'uid': `${session?.id}`,
         }
       })
+    console.debug(`${process.env.BE_URL}collection/${param}`)
     const res = await fetch(
       `${process.env.BE_URL}collection/${param}`,
       {
@@ -45,9 +51,9 @@ export async function CollectionListBody({
           'uid': `${session?.id}`,
         }
       })
-
-    if (!res.ok || !verify.ok) {
-      throw new Error('Failed to fetch data')
+    if (!res.ok || (!verify.ok && !isPublic)) {
+      error = true
+      return null
     }
 
     return res.json()
@@ -62,8 +68,8 @@ export async function CollectionListBody({
   console.log(collection)
 
   return (
-    <ol className="overflow-auto h-full">
+    !error ? <ol className="overflow-auto h-full">
       {collection?.ckLists.map((item, index) => (<li key={index}><a href={`/checklist/${item.cid}`} className="block h-[3rem] leading-[3rem]">{item.header}</a></li>))}
-    </ol>
+    </ol> : <CatchedError />
   )
 }

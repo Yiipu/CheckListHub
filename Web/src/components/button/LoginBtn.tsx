@@ -21,7 +21,7 @@ export default function LoginBtn() {
   return (
     session ?
       <>
-        <Button href="/.auth/logout">🔚 Log out</Button>
+        <Button><a href="/.auth/logout">🔚 Log out</a></Button>
       </>
       :
       <>

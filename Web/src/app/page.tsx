@@ -22,7 +22,7 @@ export default async function Home() {
           <div className="hover:grow duration-75">
             <CollectionListHeader>❤ Check Our Best Lists</CollectionListHeader>
             <div className="divider" />
-            <CollectionListBody param="best" />
+            <CollectionListBody param="best" session={session} />
           </div>
           <div></div>
         </div>
