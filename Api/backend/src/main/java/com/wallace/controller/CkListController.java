@@ -38,7 +38,8 @@ public class CkListController {
      * @return com.wallace.utils.Result
      **/
     @GetMapping("/{cid}")
-    public Result findCkByCid(@PathVariable(name = "cid") Integer cid, @RequestHeader("x-ms-client-principal-id") Integer uid) {
+    public Result findCkByCid(@PathVariable(name = "cid") Integer cid, @RequestHeader("x-ms-client-principal-id") String u) {
+        Integer uid = Integer.parseInt(u);
         // 更新最近浏览表
         Result r1 = collectionToChecklistService.updateRecent(cid, uid);
         // 更新progress表
@@ -63,13 +64,15 @@ public class CkListController {
     }
 
     @PutMapping("/favor/{cid}")
-    public Result putFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("x-ms-client-principal-id") Integer uid) {
+    public Result putFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("x-ms-client-principal-id") String u) {
+        Integer uid = Integer.parseInt(u);
         Result result = collectionToChecklistService.putFavor(cid,uid);
         return result;
     }
 
     @DeleteMapping("/favor/{cid}")
-    public Result deleteFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("x-ms-client-principal-id") Integer uid) {
+    public Result deleteFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("x-ms-client-principal-id") String u) {
+        Integer uid = Integer.parseInt(u);
         Result result = collectionToChecklistService.deleteFavor(cid,uid);
         return result;
     }
