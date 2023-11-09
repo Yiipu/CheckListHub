@@ -105,5 +105,23 @@ public class CkListController {
         return result;
     }
 
+    /*
+     * @Author yajuxi
+     * @Description 保存check项的√，更新数据库progress
+     * @Param [cid, uid, tid]
+     * @return com.wallace.utils.Result
+     **/
+    @PostMapping("/progress/{cid}")
+    public Result updateProgress(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid, @RequestHeader(name = "tid", required = false) Integer tid, @RequestBody String progress) {
+        if (tid == null)
+            tid = 0;
+        if (ckListService.CidExisted(cid)) {
+            // 更新progress表
+            Result result = progressService.updateprogress(tid, uid, cid, progress);
+
+            return result;
+        } else return Result.build(returnEmpty, 404, progress);
+    }
+
 
 }

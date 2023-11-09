@@ -62,7 +62,9 @@ public class TeamController {
      **/
 
     @GetMapping("/delete/{tid}")
-    public Result QuitTeam(@RequestHeader("uid") Integer uid, @RequestHeader("cid") Integer cid, @PathVariable(name = "tid") Integer tid) {
+    public Result QuitTeam(@RequestHeader("uid") Integer uid, @PathVariable(name = "tid") Integer tid) {
+        // 查询cid
+        Integer cid = progressService.findCidByTid(tid);
         // 退出合作progreess
         Result result = progressService.QuitTeamProgress(tid, uid, cid);
         // 清除teamcollection
