@@ -34,11 +34,11 @@
         set tid =#{tid}
         where id = #{id};
     </update>
-    <update id="CreateMark">
+    <insert id="CreateMark">
         INSERT INTO checklist_db.progress (tid, uid, cid, mark)
         VALUES (#{tid}, #{uid}, #{cid}, #{mark})
         ON DUPLICATE KEY UPDATE uid = VALUES(uid);
-    </update>
+    </insert>
     <delete id="deleteByTidAndUidAndCid">
         DELETE
         FROM checklist_db.progress

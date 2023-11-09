@@ -68,18 +68,37 @@ public class CkListController {
         return result;
     }
 
+
+    /*
+     * @Author yajuxi
+     * @Description 添加收藏
+     * @Param [cid, uid]
+     * @return com.wallace.utils.Result
+     **/
     @GetMapping("/favor/put/{cid}")
     public Result putFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid) {
         Result result = collectionToChecklistService.putFavor(cid, uid);
         return result;
     }
 
+    /*
+     * @Author yajuxi
+     * @Description 删除收藏
+     * @Param [cid, uid]
+     * @return com.wallace.utils.Result
+     **/
     @GetMapping("/favor/delete/{cid}")
     public Result deleteFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid) {
         Result result = collectionToChecklistService.deleteFavor(cid, uid);
         return result;
     }
 
+    /*
+     * @Author yajuxi
+     * @Description 查询是否为收藏
+     * @Param [cid, uid]
+     * @return com.wallace.utils.Result
+     **/
     @GetMapping("/favor/{cid}")
     public Result searchFavor(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid) {
         Result result = collectionToChecklistService.searchFavor(cid, uid);
