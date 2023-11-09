@@ -25,20 +25,12 @@ export default async function Layout({
     params: { slug: number },
     children: React.ReactNode,
 }) {
-    const res: {
-        'data': {
-            'checklist': CheckList,
-            'cid': string,
-            'header': string,
-        }
-    } = await getData(params.slug)
-    const checklist: CheckList = res.data.checklist
-    checklist.id = res.data.cid
+    const data: CheckList = await getData(params.slug)
 
     return (
         <>
-            <h2 className={styles.header}>{checklist.header} <span className='text-xs'>Template ID: {checklist.id}</span></h2>
-            <CheckListProvider value={checklist}>
+            <h2 className={styles.header}>{data.header} <span className='text-xs'>Template ID: {data.id}</span></h2>
+            <CheckListProvider value={data}>
                 {children}
             </CheckListProvider>
         </>

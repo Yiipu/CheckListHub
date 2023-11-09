@@ -44,11 +44,17 @@ export async function CollectionListBody({
     return res.json()
   }
 
-  const data: ChecklistCollection = await getData()
+  const res: { 'data': ChecklistCollection['ckLists'] } = await getData()
+  const collection: ChecklistCollection = {
+    ckLists: res.data,
+    id: '',
+    count: res.data.length
+  }
+  console.log(collection)
 
   return (
     <ol className="overflow-auto h-full">
-      {data?.ckLists.map((item, index) => (<li key={index}><a href={`/checklist/${item.id}`} className="block h-[3rem] leading-[3rem]">{item.header}</a></li>))}
+      {collection?.ckLists.map((item, index) => (<li key={index}><a href={`/checklist/${item.cid}`} className="block h-[3rem] leading-[3rem]">{item.header}</a></li>))}
     </ol>
   )
 }

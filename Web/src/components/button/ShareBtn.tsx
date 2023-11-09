@@ -18,10 +18,8 @@ export default function ShareBtn({
     const [team, setTeam] = useState<Team>()
 
     async function getData() {
-        console.log('res')
-        console.log(`${process.env.NEXT_PUBLIC_FE_URL}share`)
         const res = await fetch(
-            `${process.env.FE_URL}share`,
+            `${process.env.NEXT_PUBLIC_FE_URL}share`,
             {
                 method: 'GET',
                 headers: {
@@ -29,7 +27,6 @@ export default function ShareBtn({
                     'checklist-id': `${checklist.id}`
                 }
             })
-        console.log(res.json())
         if (!res.ok) {
             throw new Error('Failed to fetch data')
         }
@@ -44,11 +41,9 @@ export default function ShareBtn({
                     <p className="mb-[1rem]">Cooperate with team on this checklist</p>
                     {!team ? <Button className="w-full" onClick={async () => {
                         setIsLoading(true)
-                        console.log('data')
-                        const data: Team = await getData()
-                        console.log(data)
+                        const res: {'data':Team} = await getData()
                         setIsLoading(false)
-                        setTeam(data)
+                        setTeam(res.data)
                     }}>{isLoading ? 'Loading...' : 'Generate Link'}</Button>
                         :
                         <Snippet>{team.id}</Snippet>}
