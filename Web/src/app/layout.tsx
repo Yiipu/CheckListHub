@@ -46,7 +46,7 @@ export default function RootLayout({
         <SessionProvider value={session}>
           <UIProvider>
             <div className="container-md">
-              <header className="m-2 md:h-[5rem] gap-1 justify-items-center items-center align-middle grid grid-flow-row-dense md:grid-cols-6">
+              <header className="m-2 md:h-[5rem] gap-1 py-2 justify-items-center items-center grid grid-flow-row-dense border-2 border-sky-500 rounded-t-2xl">
                 <h1 className="text-3xl"><a href="/">CheckListHub</a></h1>
                 <div className="md:col-start-5"><SearchBtn /></div>
                 <div className="md:col-start-6"><LoginBtn /></div>

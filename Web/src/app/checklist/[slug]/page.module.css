@@ -1,5 +1,5 @@
 .header{
-    @apply text-xl;
+    @apply text-xl border-2 border-sky-500 m-2;
     text-align: center;
     height: 5rem;
     line-height: 5rem;

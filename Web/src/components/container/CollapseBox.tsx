@@ -14,10 +14,10 @@ export default function CollapseBox({
     className?: string,
 }) {
 
-    const [collapsed, setCollapsed] = useState<boolean>(true)
+    const [collapsed, setCollapsed] = useState<boolean>(false)
 
     return (
-        <div className={`flex ${className} m-2 bg-cyan-900`}>
+        <div className={`flex ${className} m-2 bg-cyan-900 p-2`}>
             <div className="flex-1">
                 {title}
                 {!collapsed&&<div>{children}</div>}

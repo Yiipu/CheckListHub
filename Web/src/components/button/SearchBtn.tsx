@@ -37,7 +37,7 @@ export default function SearchBtn() {
                             if (process.env.NODE_ENV == 'production') {
                                 if (!value) {
                                     const searchParams = value
-                                    const res = await fetch(`${process.env.BE_URL}/search/${searchParams}`,
+                                    const res = await fetch(`${process.env.FE_URL}search/${searchParams}`,
                                         {
                                             next: { revalidate: 0 },
                                             method: 'GET',

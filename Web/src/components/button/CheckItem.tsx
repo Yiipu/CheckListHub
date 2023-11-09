@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function CheckItem({
     item,
@@ -13,6 +13,11 @@ export default function CheckItem({
 }) {
 
     const [checked, setChecked] = useState(state)
+    const [isClient, setIsClient] = useState(false)
+
+    useEffect(() => {
+        setIsClient(true)
+      }, [])
 
     function HandleClickEvent() {
         setChecked(!checked)
@@ -22,7 +27,7 @@ export default function CheckItem({
     return <div className="my-2 flex">
         <button onClick={() => (HandleClickEvent())}
             className="mr-4">
-            {checked ? '✅' : '⬜'}
+            {isClient?(checked ? '✅' : '⬜'):'🔳'}
         </button>
         <div className="flex-1">
             <h3 className="my-2 text-lg"><div dangerouslySetInnerHTML={{ __html: item.title }} /></h3>

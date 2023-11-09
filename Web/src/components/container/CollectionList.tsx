@@ -1,4 +1,5 @@
 import React from "react"
+import { UseLogin } from "../button/LoginBtn"
 
 export function CollectionListHeader({
   children,
@@ -17,10 +18,17 @@ export async function CollectionListBody({
   session?: GithubSession,
   param?: string,
 }) {
-
+  if (param != 'best' && !session) {
+    return (
+      <div className="h-full">
+        <UseLogin>
+          <div className="h-full">you have to Login to see this</div>
+        </UseLogin>
+      </div>)
+  }
   async function getData() {
     const res = await fetch(
-      `http://localhost:3000/api/${process.env.NODE_ENV == 'development' ? 'mock/' : ''}collection?id=${param}`,
+      `${process.env.FE_URL}collection?id=${param}`,
       {
         next: { revalidate: 0 }, // 不缓存。到后期稳定后应该调整
         method: 'GET',
@@ -40,7 +48,7 @@ export async function CollectionListBody({
 
   return (
     <ol className="overflow-auto h-full">
-      {data?.ckLists.map((item, index) => (<li key={index}><a href={`/checklist/${item.id}`} className="block h-12">{item.header}</a></li>))}
+      {data?.ckLists.map((item, index) => (<li key={index}><a href={`/checklist/${item.id}`} className="block h-[3rem] leading-[3rem]">{item.header}</a></li>))}
     </ol>
   )
 }

@@ -1,12 +1,13 @@
 'use client'
 
 import { useContext } from "react"
-import styles from "./page.module.css"
 import CollapseBox from "@/components/container/CollapseBox"
 import { CheckList } from '@/context/CheckListProvider'
 import { Session } from "@/context/SessionProvider"
 import useLocalStorage from "@/util/useLocalStorage"
 import CheckItem from "../button/CheckItem"
+import ShareBtn from "../button/ShareBtn"
+import MarkBtn from "../button/MarkBtn"
 
 export default function CheckListPage() {
 
@@ -21,25 +22,27 @@ export default function CheckListPage() {
 
     const [progress, setProgress] = useLocalStorage(progress_LS_Key, JSON.stringify(Array(itemNum).fill(false)))
 
-    function onProgressUpdate(position:number, state:boolean) {
+    function onProgressUpdate(position: number, state: boolean) {
         setProgress(progress.map((b: any, i: number) => {
             if (i == position)
                 return state
             else
                 return b
         }))
-        localStorage.setItem(progress_LS_Key, JSON.stringify(progress))
     }
 
     return (
         <>
-            <p>ID: {data.id}</p>
-            <div className={styles.banner}>
-                <ul className={styles.sectionList}>
+            <div className="grid md:grid-cols-3 gap-1 m-2">
+                <ul className="grid grid-cols-4 divide-x md:col-span-2 border-2 border-sky-500">
                     {data.topicList?.map((item, index) => (
-                        <li key={index}><a href={`#section-${item}`}>{item}</a></li>
+                        <li key={index}><a href={`#section-${item}`} className="block w-full h-[2rem] text-center leading-[2rem]"># {item}</a></li>
                     ))}
                 </ul>
+                <div className="grid grid-cols-2 gap-1">
+                    <ShareBtn>👌 Share</ShareBtn>
+                    <MarkBtn>📚 Mark</MarkBtn>
+                </div>
             </div>
             <div>
                 <ul>
@@ -59,12 +62,12 @@ export default function CheckListPage() {
                     group.items
                         .map((item, index) => {
                             offset = offset + 1
-                            return <CheckItem 
-                            key={index} 
-                            item={item} 
-                            offset={offset} 
-                            state={progress.at(offset)}
-                            onProgressUpdate={onProgressUpdate}/>
+                            return <CheckItem
+                                key={index}
+                                item={item}
+                                offset={offset}
+                                state={progress.at(offset)}
+                                onProgressUpdate={onProgressUpdate} />
                         })
                     :
                     <ul key={index}>
