@@ -59,4 +59,11 @@
         where tid = #{tid}
         limit 1;
     </select>
+    <select id="selectTidByUidAndCid" resultType="com.wallace.pojo.Progress">
+        select *
+        from checklist_db.progress
+        where uid = #{uid}
+        and cid = #{cid}
+        limit 1;
+    </select>
 </mapper>

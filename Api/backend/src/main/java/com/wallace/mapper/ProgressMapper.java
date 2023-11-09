@@ -25,6 +25,8 @@ public interface ProgressMapper extends MyBaseMapper<Progress> {
     int CreateMark(int tid, Integer uid, Integer cid, String mark);
 
     Progress selectCidByTid(Integer tid);
+
+    Progress selectTidByUidAndCid(Integer uid, Integer cid);
 }
 
 

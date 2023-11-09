@@ -34,12 +34,18 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
 
     @Override
     public Result CreateTeamProgress(Integer uid, Integer cid) {
-        Progress progress = new Progress();
-        progress.setUid(uid);
-        progress.setCid(cid);
-        int i = progressMapper.CreateTeamProgress(progress);
-        int j = progressMapper.updateTid(progress.getId(), progress.getId());
-        return Result.ok(progress.getId());
+        Progress progress1 = progressMapper.selectTidByUidAndCid(uid,cid);
+        if(progress1==null){
+            Progress progress = new Progress();
+            progress.setUid(uid);
+            progress.setCid(cid);
+
+            int i = progressMapper.CreateTeamProgress(progress);
+            int j = progressMapper.updateTid(progress.getId(), progress.getId());
+            return Result.ok(progress.getId());
+        }else{
+            return Result.ok(progress1.getId());
+        }
     }
 
     @Override
