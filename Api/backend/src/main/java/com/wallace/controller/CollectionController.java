@@ -35,22 +35,19 @@ public class CollectionController {
     }
 
     @GetMapping("/favor")
-    public Result findFavor(@RequestHeader("x-ms-client-principal-id") String u){
-        Integer uid = Integer.parseInt(u);
+    public Result findFavor(@RequestHeader("uid") Integer uid){
         Result result = listcollectionService.findFavor(uid);
         return result;
     }
 
     @GetMapping("/recent")
-    public Result findRecent(@RequestHeader("x-ms-client-principal-id") String u){
-        Integer uid = Integer.parseInt(u);
+    public Result findRecent(@RequestHeader("uid") Integer uid){
         Result result = listcollectionService.findRecent(uid);
         return result;
     }
 
     @GetMapping("/team")
-    public Result findTeam(@RequestHeader("x-ms-client-principal-id") String u){
-        Integer uid = Integer.parseInt(u);
+    public Result findTeam(@RequestHeader("uid") Integer uid){
         Result result = listcollectionService.findTeam(uid);
         return result;
     }

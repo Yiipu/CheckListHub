@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 public class TeamController {
 
     @GetMapping("")
-    public Result findCkByCid(@RequestHeader("x-ms-client-principal-id") Integer uid){
-        return  null;
+    public Result findCkByCid(@RequestHeader("uid") Integer uid){
+        return null;
     }
 }
