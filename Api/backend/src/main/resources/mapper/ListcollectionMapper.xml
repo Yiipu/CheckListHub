@@ -7,17 +7,22 @@
     <resultMap id="BaseResultMap" type="com.wallace.pojo.Listcollection">
             <id property="colid" column="colid" jdbcType="INTEGER"/>
             <result property="uid" column="uid" jdbcType="INTEGER"/>
-            <result property="isTeam" column="is_team" jdbcType="INTEGER"/>
-            <result property="isRecent" column="is_recent" jdbcType="INTEGER"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
             <result property="version" column="version" jdbcType="INTEGER"/>
             <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        colid,uid,is_team,
-        is_recent,version,is_deleted
+        colid,uid,
+        type,version,is_deleted
     </sql>
     <select id="selectByUid" resultType="com.wallace.pojo.CkList">
         select * from checklist_db.ck_list where uid = #{uid};
+    </select>
+    <select id="selectByType" resultType="com.wallace.pojo.Listcollection">
+        select * from checklist_db.listcollection where type = #{type};
+    </select>
+    <select id="selectByTypeAndUid" resultType="com.wallace.pojo.Listcollection">
+        select * from checklist_db.listcollection where type = #{type} and uid = #{uid};
     </select>
 </mapper>

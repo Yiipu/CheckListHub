@@ -3,10 +3,7 @@ package com.wallace.controller;
 import com.wallace.service.ListcollectionService;
 import com.wallace.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * ClassName: CollectionController
@@ -30,6 +27,18 @@ public class CollectionController {
     @GetMapping("/best")
     public Result findBest(){
         Result result = listcollectionService.findBest();
+        return result;
+    }
+
+    @GetMapping("/favor")
+    public Result findFavor(@RequestHeader("x-ms-client-principal-id") Integer uid){
+        Result result = listcollectionService.findFavor(uid);
+        return result;
+    }
+
+    @GetMapping("/recent")
+    public Result findRecent(@RequestHeader("x-ms-client-principal-id") Integer uid){
+        Result result = listcollectionService.findRecent(uid);
         return result;
     }
 

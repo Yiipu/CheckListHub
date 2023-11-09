@@ -2,6 +2,7 @@ package com.wallace.service;
 
 import com.wallace.pojo.CollectionToChecklist;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.wallace.utils.Result;
 
 /**
 * @author y1693
@@ -10,4 +11,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface CollectionToChecklistService extends IService<CollectionToChecklist> {
 
+    Result updateRecent(Integer cid, Integer uid);
 }

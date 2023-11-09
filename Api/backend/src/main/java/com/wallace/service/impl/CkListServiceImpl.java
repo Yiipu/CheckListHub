@@ -2,21 +2,20 @@ package com.wallace.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.wallace.mapper.ProgressMapper;
 import com.wallace.pojo.CkList;
-import com.wallace.pojo.CollectionToChecklist;
+import com.wallace.pojo.Progress;
+import com.wallace.pojo.VO.CkListView;
 import com.wallace.service.CkListService;
 import com.wallace.mapper.CkListMapper;
 import com.wallace.utils.JsonTypeHandler;
 import com.wallace.utils.Result;
 import com.wallace.utils.ResultCodeEnum;
 import jakarta.annotation.Resource;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.JarURLConnection;
 import java.net.URL;
 import java.util.*;
@@ -34,6 +33,9 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
     @Resource
     private CkListMapper ckListMapper;
 
+    @Resource
+    private ProgressMapper progressMapper;
+
     /*
      * @Author yajuxi
      * @Description 根据id查找ckecklist
@@ -41,9 +43,13 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
      * @return com.wallace.utils.Result
      **/
     @Override
-    public Result findByCid(Integer cid) {
+    public Result findByCid(Integer cid, Integer uid) {
         CkList ck = ckListMapper.selectById(cid);
-        return Result.ok(ck);
+        // 查找progress
+        Progress progress = progressMapper.selectProgress(0, uid, cid);
+        CkListView ckListView = new CkListView(ck, progress.getMark());
+
+        return Result.ok(ckListView);
     }
 
     /*

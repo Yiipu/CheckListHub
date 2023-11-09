@@ -10,12 +10,10 @@ import com.wallace.mapper.ListcollectionMapper;
 import com.wallace.utils.Result;
 import com.wallace.utils.ResultCodeEnum;
 import jakarta.annotation.Resource;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * @author y1693
@@ -60,12 +58,35 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
 
     @Override
     public Result findBest() {
-
+        Listcollection best = listcollectionMapper.selectByType("best");
+        Integer colid = best.getColid();
         Map<Integer, String> result
-                = collectionToChecklistMapper.selectCklistByUidFromCollectionToChecklist(1);
+                = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklist(colid);
         if (!result.isEmpty())
             return Result.ok(result);
         return Result.build(501, ResultCodeEnum.EMPTY);
+    }
+
+    @Override
+    public Result findFavor(Integer uid) {
+        Listcollection best = listcollectionMapper.selectByTypeAndUid("favor",uid);
+        Integer colid = best.getColid();
+        Map<Integer, String> result
+                = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklist(colid);
+        if (!result.isEmpty())
+            return Result.ok(result);
+        return Result.ok("收藏为空!");
+    }
+
+    @Override
+    public Result findRecent(Integer uid) {
+        Listcollection best = listcollectionMapper.selectByTypeAndUid("recent",uid);
+        Integer colid = best.getColid();
+        Map<Integer, String> result
+                = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklistOrderByTime(colid);
+        if (!result.isEmpty())
+            return Result.ok(result);
+        return Result.ok("最近浏览为空!");
     }
 }
 

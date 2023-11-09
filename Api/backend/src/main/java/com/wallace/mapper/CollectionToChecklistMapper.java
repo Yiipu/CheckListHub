@@ -5,6 +5,7 @@ import com.wallace.pojo.CkList;
 import com.wallace.pojo.CollectionToChecklist;
 import org.apache.ibatis.annotations.MapKey;
 
+import java.sql.Timestamp;
 import java.util.List;
 import java.util.Map;
 
@@ -16,7 +17,11 @@ import java.util.Map;
 */
 public interface CollectionToChecklistMapper extends MyBaseMapper<CollectionToChecklist> {
     @MapKey("cid")
-    Map<Integer, String> selectCklistByUidFromCollectionToChecklist(int i);
+    Map<Integer, String> selectCklistBycolidFromCollectionToChecklist(Integer colid);
+
+    int updateTime(Integer colid, Integer cid, Timestamp viewTime);
+    @MapKey("cid")
+    Map<Integer, String> selectCklistBycolidFromCollectionToChecklistOrderByTime(Integer colid);
 }
 
 

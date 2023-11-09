@@ -3,24 +3,24 @@ package com.wallace.pojo;
 import com.baomidou.mybatisplus.annotation.*;
 
 import java.io.Serializable;
-import java.sql.Timestamp;
-import java.util.Date;
 import lombok.Data;
 
 /**
- * @TableName collection_to_checklist
+ * @TableName progress
  */
-@TableName(value ="collection_to_checklist")
+@TableName(value ="progress")
 @Data
-public class CollectionToChecklist implements Serializable {
+public class Progress implements Serializable {
     @TableId
     private Integer id;
 
-    private Integer colid;
+    private Integer tid;
+
+    private Integer uid;
 
     private Integer cid;
 
-    private Timestamp viewTime;
+    private String mark;
 
     @Version
     private Integer version;
@@ -28,6 +28,4 @@ public class CollectionToChecklist implements Serializable {
     private Integer isDeleted;
 
     private static final long serialVersionUID = 1L;
-
-//    private  CkList ckList = new CkList();
 }

@@ -14,4 +14,8 @@ public interface ListcollectionService extends IService<Listcollection> {
     Result insertByInit();
 
     Result findBest();
+
+    Result findFavor(Integer uid);
+
+    Result findRecent(Integer uid);
 }

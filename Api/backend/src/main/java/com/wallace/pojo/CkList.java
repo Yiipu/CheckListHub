@@ -27,5 +27,6 @@ public class CkList implements Serializable {
     @TableLogic
     private Integer isDeleted;
 
+
     private static final long serialVersionUID = 1L;
 }

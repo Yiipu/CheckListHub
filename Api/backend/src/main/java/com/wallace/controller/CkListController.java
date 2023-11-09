@@ -9,7 +9,10 @@ package com.wallace.controller;
  */
 
 import com.wallace.pojo.CkList;
+import com.wallace.pojo.CollectionToChecklist;
 import com.wallace.service.CkListService;
+import com.wallace.service.CollectionToChecklistService;
+import com.wallace.service.ProgressService;
 import com.wallace.service.UserService;
 import com.wallace.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +24,13 @@ import org.springframework.web.bind.annotation.*;
 public class CkListController {
     @Autowired
     private CkListService ckListService;
+
+    @Autowired
+    private CollectionToChecklistService collectionToChecklistService;
+
+    @Autowired
+    private ProgressService progressService;
+
     /*
      * @Author yajuxi
      * @Description 根据cid查找checklist
@@ -28,8 +38,14 @@ public class CkListController {
      * @return com.wallace.utils.Result
      **/
     @GetMapping("/{cid}")
-    public Result findCkByCid(@PathVariable(name = "cid") Integer cid){
-        Result result = ckListService.findByCid(cid);
+    public Result findCkByCid(@PathVariable(name = "cid") Integer cid, @RequestHeader("x-ms-client-principal-id") Integer uid) {
+        // 更新最近浏览表
+        Result r1 = collectionToChecklistService.updateRecent(cid, uid);
+        // 更新progress表
+        Result r2 = progressService.updateprogress(0,uid,cid,null);
+
+        Result result = ckListService.findByCid(cid,uid);
+
         return result;
     }
 
@@ -41,7 +57,7 @@ public class CkListController {
      * @return com.wallace.utils.Result
      **/
     @GetMapping("/init")
-    public Result insertByInit(){
+    public Result insertByInit() {
         Result result = ckListService.insertByInit();
         return result;
     }

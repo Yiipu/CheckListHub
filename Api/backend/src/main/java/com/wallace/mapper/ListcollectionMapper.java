@@ -16,6 +16,10 @@ import java.util.List;
 public interface ListcollectionMapper extends MyBaseMapper<Listcollection> {
 
     List<CkList> selectByUid(int i);
+
+    Listcollection selectByType(String type);
+
+    Listcollection selectByTypeAndUid(String type, Integer uid);
 }
 
 
