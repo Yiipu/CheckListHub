@@ -77,7 +77,8 @@
         from checklist_db.progress c1
                  left join checklist_db.ck_list c2
                            on c1.cid = c2.cid
-        where c1.uid = #{uid};
+        where c1.uid = #{uid}
+          and tid != 0;
 
     </select>
 </mapper>
