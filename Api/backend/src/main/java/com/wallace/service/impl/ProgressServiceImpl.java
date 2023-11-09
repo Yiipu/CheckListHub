@@ -68,6 +68,14 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
 
     }
 
+    @Override
+    public Result findTeamExist(Integer uid, Integer cid) {
+        Progress progress = progressMapper.selectTidByUidAndCid(uid,cid);
+        if(progress==null)
+            return  Result.ok(returnEmpty);
+        return Result.ok(progress.getTid());
+    }
+
 
 }
 

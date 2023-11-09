@@ -71,4 +71,12 @@ public class TeamController {
         collectionToChecklistService.deleteTeam(cid, uid);
         return result;
     }
+
+    @GetMapping("/put")
+    public Result findTeamExist(@RequestHeader("uid") Integer uid, @RequestHeader("cid") Integer cid) {
+        // 查询合作progreess
+        Result result = progressService.findTeamExist(uid, cid);
+
+        return result;
+    }
 }
