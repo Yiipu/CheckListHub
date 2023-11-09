@@ -56,7 +56,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             listcollection2.setIsDeleted(0);
             listcollection2.setType("favor");
             listcollectionmapper.insert(listcollection2);
-            return Result.ok("用户初始化成功");
+            return Result.ok(null);
         } else {
             return Result.build(null, 404, "用户已存在");
         }

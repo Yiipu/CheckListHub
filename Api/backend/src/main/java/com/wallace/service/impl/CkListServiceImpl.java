@@ -131,14 +131,20 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
     @Override
     public Result searchByHeader(String header) {
         List<CkList> ckLists = ckListMapper.selectByHeader(header);
-        Map<Integer, String> result =new HashMap<>();
-        for(CkList ckList :ckLists){
-            result.put(ckList.getCid(),ckList.getHeader());
+        Map<Integer, String> result = new HashMap<>();
+        for (CkList ckList : ckLists) {
+            result.put(ckList.getCid(), ckList.getHeader());
         }
-        if(!result.isEmpty()){
+        if (!result.isEmpty()) {
             return Result.ok(result);
         }
-        return  Result.build(null,200,"搜索结果为空");
+        return Result.build(null, 200, "搜索结果为空");
+    }
+
+    @Override
+    public boolean CidExisted(Integer cid) {
+        CkList ckList = ckListMapper.selectById(cid);
+        return ckList!=null;
     }
 }
 

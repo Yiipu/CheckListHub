@@ -39,14 +39,18 @@ public class CkListController {
      **/
     @GetMapping("/{cid}")
     public Result findCkByCid(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid) {
-        // 更新最近浏览表
-        Result r1 = collectionToChecklistService.updateRecent(cid, uid);
-        // 更新progress表
-        Result r2 = progressService.updateprogress(0, uid, cid, null);
+        if(ckListService.CidExisted(cid)){
 
-        Result result = ckListService.findByCid(cid, uid);
+            // 更新最近浏览表
+            Result r1 = collectionToChecklistService.updateRecent(cid, uid);
+            // 更新progress表
+            Result r2 = progressService.updateprogress(0, uid, cid, null);
 
-        return result;
+            Result result = ckListService.findByCid(cid, uid);
+
+            return result;
+        }
+        else return Result.build(null,404,"请求的checklist不存在");
     }
 
 

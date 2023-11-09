@@ -12,4 +12,6 @@ import com.wallace.utils.Result;
 public interface ProgressService extends IService<Progress> {
 
     Result updateprogress(int tid, Integer uid, Integer cid, String mark);
+
+    Result CreateTeamProgress(Integer uid, Integer cid);
 }

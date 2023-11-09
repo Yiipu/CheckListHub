@@ -51,7 +51,7 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklist(colid);
         if (!result.isEmpty())
             return Result.ok(result);
-        return Result.ok("收藏为空!");
+        return Result.ok(null);
     }
 
     @Override
@@ -62,7 +62,7 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklistOrderByTime(colid);
         if (!result.isEmpty())
             return Result.ok(result);
-        return Result.ok("最近浏览为空!");
+        return Result.ok(null);
     }
 
     @Override
@@ -73,7 +73,7 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklistOrderByTime(colid);
         if (!result.isEmpty())
             return Result.ok(result);
-        return Result.ok("团队列表为空!");
+        return Result.ok(null);
     }
 
 }

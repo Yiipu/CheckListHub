@@ -25,6 +25,17 @@
         ON DUPLICATE KEY UPDATE
             mark = VALUES(mark);
     </insert>
+    <insert id="CreateTeamProgress" parameterType="progress" keyProperty="id" useGeneratedKeys="true" keyColumn="id" >
+        INSERT INTO checklist_db.progress (tid, uid, cid)
+        VALUES (LAST_INSERT_ID(), #{uid}, #{cid})
+        ON DUPLICATE KEY UPDATE
+            mark = VALUES(mark);
+    </insert>
+    <update id="updateTid">
+        update checklist_db.progress
+        set tid =#{tid}
+        where id = #{id};
+    </update>
     <select id="selectProgress" resultType="progress">
         select *
         from checklist_db.progress
