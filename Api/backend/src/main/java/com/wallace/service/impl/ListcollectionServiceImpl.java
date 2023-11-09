@@ -40,7 +40,7 @@ public class ListcollectionServiceImpl extends ServiceImpl<ListcollectionMapper,
                 = collectionToChecklistMapper.selectCklistBycolidFromCollectionToChecklist(colid);
         if (!result.isEmpty())
             return Result.ok(result);
-        return Result.build(501, ResultCodeEnum.EMPTY);
+        return Result.build(null, 404,"不存在best");
     }
 
     @Override
