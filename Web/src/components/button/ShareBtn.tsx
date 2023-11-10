@@ -19,7 +19,7 @@ export default function ShareBtn({
 
     async function getData() {
         const res = await fetch(
-            `api/share`,
+            `${process.env.NEXT_PUBLIC_HOME_URL}share`,
             {
                 method: 'GET',
                 headers: {
