@@ -20,8 +20,8 @@
         is_deleted
     </sql>
     <insert id="updateMark">
-        INSERT INTO checklist_db.progress (tid, uid, cid, mark)
-        VALUES (#{tid}, #{uid}, #{cid}, #{mark})
+        INSERT INTO checklist_db.progress (tid,  cid, mark)
+        VALUES (#{tid}, #{cid}, #{mark})
         ON DUPLICATE KEY UPDATE mark = VALUES(mark);
     </insert>
     <insert id="CreateTeamProgress" parameterType="progress" keyProperty="id" useGeneratedKeys="true" keyColumn="id">
@@ -33,6 +33,11 @@
         update checklist_db.progress
         set tid =#{tid}
         where id = #{id};
+    </update>
+    <update id="updatePersonalMark">
+        INSERT INTO checklist_db.progress (tid, uid,  cid, mark)
+        VALUES (#{tid}, #{uid},#{cid}, #{mark})
+        ON DUPLICATE KEY UPDATE mark = VALUES(mark);
     </update>
     <insert id="CreateMark">
         INSERT INTO checklist_db.progress (tid, uid, cid, mark)

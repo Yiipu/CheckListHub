@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public interface ProgressMapper extends MyBaseMapper<Progress> {
 
-    int updateMark(int tid, Integer uid, Integer cid, String mark);
+    int updateMark(int tid, Integer cid, String mark);
 
     Progress selectProgress(int tid, Integer uid, Integer cid);
 
@@ -35,6 +35,8 @@ public interface ProgressMapper extends MyBaseMapper<Progress> {
     List<Map<Object, Object>> selectTidAndCidAndHeaderByUid(Integer uid);
 
     Progress selectProgressByTid(Integer tid);
+
+    int updatePersonalMark(int tid, Integer uid, Integer cid, String mark);
 }
 
 

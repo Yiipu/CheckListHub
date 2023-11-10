@@ -5,7 +5,6 @@ import com.wallace.pojo.Progress;
 import com.wallace.service.ProgressService;
 import com.wallace.mapper.ProgressMapper;
 import com.wallace.utils.Result;
-import com.wallace.utils.StringToArray;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -27,9 +26,12 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
 
     @Override
     public Result updateprogress(int tid, Integer uid, Integer cid, String mark) {
-        if (mark != null && !mark.equals("[]"))
-            progressMapper.updateMark(tid, uid, cid, mark);
-        else {
+        if (mark != null && !mark.equals("[]")) {
+            if (tid == 0)
+                progressMapper.updatePersonalMark(tid, uid, cid, mark);
+            else
+                progressMapper.updateMark(tid, cid, mark);
+        } else {
             int i = progressMapper.CreateMark(tid, uid, cid, "[]");
         }
 
@@ -66,9 +68,9 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
 
     @Override
     public Result addTeamProgress(Integer tid, Integer uid, Integer cid) {
-        Progress progress = progressMapper.selectProgressByTid(tid);
+        Progress progress = progressMapper.selectCidByTid(tid);
 
-        int i = progressMapper.updateMark(tid, uid, cid, progress.getMark());
+        int i = progressMapper.updateMark(tid, uid, progress.getMark());
         return Result.ok(returnEmpty);
 
     }
