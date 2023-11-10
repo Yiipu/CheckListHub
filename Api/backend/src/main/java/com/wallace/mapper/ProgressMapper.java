@@ -37,6 +37,8 @@ public interface ProgressMapper extends MyBaseMapper<Progress> {
     Progress selectProgressByTid(Integer tid);
 
     int updatePersonalMark(int tid, Integer uid, Integer cid, String mark);
+
+    int updateTeam(int tid, String mark);
 }
 
 

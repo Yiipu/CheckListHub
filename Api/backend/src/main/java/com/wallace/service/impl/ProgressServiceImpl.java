@@ -29,8 +29,12 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
         if (mark != null && !mark.equals("[]")) {
             if (tid == 0)
                 progressMapper.updatePersonalMark(tid, uid, cid, mark);
-            else
+            else{
                 progressMapper.updateMark(tid, cid, mark);
+                progressMapper.updateTeam(tid,mark);
+            }
+
+
         } else {
             int i = progressMapper.CreateMark(tid, uid, cid, "[]");
         }
