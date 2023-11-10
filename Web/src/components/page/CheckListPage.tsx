@@ -12,6 +12,7 @@ import ProgressBar from "../container/ProgressBar"
 import useClient from "@/util/useClient"
 
 export default function CheckListPage() {
+
     const checklist = useContext(StateCheckList).checklist
     var offset = -1
 

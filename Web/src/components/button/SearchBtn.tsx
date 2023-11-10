@@ -50,7 +50,7 @@ export default function SearchBtn() {
                             if (value) {
                                 console.log(value)
                                 const searchParams = value
-                                const res: { 'data': ChecklistCollection['ckLists'] } = await getData(`https://checklisthub.azurewebsites.net/api/search?q=${searchParams}`)
+                                const res: { 'data': ChecklistCollection['ckLists'] } = await getData(`${process.env.NEXT_PUBLIC_FE_URL}search?q=${searchParams}`)
                                 const data = res.data
                                 console.log(data)
                                 setResults(data)

@@ -3,7 +3,7 @@ import styles from "./page.module.css"
 import getSession from '@/util/getSession'
 
 async function getCid(slug: number) {
-
+    console.log(`${process.env.BE_URL}share/${slug}`)
     const res = await fetch(`${process.env.BE_URL}share/${slug}`,
         {
             next: { revalidate: 0 },
@@ -20,6 +20,7 @@ async function getCid(slug: number) {
 }
 
 async function getChecklist(cid: string, tid: string) {
+    console.log(`${process.env.BE_URL}checklist/${cid}`)
     const res = await fetch(`${process.env.BE_URL}checklist/${cid}`,
         {
             next: { revalidate: 0 },
@@ -44,10 +45,10 @@ export default async function Layout({
     children: React.ReactNode,
 }) {
     const cidRes: {
-        'data': {
-            'cid': string,
-        }
+        'data': string
     } = await getCid(params.slug)
+
+    console.log(`res: ${cidRes.data}`)
 
     const checklistRes: {
         'data': {
@@ -56,7 +57,7 @@ export default async function Layout({
             'header': string,
             'progress': Array<boolean>
         }
-    } = await getChecklist(cidRes.data.cid, params.slug.toString())
+    } = await getChecklist(cidRes.data, params.slug.toString())
     const checklist: CheckList = checklistRes.data.checklist
     checklist.id = checklistRes.data.cid
 
