@@ -27,7 +27,7 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
 
     @Override
     public Result updateprogress(int tid, Integer uid, Integer cid, String mark) {
-        if (mark != null)
+        if (mark != null && !mark.equals("[]"))
             progressMapper.updateMark(tid, uid, cid, mark);
         else {
             int i = progressMapper.CreateMark(tid, uid, cid, "[]");
@@ -38,8 +38,8 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
 
     @Override
     public Result CreateTeamProgress(Integer uid, Integer cid) {
-        Progress progress1 = progressMapper.selectTidByUidAndCid(uid,cid);
-        if(progress1==null){
+        Progress progress1 = progressMapper.selectTidByUidAndCid(uid, cid);
+        if (progress1 == null) {
             Progress progress = new Progress();
             progress.setUid(uid);
             progress.setCid(cid);
@@ -47,7 +47,7 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
             int i = progressMapper.CreateTeamProgress(progress);
             int j = progressMapper.updateTid(progress.getId(), progress.getId());
             return Result.ok(progress.getId());
-        }else{
+        } else {
             return Result.ok(progress1.getId());
         }
     }
@@ -67,16 +67,16 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
     @Override
     public Result addTeamProgress(Integer tid, Integer uid, Integer cid) {
 
-        int i = progressMapper.updateMark(tid, uid, cid, null);
+        int i = progressMapper.updateMark(tid, uid, cid, "[]");
         return Result.ok(returnEmpty);
 
     }
 
     @Override
     public Result findTeamExist(Integer uid, Integer cid) {
-        Progress progress = progressMapper.selectTidByUidAndCid(uid,cid);
-        if(progress==null)
-            return  Result.ok(-1);
+        Progress progress = progressMapper.selectTidByUidAndCid(uid, cid);
+        if (progress == null)
+            return Result.ok(-1);
         return Result.ok(progress.getTid());
     }
 

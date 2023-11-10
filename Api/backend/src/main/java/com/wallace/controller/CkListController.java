@@ -55,7 +55,7 @@ public class CkListController {
             // 更新最近浏览表
             Result r1 = collectionToChecklistService.updateRecent(cid, uid);
             // 创建progress表
-            Result r2 = progressService.updateprogress(tid, uid, cid, null);
+            Result r2 = progressService.updateprogress(tid, uid, cid, "[]");
 
             Result result = ckListService.findByCid(tid, cid, uid);
 
@@ -119,9 +119,9 @@ public class CkListController {
      * @Param [cid, uid, tid]
      * @return com.wallace.utils.Result
      **/
-    @PostMapping("/progress/{cid}")
-    public Result updateProgress(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid, @RequestHeader(name = "tid", required = false) Integer tid, @RequestBody List<Boolean> p) {
-        String progress = StringToArray.booleanListToString(p);
+    @GetMapping("/progress/{cid}")
+    public Result updateProgress(@PathVariable(name = "cid") Integer cid, @RequestHeader("uid") Integer uid, @RequestHeader(name = "tid", required = false) Integer tid, @RequestHeader("progress") String progress) {
+//        String progress = StringToArray.booleanListToString(p);
         if (tid == null)
             tid = 0;
         if (ckListService.CidExisted(cid)) {

@@ -20,7 +20,7 @@ import java.util.List;
  * @Author yajuxi
  */
 @Data
-public class CkListView{
+public class CkListView {
     private Integer cid;
 
     private Integer uid;
@@ -34,9 +34,9 @@ public class CkListView{
     private Integer isDeleted;
 
     // 新增的成员变量 progress
-    private List<Boolean> progress;
+    private String progress;
 
-    public CkListView(CkList ck, List<Boolean> progress){
+    public CkListView(CkList ck, String progress) {
         this.setUid(ck.getUid());
         this.setCid(ck.getCid());
         this.setHeader(ck.getHeader());
@@ -45,6 +45,4 @@ public class CkListView{
         this.setIsDeleted(ck.getIsDeleted());
         this.setProgress(progress);
     }
-
-
 }

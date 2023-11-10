@@ -49,7 +49,8 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
         CkList ck = ckListMapper.selectById(cid);
         // 查找progress
         Progress progress = progressMapper.selectProgress(tid, uid, cid);
-        CkListView ckListView = new CkListView(ck, StringToArray.stringToBooleanList(progress.getMark()));
+//        CkListView ckListView = new CkListView(ck, StringToArray.stringToBooleanList(progress.getMark()));
+        CkListView ckListView = new CkListView(ck, progress.getMark());
 
         return Result.ok(ckListView);
     }
@@ -157,7 +158,8 @@ public class CkListServiceImpl extends ServiceImpl<CkListMapper, CkList>
     public Result selectBycid(Integer cid) {
         CkList ck = ckListMapper.selectById(cid);
 
-        CkListView ckListView = new CkListView(ck, StringToArray.stringToBooleanList("[]"));
+//        CkListView ckListView = new CkListView(ck, StringToArray.stringToBooleanList("[]"));
+        CkListView ckListView = new CkListView(ck, "[]");
 
         return Result.ok(ckListView);
     }
