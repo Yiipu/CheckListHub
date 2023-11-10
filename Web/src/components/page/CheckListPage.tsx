@@ -4,14 +4,16 @@ import { useContext } from "react"
 import CollapseBox from "@/components/container/CollapseBox"
 import { StateCheckList } from '@/context/StateCheckListProvider'
 import { Session } from "@/context/SessionProvider"
-import useLocalStorage from "@/util/useLocalStorage"
 import CheckItem from "../button/CheckItem"
 import ShareBtn from "../button/ShareBtn"
 import MarkBtn from "../button/MarkBtn"
 import ProgressBar from "../container/ProgressBar"
 import useClient from "@/util/useClient"
+import useStorage from "@/util/useStorage"
 
 export default function CheckListPage() {
+
+    const isTeam = useContext(StateCheckList).state.teamid !== '0'
 
     const checklist = useContext(StateCheckList).checklist
     var offset = -1
@@ -22,7 +24,7 @@ export default function CheckListPage() {
 
     const progress_LS_Key = `progress_${userId}_${checkListId}`
 
-    const [progress, setProgress] = useLocalStorage(progress_LS_Key, JSON.stringify(Array(itemNum).fill(false)))
+    const [progress, setProgress] = useStorage(progress_LS_Key, JSON.stringify(Array(itemNum).fill(false)))
 
     function onProgressUpdate(position: number, state: boolean) {
         setProgress(progress.map((b: any, i: number) => {
@@ -35,7 +37,7 @@ export default function CheckListPage() {
 
     return (
         <>
-            {useClient()&&<ProgressBar progress={progress} />}
+            {useClient() && <ProgressBar progress={progress} />}
             <div className="grid md:grid-cols-3 gap-1 m-2">
                 <ul className="grid grid-cols-4 divide-x divide-y md:col-span-2 border-2 border-sky-500">
                     {checklist.topicList?.map((item, index) => (

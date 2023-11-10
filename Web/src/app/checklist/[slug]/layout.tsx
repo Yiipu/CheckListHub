@@ -65,7 +65,7 @@ export default async function Layout({
             'checklist': CheckList,
             'cid': string,
             'header': string,
-            'progress': Array<boolean>
+            'progress': string,
         }
     } = await getChecklist(params.slug.toString(), '0')
     const checklist: CheckList = res.data.checklist
@@ -76,12 +76,12 @@ export default async function Layout({
     } = await getMarked(params.slug)
     const isMarked = res_isMarked.data
 
-    const progress = res.data.progress
+    const progress: Array<boolean> = JSON.parse(res.data.progress)
 
     const res_teamid: {
         'data': number
     } = await getTeamid(params.slug)
-    const teamid = res_teamid.data == -1 ? '' : `${res_teamid.data}`
+    const teamid = res_teamid.data == -1 ? '0' : `${res_teamid.data}`
 
     const state: ChecklistState = {
         'marked': isMarked,

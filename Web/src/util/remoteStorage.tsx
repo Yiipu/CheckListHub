@@ -1,4 +1,4 @@
-class RemoteStorage {
+class remoteStorage {
 
     storage = {}
 

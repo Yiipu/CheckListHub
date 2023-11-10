@@ -55,13 +55,18 @@ export default async function Layout({
             'cid': string,
             'checklist': CheckList,
             'header': string,
-            'progress': Array<boolean>
+            'progress': string,
         }
     } = await getChecklist(cidRes.data, params.slug.toString())
     const checklist: CheckList = checklistRes.data.checklist
     checklist.id = checklistRes.data.cid
 
-    const progress = checklistRes.data.progress
+    if (checklistRes.data.progress.length == 0) {
+        checklistRes.data.progress = ''
+    }
+
+    console.log(checklistRes.data.progress)
+    const progress: Array<boolean> = JSON.parse(checklistRes.data.progress)
 
     const state: ChecklistState = {
         'marked': false,
@@ -73,6 +78,8 @@ export default async function Layout({
         checklist: checklist,
         state: state,
     }
+
+    console.log(state)
 
     return (
         <>

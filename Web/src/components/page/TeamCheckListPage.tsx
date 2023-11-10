@@ -4,7 +4,7 @@ import { useContext } from "react"
 import CollapseBox from "@/components/container/CollapseBox"
 import { StateCheckList } from '@/context/StateCheckListProvider'
 import { Session } from "@/context/SessionProvider"
-import useLocalStorage from "@/util/useLocalStorage"
+import useLocalStorage from "@/util/useStorage"
 import CheckItem from "../button/CheckItem"
 import ProgressBar from "../container/ProgressBar"
 import useClient from "@/util/useClient"
