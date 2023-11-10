@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
 
   const session = getSession()
-  console.log(`NEXT_PUBLIC_FE_URL: ${process.env.NEXT_PUBLIC_FE_URL}`)
+  console.log(`test-3.3`)
 
   return (
     <html lang="en">

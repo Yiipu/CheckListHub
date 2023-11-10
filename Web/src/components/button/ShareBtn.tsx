@@ -19,7 +19,7 @@ export default function ShareBtn({
 
     async function getData() {
         const res = await fetch(
-            `${process.env.NEXT_PUBLIC_HOME_URL}share`,
+            `https://checklisthub.azurewebsites.net/api/share`,
             {
                 method: 'GET',
                 headers: {
@@ -46,7 +46,7 @@ export default function ShareBtn({
                         setTeam(res.data)
                     }}>{isLoading ? 'Working...' : 'Generate Link'}</Button>
                         :
-                        <Snippet variant="bordered" className="text-white">{`${process.env.NEXT_PUBLIC_HOME_URL}team/${team}`}</Snippet>}
+                        <Snippet variant="bordered" className="text-white">{`https://checklisthub.azurewebsites.net/api/team/${team}`}</Snippet>}
                 </div>
             </PopoverContent>
         </Popover>
