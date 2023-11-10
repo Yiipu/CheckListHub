@@ -49,7 +49,7 @@ public class CkListController {
         if (ckListService.CidExisted(cid)) {
             if(uid==null){
                 Result result = ckListService.selectBycid(cid);
-                return Result.ok(result);
+                return result;
             }
 
             // 更新最近浏览表

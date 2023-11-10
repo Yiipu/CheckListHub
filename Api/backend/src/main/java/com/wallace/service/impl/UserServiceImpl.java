@@ -59,7 +59,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             listcollectionmapper.insert(listcollection2);
             return Result.ok(returnEmpty);
         } else {
-            return Result.build(returnEmpty, 404, "用户已存在");
+            return Result.build(returnEmpty, 200, "用户已存在");
         }
 
 
