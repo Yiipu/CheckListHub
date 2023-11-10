@@ -66,8 +66,9 @@ public class ProgressServiceImpl extends ServiceImpl<ProgressMapper, Progress>
 
     @Override
     public Result addTeamProgress(Integer tid, Integer uid, Integer cid) {
+        Progress progress = progressMapper.selectProgressByTid(tid);
 
-        int i = progressMapper.updateMark(tid, uid, cid, "[]");
+        int i = progressMapper.updateMark(tid, uid, cid, progress.getMark());
         return Result.ok(returnEmpty);
 
     }

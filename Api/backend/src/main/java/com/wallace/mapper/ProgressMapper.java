@@ -2,7 +2,6 @@ package com.wallace.mapper;
 
 import com.wallace.config.MyBaseMapper;
 import com.wallace.pojo.Progress;
-import org.apache.ibatis.annotations.MapKey;
 
 import java.util.List;
 import java.util.Map;
@@ -34,6 +33,8 @@ public interface ProgressMapper extends MyBaseMapper<Progress> {
 
 
     List<Map<Object, Object>> selectTidAndCidAndHeaderByUid(Integer uid);
+
+    Progress selectProgressByTid(Integer tid);
 }
 
 
