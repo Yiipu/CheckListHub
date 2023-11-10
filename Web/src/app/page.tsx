@@ -31,13 +31,6 @@ export default async function Home() {
           </div>
         </div>
         <div className="border-2 border-sky-500 p-2">
-          <CollectionListHeader>📤 Upload </CollectionListHeader>
-          <div className="divider" />
-          <div className="h-[15rem]">
-            {/* <CollectionListBody param="upload" session={session} /> */}
-          </div>
-        </div>
-        <div className="border-2 border-sky-500 p-2">
           <CollectionListHeader>📚 Marked</CollectionListHeader>
           <div className="divider" />
           <div className="h-[15rem]">

@@ -11,7 +11,7 @@ export default function getSession(): GithubSession | null {
         return session;
     } else {
         return {
-            id: '5',
+            id: `${process.env.DEV_UID}`,
             idp: null,
             token: null
         }
