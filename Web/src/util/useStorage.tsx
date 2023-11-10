@@ -28,6 +28,9 @@ export default function useStorage(key: string, initialValue: string) {
     const [storedValue, setStoredValue] = useState(() => {
         if (isBrowser) {
             if (session) {
+                if (!remoteProgress) {
+                    return JSON.parse(initialValue)
+                }
                 console.log(`remoteProgress ${remoteProgress}`)
                 console.log(`获取进度：${remoteProgress.length ? remoteProgress : initialValue}`)
                 return remoteProgress.length ? remoteProgress : JSON.parse(initialValue)

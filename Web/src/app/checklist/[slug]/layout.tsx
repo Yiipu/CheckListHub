@@ -60,23 +60,28 @@ export default async function Layout({
     children: React.ReactNode,
 }) {
 
-    const res: {
+    const checklistRes: {
         'data': {
-            'checklist': CheckList,
             'cid': string,
+            'checklist': CheckList,
             'header': string,
             'progress': string,
         }
     } = await getChecklist(params.slug.toString(), '0')
-    const checklist: CheckList = res.data.checklist
-    checklist.id = res.data.cid
+    const checklist: CheckList = checklistRes.data.checklist
+    checklist.id = checklistRes.data.cid
+
+    if (checklistRes.data.progress.length == 0) {
+        checklistRes.data.progress = ''
+    }
 
     const res_isMarked: {
         'data': boolean
     } = await getMarked(params.slug)
     const isMarked = res_isMarked.data
-
-    const progress: Array<boolean> = JSON.parse(res.data.progress)
+    
+    console.log(checklistRes.data.progress)
+    const progress: Array<boolean> = JSON.parse(checklistRes.data.progress)
 
     const res_teamid: {
         'data': number
