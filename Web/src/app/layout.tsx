@@ -18,6 +18,7 @@ export default function RootLayout({
 }) {
 
   const session = getSession()
+  console.log(`NEXT_PUBLIC_FE_URL: ${process.env.NEXT_PUBLIC_FE_URL}`)
 
   return (
     <html lang="en">

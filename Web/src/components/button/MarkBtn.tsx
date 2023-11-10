@@ -23,7 +23,7 @@ export default function MarkBtn({
 
     async function getData(method: string) {
         const res = await fetch(
-            `${process.env.NEXT_PUBLIC_FE_URL}favor`,
+            `api/favor`,
             {
                 method: method,
                 headers: {

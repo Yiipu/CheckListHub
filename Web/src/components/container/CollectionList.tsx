@@ -58,11 +58,11 @@ export async function CollectionListBody({
     return res.json()
   }
 
-  const res: { 'data': ChecklistCollection['ckLists'] } = await getData()
+  const res: { 'data': ChecklistCollection['ckLists'] } | null = await getData()
   const collection: ChecklistCollection = {
-    ckLists: res.data,
+    ckLists: res?.data || [],
     id: '',
-    count: res.data.length
+    count: res?.data.length || 0
   }
 
   return (
