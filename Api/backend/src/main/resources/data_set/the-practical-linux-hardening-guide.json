@@ -1,0 +1,268 @@
+{
+  "id": 209,
+  "header": "the-practical-linux-hardening-guide",
+  "topicList": [
+    "The Practical Linux Hardening Guide",
+    "Introduction",
+    "Policy Compliance",
+    "Security Content Automation Protocol (SCAP)",
+    "DevSec Hardening Framework",
+    "Contributing & Support",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "The Practical Linux Hardening Guide",
+      "items": [
+        {
+          "title": "<p><br/></p><p align=\"center\">\n<a href=\"https://github.com/trimstray/the-practical-linux-hardening-guide\">\n<img alt=\"Master\" src=\"https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/static/img/main_preview.jpg\"/>\n</a>\n</p><p><br/></p><p align=\"center\">\"<i>Did you know all your doors were locked?</i>\" - Riddick (The Chronicles of Riddick)</p><p><br/></p><p align=\"center\">\n<a href=\"https://github.com/trimstray/the-practical-linux-hardening-guide/pulls\">\n<img alt=\"Pull Requests\" src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg?longCache=true\"/>\n</a>\n<a href=\"LICENSE.md\">\n<img alt=\"MIT License\" src=\"https://img.shields.io/badge/License-MIT-lightgrey.svg?longCache=true\"/>\n</a>\n</p><p align=\"center\">\n<a href=\"https://twitter.com/trimstray\" target=\"_blank\">\n<img src=\"https://img.shields.io/twitter/follow/trimstray.svg?logo=twitter\"/>\n</a>\n</p><div align=\"center\">\n<sub>Created by\n  <a href=\"https://twitter.com/trimstray\">trimstray</a> and\n  <a href=\"https://github.com/trimstray/the-practical-linux-hardening-guide/graphs/contributors\">contributors</a>\n</sub></div><p><br/></p><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Introduction",
+      "items": [
+        {
+          "topic": "Prologue",
+          "items": [
+            {
+              "title": "<p><strong><a href=\"https://trimstray.github.io/the-practical-linux-hardening-guide/\">The Practical Linux Hardening Guide</a></strong> provides a high-level overview of hardening GNU/Linux systems. It is not an official standard or handbook but it <em>touches</em> and <em>uses</em> industry standards.</p><p>This guide also provides you with <em>practical step-by-step instructions</em> for building your own hardened systems and services. One of the main goals is to create a single document covering <em>internal</em> and <em>external</em> threats.</p><p>A few rules for this project:</p>"
+            },
+            {
+              "title": "useful, simple, and not tiring"
+            },
+            {
+              "title": "include a lot of security tips from the C2S/CIS"
+            },
+            {
+              "title": "contains also non-related rules with C2S/CIS"
+            },
+            {
+              "title": "based on a minimal <a href=\"https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux\">RHEL7</a> and <a href=\"https://www.centos.org/\">CentOS 7</a> installations"
+            },
+            {
+              "title": "it's not exhaustive about Linux hardening"
+            },
+            {
+              "title": "some hardening rules/descriptions can be done better"
+            },
+            {
+              "title": "you can think of it as a checklist</li>\n</ul><p>The Practical Linux Hardening Guide use following <a href=\"https://www.open-scap.org/\">OpenSCAP</a> configurations:</p>"
+            },
+            {
+              "title": "<a href=\"https://static.open-scap.org/ssg-guides/ssg-rhel7-guide-C2S.html\">U.S. Government Commercial Cloud Services (C2S) baseline inspired by CIS v2.1.1</a></li>\n</ul><blockquote>\n<p>C2S for Red Hat Enterprise Linux 7 v0.1.43.</p>\n</blockquote>"
+            },
+            {
+              "title": "<a href=\"https://www.stigviewer.com/stig/red_hat_enterprise_linux_7/\">Red Hat Enterprise Linux 7 Security Technical Implementation Guide (STIG)</a><blockquote>\n<p>The requirements are derived from the (NIST) 800-53 and related documents.</p>\n</blockquote><p>Please also remember:</p><blockquote>\n<p>This guide contains my comments that may differ from certain industry principles. If you are not sure what to do please see <strong><a href=\"#policy-compliance\">Policy Compliance</a></strong>.</p>\n</blockquote>"
+            }
+          ]
+        },
+        {
+          "topic": "The Importance of Hardening Linux",
+          "items": [
+            {
+              "title": "<p>Simply speaking, hardening is the process of making a system more secure. Out of the box, Linux servers don’t come \"hardened\" (e.g. with the attack surface minimized). It’s up to you to prepare for each eventuality and set up systems to notify you of any suspicious activity in the future.</p><p>The process of hardening servers involves both IT ops. and security teams and require changes to the default configuration according to industry benchmarks.</p><p>Also for me, hardening is the fine art of doing the right things, even if they don't always look to have a big impact. It's always a balance between ease of use and protection.</p><p>You need to harden your system to protect your assets as much as possible. Why is it important? Please read a great, short article that <a href=\"https://linux-audit.com/linux-server-hardening-most-important-steps-to-secure-systems/\">explains the hardening process</a> step by step by <a href=\"https://michaelboelen.com/\">Michael Boelen</a>.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "How to Harden Linux",
+          "items": [
+            {
+              "title": "<p>In my opinion, you should drop all non-industry policies, articles, manuals, and others especially on production environments and standalone home servers. These lists exist to give a false sense of security and aren't based on authority standards.</p><p align=\"center\">\n<a href=\"https://github.com/trimstray/the-practical-linux-hardening-guide\">\n<img alt=\"Master\" src=\"https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/static/img/meme_01.png\"/>\n</a>\n</p><p>There are a lot of great GNU/Linux hardening policies available to provide safer operating systems compatible with security protocols. For me, CIS and the STIGs compliances are about the best prescriptive guides - but of course you can choose a different one (e.g. PCI-DSS, DISA).</p><blockquote>\n<p>Most of all you should use <a href=\"#policy-compliance\">Security Benchmarks/Policies</a> which describe consensus best practices for the secure configuration of target systems.</p>\n</blockquote><p>Configuring your systems in compliance eliminates the most common vulnerabilities. For example, CIS has been shown to eliminate 80-95% of known vulnerabilities.</p><p>On the other hand, these standards are complicated checklists (often for newbies, difficult to implement). In my opinion, ideally, real world implementation is automated via something like OpenSCAP.</p><blockquote>\n<p>You should use a rational approach because more is not better. Each environment is different, so even though security rules should all work in theory, sometimes things will not work as expected.</p>\n</blockquote><p>Hardening is not a simple process. Here are general rules following common best practices:</p>"
+            },
+            {
+              "title": "never use root account for anything that does not require it"
+            },
+            {
+              "title": "only <code>sudo</code> individual commands"
+            },
+            {
+              "title": "never set a server to run as root (except for initialization time) and ensure that it exits all unnecessary privileges before accepting requests"
+            },
+            {
+              "title": "secure your firewall the best you can and forbid all unnecessary access"
+            },
+            {
+              "title": "do not install unnecessary or unstable software"
+            }
+          ]
+        },
+        {
+          "topic": "Which Distribution Should be Used",
+          "items": [
+            {
+              "title": "<p>This guide is tested on <strong>Red Hat Enterprise Linux 7</strong> and <strong>CentOS 7</strong> distributions because these are:</p>"
+            },
+            {
+              "title": "free (CentOS) and open source"
+            },
+            {
+              "title": "enterprise-class"
+            },
+            {
+              "title": "stable and reliable"
+            },
+            {
+              "title": "with great community support"
+            },
+            {
+              "title": "built on coherent snapshots of old packages<p>Both distributions allow the use of <strong><a href=\"#scap-security-guide\">certified tools</a></strong> which can parse and evaluate each component of the SCAP standard.</p><p>If you use another distribution - no problem, this guide is also for you.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "How to Read This Guide",
+          "items": [
+            {
+              "title": "<p>Here is the structure of the chapters:</p><p><code>Chapter - e.g. Core Layer\n    |\n    |-- Subsection - e.g. Maintaining Software\n    |       \\\n    |        |-- Rationale\n    |        |-- Solution (+ policies)\n    |        |-- Comments\n    |        |-- Useful resources\n    |\n    |-- Subsection - e.g. Accounts and Access\n    |       \\\n    |        |-- Rationale\n    |        |-- Solution (+ policies)\n    |        |-- Comments\n    |        |-- Useful resources</code></p><p>Levels of understanding:</p>"
+            },
+            {
+              "title": "<em>Chapter</em> and <em>subsection</em> offers a general overview"
+            },
+            {
+              "title": "<em>Rationale</em> tells you the reasoning behind the changes"
+            },
+            {
+              "title": "<em>Solution</em> and <em>policies</em> are always compliant with the standard and on this basis, make changes"
+            },
+            {
+              "title": "<em>Comments</em> helps you figure out what you can change or add to the <em>solution</em>"
+            },
+            {
+              "title": "<em>Useful resources</em> provide deeper understanding</li>\n</ul><p>If you do not have the time to read hundreds of articles (just like me) this multipurpose handbook may be useful. This handbook does not get into all aspects of GNU/Linux hardening. I tried to put external resources in many places in this handbook in order to dispel any suspicion that may exist.</p><p>I did my best to make this guid a single and consistent (but now I know that is really hard). It's organized in an order that makes logical sense to me.</p><p>Do not treat this hardening guide as revealed knowledge. You should take a scientific approach when reading this document. If you have any doubts and disagree with me, please point out my mistakes. You should to discover cause and effect relationships by asking questions, carefully gathering and examining the evidence, and seeing if all the available information can be combined in to a logical answer.</p><p>I create this handbook for one more reason. Rather than starting from scratch in, I putting together a plan for answering your questions to help you find the best way to do things and ensure that you don't repeat my mistakes from the past.</p><p>So, what's most important:</p>"
+            },
+            {
+              "title": "ask a questions about something that you observe"
+            },
+            {
+              "title": "do background research"
+            },
+            {
+              "title": "do tests with an experiments"
+            },
+            {
+              "title": "analyze and draw conclusions"
+            },
+            {
+              "title": "communicate results (for us!)"
+            }
+          ]
+        },
+        {
+          "topic": "Okay. Let's start, 3, 2, 1... STOP!",
+          "items": [
+            {
+              "title": "<p>Making major changes to your systems can be risky.</p><p>The most important rule of system hardening that reasonable admins follow is:</p><blockquote>\n<p><strong><code>A production environment is the real instance of the app so make your changes on the dev/test!</code></strong></p>\n</blockquote><p>The second most important rule is:</p><blockquote>\n<p><strong><code>Don’t do anything that will affect the availability of the service or your system.</code></strong></p>\n</blockquote><p>The third rule is:</p><blockquote>\n<p><strong><code>Make backups of the entire virtual machine and important components.</code></strong></p>\n</blockquote><p>And the last rule is:</p><blockquote>\n<p><strong><code>Think about what you actually do with your server.</code></strong></p>\n</blockquote>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Policy Compliance",
+      "items": [
+        {
+          "topic": "Center of Internet Security (CIS)",
+          "items": [
+            {
+              "title": "<p>The Center of Internet Security (CIS) is a nonprofit organization focused on improving public and private sector cybersecurity readiness and response.</p><p>Please see <strong><a href=\"https://www.cisecurity.org/cis-benchmarks/\">CIS Benchmarks</a></strong>.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Security Technical Implementation Guide (STIG)",
+          "items": [
+            {
+              "title": "<p>A Security Technical Implementation Guide (STIG) is a cybersecurity methodology for standardizing security protocols within networks, servers, computers, and logical designs to enhance overall security.</p><p>Please see <strong><a href=\"https://www.stigviewer.com/stigs\">Stigviewer</a></strong> to explore all stigs.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "National Institute of Standards and Technology (NIST)",
+          "items": [
+            {
+              "title": "<p>The National Institute of Standards and Technology (NIST) is a physical sciences laboratory and a non-regulatory agency of the United States Department of Commerce.</p><p>Please see <strong><a href=\"https://nvd.nist.gov/ncp/repository\">National Checklist Program (NCP)</a></strong>.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Payment Card Industry Data Security Standard (PCI-DSS)",
+          "items": [
+            {
+              "title": "<p>Payment Card Industry Data Security Standard (PCI-DSS) compliance is a requirement for any business that stores, processes, or transmits cardholder data.</p><p>In accordance with PCI-DSS requirements, establish a formal policy and supporting procedures for developing configuration standards for system components that are consistent with industry-accepted hardening standards like:</p>"
+            },
+            {
+              "title": "Center of Internet Security (CIS)"
+            },
+            {
+              "title": "International Organization for Standardization (ISO)"
+            },
+            {
+              "title": "SysAdmin, Audit, Network, and Security (SANS) Institute"
+            },
+            {
+              "title": "National Institute of Standards and Technology (NIST)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Security Content Automation Protocol (SCAP)",
+      "items": [
+        {
+          "title": "<p>Security Content Automation Protocol (SCAP) provides a mechanism to check configurations, vulnerability management and evaluate policy compliance for a variety of systems.</p><p>One of the most popular implementations of SCAP is OpenSCAP and it is very helpful for vulnerability assessment and as a hardening helper. OpenSCAP can easily handle the SCAP standards and generate neat, HTML-based reports.</p><p>Please see <strong><a href=\"https://www.open-scap.org/security-policies/\">SCAP Security Policies</a></strong>, <strong><a href=\"https://static.open-scap.org/openscap-1.2/oscap_user_manual.html\">OpenSCAP User Manual</a></strong>, and <strong><a href=\"https://static.open-scap.org/\">OpenSCAP Static</a></strong>.</p>"
+        },
+        {
+          "topic": "SCAP Security Guide",
+          "items": [
+            {
+              "title": "<p>The auditing system settings with SCAP Security Guide project contains guidance for settings for Red Hat/CentOS and it's validated by NIST.</p><p>You should inspect the security content of your system with <code>oscap info</code> module:</p><p>```bash</p>"
+            }
+          ]
+        },
+        {
+          "topic": "OpenSCAP Base",
+          "items": [
+            {
+              "title": "<p>The OpenSCAP scanner will only provide meaningful results if the content you want it to process is correct and up to date. The <code>oscap</code> tool scans your system, validates security compliance content, and generates reports and guides based on these scans.</p><p>Official <a href=\"https://www.open-scap.org/tools/openscap-base/\">OpenSCAP Base</a> documentation says:</p><blockquote>\n<p><em>The command-line tool, called <code>oscap</code>, offers a multi-purpose tool designed to format content into documents or scan the system based on this content. Whether you want to evaluate DISA STIGs, NIST‘s USGCB, or Red Hat’s Security Response Team’s content, all are supported by OpenSCAP.</em></p>\n</blockquote><p>Before use, please read <strong><a href=\"https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sect-using_oscap\">Using OSCAP</a></strong> documentation.</p><p>```bash</p>"
+            }
+          ]
+        },
+        {
+          "topic": "SCAP Workbench",
+          "items": [
+            {
+              "title": "<p>SCAP Workbench is a utility that offers an easy way to perform common <code>oscap</code> tasks on local or remote systems.</p><p>Before use, please read <strong><a href=\"https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sect-using_scap_workbench\">Using SCAP Workbench</a></strong> documentation.</p><p>```bash</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "DevSec Hardening Framework",
+      "items": [
+        {
+          "title": "<blockquote>\n<p><em>Security + DevOps: Automatic Server Hardening.</em></p>\n</blockquote><p>This project covers some of the things in this guide which can be automated (e.g. setting of grub password or enforcing the permissions of the common directories). Its a good start if you want to make changes and see how it works from the level of automation tools.</p><p>Project: <strong><a href=\"https://dev-sec.io\">DevSec Hardening Framework</a></strong> and :octocat: GitHub repository: <strong><a href=\"https://github.com/dev-sec/\">dev-sec</a></strong>.</p><p>Thanks <a href=\"https://github.com/artem-sidorenko\">@artem-sidorenko</a>!</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributing & Support",
+      "items": [
+        {
+          "title": "<p>If you find something which doesn't make sense, or something doesn't seem right, please make a pull request and please add valid and well-reasoned explanations about your changes or comments.</p><p>Before adding a pull request, please see the <strong><a href=\".github/CONTRIBUTING.md\">contributing guidelines</a></strong>.</p><p>If this project is useful and important for you or if you really like <em>The Practical Linux Hardening Guide</em>, you can bring <strong>positive energy</strong> by giving some <strong>good words</strong> or <strong>supporting this project</strong>. Thank you!</p>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p>For license information, please see <a href=\"https://github.com/trimstray/the-practical-linux-hardening-guide/blob/master/LICENSE.md\">LICENSE</a>.</p><hr/>"
+        }
+      ]
+    }
+  ]
+}

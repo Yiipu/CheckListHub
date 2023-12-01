@@ -1,0 +1,89 @@
+{
+  "id": 140,
+  "header": "OSCP-Cheatsheet",
+  "topicList": [
+    "Start Here",
+    "Automated OSCP Enumeration Script",
+    "Manual Scanning Commands",
+    "Linux Enumeration"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Start Here",
+      "items": [
+        {
+          "title": "<p>| # | Step | Description |\n| --- | --- | --- |\n| 1 | <code>Discover</code> | Discover what's on the network |\n| 2 | <code>Document</code> | Document your findings in CherryTree |\n| 3 | <code>Select</code> | Select the specific cheatsheet for the box you are attacking |</p><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Automated OSCP Enumeration Script",
+      "items": [
+        {
+          "title": "<p>Use these automated tools to save as much time as possible when enumerating vulnerabilities!</p><p>| # | Resource | Description |\n| --- | --- | --- |\n| 1 | <a href=\"https://github.com/codingo/Reconnoitre\">Reconnoitre</a> | A tool specifically created for scanning OSCP labs. |\n| 2 | <a href=\"https://github.com/Tib3rius/AutoRecon\">AutoRecon</a> | A tool for scanning both CTFs and OSCP. |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Manual Scanning Commands",
+      "items": [
+        {
+          "topic": "Nmap",
+          "items": [
+            {
+              "title": "<p>| # | Command | Description |\n| --- | --- | --- |\n| 1 | <code>nmap -sn 10.11.1.0/24</code> | Enum IPs. Quick SYN scan without looking for open ports.  |\n| 2 | <code>nmap -sC -sV -vv -oA quick 10.11.1.4</code> | Quick TCP scan on target IP |\n| 3 | <code>nmap -sU -sV -vv -oA quick_udp 10.11.1.7</code> | Quick UDP scan on target IP |\n| 4 | <code>nmap -sV -O -F --version-light 10.11.1.6</code> | Quick OS Detection &amp; Port Scan on target IP  |\n| 5 | <code>nmap -sC -sV -p- -vv -oA full 10.11.1.8</code> | Very long and aggressive TCP scan on target IP |</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Interesting Ports",
+          "items": [
+            {
+              "title": "<p>| Port # | Description |\n| --- | --- |\n| 21 | FTP server, unencrypted. |\n| 22 | SSH server, can be connected to via SSH |\n| 23 | Telnet. Basically an unencrypted SSH |\n| 25 | SMTP - Email sending service. <a href=\"#SMTP-Email-Enumeration\">Query it</a> to enum email addresses? |\n| 69 | TFTP Server.  Very uncommon and old. Uses UDP. |\n| 80 | HTTP Server, hosting website? Try visiting IP with web browser |\n| 88 | Kerboros Service.  Check, <a href=\"https://labs.f-secure.com/archive/digging-into-ms14-068-exploitation-and-defence/\">MS14-068</a> |\n| 110 | POP3 mail service.  Login via telnet or SSH? |\n| 111 | RPCbind. This can help us look for NFS-shares |\n| 119 | Network Time Protocol |\n| 135 | MSRPC - Microsoft RPC |\n| 139 | SMB Service. likely vulnerable to an SMB RCE | \n| 161, 162 | SNMP Service |\n| 389, 636 | LDAP Directory Service |\n| 443 | HTTPS, check for HeartBleed? View certificate for information? |\n| 445 | SMB Shares service, likely vulnerable to an SMB RCE |\n| 587 | Submission.  If Postfix is run on it, it could be vunerable to shellshock |\n| 631 | CUPS. Basically a Linux Printer Service for sharing printers. |\n| 1433 | Default MSSQL port.  <code>sqsh -S 10.1.11.41 -U sa</code> |\n| 1521 | Oracle DB. <code>tnscmd10g version -h 10.1.11.51</code> |\n| 2021 | Oracle XML DB.  Check <a href=\"https://docs.oracle.com/cd/B10501_01/win.920/a95490/username.htm\">Default Passwords</a> |\n| 2049 | Network File System. <code>showmount -e 10.1.11.64</code> |\n| 3306 | MySQL Database.  Connect: <code>mysql --host=10.1.11.69 -u root -p</code>|\n| 3389 | Listening for RDP connection |</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Nmap Enum Scripts",
+          "items": [
+            {
+              "title": "<p>| # | Script | Type | Description |\n| --- | --- | --- | --- |\n| 1 | <a href=\"https://github.com/mubix/tools/blob/master/nmap/scripts/smb-check-vulns.nse\">smb-check-vulns.nse</a> | SMB  | Scans for multiple SMB vulnerabilities. |\n| 2 | <a href=\"https://www.exploit-db.com/exploits/9594\">smb-vuln-cve2009-3103.nse</a> | SMB  | Windows Vista SP1/SP2 and Server 2008 (x86) |\n| 3 | <a href=\"https://www.exploit-db.com/exploits/1940\">smb-vuln-ms06-025.nse</a> | SMB | Windows 2000 and Windows XP (x86) |\n| 4 | <a href=\"https://www.exploit-db.com/exploits/16366\">smb-vuln-ms07-029.nse</a> | SMB | Windows 2003 SP1/SP2 |\n| 5 | <a href=\"https://www.exploit-db.com/exploits/40279\">smb-vuln-ms08-067.nse</a> | SMB | Windows XP |\n| 6 | <a href=\"https://www.exploit-db.com/exploits/14607\">smb-vuln-ms10-054.nse</a> | SMB | XP, Vista, 7 |\n| 7 | <a href=\"https://www.exploit-db.com/exploits/16361\">smb-vuln-ms10-061.nse</a> | SMB | XP, Vista, 7 |\n| 8 | <a href=\"https://www.exploit-db.com/exploits/42315\">smb-vuln-ms17-010.nse</a> | SMB | EternalBlue.  XP, Vista, 7, 8.1, 10 |\n| 9 | <a href=\"https://github.com/nmap/nmap/blob/master/scripts/smb-enum-shares.nse\">smb-enum-shares.nse</a> | SMB | Enumerates SMB Shares |\n| 10 | <a href=\"https://github.com/nmap/nmap/blob/master/scripts/smb-enum-users.nse\">smb-enum-users.nse</a> | SMB | Attempts to enumerate Windows users |</p><p><em>Example: Using an Nmap Script</em>\n<code>nmap -p 445 -vv --script=[script.nse] 10.10.10.10</code></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Linux Enumeration",
+      "items": [
+        {
+          "title": "<p><code>enum4linux -a 10.11.1.9</code></p>"
+        },
+        {
+          "topic": "Banner Grabbing",
+          "items": [
+            {
+              "title": "<p>| # | Command | Description |\n| --- | --- | --- |\n| 1 | /dev/tcp/$ip/$port | If nmap didn't banner grab or it's not installed. |</p>"
+            }
+          ]
+        },
+        {
+          "topic": "DNS Zone Transfer",
+          "items": [
+            {
+              "title": "<p>| # | Command | Description |\n| --- | --- | --- |\n| 1 | <code>dig example.com any</code> | View DNS records on a domain. |\n| 2 | <code>dnsrecon -d example.com</code> | Multiple queries to DNS server that enumerates DNS records. |</p>"
+            }
+          ]
+        },
+        {
+          "topic": "SMTP Email Enumeration",
+          "items": [
+            {
+              "title": "<p>| # | Command | Description |\n| --- | --- | --- |\n| 1 | <code>nmap -script smtp-commands.nse 10.11.1.41</code> | Scan for possible SMTP commands that can be executed |\n| 2 | <code>smtp-user-enum -M VRFY -U /root/sectools/SecLists/Usernames/Names/names.txt -t 10.11.1.41</code> | SMTP Enum. <code>-M</code> for mode. <code>-U</code> for userlist. <code>-t</code> for target |</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

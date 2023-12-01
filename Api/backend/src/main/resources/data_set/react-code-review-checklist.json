@@ -1,0 +1,128 @@
+{
+  "id": 168,
+  "header": "react-code-review-checklist",
+  "topicList": [
+    "Keep code DRY (Don't repeat yourself)",
+    "Enforce propTypes",
+    "No commented code",
+    "Keep components small",
+    "Event listeners removed",
+    "setState callback function is used",
+    "JSX markup should be no more than 50 lines",
+    "Stateless components for components that don't use state",
+    "Naming conventions followed for variables, file names, translations",
+    "No unused variables and functions/methods",
+    "Removed unused packages from NPM",
+    "No api calls in containers, delegate to Stores",
+    "Use  instead of ",
+    "No unused props are being passed",
+    "Should have descriptive comments to functions/code, even one liner",
+    "Store mock data for unit tests, avoid cluttering of mock code",
+    "Create mock data using loops, for easy maintainability",
+    "No state updates in loop",
+    "Move data to constants if used in multiple files, like statusText and status code",
+    "Use fat arrow instead of var that = this",
+    "Use let/const over var",
+    "Use '' in JS code and \"\" in JSX",
+    "No useless constructor"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Keep code DRY (Don't repeat yourself)",
+      "items": []
+    },
+    {
+      "topic": "Enforce propTypes",
+      "items": [
+        {
+          "topic": "Use shape for propTypes wherever applicable",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "No commented code",
+      "items": []
+    },
+    {
+      "topic": "Keep components small",
+      "items": []
+    },
+    {
+      "topic": "Event listeners removed",
+      "items": []
+    },
+    {
+      "topic": "setState callback function is used",
+      "items": []
+    },
+    {
+      "topic": "JSX markup should be no more than 50 lines",
+      "items": []
+    },
+    {
+      "topic": "Stateless components for components that don't use state",
+      "items": []
+    },
+    {
+      "topic": "Naming conventions followed for variables, file names, translations",
+      "items": []
+    },
+    {
+      "topic": "No unused variables and functions/methods",
+      "items": []
+    },
+    {
+      "topic": "Removed unused packages from NPM",
+      "items": []
+    },
+    {
+      "topic": "No api calls in containers, delegate to Stores",
+      "items": []
+    },
+    {
+      "topic": "Use  instead of ",
+      "items": []
+    },
+    {
+      "topic": "No unused props are being passed",
+      "items": []
+    },
+    {
+      "topic": "Should have descriptive comments to functions/code, even one liner",
+      "items": []
+    },
+    {
+      "topic": "Store mock data for unit tests, avoid cluttering of mock code",
+      "items": []
+    },
+    {
+      "topic": "Create mock data using loops, for easy maintainability",
+      "items": []
+    },
+    {
+      "topic": "No state updates in loop",
+      "items": []
+    },
+    {
+      "topic": "Move data to constants if used in multiple files, like statusText and status code",
+      "items": []
+    },
+    {
+      "topic": "Use fat arrow instead of var that = this",
+      "items": []
+    },
+    {
+      "topic": "Use let/const over var",
+      "items": []
+    },
+    {
+      "topic": "Use '' in JS code and \"\" in JSX",
+      "items": []
+    },
+    {
+      "topic": "No useless constructor",
+      "items": []
+    }
+  ]
+}

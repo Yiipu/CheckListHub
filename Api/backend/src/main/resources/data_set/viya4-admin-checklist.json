@@ -1,0 +1,191 @@
+{
+  "id": 218,
+  "header": "viya4-admin-checklist",
+  "topicList": [
+    "Table of Contents of this README.md  ",
+    "Overview",
+    "Getting Started",
+    "Contributing",
+    "License",
+    "Previous Versions",
+    "Additional Resources"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of Contents of this README.md  ",
+      "items": [
+        {
+          "title": "<a href=\"#overview\">Overview</a>"
+        },
+        {
+          "title": "<a href=\"#initial-tasks\">Initial tasks</a>"
+        },
+        {
+          "title": "<a href=\"#regular-tasks\">Regular tasks</a>"
+        },
+        {
+          "title": "<a href=\"#whats-new\">What's New</a>"
+        },
+        {
+          "title": "<a href=\"#installation\">Installation</a>"
+        },
+        {
+          "title": "<a href=\"#getting-started\">Getting Started</a>"
+        },
+        {
+          "title": "<a href=\"#applicability-to-sas-versions\">Applicability to SAS Versions</a>"
+        },
+        {
+          "title": "<a href=\"#running\">Running</a>"
+        },
+        {
+          "title": "<a href=\"#contributing\">Contributing</a>"
+        },
+        {
+          "title": "<a href=\"#license\">License</a>"
+        },
+        {
+          "title": "<a href=\"#previous-versions\">Previous Versions</a>"
+        },
+        {
+          "title": "<a href=\"#additional-resources\">Additional Resources</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Overview",
+      "items": [
+        {
+          "title": "<p>The <a href=\"checklist.md\">checklist</a> in this project contains two lists of tasks. There is a suggested frequency for the regular tasks. You, as an IT administrator or a SAS administrator, should consider performing the tasks in these lists for the SAS Viya 2020.1 and later environments that you maintain. Perform all tasks that are relevant to your environment to keep your SAS Viya deployment operating at its best over the long term.</p>"
+        },
+        {
+          "topic": "Initial tasks",
+          "items": [
+            {
+              "title": "<p>The first list contains initial tasks, which are normally performed as one-off activities. They are performed usually shortly before, while, or soon after SAS Viya is deployed on your Kubernetes cluster. Most initial tasks should be reviewed whenever you make significant changes to your deployment (such as adding new Kubernetes nodes, adding new software components, migrating, or upgrading the version of SAS or other major components). Significant project work to deliver custom SAS application functionality based on your deployment often requires at least some of these initial tasks to be repeated or revised.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Regular tasks",
+          "items": [
+            {
+              "title": "<p>The second list contains regular tasks, which should be performed at different times to keep your platform healthy, secure, and efficient.</p><p>Some tasks contain additional commentary. Some tasks contain brief details about how they are performed. You might need to consult other resources for more detail. Some links to documentation and blog posts are included in the commentary for the tasks, but you will need to consult the documentation for further guidance.</p><p>In the task descriptions, the words server or service always mean one or more programs. In the case of a SAS Viya server or service, these will be running inside a container in a Kubernetes pod. In the task descriptions, these terms never mean the host node or machine. Often, <strong>service</strong> (or microservice) refers to a SAS Viya software component which runs all the time while the SAS Viya deployment is running. In contrast, <strong>server</strong> often refers to a software component which is started to perform a specific task, and may be stopped when that task is complete. For administrators, this distinction is important only in a few specific situations (for example, when managing log levels and other service- or server-specific configurations). This distinction can otherwise be ignored.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "What's New",
+          "items": [
+            {
+              "title": "<p>Everything is new.</p><p><a href=\"#previous-versions\">Checklists of administration tasks for previous versions of SAS</a> were published as PDF or Word documents.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Installation",
+          "items": [
+            {
+              "title": "<p>For <strong>general users</strong>, the project is best viewed on GitHub. No installation is necessary.</p><p>For <strong>contributors</strong>, we suggest you clone this project from GitHub and edit it using your favorite source code editor. (Please also see the <a href=\"#contributing\">Contributing</a> section of this README.)</p><p>If you wish to contribute, you may find it helpful to be able to run Python3 in a bash terminal, so that you can run the scripts which update documents like the top-level <a href=\"checklist.md\">checklist.md</a>, e.g. <a href=\"scripts/build_all.py\">scripts/build_all.py</a> (or <a href=\"scripts/build_from_template.py\">scripts/build_from_template.py</a>). By doing that, you can see if your modified tasks appear as you intend when they are listed in the <a href=\"checklist.md\">checklist.md</a> tables of tasks.</p><blockquote>\n<p>Tip: The lead authors/editors maintain this project using <a href=\"https://code.visualstudio.com/\">Microsoft Visual Studio Code</a> on both:</p>"
+            },
+            {
+              "title": "Windows with <a href=\"https://docs.microsoft.com/en-us/windows/wsl/install\">Windows Subsystem for Linux</a> version 2 (WSL2) running <a href=\"https://ubuntu.com/\">Ubuntu</a>, which is the default Linux distribution for WSL2."
+            },
+            {
+              "title": "On MacOS, which supports Linux natively</li>\n</ul>\n<p><a href=\"https://code.visualstudio.com/\">Microsoft Visual Studio Code</a> is available for both Windows and MacOS. It is convenient to run the project's Python scripts from a bash terminal within VS Code.</p>\n<p>The easiest way to get this set up is to follow the instructions in <a href=\"https://code.visualstudio.com/docs/python/python-tutorial\">Getting Started with Python in VS Code</a>. This walks you through installing:</p>"
+            },
+            {
+              "title": "VS Code"
+            },
+            {
+              "title": "VS Code Python extension"
+            },
+            {
+              "title": "Python 3\n<p>We also like these VS Code extensions: <a href=\"https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph\">Git Graph</a>, <a href=\"https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github\">GitHub Pull Requests and Issues</a>, <a href=\"https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one\">Markdown All in One</a>, <a href=\"https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint\">markdownlint</a>, <a href=\"https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense\">Path Intellisense</a>.</p>\n<p>You do not have to use these tools. You can contribute successfully to this project with command-line git and your preferred text editor. It is not necessary to run the project's Python scripts to rebuild the checklist.md document before submitting a pull request. The project owners run the scripts to update checklist.md before merging into the main branch.</p>\n</blockquote>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Getting Started",
+      "items": [
+        {
+          "title": "<p>This project does contain some code examples, but it mostly consists of recommendations and suggestions.</p><p>If you have not read it already, begin by reading the <a href=\"#overview\">Overview</a> in this README, followed by <a href=\"how_to_use_this_checklist.md\">How to use this Checklist</a>.</p><p>This project is written for a specific <a href=\"intended_audience.md\">intended audience</a> of SAS and IT administrators, and related roles.</p><p>Read about SAS Viya Administration Training and Certification in the <a href=\"#additional-resources\">Additional Resources</a> section of this README.</p>"
+        },
+        {
+          "topic": "Applicability to SAS Versions",
+          "items": [
+            {
+              "title": "<p>In November 2020, SAS shipped SAS Viya Stable version 2020.1.1. SAS has released <a href=\"https://communities.sas.com/t5/SAS-Viya-Release-Updates/tkb-p/releaseupdates\">many further versions of SAS Viya since then</a>. You can read about <a href=\"https://communities.sas.com/t5/SAS-Communities-Library/Understanding-SAS-Viya-cadences-and-release-numbers/ta-p/825768\">SAS Viya platform cadences and release numbers here</a>.</p><blockquote>\n<p>As described in the SAS Viya Operations guide &gt; Getting Started &gt; <a href=\"https://go.documentation.sas.com/doc/en/itopscdc/default/itopscon/n0tx1x9gu37i7qn1nuv8inwzrfet.htm\">Frequently Asked Questions</a>:</p>\n<p><em><a href=\"https://go.documentation.sas.com/doc/en/itopscdc/default/itopscon/n0tx1x9gu37i7qn1nuv8inwzrfet.htm#n1tjwv96rc8rkln1k6bepxh1qksq\"><strong>How frequently is software released?</strong></a></em></p>\n<p><em>SAS offers the following release cadences for the SAS Viya platform:</em></p>"
+            },
+            {
+              "title": "<em>On the Stable cadence, software is released monthly. The latest version on the Stable cadence contains the most up-to-date software, including new features, changes to features, and bug fixes.</em>"
+            },
+            {
+              "title": "<em>On the Long-Term Support cadence, software is released about every six months.</em>\n<p><em>Starting in September 2022, the versions for the SAS Viya platform releases use the yyyy.mm format. For more information, see <a href=\"https://go.documentation.sas.com/doc/en/itopscdc/default/itopscon/n0skwn6305faxnn1v0lfhzssr41u.htm\">Release Schedule and Versions</a>.</em></p>\n</blockquote><p>To the best of our knowledge, the guidance for all tasks in this project is relevant for all versions of SAS Viya (i.e. stable version 2020.1.1 and later, and LTS version 2020.1 and later), except where specifically noted.</p><p>We take no liability for errors or omissions in the content of this document, which is written based on individual consultants’ field experience and shared in this project in good faith.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Running",
+          "items": [
+            {
+              "title": "<p>For <strong>general users</strong>, there is nothing to run. This project is intended to be read.</p><p>For <strong>contributors</strong>, or users making a their own custom version of the project, if you add or change specific properties of tasks (filename, title, SortString, Description or Tags) you can run the scripts which update documents like the top-level <a href=\"checklist.md\">checklist.md</a>, e.g. <a href=\"scripts/build_all.py\">scripts/build_all.py</a> (or <a href=\"scripts/build_from_template.py\">scripts/build_from_template.py</a>). These scripts have usage instructions in their header comments.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<p>We welcome your contributions! Please read <a href=\"CONTRIBUTING.md\">CONTRIBUTING.md</a> for details on how to submit contributions to this project.</p><p><a href=\"CONTRIBUTING.md\">CONTRIBUTING.md</a> has instructions for how to write\na task and populate an HTML comment block with appropriate 'metadata' so the\ntask appears correctly in the main checklist.md and other lists of tasks.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>This project is licensed under the <a href=\"LICENSE\">Apache 2.0 License</a>.</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Previous Versions",
+      "items": [
+        {
+          "title": "<p>There are two previous versions of this checklist, for earlier versions of SAS:</p>"
+        },
+        {
+          "title": "Checklist of SAS Viya 3 Administration Tasks: <a href=\"https://support.sas.com/resources/papers/checklist-sas-viya-administration-tasks.pdf\">https://support.sas.com/resources/papers/checklist-sas-viya-administration-tasks.pdf</a>"
+        },
+        {
+          "title": "Checklist of SAS 9 Administration Tasks: <a href=\"https://support.sas.com/resources/papers/Platform-Administration-Tasks.pdf\">https://support.sas.com/resources/papers/Platform-Administration-Tasks.pdf</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Additional Resources",
+      "items": [
+        {
+          "title": "<p><a href=\"#\" title=\"**Required**. Include any additional resources that users may need or find useful when using your software. Additional resources might include the following:\">//</a>: # (* Documentation links\n* SAS Global Forum papers\n* Blog posts\n* SAS Communities\n* Other SAS Documentation (Tech Support, Education))</p><p>Familiarize yourself with <strong>at least the topics</strong> in the version of these documents that corresponds to your release of SAS Viya:</p>"
+        },
+        {
+          "title": "The <a href=\"https://go.documentation.sas.com/doc/en/itopscdc/v_023/itopswlcm/home.htm?homeOnFail\">SAS Viya Operations Guide</a>, which includes the <a href=\"https://go.documentation.sas.com/doc/en/itopscdc/v_023/dplyml0phy0dkr/titlepage.htm\">SAS Viya: Deployment Guide</a>"
+        },
+        {
+          "title": "The <a href=\"https://go.documentation.sas.com/doc/en/sasadmincdc/v_023/sasadminwlcm/home.htm\">SAS Viya Administration Guide</a>. This will likely have the most content of interest to a reader of an Administration Checklist.</li>\n</ul><p>The <a href=\"https://communities.sas.com/t5/SAS-Communities-Library/tkb-p/library/label-name/administration%20and%20deployment\">Administration and Deployment</a> label in the SAS Communities Library allows you to find a large selection of searchable blog posts and articles written by SAS Viya experts. High quality content is regularly posted there by members of the <a href=\"https://communities.sas.com/t5/tag/GEL/tg-p/board-id/library\">SAS Global Enablement and Learning (GEL)</a> team.</p><p>We find the <a href=\"https://github.com/sassoftware/viya4-resource-guide\">SAS Viya 4 Resource Guide</a> very useful. It describes a set of linked open-source projects (like this one) that support the pre-installation, deployment, and subsequent monitoring and management of SAS Viya platform software.</p><p>Familiarize yourself with available <a href=\"https://support.sas.com/training/us/paths/index.html\">SAS Viya training from SAS</a>. The training page can help you find training material on getting started, administration, data management, programming and analytics, SAS Visual Analytics on SAS Viya, and specific SAS Viya solutions such as SAS Visual Investigator. Courses can be taught in a classroom, as a live web class, or as self-paced e-learning.</p><p>SAS Viya administrators should be familiar with all administration interfaces to SAS Viya:</p>"
+        },
+        {
+          "title": "Learn what each of the pages in <a href=\"https://go.documentation.sas.com/doc/en/sasadmincdc/v_023/evfun/titlepage.htm\">SAS Environment Manager</a> does."
+        },
+        {
+          "title": "Learn how to use the <a href=\"https://go.documentation.sas.com/doc/en/sasadmincdc/v_023/calcli/titlepage.htm\">SAS Viya Command-Line Interface</a>.<p>If you have <a href=\"https://go.documentation.sas.com/doc/en/dprepcdc/v_002/dprepwlcm/home.htm?fromDefault=\">SAS Viya Data Preparation</a> products, learn how to use <a href=\"https://go.documentation.sas.com/doc/en/dprepcdc/v_002/datahub/n01gdrmxl7lhszn1gny5h764yisv.htm\">SAS Data Explorer</a>, <a href=\"https://go.documentation.sas.com/doc/en/dprepcdc/v_002/datastudioadv/titlepage.htm\">SAS Data Studio</a>, and <a href=\"https://go.documentation.sas.com/doc/en/dprepcdc/v_002/dmlinug/titlepage.htm\">SAS Lineage</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

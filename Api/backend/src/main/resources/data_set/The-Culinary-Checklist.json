@@ -1,0 +1,82 @@
+{
+  "id": 208,
+  "header": "The-Culinary-Checklist",
+  "topicList": [
+    "Title: The Culinary Checklist",
+    "Objective/Purpose",
+    "Instructions",
+    "Prerequisites",
+    "Technologies Used",
+    "GIF"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Title: The Culinary Checklist",
+      "items": []
+    },
+    {
+      "topic": "Objective/Purpose",
+      "items": [
+        {
+          "title": "The purpose of our web application (The Culinary Checklist) is to search for recipes based on the user's dish of choice, gather the recipe ingridient information for that dish, save that user recipe information, and lastly, search on Google Maps to discover grocery stores within the user's inputted zip code."
+        }
+      ]
+    },
+    {
+      "topic": "Instructions",
+      "items": [
+        {
+          "title": "<ol>\n<li>The user enters a name, email, and valid zip code and clicks Login."
+        },
+        {
+          "title": "The user searches for a food name and clicks Go!"
+        },
+        {
+          "title": "The user will see the top 3 recommended recipes with nutrition facts and cost per serving.  The user can select foods to add to their grocery list."
+        },
+        {
+          "title": "Once in the grocery list, the user clicks Generate Grocery List.  This will pull up a map with grocery stores in the input zip code.  This data is stored in the Firebase database so that the user’s profile with past favorites is saved."
+        },
+        {
+          "title": "The Culinary Checklist converts the recipes into an ingredients shopping list.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Prerequisites",
+      "items": [
+        {
+          "title": "Web Browser (Google Chrome preferred)"
+        }
+      ]
+    },
+    {
+      "topic": "Technologies Used",
+      "items": [
+        {
+          "title": "AJAX: Accessed the mashape spoonacular API"
+        },
+        {
+          "title": "APIs: mashape spoonacular and google maps"
+        },
+        {
+          "title": "Bootstrap: panels, containers"
+        },
+        {
+          "title": "jQuery: appending info to divs, re-writing divs, event listeners like on-click, ajax"
+        },
+        {
+          "title": "New Technology: collapseJS"
+        }
+      ]
+    },
+    {
+      "topic": "GIF",
+      "items": [
+        {
+          "title": "<p><img alt=\"Alt Text\" src=\"https://github.com/Brainstorm-Chaser/The-Culinary-Checklist/blob/master/giphy.gif\"/>\n* NOTE: Clicking pictures redirects to external site (Spoonacular). Did not include in gif because it's a different website.</p>"
+        }
+      ]
+    }
+  ]
+}

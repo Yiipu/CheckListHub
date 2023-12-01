@@ -1,0 +1,192 @@
+{
+  "id": 58,
+  "header": "cybersecurity-API-security-checklist",
+  "topicList": [
+    "Authentication",
+    "Access",
+    "Input",
+    "Processing",
+    "Output",
+    "CI & CD",
+    "See also:",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Authentication",
+      "items": [
+        {
+          "title": " Don't use <code>Basic Auth</code> Use standard authentication (e.g. <a href=\"https://jwt.io/\">JWT</a>, <a href=\"https://oauth.net/\">OAuth</a>)."
+        },
+        {
+          "title": " Don't reinvent the wheel in <code>Authentication</code>, <code>token generation</code>, <code>password storage</code>. Use the standards."
+        },
+        {
+          "title": " Use <code>Max Retry</code> and jail features in Login."
+        },
+        {
+          "title": " Use encryption on all sensitive data."
+        },
+        {
+          "topic": "JWT (JSON Web Token)",
+          "items": [
+            {
+              "title": " Use a random complicated key (<code>JWT Secret</code>) to make brute forcing the token very hard."
+            },
+            {
+              "title": " Don't extract the algorithm from the payload. Force the algorithm in the backend (<code>HS256</code> or <code>RS256</code>)."
+            },
+            {
+              "title": " Make token expiration (<code>TTL</code>, <code>RTTL</code>) as short as possible."
+            },
+            {
+              "title": " Don't store sensitive data in the JWT payload, it can be decoded <a href=\"https://jwt.io/#debugger-io\">easily</a>."
+            }
+          ]
+        },
+        {
+          "topic": "OAuth",
+          "items": [
+            {
+              "title": " Always validate <code>redirect_uri</code> server-side to allow only whitelisted URLs."
+            },
+            {
+              "title": " Always try to exchange for code and not tokens (don't allow <code>response_type=token</code>)."
+            },
+            {
+              "title": " Use <code>state</code> parameter with a random hash to prevent CSRF on the OAuth authentication process."
+            },
+            {
+              "title": " Define the default scope, and validate scope parameters for each application."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Access",
+      "items": [
+        {
+          "title": " Limit requests (Throttling) to avoid DDoS / brute-force attacks."
+        },
+        {
+          "title": " Use HTTPS on server side to avoid MITM (Man In The Middle Attack)."
+        },
+        {
+          "title": " Use <code>HSTS</code> header with SSL to avoid SSL Strip attack."
+        }
+      ]
+    },
+    {
+      "topic": "Input",
+      "items": [
+        {
+          "title": " Use the proper HTTP method according to the operation: <code>GET (read)</code>, <code>POST (create)</code>, <code>PUT/PATCH (replace/update)</code>, and <code>DELETE (to delete a record)</code>, and respond with <code>405 Method Not Allowed</code> if the requested method isn't appropriate for the requested resource."
+        },
+        {
+          "title": " Validate <code>content-type</code> on request Accept header (Content Negotiation) to allow only your supported format (e.g. <code>application/xml</code>, <code>application/json</code>, etc) and respond with <code>406 Not Acceptable</code> response if not matched."
+        },
+        {
+          "title": " Validate <code>content-type</code> of posted data as you accept (e.g. <code>application/x-www-form-urlencoded</code>, <code>multipart/form-data</code>, <code>application/json</code>, etc)."
+        },
+        {
+          "title": " Validate User input to avoid common vulnerabilities (e.g. <code>XSS</code>, <code>SQL-Injection</code>, <code>Remote Code Execution</code>, etc)."
+        },
+        {
+          "title": " Don't use any sensitive data (<code>credentials</code>, <code>Passwords</code>, <code>security tokens</code>, or <code>API keys</code>) in the URL, but use standard Authorization header."
+        },
+        {
+          "title": " Use an API Gateway service to enable caching, Rate Limit policies (e.g. <code>Quota</code>, <code>Spike Arrest</code>, <code>Concurrent Rate Limit</code>) and deploy APIs resources dynamically."
+        }
+      ]
+    },
+    {
+      "topic": "Processing",
+      "items": [
+        {
+          "title": " Check if all the endpoints are protected behind authentication to avoid broken authentication process."
+        },
+        {
+          "title": " User own resource ID should be avoided. Use <code>/me/orders</code> instead of <code>/user/654321/orders</code>."
+        },
+        {
+          "title": " Don't auto-increment IDs. Use <code>UUID</code> instead."
+        },
+        {
+          "title": " If you are parsing XML files, make sure entity parsing is not enabled to avoid <code>XXE</code> (XML external entity attack)."
+        },
+        {
+          "title": " If you are parsing XML files, make sure entity expansion is not enabled to avoid <code>Billion Laughs/XML bomb</code> via exponential entity expansion attack."
+        },
+        {
+          "title": " Use a CDN for file uploads."
+        },
+        {
+          "title": " If you are dealing with huge amount of data, use Workers and Queues to process as much as possible in background and return response fast to avoid HTTP Blocking."
+        },
+        {
+          "title": " Do not forget to turn the DEBUG mode OFF."
+        }
+      ]
+    },
+    {
+      "topic": "Output",
+      "items": [
+        {
+          "title": " Send <code>X-Content-Type-Options: nosniff</code> header."
+        },
+        {
+          "title": " Send <code>X-Frame-Options: deny</code> header."
+        },
+        {
+          "title": " Send <code>Content-Security-Policy: default-src 'none'</code> header."
+        },
+        {
+          "title": " Remove fingerprinting headers - <code>X-Powered-By</code>, <code>Server</code>, <code>X-AspNet-Version</code> etc."
+        },
+        {
+          "title": " Force <code>content-type</code> for your response, if you return <code>application/json</code> then your response <code>content-type</code> is <code>application/json</code>."
+        },
+        {
+          "title": " Don't return sensitive data like <code>credentials</code>, <code>Passwords</code>, <code>security tokens</code>."
+        },
+        {
+          "title": " Return the proper status code according to the operation completed. (e.g. <code>200 OK</code>, <code>400 Bad Request</code>, <code>401 Unauthorized</code>, <code>405 Method Not Allowed</code>, etc)."
+        }
+      ]
+    },
+    {
+      "topic": "CI & CD",
+      "items": [
+        {
+          "title": " Audit your design and implementation with unit/integration tests coverage."
+        },
+        {
+          "title": " Use a code review process and disregard self-approval."
+        },
+        {
+          "title": " Ensure that all components of your services are statically scanned by AV software before push to production, including vendor libraries and other dependencies."
+        },
+        {
+          "title": " Design a rollback solution for deployments.<hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "See also:",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/exajobs/APIs-tools-collection\">API Development Tools</a> - A collection of useful resources for building RESTful HTTP+JSON APIs.<hr/><p><strong><a href=\"#\"><code>^        back to top        ^</code></a></strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p>MIT License &amp; <a href=\"https://creativecommons.org/licenses/by/4.0/\">cc</a> license</p><p><a href=\"http://creativecommons.org/licenses/by/4.0/\" rel=\"license\"><img alt=\"Creative Commons License\" src=\"https://i.creativecommons.org/l/by/4.0/88x31.png\" style=\"border-width:0\"/></a><br/>This work is licensed under a <a href=\"http://creativecommons.org/licenses/by/4.0/\" rel=\"license\">Creative Commons Attribution 4.0 International License</a>.</p><p>To the extent possible under law, <a href=\"https://github.com/paulveillard/\">Paul Veillard</a> has waived all copyright and related or neighboring rights to this work.</p>"
+        }
+      ]
+    }
+  ]
+}

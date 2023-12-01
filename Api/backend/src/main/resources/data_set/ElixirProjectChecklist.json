@@ -1,0 +1,346 @@
+{
+  "id": 76,
+  "header": "ElixirProjectChecklist",
+  "topicList": [
+    "Installation",
+    "Quick Start",
+    "Optional Checklist",
+    "setup README checklist",
+    "setup LICENSE checklist",
+    "automated build checklist",
+    "build configuration checklist",
+    "code formatter checklist",
+    "style check checklist",
+    "static analysis checklist",
+    "Test makefile build",
+    "project documentation checklist",
+    "code coverage checklist",
+    "publish the package",
+    "benchmarking setup checklist",
+    "load testing setup checklist",
+    "Core References",
+    "Optional Refrences",
+    "Contributors"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Installation",
+      "items": [
+        {
+          "title": "<p>If <a href=\"https://hex.pm/docs/publish\">available in Hex</a>, the package can be installed\nby adding <code>elixir_project_checklist</code> to your list of dependencies in <code>mix.exs</code>:</p><p><code>elixir\ndef deps do\n  [\n    {:elixir_project_checklist, \"~&gt; 0.1.0\"}\n  ]\nend</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Quick Start",
+      "items": [
+        {
+          "title": "<p>```\nmake # see all commands</p><p>make setup # setup project\nmake build # build project\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Optional Checklist",
+      "items": [
+        {
+          "title": "[x] deployment package          - erlang release with distillery"
+        },
+        {
+          "title": "[x] phx configuration 4 package - config.exs setup with aliases"
+        },
+        {
+          "title": "[x] distillery config         - update config/prod.exs with \"config :phoenix, :serve_endpoints, true\"</li>\n</ul>"
+        },
+        {
+          "title": "[x] benchmarking setup          - elixir benchee setup"
+        },
+        {
+          "title": "[x] load testing setup          - elixir wrk"
+        },
+        {
+          "title": " logging                     - elixir logging TODO: Add example logging and checklist"
+        }
+      ]
+    },
+    {
+      "topic": "setup README checklist",
+      "items": [
+        {
+          "title": " create README"
+        },
+        {
+          "title": " add project description"
+        },
+        {
+          "title": " add main project source reference: github_url_to_self"
+        },
+        {
+          "title": " add contributors section"
+        }
+      ]
+    },
+    {
+      "topic": "setup LICENSE checklist",
+      "items": [
+        {
+          "title": " select licence from: https://choosealicense.com/"
+        },
+        {
+          "title": " create LICENSE file"
+        },
+        {
+          "title": " update template with things like name, description and copyright as necessary"
+        }
+      ]
+    },
+    {
+      "topic": "automated build checklist",
+      "items": [
+        {
+          "title": " copy makefile from https://github.com/ElixirCommons/ElixirProjectChecklist"
+        },
+        {
+          "title": " update in the makefile variable <code>app-name := elixir_project_checklist</code> to be the value of <code>mix.exs:def project[app:]</code>"
+        },
+        {
+          "title": " test makefile see below"
+        }
+      ]
+    },
+    {
+      "topic": "build configuration checklist",
+      "items": [
+        {
+          "title": " update <code>def project do</code> with <code>aliases: aliases()</code>,"
+        },
+        {
+          "title": " automatic version management for non hex packages\n```"
+        }
+      ]
+    },
+    {
+      "topic": "code formatter checklist",
+      "items": [
+        {
+          "title": " create <code>.formatter.exs</code>\n<code>[\n    inputs: [\"mix.exs\", \"{config,lib,test}/**/*.{ex,exs}\"]\n]</code>"
+        },
+        {
+          "title": " test <code>make format</code>"
+        }
+      ]
+    },
+    {
+      "topic": "style check checklist",
+      "items": [
+        {
+          "title": " add to deps <code>{:credo, \"~&gt; 0.9.1\", only: [:dev, :test], runtime: false}</code>"
+        },
+        {
+          "title": " test <code>make style-checks</code>"
+        }
+      ]
+    },
+    {
+      "topic": "static analysis checklist",
+      "items": [
+        {
+          "title": " add to deps <code>{:dialyxir, \"~&gt; 1.0.0-rc.2\", only: [:dev], runtime: false}</code>"
+        },
+        {
+          "title": " test <code>make static-analysis</code>"
+        }
+      ]
+    },
+    {
+      "topic": "Test makefile build",
+      "items": [
+        {
+          "title": " check after setting up <code>code formatter</code>, <code>style check</code> and <code>static analysis</code> with <code>make setup build</code>"
+        }
+      ]
+    },
+    {
+      "topic": "project documentation checklist",
+      "items": [
+        {
+          "title": " add to deps <code>{:ex_doc, \"~&gt; 0.16\", only: :dev, runtime: false}</code>"
+        },
+        {
+          "title": " update <code>def project do</code> with"
+        },
+        {
+          "title": " name: \"project_name\","
+        },
+        {
+          "title": " source_url: \"https://github.com/USER/PROJECT\","
+        },
+        {
+          "title": " homepage_url: \"http://YOUR_PROJECT_HOMEPAGE\","
+        },
+        {
+          "title": " description: \"\"\" ADD YOUR DESCRIPTION \"\"\""
+        },
+        {
+          "title": " add to <code>def project do [ docs: docs(),]</code> and <code>defp docs</code> see below"
+        },
+        {
+          "title": " Reference configs here: https://hexdocs.pm/ex_doc/Mix.Tasks.Docs.html#content"
+        },
+        {
+          "title": " add to <code>defp docs</code>"
+        },
+        {
+          "title": " main: \"ModuleName_or_Page\" - Main page of the documentation. It may be a module or a generated page"
+        },
+        {
+          "title": " logo: \"path/to/file.png_or_jpg\""
+        },
+        {
+          "title": " extras: <code>\"README.md\": [filename: \"readme\", title: \"README\"]]</code>"
+        },
+        {
+          "title": " extra_section: \"Name of Extra Section in docs\""
+        },
+        {
+          "title": " optionally add groups_for_extras: <code>[ Introduction: Path.wildcard(\"guides/introduction/*.md\") ]</code>"
+        },
+        {
+          "title": " optionally add groups_for_modules: <code>[ Controllers: [ Module.Name ] ]</code>"
+        },
+        {
+          "title": " optionally add assets: \"path/to/dir\""
+        },
+        {
+          "title": " test documentation <code>make docs open-docs</code>\n```"
+        },
+        {
+          "topic": "--",
+          "items": [
+            {
+              "title": "<p># all configuration required by ex_doc to configure the generation of documents\n  ### --\n  defp docs do\n    [\n      main: \"ModuleName_or_Page\",\n      logo: \"guides/assets/image.png_or_jpg\",\n      extras: [\"README.md\": [filename: \"readme\", title: \"README\"]],\n      extra_section: \"GUIDES\",\n      groups_for_extras: [\n        Introduction: Path.wildcard(\"guides/introduction/*.md\")\n      ],\n      # Ungrouped Modules:\n      #\n      # OtherModules\n      groups_for_modules: [\n        Controllers: [\n          Module.Name\n        ]\n      ]\n    ]\n  end\n  ```</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "code coverage checklist",
+      "items": [
+        {
+          "title": " add to deps <code>{:excoveralls, \"~&gt; 0.8\", only: [:dev, :test]}</code>"
+        },
+        {
+          "title": " update <code>def project do</code> with <code>test_coverage: [tool: ExCoveralls]</code>,"
+        },
+        {
+          "title": " test <code>make coverage-report</code>"
+        }
+      ]
+    },
+    {
+      "topic": "publish the package",
+      "items": [
+        {
+          "title": " Install hex <code>mix local.hex</code>"
+        },
+        {
+          "title": " Register hex user run: <code>mix hex.user register</code>"
+        },
+        {
+          "title": " Confirm your account via email"
+        },
+        {
+          "title": " update <code>def project do</code> with <code>package: package()</code>, see below"
+        },
+        {
+          "title": " mix.exs add fill out <code>defp package</code> keys <code>see below</code>"
+        },
+        {
+          "title": " check no git dependencies"
+        },
+        {
+          "title": " run: <code>mix hex.publish</code>"
+        },
+        {
+          "title": " if first publish update references to hexdocs in readme and mix.exs"
+        },
+        {
+          "title": " test published package<p><code>defp package() do\n    [\n      # This option is only needed when you don't want to use the OTP application name\n      name: \"package_name\",\n      organization: \"hexpm\",\n      # These are the default files included in the package\n      files: [\"lib\", \"priv\", \"mix.exs\", \"README*\", \"readme*\", \"LICENSE*\", \"license*\"],\n      licenses: [\"GNU 3.0\"],\n      links: %{\"GitHub\" =&gt; \"https://github.com/USERNAME/PROJECTNAME\", \"HexDocs\" =&gt; \"https://hexdocs.pm/PACKAGE/\"},\n      maintainers: [\"NAME and EMAIL\"]\n    ]\n  end</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "benchmarking setup checklist",
+      "items": [
+        {
+          "title": " add to deps <code>{:benchee, \"~&gt; 0.11\", only: :dev}</code>,"
+        },
+        {
+          "title": " add to deps <code>{:benchee_html, \"~&gt; 0.4\", only: :dev}</code>,"
+        },
+        {
+          "title": " create <code>benchmarks/sample.exs</code> see below"
+        },
+        {
+          "title": " test <code>make run-benchmarks</code>"
+        }
+      ]
+    },
+    {
+      "topic": "load testing setup checklist",
+      "items": [
+        {
+          "title": " install wrk <code>brew install wrk</code>"
+        },
+        {
+          "title": " test <code>IP=127.0.0.1 PORT=8080 URLPATH=hello/world make load-test</code><p>Documentation can be generated with <a href=\"https://github.com/elixir-lang/ex_doc\">ExDoc</a>\nand published on <a href=\"https://hexdocs.pm\">HexDocs</a>. Once published, the docs can\nbe found at <a href=\"https://hexdocs.pm/elixir_project_checklist\">https://hexdocs.pm/elixir_project_checklist</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Core References",
+      "items": [
+        {
+          "title": "https://github.com/parroty/excoveralls"
+        },
+        {
+          "title": "https://github.com/jeremyjh/dialyxir"
+        },
+        {
+          "title": "https://github.com/rrrene/credo"
+        },
+        {
+          "title": "https://github.com/bitwalker/distillery"
+        },
+        {
+          "title": "https://github.com/elixir-lang/ex_doc"
+        }
+      ]
+    },
+    {
+      "topic": "Optional Refrences",
+      "items": [
+        {
+          "title": "https://github.com/wg/wrk"
+        },
+        {
+          "title": "https://github.com/elixir-lang/elixir/tree/master/lib/logger"
+        },
+        {
+          "title": "https://github.com/PragTob/benchee"
+        }
+      ]
+    },
+    {
+      "topic": "Contributors",
+      "items": [
+        {
+          "title": "Steve Morin - https://github.com/smorin"
+        },
+        {
+          "title": "Khaja Minhajuddin - https://github.com/minhajuddin"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": 20,
+  "header": "awesome-javaee8",
+  "topicList": [
+    "Java EE 8 news and community activities",
+    "Jakarta EE 8(The next generation of Java EE)",
+    "Books",
+    "Java EE 8 learning resources",
+    "CDI 2.0",
+    "JSF 2.3",
+    "JPA 2.2",
+    "Bean Validation 2.0",
+    "JSON-P 1.1",
+    "JSON-B 1.0",
+    "JAX-RS 2.1",
+    "Servlet 4.0",
+    "Java EE Security 1.0"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Java EE 8 news and community activities",
+      "items": [
+        {
+          "title": "<a href=\"https://blogs.oracle.com/theaquarium/java-ee-8-is-final-and-glassfish-50-is-released\">Java EE 8 and GlassFish 5.0 Released!</a>, the Oracle official announcement."
+        },
+        {
+          "title": "<a href=\"https://javaee-guardians.io/\">Java EE Guardians</a>"
+        },
+        {
+          "title": "<a href=\"https://www.change.org/p/larry-ellison-tell-oracle-to-move-forward-java-ee-as-a-critical-part-of-the-global-it-industry\">Tell Oracle to Move Forward Java EE as a Critical Part of the Global IT Industry</a>"
+        },
+        {
+          "title": "<a href=\"https://blogs.oracle.com/theaquarium/opening-up-java-ee\">Opening up Java EE</a>"
+        },
+        {
+          "title": "<a href=\"https://blogs.oracle.com/theaquarium/opening-up-ee-update\">Opening up Java EE - An update</a>"
+        },
+        {
+          "title": "<a href=\"https://www.change.org/p/larry-ellison-tell-oracle-to-move-forward-java-ee-as-a-critical-part-of-the-global-it-industry/u/21473794?utm_medium=email&amp;utm_source=petition_update&amp;utm_campaign=146669&amp;sfmc_tk=xZ%2f6z4TGoQ02piKnRtK%2bejNgWC%2bWD6nr3P%2bcjkRrgGJqXJLLTSlXDQ6alq40O5pe&amp;j=146669&amp;sfmc_sub=46994739&amp;l=32_HTML&amp;u=27789648&amp;mid=7259882&amp;jb=1\">We Need Your Help - Moving Java EE to the Eclipse Foundation</a>"
+        },
+        {
+          "title": "<a href=\"https://www.infoq.com/news/2017/11/oraclejoinsmicroprofile\">Oracle Joins Eclipse MicroProfile Project</a>"
+        },
+        {
+          "title": "<a href=\"https://javaee-guardians.io/2018/01/02/joint-community-open-letter-on-java-ee-naming-and-packaging/\">Joint Community Open Letter on Java EE Naming and Packaging</a>"
+        },
+        {
+          "title": "<a href=\"https://www.infoq.com/news/2018/01/mvc-1.0-public-review\">Public Review of Java MVC 1.0 Specification is Now Open</a>"
+        },
+        {
+          "title": "<a href=\"https://www.infoq.com/news/2018/02/JavaEENewNameJan18\">Vote for Java EE's New Name</a>"
+        },
+        {
+          "title": "<a href=\"https://www.infoq.com/news/2018/02/from-javaee-to-jakartaee\">From Java EE to Jakarta EE: the Java EE Guardians Rebranding Debate with Oracle</a>"
+        },
+        {
+          "title": "<a href=\"https://dzone.com/articles/java-ee-8-and-the-open-future-of-java-ee\">Java EE 8 and the Open Future of Java EE </a>"
+        }
+      ]
+    },
+    {
+      "topic": "Jakarta EE 8(The next generation of Java EE)",
+      "items": [
+        {
+          "title": "<a href=\"https://jakarta.ee/\">New home of Jakarta EE</a>"
+        },
+        {
+          "title": "<a href=\"https://jakartaone.org/2019/\">Jakarta One</a>"
+        },
+        {
+          "title": "<a href=\"https://jakartablogs.ee/\">Jakarta Blog</a>"
+        },
+        {
+          "title": "<a href=\"https://projects.eclipse.org/projects/ee4j\">Eclipse EE4j Project</a>"
+        },
+        {
+          "title": "<a href=\"https://eclipse-ee4j.github.io/jakartaee-tutorial\">Jakarta EE Tutorial</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Books",
+      "items": [
+        {
+          "title": "<a href=\"https://www.apress.com/us/book/9781484235935\">Java EE 8 Recipes</a> by Apress"
+        },
+        {
+          "title": "<a href=\"https://www.amazon.co.uk/Building-Applications-Jakarta-Databases-Microservices/dp/9389423341\">Building Modern Web Applications With Jakarta EE, NoSQL Databases and Microservices</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Java EE 8 learning resources",
+      "items": [
+        {
+          "title": "<a href=\"https://javaee.github.io/\">Java EE home page on Github</a>, the official <a href=\"https://javaee.github.io/tutorial/\">Java EE 8 Tutorial</a>, and the reference implementation <a href=\"https://javaee.github.io/glassfish/download\">Glassfish v5</a>."
+        },
+        {
+          "title": "<a href=\"http://www.oracle.com/technetwork/java/javaee/downloads/index.html\">Oracle Java EE 8 SDK</a>, includes the open-source Glassfish distribution, sample codes and tutorials."
+        },
+        {
+          "title": "<a href=\"http://microprofile.io\">Eclipse MicroProfile</a> picks up the original proposals that had been abandoned in Java EE 8, and it targets Microservice and brings Java EE to cloud native applications."
+        },
+        {
+          "title": "<a href=\"https://blogs.oracle.com/theaquarium/java-ee-8-javaone-2017\">Java EE 8 @ JavaONE 2017</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/javaee/j1-hol\">Java EE 8 Hands On Lab </a>"
+        },
+        {
+          "title": "<a href=\"http://www.javamagazine.mozaicreader.com/NovDec2017#&amp;pageSet=12&amp;page=0\">Java Magazine November/December 2017 Edtion</a> focuses on Java EE 8 update"
+        },
+        {
+          "title": "<a href=\"https://www.ibm.com/developerworks/library/j-whats-new-in-javaee-8/\">What's new in Java EE 8</a>, a Java EE 8 overview from IBM DeveloperWorks"
+        },
+        {
+          "title": "<a href=\"https://dzone.com/articles/the-top-5-new-features-in-java-ee-8\">The Top 5 New Features in Java EE 8</a>"
+        },
+        {
+          "title": "<a href=\"https://hantsy.gitbooks.io/java-ee-8-by-example/content/\">Java EE 8 by example</a>, ads for myself :smile:"
+        }
+      ]
+    },
+    {
+      "topic": "CDI 2.0",
+      "items": [
+        {
+          "title": "<a href=\"http://weld.cdi-spec.org/news/2017/05/19/tour-around-weld-3/\">Tour around Weld 3</a>"
+        },
+        {
+          "title": "<a href=\"http://docs.jboss.org/cdi/learn/cdi_2/slides.html\">What’s new in CDI 2.0</a>"
+        },
+        {
+          "title": "<a href=\"https://paluch.biz/blog/144-a-look-on-cdi-2-0-edr1.html\">A look on CDI 2.0 EDR1</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/mp911de/cdi-2.0\">mp911de/cdi-2.0 @ Github</a>"
+        }
+      ]
+    },
+    {
+      "topic": "JSF 2.3",
+      "items": [
+        {
+          "title": "<a href=\"http://arjan-tijms.omnifaces.org/p/jsf-23.html\">What's new in JSF 2.3? </a>, by Arjan Tijms, a must-read article when upgrading to JSF 2.3."
+        },
+        {
+          "title": "<a href=\"http://www.manorrock.com/blog/2013/11/01/jsf_tip_31_migrate_your_managedproperty_annotations.html\">Migrate your @ManagedProperty annotations</a>"
+        }
+      ]
+    },
+    {
+      "topic": "JPA 2.2",
+      "items": [
+        {
+          "title": "<a href=\"https://www.thoughts-on-java.org/whats-new-in-jpa-2-2/\">What's new in JPA 2.2</a>"
+        },
+        {
+          "title": "<a href=\"https://www.thoughts-on-java.org/jpa-2-2s-new-stream-method-and-how-you-should-not-use-it/\">JPA 2.2’s new getResultStream() method and how you should NOT use it</a>"
+        },
+        {
+          "title": "<a href=\"https://vladmihalcea.com/2017/07/04/whats-new-in-jpa-2-2-stream-the-result-of-a-query-execution\">What’s new in JPA 2.2 – Stream the result of a Query execution</a>"
+        },
+        {
+          "title": "<a href=\"https://vladmihalcea.com/2017/06/26/whats-new-in-jpa-2-2-java-8-date-and-time-types/\">What’s new in JPA 2.2 – Java 8 Date and Time Types</a>"
+        },
+        {
+          "title": "<a href=\"https://www.infoq.com/news/2018/01/improvements-jpa-22\">Handy Improvements in JPA 2.2</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Bean Validation 2.0",
+      "items": [
+        {
+          "title": "<a href=\"https://dzone.com/articles/bean-validation-20\">Bean Validation 2.0 </a>"
+        },
+        {
+          "title": "<a href=\"http://beanvalidation.org/news/2016/07/15/bean-validation-2-0-is-coming/\">Bean Validation 2.0 - A new JSR is born!</a>"
+        },
+        {
+          "title": "<a href=\"http://in.relation.to/2017/08/07/and-here-comes-hibernate-validator-60\">And here comes Hibernate Validator 6.0 Final with Bean Validation 2.0 support</a>"
+        },
+        {
+          "title": "<a href=\"http://www.baeldung.com/bean-validation-container-elements\">Validating Container Elements with Bean Validation 2.0</a>"
+        }
+      ]
+    },
+    {
+      "topic": "JSON-P 1.1",
+      "items": [
+        {
+          "title": "<a href=\"https://www.infoq.com/news/2017/03/json-processing-public-review\">Public Review of JSON-P Specification 1.1 is Now Open</a>"
+        }
+      ]
+    },
+    {
+      "topic": "JSON-B 1.0",
+      "items": [
+        {
+          "title": "<a href=\"http://json-b.net/getting-started.html\">JSON Binding API - Getting Started</a>"
+        },
+        {
+          "title": "<a href=\"https://www.javaindeed.com/getting-started-with-json-b/\">Gettting Started with JSON-B</a>"
+        },
+        {
+          "title": "<a href=\"https://www.ibm.com/developerworks/java/library/j-javaee8-json-binding-1/\">Get started with the JSON Binding API</a>, <a href=\"https://www.ibm.com/developerworks/java/library/j-javaee8-json-binding-2/\">Part 2</a>,<a href=\"https://www.ibm.com/developerworks/java/library/j-javaee8-json-binding-3/\">Part 3</a>, <a href=\"https://www.ibm.com/developerworks/java/library/j-javaee8-json-binding-4/\">Part 4</a>, JSON-B series from IBM DeveloperWorks"
+        }
+      ]
+    },
+    {
+      "topic": "JAX-RS 2.1",
+      "items": [
+        {
+          "title": "<a href=\"https://www.infoq.com/news/2017/08/JAX-RS-2.1-released\">Java API for RESTful Web Services 2.1 Released</a>"
+        },
+        {
+          "title": "<a href=\"https://blogs.oracle.com/pavelbucek/jax-rs-21-reactive-client-api\">JAX-RS 2.1 Reactive Client API</a>"
+        },
+        {
+          "title": "<a href=\"http://ridingthecrest.com/blog/2017/02/22/jax-rs-2_1-new-feature-introduction.html\">JAX-RS 2.1 New Feature Introduction</a>"
+        },
+        {
+          "title": "<a href=\"https://dzone.com/articles/jersey-client-dependencies-for-jax-rs-21\">Jersey Client Dependencies for JAX-RS 2.1</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Servlet 4.0",
+      "items": [
+        {
+          "title": "<a href=\"https://www.infoq.com/news/2015/03/burns-servlet-http2\">Ed Burns Discusses HTTP/2 and the Java EE Servlet 4 Specification</a>"
+        },
+        {
+          "title": "<a href=\"https://dzone.com/articles/first-look-at-http2-server-push-in-java-servlet-40-1\">First Look at HTTP/2 Server Push in Java Servlet 4.0 Specification</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Java EE Security 1.0",
+      "items": [
+        {
+          "title": "<a href=\"http://arjan-tijms.omnifaces.org/p/whats-new-in-java-ee-security-api-10.html\">What's new in Java EE Security API 1.0? </a>,  by Arjan Tijms, a must read blog entry for Java EE Security."
+        },
+        {
+          "title": "<a href=\"https://medium.com/@swhp/playing-with-java-ee-security-jsr-375-soteria-38e8d2b094d4\">Playing with Java EE Security (JSR-375) — Soteria</a>"
+        }
+      ]
+    }
+  ]
+}

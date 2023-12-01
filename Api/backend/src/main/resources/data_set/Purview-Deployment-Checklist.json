@@ -1,0 +1,129 @@
+{
+  "id": 164,
+  "header": "Purview-Deployment-Checklist",
+  "topicList": [
+    "| Update: 05/05/2021  |",
+    "1. Readiness Checklist",
+    "2. Azure Purview Automated Readiness Checklist Scripts",
+    "3. Azure Purview Automated MSI Configuration"
+  ],
+  "itemGroups": [
+    {
+      "topic": "| Update: 05/05/2021  |",
+      "items": [
+        {
+          "title": "<p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "1. Readiness Checklist",
+      "items": [
+        {
+          "title": "<p><a href=\"https://github.com/zeinab-mk/Purview-Deployment-Checklist/blob/main/docs/Azure-Purview-Deployment-Readiness-Checklist.md\">Azure Purview Readiness Checklist</a> is a checklist of high-level steps to guide you to plan and deploy Azure Purview as your data governance solution. The guide is divided into four phases:</p><ol>\n<li><strong>Readiness</strong> – Learn the pre-requisite tools and approaches important to all adoption efforts."
+        },
+        {
+          "title": "<strong>Build Foundation</strong> – Deploy Azure Purview Accounts to establish your unified data governance model."
+        },
+        {
+          "title": "<strong>Register Data Sources</strong> – Setup first landing zone and onboard initial group of data sources."
+        },
+        {
+          "title": "<strong>Curate and consume data</strong> – Enable a unified Data Governance solution for data consumers using Azure Purview.</li>\n</ol><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "2. Azure Purview Automated Readiness Checklist Scripts",
+      "items": [
+        {
+          "title": "<p>To help you prepare your environment, we have deployed the following scripts so, you can evaluate your existing environment and identify missing configurations so Azure Purview can scan data sources.</p><p>Use any of the following <strong>PowerShell-based scripts</strong> to validate your data sources readiness prior scanning data sources in Azure Purview:</p>"
+        },
+        {
+          "title": "<strong>Azure-Purview-automated-readiness-checklist.ps1</strong>"
+        },
+        {
+          "title": "<strong>Azure-Purview-automated-readiness-checklist-csv-Input.ps1</strong><p><br/></p><p>|<strong>Script</strong>  |<strong>Use cases</strong>  |<strong>Prerequisites</strong>  |<strong>Required Permissions</strong>  |\n|---------|---------|---------|---------|\n|<a href=\"https://github.com/zeinab-mk/Purview-Deployment-Checklist/blob/main/scripts/Azure-Purview-automated-readiness-checklist.ps1\">Azure-Purview-automated-readiness-checklist.ps1</a> |<ul><li>Possibility to run the script on a Top-level Management Group or a Subscription as data source scope</li><li>Validates if Azure Purview Managed Identity has access to data sources on both network access and authorization</li><li>Missing configurations are listed as output report</li></ul> |<ul><li>An Azure Purview Account</li><li>Powershell Az Module</li><li>Powershell AzureAD Module</li><li>Powershell Az.Synapse Module</li><li>SQLCMD</li></ul> |<ul><li>Contributor on Azure Purview Resource Group</li><li>Reader at data source Subscription or Management Group </li><li>Get/List Key Vault secret</li><li>Azure AD Global Reader</li></ul> |\n|<a href=\"https://github.com/zeinab-mk/Purview-Deployment-Checklist/blob/main/scripts/Azure-Purview-automated-readiness-checklist-csv-Input.ps1\">Azure-Purview-automated-readiness-checklist-csv-Input.ps1</a> |<ul><li>Possibility to run the script over data sources in multiple subscriptions using a csv list as input </li><li>Validates if Azure Purview Managed Identity has access to data sources on both network access and authorization</li><li>Missing configurations are listed as output report</li><li>Reduced prompts when running the script</li></ul> |<ul><li>An Azure Purview Account</li><li>Powershell Az Module</li><li>Powershell AzureAD Module</li><li>Powershell Az.Synapse Module</li><li>SQLCMD</li></ul> |<ul><li>Contributor on Azure Purview Resource Group</li><li>Reader at data source Subscription or Management Group </li><li>Get/List Key Vault secret</li><li>Azure AD Global Reader</li></ul>|</p>"
+        },
+        {
+          "topic": "2.1. Core Capabilities",
+          "items": []
+        },
+        {
+          "topic": "2.2. Prerequisites",
+          "items": [
+            {
+              "title": "<p>The following prerequisites are required to successfully run the script:</p>"
+            },
+            {
+              "title": "An Azure Subscription."
+            },
+            {
+              "title": "An Azure Purview Account."
+            },
+            {
+              "title": "Access to Azure AD and Azure Subscriptions where Azure Purview account and data sources are deployed."
+            },
+            {
+              "title": "if csv file is used, a valid user's credential must be configured inside key Vault's secrets in each subscriptions. The script will use these credentials to validate Azure Purview access to Azure SQL Servers, Azure Synapse or Azure SQL Managed Instances."
+            }
+          ]
+        },
+        {
+          "topic": "2.3. How to run the scripts?",
+          "items": [
+            {
+              "title": "<p>Use the steps in the following examples to run the script:  </p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "3. Azure Purview Automated MSI Configuration",
+      "items": [
+        {
+          "title": "<p>These scripts can help you to setup Azure network and access permissions for Azure Purview account, before scanning data sources inside your Azure environment in Azure Purview.</p><p>Use any of the following <strong>PowerShell-based scripts</strong> to validate your data sources readiness prior scanning data sources in Azure Purview:</p>"
+        },
+        {
+          "title": "<strong>Azure-Purview-MSI-Configuration.ps1</strong>"
+        },
+        {
+          "title": "<strong>Azure-Purview-MSI-Configuration-csv-Input.ps1</strong><p><br/></p><p>|<strong>Script</strong>  |<strong>Use cases</strong>  |<strong>Prerequisites</strong>  |<strong>Required Permissions</strong>  |\n|---------|---------|---------|---------|\n|<a href=\"https://github.com/zeinab-mk/Purview-Deployment-Checklist/blob/main/scripts/Azure-Purview-MSI-Configuration.ps1\">Azure-Purview-MSI-Configuration.ps1</a> |<ul><li>Possibility to run the script on a Top-level Management Group or a Subscription as data source scope</li><li>Validates and configures required access for Azure Purview Managed Identity on both network and authorization</li><li>Detected settings and progress in the script will generate an output report. Admin will receive several prompts to take action before configuring any settings</li></ul> |<ul><li>An Azure Purview Account</li><li>Powershell Az Module</li><li>Powershell AzureAD Module</li><li>Powershell Az.Synapse Module</li><li>SQLCMD</li></ul> |<ul><li>Contributor on Azure Purview Resource Group</li><li>Owner at data source Subscription or Management Group </li><li>Get/List Key Vault secret</li><li>Azure AD Global Reader</li></ul> |\n|<a href=\"https://github.com/zeinab-mk/Purview-Deployment-Checklist/blob/main/scripts/Azure-Purview-MSI-Configuration-csv-Input.ps1\">Azure-Purview-MSI-Configuration-csv-Input.ps1</a> |<ul><li>Possibility to run the script over data sources in multiple subscriptions using a csv list as input </li><li>Validates and configures required access for Azure Purview Managed Identity on both network and authorization</li><li>Admin is not required to provide any confirmation to setup the configurations.</li><li>Reduced prompts when running the script</li></ul> |<ul><li>An Azure Purview Account</li><li>Powershell Az Module</li><li>Powershell AzureAD Module</li><li>Powershell Az.Synapse Module</li><li>SQLCMD</li></ul> |<ul><li>Contributor on Azure Purview Resource Group</li><li>Reader at data source Subscription or Management Group </li><li>Get/List Key Vault secret</li><li>Azure AD Global Reader</li></ul>|</p><p><br/></p>"
+        },
+        {
+          "topic": "3.1. Core Capabilities",
+          "items": []
+        },
+        {
+          "topic": "3.2. Prerequisites",
+          "items": [
+            {
+              "title": "<p>The following prerequisites are required to successfully run the script:</p>"
+            },
+            {
+              "title": "An Azure Subscription."
+            },
+            {
+              "title": "An Azure Purview Account."
+            },
+            {
+              "title": "Access to Azure AD and Azure Subscriptions where Azure Purview account and data sources are deployed."
+            },
+            {
+              "title": "if csv file is used, a valid user's credential must be configured inside key Vault's secrets in each subscriptions. The script will configure Azure Ad Authentication using these credentials for Azure SQL Servers, Azure Synapse or Azure SQL Managed Instances."
+            }
+          ]
+        },
+        {
+          "topic": "3.3. How to run the scripts?",
+          "items": [
+            {
+              "title": "<p>Use the steps in the following examples to run the script:  </p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

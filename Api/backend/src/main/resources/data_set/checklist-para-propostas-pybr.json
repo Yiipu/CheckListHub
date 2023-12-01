@@ -1,0 +1,247 @@
+{
+  "id": 40,
+  "header": "checklist-para-propostas-pybr",
+  "topicList": [
+    "Checklist para propostas de palestras para Python Brasil",
+    "Datas Python Brasil 2018",
+    "Checklist",
+    "Outros materiais",
+    "Como contribuir com este checklist?"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Checklist para propostas de palestras para Python Brasil",
+      "items": [
+        {
+          "title": "<p>Este é um checklist para inspirar e guiar pessoas a preparar propostas de palestras para Python Brasil! Criado pela <a href=\"https://www.vinta.com.br/\">Vinta Software</a>.</p><p><strong>Dica</strong>: copie o <a href=\"https://raw.githubusercontent.com/vintasoftware/checklist-para-propostas-pybr/master/README.md\">raw text</a> deste checklist e cole num <a href=\"https://gist.github.com/\">novo gist secreto seu</a> colocando o nome do arquivo com extensão <code>.md</code> (exemplo: <code>checklist.md</code>). Assim você terá sua versão do checklist onde os checks funcionam e onde você pode customizar a vontade!</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Datas Python Brasil 2018",
+      "items": [
+        {
+          "title": "Submissão de palestras até dia 30/06/2018"
+        },
+        {
+          "title": "Divulgação dos resultados até o dia 15/07/2018"
+        }
+      ]
+    },
+    {
+      "topic": "Checklist",
+      "items": [
+        {
+          "topic": "Escolhendo o Tema",
+          "items": [
+            {
+              "title": " Escolhi um tema <strong>relevante</strong> para a audiência. Imaginei quem estará na conferência e pensei: \"sobre o que essas pessoas querem/precisam ouvir?\""
+            },
+            {
+              "title": " Escolhi um tema enriquecedor, que trará um <strong>novo aprendizado</strong> para minha audiência"
+            },
+            {
+              "title": " Escolhi um tema que já me sinto <strong>confortável</strong> em falar ou terei tempo suficiente para estudar para me sentir confortável"
+            },
+            {
+              "title": " Escolhi um tema que é possível apresentar em <strong>25 minutos</strong>"
+            },
+            {
+              "title": " Escolhi um <strong>único tema</strong> e não um conjunto de temas pouco relacionados"
+            }
+          ]
+        },
+        {
+          "topic": "Definindo o Título",
+          "items": [
+            {
+              "title": " Escolhi um <strong>título claro mas descolado</strong> o suficiente para atrair atenção e indicativo sobre o que a palestra ensinará"
+            },
+            {
+              "title": " Incluí o <strong>prefixo de categoria</strong> no meu título, por exemplo [Web], [Científico], [Carreira], etc."
+            }
+          ]
+        },
+        {
+          "topic": "Pensando nos Tópicos da Proposta",
+          "items": [
+            {
+              "title": " Preparei tópicos <strong>embasados</strong> relacionados a meu tema. Exemplos: Propus uma solução? Mostrei porque o problema é importante. Apresentei uma ferramenta? Mostrei vantagens e desvantagens dela em relação a outras. Discuti sobre um processo? Mostrei como aplicá-lo. Apresentei uma comunidade? Mostrei como se engajarem nela. Defini boas práticas? Mostrei problemas que elas evitam. etc..."
+            },
+            {
+              "title": " Mencionei <strong>casos reais</strong> de vantagens, deficiências, tradeoffs, experiências, aprendizados e exemplos relacionados a meu tema"
+            },
+            {
+              "title": " Considerei em seguir uma <strong>narrativa</strong> através dos tópicos que vou abordar, com começo, meio e fim. Ou seja, sei introduzir o tema, justificar sua importância, desenvolver seus detalhes e concluir fornecendo mais material, com cada tópico levando ao outro."
+            },
+            {
+              "title": " Deixei a audiência animada para <strong>aprender mais</strong> ao fazer minha palestra ser como um <em>trailer</em> sobre meu tema, ou seja, dei uma visão geral sobre meu tema e preparei o caminho para os próximos passos. Assistir uma palestra não torna ninguém expert, mas pode inspirar pessoas a aprenderem mais"
+            }
+          ]
+        },
+        {
+          "topic": "Escrevendo o Texto da Proposta",
+          "items": [
+            {
+              "title": " Escrevi um curto primeiro parágrafo direcionado para <strong>empolgar as pessoas sobre o tema</strong>. Mostrei porque estou interessada em falar para todos sobre meu tema!"
+            },
+            {
+              "title": " Usei uma <strong>linguagem clara</strong> o suficiente para introduzir meu tema"
+            },
+            {
+              "title": " Descrevi <strong>para qual audiência</strong> minha palestra é direcionada (fui bem específica, \"programadores Python\" é muito geral, \"programadores iniciantes em Python interessados em grafos\" é válido)"
+            },
+            {
+              "title": " Listei os <strong>tópicos que vou abordar</strong> na minha palestra"
+            },
+            {
+              "title": " Mencionei <strong>insights</strong> diferenciados que tenho sobre o tema"
+            },
+            {
+              "title": " Mencionei o que audiência terá <strong>aprendido</strong> quando sair da minha palestra. Usei mais \"você vai aprender\" do que \"vamos falar sobre\" no texto"
+            },
+            {
+              "title": " Não tive <strong>medo de revelar</strong> minha palestra, listei tudo que era interessante na proposta"
+            },
+            {
+              "title": " Incluí links para <strong>conteúdo relacionado</strong> ao tema que eu produzi, como blog posts, artigos, documentação, projetos no GitHub, etc."
+            },
+            {
+              "title": " Incluí link para os <strong>slides e vídeo</strong> de outra edição da mesma palestra (caso já tenha sido apresentada em outro evento)"
+            },
+            {
+              "title": " Tomei cuidado para que minha proposta <strong>não agrida e nem despreze</strong> outras comunidades, linguagens, ferramentas, etc."
+            },
+            {
+              "title": " Tomei cuidado para que minha proposta <strong>não viole</strong> o <a href=\"https://2018.pythonbrasil.org.br/codigo-de-conduta/\">Código de Conduta da conferência</a>"
+            },
+            {
+              "title": " Validei meu texto com um <strong>mentor(a)</strong>"
+            },
+            {
+              "title": " Validei a <strong>formatação</strong> do meu texto"
+            },
+            {
+              "title": " Validei a <strong>gramática</strong> do meu texto"
+            }
+          ]
+        },
+        {
+          "topic": "O que não fazer",
+          "items": [
+            {
+              "title": " Não estou propondo uma <strong>propaganda</strong> de um produto ou serviço comercial"
+            },
+            {
+              "title": " Não estou propondo uma palestra sobre um <strong>projeto incompleto</strong>"
+            }
+          ]
+        },
+        {
+          "topic": "Campo \"Mais informações\"",
+          "items": [
+            {
+              "title": " Detalhei <strong>quem sou</strong> e o que já fiz relacionado a Python, comunidades, programação, tecnologia, etc."
+            },
+            {
+              "title": " Expliquei porque sou a <strong>melhor pessoa</strong> para falar deste tema"
+            },
+            {
+              "title": " Incluí <strong>links</strong> de outras palestras que já apresentei (caso existam)"
+            }
+          ]
+        },
+        {
+          "topic": "Submissão",
+          "items": [
+            {
+              "title": " Submeti uma <strong>primeira versão</strong> da minha proposta assim que pude (quanto antes, mais chance de receber votos)"
+            },
+            {
+              "title": " Submeti <strong>mais de uma</strong> proposta (quanto mais propostas, mais chances de aprovar uma)"
+            }
+          ]
+        },
+        {
+          "topic": "Divulgação",
+          "items": [
+            {
+              "title": " Divulguei via <strong>Twitter</strong> para pessoas <strong>próximas</strong> votarem na(s) minha(s) palestra(s)"
+            },
+            {
+              "title": " Divulguei via <strong>Facebook</strong> para pessoas <strong>próximas</strong> votarem na(s) minha(s) palestra(s)"
+            },
+            {
+              "title": " Divulguei via <strong>Telegram</strong> para pessoas <strong>próximas</strong> votarem na(s) minha(s) palestra(s)"
+            },
+            {
+              "title": " Divulguei via <strong>quaisquer outros meios</strong> para pessoas <strong>próximas</strong> votarem na(s) minha(s) palestra(s)"
+            }
+          ]
+        },
+        {
+          "topic": "Exemplos de boas propostas aceitas em outras edições da Python Brasil",
+          "items": [
+            {
+              "title": " Me inspirei na proposta \"<a href=\"https://speakerfight.com/events/python-brasil-13-palestras/#graphql-nem-sempre-rest-e-a-melhor-alternativa-para-sua-api\">GraphQL: nem sempre REST é a melhor alternativa para sua API</a>\""
+            },
+            {
+              "title": " Me inspirei na proposta \"<a href=\"https://speakerfight.com/events/python-brasil12-apresentacoes/#como-fazer-boas-libs-o-que-torna-uma-biblioteca-facil-de-usar-3\">Como fazer boas libs? O que torna uma biblioteca fácil de usar</a>\""
+            },
+            {
+              "title": " Me inspirei na proposta \"<a href=\"https://speakerfight.com/events/python-brasil-13-palestras/#o-que-desenvolvedores-deveriam-aprender-sobre-design\">O que desenvolvedores deveriam aprender sobre design?</a>\""
+            }
+          ]
+        },
+        {
+          "topic": "Exemplo real de proposta antes e depois deste checklist",
+          "items": [
+            {
+              "title": "<a href=\"https://docs.google.com/document/d/1nNj4WuF0x8xMwwDyQAA5_iM2tc33JDB8sLM-OXv8bNo/edit?usp=sharing\">[Web] [BD] Normalize até machucar, desnormalize até funcionar em Django - Python Brasil 2018</a> (foi aceita, mas não foi apresentada!)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Outros materiais",
+      "items": [
+        {
+          "title": "<a href=\"https://us.pycon.org/2018/speaking/talks/\">PyCon 2018 Proposing a Talk - Good Ideas</a>"
+        },
+        {
+          "title": "<a href=\"http://www.sarahmei.com/blog/2014/04/07/what-your-conference-proposal-is-missing/\">What Your Conference Proposal Is Missing</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/akaptur/pycon-proposals\">A repository of past PyCon proposals, both accepted and rejected</a>"
+        },
+        {
+          "title": "<a href=\"http://rhodesmill.org/brandon/2013/example-pycon-proposals/\">Example PyCon talk proposals</a>"
+        },
+        {
+          "title": "<a href=\"https://talk-talk-talk.readthedocs.io/en/latest/\">Talk Proposals by Mariatta (Python core dev)</a>"
+        },
+        {
+          "title": "<a href=\"https://doughellmann.com/blog/2011/10/18/how-i-review-a-pycon-talk-proposal/\">How I Review a PyCon Talk Proposal</a>"
+        },
+        {
+          "title": "<a href=\"http://procrastinatingdev.com/programming/crafting-your-conference-talk-proposal/\">Crafting your Conference Talk Proposal</a>"
+        },
+        {
+          "title": "<a href=\"https://emptysqua.re/blog/seven-tips-for-pycon/\">Don't Submit A Talk About Your Great Hack: Jesse's Seven Tips To Get Into PyCon</a>"
+        },
+        {
+          "title": "<a href=\"http://twist.elearningguild.net/2014/04/tips-for-writing-a-winning-conference-proposal/\">Tips for Writing a Winning Conference Proposal</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Como contribuir com este checklist?",
+      "items": [
+        {
+          "title": "Fork e PR! Ou <a href=\"https://github.com/vintasoftware/checklist-para-propostas-pybr/issues\">crie uma issue</a>. Obrigado!"
+        }
+      ]
+    }
+  ]
+}

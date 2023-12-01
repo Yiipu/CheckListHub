@@ -1,0 +1,161 @@
+{
+  "id": 159,
+  "header": "program-guidelines",
+  "topicList": [
+    "Getting your addon adopted",
+    "Addon Transfer Checklist",
+    "Adopting an addon",
+    "Standardizing Addon Maintenance",
+    "Sponsors"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Getting your addon adopted",
+      "items": [
+        {
+          "title": "To get your addon adopted, please ping one of the adopted-ember-addons org owners (<code>@Melanie#1618</code>, <code>@Alon#3707</code>, or <code>@knownasilya#9990</code>) in the <a href=\"https://discord.gg/emberjs\">Ember Discord</a> chat in the <code>#adopted-ember-addons</code> channel and let them know what repository you'd like to transfer."
+        },
+        {
+          "title": "Once they are aware, complete the Addon Transfer checklist (below)."
+        },
+        {
+          "title": "After the checklist is complete, transfer the repository to one of them here on GitHub."
+        },
+        {
+          "title": "The org owner is then responsible to transfer the addon to this org (Adopted Ember Addons).<p><strong>Warning</strong>: You cannot ever fork the repository to the same account it was transferred from. Trying to do so will break GitHub's redirect of the old URL to the new.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Addon Transfer Checklist",
+      "items": [
+        {
+          "title": "<p>These are the things that need to done to transfer your addon:</p>"
+        },
+        {
+          "title": " Update the <code>repository</code> field of the <code>package.json</code> to point to the new location."
+        },
+        {
+          "title": " If any demo URL or homepage is referenced, it should be updated. At the very least, file an issue on the repository so the adopter can fix."
+        },
+        {
+          "title": " Ensure Release practices are documented."
+        },
+        {
+          "title": " Add the adopted-ember-addons org owners (<code>melsumner</code>, <code>alonbukai</code>, or <code>knownasilya</code>) to the maintainers of the package on <code>npm</code>. Make sure they have all admin permissions. Remove inactive maintainers, if reasonable."
+        }
+      ]
+    },
+    {
+      "topic": "Adopting an addon",
+      "items": [
+        {
+          "title": "<p>Anyone can submit a pull request to help maintain an addon in this repository!</p><p>It's also possible that you'd like to wear more of an official maintainer hat, and that's cool too! If you want to help maintain one of these addons:</p>"
+        },
+        {
+          "title": "Please open an issue that requests to be added as a contributor or ping <code>@Melanie#1618</code> on Ember Discord."
+        },
+        {
+          "title": "Make sure you have two-factor authentication (2FA) set up and enabled for GitHub.<p>Once we've had a chat, we can add you as a contributor.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Standardizing Addon Maintenance",
+      "items": [
+        {
+          "title": "<p>Adopted Ember Addons is a community effort. Maintaining the addons requires people with different backgrounds, experiences and opinions to work together successfully. Setting shared conventions for some aspects of addons maintenance provides a reference point how common problems should be solved within the org. This ensures a consistent experience for contributors and maintainers across the different addons within the org. It also reduces the entry barrier for new contributors and helps them getting started by providing clear guidance. Additionally it reduces the risk of <a href=\"https://en.wikipedia.org/wiki/Law_of_triviality\">bike-shedding</a> by providing a dedicated place to discuss and change patterns and practices.</p>"
+        },
+        {
+          "topic": "Terminology",
+          "items": [
+            {
+              "title": "<p>This document uses the keywords <em>must</em>, <em>must not</em>, <em>should</em>, <em>should not</em> and <em>may</em>.</p><p><em>Must</em> and <em>must not</em> express absolute requirements. Any addon within the org that do not follow these requirements should be updated as soon as possible. A pull request that changes an addon within the org accordingly to these requirements must be merged.</p><p><em>Should</em> and <em>should not</em> express a recommendation. There may be valid reasons to not follow the recommendation in some edge cases. If so the reasons should be documented.</p><p><em>May</em> means that an item is truly optional. It's an individual decision for each addon within the org to implement this item or not. A given decision should not be questioned to avoid changing it back and forth.</p><blockquote>\n<p>This terminology is based on <a href=\"https://tools.ietf.org/html/rfc2119\">RFC 2119</a>, which is used by many specification documents.</p>\n</blockquote>"
+            }
+          ]
+        },
+        {
+          "topic": "Prettier",
+          "items": [
+            {
+              "title": "<p>All addon within the org should format the JavaScript code with <a href=\"https://prettier.io/\">Prettier</a>. Prettier should be integrated as an <a href=\"https://eslint.org/\">ESLint</a> plugin. The setup and configuration should follow the <a href=\"https://github.com/emberjs/rfcs/pull/628\">RFC 628</a>.</p><blockquote>\n<p>Prettier is an opinionated code formatter. Using it prevents stylistic debates while maintaining addons within the org and helps both developers, reviewers and maintainers to focus on the problems the addon try to solve.</p>\n</blockquote><p>Prettier should not be used to format templates (<code>*.hbs</code>) yet, due to issues with whitespace.</p><blockquote>\n<p>Prettier has experimental support for Glimmer templates. But it is not stable enough yet to be adopted by addons within the org. It's very likely that we will recommend using it for Glimmer templates as well as soon as it's stable enough. The progress is tracked in <a href=\"https://github.com/jgwhite/prettier/issues/1\">this quest issue</a>.</p>\n</blockquote>"
+            }
+          ]
+        },
+        {
+          "topic": "Continuous Integration",
+          "items": [
+            {
+              "title": "<p>All addons within the org should run tests and linting automatically for all pull requests <em>before</em> merging them and for the main branch (e.g. <code>master</code>) after merging them. They must use GitHub Actions to do so. The GitHub Actions CI workflow may be generated with <a href=\"https://github.com/jelhan/create-github-actions-setup-for-ember-addon\">create-github-actions-setup-for-ember-addon</a>.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Release process",
+          "items": [
+            {
+              "title": "<p>All addons within the org should document their release process. The documentation should be located in <code>RELEASE.md</code> file in the root folder of the repository.</p><p><a href=\"https://github.com/release-it/release-it#release-it-\">Release-it</a> should be used to automate versioning and package publishing related tasks.</p><p>Addons may use the setup script <a href=\"https://github.com/rwjblue/create-rwjblue-release-it-setup\">create-rwjblue-release-it-setup</a> provided by Robert Jackson (<code>@rwjblue</code>) to setup release-it and create the release documentation.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Versioning",
+          "items": [
+            {
+              "title": "<p>All addons with the org must use <a href=\"https://semver.org/\">semantic versioning</a> (SemVer).</p><p>Dropping support for</p>"
+            },
+            {
+              "title": "specific versions of Ember packages (<code>ember-source</code>, <code>ember-cli</code> and <code>ember-data</code>) or other peer dependencies,"
+            },
+            {
+              "title": "node releases or"
+            },
+            {
+              "title": "browser targets<p>must be considered as breaking changes. Such changes must not be released in minor or patch versions.</p><p>Deprecations may be included in a minor or patch release before removing public APIs in the next major release.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Changelog",
+          "items": [
+            {
+              "title": "<p>All addons within the org should have a changelog. The changelog may not cover versions that were released before it was introduced.</p><blockquote>\n<p>Changelogs are important to communicate end users what is going on with the project. See <a href=\"https://keepachangelog.com/en/1.0.0/\">keepachangelog.com</a> for additional reasoning.</p>\n</blockquote><p>The changelog should be generated and updated automatically as part of the release process. <a href=\"https://github.com/lerna/lerna-changelog\"><code>lerna-changelog</code></a> should be used to do so.</p><blockquote>\n<p>Lerna-changelog generates changelogs based on GitHub pull requests and their labels. Please refer to <a href=\"https://github.com/lerna/lerna-changelog#lerna-changelog\">it's documentation</a> for more details.</p>\n</blockquote><p>lerna-changelog can be integrated with <code>release-it</code> to automatically generate the changelog as part of the release process. Robert Jackson (<code>@rwjblue</code>) provides a script to automate the setup for these tools: <a href=\"https://github.com/rwjblue/create-rwjblue-release-it-setup\">create-rwjblue-release-it-setup</a>. It should be used for the setup and as a reference for recommended configuration.</p><blockquote>\n<p>Please refer to the <a href=\"https://github.com/rwjblue/create-rwjblue-release-it-setup#create-rwjblue-release-it-setup\">documentation of create-rwjblue-release-it-setup</a> for usage instructions. The script could be rerun on a repository already using lerna-changelog and release-it to update the configuration to the latest recommendations.</p>\n</blockquote>"
+            }
+          ]
+        },
+        {
+          "topic": "GitHub labels",
+          "items": [
+            {
+              "title": "<p>GitHub issues and pull request should be labeled. It should follow the <a href=\"https://github.com/emberjs/ember.js/blob/master/CONTRIBUTING.md#issue-labeling\">rules for ember-source repository</a> for issues and <a href=\"https://github.com/lerna/lerna-changelog\">lerna-changelog</a>'s defaults for pull requests.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Code of conduct",
+          "items": [
+            {
+              "title": "<p>The <a href=\"https://emberjs.com/guidelines/\">Ember Community Guidelines</a> apply to all repositories within the org. It may be referenced in the repository's README or in a <code>CODE_OF_CONDUCT.md</code>.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Hosting and Deployments",
+          "items": [
+            {
+              "title": "<p>If the addon provides a documentation or demo application, it should be deployed for easier accessibility. Either <a href=\"https://www.netlify.com\">Netlify</a> or <a href=\"https://pages.github.com/\">GitHub Pages</a> should be used for hosting.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Sponsors",
+      "items": [
+        {
+          "title": "<p>We like to thanks the companies, which infrastructure we could use for free:</p><p><a href=\"https://github.com/\">\n<img alt=\"GitHub\" src=\"https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png\"/>\n</a></p><p><a href=\"https://www.netlify.com\">\n<img alt=\"Netlify\" src=\"https://www.netlify.com/img/global/badges/netlify-color-accent.svg\"/>\n</a></p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "id": 73,
+  "header": "dsc-capstone-submission-checklist",
+  "topicList": [
+    "How to Use This Checklist",
+    "Business Understanding",
+    "Data Understanding",
+    "Data Preparation",
+    "Modeling",
+    "Evaluation",
+    "Readme Content",
+    "Notebook Content",
+    "Presentation Content",
+    "Presentation Style",
+    "Sourcing"
+  ],
+  "itemGroups": [
+    {
+      "topic": "How to Use This Checklist",
+      "items": [
+        {
+          "title": "<p>Fork <a href=\"https://github.com/learn-co-curriculum/dsc-capstone-submission-checklist\">the repo for this checklist</a>, and complete it prior to submitting your Capstone for review. You can mark items as complete by adding an 'x' between the brackets in your Markdown file (i.e. change <code></code> to <code>[x]</code>). You do not need to share this with your instructor.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Business Understanding",
+      "items": [
+        {
+          "title": " Clearly explains the real-world problem your project attempts to solve in..."
+        },
+        {
+          "title": " Readme"
+        },
+        {
+          "title": " Notebook"
+        },
+        {
+          "title": " Slides"
+        }
+      ]
+    },
+    {
+      "topic": "Data Understanding",
+      "items": [
+        {
+          "title": " Describes the data source in..."
+        },
+        {
+          "title": " Readme"
+        },
+        {
+          "title": " Notebook"
+        },
+        {
+          "title": " Slides"
+        },
+        {
+          "title": " Notebook describes properties of all variables used in project"
+        }
+      ]
+    },
+    {
+      "topic": "Data Preparation",
+      "items": [
+        {
+          "title": " Notebook or <code>.py</code> file(s) include code to prepare your raw data for analysis"
+        }
+      ]
+    },
+    {
+      "topic": "Modeling",
+      "items": [
+        {
+          "title": " Notebook includes a baseline model"
+        },
+        {
+          "title": " Notebook includes additional models built iteratively from the baseline model"
+        },
+        {
+          "title": " Preferred model is described in..."
+        },
+        {
+          "title": " Readme"
+        },
+        {
+          "title": " Notebook"
+        },
+        {
+          "title": " Slides"
+        }
+      ]
+    },
+    {
+      "topic": "Evaluation",
+      "items": [
+        {
+          "title": " Model validation is included in..."
+        },
+        {
+          "title": " Readme"
+        },
+        {
+          "title": " Notebook"
+        },
+        {
+          "title": " Slides"
+        }
+      ]
+    },
+    {
+      "topic": "Readme Content",
+      "items": [
+        {
+          "title": " Readme includes..."
+        },
+        {
+          "title": " Data science process steps"
+        },
+        {
+          "title": " Future improvement ideas"
+        },
+        {
+          "title": " Repository navigation"
+        },
+        {
+          "title": " Reproduction instructions"
+        },
+        {
+          "title": " Links to presentation and sources"
+        }
+      ]
+    },
+    {
+      "topic": "Notebook Content",
+      "items": [
+        {
+          "title": " Notebook includes..."
+        },
+        {
+          "title": " Data understanding"
+        },
+        {
+          "title": " Data preparation"
+        },
+        {
+          "title": " Modeling"
+        },
+        {
+          "title": " Evaluation"
+        }
+      ]
+    },
+    {
+      "topic": "Presentation Content",
+      "items": [
+        {
+          "title": " Presentation includes..."
+        },
+        {
+          "title": " Introduction"
+        },
+        {
+          "title": " Data science process steps"
+        },
+        {
+          "title": " Future improvement ideas"
+        },
+        {
+          "title": " Contact info"
+        }
+      ]
+    },
+    {
+      "topic": "Presentation Style",
+      "items": [
+        {
+          "title": " Presentation..."
+        },
+        {
+          "title": " Is uncluttered"
+        },
+        {
+          "title": " Is light on text"
+        },
+        {
+          "title": " Has no unnecessary jargon"
+        },
+        {
+          "title": " Has visuals that clearly demonstrate key points"
+        }
+      ]
+    },
+    {
+      "topic": "Sourcing",
+      "items": [
+        {
+          "title": " Properly cites..."
+        },
+        {
+          "title": " Data"
+        },
+        {
+          "title": " Images"
+        },
+        {
+          "title": " Any other content created by others (e.g. text, code)"
+        }
+      ]
+    }
+  ]
+}

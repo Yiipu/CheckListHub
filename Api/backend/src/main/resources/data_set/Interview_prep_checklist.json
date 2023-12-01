@@ -1,0 +1,530 @@
+{
+  "id": 108,
+  "header": "Interview_prep_checklist",
+  "topicList": [
+    "Table of Contents",
+    "General Knowledge",
+    "Data structures",
+    "!TODO",
+    "Bit manipulation",
+    "Brain Teasers",
+    "Object Oriented Design",
+    "Recursion and Dynamic Programming",
+    "Scalability and Memory Limtis",
+    "Sorting and Searching",
+    "Design Patterns",
+    "Testing",
+    "Threads and Locks",
+    "Security",
+    "Supplemental Resources",
+    "Web Hosts",
+    "Behavioral Interview Checklist",
+    "Past Projects"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<ol>\n<li><a href=\"#general-knowledge\">General Knowledge</a>"
+        },
+        {
+          "title": "<a href=\"#data-structures\">Data Structures</a>"
+        },
+        {
+          "title": "<a href=\"#bit-manipulation\">Bit Manipulation</a>"
+        },
+        {
+          "title": "<a href=\"#brain-teasers\">Brain Teasers</a>"
+        },
+        {
+          "title": "<a href=\"#object-oriented-design\">Object Oriented Design</a>"
+        },
+        {
+          "title": "<a href=\"#recursion-and-dynamic-programming\">Recursion and Dynamic Programming</a>"
+        },
+        {
+          "title": "<a href=\"#scalability-and-memory\">Scalability and Memory Limits</a>"
+        },
+        {
+          "title": "<a href=\"#sorting-and-searching\">Sorting and Searching</a>"
+        },
+        {
+          "title": "<a href=\"#design-patterns\">Design Patterns</a>"
+        },
+        {
+          "title": "<a href=\"#testing\">Testing</a>"
+        },
+        {
+          "title": "<a href=\"#threads-and-locks\">Threads and Locks</a>"
+        },
+        {
+          "title": "<a href=\"#security\">Security</a>"
+        },
+        {
+          "title": "<a href=\"#supplemental-resources\">Supplemental Resources</a>"
+        },
+        {
+          "title": "<a href=\"#behavioral-interview-checklist\">Behavioral Interview Checklist</a></li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "General Knowledge",
+      "items": [
+        {
+          "topic": "Practice Questions",
+          "items": [
+            {
+              "title": "<p><em>Q</em>: Describe everything that happens from the time you hit enter, to the time your browser receives a response.</p><p>```\nRoughly,</p><p>The hardware sends an interupt to the web browser application for each key pressed.</p><p>The browser resolves the hostname (unless its an IP already) to an IP address. \n - DNS Lookup, but may also be cached.\nThe browser sends a GET request to that IP via HTTP protocol.\n - This involves some parsing of the URL (assuming it's even HTTP and not a search query)\n - Under the surface, this is TCP.\n - Socket Stream\n - TLS handshake\nThe server finds the correct file via URI* requested.\n - Usually an apache server, sometimes not. Ngnix, etc.\n - Bridge between web server and application environemnt.  Apache/PHP, Ngnix/Unicorn/Rails.\n - If there's a dynamic environment on server, manipulation of data structures will occur, maybe even some reads from files, redis, or a ACID database.\nThe server returns the HTML (we hope it's HTML, it could be one of serveral content-types, but assume HTML for now).\nThe file is sent to you, again through HTTP.\nYour browser displays it.\n - Probably some more memory is allocated at this point.  The previous page may also be destroyed, but a referene to it will be placed in history.\n - DOM parsing\n - CSS interpretation\n - page rendering, this can go down to the GPU\nBrowser fetches asset files (CSS/JS/Images).\n - Repeat steps 2 - 6.</p><p>*URI - Uniform Resource Identifier\n```</p><p><a href=\"https://github.com/alex/what-happens-when\">See also, this attempt to answer this question as broadly as possible!</a></p><p><em>Q</em>: What is the w3c?</p><p>```\nThe World Wide Web Consortium (W3C) is the main international standards organization for the World Wide Web (abbreviated WWW or W3).</p><p>```</p><p><em>Q</em>: Explain MVC in simple terms</p><p><code>MVC is a methodology in programming that is widely used for the ground works, we’re asking them to explain it in simple language because we also we also want a developer to be able to speak to non-technical people. We’ll give you 2 examples of simple explanations:\nM (Model) stands for the part of the code that knows things.\nV (View) is the part of the code that shows the things the Model knows.\nC (Controller) is the part of the code that gets commands from the user and tells the View what to show and the Model what to know.</code></p><p><em>Q</em>: Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz.| For numbers which are multiples of both three and five print “FizzBuzz.”</p><p>```\n Public Sub fizzbuzz()\n  For n = 1 To 100\n    Select Case 0\n        Case n Mod 15\n        f = \"FizzBuzz\"\n        Case n Mod 3\n        f = \"Fizz\"\n        Case n Mod 5\n        f = \"Buzz\"\n        Case Else\n        f = n\n    End Select\n    Debug.Print f\n    Next n\n End Sub</p><p>```</p><p><em>Q</em>: What is REST?</p><p><code>REST (REpresentational State Transfer) is a simple stateless architecture that generally runs over HTTP.   REST is an \"architectural style\" that basically exploits the existing technology and protocols of the Web.  There are generally 4 actions on a RESTful service:\n* Create\n* Read\n* Update\n* Delete</code></p><p><em>Q</em>: Explain ways to improve a page load speed or user experience.</p><p>See <a href=\"http://developer.yahoo.com/performance/rules.html\">Front End Performance Checklist</a>\nOn the backend,\n* Caching\n* Solid Architecture\n* Horizontal Scalability</p><p><em>Q</em>: Explain a number of HTTP status codes (except maybe 404 and 500).</p><p>See <a href=\"http://en.wikipedia.org/wiki/List_of_HTTP_status_codes\">List of HTTP Status Codes</a></p><p><em>Q</em>: What is a closure in JavaScript?</p><p>A method and properties that outlive the scope of their original function</p><p><em>Q</em>: What is the maximum value of a 32bit integer?</p><p>Unsigned? 2^32= 4.2 billion<br/>\nSigned? 2^(32-1)= 2.1 billion  </p><p><em>Q</em>: How many bytes are in a 32bit integer?</p><p>32/8 = 4 bytes</p><p><em>Q</em>: Number of times 7 appears in the list of number 1 - 100?</p><p>In the range 1 - 100, the digit 7 appears ten times in the second decimals place, and ten times in the first decimals place, for a total of twenty appearances.</p><p><em>Q</em>: Discuss pros/cons of OOP, Procedural, Functional, Event-Driven, programming.</p>"
+            },
+            {
+              "title": "Imperative programming – defines computation as statements that change a program state"
+            },
+            {
+              "title": "Procedural programming, structured programming – specifies the steps the program must take to reach the desired state."
+            },
+            {
+              "title": "Declarative programming – defines computation logic without defining its control flow."
+            },
+            {
+              "title": "Functional programming – treats computation as the evaluation of mathematical functions and avoids state and mutable data"
+            },
+            {
+              "title": "Object-oriented programming (OOP) – organizes programs as objects: data structures consisting of datafields and methods together with their interactions."
+            },
+            {
+              "title": "Event-driven programming – the flow of the program is determined by events, such as sensor outputs or user actions (mouse clicks, key presses) or messages from other programs or threads."
+            },
+            {
+              "title": "Automata-based programming – a program, or part, is treated as a model of a finite state machine or any other formal automata<p><a href=\"http://en.wikipedia.org/wiki/Comparison_of_programming_paradigms\">More on wikipedia</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Sample problems:",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Data structures",
+      "items": [
+        {
+          "topic": "Arrays and Strings",
+          "items": [
+            {
+              "title": "<p>An array is data structure (type of memory layout) that stores a collection of individual values that are of the same data type.  All of the items placed into an array are automatically stored in adjacent memory location.</p><p>An ArrayList is a dynamically resizing array.  It doubles in size each time the array is full.  Doubling is O(n), but lookups are O(1).</p><p>A StrinbBuffer is an array of strings.  Storing the strings as an array allows you to avoid the O(xn^2) problem of concatenating <em>n</em> strings.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Practice Questions",
+          "items": [
+            {
+              "title": "<p><em>Q</em>: Implement an algorithm to determine if a string has all unique characters.  </p><p><em>Q</em>: Implement a function void reverse(char * str) in C, C++ which reverses a null terminated string.</p><p><em>Q</em>: Given two strings, write a method to decide if one is a permutation of the other</p><p><em>Q</em>: Implement a method to perform basic string compression using the counts of repeated characters.  For example, the string aacccccaaa would become a2b1c5a3.  If the compressed string is not shorter than the original string, then return the original string.</p><p><em>Q</em>: Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees.  Bonus points: do this in place.</p><p><em>Q</em>: Assuming you have a method <em>isSubstring()</em> which checks if one string is a substring of another, write code to check if s2 is a rotation of s1 using only one call to <em>isSubstring()</em>.  ex: pineapple is a rotation of apppinele.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "!TODO",
+      "items": [
+        {
+          "topic": "Linked Lists",
+          "items": [
+            {
+              "title": "<p>A <strong>singly linked list</strong> contains nodes which have a data field as well as a next field, which points to the next node in the linked list.   It is often used as a stack (or last in first out queue (LIFO)) because adding a new first element, removing the existing first element, and examining the first element are very fast O(1) operations.</p><p>A <strong>doubly linked list</strong> is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes</p><p><a href=\"http://en.wikipedia.org/wiki/Doubly_linked_list\">More via wikipedia</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Practice Questions",
+          "items": [
+            {
+              "title": "<p><em>Q</em>: How can you find a 'cycle' in a singly linked list?</p><ol>\n<li>Use Memory Allocation Information.  - Keep track of the minimum or maximum memory addresses seen.  If more nodes have been seen than can fit in the address space then some node must have been a cycle."
+            },
+            {
+              "title": "Two iterators - Go through the list one by one (with a slow iterator) and by twos (fast iterator).  If the fast iterator laps the slow iterator, the linked list has a 'cycle.</li>\n</ol><p><em>Q</em>: Write an algo to remove duplicates from an unsorted linked list.</p><p><em>Q</em>: Implement an algorithm to find the n-th element of a singly linked list.</p><p><em>Q</em>: Implement an algorithm to delete a node in the middle of a singly linked list, given only access to that node.</p><p><em>Q</em>: Implement an algorithm to partition a linked list around value z.  All nodes less than z come before all nodes greater than or equal to z.</p><p><em>Q</em>: Given a circular linked list, implement an algorithm which returns the node at the beginning of the loop.</p><p><em>Q</em>: Implement an algorithm to check if a linked list is a palindrome.</p><p><em>Q</em>: Implement a 'Hash table'.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Stacks and Queues",
+          "items": [
+            {
+              "title": "<p>A stack is a data structure which contains a list of elements with LIFO (last in first out) ordering.  The most recent item added (push()ed) to the stack is the first item to be removed (pop()ed).  </p><p>A queue is a FIFO (first in, first out) data structure.  The most recent item added (enqueu()ed) is the last item to be removed from the queue (dequeu()ed).</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Practice Questions",
+          "items": [
+            {
+              "title": "<p><em>Q</em>: Implement a stack.  Implement a queue.</p><p><em>Q</em>: How would you use a single array to implement three stacks?</p><p><em>Q</em>: Design a stack that has a method <code>min()</code> which returns the minimum element in O(1) time.</p><p><em>Q</em>: Implement a data structure <code>SetOfStacks</code> which contains several stacks and will create a new stack when a stack in the set exceeds a certain capacity (positive integer).  Implement <code>SetOfStacks.push()</code> and <code>SetOfStacks.pop()</code>.</p><p><em>Q</em>: Write an algorithm that solves the <a href=\"http://en.wikipedia.org/wiki/Tower_of_Hanoi\">Towers of Hanoi</a> problem using stacks.</p><p><em>Q</em>: Implement a Queue class which implements a queue using two stacks.</p><p><em>Q</em>: An animal shelter holds only dogs and cats, and operates on a strictly “first in, first out” basis. People must adopt either the “oldest” (based on arrival time) of all animals at the shelter, or they can select whether they would prefer a dog or a cat (and will receive the oldest animal of that type). Create the data structures to maintain this system and implement operations such as enqueue, dequeueAny, dequeueDog and dequeueCat. You may use the built-in LinkedList data structure (has “addLast” method to insert an element at the end of the list, “poll” method to pop the first element of the list and “peek” method to get the first element).</p><p><em>Q</em>:  Write an array-based implementation of a queue that uses a circular array to represent the items in the queue. It should have two array indexes - front and rear - where front should point to the front of the queue and rear should point to the back of the queue. Use variable MAX_QUEUE to indicate the maximum number of elements that could be stored in the queue. Obtain the wrap around effect by using modulo arithmetic (the JAVA % operator).</p><p>!TODO answers</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Trees and Graphs",
+          "items": [
+            {
+              "title": "<p>A <em>Binary tree</em> is a tree data structure in which each node has at most two child nodes, usually distinguished as \"left\" and \"right\". Nodes with children are parent nodes, and child nodes may contain references to their parents. Outside the tree, there is often a reference to the \"root\" node (the ancestor of all nodes), if it exists. Any node in the data structure can be reached by starting at root node and repeatedly following references to either the left or right child. A tree which does not have any node other than root node is called a null tree. In a binary tree, a degree of every node is maximum two. A tree with n nodes has exactly n−1 branches or degree.</p><p><em>Binary search tree (BST)</em>, sometimes also called an ordered or sorted binary tree, is a node-based binary tree data structure which has the following properties:[1]\n** The left subtree of a node contains only nodes with keys less than the node's key.\n** The right subtree of a node contains only nodes with keys greater than the node's key.\n** The left and right subtree must each also be a binary search tree.\n** There must be no duplicate nodes.</p><p>A tree is 'unbalanced' if the depth of the subtrees varies by more than a certain amount.</p><p>A tree is 'full' or 'complete' if all leaves are at the bottom of the tree and all non-leaf nodes have exactly two children.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Practice Questions",
+          "items": []
+        },
+        {
+          "topic": "!TODO",
+          "items": []
+        },
+        {
+          "topic": "Hashmap",
+          "items": [
+            {
+              "title": "<p>A hash map is a data structure used to implement an associative array.   A hash table uses a hash function to compute an index into an array of slots, from which the correct value can be found.</p><p>The hash function (ideally) assigns each possible key to a unique bucket, but there are, in practice, hash collisions.</p><p>There are several strategies to collision resolution.\n* Seperate chaining - Each bucket has a list of entries.\n* Open addressing - All entry records are stored in teh bucket itself.\n* Hopscotch hashing - define a 'neighborhood' of buckets near the original hased bucket, and then search limited to that neighborhood.  If all buckets in that neighborhood are taken, iterate across array.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Practice Questions",
+          "items": []
+        },
+        {
+          "topic": "!TODO",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Bit manipulation",
+      "items": [
+        {
+          "topic": "Bit operations",
+          "items": [
+            {
+              "title": "<p>```\n&amp;   -  bitwise and\n|   -  bitwise or\n^   -  bitwise xor\n~   -  bitwise not\n&lt;&lt;  -  bitwise shift left</p><blockquote>\n<blockquote>"
+            },
+            {
+              "title": "bitwise shift right\n```\n</blockquote>\n</blockquote>"
+            }
+          ]
+        },
+        {
+          "topic": "Some bit hacks",
+          "items": [
+            {
+              "title": "<p>```\nBit Hack #1. Check if the integer is even or odd.</p><p>if ((x &amp; 1) == 0) {\n  x is even\n}\nelse {\n  x is odd\n}</p><p>Bit Hack #2. Test if the n-th bit is set.</p><p>if (x &amp; (1&lt;&lt;n)) {\n  n-th bit is set\n}\nelse {\n  n-th bit is not set\n}</p><p>Bit Hack #3. Set the n-th bit.</p><p>y = x | (1&lt;&lt;n)</p><p>Bit Hack #4. Unset the n-th bit.</p><p>y = x &amp; ~(1&lt;&lt;n)</p><p>Bit Hack #5. Toggle the n-th bit.</p><p>y = x ^ (1&lt;&lt;n)</p><p>Bit Hack #6. Turn off the rightmost 1-bit.</p><p>y = x &amp; (x-1)</p><p>Bit Hack #7. Isolate the rightmost 1-bit.</p><p>y = x &amp; (-x)</p><p>```</p><p><a href=\"http://www.catonmat.net/blog/low-level-bit-hacks-you-absolutely-must-know/\">More bit hacks</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Practice Questions",
+          "items": []
+        },
+        {
+          "topic": "!TODO",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Brain Teasers",
+      "items": []
+    },
+    {
+      "topic": "Object Oriented Design",
+      "items": [
+        {
+          "topic": "!TODO",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Recursion and Dynamic Programming",
+      "items": [
+        {
+          "topic": "!TODO",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Scalability and Memory Limtis",
+      "items": [
+        {
+          "topic": "!TODO",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Sorting and Searching",
+      "items": [
+        {
+          "title": "__Bubble sort __ -"
+        },
+        {
+          "title": "__Selection sort __ -"
+        },
+        {
+          "title": "__Insertion sort __ -"
+        },
+        {
+          "title": "__Shell sort __ -"
+        },
+        {
+          "title": "__Comb sort __ -"
+        },
+        {
+          "title": "__Merge sort __ -"
+        },
+        {
+          "title": "__Heapsort __ -"
+        },
+        {
+          "title": "__Quicksort __ -"
+        },
+        {
+          "title": "__Counting sort __ -"
+        },
+        {
+          "title": "__Bucket sort __ -"
+        },
+        {
+          "title": "__Radix sort __ -"
+        },
+        {
+          "title": "__Distribution sort __ -<p>TODO Definitions <a href=\"https://en.wikipedia.org/wiki/Sorting_algorithm\">here</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Design Patterns",
+      "items": [
+        {
+          "title": "<strong>Abstract Factory</strong> groups object factories that have a common theme."
+        },
+        {
+          "title": "<strong>Builder</strong> constructs complex objects by separating construction and representation."
+        },
+        {
+          "title": "<strong>Factory</strong> Method creates objects without specifying the exact class to create."
+        },
+        {
+          "title": "<strong>Prototype</strong> creates objects by cloning an existing object."
+        },
+        {
+          "title": "<strong>Singleton</strong> restricts object creation for a class to only one instance."
+        },
+        {
+          "title": "<strong>Adapter</strong> allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class."
+        },
+        {
+          "title": "<strong>Bridge</strong> decouples an abstraction from its implementation so that the two can vary independently."
+        },
+        {
+          "title": "<strong>Composite</strong> composes zero-or-more similar objects so that they can be manipulated as one object."
+        },
+        {
+          "title": "<strong>Decorator</strong> dynamically adds/overrides behaviour in an existing method of an object."
+        },
+        {
+          "title": "<strong>Facade</strong> provides a simplified interface to a large body of code."
+        },
+        {
+          "title": "<strong>Flyweight</strong> reduces the cost of creating and manipulating a large number of similar objects."
+        },
+        {
+          "title": "<strong>Proxy</strong> provides a placeholder for another object to control access, reduce cost, and reduce complexity."
+        },
+        {
+          "title": "<strong>Chain of responsibility</strong> delegates commands to a chain of processing objects."
+        },
+        {
+          "title": "<strong>Command</strong> creates objects which encapsulate actions and parameters."
+        },
+        {
+          "title": "<strong>Interpreter</strong> implements a specialized language."
+        },
+        {
+          "title": "<strong>Iterator</strong> accesses the elements of an object sequentially without exposing its underlying representation."
+        },
+        {
+          "title": "<strong>Mediator</strong> allows loose coupling between classes by being the only class that has detailed knowledge of their methods."
+        },
+        {
+          "title": "<strong>Memento</strong> provides the ability to restore an object to its previous state (undo)."
+        },
+        {
+          "title": "<strong>Observer</strong> is a publish/subscribe pattern which allows a number of observer objects to see an event."
+        },
+        {
+          "title": "<strong>State</strong> allows an object to alter its behavior when its internal state changes."
+        },
+        {
+          "title": "<strong>Strategy</strong> allows one of a family of algorithms to be selected on-the-fly at runtime."
+        },
+        {
+          "title": "<strong>Template method</strong> defines the skeleton of an algorithm as an abstract class, allowing its subclasses to provide concrete behavior."
+        },
+        {
+          "title": "<strong>Visitor</strong> separates an algorithm from an object structure by moving the hierarchy of methods into one object."
+        },
+        {
+          "topic": "TODO Questions",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Testing",
+      "items": [
+        {
+          "topic": "!TODO",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Threads and Locks",
+      "items": [
+        {
+          "topic": "!TODO",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Security",
+      "items": [
+        {
+          "title": "<p>XSS</p><p>SQL Injection</p><p>CSRF</p><p>Man in the middle</p>"
+        },
+        {
+          "topic": "!TODO",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Supplemental Resources",
+      "items": [
+        {
+          "title": "<a href=\"http://bigocheatsheet.com/\">Big-O Cheat Sheet</a>"
+        },
+        {
+          "title": "<a href=\"http://regexlib.com/CheatSheet.aspx\">Reg Ex Cheat Sheet</a>"
+        },
+        {
+          "title": "<a href=\"http://www.vaughns-1-pagers.com/computer/powers-of-2.htm\">Powers of 2 table</a>"
+        },
+        {
+          "title": "<a href=\"http://www.amazon.com/books/dp/098478280X\">Cracking the coding interview</a>"
+        },
+        {
+          "topic": "List of relevant programming languages / frameworks",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Web Hosts",
+      "items": [
+        {
+          "title": "<p>| Name        | Description           | Comments  |\n| ------------- |-------------------------------| -----------------------|\n| Amazon      | TODO |  |\n| Rackspace      | TODO |  |\n| Google      | TODO |  |\n| Azure      | TODO |  |\n| Managed Hosts (EngingeYard, etc)      | TODO |  |</p>"
+        },
+        {
+          "topic": "Payment Gateways",
+          "items": [
+            {
+              "title": "<p>| Name        | Description           | Comments  |\n| ------------- |-------------------------------| -----------------------|\n| Braintree      | TODO |  |\n| Authorize.net      | TODO |  |\n| Stripe      | TODO |  |\n| Paypal      | TODO |  |</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Behavioral Interview Checklist",
+      "items": [
+        {
+          "topic": "Behavioural Questions.",
+          "items": [
+            {
+              "title": "<ol>\n<li>Why do you want to work for <em>X</em>?"
+            },
+            {
+              "title": "Why should we hire you at <em>X</em>?"
+            },
+            {
+              "title": "What is your greatest weakness?"
+            },
+            {
+              "title": "What is your biggest strength?"
+            },
+            {
+              "title": "Do you have any questions for me?"
+            },
+            {
+              "title": "Where do you see yourself in 5 years?"
+            },
+            {
+              "title": "Why are you leaving your current company?"
+            },
+            {
+              "title": "What blogs do you read?  How do you keep up with tech news?</li>\n</ol>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Past Projects",
+      "items": [
+        {
+          "title": "<p>Often on these questions, interviewers are looking for three things (be succinct):\n* Situation: outline the situation\n* Action: what action did you take?\n* Response: What was the result?</p><ol>\n<li>What was the most technically challenging part of (last project)?"
+        },
+        {
+          "title": "What'd you learn the most from (last project)?"
+        },
+        {
+          "title": "What was the most interesting part of (last project)?"
+        },
+        {
+          "title": "What was the hardest bug?"
+        },
+        {
+          "title": "What'd you enjoy the most?"
+        },
+        {
+          "title": "Give me an example of a conflict with a past teammate."
+        },
+        {
+          "title": "Give me an example of a decision you made that was unpopular.</li>\n</ol>"
+        },
+        {
+          "topic": "Do your research on the company.",
+          "items": [
+            {
+              "title": "<ol>\n<li>Look @ Glassdoor Reviews."
+            },
+            {
+              "title": "Look @ Recent press &amp; fundraise announcements."
+            },
+            {
+              "title": "Who are the founders? What are their backgrounds?"
+            },
+            {
+              "title": "Research interviewer</li>\n</ol><p><img src=\"https://ga-beacon.appspot.com/UA-1014419-15/owocki/interview_prep_checklist\" style=\"width:1px; height:1px;\"/></p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

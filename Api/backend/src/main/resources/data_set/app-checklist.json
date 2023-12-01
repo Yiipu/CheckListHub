@@ -1,0 +1,292 @@
+{
+  "id": 12,
+  "header": "app-checklist",
+  "topicList": [
+    "Sections",
+    "Accessibility",
+    "Attention to Detail & User Experience",
+    "App Store",
+    "Technologies"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Sections",
+      "items": [
+        {
+          "title": "<p><strong>Accessibility:</strong> An accessible app supports accessibility features by design and gives everyone a great user experience, regardless of their capabilities or how they use their devices.</p><p><strong>Attention to Detail and User Experience:</strong> To deliver an extraordinary product, you meet high expectations for quality and functionality, especially: clarity (utilizing legible, clear text and icons), deference (fluid motion and animations throughout your app, keeping content paramount), and depth (realistic motion, discoverability and hierarchy).</p><p><strong>Technologies:</strong> Apple has a great range of APIs and technologies, and you should aim to use them the best you can. This doesn't mean using every single available framework; rather, you should identify which fit your app well and implement them in a well designed experience.</p><p><strong>App Store Presence:</strong> This is by far the most nascent category I’ve been tracking, so its list is short. It includes best practices for the App Store.</p><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Accessibility",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>People use Apple's accessibility features, such as reduced transparency, VoiceOver, and increased text size, to personalize how they interact with their devices in ways that work for them. An accessible app supports such personalizations by design and gives everyone a great user experience, regardless of their capabilities or how they use their devices.</p>\n</blockquote>"
+        },
+        {
+          "title": "<strong>Accessibility Inspector</strong>: The entire app produces no accessibility warnings and Screen Curtain works flawlessly"
+        },
+        {
+          "title": "<strong>App Name:</strong> If the app name is not easily pronounced or is mispronounced by VoiceOver, <a href=\"https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundlespokenname\"><code>CFBundleSpokenName</code></a> is used in the Info.plist to tell the system the correct pronounciation"
+        },
+        {
+          "title": "<strong>Colors:</strong> Color isn't the only way to differentiate between objects, and system colors are used to automatically adapt to system changes. Sufficient color contrast ratios are used everywhere"
+        },
+        {
+          "title": "<strong>Drag and Drop:</strong> If drag and drop is supported, use accessibility APIs to identify drag sources/drop targets (see <a href=\"https://developer.apple.com/documentation/objectivec/nsobject/2891001-accessibilitydragsourcedescripto\"><code>accessibilityDragSourceDescriptors</code></a> and <a href=\"https://developer.apple.com/documentation/objectivec/nsobject/2891048-accessibilitydroppointdescriptor\"><code>accessibilityDropPointDescriptors</code></a>)"
+        },
+        {
+          "title": "<strong>Dynamic Type:</strong> Most if not all text uses Dynamic Type and the layout correctly adapts to larger text sizes including larger accessibility sizes. Text is never truncated and custom fonts are rarely used, and if used, easy to read."
+        },
+        {
+          "title": "<strong>Haptics:</strong> If haptics are used, use the system defined haptics consistently in your app to avoid confusion"
+        },
+        {
+          "title": "<strong>Hit Target:</strong> All controls have a minimum hit target of at least 44pt by 44pt, so every user can interact with them"
+        },
+        {
+          "title": "<strong>Language:</strong> Leading and trailing autolayout margins are preferred over left/right to adapt to right-to-left languages. Important text uses <a href=\"https://developer.apple.com/documentation/uikit/uiview/1622644-readablecontentguide\"><code>readableContentGuide</code></a> to keep it within a readable width on larger devices."
+        },
+        {
+          "title": "<strong>Layout:</strong> Auto Layout is used and the app is displayed correctly on all supported devices, orientations, and multitasking modes"
+        },
+        {
+          "title": "<strong>Motion:</strong> The Reduce Motion preference is respected and animations are drastically less prominent, or disabled."
+        },
+        {
+          "title": "<strong>Navigation:</strong> Predictable, logical and system-consistent navigation is used so users don't have trouble learning how to use your app"
+        },
+        {
+          "title": "<strong>Smart Invert Colors:</strong> Color inversion is supported and functional, using <a href=\"https://developer.apple.com/documentation/uikit/uiview/2865843-accessibilityignoresinvertcolors\"><code>accessibilityIgnoresInvertColors</code></a> for all images and videos (or app wide if it contains a dark UI)"
+        },
+        {
+          "title": "<strong>Standard Controls:</strong> Standard UI controls are used in the interface, so it automatically adapts to several accessibility preferences, such as Bold Text, Larger Text, Invert Colors, and Increase Contrast. All bar buttons have their <a href=\"https://developer.apple.com/documentation/uikit/uibaritem/1616421-landscapeimagephone\"><code>landscapeImagePhone</code></a> and/or <a href=\"https://developer.apple.com/documentation/uikit/uibaritem/2865917-largecontentsizeimage\"><code>largeContentSizeImage</code></a> set."
+        },
+        {
+          "title": "<strong>System Gestures:</strong> Avoid overridding or blocking built in gestures such as those used to activate Notification Center or Control Center"
+        },
+        {
+          "title": "<strong>Traits:</strong> <a href=\"https://developer.apple.com/documentation/uikit/uiaccessibility/uiaccessibilitytraits\">Accessibility traits</a> are used to tell the system how an element behaves, such as classifying a custom view as a <a href=\"https://developer.apple.com/documentation/uikit/uiaccessibility/uiaccessibilitytraits/1620194-button\"><code>button</code></a>"
+        },
+        {
+          "title": "<strong>Transparency:</strong> The Reduce Transparency preference is respected and blurring/vibrancy is reduced appropriately"
+        },
+        {
+          "title": "<strong>VoiceOver:</strong> VoiceOver is completely supported and users can easily navigate to every control on the screen. Alternative text labels are provided for important elements, making navigation easier. <p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Attention to Detail & User Experience",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>As an app developer/designer, you have the opportunity to deliver an extraordinary product that rises to the top of the App Store charts. To do so, you'll need to meet high expectations for quality and functionality.</p>\n</blockquote>"
+        },
+        {
+          "topic": "Main",
+          "items": [
+            {
+              "title": "<strong><a href=\"https://developer.apple.com/documentation/uikit/uiapplication/2806818-setalternateiconname\">Alternative App Icons</a>:</strong> Provide alternative app icons, for example, a dark icon, on iOS 10.3 and above to allow users to have more control"
+            },
+            {
+              "title": "<strong>Audio:</strong> Avoid using incorrect or inappropriate audio presets or settings so your app doesn't interfere in the playback of other apps unless necessary"
+            },
+            {
+              "title": "<strong>Localization:</strong> Aim to localize your app in all possible languages, and avoid missing strings or incorrect translations that may hinder the experience"
+            },
+            {
+              "title": "<strong>Keyboards:</strong> The correct <a href=\"https://developer.apple.com/documentation/uikit/uitextinputtraits/1624457-keyboardtype\">keyboard type</a> is always set and used to make it easier to enter information, and undocked iPad keyboard is supported without issues."
+            },
+            {
+              "title": "<strong>Progress:</strong> Prefer using <a href=\"https://developer.apple.com/documentation/uikit/uiprogressview\">progress indicators</a> instead of <a href=\"https://developer.apple.com/documentation/uikit/uiactivityindicatorview\">activity indicators</a> wherever possible to provide the user a clearer knowledge of the current state and remaining time"
+            },
+            {
+              "title": "<strong>Reviews:</strong> Always use the <a href=\"https://developer.apple.com/documentation/storekit/skstorereviewcontroller/2851536-requestreview\"><code>StoreKit</code> review prompt</a> over any custom implementation so users don't have to exit your app. Do not ask too often, too soon, or during a task as it may impede or distract the user."
+            },
+            {
+              "title": "<strong><a href=\"https://developer.apple.com/documentation/uikit/uistaterestoring\">State Restoration</a>:</strong> All apps should support state restoration and correctly restore tabs and screens after restarting"
+            },
+            {
+              "title": "<strong>Status Bar:</strong> Avoid hiding the status bar unless absolutely necessary. Show the <a href=\"https://developer.apple.com/design/human-interface-guidelines/ios/controls/progress-indicators/#network-activity-indicators\">network activity indicator</a> during lengthy network operations to let the user know."
+            },
+            {
+              "title": "<strong>Terminology:</strong> All interface text is clear and concise. Use familiar, understandable words and phrases to avoid confusion. Take care when attempting to use humor."
+            },
+            {
+              "title": "<strong><a href=\"https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/undo-and-redo/\">Undo/Redo</a>:</strong> Implement native or clear undo and redo actions so users instinctively know how to use your app"
+            }
+          ]
+        },
+        {
+          "topic": "Other",
+          "items": [
+            {
+              "title": "Alerts have less than 3 options and preferably only 2. Avoid using Yes and No as button titles."
+            },
+            {
+              "title": "Align text, images and buttons to shows users how information is related"
+            },
+            {
+              "title": "Attempt to call <code>UIApplication</code>'s <a href=\"https://developer.apple.com/documentation/uikit/uiapplication/1648685-open\"><code>open(_:options:completionHandler:)</code></a> with the <a href=\"https://developer.apple.com/documentation/uikit/uiapplication/openexternalurloptionskey/1648680-universallinksonly\">universalLinksOnly</a> option before presenting a web view or <code>SFSafariViewController</code> to correctly use universal links"
+            },
+            {
+              "title": "Destructive actions always show a confirmation prompt"
+            },
+            {
+              "title": "Launch screen does not contain branding and as with system apps looks similar to the initial screen in the app"
+            },
+            {
+              "title": "Loading content should never impede usage or become annoying. Show all content as soon as it loads rather than waiting for all content to finish loading. Load content in the background to avoid users having to manually refresh."
+            },
+            {
+              "title": "Margins are respected throughout, using the <a href=\"https://developer.apple.com/documentation/uikit/uiview/2891102-safearealayoutguide\"><code>safeAreaLayoutGuide</code></a> on all views and the <a href=\"https://developer.apple.com/documentation/uikit/uiview/1622651-layoutmarginsguide\"><code>layoutMarginsGuide</code></a> wherever possible to add additional padding"
+            },
+            {
+              "title": "Modality is used only when necessary and is never confusing"
+            },
+            {
+              "title": "Never distort or warp images from their intended aspect ratios"
+            },
+            {
+              "title": "Only use native UI elements or elements designed for a mobile screen, instead of elements that are hard to use such as normal web calendar pickers"
+            },
+            {
+              "title": "Pickers have a height of around 5 list values. Long lists should always use table views for easier selection."
+            },
+            {
+              "title": "Prefer <code>performBatchUpdates</code> over <code>reloadData</code> on <a href=\"https://developer.apple.com/documentation/uikit/uitableview/2887515-performbatchupdates\"><code>UITableView</code></a> and <a href=\"https://developer.apple.com/documentation/uikit/uicollectionview/1618045-performbatchupdates\"><code>UICollectionView</code></a>"
+            },
+            {
+              "title": "Progress indicators within bars (such as navigation bars) have a transparent unfilled portion"
+            },
+            {
+              "title": "Screen transitions are always smooth and fluid, making good but not excessive use of animations"
+            },
+            {
+              "title": "Switches are only used in lists"
+            },
+            {
+              "title": "Table views deselect selected rows after coming back from a detail segue"
+            },
+            {
+              "title": "Test for memory leaks and high memory/CPU usage frequently to avoid unnecessary power consumption or battery usage"
+            },
+            {
+              "title": "Text should always be a minimum of 11 points so it's legible without zooming"
+            },
+            {
+              "title": "The layout of your app should be organized, with controls close to the modifiable content"
+            },
+            {
+              "title": "Toolbars and tab bars are never shown on the same screen"
+            },
+            {
+              "title": "Use <a href=\"https://developer.apple.com/documentation/uikit/uitextinputassistantitem\">UITextInputAssistantItem</a>s to support common iPad tasks at home in the shortcuts bar"
+            },
+            {
+              "title": "Vector assets are preferred over normal images to support accessibility sizing and avoid blurry glyphs"
+            },
+            {
+              "title": "Your app is available and created with the same attention to detail on all platforms it makes sense (e.g. tvOS or watchOS)<p><br/></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "App Store",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>The App Store lets you easily deliver apps to hundreds of millions of people around the world on their Mac, iPhone, iPad, Apple Watch, and Apple TV. With over $100 billion paid to developers and a rapid adoption rate of new software by Apple customers, it’s an incredible time to distribute on Apple platforms.</p>\n</blockquote>"
+        },
+        {
+          "topic": "Planning",
+          "items": [
+            {
+              "title": "<strong><a href=\"https://developer.apple.com/app-store/review/guidelines/\">App Review</a>:</strong> Read the App Review Guidelines in depth to avoid <a href=\"https://developer.apple.com/app-store/review/rejections/\">common rejections</a>."
+            },
+            {
+              "title": "<strong><a href=\"https://developer.apple.com/app-store/business-models/\">Business Model</a>:</strong> Explore the main business models on the App Store and find the right one for your app. Clearly tell your users what they're signing up for, and avoid confusion or the feeling of being scammed for a great user experience"
+            },
+            {
+              "title": "<strong><a href=\"https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/onboarding/\">Onboarding</a>:</strong> Create a nice, interactive onboarding experience to introduce new users to your app. Make sure it's short and can be skipped for returning users. Never show your onboarding more than once."
+            },
+            {
+              "title": "<strong><a href=\"https://developer.apple.com/internationalization/\">Localization</a>:</strong> Gain users around the world by localizing your app in other languages. Plan to correctly localize all aspects of the app experience, including the user interface, your App Store product page, marketing, support, and more."
+            }
+          ]
+        },
+        {
+          "topic": "Presence",
+          "items": [
+            {
+              "title": "<strong><a href=\"https://developer.apple.com/app-store/product-page/\">App Store Product Page</a>:</strong> Make sure your product page represents the incredible amount of work that went into your app by spending enough time on it. Use carefully researched keywords and categories to make it easy to find."
+            },
+            {
+              "title": "<strong><a href=\"https://developer.apple.com/app-store/app-previews/\">App Previews</a>:</strong> Compelling App Previews spark interest and drive downloads, allowing users to preview your app before download/purchase"
+            },
+            {
+              "title": "<strong>Size:</strong> Keep your app small to allow for downloads on limited data networks and a happy user"
+            },
+            {
+              "title": "<strong><a href=\"https://developer.apple.com/app-store/pre-orders/\">Pre-Orders</a>:</strong> If it makes sense, allow users to pre-order your app before release <p><br/></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Technologies",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>Developing for Apple platforms puts cutting-edge technology at your fingertips, giving you limitless ways to bring incredible apps to users around the world. These powerful platforms each offer unique capabilities and user experiences, yet integrate tightly to form a true ecosystem. Hardware, software, and services are designed from the ground up to work together so you can build intuitive, multi-faceted experiences that are genuinely seamless.</p>\n</blockquote>"
+        },
+        {
+          "title": "<strong>3D Touch:</strong> On supported devices, 3D Touch is directly integrated in the entire app, including support for <a href=\"https://developer.apple.com/documentation/uikit/peek_and_pop/implementing_peek_and_pop\">Peek and Pop</a> and <a href=\"https://developer.apple.com/documentation/uikit/peek_and_pop/add_home_screen_quick_actions\">Homescreen Quick Actions</a>"
+        },
+        {
+          "title": "<strong>AirDrop:</strong> Where it makes sense, data including images or content can be shared via AirDrop, using the native <a href=\"https://developer.apple.com/documentation/uikit/uiactivityviewcontroller\"><code>UIActivityViewController</code></a>"
+        },
+        {
+          "title": "<strong><a href=\"https://developer.apple.com/documentation/avfoundation/airplay_2/getting_airplay_2_into_your_app\">AirPlay</a>:</strong> Apps that provide media playback support AirPlay streaming—not just mirroring—for the best user experience. If AirPlay is supported, the <a href=\"https://developer.apple.com/documentation/avkit/avplayerviewcontroller\">system-provided media player</a> is used and the control is prominently displayed."
+        },
+        {
+          "title": "<strong><a href=\"https://developer.apple.com/documentation/uikit/drag_and_drop\">Drag and Drop</a>:</strong> Content and items support drag and drop, including for reordering/internally and to external apps"
+        },
+        {
+          "title": "<strong><a href=\"https://developer.apple.com/app-extensions/\">Extensions</a>:</strong> Suitable and meaningful app extensions are included and designed with the same attention to detail and style as the rest of the app, such as a File Provider for document based apps or a Today Widget to provide quick updates or enable short tasks"
+        },
+        {
+          "title": "<strong><a href=\"https://developer.apple.com/handoff/\">Handoff</a>:</strong> If a Mac counterpart app is available, Handoff allows users to seamlessly resume activities on another device or on the website"
+        },
+        {
+          "title": "<strong><a href=\"https://developer.apple.com/documentation/uikit/uikeycommand\">Keyboard Shortcuts</a>:</strong> The keyboard is thoroughly supported and available throughout the app, especially on iPad"
+        },
+        {
+          "title": "<strong>Live Photos:</strong> Any Live Photos displayed or used are clearly distinguished with movement or a badge and use <a href=\"https://developer.apple.com/documentation/photokit/phlivephotoview\"><code>PHLivePhotoView</code></a> for playback"
+        },
+        {
+          "title": "<strong><a href=\"https://developer.apple.com/documentation/foundation/nsprocessinfo/1617047-lowpowermodeenabled?language=objc\">Low Power Mode</a>:</strong> Low Power Mode is supported and network activity or less important tasks are suspended"
+        },
+        {
+          "title": "<strong>Printing:</strong> Printing is supported via <a href=\"https://developer.apple.com/documentation/uikit/uiprintinteractioncontroller\"><code>UIPrintInteractionController</code></a> when it's suitable for the content or view"
+        },
+        {
+          "title": "<strong><a href=\"https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/quick-look/\">Quick Look</a>:</strong> Quick Look is used to allow users to preview external content, such as documents or presentations, for example, to preview attachments in Mail"
+        },
+        {
+          "title": "<strong><a href=\"https://developer.apple.com/documentation/sirikit/creating_an_intents_app_extension\">Siri Intents</a>:</strong> If an appropriate <a href=\"https://developer.apple.com/documentation/sirikit\"><code>SiriKit</code></a> domain is available for your app, it is implemented and works correctly, handling errors and failures. Intent domains are not misappropriated for unrelated or incorrect app types -- instead, consider using Siri Shortcuts."
+        },
+        {
+          "title": "<strong><a href=\"https://developer.apple.com/documentation/sirikit/soup_chef_accelerating_app_interactions_with_shortcuts\">Siri Shortcuts</a>:</strong> Siri Shortcuts are implemented and donated to the system, whether only via an appropriate Siri Intent or separately, using <a href=\"https://developer.apple.com/documentation/sirikit/ininteraction\"><code>INInteration</code></a> (preferred) for tasks, or <a href=\"https://developer.apple.com/documentation/foundation/nsuseractivity\"><code>NSUserActivity</code></a> for views or screens"
+        },
+        {
+          "title": "<strong><a href=\"https://developer.apple.com/documentation/corespotlight/making_content_searchable\">Spotlight</a>:</strong> User generated or edited content is <a href=\"https://developer.apple.com/documentation/corespotlight/making_content_searchable\">indexed and searchable with Spotlight</a> for a seamless user experience"
+        },
+        {
+          "title": "<strong><a href=\"https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content\">Universal Links</a>:</strong> If your app is connected to a website or has sharable content, Universal Links are used to deeplink within the app"
+        }
+      ]
+    }
+  ]
+}

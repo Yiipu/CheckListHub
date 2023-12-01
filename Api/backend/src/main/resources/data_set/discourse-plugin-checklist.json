@@ -1,0 +1,106 @@
+{
+  "id": 67,
+  "header": "discourse-plugin-checklist",
+  "topicList": [
+    "Details",
+    "Installation",
+    "Changelog:",
+    "TODO",
+    "Authors:",
+    "License (BSD):"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Details",
+      "items": [
+        {
+          "title": "<p>Here is a little screenshot of the plugin in action:</p><p><img alt=\"Preview screenshot\" src=\"https://raw.github.com/ligthyear/discourse-plugin-checklist/master/docs/preview-example.png\"/></p><p>On top, if there are our checklist-items on the post and the current user is able to edit the post, they are interactively able to toggle the checkbox from the post view by clicking the box:</p><p><img alt=\"Interactive before\" src=\"https://raw.github.com/ligthyear/discourse-plugin-checklist/master/docs/live-click-before.png\"/></p><p><img alt=\"Interactive waiting\" src=\"https://raw.github.com/ligthyear/discourse-plugin-checklist/master/docs/live-click-waiting.png\"/></p><p><img alt=\"Interactive after\" src=\"https://raw.github.com/ligthyear/discourse-plugin-checklist/master/docs/live-click-after.png\"/></p><p>Which will be recorded as a new version of the post:</p><p><img alt=\"New version\" src=\"https://raw.github.com/ligthyear/discourse-plugin-checklist/master/docs/new-version.png\"/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Installation",
+      "items": [
+        {
+          "title": "<p>Just two easy steps. From your main discourse do:</p><pre><code>cd plugins\ngit clone https://github.com/ligthyear/discourse-plugin-checklist.git   # clone the repo here\ncd ..\nRAILS_ENV=production rake assets:precompile\n</code></pre><p>Then restart your discourse and enjoy the fun on ever /user/*/activity-page.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Changelog:",
+      "items": [
+        {
+          "title": "2014-03-11"
+        },
+        {
+          "title": "switching to <a href=\"http://fontawesome.io\">font-awesome</a> based rendering"
+        },
+        {
+          "title": "adding the new <code>[_]</code> option"
+        },
+        {
+          "title": "adding doc reference to shared-edits plugin"
+        },
+        {
+          "title": "fix issue when that updating after <code>[x]</code> or <code>[-]</code> wasn't possible"
+        },
+        {
+          "title": "<p>this unfortunately is backwards incompatible, if checkboxes don't show up anymore, you need to re-save them to the database.</p>"
+        },
+        {
+          "title": "<p>2014-03-05</p>"
+        },
+        {
+          "title": "initial version with prettified rendering"
+        },
+        {
+          "title": "allow interactive box-clicking updates"
+        }
+      ]
+    },
+    {
+      "topic": "TODO",
+      "items": [
+        {
+          "title": "<p>(in order of importance)</p>"
+        },
+        {
+          "title": "allow easy item \"sorting\" if the entries are in a list"
+        },
+        {
+          "topic": "other Limitations:",
+          "items": [
+            {
+              "title": "While updating one item, you can't update another"
+            },
+            {
+              "title": "If you want to make multiple changes it creates multiple versions"
+            },
+            {
+              "title": "you can only toggle the default type"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Authors:",
+      "items": [
+        {
+          "title": "<p>Benjamin Kampmann <me .=\"\" @=\"\" com=\"\" create-build-execute=\"\"></me></p>"
+        }
+      ]
+    },
+    {
+      "topic": "License (BSD):",
+      "items": [
+        {
+          "title": "<p>Copyright (c) 2014, Benjamin Kampmann\nAll rights reserved.</p><p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p><ol>\n<li>\n<p>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>"
+        },
+        {
+          "title": "<p>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>\n</li>\n</ol><p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>"
+        }
+      ]
+    }
+  ]
+}

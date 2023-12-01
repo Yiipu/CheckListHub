@@ -1,0 +1,228 @@
+{
+  "id": 15,
+  "header": "Autowasp",
+  "topicList": [
+    "Building the jar",
+    "Installing the jar",
+    "1. Displaying the Testing checklist",
+    "2. Adding to scope and scanning",
+    "3. Mapping findings to the checklist",
+    "4. Insert security observations and evidence associated with the logs",
+    "5. Report Generation",
+    "Submitting changes",
+    "Coding conventions"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Building the jar",
+      "items": [
+        {
+          "title": "<p><strong><em>Alternatively, you can use the pre-compiled JAR <a href=\"https://github.com/govtech-csg/Autowasp/releases\">here</a></em></strong></p>"
+        },
+        {
+          "topic": "Using IntelliJ IDE",
+          "items": [
+            {
+              "title": "<ol>\n<li>Clone the repository to a location of your choice\n<code>git clone https://github.com/govtech-csg/Autowasp.git</code>"
+            },
+            {
+              "title": "Open IntelliJ, you can either import Project or Open Project  (<strong><em>File &gt; Open..</em></strong>)"
+            },
+            {
+              "title": "Head to <strong><em>File&gt;Project Structure...</em></strong> (<strong><em>Ctrl+Alt+Shift+S</em></strong>)"
+            },
+            {
+              "title": "Under Main Class, select <strong><em>BurpExtender (burp)</em></strong>"
+            },
+            {
+              "title": "Under <strong><em>Project Settings</em></strong>, select <strong><em>Artifacts</em></strong>, click the <strong><em>+</em></strong>, add <strong><em>JAR</em></strong> and select <strong><em>From modules with dependencies..</em></strong>\n<img alt=\"picture\" src=\"./images/Setup_jar_file.png\"/>"
+            },
+            {
+              "title": "Under Main Class, select BurpExtender (burp). Click Ok"
+            },
+            {
+              "title": "Similarly under <strong><em>Project Settings</em>*, select </strong><em>Modules</em>**, add /src/main/resources as your project resources.\n<img alt=\"picture\" src=\"./images/Setup_project_resources.png\"/>"
+            },
+            {
+              "title": "Click apply at bottom right and close <strong><em>Project Settings</em></strong>"
+            },
+            {
+              "title": "Click Build Project (<strong><em>Build &gt; Build Project</em></strong>)"
+            },
+            {
+              "title": "The autowasp.jar file will be built in <code>/Autowasp/out/artifacts/autowasp_jar/autowasp.jar</code></li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "Using Command Line",
+          "items": [
+            {
+              "title": "<ol>\n<li>Clone the repository to a location of your choice\n<code>git clone https://github.com/govtech-csg/Autowasp.git</code>"
+            },
+            {
+              "title": "Run the following command\n<code>cd Autowasp\nmvn clean compile assembly:single</code>"
+            },
+            {
+              "title": "The autowasp.jar file will be built in <code>/Autowasp/target/autowasp-1.0-SNAPSHOT-jar-with-dependencies.jar</code></li>\n</ol>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Installing the jar",
+      "items": [
+        {
+          "title": "<ol>\n<li>Download the release build <a href=\"https://github.com/govtech-csg/Autowasp/releases\">here</a>."
+        },
+        {
+          "title": "Open Burp Suite."
+        },
+        {
+          "title": "Professional version:"
+        },
+        {
+          "title": "Either temporary project or new/existing project"
+        },
+        {
+          "title": "Default/preferred settings</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Click on <strong>Extender</strong> located on the top row of tabs."
+        },
+        {
+          "title": "Under the <strong>Extensions</strong> tab on the second row, click <strong>Add</strong>."
+        },
+        {
+          "title": "Under <strong>Extension Details</strong>, click <strong>Select file</strong> and select the Autowasp JAR file, then click <strong>Next</strong>."
+        },
+        {
+          "title": "You should see no output or errors and a new tab labelled Autowasp on the top row.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "1. Displaying the Testing checklist",
+      "items": [
+        {
+          "topic": "First time:",
+          "items": [
+            {
+              "title": "<ol>\n<li>Click the <strong>Fetch WSTG Checklist</strong> button to fetch the checklist from the forked <a href=\"https://github.com/GovTech-CSG/www-project-web-security-testing-guide/blob/master/v42/4-Web_Application_Security_Testing/README.md\">WSTG documentation</a>. (Note: this may take a few minutes due to the number of pages)"
+            },
+            {
+              "title": "If you are working in an offline environment, click <strong>Load local checklist</strong> to start your penetration testing work. Do note that local checklist may not be updated frequently.\n    <img alt=\"fetchChecklist\" src=\"./images/fetchChecklist.gif\"/></li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "Subsequent times:",
+          "items": [
+            {
+              "title": "<ol>\n<li>Choose <strong>Load local checklist</strong> to start your penetration testing work."
+            },
+            {
+              "title": "This should load the checklist almost instantly.\n    <img alt=\"uploadChecklist\" src=\"./images/uploadChecklist.gif\"/></li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "Excluding Checklist item(s):",
+          "items": [
+            {
+              "title": "If you find test cases that do not apply to your test, you can exclude these items by selecting the checkbox on the right."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "2. Adding to scope and scanning",
+      "items": [
+        {
+          "title": "<ol>\n<li>\n<p>Add the target URL to scope and perform scan.\n <img alt=\"addTargetScope\" src=\"./images/addTargetScope.gif\"/></p>"
+        },
+        {
+          "title": "<p>Manually explore the website's pages, then click <strong>Enable Burp Scanner Logging</strong> to display the scanner issues under the <strong>Logger</strong> tab.\n <img alt=\"scannerLogic\" src=\"./images/scannerLogic.gif\"/></p>"
+        },
+        {
+          "title": "<p>Note that items from <strong>Proxy -&gt; HTTP History</strong>, <strong>Intruder</strong> &amp; <strong>Repeater</strong> tabs can be sent to Autowasp by right-clicking on them, followed by clicking <strong>Send to Autowasp</strong>.\n <img alt=\"SendfromProxy\" src=\"./images/SendfromProxy.gif\"/></p>\n</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "3. Mapping findings to the checklist",
+      "items": [
+        {
+          "title": "Click on a specific log in the <strong>Logger</strong> table."
+        },
+        {
+          "title": "Click on the empty <strong>Mapped to OWASP WSTG</strong> field on the right side of the table entry."
+        },
+        {
+          "title": "Choose a specific test to map the log to using the drop-down list."
+        },
+        {
+          "title": "Note that his will only work if you have the checklist already displayed.\n <img alt=\"mapToCheckList\" src=\"./images/mapToCheckList.gif\"/>"
+        }
+      ]
+    },
+    {
+      "topic": "4. Insert security observations and evidence associated with the logs",
+      "items": [
+        {
+          "title": "<ol>\n<li>Click on a specific log in the <strong>Logger</strong> table."
+        },
+        {
+          "title": "On the lowest row of tabs, click on either <strong>Pen Tester Comments</strong> or <strong>Evidence</strong>."
+        },
+        {
+          "title": "Enter what you wish to note down, then click <strong>Save Comments</strong> or <strong>Save Evidence</strong>.\n <img alt=\"writeComments\" src=\"./images/writeComments.gif\"/></li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "5. Report Generation",
+      "items": [
+        {
+          "title": "<ol>\n<li>Click on <strong>Generate Excel File</strong> and choose a location to save the file to."
+        },
+        {
+          "title": "Open the excel file and check that the observation, comments, and evidence have been saved beside the associated test case"
+        },
+        {
+          "title": "You can also find the URL pointing to the full article hosted on OWASP's GitHub repository for every test case in the checklist\n <img alt=\"generateReport\" src=\"./images/generateReport.gif\"/></li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Submitting changes",
+      "items": [
+        {
+          "title": "<p>Please send a <a href=\"https://github.com/govtech-csg/Autowasp/pull/new/master\">GitHub Pull Request to us</a> with a clear list of what you've done (read more about <a href=\"http://help.github.com/pull-requests/\">pull requests</a>). </p><p>Always write a clear log message for your commits. We accept one-liners for small changes, but bigger changes should include changes and impact:\n    $ git commit -m \"A brief summary of the commit\n    &gt; \n    &gt; A paragraph describing what changed and its impact.\"</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Coding conventions",
+      "items": [
+        {
+          "title": "<p>Start reading our code and you'll get the hang of it. The code serves as an extention module to BurpSuite to extend functionality of web security testing. Autowasp uses the following coding conventions:</p>"
+        },
+        {
+          "title": "We use Java for this extender."
+        },
+        {
+          "title": "Some of the Burp extender' APIs have been overwritten in order for us to have better control of the extender’s behaviour. Refer to overwritten classes  <a href=\"https://github.com/govtech-csg/Autowasp/tree/master/src/main/java/autowasp/http\">here</a>."
+        },
+        {
+          "title": "Please do not add additional table listener as it affects the user experience of the extender. That said, we welcome changes to make Autowasp better!"
+        },
+        {
+          "title": "Add a comment whenever you include a new function so that we can understand your contribution better.<p>Autowasp is an open-source software so bear in mind that the open-source community can read your code. Do adhere to our coding conventions detailed in GitHub Readme and keep your codes understandable and easy to follow. Think of it like driving a car: you may love performing doughnuts but you have to consider the well-being of your passengers and make the ride as smooth as possible. That is of course, <em>unless your passengers love the thrill as well.</em></p>"
+        }
+      ]
+    }
+  ]
+}

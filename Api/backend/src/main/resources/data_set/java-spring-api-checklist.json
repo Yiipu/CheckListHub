@@ -1,0 +1,178 @@
+{
+  "id": 115,
+  "header": "java-spring-api-checklist",
+  "topicList": [
+    "Overview",
+    "Index",
+    "Steps"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Overview",
+      "items": [
+        {
+          "title": "<p>This checklist will help you build a basic Spring API</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Index",
+      "items": []
+    },
+    {
+      "topic": "Steps",
+      "items": [
+        {
+          "title": "<ol>\n<li>Go to <a href=\"https://start.spring.io/\">start.spring.io</a>, set your metadata, and download a project with the following\n dependencies:"
+        },
+        {
+          "title": "<strong>Spring Boot DevTools</strong>"
+        },
+        {
+          "title": "<strong>Lombok</strong>"
+        },
+        {
+          "title": "<strong>Spring Web</strong>"
+        },
+        {
+          "title": "<strong>Spring Data JPA</strong>"
+        },
+        {
+          "title": "<p><strong>The driver for whichever database you're using, i.e. PostgreSQL Driver, MySQL Driver, etc.</strong></p>"
+        },
+        {
+          "title": "<p>It downloads a .zip file, so you will need to unzip it and put the contained folder wherever you store your\n projects on your hard drive, then open the folder with your code editor of choice.</p>"
+        },
+        {
+          "title": "<p>Within the main package, create a package for each entity that you will be using, i.e. contacts, todos, etc.</p>"
+        },
+        {
+          "title": "<p>Within each package that you create, it should have these 4 things:</p>"
+        },
+        {
+          "title": "<strong>Model Class</strong> (Contact, Todo, etc.)"
+        },
+        {
+          "title": "<strong>Controller Class</strong> (ContactsController, TodosController, etc.)"
+        },
+        {
+          "title": "<strong>Repository Interface</strong> (ContactsRepository, TodosRepository, etc.)"
+        },
+        {
+          "title": "<strong>Service Class</strong> (ContactsService, TodosService, etc.)</li>\n</ul>"
+        },
+        {
+          "title": "<p>Within the <a href=\"https://github.com/johnazre/java-spring-api-checklist/blob/master/src/main/java/com/galvanize/contactsapibasic/contacts/Contact.java\">Model class</a>, you should have the following things:</p>"
+        },
+        {
+          "title": "The following annotations go above the class declaration"
+        },
+        {
+          "title": "<code>@Entity</code> - To indicate that this an entity in the database"
+        },
+        {
+          "title": "<code>@Table (name = \"whatever\")</code> - To indicate that a table should be created with the name of \"whatever\""
+        },
+        {
+          "title": "<code>@Data</code> - To add Lombok functionality. Lombok will automatically generate getters and setters for each property.</li>\n</ul>"
+        },
+        {
+          "title": "An empty constructor - We will talk about that later, but it has to do with serializing/deserializing JSON."
+        },
+        {
+          "title": "A private id field of type \"long\". Should have the following annotations:"
+        },
+        {
+          "title": "<code>@Id</code> - To indicate that it is an \"id\" field"
+        },
+        {
+          "title": "<code>@GeneratedValue (strategy = GenerationType.IDENTITY)</code> - To indicate that ids should be generated for new data</li>\n</ul>"
+        },
+        {
+          "title": "Private properties for the rest of the fields that this entity will have. These properties should have the\n following annotations:"
+        },
+        {
+          "title": "<code>@Column</code> - To indicate that this should be a column in the table.</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "<p>Within the <a href=\"https://github.com/johnazre/java-spring-api-checklist/blob/master/src/main/java/com/galvanize/contactsapibasic/contacts/ContactsRepository.java\">Repository interface</a>, you should add that your repository extends \"JpaRepository\" and add a generic to\n the right of it that looks like <code>&lt;TheModelName, TheDataTypeOfTheIdField&gt;</code>.</p>"
+        },
+        {
+          "title": "<p>Within the <a href=\"https://github.com/johnazre/java-spring-api-checklist/blob/master/src/main/java/com/galvanize/contactsapibasic/contacts/ContactsService.java\">Service class</a></p>"
+        },
+        {
+          "title": "The following annotations go above the class declaration:"
+        },
+        {
+          "title": "<code>@Service</code> - To indicate that this class is a service</li>\n</ul>"
+        },
+        {
+          "title": "At the top of the controller class, <a href=\"https://github.com/johnazre/java-spring-api-checklist/blob/5a91585eb212b111e6c0ca5261af80a507566980/src/main/java/com/galvanize/contactsapibasic/contacts/ContactsService.java#L11\">add the <code>@Autowired</code> annotation</a> \nand <a href=\"https://github.com/johnazre/java-spring-api-checklist/blob/5a91585eb212b111e6c0ca5261af80a507566980/src/main/java/com/galvanize/contactsapibasic/contacts/ContactsService.java#L12\">declare an instance of your repository interface</a>."
+        },
+        {
+          "title": "<a href=\"https://github.com/johnazre/java-spring-api-checklist/blob/5a91585eb212b111e6c0ca5261af80a507566980/src/main/java/com/galvanize/contactsapibasic/contacts/ContactsService.java#L14\">Create a constructor that instantiates the injected repository interface.</a>"
+        },
+        {
+          "title": "Create all the methods you need to manage your data, i.e. getAll, getOne, addOne, updateOne, removeOne, etc."
+        },
+        {
+          "title": "Things to keep in mind:"
+        },
+        {
+          "title": "Repository methods return a List, not an ArrayList."
+        },
+        {
+          "title": "In the case where you are using a method to look for something, but don't know if it exists or not, you can\n use the <code>Optional</code> type. Example: <code>Optional&lt;Contact&gt;</code></li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "<p>Within the <a href=\"https://github.com/johnazre/java-spring-api-checklist/blob/master/src/main/java/com/galvanize/contactsapibasic/contacts/ContactsController.java\">Controller class</a>:</p>"
+        },
+        {
+          "title": "The following annotations go above the class declaration"
+        },
+        {
+          "title": "<code>@RestController</code> - Indicates that this will be a controller file"
+        },
+        {
+          "title": "<code>@RequestMapping(\"/contacts\")</code> - Maps this controller to a route prefix, such as \"/contacts\", in this case.</li>\n</ul>"
+        },
+        {
+          "title": "At the top of the controller class, <a href=\"https://github.com/johnazre/java-spring-api-checklist/blob/64f53a7b1b78eb44de772ad9730a05057fde87f5/src/main/java/com/galvanize/contactsapibasic/contacts/ContactsController.java#L14\">add the <code>@Autowired</code> annotation</a> \nand <a href=\"https://github.com/johnazre/java-spring-api-checklist/blob/64f53a7b1b78eb44de772ad9730a05057fde87f5/src/main/java/com/galvanize/contactsapibasic/contacts/ContactsController.java#L15\">declare an instance of your service class</a>."
+        },
+        {
+          "title": "<a href=\"https://github.com/johnazre/java-spring-api-checklist/blob/64f53a7b1b78eb44de772ad9730a05057fde87f5/src/main/java/com/galvanize/contactsapibasic/contacts/ContactsController.java#L17\">Create a constructor that instantiates the injected service class.</a>"
+        },
+        {
+          "title": "Create all the route handler methods you need to manage your data, i.e. getAll, getOne, addOne, updateOne, removeOne, etc."
+        },
+        {
+          "title": "To indicate which HTTP method this route will look for, use one of the following annotations above the method\n declaration:"
+        },
+        {
+          "title": "<code>@GetMapping</code>"
+        },
+        {
+          "title": "<code>@PostMapping</code>"
+        },
+        {
+          "title": "<code>@PatchMapping</code>"
+        },
+        {
+          "title": "<code>@PutMapping</code>"
+        },
+        {
+          "title": "<code>@DeleteMapping</code>"
+        },
+        {
+          "title": "URL prefixes can be added to these methods like this: <code>@GetMapping(\"/something\")</code>"
+        },
+        {
+          "title": "If no prefix is added, it will default to a route on the root prefix of the controller</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "<p><a href=\"https://github.com/johnazre/java-spring-api-checklist/blob/master/src/main/resources/application.properties\">Add the following code to the <code>application.properties</code> file</a>:\n<code>text\nspring.jpa.database=POSTGRESQL\nspring.datasource.platform=postgres\nspring.datasource.url=jdbc:postgresql://localhost:5432/your-database-name\nspring.datasource.username=postgres\nspring.datasource.password=root\nspring.jpa.show-sql=true\nspring.jpa.generate-ddl=true\nspring.jpa.hibernate.ddl-auto=update\nspring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true</code></p>\n</li>\n</ol><blockquote>\n<p>NOTE: Make sure to change the username and password that corresponds to your database instance on your computer</p>\n</blockquote>"
+        }
+      ]
+    }
+  ]
+}

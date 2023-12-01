@@ -1,0 +1,141 @@
+{
+  "id": 169,
+  "header": "React-ES5-To-ES6-Checklist",
+  "topicList": [
+    "Quick links",
+    "Reference",
+    "Roadmap"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Quick links",
+      "items": [
+        {
+          "title": "<ol>\n<li><a href=\"#require\">require =&gt; import</a>"
+        },
+        {
+          "title": "<a href=\"#createClass\">createClass =&gt; extends React.Component</a>"
+        },
+        {
+          "title": "<a href=\"#module\">module.exports =&gt; export default</a>"
+        },
+        {
+          "title": "<a href=\"#name\">name function()  =&gt;  name()</a>"
+        },
+        {
+          "title": "<a href=\"#getDefaultProps\">getDefaultProps and propTypes</a>"
+        },
+        {
+          "title": "<a href=\"#getinitialstate\">getInitialState</a>"
+        },
+        {
+          "title": "<a href=\"#destructuring\">destructuring &amp; spread attributes</a>"
+        },
+        {
+          "title": "<a href=\"#use\">use arrow functions</a></li>\n</ol>"
+        },
+        {
+          "topic": "require => import",
+          "items": [
+            {
+              "title": "<p>ES5</p><p><code>js\n  //ES5\n  var React = require(\"react\");  \n  var PropTypes = React.PropTypes;</code></p><p>ES6</p><p><code>js\n  import React, { Component, PropTypes } from 'react';</code></p><p><strong><a href=\"#quick-links\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "createClass => extends React.Component",
+          "items": [
+            {
+              "title": "<p>ES5</p><p><code>js\n  var Mycomponent = React.createClass({\n    render: function() {\n      return (\n        &lt;div&gt;ES5&lt;/div&gt;\n      );\n    },\n  });</code></p><p>ES6</p><p><code>js\n  class Mycomponent extends React.Component {\n    render() {\n      return (\n        &lt;div&gt;ES6&lt;/div&gt;\n      );\n    }\n  }</code>\n<strong><a href=\"#quick-links\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "module.exports => export default",
+          "items": [
+            {
+              "title": "<p>ES5</p><p>```js\n  var Mycomponent = React.createClass({\n    render: function() {\n      return (\n        <div>ES5</div>\n      );\n    },\n  });</p><p>module.exports = Mycomponent;</p><p>```</p><p>ES6</p><p><code>js\n  export default class Mycomponent extends React.Component {\n    render() {\n      return (\n        &lt;div&gt;ES6&lt;/div&gt;\n      );\n    }\n  }</code>\n<strong><a href=\"#quick-links\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "name function()  =>  name()",
+          "items": [
+            {
+              "title": "<p>ES5</p><p>```js\n  var Mycomponent = React.createClass({\n    componentWillMount: function(){</p><pre><code>},\nrender: function() {\n  return (\n    &lt;div&gt;ES5&lt;/div&gt;\n  );\n},\n</code></pre><p>});</p><p>module.exports = Mycomponent;</p><p>```</p><p>ES6</p><p>```js\n  export default class Mycomponent extends React.Component {\n    componentWillMount() {</p><pre><code>}\nrender() {\n  return (\n    &lt;div&gt;ES6&lt;/div&gt;\n  );\n}\n</code></pre><p>}\n  ```</p><p><strong><a href=\"#quick-links\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "getDefaultProps and propTypes",
+          "items": [
+            {
+              "title": "<p>ES5</p><p><code>js\n  var Video = React.createClass({\n      getDefaultProps: function() {\n          return {\n              autoPlay: false,\n              maxLoops: 10,\n          };\n      },\n      propTypes: {\n          autoPlay: React.PropTypes.bool.isRequired,\n          maxLoops: React.PropTypes.number.isRequired,\n          posterFrameSrc: React.PropTypes.string.isRequired,\n          videoSrc: React.PropTypes.string.isRequired,\n      },\n      render: function() {\n          return (\n              &lt;View /&gt;\n          );\n      },\n  });</code></p><p>ES6</p><p><code>js\n  class Video extends React.Component {\n    render() {\n        return (\n            &lt;View /&gt;\n        );\n    }\n  }\n  Video.defaultProps = {\n      autoPlay: false,\n      maxLoops: 10,\n  };\n  Video.propTypes = {\n      autoPlay: React.PropTypes.bool.isRequired,\n      maxLoops: React.PropTypes.number.isRequired,\n      posterFrameSrc: React.PropTypes.string.isRequired,\n      videoSrc: React.PropTypes.string.isRequired,\n  };</code></p><p>ES future proposals:</p><p><code>js\n  class Video extends React.Component {\n    static defaultProps = {\n      autoPlay: false,\n      maxLoops: 10,\n    }\n    static propTypes = {\n      autoPlay: React.PropTypes.bool.isRequired,\n      maxLoops: React.PropTypes.number.isRequired,\n      posterFrameSrc: React.PropTypes.string.isRequired,\n      videoSrc: React.PropTypes.string.isRequired,\n    }\n    state = {\n      loopsRemaining: this.props.maxLoops,\n    }\n  }</code></p><p><strong><a href=\"#quick-links\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "getInitialState",
+          "items": [
+            {
+              "title": "<p>ES5</p><p><code>js\n  var Header = React.createClass({\n    getInitialState: function() {\n      return {\n        title: this.props.title\n      };\n    },\n  });</code></p><p>ES6</p><p><code>js\n  export default class Header extends Component {\n    constructor(props) {\n      super(props);\n      this.state = {\n        title: props.title\n      };\n    }\n  }</code></p><p>ES future proposals:</p><p>```js\n  export default class Header extends Component {\n    state = {\n      title: this.props.title\n    };</p><pre><code>// followed by constructor...\n</code></pre><p>}\n  ```</p><p><strong><a href=\"#quick-links\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "destructuring & spread attributes",
+          "items": [
+            {
+              "title": "<p>```js\nclass AutoloadingPostsGrid extends React.Component {\n  render() {\n    var {\n      className,\n      ...others,  // contains all properties of this.props except for className\n    } = this.props;\n    return (\n      <div classname=\"{className}\">\n<postsgrid {...others}=\"\"></postsgrid>\n<button onclick=\"{this.handleLoadMoreClick}\">Load more</button>\n</div>\n    );\n  }\n}</p><p>```</p><p><strong><a href=\"#quick-links\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "use arrow functions",
+          "items": [
+            {
+              "title": "<p>Stateless component:</p><p>```js</p><p>function App() {\n  return (\n    <div>\n<mycomponent></mycomponent>\n</div>\n  );\n}</p><p>```</p><p>Using Arrow function:</p><p>```js\nconst App = () =&gt; (\n<br/>\n<div>\n<mycomponent></mycomponent>\n</div></p><p>);\n```</p><p>Using Arrow funtion with <a href=\"https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&amp;%20beyond/ch2.md#destructuring-parameters\">Destructuring function arguments</a>:</p><p>```js\nconst App = ({className, ...rest}) =&gt; (\n<br/>\n<div classname=\"{classnames(className)}\" {...rest}=\"\">\n<mycomponent></mycomponent>\n</div></p><p>);\n```</p><p><strong><a href=\"#quick-links\">⬆ back to top</a></strong></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Reference",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/facebook/react\">React</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/babel/babel\">Babel</a>"
+        },
+        {
+          "title": "<a href=\"https://developer.mozilla.org/en/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla\">ECMAScript 6 support in Mozilla</a>"
+        },
+        {
+          "title": "<a href=\"https://babeljs.io/blog/2015/06/07/react-on-es6-plus\">React on ES6+</a>"
+        },
+        {
+          "title": "<a href=\"http://cheng.logdown.com/posts/2015/09/29/converting-es5-react-to-es6\">Converting React project from ES5 to ES6</a>"
+        },
+        {
+          "title": "<a href=\"http://bbs.reactnative.cn/topic/15/react-react-native-%E7%9A%84es5-es6%E5%86%99%E6%B3%95%E5%AF%B9%E7%85%A7%E8%A1%A8/2\">React/React Native 的ES5 ES6写法对照表</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Roadmap",
+      "items": [
+        {
+          "title": " Include all ES5 to ES6+ instructions for React"
+        },
+        {
+          "title": " We may Implement ESlint plugin like ESlint-Plugin-React-5-to-6"
+        },
+        {
+          "title": " We may Include instructions for configuring Babel with different stages"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "id": 91,
+  "header": "frontend-pull-request-checklist",
+  "topicList": [
+    "Before you start",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Tests",
+    "Documentation",
+    "Before sending code to review",
+    "Pull request",
+    "Code review",
+    "Asking help",
+    "Resources",
+    "You may also like",
+    "Contributing",
+    "Author and license"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Before you start",
+      "items": [
+        {
+          "title": "<ol>\n<li>\n<p>Setup your environment to have immediate feedback on your changes:</p>"
+        },
+        {
+          "title": "<p><a href=\"https://eslint.org/docs/user-guide/integrations\">Setup ESLint plugin</a> in your editor.</p>"
+        },
+        {
+          "title": "<a href=\"https://prettier.io/docs/en/editors.html\">Setup Prettier plugin</a> in your editor."
+        },
+        {
+          "title": "<a href=\"https://www.typescriptlang.org/index.html#download-links\">Setup TypeScript</a> or Flow in your editor."
+        },
+        {
+          "title": "<p><a href=\"https://stylelint.io/user-guide/complementary-tools#editor-plugins\">Setup stylelint</a> in your editor.</p>"
+        },
+        {
+          "title": "<p>Read your team’s coding standards and style guides.</p>\n</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "JavaScript",
+      "items": [
+        {
+          "title": "JavaScript code is following team standards."
+        }
+      ]
+    },
+    {
+      "topic": "HTML",
+      "items": [
+        {
+          "title": "All code is <a href=\"https://www.w3.org/TR/2006/WD-WCAG20-20060427/appendixB.html\">WCAG Level AA</a> compliant."
+        },
+        {
+          "title": "<em>See <a href=\"https://daverupert.com/2018/07/assistive-technologies-i-test-with/\">tools and techniques to use to test accessibility</a>.</em>"
+        },
+        {
+          "title": "Semantic tags are used where possible instead of <code>div</code>s and <code>span</code>s (headings, paragraphs, lists, etc.)"
+        },
+        {
+          "title": "<em>See <a href=\"https://www.internetingishard.com/html-and-css/semantic-html/\">Semantic HTML Tutorial</a> for some examples.</em>"
+        },
+        {
+          "title": "All interactive elements (links, buttons, form elements) are keyboard accessible and have visible focus states."
+        },
+        {
+          "title": "Tab order of all interactive elements follows a logical pattern, usually their position on the screen and order in the DOM."
+        },
+        {
+          "title": "All non-standard elements have appropriate ARIA roles."
+        },
+        {
+          "title": "All interactive elements have accessible labels."
+        },
+        {
+          "title": "<em>For example, add accessible text using the VisuallyHidden component or something similar.</em>"
+        },
+        {
+          "title": "All non-text content has a text alternative."
+        },
+        {
+          "title": "<em>For example, images have appropriate alt texts, clickable icons have titles, and videos have captions.</em>"
+        },
+        {
+          "title": "UI looks good on any screen size (mobile, desktop, etc.)."
+        },
+        {
+          "title": "UI looks good with 200% page zoom."
+        }
+      ]
+    },
+    {
+      "topic": "CSS",
+      "items": [
+        {
+          "title": "CSS code is following team standards."
+        },
+        {
+          "title": "No hardcoded colors, font sizes, whitespace, breakpoints and z-indices."
+        },
+        {
+          "title": "<em>Always use design tokens instead.</em>"
+        },
+        {
+          "title": "No style overrides of any component library components."
+        },
+        {
+          "title": "No unnecessary CSS, ideally there’s no CSS at all."
+        },
+        {
+          "title": "<em>For example, prefer to use primitive and layout components instead of custom styles.</em>"
+        }
+      ]
+    },
+    {
+      "topic": "Tests",
+      "items": [
+        {
+          "title": "Add tests for new functionality."
+        },
+        {
+          "title": "<em>For example, add unit tests for tricky code and regression tests for bugs.</em>"
+        }
+      ]
+    },
+    {
+      "topic": "Documentation",
+      "items": [
+        {
+          "title": "Make sure that the documentation and comments are up to date after your changes, document any new APIs."
+        }
+      ]
+    },
+    {
+      "topic": "Before sending code to review",
+      "items": [
+        {
+          "title": "Read the ticket one more time and make sure everything is done as requested."
+        },
+        {
+          "title": "Do a self review: carefully read all the code before opening a pull request. Think what kind of issues a reviewer may find in your code, what kind of questions they may have, what’s not clear. This alone can save you several review iterations and days in review."
+        },
+        {
+          "title": "<em>Having a coffee break or lunch before doing a self review could be a great idea to help you to look at your code with fresh eyes.</em>"
+        },
+        {
+          "title": "<em>Take notes, mental of physical, on what kind of comments you get in code reviews — you’ll notice that they are often repeated. You can save lots of time by making sure you won’t get any of the comments that you often receive.</em>"
+        },
+        {
+          "title": "<em>Hint: Use GUI Git clients for better experience like <a href=\"https://desktop.github.com/\">GitHub Desktop</a> or PhpStorm.</em>"
+        },
+        {
+          "title": "No lint warnings, type errors or test failures."
+        },
+        {
+          "title": "<em>Hint: run these checks locally: <code>npm test</code>.</em>"
+        },
+        {
+          "title": "<em>Hint: many warnings can be autofixed, check the documentation for your ESLint plugin.</em>"
+        },
+        {
+          "title": "No new errors and warning in the browser console."
+        },
+        {
+          "title": "All code is formatted with Prettier."
+        }
+      ]
+    },
+    {
+      "topic": "Pull request",
+      "items": [
+        {
+          "title": "Add screenshots or GIFs for any UI changes. This will help the person reviewing your code to understand what you’ve changed and how it works."
+        },
+        {
+          "title": "<em>Hint: use <a href=\"https://getkap.co/\">Kap</a> or <a href=\"https://www.cockos.com/licecap/\">Licecap</a> to record your screen.</em>"
+        },
+        {
+          "title": "If your team uses a particular template for pull requests, fill it. Otherwise at least make sure you have:"
+        },
+        {
+          "title": "the user problem you are solving;"
+        },
+        {
+          "title": "acceptance criteria of the ticket;"
+        },
+        {
+          "title": "testing you have done or plan to do before release;"
+        },
+        {
+          "title": "any pull request that are dependent on this one, or any tickets on which this pull request depends."
+        }
+      ]
+    },
+    {
+      "topic": "Code review",
+      "items": [
+        {
+          "title": "Ask to people to review your code:"
+        },
+        {
+          "title": "a person who knows the domain well and can spot bugs in the business logic;"
+        },
+        {
+          "title": "an expert in the technologies you’re using who can help you improve the code quality."
+        },
+        {
+          "title": "When you’re done with the changes after a code review, do another self review of the code and write a comment to notify the reviewer, that the pull request is ready for another iteration."
+        },
+        {
+          "title": "Review all the review comments and make sure they are all addressed before the next review iteration."
+        },
+        {
+          "title": "Make sure you don’t have similar issues anywhere else in your pull request."
+        },
+        {
+          "title": "If you’re not going to follow any of the code review recommendations, please add a comment explaining why."
+        },
+        {
+          "title": "Avoid writing comment like \"done\" of \"fixed\" on each code review comment. Reviewers assume you’ll do all suggested changes, unless you have a reason not to do some of them."
+        },
+        {
+          "title": "Sometimes it’s okay to postpone changes — in this case you’ll need to add a ticket number to the pull request and to the code itself."
+        }
+      ]
+    },
+    {
+      "topic": "Asking help",
+      "items": [
+        {
+          "title": "It’s okay if you don’t understand some of the code review comments. Don’t hesitate to ask questions in the pull request, or ping the reviewer directly."
+        }
+      ]
+    },
+    {
+      "topic": "Resources",
+      "items": [
+        {
+          "topic": "Code reviews",
+          "items": [
+            {
+              "title": "<a href=\"https://blog.sapegin.me/all/faster-code-reviews\">How to get your code reviewed faster</a>"
+            }
+          ]
+        },
+        {
+          "topic": "JavaScript",
+          "items": [
+            {
+              "title": "<a href=\"http://exploringjs.com/impatient-js/\">JavaScript for impatient programmers</a>"
+            },
+            {
+              "title": "<a href=\"https://leanpub.com/understandinges6/\">Understanding ECMAScript 6</a>"
+            },
+            {
+              "title": "<a href=\"https://leanpub.com/washingcode/\">Washing your code: write once, read seven times</a>"
+            }
+          ]
+        },
+        {
+          "topic": "React",
+          "items": [
+            {
+              "title": "<a href=\"https://reactjs.org/docs/getting-started.html\">React docs</a> (it’s one of the best resources)"
+            },
+            {
+              "title": "<a href=\"https://egghead.io/courses/the-beginner-s-guide-to-react\">The Beginner’s Guide to React</a>"
+            },
+            {
+              "title": "<a href=\"https://egghead.io/courses/advanced-react-component-patterns\">Advanced React Component Patterns</a>"
+            }
+          ]
+        },
+        {
+          "topic": "HTML",
+          "items": [
+            {
+              "title": "<a href=\"https://internetingishard.com/html-and-css/semantic-html/\">Semantic HTML</a>"
+            }
+          ]
+        },
+        {
+          "topic": "CSS",
+          "items": [
+            {
+              "title": "<a href=\"https://www.smashingmagazine.com/2019/01/how-to-learn-css/\">How To Learn CSS</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Accessibility",
+          "items": [
+            {
+              "title": "<a href=\"https://benrobertson.io/accessibility/screen-reader-friendly-code-guide\">A Short Guide to Screen Reader Friendly Code</a>"
+            },
+            {
+              "title": "<a href=\"https://web.dev/accessible\">Accessible to all</a>"
+            },
+            {
+              "title": "<a href=\"https://dev.to/addyosmani/accessibility-tips-for-web-developers-4cn0\">Accessibility Tips for Web Developers</a>"
+            },
+            {
+              "title": "<a href=\"https://daverupert.com/2018/07/assistive-technologies-i-test-with/\">Assistive Technologies I Test With</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Testing",
+          "items": [
+            {
+              "title": "<a href=\"https://blog.sapegin.me/all/react-testing-1-best-practices/\">Modern React testing, part 1: best practices</a>"
+            },
+            {
+              "title": "<a href=\"https://blog.sapegin.me/all/snapshot-tests/\">What’s wrong with snapshot tests</a><hr/>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "You may also like",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/sapegin/jest-cheat-sheet\">Jest cheat sheet</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/sapegin/react-components\">Opinionated list of React components</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<p>Improvements are welcome! Open an issue or send a pull request.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Author and license",
+      "items": [
+        {
+          "title": "<p><a href=\"http://sapegin.me/\">Artem Sapegin</a>, a frontend engineer at <a href=\"https://omio.com/\">Omio</a> and the creator of <a href=\"https://react-styleguidist.js.org/\">React Styleguidist</a>. I also write about frontend at <a href=\"https://blog.sapegin.me/\">my blog</a>.</p><p>CC0 1.0 Universal license, see the included <a href=\"/License.md\">License.md</a> file.</p>"
+        }
+      ]
+    }
+  ]
+}

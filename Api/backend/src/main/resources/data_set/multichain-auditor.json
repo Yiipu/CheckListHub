@@ -1,0 +1,362 @@
+{
+  "id": 128,
+  "header": "multichain-auditor",
+  "topicList": [
+    "Index",
+    "General Observations",
+    "Differences from Ethereum",
+    "EVM Compatible Chains Diff",
+    "TODO / Planned"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Index",
+      "items": [
+        {
+          "title": "<a href=\"#general-observations\">General Observations</a>"
+        },
+        {
+          "title": "<a href=\"#block-time-is-not-the-same-on-different-chains\">Block time is not the same on different chains</a>"
+        },
+        {
+          "title": "<a href=\"#block-production-may-not-be-constant\">Block production may not be constant</a>"
+        },
+        {
+          "title": "<a href=\"#l2-sequencer-uptime-feeds-in-chainlink\">L2 Sequencer Uptime Feeds in Chainlink</a>"
+        },
+        {
+          "title": "<a href=\"#chainlink-price-feeds\">Chainlink Price Feeds</a>"
+        },
+        {
+          "title": "<a href=\"#amm-pools-token0-and-token1-order\">AMM pools token0 and token1 order</a>"
+        },
+        {
+          "title": "<a href=\"#modified-opcodes\">Modified Opcodes</a>"
+        },
+        {
+          "title": "<a href=\"#support-for-the-push0-opcode\">Support for the push0 opcode</a>"
+        },
+        {
+          "title": "<a href=\"#address-aliasing---txorigin--msgsender\">Address Aliasing - tx.origin / msg.sender</a>"
+        },
+        {
+          "title": "<a href=\"#txorigin--msgsender\">tx.origin == msg.sender</a>"
+        },
+        {
+          "title": "<a href=\"#txorigin--msgsender\">transfer, send and fixed gas operations</a>"
+        },
+        {
+          "title": "<a href=\"#gas-fees\">Gas fees</a>"
+        },
+        {
+          "title": "<a href=\"#frontrunning\">Frontrunning</a>"
+        },
+        {
+          "title": "<a href=\"#signature-replay\">Signature replay</a>"
+        },
+        {
+          "title": "<a href=\"#hardcoded-contract-addresses\">Hardcoded Contract Addresses</a>"
+        },
+        {
+          "title": "<a href=\"#erc20-decimals\">ERC20 decimals</a>"
+        },
+        {
+          "title": "<a href=\"#contracts-interface\">Contracts Interface</a>"
+        },
+        {
+          "title": "<a href=\"#contracts-upgradability\">Contracts Upgradability</a>"
+        },
+        {
+          "title": "<a href=\"#contracts-may-behave-differently\">Contracts may behave differently</a>"
+        },
+        {
+          "title": "<a href=\"#precompiles\">Precompiles</a>"
+        },
+        {
+          "title": "<a href=\"#zksync-era\">zkSync Era</a>"
+        },
+        {
+          "title": "<a href=\"#differences-from-ethereum\">Differences from Ethereum</a>"
+        },
+        {
+          "title": "<a href=\"#todo--planned\">TODO / Planned</a>"
+        }
+      ]
+    },
+    {
+      "topic": "General Observations",
+      "items": [
+        {
+          "topic": "Block time is not the same on different chains",
+          "items": [
+            {
+              "title": "<p>Block time refers to the time separating blocks. The average block time in <a href=\"https://ethereum.org/en/developers/docs/blocks/#block-time\">Ethereum</a> is 12s, but this value is different on different chains.</p><p>Example: </p><p><code>solidity\n// 1 block every 12 sec -&gt; 5 blocks / min\nuint256 auctionDuration = 7200; // Auction duration lasts for one day (5 * 60 * 24 = 7200)</code></p><p>Example: <a href=\"https://wizard.openzeppelin.com/#governor\">OZ Wizard</a></p><p>💡 Look for hardcoded time values dependent on the <code>block.number</code> that may only be valid on Mainnet.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Block production may not be constant",
+          "items": [
+            {
+              "title": "<p><code>block.number</code> is NOT a reliable source of timing information for short terms.</p><p>On <a href=\"https://docs.arbitrum.io/time#example\">Arbitrum</a> it reflects the L1 block number, which is updated once per minute</p><p>💡 Look for the use of <code>block.number</code> as a time reference, especially on L2.\n💡 Block time may change on the same chain <a href=\"https://etherscan.io/chart/blocktime\">over time</a>.</p><p>📝 <a href=\"https://github.com/code-423n4/2022-12-tigris-findings/issues/419\">1</a> <a href=\"https://github.com/code-423n4/2022-12-tigris-findings/issues/67\">2</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "L2 Sequencer Uptime Feeds in Chainlink",
+          "items": [
+            {
+              "title": "<p>From <a href=\"https://docs.chain.link/data-feeds/l2-sequencer-feeds\">Chainlink documentation</a>:</p><blockquote>\n<p>Optimistic rollup protocols have a sequencer that executes and rolls up the L2 transactions by batching multiple transactions into a single transaction.</p>\n<p>If a sequencer becomes unavailable, it is impossible to access read/write APIs that consumers are using and applications on the L2 network will be down for most users.</p>\n</blockquote><p>This means that if the project does not check if the sequencer is down, it can return stale results.</p><p><a href=\"https://goerli-optimism.etherscan.io/address/0x4C4814aa04433e0FB31310379a4D6946D5e1D353#readContract#F10\">Optimism Goerli Uptime Feed</a></p><p>Mitigations can be found on <a href=\"https://docs.chain.link/data-feeds/l2-sequencer-feeds#handling-arbitrum-outages\">Handling Arbitrum outages</a> and <a href=\"https://docs.chain.link/data-feeds/l2-sequencer-feeds#handling-outages-on-optimism-and-metis\">Handling outages on Optimism and Metis</a>.</p><p>Example:</p><p>```solidity\nfunction getPrice(address token) external view override returns (uint) {\n    if (!isSequencerActive()) revert Errors.L2SequencerUnavailable();\n    ...\n}</p><p>function isSequencerActive() internal view returns (bool) {\n    (, int256 answer, uint256 startedAt,,) = sequencer.latestRoundData();\n    if (block.timestamp - startedAt &lt;= GRACE_PERIOD_TIME || answer == 1)\n        return false;\n    return true;\n}\n```</p><p>💡 Check if the projects handles the scenarios where a sequencer is down on optimistic rollup protocols.</p><p>📝 <a href=\"https://github.com/sherlock-audit/2023-02-bond-judging/issues/1\">1</a> <a href=\"https://github.com/sherlock-audit/2023-01-sentiment-judging/issues/16\">2</a> <a href=\"https://github.com/sherlock-audit/2022-11-sentiment-judging/issues/3\">3</a> <a href=\"https://github.com/sherlock-audit/2023-04-jojo-judging/issues/101\">4</a> <a href=\"https://github.com/code-423n4/2022-09-y2k-finance-findings/issues/278\">5</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Chainlink Price Feeds",
+          "items": [
+            {
+              "title": "<blockquote>\n<p>Chainlink Data Feeds provide data that is aggregated from many data sources by a decentralized set of independent node operators.</p>\n</blockquote><p>Chainlink provides more price feeds for some chains like <a href=\"https://docs.chain.link/data-feeds/price-feeds/addresses/?network=ethereum\">Ethereum</a> than others like <a href=\"https://docs.chain.link/data-feeds/price-feeds/addresses/?network=base\">Base</a> for example. On other chains, no feed may be supported. Also, the same feed like AAVE/USD may have one address on a chain like <a href=\"https://etherscan.io/address/0x6Df09E975c830ECae5bd4eD9d90f3A95a4f88012\">Ethereum</a>, and another one on <a href=\"https://moonriver.moonscan.io/address/0x37f35ef6735c594e6E803bC81577bAC759d8179C\">Moonriver</a>.</p><p>💡 Check that the price feed for the desired pair is supported on all of the deployed chains.</p><p>💡 Check that the correct addresses are set correctly for each chain if they are hardcoded.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "AMM pools token0 and token1 order",
+          "items": [
+            {
+              "title": "<p>In Uniswap and derived AMMs: <code>token0</code> is the token with the lower sort order, while <code>token1</code> is the token with the higher sort order, as described on <a href=\"https://docs.uniswap.org/contracts/v2/reference/smart-contracts/pair#token0\">Uniswap documentation</a>. This is valid for both v2 and v3 pools.</p><p>The order is important because that determines which one is the base token, and which one is the quote token. In other words, if the price is WETH/USDC or USDC/WETH.</p><p>As contracts may have different addresses on different chains, the token order can change. That is the case for example on Arbitrum, where the pair is <a href=\"https://arbiscan.io/address/0xc31e54c7a869b9fcbecc14363cf510d1c41fa443#readContract#F16\">WETH/USDC</a> while on Polygon it is <a href=\"https://polygonscan.com/address/0x45dda9cb7c25131df268515131f647d726f50608#readContract#F16\">USDC/WETH</a>.</p><p>💡 Verify that the token orders are taken into account, and it is not assumed to be the same on all chains.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Modified Opcodes",
+          "items": [
+            {
+              "title": "<p>Some chains implement opcodes with some modification compared to Ethereum, or are not supported.</p><p>Optimism for example, <a href=\"https://community.optimism.io/docs/developers/build/differences/#modified-opcodes\">has a different implementation</a> of opcodes like <code>block.coinbase</code>, <code>block.difficulty</code>, <code>block.basefee</code>. <code>tx.origin</code> may also behave different if the it is an L1 =&gt; L2 transaction. It also implements some new opcode <a href=\"Chains may also implement new opcodes\">L1BLOCKNUMBER</a>.</p><p>Arbitrum also <a href=\"https://developer.arbitrum.io/solidity-support\">has some differences</a> in some operations/opcodes like: <code>blockhash(x)</code>, <code>block.coinbase</code>, <code>block.difficulty</code>, <code>block.number</code>. <code>msg.sender</code> may also behave different for L1 =&gt; L2 \"retryable ticket\" transactions.</p><p>💡 Verify that the EVM opcodes and operations used by the protocol are compatible on all chains</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Support for the push0 opcode",
+          "items": [
+            {
+              "title": "<p><code>push0</code> is an instruction which pushes the constant value 0 onto the stack. This opcode is still not supported by many chains, like <a href=\"https://developer.arbitrum.io/solidity-support#Differences%20from%20Solidity%20on%20Ethereum\">Arbitrum</a> and might be problematic for projects compiled with a version of Solidity <code>&gt;= 0.8.20</code> (when it was introduced).</p><p>💡 Pay attention to projects using a Solidity version <code>&gt;= 0.8.20</code> and check if it is supported on the deployed chains.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Address Aliasing - tx.origin / msg.sender",
+          "items": [
+            {
+              "title": "<p>On some chains like <a href=\"https://community.optimism.io/docs/developers/build/differences/#using-eth-in-contracts\">Optimism</a>, because of the behaviour of the CREATE opcode, it is possible for a user to create a contract on L1 and on L2 that share the same address but have different bytecode.</p><p>This can break trust assumptions, because one contract may be trusted and another be untrusted. To prevent this problem the behaviour of the ORIGIN and CALLER opcodes (tx.origin and msg.sender) differs slightly between L1 and L2.</p><p>💡 Verify that the expected behaviour of <code>tx.origin</code> and <code>msg.sender</code> holds on all deployed chains</p>"
+            }
+          ]
+        },
+        {
+          "topic": "tx.origin == msg.sender",
+          "items": [
+            {
+              "title": "<p>From <a href=\"https://community.optimism.io/docs/developers/build/differences/#pre-eip-155-support\">Optimism documentation</a>:</p><blockquote>\n<p>On L1 Ethereum tx.origin is equal to msg.sender only when the smart contract was called directly from an externally owned account (EOA). However, on Optimism tx.origin is the origin on Optimism. It could be an EOA. However, in the case of messages from L1, it is possible for a message from a smart contract on L1 to appear on L2 with tx.origin == msg.sender. This is unlikely to make a significant difference, because an L1 smart contract cannot directly manipulate the L2 state. However, there could be edge cases we did not think about where this matters.</p>\n</blockquote><p>💡 Verify that the expected behavior of <code>tx.origin</code> and <code>msg.sender</code> holds on all deployed chains</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Cross-chain message vulnerabilities",
+          "items": [
+            {
+              "title": "<p>Some protocols work by sending cross-chain messages to their counterpart contracts on the other chains. This can lead to vulnerabilities like authorization issues, or issues with relayers.</p><p>💡 Look for cross-chain messages implementations and verify the correct permissions and functionality considering all the actors involved</p><p>📝 <a href=\"https://github.com/code-423n4/2022-12-pooltogether-findings/issues/60\">1</a> <a href=\"https://github.com/sherlock-audit/2023-01-derby-judging/issues/309\">2</a> <a href=\"https://github.com/sherlock-audit/2023-01-derby-judging/issues/325\">3</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "transfer, send and fixed gas operations",
+          "items": [
+            {
+              "title": "<p><code>transfer</code> and <code>send</code> forward a hardcoded amount of gas and are <a href=\"https://consensys.net/diligence/blog/2019/09/stop-using-soliditys-transfer-now/\">discouraged as gas costs can change</a>. On certain chains that cost can be higher than in Mainnet, and can result in issues, like in <a href=\"https://twitter.com/zksync/status/1644139364270878720\">zkSync Era</a>.</p><p>💡 Look for fixed gas operations like <code>transfer</code> or <code>send</code>.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Gas fees",
+          "items": [
+            {
+              "title": "<p>Transactions on Ethereum mainnet are much more expensive than on other chains. Chains with very low fees may open the possibility to implement attacks that require a large amount of transactions, or where the cost-benefit of the attack would now be profitable.</p><p>Examples:</p>"
+            },
+            {
+              "title": "DOS on unbound arrays"
+            },
+            {
+              "title": "DOS by filling bound arrays"
+            },
+            {
+              "title": "Spamming that can incur in extra processing costs for the protocol"
+            },
+            {
+              "title": "An attack that only drains smaller amounts of wei that wouldn't be profitable with high gas fees"
+            },
+            {
+              "title": "Frontrunning operations to prevent txns to be executed during a time frame (liquidations, complete auctions, etc.)"
+            },
+            {
+              "title": "Griefing attacks against the protocol<p>Although cheaper, each case should be analyzed to check if it is economically viable to actually be considered an attack.</p><p>💡 Analyze attack vectors that require low gas fees or where a considerable numbers of transactions have to be executed</p><p>📝 <a href=\"https://github.com/sherlock-audit/2023-02-surge-judging/issues/109\">1</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Frontrunning",
+          "items": [
+            {
+              "title": "<p>Frontrunning is possible on chains that have a mempool or a way to read proposed transactions before they are executed.</p><p>It is possible on some chains like Ethereum, although expensive because of gas costs. It is possible at a cheaper cost on other chains like Polygon. </p><p>But it may be <a href=\"https://help.optimism.io/hc/en-us/articles/4444375174299-Is-transaction-front-running-possible-on-Optimism-\">very difficult</a> on chains like Optimism <a href=\"https://community.optimism.io/docs/developers/bedrock/differences/#mempool\">with a private mempool</a></p><p>💡 Verify if a frontrunning attack is possible due to chain constraints or economic viability</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Signature replay across chains",
+          "items": [
+            {
+              "title": "<p>If a contract is deployed on multiple chains and uses signatures, it may be possible to reuse a signature used on one chain and execute the same transaction on another chain.</p><p>To prevent that, it is important that the signed data contains the chain id where it should be executed.</p><p>Example from <a href=\"https://github.com/Uniswap/v2-core/blob/master/contracts/UniswapV2ERC20.sol#L34\">UniswapV2</a>:</p><p>```solidity\nconstructor() public {\n    uint chainId;\n    assembly {\n        chainId := chainid\n    }\n    DOMAIN_SEPARATOR = keccak256(\n        abi.encode(\n            keccak256('EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)'),\n            keccak256(bytes(name)),\n            keccak256(bytes('1')),\n@&gt;          chainId,                   // @audit\n            address(this)\n        )\n    );\n}</p><p>function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {\n    require(deadline &gt;= block.timestamp, 'UniswapV2: EXPIRED');\n    bytes32 digest = keccak256(\n        abi.encodePacked(\n            '\\x19\\x01',\n@&gt;          DOMAIN_SEPARATOR, // @audit\n            keccak256(abi.encode(PERMIT_TYPEHASH, owner, spender, value, nonces[owner]++, deadline))\n        )\n    );\n    address recoveredAddress = ecrecover(digest, v, r, s);\n    require(recoveredAddress != address(0) &amp;&amp; recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');\n    _approve(owner, spender, value);\n}\n```</p><p>💡 Check that the data from the signed hash contains the chain id</p><p>📝 <a href=\"https://github.com/code-423n4/2022-06-connext-findings/issues/144\">1</a> <a href=\"https://solodit.xyz/issues/7234\">2</a> <a href=\"https://solodit.xyz/issues/16276\">3</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Hardcoded Contract Addresses",
+          "items": [
+            {
+              "title": "<p>Projects sometimes deploy their contracts on the same addresses over different chains but that is not always the case.</p><p>Take WETH as an example. Its address on Ethereum is <a href=\"https://etherscan.io/token/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2\">0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2</a>, but <a href=\"https://polygonscan.com/token/0x7ceb23fd6bc0add59e62ac25578270cff1b9f619\">0x7ceb23fd6bc0add59e62ac25578270cff1b9f619</a> on Polygon.</p><p>💡 Verify external contract addresses for the chains where the contracts are deployed</p><p>📝 <a href=\"https://github.com/sherlock-audit/2023-01-derby-judging/issues/308\">1</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "ERC20 decimals",
+          "items": [
+            {
+              "title": "<p>Some ERC20 tokens have different <code>decimals</code> on different chains. Even some popular ones like USDT and USDC have 6 decimals on Ethereum, and 18 decimals on BSC for example:</p>"
+            },
+            {
+              "title": "<a href=\"https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7#readContract#F6\">USDT on Ethereum</a> - 6 decimals"
+            },
+            {
+              "title": "<a href=\"https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48#readProxyContract#F11\">USDC on Ethereum</a> - 6 decimals"
+            },
+            {
+              "title": "<a href=\"https://bscscan.com/address/0x55d398326f99059ff775485246999027b3197955#readContract#F6\">USDT on BSC</a> - 18 decimals"
+            },
+            {
+              "title": "<a href=\"https://bscscan.com/address/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d#readProxyContract#F3\">USDC on BSC</a> - 18 decimals<p>A more exhaustive list can be found in the <a href=\"https://github.com/magnetto90/tokens-decimals\">tokens-decimals</a> repository by <a href=\"https://github.com/magnetto90\">@magnetto90</a>.</p><p>💡 Check that the correct <code>decimals</code> are set for the deployed chains if the token values are hardcoded.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Contracts Interface",
+          "items": [
+            {
+              "title": "<p>Some contracts have a slightly different interface on different chains, which may break compatibility. </p><p>USDT for example is missing its return value on Ethereum as the ERC20 specification suggests, but it is compliant on that aspect on Polygon. This may <a href=\"https://github.com/d-xo/weird-erc20#missing-return-values\">lead to some vulnerabilities</a> on some chains, while not on others.</p><p><a href=\"https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7#code\">USDT on Ethereum</a>:</p><p><code>solidity\n  function transfer(address _to, uint _value) public whenNotPaused {</code></p><p><a href=\"https://polygonscan.com/address/0x7ffb3d637014488b63fb9858e279385685afc1e2#code\">USDT Implementation</a> | <a href=\"https://polygonscan.com/token/0xc2132d05d31c914a87c6611c10748aeb04b58e8f#readProxyContract\">USDT Proxy</a> on Polygon:</p><p><code>solidity\n  function transfer(address recipient, uint256 amount) public virtual override returns (bool) {</code></p><p><a href=\"https://eips.ethereum.org/EIPS/eip-20\">ERC20 transfer specification</a>:</p><p><code>solidity\n  function transfer(address _to, uint256 _value) public returns (bool success)</code></p><p>💡 Verify that the contracts respect the same interface on different chains, or that sufficient mitigations are taken.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Contracts Upgradability",
+          "items": [
+            {
+              "title": "<p>Some contracts are immutable on a chain but upgradeable on others, like <a href=\"https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7#code\">USDT in Ethereum</a> vs <a href=\"https://polygonscan.com/token/0xc2132d05d31c914a87c6611c10748aeb04b58e8f#code\">USDT in Polygon</a>.</p><p>💡 Double-check the upgradability of contracts on different chains and evaluate their implications.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Contracts may behave differently",
+          "items": [
+            {
+              "title": "<p>Contracts deployed on different chains may behave differently.</p><p>On the XDai chain, USDC, WBTC, and WETH contained post-transfer callback procedures, as opposed to their traditional ERC20 implementations on other chains with no callback.</p><p>That enabled the possibility of a re-entrancy attack that was exploited and ultimately <a href=\"https://forum.gnosis.io/t/gip-31-should-gnosis-chain-perform-a-hardfork-to-upgrade-the-token-contract-vulnerable-to-the-reentrancy-attack/4134\">derived on the fork of the chain</a>.</p><p>💡 Check that implementations of contracts match on different chains, or that their differences won't incur on any new vulnerability.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Precompiles",
+          "items": [
+            {
+              "title": "<p>Chains have precompiled contracts on different addresses like <a href=\"https://developer.arbitrum.io/arbos/precompiles\">Arbitrum</a> or <a href=\"https://github.com/ethereum-optimism/optimism/blob/develop/specs/predeploys.md\">Optimism</a>. Care has to be taken if some is used that is not available, works differently or is on a different address.</p><p>💡 Double-check the use of precompiled contracts, their addresses, and their compatibility</p>"
+            }
+          ]
+        },
+        {
+          "topic": "zkSync Era",
+          "items": [
+            {
+              "title": "<p>zkSync Era has many differences from Ethereum on EVM instructions like <code>CREATE</code>, <code>CREATE2</code>, <code>CALL</code>, <code>STATICCALL</code>, <code>DELEGATECALL</code>, <code>MSTORE</code>, <code>MLOAD</code>, <code>CALLDATALOAD,</code> <code>CALLDATACOPY</code>, etc. The full list can be checked <a href=\"https://era.zksync.io/docs/dev/building-on-zksync/contracts/differences-with-ethereum.html#evm-instructions\">here</a> as well as other differences.</p><p>💡 Double-check the compatibility of the contracts when being deployed to zkSync Era</p><hr/>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Differences from Ethereum",
+      "items": [
+        {
+          "title": "<p>Some blockchains have articles explaining their differences with Ethereum or other EVM chains. Here's a list of official docs:</p>"
+        },
+        {
+          "title": "<a href=\"https://developer.arbitrum.io/arbitrum-ethereum-differences\">Arbitrum/Ethereum Differences</a>"
+        },
+        {
+          "title": "<a href=\"https://community.optimism.io/docs/developers/build/differences/\">Differences between Ethereum and Optimism</a>"
+        },
+        {
+          "title": "<a href=\"https://community.optimism.io/docs/developers/bedrock/differences/\">Bedrock Differences</a>"
+        },
+        {
+          "title": "<a href=\"https://era.zksync.io/docs/dev/building-on-zksync/contracts/differences-with-ethereum.html\">zkSync Era: Differences from Ethereum</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.moonbeam.network/learn/features/eth-compatibility/\">Differences Between Moonbeam and Ethereum</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.base.org/differences/\">Differences between Ethereum and Base</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.bnbchain.org/docs/migration/evm-chains/chain-comparison\">BNB Smart Chain vs Polygon - Comparing the Differences</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.bnbchain.org/docs/migration/evm-chains/token-comparison\">BSC Token Standard Comparison</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.filecoin.io/smart-contracts/filecoin-evm-runtime/differences-with-ethereum/\">Filecoin EVM: Differences with Ethereum</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.gnosischain.com/developers/#differences-between-gnosis-and-ethereum\">Differences between Gnosis and Ethereum</a>"
+        },
+        {
+          "title": "<a href=\"https://developers.tron.network/v4.4.0/docs/vm-vs-evm#Differences%20from%20EVM\">Tron TVM: Differences from EVM</a>"
+        }
+      ]
+    },
+    {
+      "topic": "EVM Compatible Chains Diff",
+      "items": [
+        {
+          "title": "<p>Check <a href=\"https://github.com/mds1/evm-diff\">evm-diff</a> repository and the website <a href=\"https://evmdiff.com\">evmdiff.com</a> to diff EVM-compatible chains in a friendly format. It's an amazing tool created by <a href=\"https://github.com/mds1\">@mds1</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "TODO / Planned",
+      "items": [
+        {
+          "title": "<p>If you'd like to contribute, I would greatly appreciate the following:</p>"
+        },
+        {
+          "title": " Add examples from public audits"
+        },
+        {
+          "title": " Add documentation of differences from other chains"
+        },
+        {
+          "title": " Add more observations"
+        },
+        {
+          "title": " Add cases where contracts behave different (like the mentioned decimals on ERC20 tokens, or the token0 and token1 on Uniswap)"
+        },
+        {
+          "title": " Add documentation on how different chains behave for the current observations"
+        }
+      ]
+    }
+  ]
+}

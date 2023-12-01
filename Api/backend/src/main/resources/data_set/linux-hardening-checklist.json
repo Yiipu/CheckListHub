@@ -1,0 +1,389 @@
+{
+  "id": 118,
+  "header": "linux-hardening-checklist",
+  "topicList": [
+    "Status",
+    "Todo",
+    "Prologue",
+    "Levels of priority",
+    "OpenSCAP",
+    "Separate partitions",
+    "Restrict mount options",
+    "Polyinstantiated directories",
+    "Shared memory",
+    "Encrypt partitions",
+    ":ballot_box_with_check: Summary checklist",
+    "Password for Single User Mode",
+    ":ballot_box_with_check: Summary checklist",
+    "Protect bootloader config files",
+    ":ballot_box_with_check: Summary checklist",
+    "Kernel logs",
+    "Kernel pointers",
+    "ExecShield",
+    "Memory protections",
+    ":ballot_box_with_check: Summary checklist",
+    "Syslog",
+    ":ballot_box_with_check: Summary checklist",
+    "Passwords",
+    "Logon Access",
+    ":ballot_box_with_check: Summary checklist",
+    "Hardlinks & Symlinks",
+    "Dynamic Mounting and Unmounting",
+    ":ballot_box_with_check: Summary checklist",
+    "SELinux Enforcing",
+    ":ballot_box_with_check: Summary checklist",
+    "TCP/SYN",
+    "Routing",
+    "ICMP Protocol",
+    "Broadcast",
+    ":ballot_box_with_check: Summary checklist"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Status",
+      "items": [
+        {
+          "title": "<p>Still work in progress... :construction_worker:</p><p>I also created another repository (in a more detailed way): <a href=\"https://github.com/trimstray/the-practical-linux-hardening-guide\">the-practical-linux-hardening-guide</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Todo",
+      "items": [
+        {
+          "title": " Add rationale (e.g. url's, external resources)"
+        },
+        {
+          "title": " Review levels of priority"
+        }
+      ]
+    },
+    {
+      "topic": "Prologue",
+      "items": [
+        {
+          "title": "<p>I'm not advocating throwing your existing hardening and deployment best practices out the door but I recommend is to always turn a feature from this checklist on in pre-production environments instead of jumping directly into production.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Levels of priority",
+      "items": [
+        {
+          "title": "<p>All items in this checklist contains three levels of priority:</p>"
+        },
+        {
+          "title": "<img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> means that the item has a <strong>low</strong> priority."
+        },
+        {
+          "title": "<img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> means that the item has a <strong>medium</strong> priority. You shouldn't avoid tackling that item."
+        },
+        {
+          "title": "<img alt=\"high\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/high.png\"/> means that the item has a <strong>high</strong> priority. You can't avoid following that rule and implement the corrections recommended."
+        }
+      ]
+    },
+    {
+      "topic": "OpenSCAP",
+      "items": [
+        {
+          "title": "<p><img align=\"left\" alt=\"OpenSCAP\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/openscap_logo.png\"/></p><p align=\"left\"><b>SCAP</b> (<i>Security Content Automation Protocol</i>) provides a mechanism to check configurations, vulnerability management and evaluate policy compliance for a variety of systems. One of the most popular implementations of SCAP is <b>OpenSCAP</b> and it is very helpful for vulnerability assessment and also as hardening helper.\n\nSome of the external audit tools use this standard. For example Nessus has functionality for authenticated SCAP scans.</p><blockquote>\n<p>I tried to make this list compatible with OpenSCAP standard and rules. However, there may be differences.</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Separate partitions",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Ensure <code>/boot</code> located on separate partition.</p>"
+        },
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Ensure <code>/home</code> located on separate partition.</p>"
+        },
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Ensure <code>/usr</code> located on separate partition.</p>"
+        },
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Ensure <code>/var</code> located on separate partition.</p>"
+        },
+        {
+          "title": "<p><img alt=\"high\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/high.png\"/> Ensure <code>/var/log</code> and <code>/var/log/audit</code> located on separate partitions.</p>"
+        },
+        {
+          "title": "<p><img alt=\"high\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/high.png\"/> Ensure <code>/tmp</code> and <code>/var/tmp</code> located on separate partitions.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Restrict mount options",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Restrict <code>/usr</code> partition mount options.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\nUUID=&lt;...&gt;  /usr  ext4  defaults,nodev,ro  0 2</code></p>"
+        },
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Restrict <code>/var</code> partition mount options.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\nUUID=&lt;...&gt;  /var  ext4  defaults,nosuid  0 2</code></p>"
+        },
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Restrict <code>/var/log</code> and <code>/var/log/audit</code> partitions mount options.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\nUUID=&lt;...&gt;  /var/log        ext4  defaults,nosuid,noexec,nodev  0 2\nUUID=&lt;...&gt;  /var/log/audit  ext4  defaults,nosuid,noexec,nodev  0 2</code></p>"
+        },
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Restrict <code>/proc</code> partition mount options.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\nproc  /proc  proc  defaults,hidepid=2  0 0</code></p>"
+        },
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Restrict <code>/boot</code> partition mount options.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\nLABEL=/boot  /boot  ext2  defaults,nodev,nosuid,noexec,ro  1 2</code></p>"
+        },
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Restrict <code>/home</code> partition mount options.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\nUUID=&lt;...&gt;  /home  ext4  defaults,nodev,nosuid  0 2</code></p>"
+        },
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Restrict <code>/var</code> and <code>/var/tmp</code> partitions mount options.</p>\n<p><strong>Example:</strong></p>\n<p>```bash\nmv /var/tmp /var/tmp.old\nln -s /tmp /var/tmp\ncp -prf /var/tmp.old/* /tmp &amp;&amp; rm -fr /var/tmp.old</p>\n<p>UUID=&lt;...&gt;  /tmp  ext4  defaults,nodev,nosuid,noexec  0 2\n```</p>"
+        },
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Restrict <code>/dev/shm</code> partition mount options.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\ntmpfs  /dev/shm  tmpfs  rw,nodev,nosuid,noexec,size=1024M,mode=1777 0 0</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Polyinstantiated directories",
+      "items": [
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Setting up polyinstantiated <code>/var</code> and <code>/var/tmp</code> directories.</p>\n<p><strong>Example:</strong></p>\n<p>```bash</p>\n<h1>Create new directories:</h1>\n<p>mkdir --mode 000 /tmp-inst\nmkdir --mode 000 /var/tmp/tmp-inst</p>\n<h1>Edit /etc/security/namespace.conf:</h1>\n<p>/tmp      /tmp-inst/          level  root,adm\n/var/tmp  /var/tmp/tmp-inst/  level  root,adm</p>\n<h1>Set correct SELinux context:</h1>\n<p>setsebool polyinstantiation_enabled=1\nchcon --reference=/tmp /tmp-inst\nchcon --reference=/var/tmp/ /var/tmp/tmp-inst\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Shared memory",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Set group for <code>/dev/shm</code>.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\ntmpfs  /dev/shm  tmpfs  rw,nodev,nosuid,noexec,size=1024M,mode=1770,uid=root,gid=shm 0 0</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Encrypt partitions",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Encrypt <code>swap</code> partition.</p>\n<p><strong>Example:</strong></p>\n<p>```bash</p>\n<h1>Edit /etc/crypttab:</h1>\n<p>sdb1_crypt /dev/sdb1 /dev/urandom cipher=aes-xts-plain64,size=256,swap,discard</p>\n<h1>Edit /etc/fstab:</h1>\n<p>/dev/mapper/sdb1_crypt none swap sw 0 0\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": ":ballot_box_with_check: Summary checklist",
+      "items": [
+        {
+          "title": "<p>| <b>Rule</b> | <b>Priority</b> | <b>Checkbox</b> |\n| :---        | :---:       | :---:        |\n| Separate <code>/boot</code> | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Separate <code>/home</code> | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Separate <code>/usr</code> | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Separate <code>/var</code> | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| Separate <code>/var/log</code> and <code>/var/log/audit</code> | <img alt=\"high\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/high.png\"/> | :black_square_button: |\n| Separate <code>/tmp</code> and <code>/var/tmp</code> | <img alt=\"high\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/high.png\"/> | :black_square_button: |\n| | | |\n| Restrict <code>/usr</code> mount options | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Restrict <code>/var</code> mount options | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Restrict <code>/var/log</code> and <code>/var/log/audit</code> mount options | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Restrict <code>/proc</code> mount options | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Restrict <code>/boot</code> mount options | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| Restrict <code>/home</code> mount options | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| Restrict <code>/tmp/</code> and <code>/var/tmp</code> mount options | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| Restrict <code>/dev/shm</code> mount options | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| | | |\n| Polyinstantiated <code>/tmp</code> and <code>/var/tmp</code> | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| | | |\n| Set group for <code>/dev/shm</code> | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| | | |\n| Encrypt <code>swap</code> | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Password for Single User Mode",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Protect Single User Mode with root password.</p>\n<p><strong>Example:</strong></p>\n<p>```bash</p>\n<h1>Edit /etc/sysconfig/init.</h1>\n<p>SINGLE=/sbin/sulogin\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": ":ballot_box_with_check: Summary checklist",
+      "items": [
+        {
+          "title": "<p>| <b>Rule</b> | <b>Priority</b> | <b>Checkbox</b> |\n| :---        | :---:       | :---:        |\n| Protect Single User Mode. | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Protect bootloader config files",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Ensure bootloader config files are set properly permissions.</p>\n<p><strong>Example:</strong></p>\n<p>```bash</p>\n<h1>Set the owner and group of /etc/grub.conf to the root user:</h1>\n<p>chown root:root /etc/grub.conf\nchown -R root:root /etc/grub.d</p>\n<h1>Set permissions on the /etc/grub.conf or /etc/grub.d file to read and write for root only:</h1>\n<p>chmod og-rwx /etc/grub.conf\nchmod -R og-rwx /etc/grub.d\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": ":ballot_box_with_check: Summary checklist",
+      "items": [
+        {
+          "title": "<p>| <b>Rule</b> | <b>Priority</b> | <b>Checkbox</b> |\n| :---        | :---:       | :---:        |\n| Protect bootloader config files | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Kernel logs",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Restricting access to kernel logs.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\necho \"kernel.dmesg_restrict = 1\" &gt; /etc/sysctl.d/50-dmesg-restrict.conf</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Kernel pointers",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Restricting access to kernel pointers.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\necho \"kernel.kptr_restrict = 1\" &gt; /etc/sysctl.d/50-kptr-restrict.conf</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "ExecShield",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> ExecShield protection.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\necho \"kernel.exec-shield = 2\" &gt; /etc/sysctl.d/50-exec-shield.conf</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Memory protections",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Randomise memory space.</p>\n<p><code>bash\necho \"kernel.randomize_va_space=2\" &gt; /etc/sysctl.d/50-rand-va-space.conf</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": ":ballot_box_with_check: Summary checklist",
+      "items": [
+        {
+          "title": "<p>| <b>Rule</b> | <b>Priority</b> | <b>Checkbox</b> |\n| :---        | :---:       | :---:        |\n| Restricting access to kernel logs | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Restricting access to kernel pointers | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| ExecShield protection | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Randomise memory space. | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Syslog",
+      "items": [
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Ensure syslog service is enabled and running.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\nsystemctl enable rsyslog\nsystemctl start rsyslog</code></p>"
+        },
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Send syslog data to external server.</p>\n<p><strong>Example:</strong></p>\n<p>```bash</p>\n<h1>ELK</h1>\n<h1>Logstash</h1>\n<h1>Splunk</h1>\n<h1>...</h1>\n<p>```</p>"
+        }
+      ]
+    },
+    {
+      "topic": ":ballot_box_with_check: Summary checklist",
+      "items": [
+        {
+          "title": "<p>| <b>Rule</b> | <b>Priority</b> | <b>Checkbox</b> |\n| :---        | :---:       | :---:        |\n| Ensure syslog service is enabled and running. | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| Ensure syslog service is enabled and running. | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Passwords",
+      "items": [
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Update password policy (PAM).</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\nauthconfig --passalgo=sha512 \\\n--passminlen=14 \\\n--passminclass=4 \\\n--passmaxrepeat=2 \\\n--passmaxclassrepeat=2 \\\n--enablereqlower \\\n--enablerequpper \\\n--enablereqdigit \\\n--enablereqother \\\n--update</code></p>"
+        },
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Limit password reuse (PAM).</p>\n<p><strong>Example:</strong></p>\n<p>```bash</p>\n<h1>Edit /etc/pam.d/system-auth</h1>\n<h1>For the pam_unix.so case:</h1>\n<p>password sufficient pam_unix.so ... remember=5</p>\n<h1>For the pam_pwhistory.so case:</h1>\n<p>password requisite pam_pwhistory.so ... remember=5\n```</p>"
+        },
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Secure <code>/etc/login.defs</code> password policy.</p>\n<p><strong>Example:</strong></p>\n<p>```bash</p>\n<h1>Edit /etc/login.defs</h1>\n<p>PASS_MIN_LEN 14\nPASS_MIN_DAYS 1\nPASS_MAX_DAYS 60\nPASS_WARN_AGE 14\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Logon Access",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Set auto logout inactive users.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\necho \"readonly TMOUT=900\" &gt;&gt; /etc/profile.d/idle-users.sh\necho \"readonly HISTFILE\" &gt;&gt; /etc/profile.d/idle-users.sh\nchmod +x /etc/profile.d/idle-users.sh</code></p>"
+        },
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Set last logon/access notification.</p>\n<p><strong>Example:</strong></p>\n<p>```bash</p>\n<h1>Edit /etc/pam.d/system-auth</h1>\n<p>session required pam_lastlog.so showfailed\n```</p>"
+        },
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Lock out accounts after a number of incorrect login (PAM).</p>\n<p><strong>Example:</strong></p>\n<p>```bash</p>\n<h1>Edit /etc/pam.d/system-auth and /etc/pam.d/password-auth</h1>\n<h1>Add the following line immediately before the pam_unix.so statement in the AUTH section:</h1>\n<p>auth required pam_faillock.so preauth silent deny=3 unlock_time=never fail_interval=900</p>\n<h1>Add the following line immediately after the pam_unix.so statement in the AUTH section:</h1>\n<p>auth [default=die] pam_faillock.so authfail deny=3 unlock_time=never fail_interval=900</p>\n<h1>Add the following line immediately before the pam_unix.so statement in the ACCOUNT section:</h1>\n<p>account required pam_faillock.so\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": ":ballot_box_with_check: Summary checklist",
+      "items": [
+        {
+          "title": "<p>| <b>Rule</b> | <b>Priority</b> | <b>Checkbox</b> |\n| :---        | :---:       | :---:        |\n| Update password policy | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| Limit password reuse | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| Secure <code>/etc/login.defs</code> password policy | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| | | |\n| Set auto logout inactive users. | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Set last logon/access notification | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Lock out accounts after a number of incorrect login | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Hardlinks & Symlinks",
+      "items": [
+        {
+          "title": "<p><img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> Enable hard/soft link protection.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\necho \"fs.protected_hardlinks = 1\" &gt; /etc/sysctl.d/50-fs-hardening.conf\necho \"fs.protected_symlinks = 1\" &gt;&gt; /etc/sysctl.d/50-fs-hardening.conf</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Dynamic Mounting and Unmounting",
+      "items": [
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Disable uncommon filesystems.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\necho \"install cramfs /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf\necho \"install freevxfs /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf\necho \"install jffs2 /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf\necho \"install hfs /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf\necho \"install hfsplus /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf\necho \"install squashfs /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf\necho \"install udf /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf\necho \"install fat /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf\necho \"install vfat /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf\necho \"install nfs /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf\necho \"install nfsv3 /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf\necho \"install gfs2 /bin/false\" &gt; /etc/modprobe.d/uncommon-fs.conf</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": ":ballot_box_with_check: Summary checklist",
+      "items": [
+        {
+          "title": "<p>| <b>Rule</b> | <b>Priority</b> | <b>Checkbox</b> |\n| :---        | :---:       | :---:        |\n| Enable hard/soft link protection. | <img alt=\"low\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/low.png\"/> | :black_square_button: |\n| Disable uncommon filesystems. | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "SELinux Enforcing",
+      "items": [
+        {
+          "title": "<p><img alt=\"high\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/high.png\"/> Set SELinux Enforcing mode.</p>\n<p><strong>Example:</strong></p>\n<p>```bash</p>\n<h1>Edit /etc/selinux/config.</h1>\n<p>SELINUXTYPE=enforcing\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": ":ballot_box_with_check: Summary checklist",
+      "items": [
+        {
+          "title": "<p>| <b>Rule</b> | <b>Priority</b> | <b>Checkbox</b> |\n| :---        | :---:       | :---:        |\n| Set SELinux Enforcing mode. | <img alt=\"high\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/high.png\"/> | :black_square_button: |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "TCP/SYN",
+      "items": [
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Enable TCP SYN Cookie protection.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\necho \"net.ipv4.tcp_syncookies = 1\" &gt; /etc/sysctl.d/50-net-stack.conf</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Routing",
+      "items": [
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Disable IP source routing.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\necho \"net.ipv4.conf.all.accept_source_route = 0\" &gt; /etc/sysctl.d/50-net-stack.conf</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "ICMP Protocol",
+      "items": [
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Disable ICMP redirect acceptance.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\necho \"net.ipv4.conf.all.accept_redirects = 0\" &gt; /etc/sysctl.d/50-net-stack.conf</code></p>"
+        },
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Enable ignoring to ICMP requests.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\necho \"net.ipv4.icmp_echo_ignore_all = 1\" &gt; /etc/sysctl.d/50-net-stack.conf</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Broadcast",
+      "items": [
+        {
+          "title": "<p><img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> Enable ignoring broadcasts request.</p>\n<p><strong>Example:</strong></p>\n<p><code>bash\necho \"net.ipv4.icmp_echo_ignore_broadcasts = 1\" &gt; /etc/sysctl.d/50-net-stack.conf</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": ":ballot_box_with_check: Summary checklist",
+      "items": [
+        {
+          "title": "<p>| <b>Rule</b> | <b>Priority</b> | <b>Checkbox</b> |\n| :---        | :---:       | :---:        |\n| Enable TCP SYN Cookie protection. | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| | | |\n| Disable IP source routing. | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| | | |\n| Disable ICMP redirect acceptance. | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| Enable ignoring to ICMP requests. | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |\n| | | |\n| Enable ignoring broadcasts request. | <img alt=\"medium\" src=\"https://github.com/trimstray/linux-hardening-checklist/blob/master/static/img/medium.png\"/> | :black_square_button: |</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1236 @@
+{
+  "id": 203,
+  "header": "symfony-website-checklist",
+  "topicList": [
+    "Summary",
+    "1. Set up your environment",
+    "2. Set up a new Symfony project",
+    "3. Set up your Twig templates",
+    "4. Produce your models",
+    "5. Set up translations (even if you only use one language)",
+    "6. Set up your basic application logic",
+    "7. Secure your app",
+    "8. Use TailwindCSS for styles and RWI",
+    "9. Pre-flight checks",
+    "10. Dockerize your project"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Summary",
+      "items": [
+        {
+          "title": "<a href=\"#elevator-pitch\">Elevator pitch</a>"
+        },
+        {
+          "title": "<a href=\"#philosophy\">Philosophy</a>"
+        },
+        {
+          "title": "<a href=\"#1-set-up-your-environment\">1. Set up your environment</a>"
+        },
+        {
+          "title": "<a href=\"#2-set-up-a-new-symfony-project\">2. Set up a new Symfony project</a>"
+        },
+        {
+          "title": "<a href=\"#3-set-up-your-twig-templates\">3. Set up your Twig templates</a>"
+        },
+        {
+          "title": "<a href=\"#4-produce-your-models\">4. Produce your models</a>"
+        },
+        {
+          "title": "<a href=\"#5-set-up-translations-even-if-you-only-use-one-language\">5. Set up translations (even if you only use one language)</a>"
+        },
+        {
+          "title": "<a href=\"#6-set-up-your-basic-application-logic\">6. Set up your basic application logic</a>"
+        },
+        {
+          "title": "<a href=\"#7-secure-your-app\">7. Secure your app</a>"
+        },
+        {
+          "title": "<a href=\"#8-use-tailwindcss-for-styles-and-rwi\">8. Use TailwindCSS for styles and RWI</a>"
+        },
+        {
+          "title": "<a href=\"#9-pre-flight-checks\">9. Pre-flight checks</a>"
+        },
+        {
+          "title": "<a href=\"#10-dockerize-your-project\">10. Dockerize your project</a><hr/>"
+        },
+        {
+          "topic": "Elevator pitch",
+          "items": [
+            {
+              "title": "<blockquote>\n<p><strong>This project lists all the mandatory steps I recommend to build a website using:</strong></p>"
+            },
+            {
+              "title": "<strong>HTTPS + HTML output,</strong>"
+            },
+            {
+              "title": "<strong>A local, PHP-integrated server first, Docker as a \"maybe\" later on,</strong>"
+            },
+            {
+              "title": "<strong>Symfony,</strong>"
+            },
+            {
+              "title": "<strong>Twig,</strong>"
+            },
+            {
+              "title": "<strong>Doctrine ORM,</strong>"
+            },
+            {
+              "title": "<strong>Any RDBMS.</strong>\n</blockquote>"
+            }
+          ]
+        },
+        {
+          "topic": "Philosophy",
+          "items": [
+            {
+              "title": "<table>\n<thead>\n<tr>\n<th>The idea behind this is as follows:</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>The exhaustive version of a HowTo would be the official <a href=\"https://symfony.com/doc/current/index.html\" title=\"View official documentation\">documentation</a>.</td>\n</tr>\n<tr>\n<td>The slightly slower version of this would be to watch tutorials and use cases from <a href=\"https://symfonycasts.com/\" title=\"Go to the SymfonyCasts website\">SymfonyCasts</a>.</td>\n</tr>\n<tr>\n<td>The faster way would be to read <a href=\"https://symfony.com/doc/current/the-fast-track/en/index.html\" title=\"Read The Fast Track\">The Fast Track</a>, precisely written by <a href=\"https://twitter.com/fabpot\" title=\"Follow Fabien on Twitter!\">Fabien Potencier</a>.</td>\n</tr>\n<tr>\n<td>A complementary faster way would be to read <a href=\"https://symfony.com/doc/current/best_practices.html\" title=\"Read The Best Practices\">the framework best practices</a> (mostly focused on Symfony).</td>\n</tr>\n<tr>\n<td>The fastest way to me, trading possibilities for opinions, should be this repository.</td>\n</tr>\n</tbody>\n</table><p>All contributions and suggestions are welcome. 😇</p><hr/><hr/>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "1. Set up your environment",
+      "items": [
+        {
+          "title": "<p>This section applies to any local, host OS or Docker project construction. </p><blockquote>\n<p>If you intend to use Docker the super fast way, you can bypass this section.<br/>\n- Head up to point #10 in this document if you're building everything yourself.\n- Head up to <a href=\"https://symfony.com/blog/introducing-docker-support\">https://symfony.com/blog/introducing-docker-support</a> and <a href=\"https://github.com/dunglas/symfony-docker\">https://github.com/dunglas/symfony-docker</a> otherwise.</p>\n</blockquote><ol>\n<li>Set up PHP/latest.<br/>\n   On Linux, use your package manager (like Aptitude or Yum). <code>sudo su &amp;&amp; apt-get update &amp;&amp; apt-get install php8</code> at least.<br/>\n   On MacOS, use <a href=\"https://brew.sh/\">Brew</a> through <code>brew install php</code>.<br/>\n   On Windows:"
+        },
+        {
+          "title": "Download it from <a href=\"https://windows.php.net/download/\">windows.php.net</a> (take the <strong>latest version, VS16 x64 Thread Safe, with OpenSSL</strong>)"
+        },
+        {
+          "title": "Unzip it to <code>C:\\php[VERSION DIGITS]</code>."
+        },
+        {
+          "title": "Then change your <code>PATH</code> system variable (<code>Windows + R</code>, type <code>PATH</code>, hit <code>Enter</code>, click on <code>Environment Variables</code>\n  , then your user variables, edit the <code>PATH</code> entry and append the previously unzipped directory path to it).</li>\n</ul>"
+        },
+        {
+          "title": "Copy <code>php.ini-development</code> to <code>php.ini</code> in your"
+        },
+        {
+          "title": "Configure your PHP locally for your <code>dev</code> environment."
+        },
+        {
+          "title": "Set <code>memory_limit</code> to <code>8M</code>"
+        },
+        {
+          "title": "Set <code>max_ececution_time</code> to <code>200</code>"
+        },
+        {
+          "title": "Set <code>upload_max_filesize</code> to <code>200M</code>"
+        },
+        {
+          "title": "Uncomment the <code>extension_dir</code> directive. Careful: it's different on Windows vs the rest of the world."
+        },
+        {
+          "title": "Uncomment to enable the following extensions: <code>bz2, curl, gd, intl, mbstring, mysqli, openssl, pdo_mysql, sodium</code>."
+        },
+        {
+          "title": "Define the <code>date.timezone</code> directive to your local timezone."
+        },
+        {
+          "title": "Mine is <code>\"Europe/Paris\"</code>, for instance."
+        },
+        {
+          "title": "The complete list is <a href=\"https://www.php.net/manual/en/timezones.php\">here</a>.</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "On Windows, download and install <a href=\"https://getcomposer.org/Composer-Setup.exe\">Composer Setup</a>\n   and <a href=\"https://get.symfony.com/cli/setup.exe\">Symfony Setup</a>."
+        },
+        {
+          "title": "Check that you got everything OK using <code>symfony check:requirements</code> in any environement. Ignore the <em>\"Enable or install a PHP accelerator\"</em> advice in development."
+        },
+        {
+          "title": "Start from an empty directory, use <code>symfony new [your_project_directory_name]</code>."
+        },
+        {
+          "title": "Create a <code>README.md</code> file inside the root directory and put everything you can document inside, at least those sections:"
+        },
+        {
+          "title": "The <strong>title</strong> of the project."
+        },
+        {
+          "title": "The <strong>purpose</strong> of the project."
+        },
+        {
+          "title": "How to <strong>set it up</strong>."
+        },
+        {
+          "title": "How to <strong>run</strong> basic commands it requires to work (including Docker)."
+        },
+        {
+          "title": "<strong>Contribution</strong> / modification instructions."
+        },
+        {
+          "title": "Architectures / coding / technology <strong>choices</strong>.</li>\n</ul>"
+        },
+        {
+          "title": "Add a <code>readme-sources</code> directory at the root of your project. Anything that is included in MarkDown documentation goes there."
+        },
+        {
+          "title": "Install a RDMBS (let's start with that, right?), like MySQL, MariaDB, or PostGreSQL. Same again:"
+        },
+        {
+          "title": "On Windows, just download the installers and set them up as services, don't use standalone Zip files."
+        },
+        {
+          "title": "On MacOSX, use <a href=\"https://brew.sh/\">Brew</a> through <code>brew install mysql</code> then <code>brew services start mysql</code>.</li>\n</ul>"
+        },
+        {
+          "title": "Set up your DotEnv files:"
+        },
+        {
+          "title": "Create a <code>.env.local</code> file by copying the <code>.env</code> one."
+        },
+        {
+          "title": "Change the <code>APP_SECRET</code> value to anything."
+        },
+        {
+          "title": "Change the <code>DATABASE_URL</code> to the appropriate values to connect to your RDBMS.</li>\n</ul>"
+        },
+        {
+          "title": "If you use PHPStorm, use <em><code>File &gt; Manage IDE settings &gt; Import settings</code></em> and pick up the <code>phpstorm-settings.zip</code> included in this repository."
+        },
+        {
+          "title": "Configure Git:"
+        },
+        {
+          "title": "<code>git config --global rebase.autostash true</code>"
+        },
+        {
+          "title": "<code>git config --global rebase.autosquash true</code>"
+        },
+        {
+          "title": "<code>git config --global rebase.abbreviateCommands true</code>"
+        },
+        {
+          "title": "<code>git config --global rebase.instructionFormat \"[%an @ %ar] %s\"</code>"
+        },
+        {
+          "title": "<code>git config --global core.excludesfile ~/.gitignore</code>"
+        },
+        {
+          "title": "<code>git config --global core.autocrlf false</code>"
+        },
+        {
+          "title": "<code>echo \".idea\" &gt;&gt; ~/.gitignore</code>"
+        },
+        {
+          "title": "<code>echo \".DS_Store\" &gt;&gt; ~/.gitignore</code>"
+        },
+        {
+          "title": "<code>echo \".vscode\" &gt;&gt; ~/.gitignore</code>\n</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "2. Set up a new Symfony project",
+      "items": [
+        {
+          "title": "<ol>\n<li>Install PHP-Stan as a dev dependency (<code>composer require --dev phpstan/phpstan</code>)."
+        },
+        {
+          "title": "You can do this in a separate directory outside your project as a better practice."
+        },
+        {
+          "title": "Create your configuration file for PHP-Stan if you know what you're doing. If you don't, just use the one in this repository (<code>phpstan.neon</code>)."
+        },
+        {
+          "title": "Let it at the root of your project for now."
+        },
+        {
+          "title": "Also install additional Symfony and Doctrine plugins:"
+        },
+        {
+          "title": "<code>composer require --dev phpstan/extension-installer</code>,"
+        },
+        {
+          "title": "<code>composer require --dev phpstan/phpstan-symfony</code>,"
+        },
+        {
+          "title": "<code>composer require --dev phpstan/phpstan-doctrine</code>.</li>\n</ul>"
+        },
+        {
+          "title": "Make sure PHP-Stan also checks the <code>config</code> directory, and goes to the maximum level. Mine looks like this:</li>\n</ul>\n</li>\n</ol><p><code>yaml\nparameters:\n    level: 9\n    paths:\n        - config\n        - src\n        - tests\n    checkGenericClassInNonGenericObjectType: false\n    ignoreErrors:\n        - '#Property .* is never written, only read\\.#'\n    symfony:\n        container_xml_path: var/cache/dev/App_KernelDevDebugContainer.xml</code></p><ol>\n<li>Install PHP-CS-Fixer as a dev dependency (<code>composer require --dev friendsofphp/php-cs-fixer</code>)."
+        },
+        {
+          "title": "You can do this in a separate directory outside your project as a better practice."
+        },
+        {
+          "title": "Create your configuration file for PHP-CS-Fixer if you know what you're doing. If you don't, just use the one in this repository (<code>.php-cs-fixer.dist.php</code>)."
+        },
+        {
+          "title": "Let it at the root of your project for now.</li>\n</ul>"
+        },
+        {
+          "title": "Install Psalm as a dev dependency (<code>composer require --dev vimeo/psalm</code>)."
+        },
+        {
+          "title": "You can do this in a separate directory outside your project as a better practice."
+        },
+        {
+          "title": "Create your configuration file for Psalm if you know what you're doing (<code>php vendor/bin/psalm --init</code>). If you don't, just use the one in this repository (<code>psalm.xml</code>)."
+        },
+        {
+          "title": "Let it at the root of your project for now."
+        },
+        {
+          "title": "Also install additional Symfony and Doctrine plugins: <code>composer require --dev psalm/plugin-symfony</code>\n  and <code>composer require --dev weirdan/doctrine-psalm-plugin</code>.</li>\n</ul>"
+        },
+        {
+          "title": "Create a shell command to start them, at the root of your directory (you can safely copy the ones in this repository)."
+        },
+        {
+          "title": "Give them short names so you don't lose time calling them manually."
+        },
+        {
+          "title": "Don't start their names with \"<code>php</code>\", they all share this and slows down your CLI calls."
+        },
+        {
+          "title": "Call them <code>csfixer</code>, <code>stan</code> and <code>psalm</code>, with appropriate shell extensions (<code>.bat</code> or <code>.sh</code>).</li>\n</ul>"
+        },
+        {
+          "title": "Add a <code>.editorconfig</code> file at the root directory of your project to ensure your IDE settings don't get messed up."
+        },
+        {
+          "title": "At least set it up so you use UTF-8, <code>LF</code> characters for newlines and 4 spaces as tabulations."
+        },
+        {
+          "title": "If you don't, just use the one in this repository (<code>.editorconfig</code>).</li>\n</ul>"
+        },
+        {
+          "title": "If you know what you're doing, use REDIS to store PHP sessions at least. Try it for custom cache pools (this goes beyond the purpose of this document)."
+        },
+        {
+          "title": "Make sure you provide the appropriate DSN for your databases and the right <code>serverVersion</code> parameter. Use dynamic parameters with <code>$</code> to set them up."
+        },
+        {
+          "title": "In your <code>composer.json</code> file, group requirements, to allow better upgrades, like:"
+        },
+        {
+          "title": "PHP-related"
+        },
+        {
+          "title": "Extension polyfills (like <code>ext-ctype</code>, etc.)"
+        },
+        {
+          "title": "Composer-related (Flex, package deprecations, etc.)"
+        },
+        {
+          "title": "Symfony core-related"
+        },
+        {
+          "title": "Symfony non-core-related (Webpack, Sensio, SymfonyCasts, etc.)"
+        },
+        {
+          "title": "Twig-related"
+        },
+        {
+          "title": "Doctrine or any other DB stuff-related"
+        },
+        {
+          "title": "Other external libraries"
+        },
+        {
+          "title": "Same for <code>require-dev</code>: group by Symfony-related, PHP-CS-Fixer, static analyzers, etc.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "3. Set up your Twig templates",
+      "items": [
+        {
+          "title": "<ol>\n<li>Identify your application domains. If you have no idea what this means, or which to use, simply go with <code>Admin</code>\n   and <code>Front</code>, plus one for each of your application \"modules\"."
+        },
+        {
+          "title": "Install Twig and the extensions you're going to use."
+        },
+        {
+          "title": "<code>composer require twig</code>"
+        },
+        {
+          "title": "<code>composer require twig/extra-bundle</code></li>\n</ul>"
+        },
+        {
+          "title": "Create global variables for Twig that you're going to need, simply edit <code>config/packages/twig.yaml</code> as follows:</li>\n</ol><p><code>yaml\ntwig:\n    # ...\n    globals:\n        # Used for the tab title \n        globals_website_title_suffix: ' | Your website suffix'\n        # Used for OpenGraph\n        globals_website_url: 'https://your.super.url'\n        # Used at many places\n        globals_website_name: 'Your website name'\n        # Used for schema.org data\n        globals_website_subtitle: 'Something like your slogan'\n        # Used for OpenGraph data\n        globals_website_description: 'The long description, mostly for &lt;meta&gt; tags and OpenGraph description.'\n        # You'll need to change this if you want to enable Facebook Sharer\n        globals_facebook_app_id: '1111111111111111'\n    # ...</code></p><ol>\n<li>For the following steps, if you want to be lazy, just copy the templates from this repository for a start:"
+        },
+        {
+          "title": "<code>admin_layout.html.twig</code> goes to <code>templates/admin</code>"
+        },
+        {
+          "title": "<code>front_layout.html.twig</code> goes to <code>templates/front</code>"
+        },
+        {
+          "title": "<code>base.html.twig</code> goes to <code>templates</code></li>\n</ul>"
+        },
+        {
+          "title": "If you didn't copy the files from the previous step, then do as follows:"
+        },
+        {
+          "title": "Create a layout file inside each domain subdirectory, name it as follows: <code>[domain]_layout.html.twig</code>."
+        },
+        {
+          "title": "Add a base class block to your <code>&lt;html&gt;</code> tag in <code>base.html.twig</code> template and override it in each <code>[domain]_layout.html.twig</code> templates."
+        },
+        {
+          "title": "Define your metadata in your <code>base.html.twig</code>, at least (including default strategy):"
+        },
+        {
+          "title": "<code>&lt;html&gt;</code> defaults: language and direction."
+        },
+        {
+          "title": "The viewport strategy for CSS processing.\n  If you don't know what to put, use defaults: <code>&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"&gt;</code>."
+        },
+        {
+          "title": "OpenGraph metadata."
+        },
+        {
+          "title": "HTML metadata, including a unique description under 150 characters."
+        },
+        {
+          "title": "Schema.org metadata."
+        },
+        {
+          "title": "Twitter / Facebook metadata."
+        },
+        {
+          "title": "Webpack Encore styles and scripts tags."
+        },
+        {
+          "title": "Dynamic <title> markup with a default suffix containing your website name (you can cut it off to ~50 characters).</title>"
+        },
+        {
+          "title": "UTF-8 charset."
+        },
+        {
+          "title": "A canonical markup for SEO (<code>&lt;link rel=\"canonical\" href=\"{{ url(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) }}\"&gt;</code>)."
+        },
+        {
+          "title": "Alternate languages using <code>&lt;link&gt;</code> if applicable, including the default one."
+        },
+        {
+          "title": "Platform-specific tags for Windows Tiles and Apple Web Apps (including a <code>browserconfig.xml</code> file)."
+        },
+        {
+          "title": "Overridable blocks for all of these.</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Your <code>/templates</code> directory should at least contain:"
+        },
+        {
+          "title": "<code>admin</code>"
+        },
+        {
+          "title": "<code>common</code>"
+        },
+        {
+          "title": "<code>front</code>"
+        },
+        {
+          "title": "<code>registration</code>"
+        },
+        {
+          "title": "<code>security</code>"
+        },
+        {
+          "title": "<code>base.html.twig</code>"
+        },
+        {
+          "title": "Make sure <strong>all</strong> the files and directories under <code>/templates</code> use snake_case only for their filenames."
+        },
+        {
+          "title": "Add file input previews to all image fields using a <code>LiipImagineBundle</code> preset through a custom form theme (<code>add it in config/twig.yaml</code>)."
+        },
+        {
+          "title": "Customize your error pages."
+        },
+        {
+          "title": "The whole tutorial is in the documentation (<a href=\"https://symfony.com/doc/current/controller/error_pages.html\">https://symfony.com/doc/current/controller/error_pages.html</a>)."
+        },
+        {
+          "title": "This implies that you change at least the basic messages: HTTP 500, 404 and 403 (if you don't use them, you app seems weird or overcomfident)."
+        },
+        {
+          "title": "Basically, this simply means you need to create templates in <code>templates/bundles/TwigBundle/Exception</code>, don't forget to start with a generic one: <code>error.html.twig</code>."
+        },
+        {
+          "title": "Test them during development (there's a simple way to do that, you don't need to generate the errors, the framework will create artificial routes for you)"
+        },
+        {
+          "title": "Use a friendly message for the content, put something nice (and funny, to compensante the sadness of viewing error pages), with jokes linked to your website contents."
+        },
+        {
+          "title": "Include a way for people to go on browsing. You have to have all main navigation, menus and incentives to redirect users to the most common pages.</li>\n</ul>"
+        },
+        {
+          "title": "Customize your error (<em>flash</em>) messages:"
+        },
+        {
+          "title": "Add classes to your messages. Design them so that they use iconic fonts, like <a href=\"https://fontello.com/\">Fontello</a>."
+        },
+        {
+          "title": "Use the <a href=\"https://www.php-fig.org/psr/psr-3/\">PSR-3</a> error types if you lack imagination (<code>info notice warning error</code>) and add \"<code>success</code>\", too."
+        },
+        {
+          "title": "Make sure they don't take too much place nor break your design but can be stacked."
+        },
+        {
+          "title": "Output them with <code>|raw</code> to use links and HTML, but NEVER output anything from the user or not sanitized in their contents (could be a security flaw).</li>\n</ul>"
+        },
+        {
+          "title": "Add a template with breadcrumbs:"
+        },
+        {
+          "title": "Any controller action should provide an array of elements (link title, link text, order, hypermedia URL). Or auto-generated breadcurmb items."
+        },
+        {
+          "title": "Add schema.org breadcrumb data, using JSON-LD, following <a href=\"https://developers.google.com/search/docs/advanced/structured-data/breadcrumb\">Google recommendations</a>."
+        },
+        {
+          "title": "Using defensive programming (if not set, no breadcrumb, no JSON-LD)."
+        },
+        {
+          "title": "Make sure your breadcrumb order is coherent across pages."
+        },
+        {
+          "title": "Use the template in this repository as a start if needed (<code>files-you-will-need/templates/common/_breadcrumb.html.twig</code>).</li>\n</ul>"
+        },
+        {
+          "title": "Make sure your <code>&lt;title&gt;</code> markup doesn't contain any HTML markup nor non-escaped special characters. Do the same for all the <code>&lt;head&gt;</code> contents."
+        },
+        {
+          "title": "Make sure your assets are loaded in order: CSS &gt; fonts &gt; JS modules &gt; JS (using <code>async</code>/<code>defer</code>) &gt; images &gt; audio &gt; video."
+        },
+        {
+          "title": "Check your HTML 5 semantics. Make sure you're using it, and using it properly."
+        },
+        {
+          "title": "Implement <code>&lt;noscript&gt;</code> alternates, this is getting almost deprecated, but it's not yet totally the case."
+        },
+        {
+          "title": "Use the <code>dns-prefetch</code> for anything located on other domains, <code>preconnect</code> for potential follow-ups, <code>preload</code> for probable further needs and <code>preload</code> for certain calls."
+        },
+        {
+          "title": "Validate all your whole page template using production environment and the <a href=\"https://validator.w3.org/\">W3C HTML Validator</a>. Do the same <a href=\"https://jigsaw.w3.org/css-validator/\">for CSS</a>.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "4. Produce your models",
+      "items": [
+        {
+          "title": "<ol>\n<li>List all your entities, think about them until you can't find new fields/properties to add."
+        },
+        {
+          "title": "Add Doctrine DBAL + ORM (<code>composer require orm</code>)."
+        },
+        {
+          "title": "If you want to use migrations, add Doctrine Migrations (<code>composer require migrations</code>)."
+        },
+        {
+          "title": "If you have no idea what to do and work alone on your project, don't use them (<code>composer remove doctrine/migrations</code>, same for dependencies)."
+        },
+        {
+          "title": "If you end up using them, create a <code>/migrations</code> directory at the root directory of your project.</li>\n</ul>"
+        },
+        {
+          "title": "Install the MakerBundle (<code>composer require --dev maker</code>)."
+        },
+        {
+          "title": "Use the MakerBundle to generate their CRUDL. For each entity, run <code>php bin/console make:crud</code>."
+        },
+        {
+          "title": "Create a <code>Model</code> directory under <code>/src</code> to store all models that are not entities."
+        },
+        {
+          "title": "Make sure <strong>all</strong> the files and directories under <code>/src</code> use CamelCase only for their filenames."
+        },
+        {
+          "title": "Check that your entities are valid using <code>php bin/console doctrine:schema:validate</code>."
+        },
+        {
+          "title": "If you're using migrations, check that you're good with <code>php bin/console doctrine:migrations:up-to-date</code>."
+        },
+        {
+          "title": "Slugify all your public content URLs in the form of <code>[domain]/[entity type]/{slug}-{id}</code> using <code>AsciiSlugger</code>. Remove the words shorter than 3 characters."
+        },
+        {
+          "title": "Make sure if entites are tightly linked and fetching one of them always requires/triggers another one, use <code>fetch=\"EAGER\"``on your</code>ManyToOne` relations."
+        },
+        {
+          "title": "Make sure your setters return the current class at worst, unless very specific needs require otherwise, to enable chaining.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "5. Set up translations (even if you only use one language)",
+      "items": [
+        {
+          "title": "<ol>\n<li>Install the Translation component: <code>composer require symfony/translation</code>."
+        },
+        {
+          "title": "Set up your default language in <code>config/packages/translation.yaml</code>. Mine looks like this (for non-geographic English as the default language):</li>\n</ol><p><code>yaml\nframework:\n    # ...\n    default_locale: en\n    translator:\n        default_path: '%kernel.project_dir%/translations'\n        fallbacks:\n            - en\n    # ...</code></p><ol>\n<li>Set up your languages logic in <code>config/services.yaml</code>. Mine looks like this:</li>\n</ol><p><code>yaml\nparameters:\n    # ...\n    app.supported_locales:\n        - en\n        - fr\n    # ...</code></p><ol>\n<li>Create a <code>messages.[yourdefaultlanguage].yaml</code> in the <code>translations</code> folder. Don't use ICU unless you know why."
+        },
+        {
+          "title": "Create a <code>validators.[yourdefaultlanguage].yaml</code> in the <code>translations</code> folder. Don't use ICU unless you know why."
+        },
+        {
+          "title": "Repeat last two steps for each additional language you'll need."
+        },
+        {
+          "title": "Whatever you'll do, make sure you keep alphabetical / ASCII order for translation keys inside YAML files."
+        },
+        {
+          "title": "Whatever you'll do, make sure you'll ONLY use YAML-parse syntax for keys (e.g. <code>front.forms.users.create.name.help</code>)."
+        },
+        {
+          "title": "Make sure <strong>all</strong> the files and directories under <code>/translations</code> use snake_case only for their filenames.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "6. Set up your basic application logic",
+      "items": [
+        {
+          "title": "<ol>\n<li>Create a subdirectory for each of your domains, at least for <code>Admin</code> and <code>Front</code> (that's already enough):"
+        },
+        {
+          "title": "In <code>src/Controller</code>."
+        },
+        {
+          "title": "In <code>src/Form</code>."
+        },
+        {
+          "title": "In <code>src/Model</code>.</li>\n</ul>"
+        },
+        {
+          "title": "Do the same in the Twig <code>/templates</code> directory: create <code>/admin</code> and <code>/front</code> subdirectories in it."
+        },
+        {
+          "title": "Move your CRUDL controllers to <code>src/Controller/Admin</code>, and their templates to <code>templates/admin</code>."
+        },
+        {
+          "title": "Update the namespaces, templates name references in the controllers and templates according to last point."
+        },
+        {
+          "title": "Inside each <code>messages.[language].yaml</code> translations file, start root keys with your domains, all snake case. At least they should look like this:</li>\n</ol><p>```yaml\nfront:</p><p>admin:\n```</p><ol>\n<li>Add constraint validation to the <strong>maximum</strong> properties you can set to in your entity files."
+        },
+        {
+          "title": "Run <code>composer require symfony/validator doctrine/annotations</code>."
+        },
+        {
+          "title": "This supposes, at least:"
+        },
+        {
+          "title": "That ALL your fields have a <code>@Assert</code></li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Make sure all your entities are historizable, which means they should have creation and last modification dates attached:"
+        },
+        {
+          "title": "To achieve that, use a PHP trait in all your entities."
+        },
+        {
+          "title": "If you have no idea what this means, simply use the file <code>HistoryTrackableEntity.php</code> in this repository."
+        },
+        {
+          "title": "Put the trait in your <code>src/Entities</code> directory."
+        },
+        {
+          "title": "Add an <code>@ORM\\HasLifecycleCallbacks</code> annotation to all your entities."
+        },
+        {
+          "title": "Add <code>use HistoryTrackableEntity;</code> after each Entity class opening bracket (first line, before constants and properties)."
+        },
+        {
+          "title": "Update the database (<code>php bin/console doctrine:schema:update</code> or use migrations if you chose to use them).</li>\n</ul>"
+        },
+        {
+          "title": "Review ALL your forms, they need to have:"
+        },
+        {
+          "title": "<code>empty_data</code> provided, especially for non-nullable fields."
+        },
+        {
+          "title": "<code>help</code> for all fields with filling guidelines."
+        },
+        {
+          "title": "A clear <code>label</code> for all fields."
+        },
+        {
+          "title": "A placeholder for all fields (<code>'attr' =&gt; ['placeholder' =&gt; 'your.placeholder.translation.key']</code>)."
+        },
+        {
+          "title": "Localized form errors."
+        },
+        {
+          "title": "Define a custom, static menu configuration. If you want a dynamic one or use a premade bundle like KnpMenuBundle, it's up to you."
+        },
+        {
+          "title": "Create <code>model/Admin/AdminMenus.php</code> and <code>model/Front/FrontMenus.php</code> files."
+        },
+        {
+          "title": "Just make them use a multidimensional <code>public static array $adminMenuTree = [];</code> array structure that returns all menus. See included <code>FrontMenus.php</code> class."
+        },
+        {
+          "title": "Create a Twig extension to output them, either use <code>make:twig-extension</code> or just copy the one included in this repository (<code>MenuExtension.php</code>)."
+        },
+        {
+          "title": "Then make a common template for menus (<code>templates/common/_menu.html.twig</code>) or just copy the one included in this repository.</li>\n</ul>"
+        },
+        {
+          "title": "Remove the dead code in your entity repositories (<code>src/Repository</code>)."
+        },
+        {
+          "title": "Unify templates as much as you can:"
+        },
+        {
+          "title": "Move any MakerBundle-generated <code>_delete_form.html.twig</code> and <code>_form.html.twig</code> to <code>templates/admin/common</code>."
+        },
+        {
+          "title": "Update all the CRUDL templates so they use those."
+        },
+        {
+          "title": "Delete the remaining, unused templates.</li>\n</ul>"
+        },
+        {
+          "title": "Make sure your app doesn't send emails, apart from user account management (account creation, password reset). Most of them are not necessary."
+        },
+        {
+          "title": "As much as you can, try to offer an eco-friendly version of your app. To do so:"
+        },
+        {
+          "title": "Use cookies (since they're functional, they're GPDR-compliant) to remember usage choice."
+        },
+        {
+          "title": "Create eco-friendly and regular Twig layouts."
+        },
+        {
+          "title": "Pick up the top layout from your cookies as defined above."
+        },
+        {
+          "title": "Use a CSS purger to remove unused CSS."
+        },
+        {
+          "title": "Load only one compressed, optimized, alternate CSS stylesheet."
+        },
+        {
+          "title": "Include all accessibility HTML (don't forget <a href=\"https://www.w3.org/TR/aria-in-html/\">ARIA</a>, remove the decorative HTML by using the same Twig conditions on cookies."
+        },
+        {
+          "title": "When cookies are not set, redirect the user to a minimal choice page."
+        },
+        {
+          "title": "Try to lazy load images and other assets, depending on the parts above the fold."
+        },
+        {
+          "title": "If your application logic requires an update because of that, you need to rethink how it works."
+        },
+        {
+          "title": "Don't include unnecessary content, like unused styles from web fonts, hidden images, etc."
+        },
+        {
+          "title": "Don't forget responsive web integration as well.</li>\n</ul>"
+        },
+        {
+          "title": "Make sure people can't manipulate entites that they're not supposed to:"
+        },
+        {
+          "title": "Because of roles hiearchy"
+        },
+        {
+          "title": "Because of missing roles"
+        },
+        {
+          "title": "Because of bad Security API use"
+        },
+        {
+          "title": "Because of no ownership checks on entities"
+        },
+        {
+          "title": "Because of bad HTTP methods</li>\n</ul>"
+        },
+        {
+          "title": "Don't forget to add a human-readable sitemap of your website."
+        },
+        {
+          "title": "Don't forget to add a SEO-oriented XML sitemap."
+        },
+        {
+          "title": "You can make it dynamic and use caching (Symfony action caching and/or Twig <code>{cache}</code> markup)."
+        },
+        {
+          "title": "You can generate it statically, too."
+        },
+        {
+          "title": "Test that they don't go over 50 000 URLs. Include a <a href=\"https://developers.google.com/search/docs/advanced/sitemaps/large-sitemaps\">sitemap index</a> if it happens, with links to chunks."
+        },
+        {
+          "title": "Include all your public static routes, and loop through the significant content by priority."
+        },
+        {
+          "title": "Ignore callbacks, dynamic URLs, canonical URLs, assets."
+        },
+        {
+          "title": "The crawlers will find the rest if it appears on links and test a lot of URLs from external mesh.</li>\n</ul>"
+        },
+        {
+          "title": "Consider implementing <a href=\"https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker\">service workers caching</a> if they can help. This can be longer when added in the end. </li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "7. Secure your app",
+      "items": [
+        {
+          "title": "<ol>\n<li>Make a User class using the MakerBundle: <code>php bin/console make:user</code>."
+        },
+        {
+          "title": "Make a authentication plugin using the MakerBundle: <code>php bin/console make:auth</code>. Pick a custom authenticator name."
+        },
+        {
+          "title": "Don't forget to make the appropriate CRUDL using the MakerBundle: <code>php bin/console make:crud</code>."
+        },
+        {
+          "title": "Modify the <code>new</code> and <code>edit</code> actions of the generated controller so that they encode passwords using <code>UserPasswordHasherInterface</code>."
+        },
+        {
+          "title": "Define your roles in <code>config/packages/security.yaml</code>. Mine looks like this (read the comments):</li>\n</ol><p>```yaml\nsecurity:\n    enable_authenticator_manager: true\n    password_hashers:\n        Symfony\\Component\\Security\\Core\\User\\PasswordAuthenticatedUserInterface: 'auto'\n        App\\Entity\\User:\n            algorithm: auto</p><pre><code>providers:\n    app_user_provider:\n        entity:\n            class: App\\Entity\\User\n            property: email # Can be anything you want\nfirewalls:\n    dev:\n        pattern: ^/(_(profiler|wdt)|css|images|js)/\n        security: false\n    main:\n        lazy: true\n        provider: app_user_provider\n        custom_authenticator: App\\Security\\AppAuthenticator # Use your custom authenticator name here\n        logout:\n            path: app_logout\n            target: app_home # Set this to your public homepage, that defaults to \"/\" at least\n\naccess_control:\n# Uncomment this after step 6. in this chapter\n# - { path: ^/admin, roles: ROLE_ADMIN }\n\nrole_hierarchy:\n    # Administers the whole website\n    ROLE_ADMIN: ROLE_USER\n    # Simple role added by Symfony\n    ROLE_USER:\n</code></pre><p>```</p><ol>\n<li>Then create your admin user while the CRUDL are public, and set yourself to the maximum administrator role level."
+        },
+        {
+          "title": "Once your admin user is created:"
+        },
+        {
+          "title": "Uncomment the <code>access_control</code> directive in the file above"
+        },
+        {
+          "title": "Prefix your generated <code>UserController</code> with: <code>#[Route('admin/user')]</code>."
+        },
+        {
+          "title": "Do the same for ALL the controllers you set:"
+        },
+        {
+          "title": "behind the <code>src/Controller/Admin</code> directory,"
+        },
+        {
+          "title": "the admin ones wherever they are,"
+        },
+        {
+          "title": "and all the generated CRUDL ones.</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Use the MakerBundle to make a registration process (<code>php bin/console make:registration-form</code>)."
+        },
+        {
+          "title": "The <code>SecurityController.php</code> and <code>RegistrationController.php</code> stay at the root of <code>src/Controller</code> directory."
+        },
+        {
+          "title": "Run <code>composer require tgalopin/html-sanitizer-bundle</code> and sanitize all user-generated fields that are displayed without escaping."
+        },
+        {
+          "title": "Configure the <code>framework.trusted_hosts</code> and <code>framework.trusted_headers</code> parameters in your <code>config/packages/prod/framework.yaml</code> file (or any environment file needed)."
+        },
+        {
+          "title": "Check your app through <code>https://github.com/fabpot/local-php-security-checker</code> on a regular basis (add it to your CI and your local habits)."
+        },
+        {
+          "title": "Every time you add an action, before you even start writing it, check the security first. Do the same when you're done."
+        },
+        {
+          "title": "Make sure you use absolutely generic and unique error messages for login and password reset actions. Don't reveal what was wrong on user side."
+        },
+        {
+          "title": "Test your application against security tools, like testing your dependencies on the frontend and backend, HTTP attacks, OWASP vulnerabilities.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "8. Use TailwindCSS for styles and RWI",
+      "items": [
+        {
+          "title": "<ol>\n<li>Update <code>config/twig.yaml</code> and set this:</li>\n</ol><p><code>yaml\ntwig:\n    # ...\n    form_themes: [ 'tailwind_2_layout.html.twig' ]\n    # ...</code></p><ol>\n<li>Add Webpack Encore, with PurgeCSS and PostCSS:"
+        },
+        {
+          "title": "Install Node (pick the latest LTS version):"
+        },
+        {
+          "title": "On Windows and MacOS, just use the <a href=\"https://nodejs.org/en/download/\">installer</a> and restart your shell."
+        },
+        {
+          "title": "On Linux, use your package manager (like Aptitude or Yum). <code>sudo su &amp;&amp; apt-get update &amp;&amp; apt-get install nodejs npm</code> at least.</li>\n</ul>"
+        },
+        {
+          "title": "Run <code>composer require encore</code> and <code>npm install</code>."
+        },
+        {
+          "title": "Run <code>npm install -D tailwindcss postcss-loader purgecss-webpack-plugin glob-all path autoprefixer</code>."
+        },
+        {
+          "title": "Setup Webpack, PostCSS and Tailwind."
+        },
+        {
+          "title": "If you don't know what this means, simply copy/overwrite the following files from this repository to your project root directory:"
+        },
+        {
+          "title": "<code>postcss.config.js</code>"
+        },
+        {
+          "title": "<code>tailwind.config.js</code>"
+        },
+        {
+          "title": "<code>webpack.config.js</code></li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Run <code>npm run build</code>.</li>\n</ul>"
+        },
+        {
+          "title": "Make sure you have the following structure at least in <code>assets</code>:"
+        },
+        {
+          "title": "<code>controllers</code>"
+        },
+        {
+          "title": "<code>favicon</code>"
+        },
+        {
+          "title": "<code>fonts</code>"
+        },
+        {
+          "title": "<code>images</code>"
+        },
+        {
+          "title": "<code>styles</code>"
+        },
+        {
+          "title": "<code>app.js</code>"
+        },
+        {
+          "title": "<code>bootstrap.js</code>"
+        },
+        {
+          "title": "<code>controllers.json</code>"
+        },
+        {
+          "title": "Create a favicon and add its configuration to your <code>base.html.twig</code> and <code>assets/favicon/browserconfig.xml</code>. Use a favicon generator for that and a manifest file."
+        },
+        {
+          "title": "Create a default OpenGraph image for your site and put it in <code>assets/images</code> (name it <code>ogimage.jpg</code> if you copied the included files of this project)."
+        },
+        {
+          "title": "Prepare an external shell script to start your project from your user home directory. See an example with <code>start-project</code> included scripts."
+        },
+        {
+          "title": "Try to prepare and use <code>srcset</code> with multiple resolution sources, to adapt to screen resolution."
+        },
+        {
+          "title": "Try to prefer SVG to images sources, which also avoids using image sprites (iconic fonts can also do the same)."
+        },
+        {
+          "title": "Make sure you always use WOFF2 at least when it comes to web fonts inclusion."
+        },
+        {
+          "title": "Try to output the <code>height</code> and <code>width</code> dimensions on all image sources to allow X/Y space reservation on browsers."
+        },
+        {
+          "title": "Make sure all images have a descriptive <code>alt</code> attribute which explains what they contain."
+        },
+        {
+          "title": "Don't put any JavaScript inside the <code>&lt;body&gt;</code> markup. At worst put it all just before the <code>&lt;/body&gt;</code> closing tag."
+        },
+        {
+          "title": "Configure a CDN for your assets with if this is within your reach. Start with a tight policy and expand durations if it all works correctly.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "9. Pre-flight checks",
+      "items": [
+        {
+          "title": "<ol>\n<li>Run <code>symfony check:security</code> to validate that your project has no known vulnerabilities from its dependencies."
+        },
+        {
+          "title": "Check that you got everything OK using <code>symfony check:requirements</code> while on the production server (see above). This time, pay attention to OPCache (see below)."
+        },
+        {
+          "title": "Create a deployment script for your non-dev environments."
+        },
+        {
+          "title": "If you don't know what you're doing, use the one provided in this repository (<code>production-deployment.sh.dist</code>) for a start."
+        },
+        {
+          "title": "On your non-dev environments, copy the <code>production-deployment.sh.dist</code> to <code>[environment]-deployment.sh</code>."
+        },
+        {
+          "title": "Check that they're in the <code>.gitignore</code> and only on destination servers filesystems. Don't version the final ones."
+        },
+        {
+          "title": "Use those scripts to clear OpCache and realpath caches.</li>\n</ul>"
+        },
+        {
+          "title": "Make sure your application only uses HTTPS. Your <code>config/services.yaml</code> should contain this:</li>\n</ol><p><code>yaml\nparameters:\n    # ...\n    router.request_context.scheme: 'https'\n    asset.request_context.secure: true\n    router:\n        request_context:\n        scheme: 'https'\n    asset:\n        request_context:\n            secure: true\n    # ...</code></p><ol>\n<li>Validate your project with PHP-Stan (using the shell scripts created in #1.)."
+        },
+        {
+          "title": "Validate your project with Psalm (using the shell scripts created in #1.)."
+        },
+        {
+          "title": "Validate your project with PHP-CS-Fixer (using the shell scripts created in #1.)."
+        },
+        {
+          "title": "If needed, configure your CI. There's an included sample file for GitLab CI inside this project, see <code>.gitlab-ci.yml</code> (checks that you didn't forget PHP-CS-Fixer)."
+        },
+        {
+          "title": "Add a <code>robots.txt</code> file inside the <code>public</code> directory. Use the one provided in this repository for a start."
+        },
+        {
+          "title": "Add a <code>site.webmanifest</code> file inside the <code>public</code> directory. Use the one provided in this repository for a start."
+        },
+        {
+          "title": "Enable it by adding this to your <code>base.html.twig</code> file: <code>&lt;link rel=\"manifest\" href=\"{{ asset('site.webmanifest') }}\"&gt;</code>."
+        },
+        {
+          "title": "Finally, you can start your project (locally) using:"
+        },
+        {
+          "title": "<code>symfony local:server:ca:install</code>"
+        },
+        {
+          "title": "<code>symfony server:start -d</code>"
+        },
+        {
+          "title": "<code>npm run watch</code></li>\n</ul>"
+        },
+        {
+          "title": "And you can prepare your assets for deployment using: <code>npm run build</code>."
+        },
+        {
+          "title": "Configure your non-dev environments (this goes way beyond this project boundaries ^^). If your non-dev servers are Apache, you can use <code>composer require symfony/apache-pack</code>."
+        },
+        {
+          "title": "Start writing PHPUnit tests under the <code>tests/</code> directory. You will need WAY less of them as long as your code passes PHP-Stan and Psalm maximum level scans."
+        },
+        {
+          "title": "On production servers, make sure (if you have access to the PHP configuration and your project is the only one, which it should be):"
+        },
+        {
+          "title": "PHP <code>memory_limit</code> is set just around <code>8M</code> for CLI and <code>1M</code> for web SAPIs. More if PHP processes files."
+        },
+        {
+          "title": "PHP <code>max_execution_time</code> is set to <code>1200</code> for CLI and <code>30</code> for wep SAPIs. More for CLI if your app has heavy CLI processing."
+        },
+        {
+          "title": "PHP <code>realpath_cache_size</code> is set to <code>512K</code> for CLI and <code>16M</code> for wep SAPIs."
+        },
+        {
+          "title": "PHP <code>realpath_cache_ttl</code> is set to <code>600</code> for CLI and <code>2000</code> for wep SAPIs."
+        },
+        {
+          "title": "PHP OpCache is configured:"
+        },
+        {
+          "title": "<code>opcache.preload=[your project path]/config/preload.php</code> and set <code>parameters.container.dumper.inline_factories: true</code> in <code>config/services.yaml</code>"
+        },
+        {
+          "title": "<code>opcache.preload_user=www-data</code>"
+        },
+        {
+          "title": "<code>opcache.memory_consumption=1M</code>"
+        },
+        {
+          "title": "<code>opcache.max_accelerated_files=100000</code>"
+        },
+        {
+          "title": "<code>opcache.validate_timestamps=0</code> (WARNING: this implies that your deployment scripts empty OpCache pools)"
+        },
+        {
+          "title": "You dump the autoloader classmap statically in your deployment script (<code>composer dump-autoload --no-dev --classmap-authoritative</code>)."
+        },
+        {
+          "title": "You have chmod'ed (<code>755</code>) your upload, cache and logs directories. Use umask if necessary."
+        },
+        {
+          "title": "You deploy via Git exclusively:"
+        },
+        {
+          "title": "<code>git fetch --all</code>"
+        },
+        {
+          "title": "<code>git rev-parse refs/remotes/origin/master</code> (or any deployment branch)"
+        },
+        {
+          "title": "<code>git checkout -f master</code> (or any deployment branch)"
+        },
+        {
+          "title": "You have entities updated through deployment. Migrations if you're not alone, straight schema update if you are (see above).</li>\n</ul>"
+        },
+        {
+          "title": "Start profiling your app:"
+        },
+        {
+          "title": "Use a free <a href=\"https://www.blackfire.io/\">BlackFire</a> environment (limited, if you're not an individual, consider buying a license) and profile your app."
+        },
+        {
+          "title": "Use the Symfony profiler (<code>composer require --dev symfony/profiler-pack</code>) and take a look at:"
+        },
+        {
+          "title": "Your queries. You can reduce them to the minimum (between 0 and 1 per page) easily."
+        },
+        {
+          "title": "Use Twig <code>{% cache 'your_key' ttl(600) %}{% endcache %}</code> for anything locally cacheable especially the results of Twig functions that use DB."
+        },
+        {
+          "title": "Otherwise, add caching to your controllers and models:"
+        },
+        {
+          "title": "Create a cache pool."
+        },
+        {
+          "title": "Use it by memoizing your actions.</li>\n</ul>\n</li>\n</ul>"
+        },
+        {
+          "title": "Add expiration headers to anything that simply returns entities for a given HTTP request, give them at least 10 minutes, at best a day or more."
+        },
+        {
+          "title": "Add validation headers to any complex action that has non-linear behaviour."
+        },
+        {
+          "title": "Make sure you have resized all user-generated images with LiipImagineBundle (<code>composer require liip/imagine-bundle</code>) and use <code>srcset</code> HTML5 attribute."
+        },
+        {
+          "title": "Make sure you have optimized <strong>all</strong> your theme images using <a href=\"https://tinypng.com/\">TinyPng</a>."
+        },
+        {
+          "title": "Make sure you have no remaining missing translations (<code>php bin/console debug:translation [your locale]</code>)."
+        },
+        {
+          "title": "Make sure you browser console is absolutely empty, no:"
+        },
+        {
+          "title": "CORS alerts (make sure your CORS policy is set)"
+        },
+        {
+          "title": "JavaScript errors"
+        },
+        {
+          "title": "Bad cookie API usages"
+        },
+        {
+          "title": "404 on files"
+        },
+        {
+          "title": "Other browser warnings"
+        },
+        {
+          "title": "Obsolete calls / libraries.</li>\n</ul>"
+        },
+        {
+          "title": "Check that your services definitions are OK using <code>php bin/console lint:container</code>."
+        },
+        {
+          "title": "Unless your website ecosystem doesn't like it, configure your web server to use <code>SameSite / strict</code> cookies."
+        },
+        {
+          "title": "Define a custom (random) string for the <code>APP_SECRET</code> variable in your DotEnv file, one for each different environement."
+        },
+        {
+          "title": "Fix your Composer dependencies versions in your <code>composer.json</code> file. Make them use only patch upgrades within Semantic versioning."
+        },
+        {
+          "title": "On production, check that your website displays correctly when using an agressive ad blocker."
+        },
+        {
+          "title": "Test your application on the most used browsers and platforms. Unless your business rules explicit otherwise:"
+        },
+        {
+          "title": "Chrome on Windows (latest 2 major versions)"
+        },
+        {
+          "title": "Chrome on MacOS (latest 2 major versions)"
+        },
+        {
+          "title": "Chrome on Android (latest 5 major versions)"
+        },
+        {
+          "title": "Safari on iOS (latest 5 major versions)"
+        },
+        {
+          "title": "Safari on MacOS (latest 2 major versions)"
+        },
+        {
+          "title": "Firefox on Windows (latest major version)"
+        },
+        {
+          "title": "Firefox on MacOS (latest major version)"
+        },
+        {
+          "title": "Firefox on Android (latest major version)"
+        },
+        {
+          "title": "Edge on Windows (latest major version)</li>\n</ul>"
+        },
+        {
+          "title": "Test your application on regular screen definitions:"
+        },
+        {
+          "title": "\\&lt; 640px width, portrait and landscape"
+        },
+        {
+          "title": "\\&lt; 768px width, portrait and landscape"
+        },
+        {
+          "title": "\\&lt; 1024px width, portrait and landscape"
+        },
+        {
+          "title": "\\&lt; 1280px width, portrait and landscape"
+        },
+        {
+          "title": "\\&lt; 1920px width, portrait and landscape"
+        },
+        {
+          "title": "\\&lt; 2560px width, landscape"
+        },
+        {
+          "title": "&gt; 2560px width (up to 3860px), landscape</li>\n</ul>"
+        },
+        {
+          "title": "Test RTL language if applicable."
+        },
+        {
+          "title": "Use <a href=\"https://checklists.opquast.com/en/web-quality-assurance/\">OpQuast checklists</a> to further investigate potential design/UX flaws."
+        },
+        {
+          "title": "Make sure your server supports and actually uses Gzip compression."
+        },
+        {
+          "title": "Configure default cache headers for all assets on your web server, especially if you use a CDN, and test those headers.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "10. Dockerize your project",
+      "items": [
+        {
+          "title": "<ol>\n<li>Create a <code>docker-sources</code> directory inside the project root directory. You'll put your Docker Compose files inside."
+        },
+        {
+          "title": "Create a <code>docker-sources/containers-config</code> directory inside. You'll put your Dockerfiles inside, named according to the container name."
+        },
+        {
+          "title": "Create a <code>environment-files</code> directory inside the project root directory, and move all your DotEnv files inside."
+        },
+        {
+          "title": "Make Symfony aware that they moved, modify your <code>composer.json</code> file as follows:</li>\n</ol><p><code>json\n{\n    \"...\": \"...\",\n    \"extra\": {\n        \"...\": \"...\",\n        \"runtime\": {\n            \"dotenv_path\": \"environment-files/.env\"\n        }\n    }\n}</code></p><ol>\n<li>Create at least a <code>global-docker-compose.yml</code> inside <code>docker-sources</code>."
+        },
+        {
+          "title": "Create at least a <code>[environment-name]-docker-compose.yml</code> inside <code>docker-sources</code> (like <code>dev-docker-compose.yml</code>)."
+        },
+        {
+          "title": "Notify your Docker Compose files that the environment files they should use are inside this directory."
+        },
+        {
+          "title": "Add a shell script inside the project root to start the project Docker containers fast\n   (a sample one is included in this repository: <code>build-and-run-dev-docker-containers.bat</code>).</li>\n</ol><p>The rest will be part of your project choices. ;)</p><hr/><p><em>Image taken from free image stock <a href=\"https://unsplash.com/photos/Nl-GCtizDHg\">UnSplash / Guillaume Jaillet</a>.</em></p><p>{% endraw %} &lt;-- keep this for Jekyll to fully bypass this documents, because of the Twig tags.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "id": 74,
+  "header": "dsgvo-checkliste",
+  "topicList": [
+    "Mitwirken",
+    "Checkliste",
+    "Links"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Mitwirken",
+      "items": [
+        {
+          "title": "<p>Jede Website muss bis zum 25. Mai 2018 der DSGVO entsprechen. Da sich jeder Website-Betreiber damit beschäftigen muss und aktiv Änderungen umsetzen muss, können wir uns die Arbeit teilen. Gemeinsam können wir eine Checkliste erstellen, mit der man die Anpassungen an der Website abarbeiten kann.</p><p>Über einen Pull Request kannst du mithelfen die Checkliste zu erweitern/vervollständigen.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Checkliste",
+      "items": [
+        {
+          "title": " <strong>Verwendung von Google Fonts vermeiden oder in den Datenschutzerklärung erwähnen</strong>"
+        },
+        {
+          "title": " <strong>Cookie-Hinweis einbinden</strong>"
+        },
+        {
+          "title": "Hinweis darf nicht Link zu Impressum oder Datenschutzerklärung verdecken</li>\n</ul>"
+        },
+        {
+          "title": " <strong>Datenschutzerklärung</strong> ergänzen/aktualisieren"
+        },
+        {
+          "title": "Möglicher Generator: https://dsgvo-muster-datenschutzerklaerung.dg-datenschutz.de/ oder https://datenschutz-generator.de/</li>\n</ul>"
+        },
+        {
+          "title": " <strong>Impressum</strong> überprüfen"
+        },
+        {
+          "title": " <strong>SSL-Verschlüsselung</strong> aktivieren"
+        },
+        {
+          "title": " <strong>Google-Analytics</strong> rechtskonform einsetzen (<a href=\"https://drschwenke.de/google-analytics-datenschutz-muster-faq\">Mehr zu dem Thema</a>)"
+        },
+        {
+          "title": " Vertrag zur Auftragsdatenverarbeitung abschließen (schriftlich und digital)"
+        },
+        {
+          "title": " IP Anonymisierung einbinden"
+        },
+        {
+          "title": " Datenschutzerklärung anpassen"
+        },
+        {
+          "title": " Opt Out Cookies + Link zu Browser PlugIn setzen</li>\n</ul>"
+        },
+        {
+          "title": " <strong>statische Share-Buttons</strong> einsetzen"
+        },
+        {
+          "title": "<p> <strong>Impressum und Datenschutz von Suchmaschinen ausschließen</strong></p>"
+        },
+        {
+          "title": "<p> <strong>Double-Opt-In-Verfahren für das Abonnieren der Kommentare via Mail</strong></p>"
+        },
+        {
+          "title": "<p>Mögliches WordPress-Plugin: <a href=\"https://de.wordpress.org/plugins/subscribe-to-comments-reloaded/\">Subscribe To Comments Reloaded</a></p>"
+        },
+        {
+          "title": "<p> <strong>Akismet Anit-Spam darf nicht verwendet werden</strong></p>"
+        },
+        {
+          "title": "<p> <strong>Verwendung von dem WordPress-Plugins Jetpack vermeiden</strong></p>"
+        },
+        {
+          "title": "<p> <strong>Double-Opt-In für Newsletter</strong></p>"
+        },
+        {
+          "title": "<p> <strong>Auftragsdatenverarbeitungsvertrag mit Newsletter-Anbieter</strong> abschließen</p>"
+        },
+        {
+          "title": "<p> <strong>Auftragsdatenverarbeitungsvertrag mit Web-Hoster</strong> abschließen</p>"
+        },
+        {
+          "title": "<p> <strong>Gravatar deaktivieren oder in den Datenschutzerklärung erwähnen</strong></p>"
+        },
+        {
+          "title": "<p> <strong>Emojis von WordPress deaktivieren oder in den Datenschutzerklärung erwähnen</strong></p>"
+        },
+        {
+          "title": "Mögliches Plugin: <a href=\"https://de.wordpress.org/plugins/disable-emojis/\">Disable Emojis</a></li>\n</ul>"
+        },
+        {
+          "title": "<p> <strong>Überprüfung von externen Ressourcen</strong></p>"
+        },
+        {
+          "title": "<p> <strong>Plugins, die personenbezogene Daten erheben und speichern in den Datenschutzbestimmungen aufführen</strong></p>"
+        },
+        {
+          "title": "<p> <strong>IP-Adressen von Kommentaren nicht speichern oder nach 7 Tagen löschen</strong></p>"
+        },
+        {
+          "title": "<p> <strong>Alte IP-Adressen bei Kommentaren löschen</strong></p>"
+        },
+        {
+          "title": "<p> <strong>REST-API schließen</strong> Es können darüber z.B. alle Benutzer ausgelesen werden.</p>"
+        },
+        {
+          "title": "Mögliches Plugin: <a href=\"https://de.wordpress.org/plugins/disable-json-api/\">Disable REST API</a></li>\n</ul>"
+        },
+        {
+          "title": "<p> <strong>Verzeichnis von Datenverarbeitungstätigkeiten</strong> anlegen und führen</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Links",
+      "items": [
+        {
+          "title": "<p><em>Die Checkliste basiert auf folgenden Links.</em></p>"
+        },
+        {
+          "title": "<a href=\"https://lesefreude.at/dsgvo-leifaden-fuer-blogger/\">DSGVO – Leitfaden für Blogger</a>"
+        },
+        {
+          "title": "<a href=\"https://www.7media.de/wp-coaching/dsgvo-neue-datenschutz-anforderungen/\">DSGVO – Warum Google Fonts nicht von Google kommen sollten</a>"
+        },
+        {
+          "title": "<a href=\"https://binary-butterfly.de/artikel/dsgvo-so-viel-panik-fuer-nichts-neues-und-warum-es-trotzdem-ein-grundlegendes-problem-gibt/\">DSGVO: So viel Panik für nichts Neues – und warum es trotzdem ein grundlegendes Problem gibt</a>"
+        },
+        {
+          "title": "<a href=\"https://www.content-iq.com/2018/03/22/dsgvo-fuer-einzelunternehmer-und-freelancer/\">Was bedeutet die DSGVO für Einzelunternehmer und Freelancer?</a>"
+        },
+        {
+          "title": "<a href=\"https://xwolf.de/2017/12/10/in-die-tracking-falle-getappt/\">In die Tracking-Falle getappt</a>"
+        },
+        {
+          "title": "<a href=\"https://make.wordpress.org/core/tag/gdpr-compliance/\">Aktivitäten von WordPress selbst</a>"
+        },
+        {
+          "title": "<a href=\"https://blog.assbach.de/2018/03/dsgvo/\">Weitere Linksammlung zur DSGVO</a>"
+        },
+        {
+          "title": "<a href=\"https://dsgvo-muster-datenschutzerklaerung.dg-datenschutz.de/\">Ihre DS-GVO-konforme Datenschutzerklärung per Klick</a>"
+        },
+        {
+          "title": "<a href=\"https://matomo.org/docs/privacy/\">Configure Privacy Settings in Matomo (Piwik)</a>"
+        },
+        {
+          "title": "<a href=\"https://wp-bistro.de/datenschutz-grundverordnung-dsgvo-was-ist-jetzt-zu-tun/\">Datenschutz-Grundverordnung (DSGVO) – Was ist jetzt zu tun? (Artikelserie)</a>"
+        },
+        {
+          "title": "<a href=\"https://www.socialmedia-betreuung.de/dsgvo/\">Wie setze ich die Anforderungen der DSGVO für meine Website um?</a>"
+        },
+        {
+          "title": "<a href=\"https://datenschmutz.net/dsgvo-checkliste-fuer-blogs/\">DSGVO Checkliste für Blogger: Wie setze ich die Datenschutz-Grundverordnung für mein Weblog um?</a>"
+        },
+        {
+          "title": "<a href=\"https://www.lfd.niedersachsen.de/download/124239\">Fragen zur Vorbereitung auf die DS-GVO (PDF-Download)</a>"
+        },
+        {
+          "title": "<a href=\"https://elbnetz.com/dsgvo-mit-wordpress/\">Datenschutz-Grundverordnung (DSGVO) mit WordPress</a>"
+        },
+        {
+          "title": "<a href=\"https://www.blogmojo.de/wordpress-plugins-dsgvo/\">WordPress-Plugins &amp; DSGVO: Liste mit Plugins, die Daten sammeln (mit Lösungen und Alternativen!)</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.google.com/document/d/1Y5Nr8i9Rg0P8PM-EiajVgJ8an0c8JVgNTNPXuIozeWQ/\">WordPress und DSGVO</a>"
+        },
+        {
+          "title": "<a href=\"https://de.wordpress.org/2018/04/gdpr-compliance-tools-dsgvo-konformitaetswerkzeuge-in-wordpress/\">GDPR-Compliance-Tools (DSGVO-Konformitätswerkzeuge) in WordPress</a></li>\n</ul><p><em>Podcasts zum Thema:</em></p>"
+        },
+        {
+          "title": "<a href=\"https://rechtsbelehrung.com/dsgvo-alles-zur-eu-datenschutzgrundverordnung-rechtsbelehrung-folge-54-jura-podcast/\">Rechtsbelehrung (Folge 54) – DSGVO: Alles zur EU-Datenschutzgrundverordnung</a>"
+        },
+        {
+          "title": "<a href=\"http://workingdraft.de/336/\">Working Draft (Revision 336) – DSGVO</a>"
+        },
+        {
+          "title": "<a href=\"https://www.datenschutz-guru.de/braucht-mein-kontaktformular-jetzt-eine-checkbox/\">Braucht mein Kontaktformular jetzt eine Checkbox?</a>"
+        }
+      ]
+    }
+  ]
+}

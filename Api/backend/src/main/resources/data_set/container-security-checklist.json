@@ -1,0 +1,668 @@
+{
+  "id": 53,
+  "header": "container-security-checklist",
+  "topicList": [
+    "Table Of Contents",
+    "Cloud Native challenges",
+    "Container Threat Model",
+    "Container Security Checklist",
+    "Supply Chain Security",
+    "Secure the Build",
+    "Secure the Container Registry",
+    "Secure the Container Runtime",
+    "Secure the Infrastructure",
+    "Secure the Data",
+    "Secure the Workloads... Running the containers",
+    "Common Containers Attacks",
+    "Container Security Guides",
+    "Further reading:",
+    "Collaborate"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table Of Contents",
+      "items": [
+        {
+          "title": "<a href=\"#cloud-native-challenges\">Cloud Native challenges</a>"
+        },
+        {
+          "title": "<a href=\"#container-threat-model\">Container Threat Model</a>"
+        },
+        {
+          "title": "<a href=\"#container-security-checklist\">Container Security Checklist</a>"
+        },
+        {
+          "title": "<a href=\"#supply-chain-security\">Supply Chain Security</a>"
+        },
+        {
+          "title": "<a href=\"#secure-the-build\">Secure the Build</a>"
+        },
+        {
+          "title": "<a href=\"#secure-supply-chain\">Secure Supply Chain</a>"
+        },
+        {
+          "title": "<a href=\"#hardening-code---secure-sdlc-software-development-life-cycle\">Hardening Code - Secure SDLC (Software Development Life Cycle)</a>"
+        },
+        {
+          "title": "<a href=\"#secure-the-image---hardening\">Secure the Image - Hardening</a>"
+        },
+        {
+          "title": "<a href=\"#image-scanning\">Image Scanning</a>"
+        },
+        {
+          "title": "<a href=\"#image-signing\">Image Signing</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#secure-the-container-registry\">Secure the Container Registry</a>"
+        },
+        {
+          "title": "<a href=\"#registry-resources\">Registry Resources</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#secure-the-container-runtime\">Secure the Container Runtime</a>"
+        },
+        {
+          "title": "<a href=\"#why-is-important-runtime-security\">Why is important Runtime Security?</a>"
+        },
+        {
+          "title": "<a href=\"#constraints\">Constraints</a>"
+        },
+        {
+          "title": "<a href=\"#docker-security\">Docker Security</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#secure-the-infrastructure\">Secure the Infrastructure</a>"
+        },
+        {
+          "title": "<a href=\"#secure-the-data\">Secure the Data</a>"
+        },
+        {
+          "title": "<a href=\"#secrets-management-tools\">Secrets Management Tools</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#secure-the-workloads-running-the-containers\">Secure the Workloads... Running the containers</a>"
+        },
+        {
+          "title": "<a href=\"#common-container-attacks\">Common Containers Attacks</a>"
+        },
+        {
+          "title": "<a href=\"#container-security-guides\">Container Security Guides</a>"
+        },
+        {
+          "title": "<a href=\"#further-reading\">Further reading</a>"
+        },
+        {
+          "title": "<a href=\"#collaborate\">Collaborate</a><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Cloud Native challenges",
+      "items": [
+        {
+          "title": "<p>| Legacy apps   |      Cloud Native apps      |  Cloud Native Security |\n|----------|:-------------:|------:|\n| Discrete, infrequent releases |   frequent releases, using CI/CD | Shifting left with automated testing |\n| Very little open source | Open source everywhere | SCA - Software composition analysis |\n| Proprietary software | Proprietary code, Open source, Third-party software |  Software supply chain risk |\n| Persistent workloads |  Ephemeral workloads. Ensure that your containers are stateless and immutable |  Runtime controls that follow the workload |\n| Hypervisor or hardware isolation | Shared kernel, obscured OS | Enforce least privilege on each workload |\n| Permanent address | Orchestrated containers. Kubernetes creates DNS records for services and pods |   Identity-based segmentation |\n| Vertical control of the stack | multi-cloud | Detecting cloud services misconfigurations (CSPM) |\n| Networking monitoring and threat detection tools were based on auditd, syslog, dead-disk forensics, and it used to get the full contents of network packets to disk \"packet captures\". Capturing packets sotes every packet in a network to disk and runs custom pattern matching on each packet to identify an attack. | Cloud native apps the traffic is encrypted. Packet captures are too costly and ineffective for cloud native environments. | Using eBPF programs, you collect the events in real time without disruption to the app. |</p><blockquote>\n<p>Table by Aqua Cloud Native Security Platform, more details <a href=\"https://f.hubspotusercontent40.net/hubfs/1665891/Buyers_Guide/Aqua_Buyers_Guide_Cloud_Native_Security_Platform.pdf\">download here</a></p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Container Threat Model",
+      "items": [
+        {
+          "title": "<p><a href=\"https://medium.com/oreillymedia/container-security-threats-38649261fb4f\"><img alt=\"thread-model\" src=\"https://miro.medium.com/max/4800/0*PGj_8b4bt5F5F6LR\"/></a>\nFigure by <a href=\"https://www.oreilly.com/library/view/container-security/9781492056690/\">Container Security by Liz Rice</a></p>"
+        },
+        {
+          "title": "Insecure Host"
+        },
+        {
+          "title": "Misconfiguration container"
+        },
+        {
+          "title": "Vulnerable application"
+        },
+        {
+          "title": "Supply chain attacks"
+        },
+        {
+          "title": "Expose secrets"
+        },
+        {
+          "title": "Insecure networking"
+        },
+        {
+          "title": "Integrity and confidentiality of OS images"
+        },
+        {
+          "title": "Container escape vulnerabilities"
+        }
+      ]
+    },
+    {
+      "topic": "Container Security Checklist",
+      "items": [
+        {
+          "title": "<p>Checklist to build and secure the images across the following phases:</p>"
+        },
+        {
+          "title": "<a href=\"#secure-the-build\">Secure the Build</a>"
+        },
+        {
+          "title": "<a href=\"#secure-the-container-registry\">Secure the Container Registry</a>"
+        },
+        {
+          "title": "<a href=\"#secure-the-container-runtime\">Secure the Container Runtime</a>"
+        },
+        {
+          "title": "<a href=\"#secure-the-infrastructure\">Secure the Infrastructure</a>"
+        },
+        {
+          "title": "<a href=\"#secure-the-data\">Secure the Data</a>"
+        },
+        {
+          "title": "<a href=\"#secure-the-workloads-running-the-containers\">Secure the Workloads</a><p><img alt=\"Build\" src=\"https://raw.githubusercontent.com/cncf/tag-security/main/security-whitepaper/v1/cnswp-images/RackMultipart20201111_figure3.png\"/>\nFigure by <a href=\"https://github.com/cncf/sig-security/\">cncf/tag-security</a></p><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Supply Chain Security",
+      "items": [
+        {
+          "title": "Enforce image trust with Image signing: Container Signing, Verification and Storage in an OCI registry."
+        },
+        {
+          "topic": "Image Signing",
+          "items": [
+            {
+              "title": "<p>Sign and verify images to mitigate a man in the middle (MITM) attack. Docker offers a Content Trust mechanism that allows you to cryptographically sign images using a private key. This guarantees the image, and its tags, have not been modified.</p>"
+            },
+            {
+              "title": "<a href=\"https://github.com/notaryproject/notaryproject\">Notary</a>. Implementation of TUF specification."
+            },
+            {
+              "title": "<a href=\"https://github.com/sigstore/cosign\">sigstore/Cosign</a>"
+            },
+            {
+              "title": "<a href=\"https://itnext.io/sigstore-a-solution-to-software-supply-chain-security-35bc96bddad5\">Sigstore: A Solution to Software Supply Chain Security</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/sigstore/community/blob/main/docs/zero-trust-supply-chains.pdf\">Zero-Trust supply chains with Sigstore and SPIFFE/SPIRE</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Secure the Build",
+      "items": [
+        {
+          "topic": "Hardening Code - Secure SDLC (Software Development Life Cycle)",
+          "items": [
+            {
+              "title": "[x] Do a static analysis of the code and libraries used by the code to surface any vulnerabilities in the code and its dependencies."
+            },
+            {
+              "title": "Improve the security and quality of their code. <a href=\"https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools\">OWASP Open Source Application Security tools</a>: SAST, IAST."
+            }
+          ]
+        },
+        {
+          "topic": "Secure the Image - Hardening",
+          "items": [
+            {
+              "title": "<p>You can build the container images using <a href=\"https://docs.docker.com/engine/reference/commandline/build/\">Docker</a>, <a href=\"https://github.com/GoogleContainerTools/kaniko\">Kaniko</a>.</p>"
+            },
+            {
+              "title": "<em>Reduce the attack surface</em></li>\n</ul><blockquote>\n<p>Package a single application per container. Small container images.\n   Minimize the number of layers.</p>\n</blockquote>"
+            },
+            {
+              "title": "Use the minimal OS image:"
+            },
+            {
+              "title": "<a href=\"https://hub.docker.com/_/alpine\">Alpine images</a>"
+            },
+            {
+              "title": "<a href=\"https://hub.docker.com/_/scratch\">Scratch images</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/GoogleContainerTools/distroless\">Distroless images</a>"
+            },
+            {
+              "title": "Use OS optimized for running containers:"
+            },
+            {
+              "title": "<a href=\"https://www.flatcar.org/docs/latest/installing/\">Flatcar images</a>"
+            },
+            {
+              "title": "<a href=\"https://getfedora.org/coreos/\">CodeOS by Fedora</a> replaced the Project Atomic."
+            },
+            {
+              "title": "<a href=\"https://aws.amazon.com/bottlerocket/\">Bottlerocket by Aws</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/rancher/k3os\">k3os by Rancher</a>"
+            },
+            {
+              "title": "<a href=\"https://cloud.google.com/container-optimized-os/docs/concepts/features-and-benefits\">Container-Optimized OS - COS by Google</a>, based on <a href=\"https://www.chromium.org/chromium-os/\">Chromium-os</a> used by Google</li>\n</ul><blockquote>"
+            },
+            {
+              "title": "<a href=\"https://learnk8s.io/blog/smaller-docker-images\">Do you use Alpine, distroless or vanilla images? ...</a>"
+            },
+            {
+              "title": "<a href=\"https://cloud.google.com/blog/products/containers-kubernetes/7-best-practices-for-building-containers\">7 Google best practices for building containers</a></li>\n</ul>\n</blockquote>"
+            },
+            {
+              "title": "Multi-staged builds.</li>\n</ul><blockquote>\n<p>A well-designed multi-stage build contains only the minimal binary files and dependencies required for the final image, with no build tools or intermediate files.\n  Optimize cache.</p>\n</blockquote>"
+            },
+            {
+              "title": "[x] Use official base images."
+            },
+            {
+              "title": "Avoid unknown public images."
+            },
+            {
+              "title": "[x] Rootless. Run as a non-root user. Least privileged user"
+            },
+            {
+              "title": "[x] Create a dedicated user and group on the image.</li>\n</ul><blockquote>\n<p>Do not use a UID below 10,000. For best security, always run your processes as a UID above 10,000.\nRemove setuid and setgid permissions from the images</p>\n</blockquote>"
+            },
+            {
+              "title": "[x] Avoid privileged containers, which lets a container run as root on the local machine."
+            },
+            {
+              "title": "[x] Use only the necessary Privileged Capabilities."
+            },
+            {
+              "title": "Drop kernel modules, system time, trace processes (CAP_SYS_MODULE, CAP_SYS_TIME, CAP_SYS_PTRACE )."
+            },
+            {
+              "title": "[x] Enable the <code>--read-only</code> mode in docker, if it's possible."
+            },
+            {
+              "title": "[x] Don't leave sensitive information (secrets, tokens, keys, etc) in the image."
+            },
+            {
+              "title": "[x] Not mounting Host Path."
+            },
+            {
+              "title": "[x] Use Metadata Labels for Images, such as licensing information, sources, names of authors, and relation of containers to projects or components."
+            },
+            {
+              "title": "[x] Used fixed image tag for inmutability."
+            },
+            {
+              "title": "Tagging using semantic versioning."
+            },
+            {
+              "title": "Not use mutable tags(latest,staging,etc). Use Inmutable tags(SHA-256, commit)."
+            },
+            {
+              "title": "<a href=\"https://blog.aquasec.com/docker-image-tags\">The challengue of uniquely identifying your images</a></li>\n</ul><p><code>Pulling images by digest\ndocker images --digests\ndocker pull alpine@sha256:b7233dafbed64e3738630b69382a8b231726aa1014ccaabc1947c5308a8910a7</code></p>"
+            },
+            {
+              "title": "<p>[x] Enabled Security profiles: SELinux, AppArmor, Seccomp.</p>"
+            },
+            {
+              "title": "<p>[x] Static code analysis tool for Dockerfile like a linter. <strong>Detect misconfigurations</strong></p>"
+            },
+            {
+              "title": "<a href=\"https://github.com/hadolint/hadolint\">Hadolint</a>"
+            },
+            {
+              "title": "Packers (including encrypters), and downloaders are all able to evade static scanning by, for example, encrypting binary code that is only executed in memory, making the malware active only in runtime."
+            },
+            {
+              "title": "Trivy detect missconfigurations"
+            }
+          ]
+        },
+        {
+          "topic": "Image Scanning",
+          "items": [
+            {
+              "title": "[x] Scan image for Common Vulnerabilities and Exposures (CVE)"
+            },
+            {
+              "title": "[x] Check image for secrets"
+            },
+            {
+              "title": "[x] Prevent attacks using the Supply Chain Attack"
+            },
+            {
+              "title": "[x] Used dynamic analysis techniques for containers to prevent runtime bad behaviours. </li>\n</ul><p><strong>Container Security Scanners</strong></p>"
+            },
+            {
+              "title": "<a href=\"https://github.com/aquasecurity/trivy\">Trivy by AquaSecurity</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/quay/clair\">Clair by Quay</a>"
+            },
+            {
+              "title": "<a href=\"https://anchore.com/opensource/\">Anchore</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/eliasgranderubio/dagda/\">Dagda</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/GitGuardian/ggshield/\">GitGuardian Shield</a><p>Comparing the container scanners results:\n- <a href=\"https://raesene.github.io/blog/2020/06/21/Container_Vulnerability_Scanning_Fun/\">Container Vulnerability Scanning Fun by Rory</a>\n- <a href=\"https://www.a10o.net/devsecops/docker-image-security-static-analysis-tool-comparison-anchore-engine-vs-clair-vs-trivy/\">Comparison – Anchore Engine vs Clair vs Trivy by Alfredo Pardo</a></p><p><strong>More Material about build containers</strong>\n- <a href=\"https://docs.microsoft.com/en-us/azure/container-registry/container-registry-best-practices\">Azure best practices for build containers</a>\n- <a href=\"https://docs.docker.com/develop/develop-images/dockerfile_best-practices/\">Docker best practices for build containers</a>\n- <a href=\"https://cloud.google.com/solutions/best-practices-for-building-containers\">Google best practices for build containers</a></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Secure the Container Registry",
+      "items": [
+        {
+          "title": "<p>Best configurations with ECR, ACR, Harbor, etc. Best practices.\n- [x] Lock down access to the image registry (who can push/pull) to restrict which users can upload and download images from it. Uses Role Based Access Control (RBAC)</p><blockquote>\n<p>There is no guarantee that the image you are pulling from the registry is trusted.\n   It may unintentionally contain security vulnerabilities, or may have intentionally been replaced with an image compromised by attackers.</p>\n</blockquote>"
+        },
+        {
+          "title": "[x] Use a private registry deployed behind firewall, to reduce the risk of tampering."
+        },
+        {
+          "topic": "Registry Resources",
+          "items": [
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/azure/container-registry/security-controls-policy\">Azure ACR</a>"
+            },
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/azure/container-registry/container-registry-best-practices\">Azure best practices for Azure Container Registry</a>"
+            },
+            {
+              "title": "<a href=\"https://docs.aws.amazon.com/AmazonECR/latest/userguide/security.html\">Amazon ECR</a>"
+            },
+            {
+              "title": "<a href=\"https://cloud.google.com/artifact-registry/docs/docker/authentication\">Google Artifact Registry </a>"
+            },
+            {
+              "title": "<a href=\"https://goharbor.io/\">Harbor</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Secure the Container Runtime",
+      "items": [
+        {
+          "title": "<p>See the following container runtimes, there are three main types of container runtimes—low-level runtimes, high-level runtimes, and  virtualized runtimes or sandboxed.</p><ol>\n<li>Low-Level Container Runtimes:"
+        },
+        {
+          "title": "<a href=\"https://github.com/opencontainers/runc\">runC</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/containers/crun\">crun</a>"
+        },
+        {
+          "title": "<a href=\"https://containerd.io/\">containerd</a>"
+        },
+        {
+          "title": "High-Level Container Runtimes"
+        },
+        {
+          "title": "<a href=\"https://docs.docker.com\">Docker Engine</a>"
+        },
+        {
+          "title": "<a href=\"https://podman.io/\">Podman</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/cri-o/cri-o\">CRI-O</a> - OCI-based implementation of Kubernetes Container Runtime Interface"
+        },
+        {
+          "title": "<a href=\"https://docs.mirantis.com/mcr/20.10/overview.html\">Mirantes Container Runtime</a>"
+        },
+        {
+          "title": "Sandboxed and Virtualized Container Runtimes"
+        },
+        {
+          "title": "<a href=\"https://gvisor.dev/\">gVisor</a>"
+        },
+        {
+          "title": "<a href=\"https://nabla-containers.github.io/\">nabla-containers</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/kata-containers\">kata-containers</a></li>\n</ol>"
+        },
+        {
+          "topic": "Why is important Runtime Security?",
+          "items": [
+            {
+              "title": "Detection of IOC (Indicator Of Compromise)"
+            },
+            {
+              "title": "Detect Zero Days attack"
+            },
+            {
+              "title": "Compliance requirement"
+            },
+            {
+              "title": "Recommended in highly dynamic environments"
+            }
+          ]
+        },
+        {
+          "topic": "Constraints",
+          "items": [
+            {
+              "title": "Event context"
+            },
+            {
+              "title": "Safety"
+            },
+            {
+              "title": "Low overhead"
+            },
+            {
+              "title": "Wide support of kernels</li>\n</ul><p>Enable detection of anomalous behaviour in applications.</p>"
+            },
+            {
+              "title": "[x] Applied the secure configurations in the container runtime. By default is insecure."
+            },
+            {
+              "title": "[x] Restrict access to container runtime daemon/APIs"
+            },
+            {
+              "title": "[x] Use if it's possible in Rootless Mode."
+            }
+          ]
+        },
+        {
+          "topic": "Docker Security",
+          "items": [
+            {
+              "title": "[x] Avoid misconfigured exposed Docker API Ports, attackers used the misconfigured port to deploy and run a malicious image that contained malware that was specifically designed to evade static scanning."
+            },
+            {
+              "title": "[x] TLS encryption between the Docker client and daemon. Do not expose the Docker engine using Unix socket or remotely using http.</li>\n</ul><blockquote>\n<p>Never make the daemon socket available for remote connections, unless you are using Docker’s encrypted HTTPS socket, which supports authentication.</p>\n</blockquote>"
+            },
+            {
+              "title": "<p>[x] Limit the usage of mount Docker socket in a container in an untrusted environment.</p>"
+            },
+            {
+              "title": "<p>[x] Do not run Docker images with an option that exposes the socket in the container.</p>\n<p>-v /var/run/docker.sock://var/run/docker.sock</p>\n</li>\n</ul><blockquote>\n<p>The Docker daemon socket is a Unix network socket that facilitates communication with the Docker API. By default, this socket is owned by the root user. If anyone else obtains access to the socket, they will have permissions equivalent to root access to the host.</p>\n</blockquote>"
+            },
+            {
+              "title": "[x] Run Docker in <a href=\"https://docs.docker.com/engine/security/rootless/\">Rootless Mode</a>. <code>docker context use rootless</code>"
+            },
+            {
+              "title": "[x] Enable the <a href=\"https://docs.docker.com/engine/security/userns-remap/\">user namespaces</a>."
+            },
+            {
+              "title": "<p>[x] Enable Docker Content Trust. Docker. <code>DOCKER_CONTENT_TRUST=1</code>\n      . Docker Content Trust implements <a href=\"https://theupdateframework.io/\">The Update Framework</a> (TUF)\n      . Powered by <a href=\"https://github.com/notaryproject/notary\">Notary</a>, an open-source TUF-client and server that can operate over arbitrary trusted collections of data.</p>"
+            },
+            {
+              "title": "<p>[x] Do not run Docker without the default <strong>seccomp profile</strong>: <code>seccomp=unconfined</code></p>\n</li>\n</ul><blockquote>"
+            },
+            {
+              "title": "<a href=\"https://docs.docker.com/engine/security/seccomp/\">Seccomp enabled by default</a>. See the Docker profile <a href=\"https://docs.docker.com/engine/security/seccomp/\">here</a>"
+            },
+            {
+              "title": "<a href=\"https://martinheinz.dev/blog/41\">Hardening Docker and Kubernetes with seccomp</a>\n</blockquote><p><strong>More Material about Docker Security</strong>\n- <a href=\"https://github.com/docker/labs/tree/master/security\">Docker Security Labs</a>\n- <a href=\"https://github.com/docker/docker-bench-security\">CIS Docker Bench</a>.\n- <a href=\"https://docs.docker.com/engine/security/trust/\">Content trust in Docker</a>\n- <a href=\"https://github.com/DockerSecurityPlayground/DSP\">Docker Security Playground - DSP</a> - Network Security and Penetration Test techniques</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Secure the Infrastructure",
+      "items": [
+        {
+          "title": "<p><strong>Risk:</strong>\n- If host is compromised, the container will be too.\n- Kernel exploits</p><p><strong>Best practices:</strong>\n- [x] Keep the host kernel patched to prevent a range of known vulnerabilities, many of which can result in container escape. Since the kernel is shared by the container and the host, the kernel exploits when an attacker manages\nto run on a container can directly affect the host.\n- [x] Use CIS-Benchmark for the operating system.</p>"
+        },
+        {
+          "title": "[x] Use secure computing (seccomp) to restrict host system call (syscall) access from containers."
+        },
+        {
+          "title": "[x] Use Security-Enhanced Linux (SELinux) to further isolate containers."
+        }
+      ]
+    },
+    {
+      "topic": "Secure the Data",
+      "items": [
+        {
+          "title": "<p>[x] Don't leak sensitive info in the images, avoid using environment variables for your sensitive information.</p>\n<blockquote>\n<p>Secrets are Digital credentials:\n- passwords\n- API keys &amp; Tokens\n- SSH keys\n- Private certificates for secure communication, transmitting and receiving data (TLS, SSL, and so on)\n- Private encryption keys for systems like PGP\n- Database names or connection strings.\n- Sensitive configuration settings (email address, usernames, debug flags, etc.)</p>\n</blockquote>"
+        },
+        {
+          "title": "<p>[x] Use a proper filesystem encryption technology for container storage</p>"
+        },
+        {
+          "title": "[x] Use volume mounts to pass secrets to a container at runtime"
+        },
+        {
+          "title": "[x] Provide write/execute access only to the containers that need to modify the data in a specific host filesystem path"
+        },
+        {
+          "title": "[x] OPA to write controls like only allowing Read-only Root Filesystem access, listing allowed host filesystem paths to mount, and listing allowed Flex volume drivers."
+        },
+        {
+          "title": "[x] Automatically scan container images for sensitive data such as credentials, tokens, SSH keys, TLS certificates, database names or connection strings and so on, before pushing them to a container registry (can be done locally and in CI)."
+        },
+        {
+          "title": "<p>[x] Limit storage related syscalls and capabilities to prevent runtime privilege escalation.</p>"
+        },
+        {
+          "title": "<p>[x] Implement RBAC, or role-based access control. Every human or application only needs the minimum secrets required to operate, nothing more. <strong>Principle of Least Privilege</strong>.</p>"
+        },
+        {
+          "title": "[x] Run audits regularly. Centralized audit trails are the key to knowing all the key security events."
+        },
+        {
+          "title": "[x] Rotate secrets, a standard security practice."
+        },
+        {
+          "title": "[x] Automatically create and store secrets"
+        },
+        {
+          "topic": "Secrets Management Tools",
+          "items": [
+            {
+              "title": "<p>Open source tools:\n- <a href=\"https://github.com/Yelp/detect-secrets\">detect-secrets by Yelp</a>: detecting and preventing secrets in code.\n- <a href=\"https://github.com/awslabs/git-secrets#nix-linux-macos\">git-secrets by awslabs</a>: Prevents you from committing secrets and credentials into git repositories</p><p>Cloud Provider Key Management\n- <a href=\"https://aws.amazon.com/secrets-manager/\">AWS Secrets Manager</a>\n- <a href=\"https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts\">Azure Key Vault</a>\n- <a href=\"https://cloud.google.com/secret-manager\">Google Secret Manager</a></p><p>Enterprise secrets vault:\n- <a href=\"https://www.vaultproject.io/\">HashiCorp Vault</a>\n- <a href=\"https://www.cyberark.com/products/secrets-manager-enterprise/\">CyberArk Conjur</a></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Secure the Workloads... Running the containers",
+      "items": [
+        {
+          "title": "<p>[x] Avoid privileged containers</p>\n<p>• Root access to all devices\n• Ability to tamper with Linux security modules like AppArmor and SELinux\n• Ability to install a new instance of the Docker platform, using the host’s kernel capabilities, and run Docker within Docker.</p>\n</li>\n</ul><blockquote>\n<p>To check if the container is running in privileged mode\n       <code>docker inspect --format =’{{. HostConfig.Privileged}}’[container_id]</code></p>\n</blockquote>"
+        },
+        {
+          "title": "[x] Limit container resources.</li>\n</ul><blockquote>\n<p>When a container is compromised, attackers may try to make use of the underlying host resources to perform malicious activity.\n   Set memory and CPU usage limits to minimize the impact of breaches for resource-intensive containers.</p>\n</blockquote><p><code>docker run -d --name container-1 --cpuset-cpus 0 --cpu-shares 768 cpu-stress</code></p>"
+        },
+        {
+          "title": "<p>[x] Preventing a fork bomb. <code>docker run --rm -it --pids-limit 200 debian:jessie</code></p>"
+        },
+        {
+          "title": "<p>[x] Segregate container networks.</p>"
+        },
+        {
+          "title": "<p>The default bridge network exists on all Docker hosts—if you do not specify a different network, new containers automatically connect to it.</p>"
+        },
+        {
+          "title": "Use custom bridge networks to control which containers can communicate between them, and to enable automatic DNS resolution from container name to IP address."
+        },
+        {
+          "title": "Ensure that containers can connect to each other only if absolutely necessary, and avoid connecting sensitive containers to public-facing networks."
+        },
+        {
+          "title": "<p>Docker provides network drivers that let you create your own bridge network, overlay network, or macvlan network. If you need more control, you can create a Docker network plugin.</p>"
+        },
+        {
+          "title": "<p>[x] Improve container isolation.</p>\n</li>\n</ul><blockquote>\n<p>Protecting a container is exactly the same as protecting any process running on Linux.\n  Ideally, the operating system on a container host should protect the host kernel from container escapes, and prevent mutual influence between containers.</p>\n</blockquote>"
+        },
+        {
+          "title": "[x] Set filesystem and volumes to Read only. </li>\n</ul><blockquote>\n<p>This can prevent malicious activity such as deploying malware on the container or modifying configuration.\n        <code>docker run --read-only alpine</code></p>\n</blockquote>"
+        },
+        {
+          "title": "[x] Complete lifecycle management restrict system calls from Within Containers"
+        },
+        {
+          "title": "[x] Monitor Container Activity. Analyze collected events to detect suspicious behaviourial patterns."
+        },
+        {
+          "title": "[x] Create an incident response process to ensure rapid response in the case of an attack."
+        },
+        {
+          "title": "[x] Apply automated patching"
+        },
+        {
+          "title": "[x] Confirms Inmutability. Implement drift prevention to ensure container inmutability."
+        },
+        {
+          "title": "[x] Ensure you have robust auditing and forensics for quick troubleshooting and compliance reporting."
+        }
+      ]
+    },
+    {
+      "topic": "Common Containers Attacks",
+      "items": [
+        {
+          "title": "Unsecured Docker daemons"
+        },
+        {
+          "title": "<a href=\"https://unit42.paloaltonetworks.com/cetus-cryptojacking-worm/\">Cetus: Cryptojacking Worm Targeting Docker Daemons</a>"
+        },
+        {
+          "title": "<a href=\"https://unit42.paloaltonetworks.com/black-t-cryptojacking-variant/\">Black-T: New Cryptojacking Variant from TeamTNT</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Container Security Guides",
+      "items": [
+        {
+          "title": "<a href=\"https://csrc.nist.gov/publications/detail/sp/800-190/final\">SP 800-190 - Application Container Security Guide by NIST</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Further reading:",
+      "items": [
+        {
+          "title": "<a href=\"https://www.kernel.org/doc/ols/2008/ols2008v1-pages-163-172.pdf\">Linux Capabilities</a>: making them work, published in hernel.org 2008."
+        },
+        {
+          "title": "<a href=\"https://man7.org/conf/lpc2015/limiting_kernel_attack_surface_with_seccomp-LPC_2015-Kerrisk.pdf\">Using seccomp to limit the kernel attack surface</a>"
+        },
+        {
+          "title": "<a href=\"https://blog.aquasec.com/docker-security-best-practices\">Docker Security Best Practices by Rani Osnat - AquaSecurity</a>"
+        },
+        {
+          "title": "<a href=\"https://blog.aquasec.com/devsecops-with-trivy-github-actions\">Applying devsecops in a Golang app with trivy-github-actions by Daniel Pacak - AquaSecurity</a>"
+        },
+        {
+          "title": "<a href=\"https://spacelift.io/blog/docker-security\">21 Docker Security Best Practices – Deamon, Image &amp; Container by James Walker - Spacelift</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Collaborate",
+      "items": [
+        {
+          "title": "<p>If you find any typos, errors, outdated resources; or if you have a different point of view. Please open a pull request or contact me.</p><p>Pull requests and stars are always welcome 🙌</p>"
+        }
+      ]
+    }
+  ]
+}

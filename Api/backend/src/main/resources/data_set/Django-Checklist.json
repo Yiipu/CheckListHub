@@ -1,0 +1,259 @@
+{
+  "id": 68,
+  "header": "Django-Checklist",
+  "topicList": [
+    "Setup",
+    "Create Database",
+    "Define a Model",
+    "Migrate your Model",
+    "Create a SuperUser for the Admin Console",
+    "Django Extensions",
+    "Adding the Project URL",
+    "Creating a View",
+    "Adding the App URL",
+    "Creating the Template",
+    "Base HTML",
+    "CRUD",
+    "Additional Resources"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Setup",
+      "items": [
+        {
+          "topic": "Install all dependencies and created our virtual environment",
+          "items": [
+            {
+              "title": " Make a directory for the project"
+            },
+            {
+              "title": " Create a virtual environment <code>pip3 install virtualenv</code>"
+            },
+            {
+              "title": " <code>python3 -m venv .env</code> - .env can be named anything you want."
+            },
+            {
+              "title": " <code>source .env/bin/activate</code> - this will activate the virtual environment"
+            },
+            {
+              "title": " Don't forget to active each time you work on your project!"
+            },
+            {
+              "title": " You should see your environment name in the line of your terminal (i.e. .env)"
+            },
+            {
+              "title": " Install Django <code>pip install django</code>"
+            },
+            {
+              "title": " Install the library for connection Django to PostgreSQL<code>pip install psycopg2-binary</code>"
+            }
+          ]
+        },
+        {
+          "topic": "Start the Django Project and App",
+          "items": [
+            {
+              "title": " <code>django-admin startproject ____ .</code> - the . on the end will create the project without creating a subfolder. (fill in the blank with your project name)"
+            },
+            {
+              "title": " Create our app: <code>django-admin startapp ____</code> (fill in the blank with your app name)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Create Database",
+      "items": [
+        {
+          "title": " <code>psql -d postgres</code> - to enter PostgreSQL"
+        },
+        {
+          "title": " Create a database: <code>CREATE DATATBASE _____;</code> (fill in the blank with your database name)"
+        },
+        {
+          "title": " Create a dummy login: <code>CREATE USER ______ WITH PASSWORD '____';</code>  (fill in the blanks with your username and password)"
+        },
+        {
+          "title": " Grant privileges to your user: <code>GRANT ALL PRIVILEGES ON DATABASE _____ TO ____;</code>  (the first blank is your database name, the second is your username)"
+        },
+        {
+          "title": " You can now exit psql: <code>\\q</code>"
+        },
+        {
+          "title": " Since you are using PostgreSQL, you will need update your settings.py file.  Fill in the blanks accordingly\n<code>python\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': '____',\n        'USER': '____',\n        'PASSWORD': '____',\n        'HOST': 'localhost'\n    }\n}</code>"
+        },
+        {
+          "title": " Finally at the end of the INSTALLED_APPS section, add a new line with your app name."
+        },
+        {
+          "title": " Back in the terminal run: <code>python3 manage.py runserver</code>"
+        },
+        {
+          "title": " Navigate in your browser to: <code>localhost:8000</code> to see the Django welcome page"
+        }
+      ]
+    },
+    {
+      "topic": "Define a Model",
+      "items": [
+        {
+          "title": "<p> Within your file structure, you should see a file called <code>models.py</code>.  Below is an example model.\n```python\nclass Artist(models.Model):\n    name = models.CharField(max_length=100)\n    nationality = models.CharField(max_length=100)\n    photo_url = models.TextField()</p>\n<p>def <strong>str</strong>(self):\n    return self.name\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Migrate your Model",
+      "items": [
+        {
+          "title": " In your terminal type: <code>python manage.py makemigrations</code>.  This will generate a file that gets all of it's data from the code in the <code>models.py</code> file.  The new file will be called <code>0001_initial.py</code>"
+        },
+        {
+          "title": " Every time you make changes to the <code>models.py</code> file, you will need to run the above command."
+        },
+        {
+          "title": " Once you are done with your changes, you will run: <code>python manage.py migrate</code>"
+        },
+        {
+          "title": " You can check that your database now shows your new tables."
+        }
+      ]
+    },
+    {
+      "topic": "Create a SuperUser for the Admin Console",
+      "items": [
+        {
+          "title": " In your terminal: <code>python manage.py createsuperuser</code>"
+        },
+        {
+          "title": " You will be prompted to create a username and password.  You want this to be a real login for the superuser so take note."
+        },
+        {
+          "title": "<p> In the <code>admin.py</code> file, you can now add the admin info\n```python\n    from django.contrib import admin\n    from .models import Artist</p>\n<p>admin.site.register(Artist)\n<code>``\n-  Test the work in your browser:</code>localhost:8000/admin`\n-  You should have access to everything!</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Django Extensions",
+      "items": [
+        {
+          "title": " In your Terminal <code>pip install django-extensions</code>"
+        },
+        {
+          "title": " Add <code>django_extensions</code> to your <code>INSTALLED_APPS</code> list:\n<code>python\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    '_____',  (fill in the blank with your project name)\n    'django_extensions'\n]</code>"
+        },
+        {
+          "title": " Now you can run <code>python manage.py shell_plus</code> to get the python shell"
+        },
+        {
+          "title": " Install ipython to create a nicer interface: <code>pip install ipython</code>"
+        },
+        {
+          "title": " You can now run the python shell to test and run within your terminal: <code>python manage.py shell_plus --ipython</code>"
+        },
+        {
+          "title": " Example queries/inputs:\n```bash"
+        }
+      ]
+    },
+    {
+      "topic": "Adding the Project URL",
+      "items": [
+        {
+          "title": " Next we will create a URL to access our view through.  In the projects <code>urls.py</code> file, add the following.  Here you can see the connection to the urls file and this will render at localhost:8000.  The last line will render at localhost:8000/songs/.\n```python\nfrom django.contrib import admin\nfrom django.urls import path, include<p>urlpatterns = [\n    path('admin', admin.site.urls),\n    path('', include('_____.urls'))\n]\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Creating a View",
+      "items": [
+        {
+          "title": " In <code>views.py</code> add a view to pass data to our templates"
+        },
+        {
+          "title": " Here we are creating a new view called artist_list.  This list will return all the artists.  In the render, you can see we are reference an HTML file and passing the values of artists to the HTML file.  We will create the HTML file in a minute.\n```python\nfrom django.shortcuts import render\nfrom .models import Artist, Song<p>def artist_list(request):\n    artists = Artist.objects.all()\n    return render(request, 'tunr/artist_list.html', {'artists': artists})\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Adding the App URL",
+      "items": [
+        {
+          "title": " Next we will create a URL to access our view through.  In the app folder, create a file called <code>urls.py</code>.  Here you set the urls paths for each template view.  Add your view names to the underlines below.\n```python\nfrom django.urls import path\nfrom . import views<p>urlpatterns = [\n    path('', views.<strong><em>_, name='</em></strong>'),\n]\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Creating the Template",
+      "items": [
+        {
+          "title": " In the app folder, create a new folder called templates.  within that folder create another folder called your app name. Finally, create an HTML file matching your above view name.  Per the example referenced here: <code>artist_list.html</code>"
+        },
+        {
+          "title": " Within this file, create html to show your info.\n```html<ul>\n    {% for artist in artists %}\n        <li>\n            {{ artist.name }}\n        </li>\n    {% endfor %}\n</ul><p><code>``\n-  You can now run the server and navigate to any path you defined.\n-  Then run your server to see your changes:</code>python manage.py runserver`</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Base HTML",
+      "items": [
+        {
+          "title": " Here you can create a <code>base.html</code> file that will hold you basic page layout and you will then insert each template into that base as you navigate around the webpage.  This file will also be stored in the <code>templates</code> folder."
+        },
+        {
+          "title": " If you create a CSS file, you will link it with the <code>{% load static %}</code> and the typical <code>&lt;link&gt;</code> tag you see below."
+        },
+        {
+          "title": " the <code>{% block content %}{% endblock %}</code> line is where your other templates will be inserted once they are activated through url.<br/>\n```HTML\n{% load static %}<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\"/>\n<meta content=\"width=&gt;, initial-scale=1.0\" name=\"viewport\"/>\n<meta content=\"ie=edge\" http-equiv=\"X-UA-Compatible\"/>\n<title>Tunr</title>\n<link href=\"{% static 'css/tunr.css' %}\" rel=\"stylesheet\"/>\n</head>\n<body>\n<h1>Tun.r</h1>\n<nav>\n<a href=\"/songs\">Songs</a>\n<a href=\"/\">Artists</a>\n</nav>\n    {% block content %}{% endblock %}\n</body>\n</html><p><code>-  In each of your template files, you will need to state that you are adding that block. Note the first two lines and the last line.  the word 'content' can be anything you want but just had to match from base to templates.</code>HTML\n{% extends 'tunr/base.html' %} \n{% block content %}</p>"
+        }
+      ]
+    },
+    {
+      "topic": "CRUD",
+      "items": [
+        {
+          "topic": "Create",
+          "items": []
+        },
+        {
+          "topic": "Edit",
+          "items": [
+            {
+              "title": " Edit is very similar to create with a few simple differences."
+            }
+          ]
+        },
+        {
+          "topic": "Delete",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Additional Resources",
+      "items": [
+        {
+          "title": "<a href=\"https://git.generalassemb.ly/seir-1118/django-models\">GA Lesson</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.djangoproject.com/en/2.1/ref/django-admin/\">Django Admin Documentation</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.djangoproject.com/en/2.1/topics/db/models/\">Django Models Documentation</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.djangoproject.com/en/2.1/ref/models/fields/#model-field-types\">Django Built-In Model Field Types</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.djangoproject.com/en/2.1/topics/migrations/\">Django Migration Documentation</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.djangoproject.com/en/2.1/howto/initial-data/\">Django Seed Data</a>"
+        },
+        {
+          "title": "<a href=\"https://docs.djangoproject.com/en/1.11/ref/models/options/\">Django Model Meta Options</a>"
+        }
+      ]
+    }
+  ]
+}

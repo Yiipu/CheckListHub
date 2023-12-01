@@ -1,0 +1,316 @@
+{
+  "id": 152,
+  "header": "performance-matters-checklist",
+  "topicList": [
+    "Table of Contents",
+    "Miscellaneous",
+    "Audits",
+    "HTTP optimisation",
+    "Caching",
+    "Minification",
+    "Perceived Performance",
+    "Performance",
+    "Backend optimisation"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<a href=\"#miscellaneous\">Miscellaneous</a>"
+        },
+        {
+          "title": "<a href=\"#audits\">Audits</a>"
+        },
+        {
+          "title": "<a href=\"#http-optimisation\">HTTP optimisation</a>"
+        },
+        {
+          "title": "<a href=\"#http1\">HTTP/1</a>"
+        },
+        {
+          "title": "<a href=\"#http2\">HTTP/2</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#caching\">Caching</a>"
+        },
+        {
+          "title": "<a href=\"#minification\">Minification</a>"
+        },
+        {
+          "title": "<a href=\"#images\">Images</a>"
+        },
+        {
+          "title": "<a href=\"#css\">CSS</a>"
+        },
+        {
+          "title": "<a href=\"#html\">HTML</a>"
+        },
+        {
+          "title": "<a href=\"#javascript\">JavaScript</a>"
+        },
+        {
+          "title": "<a href=\"#fonts\">Fonts</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#perceived-performance\">Perceived Performance</a>"
+        },
+        {
+          "title": "<a href=\"#performance\">Performance</a>"
+        },
+        {
+          "title": "<a href=\"#images-1\">Images</a>"
+        },
+        {
+          "title": "<a href=\"#css-1\">CSS</a>"
+        },
+        {
+          "title": "<a href=\"#html-1\">HTML</a>"
+        },
+        {
+          "title": "<a href=\"#javascript-1\">JavaScript</a>"
+        },
+        {
+          "title": "<a href=\"#fonts-1\">Fonts</a></li>\n</ul>"
+        },
+        {
+          "title": "<a href=\"#backend-optimisation\">Backend optimisation</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Miscellaneous",
+      "items": [
+        {
+          "title": "Tip: Different profile / user in Chrome without extensions"
+        },
+        {
+          "title": "Use the proper <code>lang</code>"
+        },
+        {
+          "title": "Use a CDN"
+        },
+        {
+          "title": "Try to avoid redirects, these can impose high latency overhead"
+        }
+      ]
+    },
+    {
+      "topic": "Audits",
+      "items": [
+        {
+          "title": "The optimisation of the visual progress is terrible\n    The website does not show any content till every content is loaded\n    This problem leads up to a huge visual progress area"
+        }
+      ]
+    },
+    {
+      "topic": "HTTP optimisation",
+      "items": [
+        {
+          "topic": "HTTP/1",
+          "items": [
+            {
+              "title": "Don’t <a href=\"http://i.imgur.com/HkoOZYp.jpg\">include many (small) files</a>:\n    HTTP/1 can only deal with 6-8 files at a time"
+            }
+          ]
+        },
+        {
+          "topic": "HTTP/2",
+          "items": [
+            {
+              "title": "<a href=\"https://tools.keycdn.com/http2-test\">Enable HTTP2</a>\n<a href=\"https://http2.github.io/\">HTTP/2</a> is an new protocol that is introduced to increase\n    the performance, specifically, end-user perceived latency, network and server resource\n    usage. One major advantage is to allow the use of a single connection from browsers to\n    a Web site."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Caching",
+      "items": [
+        {
+          "title": "Make sure that all non-HTML files have a caching parameter specified <a href=\"https://varvy.com/pagespeed/cache-control.html\">more info</a>"
+        },
+        {
+          "title": "Specify an expiration at least one week in the future for resources"
+        }
+      ]
+    },
+    {
+      "topic": "Minification",
+      "items": [
+        {
+          "topic": "Images",
+          "items": [
+            {
+              "title": "Compress images (such as with <a href=\"https://i.onthe.io/google_speed\">PageSpeed Image Optimizer</a>\n    or the techniques <a href=\"https://developers.google.com/speed/docs/insights/OptimizeImages\">described by Google</a>)"
+            },
+            {
+              "title": "Images with little detail and small colour pallet, are smaller with png format instead of jpg. If possible, use svg."
+            }
+          ]
+        },
+        {
+          "topic": "CSS",
+          "items": [
+            {
+              "title": "Minify CSS"
+            }
+          ]
+        },
+        {
+          "topic": "HTML",
+          "items": [
+            {
+              "title": "Minify HTML"
+            }
+          ]
+        },
+        {
+          "topic": "JavaScript",
+          "items": [
+            {
+              "title": "Minify the JavaScript: either manually through\n    <a href=\"https://jscompress.com/\"><code>jscompress</code></a>,\n    <a href=\"https://www.minifier.org/\"><code>minifier.org</code></a>, or\n    with something UglifyJS, potentially through Gulp"
+            }
+          ]
+        },
+        {
+          "topic": "Fonts",
+          "items": [
+            {
+              "title": "Add a fallback font"
+            },
+            {
+              "title": "Use font subsetting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Perceived Performance",
+      "items": [
+        {
+          "title": "Use a placeholder for background images (blurred/loading like) to\n    indicate that here is and should be an image at that position"
+        }
+      ]
+    },
+    {
+      "topic": "Performance",
+      "items": [
+        {
+          "topic": "Images",
+          "items": [
+            {
+              "title": "Use newer image types (<code>.webp</code>; <code>.jxr</code> <a href=\"https://i.onthe.io/jxr\">jpg -&gt; jxr</a>)"
+            },
+            {
+              "title": "Use inline images for the hero image instead of a background image"
+            },
+            {
+              "title": "Add <code>srcset</code>s and <code>sizes</code>"
+            },
+            {
+              "title": "Use <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture\"><code>&lt;picture&gt;</code></a>s"
+            },
+            {
+              "title": "Use (inline) <code>svg</code> when possible"
+            },
+            {
+              "title": "Serve images in a proper size\n    This will improve load time and save cellular data\n    If you provide images larger than the user needs, you are just wasting bytes"
+            },
+            {
+              "title": "Use client hints"
+            },
+            {
+              "title": "SVG's are smaller but they do not render always faster than other formats. Especially when they are very complex. Render speed is also included with the load time of content."
+            }
+          ]
+        },
+        {
+          "topic": "CSS",
+          "items": [
+            {
+              "title": "Add inline critical CSS (see <a href=\"https://css-tricks.com/authoring-critical-fold-css/\">Authoring Critical Above-the-Fold CSS</a>)"
+            },
+            {
+              "title": "Remove unused CSS files"
+            },
+            {
+              "title": "<a href=\"http://i.imgur.com/lc1K2xM.jpg\">Remove unused selectors</a> (see <a href=\"https://unused-css.com\">unused-css</a>)"
+            },
+            {
+              "title": "Reduce render-blocking stylesheets if it isn’t critical (such as with <a href=\"https://github.com/filamentgroup/loadCSS\"><code>loadCSS</code></a>)"
+            }
+          ]
+        },
+        {
+          "topic": "HTML",
+          "items": [
+            {
+              "title": "Remove inline styles"
+            },
+            {
+              "title": "Use a minimal amount of classes"
+            }
+          ]
+        },
+        {
+          "topic": "JavaScript",
+          "items": [
+            {
+              "title": "Concatenate JavaScript files"
+            },
+            {
+              "title": "Load JavaScript and CSS later so they don’t block rendering"
+            },
+            {
+              "title": "Move script links in <code>&lt;head&gt;</code> to bottom of document or add <code>defer</code> and <code>async</code> if they are\n    not necessary to render above-the-fold content"
+            },
+            {
+              "title": "Remove jQuery"
+            },
+            {
+              "title": "Add small, single purpose scripts inline"
+            }
+          ]
+        },
+        {
+          "topic": "Fonts",
+          "items": [
+            {
+              "title": "Use something like <code>font-display: swap</code>"
+            }
+          ]
+        },
+        {
+          "topic": "Animations",
+          "items": [
+            {
+              "title": "Remove <code>overflow: hidden;</code> from animating elements and their parent container as\n    <code>overflow: hidden</code> makes all children trigger Layout"
+            },
+            {
+              "title": "Look out for <a href=\"https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/\">Paint and Layout triggering effects</a>"
+            },
+            {
+              "title": "Use <code>transform</code>, <code>clip</code> and <code>opacity</code> for high performing animations <a href=\"https://csstriggers.com/\">CSS Triggers</a>"
+            },
+            {
+              "title": "In JavaScript use <code>requestAnimationFrame</code> instead of <code>setInterval</code> for higher performance (<a href=\"https://developer.mozilla.org/nl/docs/Web/API/Window/requestAnimationFrame\">MDN rAF</a>)"
+            },
+            {
+              "title": "Use <code>will-change</code> wisely (<a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/will-change\">MDN will-change</a>)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Backend optimisation",
+      "items": [
+        {
+          "title": "If you’re using templates (such as in wordpress), make sure they don’t\n    include things you aren’t using"
+        }
+      ]
+    }
+  ]
+}

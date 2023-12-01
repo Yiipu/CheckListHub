@@ -1,0 +1,113 @@
+{
+  "id": 21,
+  "header": "awesome-security-checklist",
+  "topicList": [
+    "Table of Contents",
+    "Web Applications"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<a href=\"#web-applications\">Web Applications</a>"
+        },
+        {
+          "title": "Basic Security Checklist"
+        },
+        {
+          "title": "Wordpress Security Checklist"
+        },
+        {
+          "title": "NodeJS Security Checklist"
+        },
+        {
+          "title": "Ruby on Rails Security Checklist"
+        }
+      ]
+    },
+    {
+      "topic": "Web Applications",
+      "items": [
+        {
+          "title": "Basic Security Checklist - Mirror for <a href=\"https://securitychecklist.org\">securitychecklist.org</a>. A set of clear TODO's for hosting secure sites, featuring TLS, strong ciphers, security headers, fail2ban, SSH configs, etc.."
+        },
+        {
+          "title": "[x] Is the website only served over https?\n  <code>bash\n  Test:\n      $ curl -s -I http://example.org | grep '^HTTP'\n      HTTP/1.1 301 Moved Permanently\n      $ curl -s -I https://example.org | grep '^HTTP'\n      HTTP/1.1 200 OK</code>"
+        },
+        {
+          "title": "[x] Is the HSTS http-header set?\n  <code>bash\n  Test:\n      $ curl -s -I https://example.org | grep '^Strict'\n      Strict-Transport-Security: max-age=63072000; includeSubdomains;</code>"
+        },
+        {
+          "title": "[x] Is the server certificate at least 4096 bits?\n  <code>bash\n  Test:\n      $ openssl s_client -showcerts -connect example.org:443 |&amp; grep '^Server public key'\n      Server public key is 4096 bit</code>"
+        },
+        {
+          "title": "[x] Is TLS1.2 the only supported protocol?\n  <code>bash\n  Test:\n      $ curl --sslv3 https://example.org\n      curl: (35) Server aborted the SSL handshake\n      $ curl --tlsv1.0 -I https://example.org\n      curl: (35) Server aborted the SSL handshake\n      $ curl --tlsv1.1 -I https://example.org\n      curl: (35) Server aborted the SSL handshake\n      $ curl --tlsv1.2 -s -I https://example.org | grep 'HTTP'\n      HTTP/1.1 200 OK</code>"
+        },
+        {
+          "title": "[x] Do all supported symmetric ciphers use at least 256 bit keys?\n  <code>bash\n  Test:\n      $ nmap --script ssl-enum-ciphers -p 443 example.org\n      PORT    STATE SERVICE\n      443/tcp open  https\n      | ssl-enum-ciphers:\n      |   TLSv1.2:\n      |     ciphers:\n      |       TLS_DHE_RSA_WITH_AES_256_CBC_SHA - strong\n      |       TLS_DHE_RSA_WITH_AES_256_CBC_SHA256 - strong\n      |       TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 - strong\n      |       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA - strong\n      |       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 - strong\n      |       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 - strong\n      |     compressors:\n      |       NULL\n      |_  least strength: strong</code>"
+        },
+        {
+          "title": "[x] Is the Diffie-Hellman prime at least 4096 bits?\n  <code>bash\n  Test:\n      $ openssl s_client -connect example.com:443 -cipher \"EDH\" |&amp; grep \"^Server Temp Key\"\n      Server Temp Key: DH, 4096 bits</code>"
+        },
+        {
+          "title": "[x] Have you ensured that your content cannot be embedded in a frame on another website?\n  <code>bash\n  Test:\n      $ curl -s -I https://example.org | grep '^X-Frame-Options'\n      X-Frame-Options: SAMEORIGIN\n      $ curl -s -I https://example_2.org | grep '^X-Frame-Options'\n      X-Frame-Options: DENY # Also acceptable</code>"
+        },
+        {
+          "title": "[x] Have you ensured that the Internet Explorer content sniffer is disabled?\n  <code>bash\n  Test:\n      $ curl -s -I https://example.org | grep '^X-Content'\n      X-Content-Type-Options: nosniff</code>"
+        },
+        {
+          "title": "[x] Do all assets delivered via a content delivery network include subresource integrity hashes?\n  <code>html\n  Example:\n  &lt;link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css\" integrity=\"sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd\" crossorigin=\"anonymous\"&gt;</code>"
+        },
+        {
+          "title": "[x] Are password entropy checks done during user sign-up, using, say <a href=\"https://docs.djangoproject.com/en/1.9/topics/auth/passwords/#enabling-password-validation\">AUTH_PASSWORD_VALIDATORS</a>?"
+        },
+        {
+          "title": "[x] Are you storing only the hash of your users password, and not the cleartext password, using (say) <a href=\"https://en.wikipedia.org/wiki/PBKDF2\">PBKDF</a>?"
+        },
+        {
+          "title": "[x] Are failed login attempts throttled and IP addresses banned after a number of unsuccessful attempts, using (say) <a href=\"https://pypi.python.org/pypi/django-axes\">django-axes</a>?"
+        },
+        {
+          "title": "[x] Are you using <a href=\"http://www.fail2ban.org/wiki/index.php/Main_Page\">fail2ban</a> to throttle ssh login attempts?\n  <code>bash\n  Test:\n      $ sudo fail2ban-client status sshd</code>"
+        },
+        {
+          "title": "[x] Have you disabled password-based login over ssh, and only allowed key-based login?\n  <code>bash\n  Test:\n      $ cat /etc/ssh/sshd_config  | grep '^Password'\n      PasswordAuthentication no</code>"
+        },
+        {
+          "title": "[x] Do session cookies have the 'Secure' and 'HttpOnly' flag set?\n  <code>bash\n  Test:\n      $ curl -s -I example.com/url_that_sets_cookie | grep '^Set-Cookie'\n      Set-Cookie: ****;Path=/;Expires=Fri, 16-Mar-2018 19:18:51 GMT;Secure;HttpOnly;Priority=HIGH</code>"
+        },
+        {
+          "title": "[x] Do forms set a cross-site request forgery cookie?\n  <code>bash\n  Test:\n      $ curl -s -I https://example.com/url_with_form | grep '^Set-Cookie'\n      Set-Cookie: csrftoken=*****************; expires=Thu, 16-Mar-2017 01:26:03 GMT;Secure;HttpOnly; Max-Age=31449600; Path=/</code>"
+        },
+        {
+          "title": "[x] Are all user uploads validated for expected content type?"
+        },
+        {
+          "title": "[x] Are the permissions of all uploaded files readonly?"
+        },
+        {
+          "title": "[x] Are all form fields (with the exception of password fields) validated with a restrictive regex?"
+        },
+        {
+          "title": "[x] Are there unit tests (say, using <a href=\"http://www.seleniumhq.org/\">Selenium</a>) which show that one authenticated user cannot access another user's content?"
+        },
+        {
+          "title": "[x] Have you made sure that database passwords, server signing keys, and hash salts are not checked into source control?"
+        },
+        {
+          "title": "[x] Do you have an account recovery flow? Delete it immediately."
+        },
+        {
+          "title": "<a href=\"https://github.com/RafaelFunchal/wordpress-security-checklist/blob/master/items.md\">Wordpress Security Checklist</a> - A simple checklist to improve the security of your WordPress installation."
+        },
+        {
+          "title": "<a href=\"https://blog.risingstack.com/node-js-security-checklist/\">NodeJS Security Checklist</a> - A blog post about NodeJS Security by <a href=\"https://github.com/gergelyke\">Gergely Nemeth</a>."
+        },
+        {
+          "title": "<a href=\"https://blog.codeship.com/preproduction-checklist-for-a-rails-app/\">Ruby on Rails Security Checklist</a> - Preproduction security checklist for a rails app by <a href=\"https://twitter.com/bauland42\">Heiko Webers</a>"
+        }
+      ]
+    }
+  ]
+}

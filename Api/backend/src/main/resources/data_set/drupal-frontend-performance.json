@@ -1,0 +1,842 @@
+{
+  "id": 72,
+  "header": "drupal-frontend-performance",
+  "topicList": [
+    "1.1 HTML",
+    "1.2 Images",
+    "1.3 CSS",
+    "1.4 JS",
+    "1.5 Assets",
+    "1.6 Fonts",
+    "1.7 PWA",
+    "1.8 Network",
+    "1.9 Server",
+    "2.1 Development related",
+    "2.2 Caching related",
+    "2.3 Image optimizations",
+    "2.4 Other",
+    "3.1 Performance scoring - Online",
+    "3.2 Performance scoring - Offline (local installed)",
+    "3.3 Sprite Generators",
+    "3.4 Unused CSS - Online",
+    "3.5 Unused CSS - Offline",
+    "3.6 Critical CSS/AboveTheFold CSS - Online",
+    "3.7 Critical CSS/AboveTheFold CSS - Offline",
+    "3.8 Image optimization - Online",
+    "3.9 Image optimization - Offline CLI",
+    "3.10 Image optimization - Offline GUI",
+    "3.11 Minify CSS/JS",
+    "3.12 CDN with free tiers",
+    "3.13 Other tools",
+    "4.1 Collections of tools, posts etc",
+    "4.2 Image Optimization",
+    "4.3 Drupal related articles"
+  ],
+  "itemGroups": [
+    {
+      "topic": "1.1 HTML",
+      "items": [
+        {
+          "title": " Core theme <a href=\"https://git.drupalcode.org/project/drupal/tree/8.8.x/core/themes/classy\">Classy</a> is your friend. Most of the times you could use this a the <strong>base theme</strong> and its templates to make overrides."
+        },
+        {
+          "title": " Mobile first design except if there is no need"
+        },
+        {
+          "title": " Critical link (aka css) tags are in head"
+        },
+        {
+          "title": " Less critical link tags are end of body"
+        },
+        {
+          "title": " Less critical link tags lazy load"
+        },
+        {
+          "title": " <code>&lt;link rel=\"preload\" as=\"style\" onload=\"this.rel='stylesheet'\" id='dashicons-css' &gt;</code>"
+        },
+        {
+          "title": " JS loads with the async property"
+        },
+        {
+          "title": " <code>&lt;script async src=\"https://hi.js\"&gt;&lt;/script&gt;</code>"
+        },
+        {
+          "title": " or <code>defer</code> when scripts need to be loaded in order, or require the DOMContentLoaded Event"
+        },
+        {
+          "title": " Keep DOM simple and small (Maximum DOM Depth &lt; 12). Must \"kill\" some of the default Drupal wrappers"
+        },
+        {
+          "title": " Create custom and simple 404, 403 error pages using twig template suggestions"
+        }
+      ]
+    },
+    {
+      "topic": "1.2 Images",
+      "items": [
+        {
+          "title": " Always use next gen formats"
+        },
+        {
+          "title": " webp -&gt; chrome/firefox (Also use https://modernizr.com to inspect WebP support)"
+        },
+        {
+          "title": " jpeg xr -&gt; ie11/edge"
+        },
+        {
+          "title": " jpeg 2000 -&gt; safari"
+        },
+        {
+          "title": " Use jpg for photography, not png"
+        },
+        {
+          "title": " Size images properly"
+        },
+        {
+          "title": " Use srcsets for multiple image sizes"
+        },
+        {
+          "title": " Use the <code>&lt;picture&gt;</code> element to let the browser select the right image for a scenario"
+        },
+        {
+          "title": " Lazy load images below the fold (see <a href=\"https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video\">1</a>, <a href=\"https://imagekit.io/blog/lazy-loading-images-complete-guide\">2</a>)"
+        }
+      ]
+    },
+    {
+      "topic": "1.3 CSS",
+      "items": [
+        {
+          "title": " Avoid using <code>!important</code>"
+        },
+        {
+          "title": " Use svg instead of icon fonts like fontawesome"
+        },
+        {
+          "title": " Create svg sprites (or png sprites if svg are not available)"
+        },
+        {
+          "title": " Do not support olb browsers (remove too old prefixes)"
+        },
+        {
+          "title": " Avoid expensive selectors when possible"
+        },
+        {
+          "title": "  <code>border-radius</code>"
+        },
+        {
+          "title": "  <code>box-shadow</code>"
+        },
+        {
+          "title": "  <code>transform</code>"
+        },
+        {
+          "title": "  <code>filter</code>"
+        },
+        {
+          "title": "  <code>:nth-child</code>"
+        },
+        {
+          "title": "  <code>position: fixed;</code>"
+        },
+        {
+          "title": "  Partial matching: <code>[class^=\"wrap\"]</code>"
+        },
+        {
+          "title": "  Don't use universal selectors"
+        },
+        {
+          "title": "  Avoid universal selectors like <code>*, [disabled], [type=“text”]</code>, etc. They are very expensive for the browser to match, as every element in the DOM must be checked."
+        },
+        {
+          "title": "  Avoid deeply nested dependent selectors"
+        },
+        {
+          "title": "  The descendant selector is very costly, as the browser must check for a match with every descendant element. On a complex web page, this can result in thousands and thousands (perhaps even more) of descendant selector searches."
+        },
+        {
+          "title": "  Use media queries to load files based on use case<p><code>css \n&lt;link href=\"style.css\" rel=\"stylesheet\" media=\"all\"&gt;\n&lt;link href=\"portrait.css\" rel=\"stylesheet\" media=\"orientation:portrait\"&gt;\n&lt;link href=\"print.css\" rel=\"stylesheet\" media=\"print\"&gt;\n&lt;link href=\"desktop.css\" rel=\"stylesheet\" media=\"(min-width: 720px)\"&gt;</code>\n-  Investigate using functional css instead of custom styles (eg <a href=\"https://tailwindcss.com\">Tailwind</a>, <a href=\"https://tachyons.io\">Tachyons</a> etc. See more at https://css-tricks.com/need-css-utility-library)\n-  If you are able to run (automated) builds do not include compiled css or js in your vcs code but only their sources</p>"
+        }
+      ]
+    },
+    {
+      "topic": "1.4 JS",
+      "items": [
+        {
+          "title": " Bundles should always be minified"
+        },
+        {
+          "title": " Bundles should have 0 comments, and all license text extracted to a separate file"
+        },
+        {
+          "title": " Use <a href=\"https://tagmanager.google.com\">Google Tag Manager</a> for 3rd party scripts like Google Analytics, FB Pixel etc"
+        },
+        {
+          "title": " Move js on bottom of the html page"
+        }
+      ]
+    },
+    {
+      "topic": "1.5 Assets",
+      "items": [
+        {
+          "title": "  All assets should be fingerprinted"
+        },
+        {
+          "title": "  All assets should have <code>Cache-Control: max-age=365000000, immutable</code> as a header"
+        },
+        {
+          "title": "  Assets should be served over http/2"
+        },
+        {
+          "title": "  Assets should only be served on a cookieless domain"
+        },
+        {
+          "title": "  All files should be cached by a CDN"
+        },
+        {
+          "title": "  Support Brotli compression if able"
+        },
+        {
+          "title": "  15-30% smaller than gzip"
+        },
+        {
+          "title": "  Compress with gzip, or zopfli as a fallback to brotli"
+        },
+        {
+          "title": "  Do not ship unused css, js"
+        },
+        {
+          "title": "  Try to clone external js/css to local server and load them from there (eg Google Analytics script)"
+        }
+      ]
+    },
+    {
+      "topic": "1.6 Fonts",
+      "items": [
+        {
+          "title": " Fonts should always load <code>woff2</code> first"
+        },
+        {
+          "title": " <code>woff</code> for fallback"
+        },
+        {
+          "title": " Use <code>font-display: swap;</code> to allow the browser to use a fallback font while custom font files are being downloaded."
+        },
+        {
+          "title": " eot or truetype is only needed for <code>IE &lt; 10</code>"
+        }
+      ]
+    },
+    {
+      "topic": "1.7 PWA",
+      "items": [
+        {
+          "title": " Use a service worker to cache assets"
+        },
+        {
+          "title": " Use a service worker to prefetch pages users will most likely navigate to next"
+        },
+        {
+          "title": " Support offline, and spotty networks"
+        },
+        {
+          "title": " Make sure that the tracking or other third party js/css files (eg Google Analytics etc) are not included on the PWA"
+        }
+      ]
+    },
+    {
+      "topic": "1.8 Network",
+      "items": [
+        {
+          "title": " Test site with Network Throttling. See a <a href=\"https://gist.github.com/theodorosploumis/fd4086ee58369b68aea6b0782dc96a2e\">list of common Network speed</a>"
+        }
+      ]
+    },
+    {
+      "topic": "1.9 Server",
+      "items": [
+        {
+          "title": " Prefer Nginx over Apache2 (at least as a proxy)<hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "2.1 Development related",
+      "items": [
+        {
+          "title": "https://www.drupal.org/project/seo_checklist"
+        },
+        {
+          "title": "https://www.drupal.org/project/html_checker"
+        },
+        {
+          "title": "https://www.drupal.org/project/healthcheck"
+        },
+        {
+          "title": "https://www.drupal.org/project/blackfire"
+        },
+        {
+          "title": "https://www.drupal.org/project/devel (webprofiler)"
+        },
+        {
+          "title": "https://www.drupal.org/project/performance_budget"
+        },
+        {
+          "title": "https://www.drupal.org/project/perfmon"
+        }
+      ]
+    },
+    {
+      "topic": "2.2 Caching related",
+      "items": [
+        {
+          "title": "<strong>https://www.drupal.org/project/advagg</strong>"
+        },
+        {
+          "title": "https://www.drupal.org/project/http_cache_control"
+        },
+        {
+          "title": "https://www.drupal.org/project/big_pipe_sessionless"
+        },
+        {
+          "title": "https://www.drupal.org/project/prefetch_cache"
+        },
+        {
+          "title": "https://www.drupal.org/project/cdn (and other CDN related modules)"
+        },
+        {
+          "title": "https://www.drupal.org/project/fastly"
+        },
+        {
+          "title": "https://www.drupal.org/project/stackpath"
+        }
+      ]
+    },
+    {
+      "topic": "2.3 Image optimizations",
+      "items": [
+        {
+          "title": "https://www.drupal.org/docs/8/mobile-guide/responsive-images-in-drupal-8"
+        },
+        {
+          "title": "https://www.drupal.org/project/lazy"
+        },
+        {
+          "title": "https://www.drupal.org/project/blazy"
+        },
+        {
+          "title": "https://www.drupal.org/project/lazyloader"
+        },
+        {
+          "title": "https://www.drupal.org/project/fancyload"
+        },
+        {
+          "title": "https://www.drupal.org/project/drimage"
+        },
+        {
+          "title": "https://www.drupal.org/project/imageapi_optimize"
+        },
+        {
+          "title": "https://www.drupal.org/project/imageapi_optimize_webp"
+        },
+        {
+          "title": "https://www.drupal.org/project/imageapi_optimize_binaries"
+        },
+        {
+          "title": "https://www.drupal.org/project/imagemagick"
+        },
+        {
+          "title": "https://www.drupal.org/project/webp"
+        }
+      ]
+    },
+    {
+      "topic": "2.4 Other",
+      "items": [
+        {
+          "title": "<strong>https://www.drupal.org/project/quicklink</strong>"
+        },
+        {
+          "title": "<strong>https://www.drupal.org/project/minifyhtml</strong>"
+        },
+        {
+          "title": "https://www.drupal.org/project/critical_css"
+        },
+        {
+          "title": "https://www.drupal.org/project/amp"
+        },
+        {
+          "title": "https://www.drupal.org/project/amp_cts"
+        },
+        {
+          "title": "https://github.com/Drupal-Jedi/css-tree-shaking"
+        },
+        {
+          "title": "https://www.drupal.org/project/pwa"
+        },
+        {
+          "title": "https://www.drupal.org/project/fast_404"
+        },
+        {
+          "title": "https://www.drupal.org/project/refreshless<hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "3.1 Performance scoring - Online",
+      "items": [
+        {
+          "title": "https://developers.google.com/speed/pagespeed/insights"
+        },
+        {
+          "title": "https://www.thinkwithgoogle.com/feature/testmysite"
+        },
+        {
+          "title": "https://yellowlab.tools"
+        },
+        {
+          "title": "https://www.webpagetest.org"
+        },
+        {
+          "title": "https://tools.pingdom.com"
+        },
+        {
+          "title": "https://search.google.com/test/mobile-friendly"
+        },
+        {
+          "title": "https://web.dev/measure"
+        },
+        {
+          "title": "https://gtmetrix.com"
+        },
+        {
+          "title": "https://www.uptrends.com/tools/website-speed-test"
+        },
+        {
+          "title": "https://gf.dev/website-audit"
+        },
+        {
+          "title": "https://www.giftofspeed.com"
+        },
+        {
+          "title": "https://varvy.com/pagespeed"
+        },
+        {
+          "title": "https://www.gumlet.com/analyzer"
+        },
+        {
+          "title": "https://www.dareboost.com"
+        },
+        {
+          "title": "https://www.checkbot.io"
+        },
+        {
+          "title": "https://whatdoesmysitecost.com"
+        },
+        {
+          "title": "https://compare.sitespeed.io (Beta)"
+        },
+        {
+          "title": "https://www.drupalaudit.com"
+        },
+        {
+          "title": "https://webhint.io"
+        },
+        {
+          "title": "https://waterfaller.dev"
+        }
+      ]
+    },
+    {
+      "topic": "3.2 Performance scoring - Offline (local installed)",
+      "items": [
+        {
+          "title": "https://www.sitespeed.io"
+        },
+        {
+          "title": "https://github.com/sitespeedio/coach"
+        },
+        {
+          "title": "https://www.sitespeed.io/documentation/throttle"
+        },
+        {
+          "title": "https://developers.google.com/web/tools/lighthouse"
+        },
+        {
+          "title": "https://github.com/gmetais/YellowLabTools"
+        },
+        {
+          "title": "https://github.com/sitespeedio/browsertime"
+        },
+        {
+          "title": "http://devbridge.github.io/Performance"
+        },
+        {
+          "title": "https://github.com/GoogleChromeLabs/psi"
+        },
+        {
+          "title": "https://github.com/paulirish/pwmetrics"
+        },
+        {
+          "title": "https://github.com/desktoppr/wbench"
+        },
+        {
+          "title": "http://yslow.org/command-line-har"
+        }
+      ]
+    },
+    {
+      "topic": "3.3 Sprite Generators",
+      "items": [
+        {
+          "title": "https://instantsprite.com (online - png/gif export)"
+        },
+        {
+          "title": "https://github.com/frexy/svg-sprite-generator"
+        },
+        {
+          "title": "https://github.com/sprity/sprity"
+        },
+        {
+          "title": "https://github.com/itsjavi/spritesheet-generator"
+        },
+        {
+          "title": "https://github.com/selaux/node-sprite-generator"
+        }
+      ]
+    },
+    {
+      "topic": "3.4 Unused CSS - Online",
+      "items": [
+        {
+          "title": "https://unused-css.com"
+        },
+        {
+          "title": "https://uncss-online.com"
+        },
+        {
+          "title": "https://www.jitbit.com/unusedcss"
+        },
+        {
+          "title": "https://purifycss.online"
+        },
+        {
+          "title": "https://cssstats.com"
+        }
+      ]
+    },
+    {
+      "topic": "3.5 Unused CSS - Offline",
+      "items": [
+        {
+          "title": "<strong>https://github.com/Drupal-Jedi/css-tree-shaking</strong>"
+        },
+        {
+          "title": "https://github.com/uncss/uncss"
+        },
+        {
+          "title": "https://www.purgecss.com"
+        },
+        {
+          "title": "https://github.com/probosckie/cssTreeShaking"
+        },
+        {
+          "title": "https://github.com/AlanJenkinsVS/css-tree-shaking"
+        },
+        {
+          "title": "https://github.com/purifycss/purifycss"
+        },
+        {
+          "title": "https://github.com/leeoniya/dropcss"
+        }
+      ]
+    },
+    {
+      "topic": "3.6 Critical CSS/AboveTheFold CSS - Online",
+      "items": [
+        {
+          "title": "https://criticalcss.com"
+        },
+        {
+          "title": "https://jonassebastianohlsson.com/criticalpathcssgenerator"
+        },
+        {
+          "title": "https://www.sitelocity.com/critical-path-css-generator"
+        }
+      ]
+    },
+    {
+      "topic": "3.7 Critical CSS/AboveTheFold CSS - Offline",
+      "items": [
+        {
+          "title": "<strong>https://github.com/stefspakman/drupal-critical</strong>"
+        },
+        {
+          "title": "https://github.com/addyosmani/critical"
+        },
+        {
+          "title": "https://github.com/filamentgroup/criticalCSS"
+        },
+        {
+          "title": "https://github.com/pocketjoso/penthouse"
+        },
+        {
+          "title": "https://github.com/finkinfridom/kant.io"
+        },
+        {
+          "title": "https://github.com/bezoerb/inline-critical"
+        },
+        {
+          "title": "https://github.com/hummal/crittr"
+        },
+        {
+          "title": "https://github.com/GoogleChromeLabs/critters"
+        },
+        {
+          "title": "https://github.com/theKashey/used-styles"
+        },
+        {
+          "title": "https://github.com/filamentgroup/loadCSS"
+        }
+      ]
+    },
+    {
+      "topic": "3.8 Image optimization - Online",
+      "items": [
+        {
+          "title": "https://resmush.it"
+        },
+        {
+          "title": "https://convertio.co/jpg-webp"
+        },
+        {
+          "title": "https://kraken.io"
+        },
+        {
+          "title": "https://www.gumlet.com"
+        },
+        {
+          "title": "https://imageoptim.com"
+        },
+        {
+          "title": "https://imagekit.io"
+        },
+        {
+          "title": "https://tinypng.com"
+        },
+        {
+          "title": "https://tinyjpg.com"
+        },
+        {
+          "title": "https://compressjpeg.com"
+        },
+        {
+          "title": "https://compresspng.com"
+        },
+        {
+          "title": "https://way2enjoy.com/compress-jpeg"
+        },
+        {
+          "title": "https://shortpixel.com"
+        },
+        {
+          "title": "https://imagify.io"
+        },
+        {
+          "title": "https://optimole.com"
+        },
+        {
+          "title": "https://compressor.io/compress"
+        },
+        {
+          "title": "https://squoosh.app"
+        },
+        {
+          "title": "https://imageengine.io"
+        },
+        {
+          "title": "https://blinkloader.com"
+        },
+        {
+          "title": "https://www.jpegmini.com"
+        },
+        {
+          "title": "http://thumborize.me"
+        },
+        {
+          "title": "https://rokka.io"
+        }
+      ]
+    },
+    {
+      "topic": "3.9 Image optimization - Offline CLI",
+      "items": [
+        {
+          "title": "<p><strong>WebP</strong>\n- https://github.com/imagemin/imagemin-webp</p><p><strong>JPEG</strong>\n- https://github.com/tjko/jpegoptim\n- https://github.com/danielgtaylor/jpeg-archive\n- https://github.com/technopagan/adept-jpg-compressor\n- https://github.com/imagemin/jpeg-recompress-bin\n- https://github.com/mozilla/mozjpeg\n- https://github.com/google/butteraugli\n- https://github.com/google/guetzli</p><p><strong>PNG</strong>\n- https://pngquant.org\n- https://github.com/shssoichiro/oxipng</p><p><strong>SVG</strong>\n- https://github.com/svg/svgo\n- https://github.com/jkphl/svg-sprite</p><p><strong>GIF</strong>\n- https://github.com/kohler/gifsicle</p><p><strong>General</strong>\n- https://github.com/ravgeetdhillon/create-optimize-images (bash wrapper)\n- https://github.com/libvips/libvips\n- https://github.com/imagemin/imagemin\n- https://github.com/imagemin/imagemin-cli\n- https://github.com/lovell/sharp\n- https://github.com/google/zopfli\n- https://github.com/charlyie/resmushit-cli\n- https://github.com/psliwa/image-optimizer (PHP library)\n- https://github.com/avalanche123/Imagine (PHP library)\n- https://glide.thephpleague.com (PHP library)\n- http://image.intervention.io (PHP library)\n- https://github.com/joedicastro/img4web (Python script)\n- https://fengyuanchen.github.io/compressorjs (JS library)</p>"
+        }
+      ]
+    },
+    {
+      "topic": "3.10 Image optimization - Offline GUI",
+      "items": [
+        {
+          "title": "https://www.xnview.com/en/xnconvert"
+        },
+        {
+          "title": "https://trimage.org"
+        },
+        {
+          "title": "https://pnggauntlet.com"
+        },
+        {
+          "title": "https://jakearchibald.github.io/svgomg"
+        },
+        {
+          "title": "https://hvdwolf.github.io/pyExifToolGUI"
+        },
+        {
+          "title": "https://github.com/imagemin/imagemin-app"
+        }
+      ]
+    },
+    {
+      "topic": "3.11 Minify CSS/JS",
+      "items": [
+        {
+          "title": "https://github.com/mishoo/UglifyJS2"
+        },
+        {
+          "title": "https://github.com/cssnano/cssnano"
+        }
+      ]
+    },
+    {
+      "topic": "3.12 CDN with free tiers",
+      "items": [
+        {
+          "title": "https://anyone.cdn.biz.id"
+        },
+        {
+          "title": "https://jetpack.com/pricing"
+        },
+        {
+          "title": "https://www.cloudflare.com/plans"
+        },
+        {
+          "title": "https://shift8cdn.com"
+        },
+        {
+          "title": "https://www.coralcdn.org"
+        },
+        {
+          "title": "https://cloudinary.com"
+        },
+        {
+          "title": "<strong>https://github.com/thumbor/thumbor</strong> (OS, self-hosted)"
+        }
+      ]
+    },
+    {
+      "topic": "3.13 Other tools",
+      "items": [
+        {
+          "title": "<strong>https://instant.page</strong>"
+        },
+        {
+          "title": "https://github.com/turbolinks/turbolinks"
+        },
+        {
+          "title": "https://polyfill.io"
+        },
+        {
+          "title": "<a href=\"https://codepen.io/bradfrost/pen/EPQVBp\">CodePen - Performance Budget Builder</a>"
+        },
+        {
+          "title": "https://github.com/tkadlec/grunt-perfbudget"
+        },
+        {
+          "title": "https://micmro.github.io/PerfCascade"
+        },
+        {
+          "title": "https://github.com/filamentgroup/glyphhanger<hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "4.1 Collections of tools, posts etc",
+      "items": [
+        {
+          "title": "https://github.com/fabkrum/web-performance-resources"
+        },
+        {
+          "title": "https://developer.yahoo.com/performance/rules.html"
+        },
+        {
+          "title": "https://perf.rocks"
+        },
+        {
+          "title": "https://www.perf-tooling.today"
+        },
+        {
+          "title": "https://web.dev"
+        },
+        {
+          "title": "https://browserdiet.com"
+        },
+        {
+          "title": "https://css-tricks.com/tools-for-optimizing-svg"
+        },
+        {
+          "title": "https://moz.com/learn/seo/page-speed"
+        }
+      ]
+    },
+    {
+      "topic": "4.2 Image Optimization",
+      "items": [
+        {
+          "title": "https://images.guide"
+        },
+        {
+          "title": "https://css-tricks.com/converting-and-optimizing-images-from-the-command-line"
+        },
+        {
+          "title": "https://jeremy.codes/blog/bulk-image-optimization-in-bash"
+        },
+        {
+          "title": "https://jeremy.codes/blog/faster-bulk-image-optimization-in-bash"
+        },
+        {
+          "title": "https://guides.wp-bullet.com/batch-optimize-jpg-lossy-linux-command-line-with-jpeg-recompress"
+        }
+      ]
+    },
+    {
+      "topic": "4.3 Drupal related articles",
+      "items": [
+        {
+          "title": "https://www.drupal.org/docs/8/modules/advanced-cssjs-aggregation/advanced-aggregates"
+        },
+        {
+          "title": "https://www.drupal.org/docs/8/mobile/front-end-performance"
+        },
+        {
+          "title": "https://www.fourkitchens.com/blog/article/use-grunt-and-advagg-inline-critical-css-drupal-7-theme"
+        },
+        {
+          "title": "https://pantheon.io/docs/guides/frontend-performance"
+        },
+        {
+          "title": "https://thinktandem.io/blog/2020/02/04/drupal-8-performance-tips-and-tricks-for-2020"
+        },
+        {
+          "title": "https://www.srijan.net/blog/performance-optimization-for-drupal-websites-intermediate-level"
+        },
+        {
+          "title": "<a href=\"https://www.youtube.com/watch?v=pHf128w-1QQ\">Debug Site Performance Using Web Profiler in Drupal 8 - Youtube, 2016</a><hr/>"
+        }
+      ]
+    }
+  ]
+}

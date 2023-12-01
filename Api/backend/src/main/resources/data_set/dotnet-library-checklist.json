@@ -1,0 +1,127 @@
+{
+  "id": 70,
+  "header": "dotnet-library-checklist",
+  "topicList": [
+    "Source Link, PDBs and Debugging",
+    "Performance Considerations",
+    "Preparing for Trimming",
+    "Multi-platform Testing",
+    "Consider Binary Compatibility",
+    "Private Build Dependencies",
+    "Async and ConfigureAwait"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Source Link, PDBs and Debugging",
+      "items": [
+        {
+          "topic": "Enable Source Link",
+          "items": [
+            {
+              "title": "<p>From <a href=\"https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/sourcelink\">MSDN</a>:</p><blockquote>\n<p>Source Link is a technology that enables source code debugging of .NET assemblies from NuGet by developers. Source Link executes when creating the NuGet package and embeds source control metadata inside assemblies and the package. Developers who download the package and have Source Link enabled in Visual Studio can step into its source code. Source Link provides source control metadata to create a great debugging experience.</p>\n</blockquote><p>Configure Source Link by adding the follow to your project:\n<code>xml\n&lt;PropertyGroup&gt;\n    &lt;!-- Optional: Include the repository URL in the NuGet package --&gt;\n    &lt;PublishRepositoryUrl&gt;true&lt;/PublishRepositoryUrl&gt;\n    &lt;!-- Optional: Embed untracked source files in the PDB --&gt;\n    &lt;EmbedUntrackedSources&gt;true&lt;/EmbedUntrackedSources&gt;\n&lt;/PropertyGroup&gt;\n&lt;ItemGroup&gt;\n    &lt;PackageReference Include=\"Microsoft.SourceLink.GitHub\" Version=\"1.1.1\" PrivateAssets=\"All\"/&gt;\n&lt;/ItemGroup&gt;</code></p><p>If you're not using GitHub, there are alternative Source Link packages to reference instead.\nThere are packages for GitHub, GitLab, Azure Repos, Bitbucket and others.</p><p>📖 <a href=\"https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/sourcelink\">Source Link and .NET libraries</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Embedding Symbols",
+          "items": [
+            {
+              "title": "<p>Symbol files map execution locations to the original source code so you can step through source code as it is running using a debugger.</p><p>While not documented as the recommended solution <a href=\"https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/nuget#symbol-packages\">on MSDN</a>, it has been <a href=\"https://github.com/dotnet/sdk/issues/2679\">discussed in the .NET SDK repository</a> and later <a href=\"https://devblogs.microsoft.com/dotnet/producing-packages-with-source-link/\">in a Microsoft blog post</a> that embedded symbols may be the best way to provide symbols to consumers.</p><p>Embed symbols in your packages by adding the following to your project:\n<code>xml\n&lt;DebugType&gt;embedded&lt;/DebugType&gt;</code></p><p>📖 <a href=\"https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/\">Understanding symbol files and Visual Studio's symbol settings</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Enable Deterministic Builds",
+          "items": [
+            {
+              "title": "<p>From <a href=\"https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/code-generation#deterministic\">MSDN</a>:</p><blockquote>\n<p>Causes the compiler to produce an assembly whose byte-for-byte output is identical across compilations for identical inputs.</p>\n</blockquote><p>Enabling Deterministic builds by adding the following to your project:\n<code>xml\n&lt;ContinuousIntegrationBuild&gt;true&lt;/ContinuousIntegrationBuild&gt;</code></p><p>As noted in <a href=\"https://devblogs.microsoft.com/dotnet/producing-packages-with-source-link/#deterministic-builds\">a Microsoft blog post about deterministic builds</a>, it should only be enabled on your CI otherwise it can affect local debugging. This can be accomplished by adding a condition to the surrounding <code>PropertyGroup</code> like:</p><p><code>xml\n&lt;PropertyGroup Condition=\"'$(GITHUB_ACTIONS)' == 'true'\"&gt;\n    &lt;ContinuousIntegrationBuild&gt;true&lt;/ContinuousIntegrationBuild&gt;\n&lt;/PropertyGroup&gt;</code></p><p>Or alternatively as an MSBuild flag in your specific CI build script:\n<code>dotnet pack /p:ContinuousIntegrationBuild=true</code></p><p>Note: The official MSDN docs may be incorrect as it specifies <code>&lt;Deterministic&gt;true&lt;/Deterministic&gt;</code>. This doesn't seem to do anything and doesn't satisfy the \"Deterministic\" flag in NuGet Package Manager.</p><p>📖 <a href=\"https://en.wikipedia.org/wiki/Reproducible_builds\">Learn more about Reproducible Builds</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Write and Generate XML Docs",
+          "items": [
+            {
+              "title": "<p>From <a href=\"https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/\">MSDN</a>:</p><blockquote>\n<p>C# source files can have structured comments that produce API documentation for the types defined in those files. The C# compiler produces an XML file that contains structured data representing the comments and the API signatures. Other tools can process that XML output to create human-readable documentation in the form of web pages or PDF files, for example.</p>\n</blockquote><p>Example of XML documentation for a class:\n<code>csharp\n/// &lt;summary&gt;\n///  This class performs an important function.\n/// &lt;/summary&gt;\npublic class MyClass {}</code></p><p>Additionally, add this to your project for an XML docs file to be generated when you package up your project.\nThis will allows others to access your documentation from inside their code editor.</p><p><code>xml\n&lt;GenerateDocumentationFile&gt;true&lt;/GenerateDocumentationFile&gt;</code></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Performance Considerations",
+      "items": [
+        {
+          "topic": "Use Reduced-allocation APIs (Span/Memory)",
+          "items": [
+            {
+              "title": "<p>From <a href=\"https://docs.microsoft.com/en-us/dotnet/standard/memory-and-spans/memory-t-usage-guidelines\">MSDN</a>:</p><blockquote>\n<p>.NET Core includes a number of types that represent an arbitrary contiguous region of memory. .NET Core 2.0 introduced <code>Span&lt;T&gt;</code> and <code>ReadOnlySpan&lt;T&gt;</code>, which are lightweight memory buffers that wrap references to managed or unmanaged memory. Because these types can only be stored on the stack, they are unsuitable for a number of scenarios, including asynchronous method calls. .NET Core 2.1 adds a number of additional types, including <code>Memory&lt;T&gt;</code>, <code>ReadOnlyMemory&lt;T&gt;</code>, <code>IMemoryOwner&lt;T&gt;</code>, and <code>MemoryPool&lt;T&gt;</code>. Like <code>Span&lt;T&gt;</code>, <code>Memory&lt;T&gt;</code> and its related types can be backed by both managed and unmanaged memory. Unlike <code>Span&lt;T&gt;</code>, <code>Memory&lt;T&gt;</code> can be stored on the managed heap.</p>\n</blockquote><p>Example (Getting a piece of a string)\n```csharp\n// Before\nstring result = myString.Substring(4, 8);</p><p>// After\nReadOnlySpan<char> result = myString.AsSpan().Slice(4, 8);\n```</char></p><p>See also:\n- <a href=\"https://adamsitnik.com/Span/\">Adam Sitnik's post on Span</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Expose your own Span/Memory APIs where appropriate",
+          "items": [
+            {
+              "title": "<p>This helps avoid consumers needing to call <code>ToArray</code> unnecessarily if they are potentially already processing data in a span.</p><p>```csharp\n// Before\npublic void DoWork(byte[] data) { }</p><p>// After\npublic void DoWork(Span<byte> data) { }\n```</byte></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Use ArrayPool where appropriate",
+          "items": [
+            {
+              "title": "<p>From <a href=\"https://docs.microsoft.com/en-us/dotnet/api/system.buffers.arraypool-1\">MSDN</a>:</p><blockquote>\n<p>Using the <code>ArrayPool&lt;T&gt;</code> class to rent and return buffers (using the Rent and Return methods) can improve performance in situations where arrays are created and destroyed frequently, resulting in significant memory pressure on the garbage collector.</p>\n</blockquote><p>Example\n```csharp\nvar buffer = ArrayPool<int>.Shared.Rent(1000);</int></p><p>// Do work...</p><p>ArrayPool<int>.Shared.Return(buffer);\n```</int></p><p>See also:\n- <a href=\"https://adamsitnik.com/Array-Pool/\">Adam Sitnik's post on Array Pool</a></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Preparing for Trimming",
+      "items": [
+        {
+          "title": "<ol>\n<li>Avoid reflection where possible"
+        },
+        {
+          "title": "<a href=\"https://docs.microsoft.com/en-us/dotnet/core/deploying/trimming/prepare-libraries-for-trimming\"><strong>For .NET 6+</strong>: If you need to use reflection, you can enable trim analyzers to help you find and resolve trim warnings</a>.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "Multi-platform Testing",
+      "items": [
+        {
+          "title": "Run your tests on multi-platforms, particularly if you use APIs that may have nuances on different platforms (eg. networking, files etc)"
+        },
+        {
+          "title": "<a href=\"https://github.com/TurnerSoftware/CacheTower/blob/082e9cd2b327c7b42d34068081f9105d31337703/.github/workflows/build.yml#L21-L61\">GitHub Actions can make multi-platform testing pretty straight forward</a>:\n<code>yml\n  build:\n    name: Build ${{matrix.os}}\n    runs-on: ${{matrix.os}}\n    strategy:\n      matrix:\n        os: [ubuntu-latest, windows-latest, macOS-latest]</code>"
+        }
+      ]
+    },
+    {
+      "topic": "Consider Binary Compatibility",
+      "items": [
+        {
+          "title": "<p>From <a href=\"https://docs.microsoft.com/en-us/dotnet/core/compatibility/categories#binary-compatibility\">MSDN</a>:</p><blockquote>\n<p>Binary compatibility refers to the ability of a consumer of an API to use the API on a newer version without recompilation. Such changes as adding methods or adding a new interface implementation to a type do not affect binary compatibility. However, removing or altering an assembly's public signatures so that consumers can no longer access the same interface exposed by the assembly does affect binary compatibility. A change of this kind is termed a binary incompatible change.</p>\n</blockquote><p>✔ Keeps Compatibility\n<code>csharp\n// Before\npublic void MyMethod() { }\n// After\npublic void MyMethod() { }\npublic void MyMethod(object obj) { }</code></p><p>❌ Breaks Compatibility\n<code>csharp\n// Before\npublic void MyMethod() { }\n// After\npublic void MyMethod(object obj = null) { }</code></p><p>👋 If you have more obscure examples of binary compatibility, please submit a PR!</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Private Build Dependencies",
+      "items": [
+        {
+          "title": "<p>TODO</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Async and ConfigureAwait",
+      "items": [
+        {
+          "title": "<p>Read: https://github.com/davidfowl/AspNetCoreDiagnosticScenarios/blob/master/AsyncGuidance.md</p>"
+        }
+      ]
+    }
+  ]
+}

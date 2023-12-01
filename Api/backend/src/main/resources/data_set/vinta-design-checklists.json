@@ -1,0 +1,59 @@
+{
+  "id": 216,
+  "header": "vinta-design-checklists",
+  "topicList": [
+    "Adding a New Language:",
+    "Important Notes:",
+    "Commercial Support"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Adding a New Language:",
+      "items": [
+        {
+          "title": " To add a new language you will need to create another markdown file containing the new <a href=\"http://sustainablesources.com/resources/country-abbreviations/\">acronym language:</a>"
+        },
+        {
+          "title": "E.g. <code>checklist-pt.md</code>.</li>\n</ul>"
+        },
+        {
+          "title": " No further approval will be necessary;"
+        },
+        {
+          "title": " The new checklist language should be visible on Devckecklists after you saved the file on your forked repository."
+        }
+      ]
+    },
+    {
+      "topic": "Important Notes:",
+      "items": [
+        {
+          "title": " Markdown is the only way to write checklists on Devchecklists;"
+        },
+        {
+          "title": " For tips about how to use markdown to write checklists, please take a look at these raw files:"
+        },
+        {
+          "title": " <a href=\"https://raw.githubusercontent.com/vintasoftware/devchecklists-template/master/checklist-en.md\"><code>checklist-en.md</code></a> sample markdown;"
+        },
+        {
+          "title": " <a href=\"https://raw.githubusercontent.com/vintasoftware/devchecklists-template/master/README.md\"><code>README.md</code></a> contained on this repository;"
+        },
+        {
+          "title": " Another checklists markdowns from <a href=\"https://devchecklists.com\">Devchecklists</a>.</li>\n</ul>"
+        },
+        {
+          "title": " Changes on the checklist repository will reflect on the current checklist of Devchecklists."
+        }
+      ]
+    },
+    {
+      "topic": "Commercial Support",
+      "items": [
+        {
+          "title": "<p><img alt=\"alt text\" src=\"https://avatars2.githubusercontent.com/u/5529080?s=200&amp;v=4\" title=\"Vinta Logo\"/></p><p>This project, as other Vinta open-source projects, is used in products of Vinta clients. We are always looking for exciting work, so if you need any commercial support, feel free to get in touch: contact@vinta.com.br</p><p>Copyright (c) 2018 Vinta Serviços e Soluções Tecnológicas Ltda.\n<a href=\"LICENSE.txt\">MIT License</a></p>"
+        }
+      ]
+    }
+  ]
+}

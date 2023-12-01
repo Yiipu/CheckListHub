@@ -1,0 +1,51 @@
+{
+  "id": 44,
+  "header": "checklistomania",
+  "topicList": [
+    "Running Checklistomania",
+    "Testing",
+    "Public domain"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Running Checklistomania",
+      "items": [
+        {
+          "title": "<p>Checklistomania is a <a href=\"https://nodejs.org\">Node.js</a> application on the back-end, and its front-end is an <a href=\"https://angularjs.org/\">AngularJS</a> single-page application.</p><p>The default setup for local development is with Docker. If you prefer not to use\nDocker you can skip this section and follow the legacy setup docs below.</p>"
+        },
+        {
+          "topic": "Using Docker for Development",
+          "items": [
+            {
+              "title": "<p>A Docker setup potentially makes development and deployment easier.</p><p>To use it, install <a href=\"https://www.docker.com/\">Docker</a> and <a href=\"https://docs.docker.com/compose/\">Docker Compose</a> and read the\n<a href=\"https://github.com/18F/development-guide/tree/master/project_setup/docker\">18F Docker guide</a> if you haven't already.</p><p>Then build the Docker images with:</p><p><code>sh\ndocker-compose build</code></p><p>Once the above command finishes, run:</p><p><code>sh\ndocker-compose run app npm install</code></p><p>which will install node and bower dependencies.</p><p>Then run:</p><p><code>sh\ndocker-compose up</code></p><p>This will start up all required services in containers and output their\nlog information to stdout. You should be able to visit\n<a href=\"http://localhost:3000/\">http://localhost:3000/</a> to view the site.</p><p>To run any arbitrary command in the context of the application container, run:\n<code>shell\ndocker-compose run app &lt;THE COMMAND&gt;</code></p><p>For example, to run bash in the <code>app</code> container, run:\n<code>shell\ndocker-compose run app bash</code></p><p>In the app container, <code>/home/app/checklistomania</code> is mapped to your host\nmachine's checklistomania directory.</p><p>To run a command in the <code>mongo</code> container, run:\n<code>shell\ndocker-compose run mongo &lt;THE COMMAND&gt;</code></p><p>To remove all Docker images associated with this project, run\n<code>shell\ndocker-compose down -v</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Running Locally without Docker (Legacy)",
+          "items": [
+            {
+              "title": "<p>If you'd like to run Checklistomania locally, follow these steps:</p><p>First, install Node.js (<a href=\"https://nodejs.org/en/download/\">Download page</a>) and MongoDB (<a href=\"https://docs.mongodb.com/manual/installation/\">Installation instructions</a>). Make sure you have the same version of Node.js as specified in <code>package.json</code>.</p><p>Clone Checklistomania and <code>cd</code> into its directory.</p><p>Install local Node.js dependencies with:\n<code>shell\nnpm install</code></p><p>Checklistomania uses GitHub for user authentication. All users must be registered on GitHub and must be part of a GitHub organization. Users will need to set their organization membership to public (see instructions <a href=\"https://help.github.com/articles/publicizing-or-hiding-organization-membership/\">here</a>).</p><p>Specify GitHub application credentials as environment variables.\nYou can use the test credentials below, or create your own credentials <a href=\"https://github.com/settings/applications/new\">here</a> and set <code>GITHUB_ORG</code> to a GitHub organization name of your choice.</p><p><strong>NOTE</strong>: These credentials are for <strong>development</strong> only. They are not to be used in any live version of Checklistomania or any other application.</p><p><code>shell\nexport GITHUB_CLIENT_ID=0a363c03ec2646619f57\nexport GITHUB_CLIENT_SECRET=01408892458c92e3514cd96cd6b31e6d91df25d2\nexport GITHUB_ORG=18F\nexport SESSION_SECRET=testSessionSecret</code></p><p>In production, make sure to set <code>SESSION_SECRET</code> to a long random string.</p><p>You will also need to set <code>GITHUB_CALLBACK_URL</code> to the correct callback url for your domain. Its value should be of the form <code>https://&lt;your-domain&gt;.com/auth/callback</code>.</p><p>If you'd like to customize the look a little, you may specify a logo path and a header color (as a valid HTML hex code or color name) as environment variables as well, otherwise 18F brand defaults will be used:\n<code>shell\nexport BRAND_LOGO_PATH=/private/img/18F-Logo-M.png\nexport BRAND_HEADER_COLOR=\\#B3EFFF</code></p><p>You can also customize the port (which defaults to 3000) that the server listens on. If you do change it, make sure your registered GitHub callback matches the new port.\n<code>shell\nexport PORT=3000</code></p><p>Make sure you have MongoDB running locally:\n<code>shell\nmongod</code></p><p>Run the Checklistomania application:\n<code>shell\nnpm start</code></p><p>Visit <a href=\"http://localhost:3000/\">http://localhost:3000/</a> to see the locally running Checklistomania application.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Testing",
+      "items": [
+        {
+          "title": "<p>Make sure you have the same version of Node.js as specified in <code>package.json</code>, otherwise you may have trouble running the front end tests.</p><p>If you are using Docker for development, run:\n<code>shell\ndocker-compose run app npm test</code></p><p>If you are running Checklistomania locally, run:\n<code>shell\nnpm test</code></p><p>Run eslint either via a code editor plugin (such as Atom's <a href=\"https://github.com/AtomLinter/linter-eslint\">linter-eslint</a>),\nor from the command line. If you are using Docker, run:\n<code>shell\ndocker-compose run app npm run eslint</code></p><p>If you are running locally, run:\n<code>shell\nnpm run eslint</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Public domain",
+      "items": [
+        {
+          "title": "<p>This project is in the worldwide <a href=\"LICENSE.md\">public domain</a>. As stated in <a href=\"CONTRIBUTING.md\">CONTRIBUTING</a>:</p><blockquote>\n<p>This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the <a href=\"https://creativecommons.org/publicdomain/zero/1.0/\">CC0 1.0 Universal public domain dedication</a>.</p>\n<p>All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.</p>\n</blockquote>"
+        }
+      ]
+    }
+  ]
+}
