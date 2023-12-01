@@ -1,0 +1,82 @@
+{
+  "id": 124,
+  "header": "microsoft-teams-app-checklist",
+  "topicList": [
+    "Retirement Notice",
+    "Get started",
+    "Feedback",
+    "Legal notice",
+    "Contributing"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Retirement Notice",
+      "items": [
+        {
+          "title": "<p>The Apps created using this app-template will be active until 10th February. Users will be able to retrieve any data until 10th March. On 10th March 2023, the apps will be fully retired. For related queries, feel free to reach out to ActionServiceSupport@microsoft.com</p><p>| <a href=\"https://github.com/OfficeDev/Microsoft-Teams-Checklist-app/wiki/Home\">Documentation</a> | <a href=\"https://github.com/OfficeDev/Microsoft-Teams-Checklist-app/wiki/Deployment-guide\">Deployment guide</a> | <a href=\"https://github.com/OfficeDev/Microsoft-Teams-Checklist-app/wiki/Solution-overview\">Architecture</a> |\n| ---- | ---- | ---- |</p><p>Checklist is a custom <a href=\"https://docs.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions\">Teams message extension</a> app that enables you to collaborate with your team by creating a shared checklist in a chat or channel. Checklist app is supported across all platforms – Teams desktop, browser, iOS, and Android clients. It is ready for deployment as part of your existing Microsoft 365 subscription.</p><p><img alt=\"Checklist Template compose message screen\" src=\"https://github.com/OfficeDev/Microsoft-Teams-Checklist-app/wiki/images/ChecklistTemplateCompose.gif\"/></p>"
+        },
+        {
+          "topic": "Key features",
+          "items": [
+            {
+              "title": "<strong>Checklist creation:</strong> Easily create Checklist, click <strong>Menu (…)</strong> below the box where you type your message. Name your checklist and add items to the checklist. You can add as many as 100 items to a checklist. When you are done, click <strong>Send Checklist</strong> to publish your checklist. </li>\n</ul><p><img alt=\"Checklist Template Creation screen\" src=\"https://github.com/OfficeDev/Microsoft-Teams-Checklist-app/wiki/images/ChecklistTemplateCreation.png\"/></p>"
+            },
+            {
+              "title": "<strong>Mark checklist items as completed:</strong> To mark items of a checklist as completed, choose an item on the checklist card, and click  <strong>Save Changes</strong>. As people in your group or channel mark items, you will see updates to the response summary on the checklist card.</li>\n</ul><p><img alt=\"Checklist Template Submit screen\" src=\"https://github.com/OfficeDev/Microsoft-Teams-Checklist-app/wiki/images/ChecklistTemplateSubmit.png\"/></p>"
+            },
+            {
+              "title": "<strong>Add new checklist items:</strong> To add new items to the checklist, click <strong>Edit Checklist.</strong>. Add new items to the checklist by clicking on Add Item. Completed section show all the completed checklist items with the details of who completed the item and the time of completion. Also, download a .csv file of your checklist items by selecting <strong>Download Report</strong>.<p><img alt=\"Checklist Template Update screen\" src=\"https://github.com/OfficeDev/Microsoft-Teams-Checklist-app/wiki/images/ChecklistTemplateUpdate.png\"/></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Get started",
+      "items": [
+        {
+          "title": "<p>Begin with the <a href=\"https://github.com/OfficeDev/Microsoft-Teams-Checklist-app/wiki/Solution-overview\">Solution overview</a> to read about what the app does and how it works.</p><p>When you're ready to try out Checklist, or to use it in your own organization, follow the steps in the <a href=\"https://github.com/OfficeDev/Microsoft-Teams-Checklist-app/wiki/Deployment-guide\">Deployment guide</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Feedback",
+      "items": [
+        {
+          "title": "<p>Thoughts? Questions? Ideas? Share them with us on <a href=\"https://microsoftteams.uservoice.com/forums/555103-public\">Teams UserVoice</a>!</p><p>Please report bugs and other code issues <a href=\"https://github.com/OfficeDev/microsoft-teams-checklist-app/issues/new\">here</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Legal notice",
+      "items": [
+        {
+          "title": "<p>This app template is provided under the <a href=\"./LICENSE\">MIT License</a> terms.  In addition to these terms, by using this app template you agree to the following:</p>"
+        },
+        {
+          "title": "<p>You are responsible for complying with all applicable privacy and security regulations related to use, collection and handling of any personal data by your app. This includes complying with all internal privacy and security policies of your organization if your app is developed to be sideloaded internally within your organization.</p>"
+        },
+        {
+          "title": "<p><strong>Data Collection:</strong> The software may collect information about you and your use of the software and send it to Microsoft. Microsoft may use this information to provide services and improve our products and services. There are also some features in the software that may enable you and Microsoft to collect data from users of your applications. If you use these features, you must comply with applicable law, including providing appropriate notices to users of your applications together with a copy of Microsoft's privacy statement. Our privacy statement is located at https://go.microsoft.com/fwlink/?LinkID=824704. You can learn more about data collection and use in the help documentation and our privacy statement. Your use of the software operates as your consent to these practices. </p>"
+        },
+        {
+          "title": "<p>Where applicable, you may be responsible for data related incidents or data subject requests for data collected through your app.</p>"
+        },
+        {
+          "title": "<p>Any trademarks or registered trademarks of Microsoft in the United States and/or other countries and logos included in this repository are the property of Microsoft, and the license for this project does not grant you rights to use any Microsoft names, logos or trademarks outside of this repository. Microsoft’s general trademark guidelines can be found <a href=\"https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general.aspx\">here</a>.</p>"
+        },
+        {
+          "title": "<p>Use of this template does not guarantee acceptance of your app to the Teams app store. To make this app available in the Teams app store, you will have to comply with the <a href=\"https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/appsource/publish\">submission and validation process</a>, and all associated requirements such as including your own privacy statement and terms of use for your app.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<p>This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.</p><p>When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.</p><p>This project has adopted the <a href=\"https://opensource.microsoft.com/codeofconduct/\">Microsoft Open Source Code of Conduct</a>. For more information see the <a href=\"https://opensource.microsoft.com/codeofconduct/faq/\">Code of Conduct FAQ</a> or contact <a href=\"mailto:opencode@microsoft.com\">opencode@microsoft.com</a> with any additional questions or comments.</p>"
+        }
+      ]
+    }
+  ]
+}

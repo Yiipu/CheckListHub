@@ -1,0 +1,131 @@
+{
+  "id": 49,
+  "header": "code-review-checklist",
+  "topicList": [
+    "Why do we code review?",
+    "teamwork",
+    "good practices",
+    "human side in team"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Why do we code review?",
+      "items": [
+        {
+          "title": "To memorize everything that we all learned"
+        },
+        {
+          "title": "A consistent code style for our projects"
+        },
+        {
+          "title": "To know each other work"
+        },
+        {
+          "title": "To make better software"
+        },
+        {
+          "title": "To stay humble"
+        },
+        {
+          "title": "To know how to play in team"
+        },
+        {
+          "title": "To practice talking about the code"
+        },
+        {
+          "title": "To practice reading code bases"
+        }
+      ]
+    },
+    {
+      "topic": "teamwork",
+      "items": [
+        {
+          "title": "shared knowledge means better estimates"
+        },
+        {
+          "title": "people learning form eachother"
+        },
+        {
+          "title": "teamwork helps better reach the goal because of shared knowledge and input"
+        },
+        {
+          "title": "agile teams"
+        },
+        {
+          "title": "no one is irrelevant to a decision"
+        },
+        {
+          "title": "everyone can contribute"
+        }
+      ]
+    },
+    {
+      "topic": "good practices",
+      "items": [
+        {
+          "title": "good practices are good for you and your team"
+        },
+        {
+          "title": "2 reviews before merge to master"
+        },
+        {
+          "title": "integrates into existing processes"
+        },
+        {
+          "title": "practice lightweight"
+        },
+        {
+          "title": "focus on the algorithms"
+        },
+        {
+          "title": "automate trivial checks"
+        },
+        {
+          "title": "decentralized"
+        },
+        {
+          "title": "know standards"
+        },
+        {
+          "title": "use tools to make your live easier"
+        },
+        {
+          "title": "use the app/ the perspective of the user to review (detect problems)"
+        },
+        {
+          "title": "set up a timeframe (do them immediately)"
+        }
+      ]
+    },
+    {
+      "topic": "human side in team",
+      "items": [
+        {
+          "title": "reach concensus with the person you're speaking with"
+        },
+        {
+          "title": "ask the author, don't tell"
+        },
+        {
+          "title": "don't take it personally - your code sucks, not you"
+        },
+        {
+          "title": "mistakes are natural, someone is always better at something"
+        },
+        {
+          "title": "be kind to the coder, not the code"
+        },
+        {
+          "title": "respect juniorer developers"
+        },
+        {
+          "title": "every team or person is different (general take away)"
+        },
+        {
+          "title": "always aprove unless you can prove / trust team mates - believe they know what they are doing (general take away)"
+        }
+      ]
+    }
+  ]
+}

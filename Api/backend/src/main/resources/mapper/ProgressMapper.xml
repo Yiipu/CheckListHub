@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wallace.mapper.ProgressMapper">
+
+    <resultMap id="BaseResultMap" type="com.wallace.pojo.Progress">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="tid" column="tid" jdbcType="INTEGER"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="cid" column="cid" jdbcType="INTEGER"/>
+        <result property="mark" column="mark" jdbcType="VARCHAR"/>
+        <result property="version" column="version" jdbcType="INTEGER"/>
+        <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,tid,uid,
+        cid,mark,version,
+        is_deleted
+    </sql>
+    <insert id="updateMark">
+        INSERT INTO checklist_db.progress (tid, cid, mark)
+        VALUES (#{tid}, #{cid}, #{mark})
+        ON DUPLICATE KEY UPDATE mark = VALUES(mark);
+    </insert>
+    <insert id="CreateTeamProgress" parameterType="progress" keyProperty="id" useGeneratedKeys="true" keyColumn="id">
+        INSERT INTO checklist_db.progress (tid, uid, cid)
+        VALUES (1, #{uid}, #{cid})
+        ON DUPLICATE KEY UPDATE mark = VALUES(mark);
+    </insert>
+    <update id="updateTid">
+        update checklist_db.progress
+        set tid =#{tid}
+        where id = #{id};
+    </update>
+    <update id="updatePersonalMark">
+        INSERT INTO checklist_db.progress (tid, uid,  cid, mark)
+        VALUES (#{tid}, #{uid},#{cid}, #{mark})
+        ON DUPLICATE KEY UPDATE mark = VALUES(mark);
+    </update>
+    <update id="updateTeam">
+        update checklist_db.progress
+        set mark=#{mark}
+        where tid = #{tid};
+    </update>
+    <insert id="CreateMark">
+        INSERT INTO checklist_db.progress (tid, uid, cid, mark)
+        VALUES (#{tid}, #{uid}, #{cid}, #{mark})
+        ON DUPLICATE KEY UPDATE uid = VALUES(uid);
+    </insert>
+    <delete id="deleteByTidAndUidAndCid">
+        DELETE
+        FROM checklist_db.progress
+        WHERE tid = #{tid}
+          AND cid = #{cid}
+          AND uid = #{uid};
+    </delete>
+    <select id="selectProgress" resultType="progress">
+        select *
+        from checklist_db.progress
+        where tid = #{tid}
+          and uid = #{uid}
+          and cid = #{cid};
+    </select>
+    <select id="selectCidByTid" resultType="com.wallace.pojo.Progress">
+        select *
+        from checklist_db.progress
+        where tid = #{tid}
+        limit 1;
+    </select>
+    <select id="selectTidByUidAndCid" resultType="com.wallace.pojo.Progress">
+        select *
+        from checklist_db.progress
+        where uid = #{uid}
+          and cid = #{cid}
+          and tid != 0
+        limit 1;
+    </select>
+    <select id="selectTidCidByUid" resultType="com.wallace.pojo.Progress">
+        select *
+        from checklist_db.progress
+        where uid = #{uid};
+    </select>
+    <select id="selectTidAndCidAndHeaderByUid" resultType="java.util.Map">
+        select c1.tid, c1.cid, header
+        from checklist_db.progress c1
+                 left join checklist_db.ck_list c2
+                           on c1.cid = c2.cid
+        where c1.uid = #{uid}
+          and tid != 0;
+
+    </select>
+    <select id="selectProgressByTid" resultType="com.wallace.pojo.Progress">
+        select *
+        from checklist_db.progress
+        where tid = #{tid};
+    </select>
+</mapper>

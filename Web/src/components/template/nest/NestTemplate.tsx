@@ -1,4 +1,4 @@
-import styles from './NestTemplate.module.css';
+import styles from './NestTemplate.module.css'
 
 export interface INestTemplate { }
 
@@ -7,7 +7,7 @@ function NestTemplate({
 }: {
   children: React.ReactNode,
 }) {
-  return <div className={styles.container}>{children}</div>;
-};
+  return <div className={styles.container}>{children}</div>
+}
 
-export default NestTemplate;
+export default NestTemplate

@@ -1,0 +1,487 @@
+{
+  "id": 111,
+  "header": "iOS-Practice-Checklist",
+  "topicList": [
+    "目录",
+    "开始项目",
+    "实用公共库",
+    "架构",
+    "设计模式",
+    "数据储存",
+    "资源",
+    "编码规范",
+    "安全性",
+    "诊断",
+    "开发社区"
+  ],
+  "itemGroups": [
+    {
+      "topic": "目录",
+      "items": [
+        {
+          "title": "<ol>\n<li><a href=\"#开始项目\">开始项目</a>"
+        },
+        {
+          "title": "<a href=\"#实用公共库\">实用公共库</a>"
+        },
+        {
+          "title": "<a href=\"#架构\">架构</a>"
+        },
+        {
+          "title": "<a href=\"#数据储存\">数据储存</a>"
+        },
+        {
+          "title": "<a href=\"#资源\">资源</a>"
+        },
+        {
+          "title": "<a href=\"#编码规范\">编码规范</a>"
+        },
+        {
+          "title": "<a href=\"#安全性\">安全性</a>"
+        },
+        {
+          "title": "<a href=\"#诊断\">诊断</a></li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "开始项目",
+      "items": [
+        {
+          "topic": "Xcode",
+          "items": [
+            {
+              "title": " <a href=\"https://help.apple.com/xcode/mac\">Apple 帮助 - Xcode</a>"
+            },
+            {
+              "title": "<p> 自定义项目信息配置 - IDETemplateMacros.plist</p>"
+            },
+            {
+              "title": "<p><a href=\"https://help.apple.com/xcode/mac/9.0/index.html?localePath=en.lproj#/dev7fe737ce0\">帮助文档</a></p>"
+            },
+            {
+              "title": "<p> 配置 Target</p>"
+            }
+          ]
+        },
+        {
+          "topic": ".gitignore",
+          "items": [
+            {
+              "title": "<p> Git 添加 <code>.gitignore</code>: <a href=\"https://github.com/github/gitignore/blob/master/Swift.gitignore\">Swift</a> or <a href=\"https://github.com/github/gitignore/blob/master/Objective-C.gitignore\">Objective-C</a></p>"
+            },
+            {
+              "title": "<p> 工具：<a href=\"https://gitignore.io/\">gitignore.io</a></p>"
+            }
+          ]
+        },
+        {
+          "topic": "依赖管理",
+          "items": [
+            {
+              "title": " CocoaPods <a href=\"https://guides.cocoapods.org/syntax/podfile.html\">文档</a></li>\n</ul><p><code>shell\nsudo gem install cocoapods # 安装\npod init # 初始化创建 Podfile\npod install/update # 安装/更新依赖</code></p>"
+            },
+            {
+              "title": " Carthage (Swift) <a href=\"https://github.com/Carthage/Carthage#quick-start\">文档</a><p><code>shell\nbrew install carthage # 安装\ncarthage bootstrap/update # 安装或更新依赖</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "工程目录结构",
+          "items": [
+            {
+              "title": " 规范化命名"
+            },
+            {
+              "title": " 熟悉并保持合理的目录结构</li>\n</ul><p><code>AwesomeProject\n├─ Assets\n│    ├─ Info.Plist\n│    ├─ Localizable.strings\n│    ├─ R.generated.swift # 可选，R.swift 生成\n│    ├─ LaunchScreen.storyboard\n│    ├─ Assets.xcassets\n│    ├─ ProjectName.entitlements\n│    ├─ BuildConfigs\n│    └─ ···\n├─Sources\n│    ├─ Modules\n│   ├─ MyModule\n│   │   │   ├─ Models\n│   │   │   ├─ Views\n│   │   │   └─ Controllers (or ViewModels)\n│   │    └─ ···\n│   ├─ Stores\n│   ├─ Helpers\n│   ├─ Utilities\n│   ├─ Extentsions\n│   ├─ Mediator\n│   ├─ Ventors\n│   └─ ···\n├─Tests\n└─ ···</code></p>"
+            },
+            {
+              "title": "<p> 字符串本地化（Localization）</p>"
+            },
+            {
+              "title": "<p> <a href=\"https://developer.apple.com/videos/play/wwdc2018/404/\">WWDC 404 - New Localization Workflows in Xcode 10</a></p>"
+            },
+            {
+              "title": " <a href=\"https://developer.apple.com/videos/play/wwdc2017/401\">WWDC 401 - Localizing with Xcode 9</a>"
+            },
+            {
+              "title": "<p> <a href=\"https://developer.apple.com/videos/play/wwdc2016/201\">WWDC 201 - Internationalization Best Practices</a></p>"
+            },
+            {
+              "title": "<p> 最小化常量作用域（Constants）</p>\n</li>\n</ul><p>```swift\n// 全局常量建议采用 Enum 定义\nenum Constants {\n    static let myConstant = \"Just a constant\"\n}\nenum Apprearance {\n    enum Sizes {\n        static let gutter: CGFloat = 15\n        static let cardGutter: CGFloat = 8\n        ···\n    }\n    enum Color {\n        static let primaryColor = UIColor(red: 0.22, green: 0.58, blue: 0.29, alpha: 1.0)\n        static let secondaryColor = UIColor.lightGray\n        static let background = UIColor.white</p><pre><code>    enum Red {\n           // 可视化颜色\n        static let medium = #colorLiteral(red: 0.22, green: 0.58, blue: 0.29, alpha: 1.0)\n        static let light = #colorLiteral(red: 0.22, green: 0.58, blue: 0.29, alpha: 1.0)\n    }\n}\n</code></pre><p>}\n```</p>"
+            },
+            {
+              "title": "<p> Git 分支模型</p>"
+            },
+            {
+              "title": "<p> <a href=\"https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow\">git-flow 的工作流 - Tower</a></p>"
+            },
+            {
+              "title": " <a href=\"https://github.com/petervanderdoes/gitflow-avh\">gitflow-avh 拓展</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "实用公共库",
+      "items": [
+        {
+          "title": " <a href=\"https://github.com/Alamofire/Alamofire\">Alamofire</a> 网络库"
+        },
+        {
+          "title": " <a href=\"https://github.com/Moya/Moya\">Moya</a> 基于 Alamofire 封装的网络抽象层"
+        },
+        {
+          "title": " <a href=\"https://github.com/ashleymills/Reachability.swift\">Reachability.swift</a> 用于网络状况检查"
+        },
+        {
+          "title": " <a href=\"https://github.com/mac-cain13/R.swift\">R.swift</a> 自动将各种资源强类型化"
+        },
+        {
+          "title": " <a href=\"https://github.com/malcommac/SwiftDate\">SwiftDate</a>/<a href=\"https://github.com/MatthewYork/DateTools\">DateTool</a> 时间日期处理库"
+        },
+        {
+          "title": " <a href=\"https://github.com/ReactiveX/RxSwift\">RxSwift</a> 响应式编程框架 by <a href=\"http://reactivex.io/\">ReactiveX.io</a>"
+        },
+        {
+          "title": " <a href=\"https://github.com/linkedin/LayoutKit\">LayoutKit</a> 高性能视图布局库"
+        },
+        {
+          "title": " <a href=\"https://github.com/onevcat/Kingfisher\">Kingfisher</a> 轻量级图片下载缓存库"
+        },
+        {
+          "title": " <a href=\"https://github.com/fpillet/NSLogger\">NSLogger</a> 便捷日志工具"
+        },
+        {
+          "title": " <a href=\"https://github.com/Nike-Inc/Willow\">Willow</a> 轻量级日志工具 <a href=\"https://medium.com/joshtastic-blog/convenient-logging-in-swift-75e1adf6ba7c\">教程</a>"
+        },
+        {
+          "title": " <a href=\"https://github.com/Flipboard/FLEX\">FLEX</a>/<a href=\"https://github.com/didi/DoraemonKit\">DoraemonKit</a> 应用内 Debug 工具库"
+        },
+        {
+          "title": "<p> Keychain 便捷封装库</p>"
+        },
+        {
+          "title": "<p><a href=\"https://github.com/kishikawakatsumi/KeychainAccess\">KeychainAccess</a></p>"
+        },
+        {
+          "title": "<a href=\"https://github.com/square/Valet\">Valet</a> by <em>Square, Inc.</em>"
+        }
+      ]
+    },
+    {
+      "topic": "架构",
+      "items": [
+        {
+          "title": " <a href=\"https://www.raywenderlich.com/1073-model-view-controller-mvc-in-ios-a-modern-approach\">Model-View-Controller (MVC) in iOS: A Modern Approach</a>"
+        },
+        {
+          "title": " <a href=\"https://www.objc.io/issues/13-architecture/mvvm/\">Introduction to MVVM</a>"
+        },
+        {
+          "title": " <a href=\"https://academy.realm.io/posts/mobilization-lukasz-mroz-mvvm-coordinators-rxswift/\">MVVM with Coordinators and RxSwift</a>"
+        },
+        {
+          "title": " <a href=\"http://www.sprynthesis.com/2014/12/06/reactivecocoa-mvvm-introduction/\">ReactiveCocoa and MVVM, an Introduction</a>"
+        },
+        {
+          "topic": "Model",
+          "items": [
+            {
+              "title": " 保持 Model 不可变性, <code>struct</code> + <code>Codable</code> <a href=\"https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types\">Apple 文档</a>"
+            },
+            {
+              "title": " <a href=\"https://github.com/SwiftyJSON/SwiftyJSON\">SwiftyJSON</a> / <a href=\"https://github.com/thoughtbot/Argo\">Argo</a> [可选]"
+            }
+          ]
+        },
+        {
+          "topic": "Views",
+          "items": [
+            {
+              "title": "<p> 采用 AutoLayout 布局</p>"
+            },
+            {
+              "title": "<p> <a href=\"https://developer.apple.com/documentation/uikit/nslayoutanchor\">Apple 文档 - NSLayoutAnchor</a></p>"
+            },
+            {
+              "title": " <a href=\"https://developer.apple.com/videos/play/wwdc2018/220\">WWDC 220 - High Performance Auto Layout</a>"
+            },
+            {
+              "title": " <a href=\"https://developer.apple.com/videos/play/wwdc2015/218\">WWDC 218 - Mysteries of Auto Layout, Part 1</a>"
+            },
+            {
+              "title": " <a href=\"https://developer.apple.com/videos/play/wwdc2015/219\">WWDC 219 - Mysteries of Auto Layout, Part 2</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Controllers",
+          "items": [
+            {
+              "title": "<p> 避免控制器臃肿</p>"
+            },
+            {
+              "title": "<p> <a href=\"http://khanlou.com/2014/09/8-patterns-to-help-you-destroy-massive-view-controller/\">8 Patterns to Help You Destroy Massive View Controller</a></p>"
+            },
+            {
+              "title": "<p> 尽量采用依赖注入而不是单例</p>\n<p><code>swift\nlet fooViewController = FooViewController(withViewModel: fooViewModel)</code></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "设计模式",
+      "items": [
+        {
+          "title": " 设计模式 Swift 示例 <a href=\"https://github.com/ochococo/Design-Patterns-In-Swift\">英文原文</a> <a href=\"https://github.com/Binlogo/Design-Patterns-In-Swift-CN\">中文翻译</a>"
+        }
+      ]
+    },
+    {
+      "topic": "数据储存",
+      "items": [
+        {
+          "title": " 避免\"回调地狱\"（callback hell）"
+        },
+        {
+          "title": " <a href=\"https://github.com/ReactiveX/RxSwift\">RxSwift</a> 异步响应式编程</li>\n</ul><p><code>swift\nfunc fetchGigs(for artist: Artist) -&gt; Observable&lt;[Gig]&gt; {\n    // ...\n}</code></p>"
+        },
+        {
+          "title": "<p> CoreData 持久化</p>"
+        },
+        {
+          "title": "<p> <a href=\"https://developer.apple.com/documentation/coredata\">Apple 文档 - Core Data</a></p>"
+        },
+        {
+          "title": " <a href=\"https://developer.apple.com/videos/play/wwdc2018/224/\">WWDC 224 - Core Data Best Practices</a>"
+        }
+      ]
+    },
+    {
+      "topic": "资源",
+      "items": [
+        {
+          "title": " 采用 <code>.pdf</code> 矢量图"
+        },
+        {
+          "title": " <a href=\"https://github.com/mac-cain13/R.swift\">R.swift</a> 自动集中管理图片、xib、字符串等各项资源"
+        },
+        {
+          "title": " <a href=\"https://imageoptim.com/mac\">ImageOptim</a> 图片优化"
+        }
+      ]
+    },
+    {
+      "topic": "编码规范",
+      "items": [
+        {
+          "title": " <a href=\"https://swift.org/documentation/api-design-guidelines/\">API Design Guidelines for Swift</a>"
+        },
+        {
+          "title": "<p> <a href=\"https://github.com/linkedin/swift-style-guide\">LinkedIn's Official Swift Style Guide</a></p>"
+        },
+        {
+          "title": "<p> <code>//MARK:</code> + <code>Extension</code>分组结构化代码</p>\n<p>```swift\nimport SomeExternalFramework</p><p>class FooViewController : UIViewController {</p><pre><code>let foo: Foo\n\nprivate let fooStringConstant = \"FooConstant\"\nprivate let floatConstant = 1234.5\n\n// MARK: Lifecycle\n\n// Custom initializers go here\n···\n</code></pre><p>}</p><p>// MARK: View Lifecycle\nextension FooViewController {</p><pre><code>override func viewDidLoad() {\n    super.viewDidLoad()\n    // ...\n}\n</code></pre><p>}</p><p>// MARK: Layout\nextension FooViewController {</p><pre><code>private func makeViewConstraints() {\n    // ...\n}\n</code></pre><p>}</p><p>// MARK: User Interaction\nextension FooViewController {</p><pre><code>func foobarButtonTapped() {\n    // ...\n}\n</code></pre><p>}</p><p>// MARK: FoobarDelegate\nextension FooViewController: FoobarDelegate {</p><pre><code>func foobar(foobar: Foobar, didSomethingWithFoo foo: Foo) {\n    // ...\n}\n</code></pre><p>}</p><p>// MARK: Helpers\nextension FooViewController {</p><pre><code>private func displayNameForFoo(foo: Foo) {\n    // ...\n}\n</code></pre><p>}\n```</p>"
+        }
+      ]
+    },
+    {
+      "topic": "安全性",
+      "items": [
+        {
+          "title": " <a href=\"https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf\">Apple 文档 - iOS Security Guide</a>"
+        },
+        {
+          "topic": "数据储存",
+          "items": [
+            {
+              "title": " Token、用户名密码及部分隐私敏感数据避免采用 <code>UserDefault</code> 或 <code>CoreData</code> 等非加密持久化方式"
+            },
+            {
+              "title": "<p> 采用 <code>KeyChain</code> 加密储存敏感数据</p>"
+            },
+            {
+              "title": "<p> <a href=\"https://developer.apple.com/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain\">Apple 文档 - Storing Keys in the Keychain</a></p>"
+            },
+            {
+              "title": " <a href=\"https://github.com/kishikawakatsumi/KeychainAccess\">KeychainAccess</a>"
+            }
+          ]
+        },
+        {
+          "topic": "网络",
+          "items": [
+            {
+              "title": " 采用 <code>https</code> TLS 加密传输"
+            }
+          ]
+        },
+        {
+          "topic": "日志采集",
+          "items": [
+            {
+              "title": " 设置正确的日志输出等级"
+            },
+            {
+              "title": " 线上环境<strong>一定</strong>不要打印密码等敏感信息"
+            },
+            {
+              "title": " 记录基本代码控制流，以便调试"
+            }
+          ]
+        },
+        {
+          "topic": "用户交互",
+          "items": [
+            {
+              "title": " <code>UITextField</code> 用于密码等敏感信息输入时设置<code>secureTextEntry</code> 为 <code>true</code>"
+            },
+            {
+              "title": "<p> 必要时清空剪贴板等可能存在的敏感数据</p>"
+            },
+            {
+              "title": "<p> <code>applicationDidEnterBackground</code></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "诊断",
+      "items": [
+        {
+          "title": " 重视并尽量解决编译器警告"
+        },
+        {
+          "title": "<p> 静态分析</p>"
+        },
+        {
+          "title": "<p> <em>Product → Analyze</em></p>"
+        },
+        {
+          "title": "<p> 调试</p>"
+        },
+        {
+          "title": "<p> 开启 <code>Exception</code> 断点</p>"
+        },
+        {
+          "title": "<p> <a href=\"http://revealapp.com/\">Reveal</a> 视图调试</p>"
+        },
+        {
+          "title": "<p> 性能剖析</p>"
+        },
+        {
+          "title": "<p> <a href=\"https://help.apple.com/instruments/mac\">Apple 帮助 - Instruments</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "开发社区",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>借助社区的力量，并积极融入社区，贡献自己的力量</p>\n</blockquote>"
+        },
+        {
+          "topic": "课程网站",
+          "items": [
+            {
+              "title": "<a href=\"https://www.raywenderlich.com/\">Ray Wenderlich</a>"
+            },
+            {
+              "title": "<a href=\"https://nshipster.com/\">nshipster.com</a>"
+            },
+            {
+              "title": "<a href=\"https://www.objc.io/blog/\">objc.io</a>"
+            },
+            {
+              "title": "<a href=\"https://www.appcoda.com/\">AppCoda</a>"
+            },
+            {
+              "title": "<a href=\"https://www.pointfree.co/\">pointfree.co</a>"
+            }
+          ]
+        },
+        {
+          "topic": "博客",
+          "items": [
+            {
+              "title": "<a href=\"https://hackingwithswift.com/\">Paul Hudson</a>"
+            },
+            {
+              "title": "<a href=\"https://www.swiftbysundell.com/\">John Sundell</a>"
+            },
+            {
+              "title": "<a href=\"https://www.avanderlee.com/\">Antoine van der Lee</a>"
+            },
+            {
+              "title": "<a href=\"https://www.vadimbulavin.com/\">Vadim Bulavin</a>"
+            },
+            {
+              "title": "<a href=\"https://useyourloaf.com/\">Keith Harrison</a>"
+            },
+            {
+              "title": "<a href=\"https://swiftwithmajid.com/\">Majid Jabrayilov</a>"
+            },
+            {
+              "title": "<a href=\"https://cocoacasts.com/\">Bart Jacobs</a>"
+            },
+            {
+              "title": "<a href=\"http://khanlou.com/\">Soroush Khanlou</a>"
+            },
+            {
+              "title": "<a href=\"https://ericasadun.com/\">Erica Sadun</a>"
+            },
+            {
+              "title": "<a href=\"https://www.andrewcbancroft.com/\">Andrew Bancroft</a>"
+            }
+          ]
+        },
+        {
+          "topic": "订阅",
+          "items": [
+            {
+              "title": "<a href=\"http://ios-goodies.com/\">iOS Goodies</a>"
+            },
+            {
+              "title": "<a href=\"https://iosdevweekly.com/\">iOS Dev Weekly</a>"
+            },
+            {
+              "title": "<a href=\"https://andybargh.com/swiftdevelopments/\">Swift Developments</a>"
+            },
+            {
+              "title": "<a href=\"http://indieiosfocus.com/\">Indie iOS focus weekly</a>"
+            }
+          ]
+        },
+        {
+          "topic": "播客",
+          "items": [
+            {
+              "title": "<a href=\"https://podcasts.apple.com/us/podcast/ios-dev-discussions-sean-allen/id1426167395\">iOS Dev Discussions</a>"
+            },
+            {
+              "title": "<a href=\"https://podcasts.apple.com/us/podcast/swift-over-coffee/id1435076502\">Swift over Coffee</a>"
+            },
+            {
+              "title": "<a href=\"https://swiftbysundell.com/podcast/\">Swift by Sundell</a>"
+            },
+            {
+              "title": "<a href=\"https://devchat.tv/iphreaks/\">iPhreaks</a>"
+            }
+          ]
+        },
+        {
+          "topic": "开发者",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/Binlogo/Genius-Track\">Genius-Track</a>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

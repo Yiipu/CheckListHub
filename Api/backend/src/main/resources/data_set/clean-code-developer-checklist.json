@@ -1,0 +1,953 @@
+{
+  "id": 47,
+  "header": "clean-code-developer-checklist",
+  "topicList": [
+    "Table of contents :bookmark_tabs:",
+    "Naming things :u5272:",
+    "Functions :microscope:",
+    "Formatting :rainbow:",
+    "Objects and Data Structures :two_men_holding_hands:",
+    "Error handling :interrobang:",
+    "Unit tests :umbrella:",
+    "Class :school_satchel:",
+    "Emergence :green_book:",
+    "Concurrency :arrows_clockwise:",
+    "Code smells :speak_no_evil:",
+    "Honourable mentions :basecamp:"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of contents :bookmark_tabs:",
+      "items": [
+        {
+          "title": "<a href=\"#naming-things-u5272\">Naming things</a>"
+        },
+        {
+          "title": "<a href=\"#functions-microscope\">Functions</a>"
+        },
+        {
+          "title": "<a href=\"#formatting-rainbow\">Formatting</a>"
+        },
+        {
+          "title": "<a href=\"#objects-and-data-structures-two_men_holding_hands\">Objects and Data Structures</a>"
+        },
+        {
+          "title": "<a href=\"#error-handling-interrobang\">Error handling</a>"
+        },
+        {
+          "title": "<a href=\"#unit-tests-umbrella\">Unit tests</a>"
+        },
+        {
+          "title": "<a href=\"#class-school_satchel\">Class</a>"
+        },
+        {
+          "title": "<a href=\"#emergence-green_book\">Emergence</a>"
+        },
+        {
+          "title": "<a href=\"#concurrency-arrows_clockwise\">Concurrency</a>"
+        },
+        {
+          "title": "<a href=\"#code-smells-speak_no_evil\">Code smells</a>"
+        },
+        {
+          "title": "<a href=\"#honourable-mentions-basecamp\">Honourable mentions</a><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Naming things :u5272:",
+      "items": [
+        {
+          "title": "[x] <strong>Name should reveal intent</strong>"
+        },
+        {
+          "title": "It should tell you why it exists, what it does, and how it is used."
+        },
+        {
+          "title": "<p>Name should depict the context.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Avoid using abbreviations</strong></p>"
+        },
+        {
+          "title": "<p>Use <code>hypotenuse</code> instead of <code>hp</code>.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Do not encode name with data structure</strong></p>"
+        },
+        {
+          "title": "<p>Use <code>accounts</code> instead of <code>accountList</code>.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Do not use names which vary in small ways</strong></p>"
+        },
+        {
+          "title": "<p>Find the difference between <code>ControllerForEfficientHandlingOfStrings</code> and <code>ControllerForEfficientStorageOfStrings</code> :dancers:</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Do not name variables just to satisfy the compiler</strong></p>"
+        },
+        {
+          "title": "<p>Don't name something <code>name1</code> cause <code>name</code> is already taken.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Avoid using noise words</strong></p>"
+        },
+        {
+          "title": "<code>ProductData</code> and <code>ProductInfo</code> kind of means the same thing."
+        },
+        {
+          "title": "Similarly words like <code>a</code>, <code>an</code>, <code>the</code> are also noise words, for example naming a variable <code>product</code> is sufficient, no need to <code>theProduct</code>"
+        },
+        {
+          "title": "<p>Noise words are also <strong>redundant</strong>, use <code>name</code> instead of <code>nameString</code>.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Distinguish names in such a way that the reader knows which one to call.</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Use pronounceable names</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Use searchable names</strong></p>"
+        },
+        {
+          "title": "<p>Use constants instead of hard coding a value, <code>WORK_DAYS_PER_WEEK = 5</code> instead of just using 5.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Include units of a measurable entity to its variable name</strong></p>"
+        },
+        {
+          "title": "<p>Using <code>expiryTimeInSeconds</code> is better than <code>expiryTime</code></p>"
+        },
+        {
+          "title": "<p>[x] <strong>The length of a name should correspond to the size of its scope</strong></p>"
+        },
+        {
+          "title": "<p>There can be a variable <code>i</code> inside a <code>for loop</code> but <code>i</code> should never be a <code>instance variable</code>.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Classes and objects should have noun or noun phrase names.</strong></p>"
+        },
+        {
+          "title": "Avoid words like <code>Manager</code>, <code>Processor</code>, <code>Data</code>, or <code>Info</code> in the name of a class."
+        },
+        {
+          "title": "If your class name ends with <code>er</code>,  <code>or</code> or <code>utils</code>, you should consider re looking at the responsibility of the class."
+        },
+        {
+          "title": "<p>A class name should not be a verb.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Methods should have verb or verb phrase names</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>When constructors are overloaded, try to use static factory methods with names that describe the</strong> <strong>arguments</strong></p>"
+        },
+        {
+          "title": "<p><code>Complex fulcrumPoint = Complex.FromRealNumber(23.0)</code>is better than <code>Complex fulcrumPoint = new Complex(23.0)</code></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Pick one word for one abstract concept and stick with it</strong></p>"
+        },
+        {
+          "title": "For instance, it’s confusing to have <code>fetch</code>, <code>retrieve</code>, and <code>get</code> as equivalent methods of different classes.</li>\n</ul>"
+        },
+        {
+          "title": "<p>[x] <strong>Don’t add gratuitous context</strong></p>"
+        },
+        {
+          "title": "For application \"Gas Station Deluxe,\" it is a bad idea to prefix every class with <code>GSD</code>."
+        },
+        {
+          "title": "<p>For example use <code>AccountAddress</code> instead of <code>GSDAccountAddress</code></p>"
+        },
+        {
+          "title": "<p>[x] <strong>It's okay to use computer science terms, algorithm names, pattern names, math terms</strong></p>"
+        },
+        {
+          "title": "<p>Always using the problem domain to get names might result in complication, hence we can use solution domain names on need.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Add no more context to a name than is necessary</strong></p>"
+        },
+        {
+          "title": "Shorter names are generally better than longer ones, so long as they are clear.<p><br/></p><hr/><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Functions :microscope:",
+      "items": [
+        {
+          "title": "[x] <strong>Function should be small</strong>"
+        },
+        {
+          "title": "<p>They should be smaller :stuck_out_tongue:</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Blocks inside <code>if</code>, <code>else</code>, <code>while</code> should be one line long, and that should probably be a function call</strong></p>"
+        },
+        {
+          "title": "This keep the enclosing function small."
+        },
+        {
+          "title": "<p>It also adds documentary value because the function called within the block can have a nicely descriptive name.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>The indent level of a function should not be greater than one or two</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Functions should do one thing, they should do it well, they should do it only</strong></p>"
+        },
+        {
+          "title": "<p>If a function does only those steps that are one level below the stated name of the function, then the function is doing one thing.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Functions should not have sections inside them</strong></p>"
+        },
+        {
+          "title": "<p>If you are able to split a function into sections, then that function is probably doing multiple things.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Function should have one level of abstraction</strong></p>"
+        },
+        {
+          "title": "<p>We need to make sure that the statements within our function are all at the same level of abstraction.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>The Stepdown Rule</strong></p>"
+        },
+        {
+          "title": "<p>The abstraction of a class should decrease as we go reading downwards.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Switch statement should be buried in a low-level class, should appear only once, to create polymorphic objects and is never repeated</strong></p>"
+        },
+        {
+          "title": "<p>For example it can be in an <code>Abstract Factory</code>, but not to be seen anywhere else. </p>"
+        },
+        {
+          "title": "<p>[x] <strong>Try to have functions with 3 arguments</strong></p>"
+        },
+        {
+          "title": "Try to keep no of arguments to 3/4."
+        },
+        {
+          "title": "The ideal number of arguments for a function is zero (niladic). Next comes one (monadic), followed closely by two (dyadic). Three arguments (triadic) should be avoided where possible. More than three (polyadic) requires very special justification"
+        },
+        {
+          "title": "<p>Practically it should never go beyond 4.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>If a function is going to transform its input argument, the transformation should appear as the return value</strong></p>"
+        },
+        {
+          "title": "If a function does transformation operation of it's input, then the output of that function should be the transformed value"
+        },
+        {
+          "title": "<p>If a function is doing a transform of the input, it should do that that only.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Flag arguments should be avoided</strong></p>"
+        },
+        {
+          "title": "It does one thing if the flag is <code>true</code> and another if the flag is <code>false</code>, hence violating Single Responsibility."
+        },
+        {
+          "title": "<p>We should split the function into 2 different functions and call them separately.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>When a function need more than 2 or 3 arguments, if possible wrap some of those arguments into a class of their own</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Functions should not have any side-effects</strong></p>"
+        },
+        {
+          "title": "<p>Mutation of input parameters is to be avoided.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Function should do one thing, which the name suggests and not do anything else</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Functions should either do something or answer something (command query separation)</strong></p>"
+        },
+        {
+          "title": "<p>Either function should change the state of something, or it should return something.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Prefer exceptions to returning error codes</strong></p>"
+        },
+        {
+          "title": "When you return an error code, you create the problem that the caller must deal with the error immediately."
+        },
+        {
+          "title": "<p>Also using Error <code>enum</code> is creating a dependency magnet, multiple classes must import and use them.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Extract Try/Catch Blocks</strong></p>"
+        },
+        {
+          "title": "Error handing is one thing. Thus, a function that handles errors should do nothing else."
+        },
+        {
+          "title": "<p>If the keyword try exists in a function, it should be the very first word in the function and that there should be nothing after the catch/finally blocks.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Avoid code duplication</strong></p>"
+        },
+        {
+          "title": "The DRY principle.<p><br/></p><hr/><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Formatting :rainbow:",
+      "items": [
+        {
+          "title": "<p>[x] <strong>Vertical size of a file should be typically be within the 200 lines limit</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>We would like a source file to be like a newspaper article</strong></p>"
+        },
+        {
+          "title": "The name should be simple but explanatory."
+        },
+        {
+          "title": "The topmost parts of the source file should provide the high-level concepts and algorithms. i.e. the <code>public methods</code>"
+        },
+        {
+          "title": "We should be able to tell what a class does by looking at the upper portion of the class."
+        },
+        {
+          "title": "We should be able to see how it does, when we scroll downwards. </li>\n</ul>"
+        },
+        {
+          "title": "Detail should increase as we move downward we should see more implementation details i.e. the <code>private methods</code>"
+        },
+        {
+          "title": "<p>The general rule for arranging methods</p>"
+        },
+        {
+          "title": "public"
+        },
+        {
+          "title": "protected"
+        },
+        {
+          "title": "private</li>\n</ul>"
+        },
+        {
+          "title": "<p>[x] <strong>Vertical Openness Between Concepts</strong></p>"
+        },
+        {
+          "title": "Each line represents an expression or a clause, and each group of lines represents a complete thought. Those thoughts should be separated from each other with blank lines."
+        },
+        {
+          "title": "<p>i.e. methods should be vertically separated by breaks</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Variables should be declared as close to their usage as possible</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Instance variables should be declared at the top of the class</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>If one function calls another, they should be vertically close</strong></p>"
+        },
+        {
+          "title": "The caller should be above the callee."
+        },
+        {
+          "title": "<p>The <code>private</code> method which is being called from a <code>public</code> method, should appear close to the <code>public</code> method.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Codes having strong conceptual affinity between them should have less vertical separation between them</strong>\n  For example\n  ```\n    public static void assertTrue(boolean condition) {\n       assertThat(condition).isTrue();\n     }</p>\n<p>public static void assertFalse(boolean condition) {\n   assertThat(condition).isFalse()\n }\n ```</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Lines should not be more than 120 characters</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Use spaces between <code>operators</code>, <code>parameters</code>, and <code>commas</code></strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Use a consistent formatting style across the team</strong></p>"
+        },
+        {
+          "title": "<p>Use the same <code>.editorconfig</code> file across the team.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Indentation</strong></p>"
+        },
+        {
+          "title": "Collapsing everything in one line with short <code>ifs</code>, <code>loops</code>, <code>functions</code> is not a good idea."
+        },
+        {
+          "title": "Even for one line <code>ifs</code>, one line <code>whiles</code> - expand them into multiline and add indent.<p><br/></p><hr/><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Objects and Data Structures :two_men_holding_hands:",
+      "items": [
+        {
+          "title": "[x] <strong>Hide implementation of classes with Abstraction</strong>"
+        },
+        {
+          "title": "Do not expose variables out through getters and setters. Rather have abstract interfaces that allow users to manipulate the data, without having to know its implementation."
+        },
+        {
+          "title": "<p>We do not want to expose the details of our data. Rather we want to express our data in abstract terms.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Data/object anti-symmetry</strong></p>"
+        },
+        {
+          "title": "Objects should hide their data behind abstractions and expose functions that operate on that data."
+        },
+        {
+          "title": "<p>Data structure should expose their data and have no meaningful functions.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Choosing between Functional code and OO code</strong></p>"
+        },
+        {
+          "title": "Functional code (code using data structures) makes it easy to add new functions without changing the existing data structures (using pattern matching)."
+        },
+        {
+          "title": "OO code, on the other hand, makes it easy to add new classes (using polymorphism) without changing existing functions."
+        },
+        {
+          "title": "In any complex system there are going to be times when we want to add new data types rather than new functions. For these cases objects and OO are most appropriate."
+        },
+        {
+          "title": "On the other hand, there will also be times when we’ll want to add new functions as opposed to data types. In that case procedural code and data structures will be more appropriate."
+        },
+        {
+          "title": "<p>Everything is an object is a myth. Sometimes you should just have simple data structures with procedures operating on them.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>The law of demeter</strong></p>"
+        },
+        {
+          "title": "a method f of a class C should only call the methods of these:"
+        },
+        {
+          "title": "[x] C"
+        },
+        {
+          "title": "[x] An object created by f"
+        },
+        {
+          "title": "[x] An object passed as an argument to f"
+        },
+        {
+          "title": "[x] An object held in an instance variable of C</li>\n</ul>"
+        },
+        {
+          "title": "<p>The method should not invoke methods on objects that are returned by any of the allowed functions.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Train Wrecks</strong></p>"
+        },
+        {
+          "title": "<code>final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();</code>\n    This kind of chaining operations are called train wrecks and should be avoided."
+        },
+        {
+          "title": "This is a violation of law of demeter as well, as we are invoking methods on objects that are returned."
+        },
+        {
+          "title": "And this is only permitted if data structures are used instead of objects, as objects are not supposed to expose their data."
+        },
+        {
+          "title": "<p>But chained transformations are fine though \n  <code>someList.map(..).map(..).filter(..)</code></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Hybrids, classes which have functions that do significant things, and they also have either public variables or public accessors and mutators</strong></p>"
+        },
+        {
+          "title": "<p>This might result in feature envy smell, as we are exposing access to variables, the caller might be tempted to use them.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>DTOs should not have any behavior , i.e. they should be data-structure and not objects</strong></p>"
+        },
+        {
+          "title": "DTOs/ Value objects should have a <code>equals</code> method."
+        },
+        {
+          "title": "Any operation in a value object should return a new instance of that class.<p><br/></p><hr/><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Error handling :interrobang:",
+      "items": [
+        {
+          "title": "[x] <strong>Error handling is important, but if it obscures logic, it’s wrong</strong>"
+        },
+        {
+          "title": "<p>If your codebase has to many error handler spread across different modules, then by default the code becomes unreadable.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Use unchecked exceptions</strong></p>"
+        },
+        {
+          "title": "Checked exceptions is an <code>Open/Closed Principle</code> violation. If you throw a checked exception from a method in your code and the catch is three levels above, you must declare that exception in the signature of each method between you and the catch. This means that a change at a low level of the code can force signature changes on many higher levels."
+        },
+        {
+          "title": "<p><code>Encapsulation</code> is also broken because all functions in the path of a throw must know about details of that low-level exception.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Provide context with exceptions</strong></p>"
+        },
+        {
+          "title": "Create informative error messages and pass them along with your exceptions."
+        },
+        {
+          "title": "Mention the operation that failed and the type of failure."
+        },
+        {
+          "title": "<p>Pass on the stack trace.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Define exception classes in terms of a caller’s needs</strong></p>"
+        },
+        {
+          "title": "Define the exception in such a way that the caller can take a decision based on the exception only."
+        },
+        {
+          "title": "<p>Use different classes only if there are times when you want to catch one exception and allow the other one to pass through.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>If a portion of code throws many types of exception, wrap that part and throw a common exception</strong></p>"
+        },
+        {
+          "title": "<p>Using the information sent with the exception we should be able to distinguish the errors. </p>"
+        },
+        {
+          "title": "<p>[x] <strong>Wrap your third party API calls</strong></p>"
+        },
+        {
+          "title": "When you wrap a third-party API, you minimize your dependencies upon it."
+        },
+        {
+          "title": "You can choose to move to a different library in the future without much penalty."
+        },
+        {
+          "title": "<p>Wrapping also makes it easier to mock out third-party calls when you are testing your own code.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Instead of having a special flow for exception, use special case pattern</strong></p>"
+        },
+        {
+          "title": "From this\n    <code>try {\n      MealExpenses expenses = expenseReportDAO.getMeals(employee.getID());\n      m_total += expenses.getTotal();\n    } catch (MealExpensesNotFound e) {\n      m_total += getMealPerDiem();\n    }</code>\n      to this\n      <code>MealExpenses expenses = expenseReportDAO.getMeals(employee.getID());\n      m_total += expenses.getTotal();</code>\n<code>public class PerDiemMealExpenses implements MealExpenses {\n        public int getTotal() {\n          // return the per diem default\n        }\n      }</code>"
+        },
+        {
+          "title": "<p>You basically create a class which it handles a special case for you. Hence the client code doesn’t have to deal with exceptional behavior.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Don’t return null</strong></p>"
+        },
+        {
+          "title": "When we return null, the caller needs to have a null check."
+        },
+        {
+          "title": "<p>Remedy to this can be</p>"
+        },
+        {
+          "title": "Special case object."
+        },
+        {
+          "title": "Returning empty list.</li>\n</ul>"
+        },
+        {
+          "title": "<p>[x] <strong>Don’t pass null as arguments</strong></p>"
+        },
+        {
+          "title": "If you pass null, then the callee has to always check for null args.\n    <code>public double xProjection(Point p1, Point p2) {\n      if (p1 == null || p2 == null) {\n         throw InvalidArgumentException(\n           \"Invalid argument for MetricsCalculator.xProjection\");\n      }\n      return (p2.x – p1.x) * 1.5;\n    }</code>\n    a cleaner way to do this could be\n    <code>public double xProjection(Point p1, Point p2) {\n       assert p1 != null : \"p1 should not be null\";\n       assert p2 != null : \"p2 should not be null\";\n       return (p2.x – p1.x) * 1.5;\n    }</code>\n    But this also doesn't solve the problem, instead of <code>NullPointerException</code> we are going to get some different <code>RuntimeException</code>"
+        },
+        {
+          "title": "If your language supports it, use a <code>optional</code> pattern maybe.<p><br/></p><hr/><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Unit tests :umbrella:",
+      "items": [
+        {
+          "title": "[x] <strong>Follow three laws of TDD</strong>"
+        },
+        {
+          "title": "You may not write production code until you have written a failing unit test."
+        },
+        {
+          "title": "You may not write more of a unit test than is sufficient to fail, and not compiling is failing."
+        },
+        {
+          "title": "<p>You may not write more production code than is sufficient to pass the currently failing test.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Keep test clean</strong></p>"
+        },
+        {
+          "title": "Tests should be first-class citizen. It must be kept as clean as production code"
+        },
+        {
+          "title": "<p>Tests must change as the production code evolves. The dirtier the tests, the harder they are to change.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Follow the The Build-Operate-Check pattern</strong></p>"
+        },
+        {
+          "title": "The first part builds up the test data, the second part operates on that test data, and the third part checks that the operation yielded the expected results."
+        },
+        {
+          "title": "<p>This is same as <code>given-when-then</code> pattern.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>A Dual Standard</strong></p>"
+        },
+        {
+          "title": "<p>There are things that you might never do in a production environment that are perfectly fine in a test environment. Usually they involve issues of memory or CPU efficiency.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>One assert per test (flexible)</strong></p>"
+        },
+        {
+          "title": "Ideally there should be one assert per test."
+        },
+        {
+          "title": "But it's okay if we have more, at the end of the day the number of asserts in a test ought to be minimized."
+        },
+        {
+          "title": "<p>The goal is to have one logical assert per test or to test a single behavior in a unit test.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Single Concept per Test</strong></p>"
+        },
+        {
+          "title": "<p>Do not operate on different data and then try to assert them in a single test.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>F.I.R.S.T.</strong></p>"
+        },
+        {
+          "title": "FAST: Tests should be fast."
+        },
+        {
+          "title": "INDEPENDENT: Tests should not depend on each other."
+        },
+        {
+          "title": "REPEATABLE: Tests should be repeatable in any environment."
+        },
+        {
+          "title": "SELF-VALIDATING: The tests should have a boolean output."
+        },
+        {
+          "title": "TIMELY: The tests need to be written in a timely fashion."
+        },
+        {
+          "title": "Unit tests should be written just before the production code that makes them pass.\n<p><br/></p><hr/><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Class :school_satchel:",
+      "items": [
+        {
+          "title": "[x] <strong>Class organization</strong> :arrow_down:"
+        },
+        {
+          "title": "Variables"
+        },
+        {
+          "title": "Public static constants"
+        },
+        {
+          "title": "private static variables"
+        },
+        {
+          "title": "private instance variables</li>\n</ul>"
+        },
+        {
+          "title": "<p>Public function</p>"
+        },
+        {
+          "title": "Related private functions</li>\n</ul>"
+        },
+        {
+          "title": "<p>[x] <strong>Classes should maintain Encapsulation</strong></p>"
+        },
+        {
+          "title": "<p>Variables and utility functions should be private</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Classes should be small and do only one thing</strong></p>"
+        },
+        {
+          "title": "The name of a class should describe what responsibilities it fulfills."
+        },
+        {
+          "title": "If we cannot derive a concise name for a class, then it’s likely too large."
+        },
+        {
+          "title": "The more ambiguous the class name, the more likely it has too many responsibilities."
+        },
+        {
+          "title": "<p>We should also be able to write a brief description of the class in about 25 words, without using the words \"if,\" \"and,\" \"or,\" or \"but\". If you have to use \"and\" then probably the class has multiple responsibilities.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Single Responsibility Principle</strong></p>"
+        },
+        {
+          "title": "<p>Classes should have only one reason to change.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Classes should have cohesion</strong></p>"
+        },
+        {
+          "title": "Classes should have a small number of instance variables. Each of the methods of a class should manipulate one or more of those variables."
+        },
+        {
+          "title": "When classes lose cohesion, split them."
+        },
+        {
+          "title": "<p>Private method behavior that applies only to a small subset of a class can be a useful heuristic, it's probably a hint that you need to extract that portion into a different class.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Classes should depend upon abstractions, not on concrete details (Dependency Inversion)</strong></p>\n<p><br/></p><hr/><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Emergence :green_book:",
+      "items": [
+        {
+          "title": "[x] <strong>Design must produce a system that runs all tests as writing tests leads to better designs</strong>"
+        },
+        {
+          "title": "A system might have a perfect design on paper, but if there is no simple way to verify that the system actually works as intended, then all the paper effort is questionable."
+        },
+        {
+          "title": "Making our systems testable pushes us toward a design where our classes are small and single purpose. It’s just easier to test classes that conform to the Single Responsibility Principle."
+        },
+        {
+          "title": "The more tests we write, the more we’ll continue to push toward things that are simpler to test."
+        },
+        {
+          "title": "Tight coupling makes it difficult to write tests. So, similarly, the more tests we write, the more we use principles like DIP and tools like dependency injection, interfaces, and abstraction to minimize coupling."
+        },
+        {
+          "title": "<p>The fact that we have these tests eliminates the fear that cleaning up the code will break it, and hence we can refactor and make changes with confidence.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>No duplication</strong></p>"
+        },
+        {
+          "title": "<p>Duplication represents additional work, additional risk, and additional unnecessary complexity.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Expressive</strong></p>"
+        },
+        {
+          "title": "You can express yourself by choosing good names."
+        },
+        {
+          "title": "You can also express yourself by using standard nomenclature. Design patterns names, such as COMMAND or VISITOR."
+        },
+        {
+          "title": "<p>Well-written unit tests are also expressive. A primary goal of tests is to act as documentation by example.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Minimal classes and methods</strong></p>"
+        },
+        {
+          "title": "Create small classes but create one when it's justifiable, creating classes just to reduce out on the no of lines of code is a bad practice."
+        },
+        {
+          "title": "Creating an interface for each and every class should be avoided. Or fields and behavior must always separated into data classes and behavior classes.<p><br/></p><hr/><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Concurrency :arrows_clockwise:",
+      "items": [
+        {
+          "title": "<p>[x] <strong>Concurrency always doesn't improve performance</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>To make a system concurrent we might need to change the overall design strategy</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Understanding potential concurrency issue is important even though it might not be the problem at hand</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Keep your concurrency-related code separate from other code</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Shared data between threads create synchronization problems, hence take data encapsulation to heart, limit the access of any data that may be shared</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Instead of sharing data, create copies of data for different thread and collect them at the end of processing</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Threads Should Be as Independent as Possible, and should not share data with any other thread</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Use thread safe library functions</strong></p>"
+        },
+        {
+          "title": "Use the provided thread-safe collections."
+        },
+        {
+          "title": "Use the executor framework for executing unrelated tasks."
+        },
+        {
+          "title": "<p>Use nonblocking solutions when possible.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Use producer consumer model for concurrent operation</strong></p>"
+        },
+        {
+          "title": "<p>One or more producer threads create some work and place it in a buffer or queue. One or more consumer threads acquire that work from the queue and complete it.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Use Readers-Writers model for concurrent operation</strong></p>"
+        },
+        {
+          "title": "For read heavy systems"
+        },
+        {
+          "title": "Makes writers wait until there are no readers before allowing the writer to perform an update.</li>\n</ul>"
+        },
+        {
+          "title": "<p>For write heavy systems</p>"
+        },
+        {
+          "title": "Writers should be given the priority</li>\n</ul>"
+        },
+        {
+          "title": "<p>[x] <strong>Use different locking strategies like</strong></p>"
+        },
+        {
+          "title": "Client-Based Locking"
+        },
+        {
+          "title": "Server-Based Locking"
+        },
+        {
+          "title": "<p>Adapted Server Locking</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Keep your synchronized sections small and avoid side-effects</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Have a shutdown strategy in place which works</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Treat spurious failures as candidate threading issues</strong></p>"
+        },
+        {
+          "title": "<p>Do not ignore system failures as one-offs.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Get your non-threaded code working first</strong></p>"
+        },
+        {
+          "title": "<p>Do not try to chase down nonthreading bugs and threading bugs at the same time. Make sure your code works outside of threads.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Make your threaded code pluggable</strong></p>"
+        },
+        {
+          "title": "<p>Make your thread-based code especially pluggable so that you can run it in various configurations.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Make your threaded code tunable</strong></p>"
+        },
+        {
+          "title": "<p>Allow configurations like, number of threads to be easily tuned.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Run with more threads than processors</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Run on different platforms</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Instrument your code to try and force failures</strong></p>\n<p><br/></p><hr/><p><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Code smells :speak_no_evil:",
+      "items": [
+        {
+          "title": "<p>[x] <strong>If you see commented out code. delete it</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Unused code should be deleted</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Implementation should be obvious</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Look for every boundary condition and write a test for it</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Base classes should know nothing about their derivatives</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Code should be consistent</strong></p>"
+        },
+        {
+          "title": "<p>If within a particular function you use a variable named response to hold an HttpServletResponse, then use the same variable name consistently in the other functions that use HttpServletResponse objects</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Prefer nonstatic methods to static methods</strong></p>"
+        },
+        {
+          "title": "<p>If you really want a function to be static, make sure that there is no chance that you’ll want it to behave polymorphically.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Avoid Negative Conditionals</strong></p>"
+        },
+        {
+          "title": "<p><code>if (buffer.shouldCompact())</code> is better than <code>if (!buffer.shouldNotCompact())</code></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Encapsulate Boundary Conditions</strong></p>"
+        },
+        {
+          "title": "<p><code>if(level + 1 &lt; tags.length) {\n     parts = new Parse(body, tags, level + 1, offset + endTag);\n     body = null\n     }</code>\n<code>level + 1</code> is a boundary operation which is repeated so we can wrap that in a variable like <code>nextLevel = level + 1</code></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Avoid Long Import Lists by Using Wildcards</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Don’t Inherit Constants</strong></p>"
+        },
+        {
+          "title": "<p>Use static imports instead</p>"
+        },
+        {
+          "title": "<p>[x] <strong>Use enums and not <code>public static final ints/strings</code></strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Honourable mentions :basecamp:",
+      "items": [
+        {
+          "title": "<p>In this section I am going to list down few things which are absolutely legendary but I missed mentioning them. There are tons of resources available online for these topics, you can read them from there.</p>"
+        },
+        {
+          "title": "<p>[x] <strong>The OG S.O.L.I.D principles, no clean code discussion is complete without them</strong></p>"
+        },
+        {
+          "title": "<p>[x] <strong>Object Calisthenics</strong></p>"
+        }
+      ]
+    }
+  ]
+}

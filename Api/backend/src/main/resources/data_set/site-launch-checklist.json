@@ -1,0 +1,322 @@
+{
+  "id": 193,
+  "header": "site-launch-checklist",
+  "topicList": [
+    "Checklist",
+    "License",
+    "Attribution"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Checklist",
+      "items": [
+        {
+          "topic": "General",
+          "items": [
+            {
+              "title": " Strict usage of domain with or without www"
+            },
+            {
+              "title": " Correct language set in HTML tag"
+            },
+            {
+              "title": " Charset is set"
+            },
+            {
+              "title": " HTML is valid"
+            },
+            {
+              "title": " 404-page is available"
+            }
+          ]
+        },
+        {
+          "topic": "SEO",
+          "items": [
+            {
+              "title": " Pages can be indexed"
+            },
+            {
+              "title": " Pages have unique page titles (fewer than 70 characters, includes keywords)."
+            },
+            {
+              "title": " Pages have unique meta descriptions (fewer than 156 characters, includes keywords)."
+            },
+            {
+              "title": " Pages have keywords (fewer than 10, all words appear in page copy)."
+            },
+            {
+              "title": " Images use the alt-attribute"
+            },
+            {
+              "title": " Links use a title-attribute"
+            },
+            {
+              "title": " A dynamic XML sitemap has been created."
+            },
+            {
+              "title": " The XML sitemap has been submitted to search engines."
+            },
+            {
+              "title": " H1s used for page titles and only one H1 per page"
+            },
+            {
+              "title": " HTTPS is used on all pages"
+            }
+          ]
+        },
+        {
+          "topic": "Google Analytics",
+          "items": [
+            {
+              "title": " Create <a href=\"http://www.google.com/analytics/\">Google Analytics</a> account"
+            },
+            {
+              "title": " Hook up the GA Tracking Code (typically in our <code>analytics_lib.js</code> file)"
+            },
+            {
+              "title": " Set up relevant Goals and Funnels"
+            },
+            {
+              "title": " Set up <a href=\"https://www.google.com/webmasters/tools/home?hl=en\">Google Webmaster Tools</a>"
+            },
+            {
+              "title": " Verify site in Webmaster Tools with DNS TXT record"
+            },
+            {
+              "title": " Link Webmaster Tools to Google Analytics"
+            }
+          ]
+        },
+        {
+          "topic": "Sharing",
+          "items": [
+            {
+              "title": " Set up general meta tags"
+            },
+            {
+              "title": "<code>&lt;meta name=“description”&gt;</code>"
+            },
+            {
+              "title": "<code>&lt;meta name=“author”&gt;</code>"
+            },
+            {
+              "title": " Set up Facebook meta tags &amp; validate <a href=\"https://developers.facebook.com/tools/debug/\">here</a>"
+            },
+            {
+              "title": "<code>&lt;meta property=“og:site_name”&gt;</code>"
+            },
+            {
+              "title": "<code>&lt;meta property=“og:title”&gt;</code>"
+            },
+            {
+              "title": "<code>&lt;meta property=“og:type”&gt;</code>"
+            },
+            {
+              "title": "<code>&lt;meta property=“og:description”&gt;</code>"
+            },
+            {
+              "title": "<code>&lt;meta property=“og:url”&gt;</code>"
+            },
+            {
+              "title": "<code>&lt;meta property=“og:image”&gt;</code>"
+            },
+            {
+              "title": " Set up Twitter meta tags &amp; validate <a href=\"https://cards-dev.twitter.com/validator\">here</a>"
+            },
+            {
+              "title": "<code>&lt;meta name=“twitter:card”&gt;</code>"
+            },
+            {
+              "title": "<code>&lt;meta name=“twitter:site”&gt;</code>"
+            },
+            {
+              "title": "<code>&lt;meta name=“twitter:creator”&gt;</code>"
+            },
+            {
+              "title": "<code>&lt;meta name=“twitter:description”&gt;</code> (note that this needs to be under 200 characters)"
+            },
+            {
+              "title": "<code>&lt;meta name=“twitter:title”&gt;</code>"
+            },
+            {
+              "title": "<code>&lt;meta name=“twitter:url”&gt;</code>"
+            },
+            {
+              "title": "<code>&lt;meta name=“twitter:image:src”&gt;</code>"
+            },
+            {
+              "title": " Create 2-5 meme images using <a href=\"http://canva.com/\">Canva</a> or a similar tool"
+            }
+          ]
+        },
+        {
+          "topic": "Mobile",
+          "items": [
+            {
+              "title": "<p>Test on various mobile devices:\n- Scrolling is easy\n- Nav bar works\n- Hoverable things are tappable\n- Charts/maps look ok</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Performance",
+          "items": [
+            {
+              "title": " Run the site through https://developers.google.com/speed/pagespeed/insights/"
+            },
+            {
+              "title": " Run the site through https://tools.pingdom.com/"
+            },
+            {
+              "title": " Leverage browser Caching https://gtmetrix.com/leverage-browser-caching.html"
+            },
+            {
+              "title": " Enable gZip compression https://gtmetrix.com/enable-gzip-compression.html"
+            },
+            {
+              "title": " Minify CSS &amp; JS"
+            },
+            {
+              "title": " CDN is used for static files"
+            },
+            {
+              "title": " HTTP/2 is being used"
+            }
+          ]
+        },
+        {
+          "topic": "Rendering",
+          "items": [
+            {
+              "title": " Viewport Meta Tag is used correctly"
+            },
+            {
+              "title": " Displays &amp; functions correctly in IE10"
+            },
+            {
+              "title": " Displays &amp; functions correctly in IE11"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Microsoft Edge"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Firefox (Windows)"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Firefox (Mac)"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Chrome (Windows)"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Chrome (Mac)"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Safari (Mac)"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Safari (iOS – Mobile)"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Safari (iOS – iPad)"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Chrome (iOS – Mobile)"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Chrome (iOS – iPad)"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Chrome (Android – Mobile)"
+            },
+            {
+              "title": " Displays &amp; functions correctly in Chrome (Android – Tablet)"
+            },
+            {
+              "title": " Displays &amp; functions correctly on large resolutions"
+            }
+          ]
+        },
+        {
+          "topic": "Accessibility",
+          "items": [
+            {
+              "title": " Color Contrast is good (WCAG 2.0)"
+            },
+            {
+              "title": " WAI-ARIA roles are used"
+            },
+            {
+              "title": " Usage of accessible elements like nav, footer, aside"
+            },
+            {
+              "title": " URLs are accessible"
+            },
+            {
+              "title": " Keyboard accessibility is available"
+            },
+            {
+              "title": " Correct input types are used"
+            }
+          ]
+        },
+        {
+          "topic": "Security",
+          "items": [
+            {
+              "title": " HTTPS is used on all pages"
+            },
+            {
+              "title": " There is no mixed content on the pages"
+            },
+            {
+              "title": " External plugins and trackings get loaded via HTTPS"
+            },
+            {
+              "title": " Robots.txt is in use"
+            },
+            {
+              "title": " Cross-Site-Scripting is not possible"
+            },
+            {
+              "title": " HSTS Header is set"
+            },
+            {
+              "title": " Content-Security-Policy is set and only allows specific hosts and no inline scripts"
+            }
+          ]
+        },
+        {
+          "topic": "Useful links",
+          "items": [
+            {
+              "title": " https://www.letsvalidate.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p>This checklist is licensed under <a href=\"\">CC-BY-SA 4.0</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Attribution",
+      "items": [
+        {
+          "title": "https://github.com/datamade/site-launch-checklist (MIT)"
+        },
+        {
+          "title": "https://github.com/drublic/checklist"
+        },
+        {
+          "title": "https://humaan.com/checklist/ (CC-BY-SA 4.0)"
+        }
+      ]
+    }
+  ]
+}

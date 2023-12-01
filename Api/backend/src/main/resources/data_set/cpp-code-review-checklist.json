@@ -1,0 +1,67 @@
+{
+  "id": 55,
+  "header": "cpp-code-review-checklist",
+  "topicList": [
+    "1. The Rule of The Three",
+    "2. Do not use #define unless you have to",
+    "3. Iteration over STL containers",
+    "4. Try to use const member functions",
+    "5. Ensure logical constness instead of bitwise constness",
+    "6. Always use initializer list for user defined type for better performance"
+  ],
+  "itemGroups": [
+    {
+      "topic": "1. The Rule of The Three",
+      "items": [
+        {
+          "title": "<p>If a class implements one of the following 3 methods, then the class should implement all 3 of them - </p>"
+        },
+        {
+          "title": "Destructor"
+        },
+        {
+          "title": "Copy constructor"
+        },
+        {
+          "title": "Copy assignment operator<p><strong>More:</strong> http://www.geeksforgeeks.org/rule-of-three-in-cpp/</p>"
+        }
+      ]
+    },
+    {
+      "topic": "2. Do not use #define unless you have to",
+      "items": [
+        {
+          "title": "<p>Prefers <code>inline</code> for functions, <code>const</code> for variables and 'enum' for alias. For string, <code>const string</code> or <code>const char * const</code> instead of <code>#define</code>. </p><p><strong>More:</strong> http://voidsid.blogspot.com/2007/04/prefer-const-and-inline-to-define.html</p>"
+        }
+      ]
+    },
+    {
+      "topic": "3. Iteration over STL containers",
+      "items": [
+        {
+          "title": "<p>For generic code, use range based <code>for loop</code> instead of the classical for loop. For all other case, refrain yourself from using classical <code>for loop</code>. Instead use - </p><p><code>for(auto&amp; element : elements)</code></p><p><strong>More:</strong> https://stackoverflow.com/questions/36992260/comparing-different-types-of-c-for-loops</p>"
+        }
+      ]
+    },
+    {
+      "topic": "4. Try to use const member functions",
+      "items": [
+        {
+          "title": "<p>All the member functions should be declared as <code>const</code> if the function dont modify any value of the object. Otherwise, it will be tough to work with <code>const reference to object / const object / const pointer to object</code> (function parameter for most of the case) as non-const member functions cant be called with <code>const reference to object / const object / const pointer to object</code>.</p><p><strong>More:</strong> https://turbofuture.com/misc/C-Const-member-function-explained</p><p><strong>Example:</strong> https://github.com/swomack/cpp-tricks/blob/master/Const%20Member%20Function/Const%20Member%20Function/Const%20Member%20Function/Source.cpp</p>"
+        }
+      ]
+    },
+    {
+      "topic": "5. Ensure logical constness instead of bitwise constness",
+      "items": []
+    },
+    {
+      "topic": "6. Always use initializer list for user defined type for better performance",
+      "items": [
+        {
+          "title": "<p>Initializing the user defined typed members of a class should be done using initializer list as it calls the copy constructor of that user defined type(no constructor is called). If we dont use initializer list and do the initializng in the constructor then first the default constructor of the user defined type will be called and then assignment operator overloaded function will be called. This will cause performance degradation.</p><p><strong>Example:</strong> https://github.com/swomack/cpp-tricks/blob/master/Initializer%20List/Initializer%20List/Initializer%20List/Source.cpp</p>"
+        }
+      ]
+    }
+  ]
+}

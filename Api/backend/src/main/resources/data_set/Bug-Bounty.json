@@ -1,0 +1,547 @@
+{
+  "id": 26,
+  "header": "Bug-Bounty",
+  "topicList": [
+    "⚜️ Aภl๏miuภuຮ ⚜️",
+    "GitHub Bounty",
+    "GitHub Security Bug Bounty",
+    "Awesome Bug Bounty Tools",
+    "Awesome Bug Bounty",
+    "Awesome CTF",
+    "Awesome Bug Bounty Builder",
+    "Hacking-Books Here Are Some Popular Hacking PDF",
+    "The Threat Hunter Playbook ~ The Threat Hunter Playbook",
+    "Bug Bounty Cheat Sheet",
+    "Bug Bounty Cheat Sheet",
+    "Galaxy-Bugbounty-Checklist ",
+    "Bug Bounty Methodology & Tools",
+    "BugDog",
+    "Bug-Bounty-Tools: Random Tools for Bug Bounty",
+    "BigBountyRecon",
+    "Hack-Pet:",
+    "CTF-tool",
+    "Bug bounty toolkit",
+    "BugHuntingToolKit",
+    "Parrots Recon",
+    "OK-VPS",
+    "kali-repos",
+    "Bot-Bounty",
+    "Bug-Bounty-Wordlists",
+    "a-full-list-of-wordlists",
+    "FuzzDB",
+    "wordlist-tools",
+    "The Bug Hunter's Methodology (TBHM)",
+    "Galaxy-Bugbounty-Checklist:",
+    "HowToHunt",
+    "Awesome-Bugbounty-Writeups",
+    "AllAboutBugBounty",
+    "HolyTips",
+    "KingOfBugBountyTips ",
+    "Resources-for-Beginner-Bug-Bounty-Hunters:",
+    "Table of Contents",
+    "\n\n  **[`^        Back to TOP        ^`](#%EF%B8%8F-aภlmiuภuຮ-%EF%B8%8F)**\n\n"
+  ],
+  "itemGroups": [
+    {
+      "topic": "⚜️ Aภl๏miuภuຮ ⚜️",
+      "items": [
+        {
+          "title": "<img align=\"center\" src=\"https://user-images.githubusercontent.com/51442719/172729066-1293d382-4a31-4f03-8c23-ab0ea5f611a0.png\" width=\"100\"/><br/><br/><br/><br/><br/><br/>"
+        }
+      ]
+    },
+    {
+      "topic": "GitHub Bounty",
+      "items": [
+        {
+          "title": "<blockquote>\n<h2>GitHub Security Bug Bounty</h2>\n<h3>Software security researchers are increasingly engaging with internet companies to hunt down vulnerabilities.</h3>\n<h3>Our bounty program gives a tip of the hat to these researchers and provides rewards of $30,000 or more for critical vulnerabilities.</h3>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "GitHub Security Bug Bounty",
+      "items": [
+        {
+          "topic": "Software security researchers are increasingly engaging with internet companies to hunt down vulnerabilities.",
+          "items": []
+        },
+        {
+          "topic": "Our bounty program gives a tip of the hat to these researchers and provides rewards of $30,000 or more for critical vulnerabilities.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Awesome Bug Bounty Tools",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>A curated list of various bug bounty tools</h3>\n<p>https://github.com/vavkamil/awesome-bugbounty-tools</p>\n</blockquote>"
+        },
+        {
+          "topic": "A curated list of various bug bounty tools",
+          "items": [
+            {
+              "title": "<p>https://github.com/vavkamil/awesome-bugbounty-tools</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Awesome Bug Bounty",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>A comprehensive curated list of Bug Bounty Programs and write-ups from the Bug Bounty hunters.</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Awesome CTF",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>A curated list of <code>Capture The Flag</code> (<code>CTF</code>) frameworks, libraries, resources, softwares and tutorials. This list aims to help starters as well as seasoned CTF players to find everything related to CTFs at one place.</h3>\n</blockquote>"
+        },
+        {
+          "topic": "A curated list of Capture The Flag (CTF) frameworks, libraries, resources, softwares and tutorials. This list aims to help starters as well as seasoned CTF players to find everything related to CTFs at one place.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Awesome Bug Bounty Builder",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>Awesome Bug bounty builder Project - ALL common Tools for find your Vulnerabilities.</h3>\n<p><img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/174515020-8d952fcc-7385-4a41-9e5d-2d388baf953d.png\"> </img></p>\n</blockquote>"
+        },
+        {
+          "topic": "Awesome Bug bounty builder Project - ALL common Tools for find your Vulnerabilities.",
+          "items": [
+            {
+              "title": "<p><img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/174515020-8d952fcc-7385-4a41-9e5d-2d388baf953d.png\"> </img></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Hacking-Books Here Are Some Popular Hacking PDF",
+      "items": []
+    },
+    {
+      "topic": "The Threat Hunter Playbook ~ The Threat Hunter Playbook",
+      "items": []
+    },
+    {
+      "topic": "Bug Bounty Cheat Sheet",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>A list of interesting payloads, tips and tricks for bug bounty hunters.</h3>\n</blockquote>"
+        },
+        {
+          "topic": "A list of interesting payloads, tips and tricks for bug bounty hunters.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Bug Bounty Cheat Sheet",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>A list of interesting payloads, tips and tricks for bug bounty hunters. </p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Galaxy-Bugbounty-Checklist ",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>Tips and Tutorials for Bug Bounty and also Penetration Tests.</h3>\n</blockquote>"
+        },
+        {
+          "topic": "Tips and Tutorials for Bug Bounty and also Penetration Tests.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Bug Bounty Methodology & Tools",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3></h3>\n</blockquote>"
+        },
+        {
+          "topic": "",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "BugDog",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>A Powerfull BUG HUNTING TOOL. Supports SQL, XSS, PHP code execution, SSRF,.... I had Appended My Own Payloads which I had founded during my BUG Hunting Rest You can add Your CUSTOM payloads too ;)</h3>\n<p><img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/174846835-7ca2ee10-92ef-408e-9e16-a1ac04c5c107.png\"/>\n- ### NOTE: BugDog is made with python and requires python2 to run perfectly.</p>\n</blockquote>"
+        },
+        {
+          "topic": "A Powerfull BUG HUNTING TOOL. Supports SQL, XSS, PHP code execution, SSRF,.... I had Appended My Own Payloads which I had founded during my BUG Hunting Rest You can add Your CUSTOM payloads too ;)",
+          "items": [
+            {
+              "title": "<p><img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/174846835-7ca2ee10-92ef-408e-9e16-a1ac04c5c107.png\"/>\n- ### NOTE: BugDog is made with python and requires python2 to run perfectly.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Bug-Bounty-Tools: Random Tools for Bug Bounty",
+      "items": []
+    },
+    {
+      "topic": "BigBountyRecon",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>BigBountyRecon tool utilises 58 different techniques using various Google dorks and open source tools to expedite the process of initial reconnaissance on the target organisation.</h3>\n</blockquote>"
+        },
+        {
+          "title": "<img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/173207844-0c15a4ae-f7af-4733-a82d-6dd49873d087.png\"/>"
+        },
+        {
+          "topic": "BigBountyRecon tool utilises 58 different techniques using various Google dorks and open source tools to expedite the process of initial reconnaissance on the target organisation.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Hack-Pet:",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>hack-pet is collection of command snippets that are useful to hackers/bug bounty hunters. <br/></h3>\n<h3>It is similar to the recon_profile, but it uses the pet. pet can manage the command set more progressively. <br/></h3>\n<p><img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/173320602-a127a785-8833-4af6-bbe1-dd05e6008fee.png\"/> <br/>\n<img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/173320551-b871c846-be09-4d24-9005-e5a3a8e72d1b.png\"/></p>\n</blockquote>"
+        },
+        {
+          "topic": "hack-pet is collection of command snippets that are useful to hackers/bug bounty hunters. ",
+          "items": []
+        },
+        {
+          "topic": "It is similar to the recon_profile, but it uses the pet. pet can manage the command set more progressively. ",
+          "items": [
+            {
+              "title": "<p><img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/173320602-a127a785-8833-4af6-bbe1-dd05e6008fee.png\"/> <br/>\n<img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/173320551-b871c846-be09-4d24-9005-e5a3a8e72d1b.png\"/></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "CTF-tool",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>A curated list of Capture The Flag (CTF) frameworks, libraries, resources and softwares.</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Bug bounty toolkit",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>Here you can find a list of differents tools that you can use in bug bounty or pentesting.</h3>\n<h4>Some categories and tools will be added as we go.</h4>\n<h4>If you have questions or suggestions, don't hesitate to contact me on twitter (https://twitter.com/<em>sehno</em>)</h4>\n</blockquote>"
+        },
+        {
+          "topic": "Here you can find a list of differents tools that you can use in bug bounty or pentesting.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "BugHuntingToolKit",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>This Is A Tool For Bug Hunters in this tool i have included the tools which bug hunters use</h3>\n<p><img alt=\"\" src=\"https://github.com/krishpranav/BugHuntingToolKit/raw/master/Bug.gif\"/></p>\n</blockquote>"
+        },
+        {
+          "topic": "This Is A Tool For Bug Hunters in this tool i have included the tools which bug hunters use",
+          "items": [
+            {
+              "title": "<p><img alt=\"\" src=\"https://github.com/krishpranav/BugHuntingToolKit/raw/master/Bug.gif\"/></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Parrots Recon",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>Recon Automation for BugBounties</h3>\n</blockquote>"
+        },
+        {
+          "topic": "Recon Automation for BugBounties",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "OK-VPS",
+      "items": [
+        {
+          "title": "<blockquote>\n<p><img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/174768684-043fcd77-991d-42d8-bf2b-9aca2eec5825.png\"/></p>\n<h3>Bug Bounty Vps Setup Tools Installer</h3>\n<h4>With these tools you can install most of the bug bounty tools with just one command and The tool has been modified and spelled many tools ## special thanks @supr4s Because most of these tools modify his tools</h4>\n</blockquote>"
+        },
+        {
+          "topic": "Bug Bounty Vps Setup Tools Installer",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "kali-repos",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>Kali Linux containers for bug bounty and CTFs</h3>\n</blockquote>"
+        },
+        {
+          "topic": "Kali Linux containers for bug bounty and CTFs",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Bot-Bounty",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>Python Script for Telegram Bot is specially built for pentest &amp; bug bounty. It's like a telegram shell.</h3>\n<h4>You will be notified when your task(command line) is finished with results. This bot make long time tasks by you, taking off the need of your attention if it's finished.</h4>\n<p><img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/174773861-5271f931-18b8-46bc-b088-0ee7e1277a03.png\"/> <br/>\n<img alt=\"image\" src=\"https://user-images.githubusercontent.com/51442719/174773924-4e2f431b-ac2a-4dbf-9e93-114947b2892a.png\"/> <br/></p>\n</blockquote>"
+        },
+        {
+          "topic": "Python Script for Telegram Bot is specially built for pentest & bug bounty. It's like a telegram shell.",
+          "items": []
+        },
+        {
+          "topic": "Subdomains recon",
+          "items": []
+        },
+        {
+          "topic": "Manual recon",
+          "items": []
+        },
+        {
+          "topic": "Enumeration / Crawling",
+          "items": []
+        },
+        {
+          "topic": "XSS",
+          "items": []
+        },
+        {
+          "topic": "SQL Injection",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Bug-Bounty-Wordlists",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>A repository that includes all the important wordlists used while bug hunting.</h3>\n</blockquote>"
+        },
+        {
+          "topic": "A repository that includes all the important wordlists used while bug hunting.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "a-full-list-of-wordlists",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>this contain the burp pack</h3>\n</blockquote>"
+        },
+        {
+          "topic": "this contain the burp pack",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "FuzzDB",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>FuzzDB was created to increase the likelihood of finding application security vulnerabilities through dynamic application security testing. It's the first and most comprehensive open dictionary of fault injection patterns, predictable resource locations, and regex for matching server responses.</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "wordlist-tools",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>A set of tools for making life easier with wordlists </p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "The Bug Hunter's Methodology (TBHM)",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>related to web application security assessments and more specifically towards bug hunting in bug bounties. </p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Galaxy-Bugbounty-Checklist:",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>Tips and Tutorials for Bug Bounty and also Penetration Tests.</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "HowToHunt",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>Tutorials and Things to Do while Hunting Vulnerability.</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "Awesome-Bugbounty-Writeups",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>A curated list of bugbounty writeups (Bug type wise) , inspired from https://github.com/ngalongc/bug-bounty-reference </p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "AllAboutBugBounty",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>All about bug bounty (bypasses, payloads, and etc)</p>\n</blockquote>"
+        }
+      ]
+    },
+    {
+      "topic": "HolyTips",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>A Collection of Notes, Checklists, Writeups on Bug Bounty Hunting and Web Application Security.</h3>\n</blockquote>"
+        },
+        {
+          "topic": "A Collection of Notes, Checklists, Writeups on Bug Bounty Hunting and Web Application Security.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "KingOfBugBountyTips ",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>Our main goal is to share tips from some well-known bughunters. Using recon methodology, we are able to find subdomains, apis, and tokens that are already exploitable, so we can report them. We wish to influence Onelinetips and explain the commands, for the better understanding of new hunters..</h3>\n</blockquote>"
+        },
+        {
+          "topic": "Our main goal is to share tips from some well-known bughunters. Using recon methodology, we are able to find subdomains, apis, and tokens that are already exploitable, so we can report them. We wish to influence Onelinetips and explain the commands, for the better understanding of new hunters..",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Resources-for-Beginner-Bug-Bounty-Hunters:",
+      "items": [
+        {
+          "title": "<blockquote>\n<h3>A list of resources for those interested in getting started in bug bounties</h3>\n<h2>Table of Contents</h2>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/basics.md\">Basics</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/setup.md\">Setup</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/tools.md\">Tools</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/labs.md\">Labs &amp; Testing Environments</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/talks.md\">Talks</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/vulns.md\">Vulnerability Types</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/mobile.md\">Mobile Hacking</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/smartcon.md\">Smart Contracts</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/coding.md\">Coding &amp; Scripting</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/hardware.md\">Hardware &amp; IoT</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/blogposts.md\">Blog posts &amp; Talks</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/media.md\">Media Resources</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/certs.md\">Certifications</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/health.md\">Mindset &amp; Mental Health</a>\n</blockquote>"
+        },
+        {
+          "topic": "A list of resources for those interested in getting started in bug bounties",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/basics.md\">Basics</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/setup.md\">Setup</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/tools.md\">Tools</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/labs.md\">Labs &amp; Testing Environments</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/talks.md\">Talks</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/vulns.md\">Vulnerability Types</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/mobile.md\">Mobile Hacking</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/smartcon.md\">Smart Contracts</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/coding.md\">Coding &amp; Scripting</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/hardware.md\">Hardware &amp; IoT</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/blogposts.md\">Blog posts &amp; Talks</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/media.md\">Media Resources</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/certs.md\">Certifications</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters/blob/master/assets/health.md\">Mindset &amp; Mental Health</a>"
+        }
+      ]
+    },
+    {
+      "topic": "\n\n  **[`^        Back to TOP        ^`](#%EF%B8%8F-aภlmiuภuຮ-%EF%B8%8F)**\n\n",
+      "items": []
+    }
+  ]
+}

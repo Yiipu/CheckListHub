@@ -1,0 +1,370 @@
+{
+  "id": 123,
+  "header": "microservice-production-readiness-checklist",
+  "topicList": [
+    "Table of Contents",
+    "The Checklist"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<ol>\n<li><a href=\"#the-checklist\">The Checklist</a>"
+        },
+        {
+          "title": "<a href=\"#general-rules\">General Rules</a>"
+        },
+        {
+          "title": "<a href=\"#documentation\">Documentation</a>"
+        },
+        {
+          "title": "<a href=\"#testing-and-quality\">Testing and Quality</a>"
+        },
+        {
+          "title": "<a href=\"#observability\">Observability</a>"
+        },
+        {
+          "title": "<a href=\"#operations-and-resiliency\">Operations and Resiliency</a>"
+        },
+        {
+          "title": "<a href=\"#database\">Database</a>"
+        },
+        {
+          "title": "<a href=\"#security-and-compliance\">Security and Compliance</a>"
+        },
+        {
+          "title": "<a href=\"#costs\">Costs</a>"
+        },
+        {
+          "title": "<a href=\"#references\">References</a>"
+        },
+        {
+          "title": "<a href=\"#bonus\">Bonus</a>"
+        },
+        {
+          "title": "<a href=\"#independent-service-heuristics---team-topologies\">Independent Service Heuristics - Team Topologies</a></li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "topic": "The Checklist",
+      "items": [
+        {
+          "topic": "General Rules",
+          "items": [
+            {
+              "title": " Write a <strong>RFC</strong> and publish it on architecture-guild channel if your change with the new microservice may affect the work of other teams"
+            },
+            {
+              "title": " <strong>No shared database between different services</strong> - a DB instance should only be used by one service exclusively."
+            },
+            {
+              "title": " <strong>Not breaking the one-hop rule</strong> - <a href=\"https://thenewstack.io/are-your-microservices-overly-chatty/\"><em> “By default, a service should not call other services to respond to a request, except in exceptional circumstances.” A service should not call other services to respond to a request; it should be self-contained and manage its own data. Allowing a service to call on other services adds overhead to the request and can result in very slow or unresponsive service. </em></a>  Also it leads to tightly coupled services and a more complex system causing cascading issues. If you see that you need multiple calls back and forth between several services to synthesize the response, you should consider merging these services into one.). The exception can be for example Backend For Frontend (like GraphQL) which can compose and aggregate data on top of other services."
+            },
+            {
+              "title": " <strong>Prefer APIs over Sharing SDKs</strong>. Try to avoid using SDKs between the services, it is not needed. <a href=\"https://enterprisecraftsmanship.com/posts/how-to-build-microservices-wrong/\"><em>SDKs introduce another level of complexity, making the microservice team support not only API to their product but also the code that uses that API</em></a>. They are also introducing the problems like updating the version of SDK in multiple services. Also, it prevents asynchronous way of development between the teams. Because Team A needs to wait for Team B to finish the work around the SDK."
+            },
+            {
+              "title": " If you can try to avoid making HTTP calls from Monolith to your service and the same in opposite direction: try to do not call Monolith, do not increase load there. Your service should be independent."
+            },
+            {
+              "title": " Choose Boring Technology https://boringtechnology.club/ :)"
+            }
+          ]
+        },
+        {
+          "topic": "Documentation",
+          "items": [
+            {
+              "title": " <strong>Readme.md</strong> - self-explanatory service name, how to run it locally and domain/sub-domain, bounded context described"
+            },
+            {
+              "title": " <strong>Architecture docs</strong> / C4 Model diagrams"
+            },
+            {
+              "title": " <strong>Service Catalog</strong> integration (e.g. Backstage)"
+            },
+            {
+              "title": " <strong>API Open Specification</strong> file in root directory openapi.yaml"
+            },
+            {
+              "title": " API <strong>versioning</strong> if needed"
+            }
+          ]
+        },
+        {
+          "topic": "Testing and Quality",
+          "items": [
+            {
+              "title": " <strong>Linters</strong> (with reports that can be exported to e.g. SonarQube)"
+            },
+            {
+              "title": " Automatic code <strong>Formatter</strong> (e.g. gofmt, ktfmt)"
+            },
+            {
+              "title": " <strong>Test coverage</strong> above 70% (use common sense, just getting to the required number of coverage is not a goal here)"
+            },
+            {
+              "title": " <strong>Functional/e2e/acceptance</strong> tests in place"
+            },
+            {
+              "title": " <strong>Load Test</strong>s (at least basic ones) especially if higher traffic is expected"
+            },
+            {
+              "title": " <strong>Contract Tests</strong> are recommended if there is service 2 service communication via HTTP (example: PACT tests)"
+            }
+          ]
+        },
+        {
+          "topic": "Observability",
+          "items": [
+            {
+              "title": " <strong>Logging</strong>: All logs are written to STDOUT / STDERR. Logs are written in JSON. Configured verbosity levels. Correlation IDs, Mapped\nDiagnostic Context (MDC) is used. https://12factor.net/logs. Do not log any sensitive data. Shipped to e.g. ELK, Stackdriver, etc. Log levels like <code>debug</code> or <code>trace</code> should be not used by default."
+            },
+            {
+              "title": " Integration with a <strong>monitoring platforms</strong>. Dashboards in place. (e.g. NewRelic / Prometheus / Grafana)"
+            },
+            {
+              "title": " <strong>Monitoring dashboards</strong> with Business Metrics (e.g. New Relic / Prometheus / Grafana)"
+            },
+            {
+              "title": " Integration with a <strong>distributed tracing system</strong>: (e.g. New Relic)"
+            },
+            {
+              "title": " Integration with <strong>error tracking system</strong> like (e.g. Sentry, New Relic)"
+            },
+            {
+              "title": " <strong>Alerts</strong> are configured, there is Pager Duty integration in place and consider adding it to one of the escalation policies RunBooks (you may want to use Alert Manager integration)"
+            },
+            {
+              "title": " <strong>Uptime</strong>, domain, SSL monitoring (optional) (e.g. StatusCake)"
+            },
+            {
+              "title": " Real-time communication of application <strong>status</strong> (e.g. StatusPage)"
+            },
+            {
+              "title": " Measure latency using percentiles. Discover the expected peak latency of the system, when healthy. Measure it and know 99%ile of the response times. Discover the expected peak throughput of my system, when healthy. Measure requests-per-minute or requests-per-second"
+            }
+          ]
+        },
+        {
+          "topic": "Operations and Resiliency",
+          "items": [
+            {
+              "title": " There is <strong>staging environment</strong> or any other <strong>multi-tenancy environment</strong> - Don’t push directly to production"
+            },
+            {
+              "title": " There is a <strong>rolling strategy</strong> defined"
+            },
+            {
+              "title": " There is <strong>autoscaling</strong> in place (based on CPU, memory, traffic, events/messages e.g. HPA with K8S)"
+            },
+            {
+              "title": " <strong>Graceful shutdown</strong>: The application understands SIGTERM and other signals and will gracefully shutdown itself after processing the current task. https://12factor.net/disposability"
+            },
+            {
+              "title": " <strong>Configuration</strong> via environment: All important configuration options are read from the environment and the environment has higher priority over configuration files (but lower than the command line arguments). https://12factor.net/config"
+            },
+            {
+              "title": " <strong>Health Checks</strong>: Readiness and Liveness probes"
+            },
+            {
+              "title": " <strong>Resiliency</strong>, dependencies failure check, connection/socket <strong>timeouts</strong>, <strong>Retry Policies/circuit breakers</strong> in place. Safe to retry - <strong>idempotent</strong> <strong>calls</strong> etc. (The timeout for external service should be equal to 99%ile of this dependency's latency when healthy plus some breathing room). You can consider using service mesh."
+            },
+            {
+              "title": " <strong>Resiliency</strong>, If needed introduce the patterns like <strong>rate limiting</strong> and <strong>backpressure</strong> and/or <strong>load shedding</strong> to avoid overloading the system and making it unavailable for all users"
+            },
+            {
+              "title": " <strong>Resiliency</strong>, implement <strong>fallback logic</strong> for every external dependency, for which this was possible and needed. Ask yourself “Is this resource needed to fulfill my business function, or can I (even partially) succeed without it?” (Remember that <a href=\"https://nurkiewicz.com/2019/07/fallbacks-are-overrated-architecting.html\">Fallbacks can be tricky</a> and implementing a <strong>compensation job</strong> might be required)"
+            },
+            {
+              "title": " <strong>Resource limits</strong>: Contains limits for memory, CPU, disk space, and any other available resources in the agreed format."
+            },
+            {
+              "title": " <strong>Artifact Managemen</strong>t / Libraries &amp; dependency proxy : JFROG Artifactory / Gitlab"
+            },
+            {
+              "title": " <strong>Discovery / DNS</strong> configured"
+            },
+            {
+              "title": " Setting <strong>DNS Cache TTL</strong> (hint for <a href=\"https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-jvm-ttl.html\">Java</a>)"
+            },
+            {
+              "title": " <strong>Dead letter queues</strong> or/and resistance to \"bad\" messages (if queues are used)"
+            },
+            {
+              "title": " <strong>Feature Flags</strong> if needed (LaunchDarkly)"
+            },
+            {
+              "title": " <strong>Locked versions of dependencies</strong>: Dependencies for package managers are fixed, including minor versions (For example, cool_framework = 2.5.3). Committed lock files are also a good way to do this."
+            },
+            {
+              "title": " Use private <strong>Docker Registry</strong> (AWS ECR , Gitlab)"
+            },
+            {
+              "title": " Use Immutable deployments and if possible Canary deployments"
+            },
+            {
+              "title": " When using containers like Docker - the only single process is running inside the container, with your application"
+            },
+            {
+              "title": " Minimum 2 or 3 pods on production and/or PodDisruptionBudget/NodeAntiAffinity - whichever is appropriate to mitigate against a node failure - when running in Kubernetes"
+            },
+            {
+              "title": " Define <a href=\"https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-slis-slas-and-slos\">SLO/SLI/SLA</a>"
+            },
+            {
+              "title": " Build applications with <strong>Multi-tenancy</strong> in mind (sites, regions, users, etc.)"
+            }
+          ]
+        },
+        {
+          "topic": "Database",
+          "items": [
+            {
+              "title": " Follow best practices from Cloud Provider (e.g. <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.BestPractices.html\">AWS Aurora</a>) and prepare for Fast Failover"
+            },
+            {
+              "title": " <strong>Data Org support</strong> (external team might have such requirements) - DB needs to be in provisioned mode instead of serverless if Bin Logs are used for exporting data, use bigger instances than t.small ones (e.g. t.small instances don’t support IAM access)"
+            },
+            {
+              "title": " <strong>Database</strong>’s Connection string and Connection pool configured for the needed workload"
+            },
+            {
+              "title": " <strong>Database</strong> (e.g. RDS - Aurora Writer/Reader endpoint consumed for better scalability, DocumentDB - use ReplicaSet in this case etc.)"
+            },
+            {
+              "title": " <strong>Database</strong> integration with Backup Tooling - test regularly your restore process"
+            },
+            {
+              "title": " Different <strong>Database</strong> users for RDS cluster admin and application usage"
+            },
+            {
+              "title": " Maintenance window defined"
+            },
+            {
+              "title": " Encryption enabled (e.g. with AWS KMS key)"
+            },
+            {
+              "title": " Data Migration, migration scripts etc. (e.g. Flyway, Liquibase, gh-ost, Percona) - <a href=\"https://softwareengineering.stackexchange.com/questions/207987/safely-fixing-production-database-data\">avoid manual changes on the database</a> (tip: use a separate process for migrations ) - executed as separate process/job"
+            }
+          ]
+        },
+        {
+          "topic": "Security and Compliance",
+          "items": [
+            {
+              "title": " If your service does not absolutely need to be directly accessible from the public Internet, do not expose it publicly - hide it behind VPN (at least)"
+            },
+            {
+              "title": " If your service does need to be accessible through the public Internet"
+            },
+            {
+              "title": " <strong>Authentication/Authorization</strong> in place if needed / JWT / Cognito / Auth0"
+            },
+            {
+              "title": " Ensure it lives behind our Cloudfront <strong>CDN</strong> (and uses <strong>WAF</strong> if necessary)</li>\n</ul>"
+            },
+            {
+              "title": " <strong>Vulnerabilities scan check</strong> (e.g. SonarQube)"
+            },
+            {
+              "title": " Run containers in <a href=\"https://docs.docker.com/engine/security/rootless/\">Rootless mode</a>"
+            },
+            {
+              "title": " <strong>HTTPS</strong> (if needed)"
+            },
+            {
+              "title": " Does not violate any licenses"
+            },
+            {
+              "title": " <strong>GDPR</strong> data not exposed (https://gdpr-info.eu/art-4-gdpr/)"
+            },
+            {
+              "title": " <strong>PII data not logged or stored without any good reason</strong> (ask your DPO) - <a href=\"https://support.google.com/adsense/answer/6156630?hl=en\">Best practices to avoid sending Personally Identifiable Information (PII)</a>, Check Data Retention Policies"
+            },
+            {
+              "title": " Configure bot to upgrade dependencies (e.g. Renovate bot)"
+            }
+          ]
+        },
+        {
+          "topic": "Costs",
+          "items": [
+            {
+              "title": " <strong>Tags</strong> for Infrastructure / Terraform resources"
+            },
+            {
+              "title": " <strong>Costs Dashboard</strong> for Weekly/Monthly costs (e.g. Cloudability)"
+            },
+            {
+              "title": " <strong>Optimized CPU usage</strong> (eg. <a href=\"https://spring.io/reactive\">Reactive</a> microservices)"
+            },
+            {
+              "title": " Prepare <strong>Rightsizing</strong> plan"
+            }
+          ]
+        },
+        {
+          "topic": "References",
+          "items": [
+            {
+              "title": "https://srcco.de/posts/web-service-on-kubernetes-production-checklist-2019.html"
+            },
+            {
+              "title": "https://habr.com/en/post/438186/"
+            },
+            {
+              "title": "https://www.oreilly.com/library/view/production-ready-microservices/9781491965962/app01.html"
+            },
+            {
+              "title": "https://github.com/paunin/soa-checklist"
+            },
+            {
+              "title": "https://12factor.net"
+            },
+            {
+              "title": "<a href=\"http://bit.ly/sredesign\">http://bit.ly/sredesign</a> SRE checklist"
+            },
+            {
+              "title": "https://github.com/mercari/production-readiness-checklist"
+            },
+            {
+              "title": "https://docs.google.com/document/d/11HO1TNM8Pmawo8dHvyvTYB9uoPpB0ot1Jjs-WULYzGo/edit"
+            },
+            {
+              "title": "https://www.youtube.com/watch?v=zwpXhFcR4BA"
+            },
+            {
+              "title": "https://thenewstack.io/are-your-microservices-overly-chatty/"
+            },
+            {
+              "title": "<a href=\"https://youtu.be/1HJJhGHC2A4\">Jakub Nabrdalik - What I wish I knew when I started designing systems years ago</a> - https://jakubn.gitlab.io/wish-i-knew-architecture/"
+            },
+            {
+              "title": "https://fs.blog/2014/02/the-checklist-manifesto/"
+            },
+            {
+              "title": "Security checklist https://www.sensedeep.com/blog/posts/stories/web-developer-security-checklist.html"
+            },
+            {
+              "title": "https://grafana.com/blog/2021/10/13/how-were-building-a-production-readiness-review-process-at-grafana-labs/ - Checklist <a href=\"https://docs.google.com/document/d/11HO1TNM8Pmawo8dHvyvTYB9uoPpB0ot1Jjs-WULYzGo/edit\">here</a>"
+            },
+            {
+              "title": "SreConAsia19/PacificReliable by Design Adding Value in the Design Review Process - https://www.usenix.org/conference/srecon19asia/presentation/nolan <blockquote>\n<p>\"Reviewing designs written by other engineers becomes an increasingly large (and important) part of our work life as we become more senior in our careers. We review designs for entire new systems written by partner developer teams. We review designs for pieces of automation to be developed and run by our own teams. Eventually we may find ourselves using review as a way to keep many teams in sync technically.</p>\n</blockquote>\n<blockquote>\n<p>Most of us however, don't have a systematic way to approach reviews. We read the proposal or attend the meeting, and we look to our experience to try and predict problems. This is valuable, and experience can't be replaced—but I believe we can do better by applying both our expertise and a checklist of things to consider for each design.\"</p>\n</blockquote>"
+            }
+          ]
+        },
+        {
+          "topic": "Bonus",
+          "items": [
+            {
+              "title": "<p>Because good design = Best Resilency.</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

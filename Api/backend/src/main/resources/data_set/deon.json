@@ -1,0 +1,213 @@
+{
+  "id": 63,
+  "header": "deon",
+  "topicList": [
+    "Prerequisites",
+    "Installation",
+    "Simple usage",
+    "Proudly display your Deon badge",
+    "A. Data Collection",
+    "B. Data Storage",
+    "C. Analysis",
+    "D. Modeling",
+    "E. Deployment",
+    "Checklist citations",
+    "Where things have gone wrong",
+    "Related tools"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Prerequisites",
+      "items": [
+        {
+          "title": "Python &gt;3.6: Your project need not be Python 3, but you need Python 3 to execute this tool."
+        }
+      ]
+    },
+    {
+      "topic": "Installation",
+      "items": [
+        {
+          "title": "<p><code>$ pip install deon</code></p><p>or</p><p><code>$ conda install deon -c conda-forge</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Simple usage",
+      "items": [
+        {
+          "title": "<p>We recommend adding a checklist as the first step in your data science project. After creating your project folder, you could run:</p><p><code>$ deon -o ETHICS.md</code></p><p>This will create a markdown file called <code>ETHICS.md</code> that you can add directly to your project.</p><p>For simple one-off analyses, you can append the checklist to a Jupyter notebook or RMarkdown file using the <code>-o</code> flag to indicate the output file. <code>deon</code> will automatically append if that file already exists.</p><p>```\n$ jupyter notebook my-analysis.ipynb</p><p>...</p><p>$ deon -o my-analysis.ipynb  # append cells to existing output file\n```</p><p>This checklist can be used by individuals or teams to ensure that reviewing the ethical implications of their work is part of every project. The checklist is meant as a jumping-off point, and it should spark deeper and more thourough discussions rather than replace those discussions.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Proudly display your Deon badge",
+      "items": [
+        {
+          "title": "<p>You can add a Deon badge to your project documentation, such as the README, to encourage wider adoption of these ethical practices in the data science community.</p>"
+        },
+        {
+          "topic": "HTML badge",
+          "items": [
+            {
+              "title": "<p><code>html\n&lt;a href=\"http://deon.drivendata.org/\"&gt;\n    &lt;img src=\"https://img.shields.io/badge/ethics%20checklist-deon-brightgreen.svg?style=popout-square\" alt=\"Deon badge\" /&gt;\n&lt;/a&gt;</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Markdown badge",
+          "items": [
+            {
+              "title": "<p><code>[![Deon badge](https://img.shields.io/badge/ethics%20checklist-deon-brightgreen.svg?style=popout-square)](http://deon.drivendata.org/)</code></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "A. Data Collection",
+      "items": [
+        {
+          "title": " <strong>A.1 Informed consent</strong>: If there are human subjects, have they given informed consent, where subjects affirmatively opt-in and have a clear understanding of the data uses to which they consent?"
+        },
+        {
+          "title": " <strong>A.2 Collection bias</strong>: Have we considered sources of bias that could be introduced during data collection and survey design and taken steps to mitigate those?"
+        },
+        {
+          "title": " <strong>A.3 Limit PII exposure</strong>: Have we considered ways to minimize exposure of personally identifiable information (PII) for example through anonymization or not collecting information that isn't relevant for analysis?"
+        },
+        {
+          "title": " <strong>A.4 Downstream bias mitigation</strong>: Have we considered ways to enable testing downstream results for biased outcomes (e.g., collecting data on protected group status like race or gender)?"
+        }
+      ]
+    },
+    {
+      "topic": "B. Data Storage",
+      "items": [
+        {
+          "title": " <strong>B.1 Data security</strong>: Do we have a plan to protect and secure data (e.g., encryption at rest and in transit, access controls on internal users and third parties, access logs, and up-to-date software)?"
+        },
+        {
+          "title": " <strong>B.2 Right to be forgotten</strong>: Do we have a mechanism through which an individual can request their personal information be removed?"
+        },
+        {
+          "title": " <strong>B.3 Data retention plan</strong>: Is there a schedule or plan to delete the data after it is no longer needed?"
+        }
+      ]
+    },
+    {
+      "topic": "C. Analysis",
+      "items": [
+        {
+          "title": " <strong>C.1 Missing perspectives</strong>: Have we sought to address blindspots in the analysis through engagement with relevant stakeholders (e.g., checking assumptions and discussing implications with affected communities and subject matter experts)?"
+        },
+        {
+          "title": " <strong>C.2 Dataset bias</strong>: Have we examined the data for possible sources of bias and taken steps to mitigate or address these biases (e.g., stereotype perpetuation, confirmation bias, imbalanced classes, or omitted confounding variables)?"
+        },
+        {
+          "title": " <strong>C.3 Honest representation</strong>: Are our visualizations, summary statistics, and reports designed to honestly represent the underlying data?"
+        },
+        {
+          "title": " <strong>C.4 Privacy in analysis</strong>: Have we ensured that data with PII are not used or displayed unless necessary for the analysis?"
+        },
+        {
+          "title": " <strong>C.5 Auditability</strong>: Is the process of generating the analysis well documented and reproducible if we discover issues in the future?"
+        }
+      ]
+    },
+    {
+      "topic": "D. Modeling",
+      "items": [
+        {
+          "title": " <strong>D.1 Proxy discrimination</strong>: Have we ensured that the model does not rely on variables or proxies for variables that are unfairly discriminatory?"
+        },
+        {
+          "title": " <strong>D.2 Fairness across groups</strong>: Have we tested model results for fairness with respect to different affected groups (e.g., tested for disparate error rates)?"
+        },
+        {
+          "title": " <strong>D.3 Metric selection</strong>: Have we considered the effects of optimizing for our defined metrics and considered additional metrics?"
+        },
+        {
+          "title": " <strong>D.4 Explainability</strong>: Can we explain in understandable terms a decision the model made in cases where a justification is needed?"
+        },
+        {
+          "title": " <strong>D.5 Communicate bias</strong>: Have we communicated the shortcomings, limitations, and biases of the model to relevant stakeholders in ways that can be generally understood?"
+        }
+      ]
+    },
+    {
+      "topic": "E. Deployment",
+      "items": [
+        {
+          "title": " <strong>E.1 Monitoring and evaluation</strong>: How are we planning to monitor the model and its impacts after it is deployed (e.g., performance monitoring, regular audit of sample predictions, human review of high-stakes decisions, reviewing downstream impacts of errors or low-confidence decisions, testing for concept drift)?"
+        },
+        {
+          "title": " <strong>E.2 Redress</strong>: Have we discussed with our organization a plan for response if users are harmed by the results (e.g., how does the data science team evaluate these cases and update analysis and models to prevent future harm)?"
+        },
+        {
+          "title": " <strong>E.3 Roll back</strong>: Is there a way to turn off or roll back the model in production if necessary?"
+        },
+        {
+          "title": " <strong>E.4 Unintended use</strong>: Have we taken steps to identify and prevent unintended uses and abuse of the model and do we have a plan to monitor these once the model is deployed?<p><em>Data Science Ethics Checklist generated with <a href=\"http://deon.drivendata.org\">deon</a>.</em></p><hr class=\"checklist-buffer\"/>"
+        }
+      ]
+    },
+    {
+      "topic": "Checklist citations",
+      "items": [
+        {
+          "title": "<p>We're excited to see so many articles popping up on data ethics! The short list below includes articles that directly informed the checklist content as well as a few case studies and thought-provoking pieces on the big picture.</p>"
+        },
+        {
+          "title": "<a href=\"https://www.oreilly.com/ideas/of-oaths-and-checklists\">Of oaths and checklists</a>"
+        },
+        {
+          "title": "How to build ethics into AI (<a href=\"https://medium.com/salesforce-ux/how-to-build-ethics-into-ai-part-i-bf35494cce9\">Part I</a> and <a href=\"https://medium.com/salesforce-ux/how-to-build-ethics-into-ai-part-ii-a563f3372447\">Part II</a>)"
+        },
+        {
+          "title": "<a href=\"https://dssg.uchicago.edu/2015/09/18/an-ethical-checklist-for-data-science/\">An ethical checklist for data science</a>"
+        },
+        {
+          "title": "<a href=\"https://medium.com/microsoft-design/how-to-recognize-exclusion-in-ai-ec2d6d89f850\">How to recognize exclusion in AI</a>"
+        },
+        {
+          "title": "<a href=\"https://www.oreilly.com/ideas/case-studies-in-data-ethics\">Case studies in data ethics</a>"
+        },
+        {
+          "title": "<a href=\"https://fivethirtyeight.com/features/technology-is-biased-too-how-do-we-fix-it/\">Technology is biased too. How do we fix it?</a>"
+        },
+        {
+          "title": "<a href=\"https://www.technologyreview.com/s/604087/the-dark-secret-at-the-heart-of-ai/\">The dark secret at the heart of AI</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Where things have gone wrong",
+      "items": [
+        {
+          "title": "<p>To make the ideas contained in the checklist more concrete, we've compiled <a href=\"http://deon.drivendata.org/examples/\">examples</a> of times when things have gone wrong. They're paired with the checklist questions to help illuminate where in the process ethics discussions may have helped provide a course correction.</p><p>We welcome contributions! Follow <a href=\"https://github.com/drivendataorg/deon/wiki/Add-a-new-item-to-the-examples-table\">these instructions</a> to add an example.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Related tools",
+      "items": [
+        {
+          "title": "<p>There are other groups working on data ethics and thinking about how tools can help in this space. Here are a few we've seen so far:</p>"
+        },
+        {
+          "title": "<a href=\"https://dsapp.uchicago.edu/aequitas/\">Aequitas</a> (<a href=\"https://github.com/dssg/aequitas\">github</a>)"
+        },
+        {
+          "title": "<a href=\"https://ethicalos.org/\">Ethical OS Toolkit</a>"
+        },
+        {
+          "title": "<a href=\"http://ethicstoolkit.ai/\">Ethics &amp; Algorithms Toolkit: A risk management framework for governments</a>"
+        },
+        {
+          "title": "Ethics and Data Science (<a href=\"https://www.amazon.com/dp/B07GTC8ZN7/ref=cm_sw_r_cp_ep_dp_klAOBb4Z72B4G\">free ebook</a>) and (<a href=\"https://medium.com/@sjgadler/care-about-ai-ethics-what-you-can-do-starting-today-882a0e63d828\">write-up</a>)<hr/><p><code>deon</code> was created and is maintained by the team at <a href=\"https://www.drivendata.org/\">DrivenData</a>. Our mission is to bring the power of data science to social impact organizations.</p>"
+        }
+      ]
+    }
+  ]
+}

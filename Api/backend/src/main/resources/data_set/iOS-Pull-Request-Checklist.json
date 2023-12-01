@@ -1,0 +1,137 @@
+{
+  "id": 112,
+  "header": "iOS-Pull-Request-Checklist",
+  "topicList": [
+    "General",
+    "Testing",
+    "Creating A Pull Request"
+  ],
+  "itemGroups": [
+    {
+      "topic": "General",
+      "items": [
+        {
+          "title": " Did I remove any extraneous <code>self</code> references? [Swift only]"
+        },
+        {
+          "title": " If you added a <code>default</code> case to a <code>switch</code>, are you absolutely sure that's the ideal solution?"
+        },
+        {
+          "title": " Am I duplicating existing code?"
+        },
+        {
+          "title": " Did you specify the correct access level for any of the new entities you introduced?"
+        },
+        {
+          "title": " Is everything behind a feature flag that should be?"
+        },
+        {
+          "title": " Am I force unwrapping anything?"
+        },
+        {
+          "title": " Did I resolve any ambiguous constraints / handle any breaking constraint at runtime issues?"
+        },
+        {
+          "title": " Am I introducing any unnecessary <code>import</code> statements?"
+        },
+        {
+          "title": " Did I document everything that I needed to?"
+        },
+        {
+          "title": " Am I introducing any long running operations on the main thread?"
+        },
+        {
+          "title": " Am I using any \"magic numbers\"? Should I add them to our constants?"
+        },
+        {
+          "title": " Am I following the teams coding conventions throughout my changes?"
+        },
+        {
+          "title": " Did I receive design and product approval?"
+        },
+        {
+          "title": " Could any of my new code be replaced by native functions or existing helper functions?"
+        },
+        {
+          "title": " Did I chose appropriate names for my classes, enums, structs, methods, and variables?"
+        },
+        {
+          "title": " Am I handling and logging all errors correctly?"
+        }
+      ]
+    },
+    {
+      "topic": "Testing",
+      "items": [
+        {
+          "title": " Are there tests? Should there be?"
+        },
+        {
+          "title": " Did I test different locales and languages? Did the currency, time, and date formatting work as expected?"
+        },
+        {
+          "title": " Did I test night mode support or remember to disable it?"
+        },
+        {
+          "title": " Did I test for memory leaks? Did I make everything <code>weak</code> that should be?"
+        },
+        {
+          "title": " Did I test multiple screen sizes and orientations?"
+        },
+        {
+          "title": " Did I test on the lowest iOS version we support?"
+        },
+        {
+          "title": " Did I test what happens if the user declines / limits permission access (location, camera roll, contacts, etc)?"
+        },
+        {
+          "title": " Did I test for accessibility compatibility?"
+        },
+        {
+          "title": " Did I test a poor or offline WiFi connection?"
+        },
+        {
+          "title": " Did I test what happens if the API calls fail?"
+        },
+        {
+          "title": " Do the existing tests (unit &amp; UI) pass?"
+        },
+        {
+          "title": " Did I test with <code>Double Length Pseudolanguage</code> to ensure that text wraps and can accommodate more verbose languages?"
+        },
+        {
+          "title": " Did I test other languages we support to ensure there's no missing translations?"
+        }
+      ]
+    },
+    {
+      "topic": "Creating A Pull Request",
+      "items": [
+        {
+          "title": " Am I introducing any new warnings into the Xcode project?"
+        },
+        {
+          "title": " Did I pull in <code>main</code> and resolve any merge conflicts before opening a pull request?"
+        },
+        {
+          "title": " Does linting pass?"
+        },
+        {
+          "title": " Does my PR include screenshots and instructions on how to test these changes?"
+        },
+        {
+          "title": " Did I remove any commented out code?"
+        },
+        {
+          "title": " Did I remove all <code>TODO</code>, <code>@hack</code>, and placeholder code?"
+        },
+        {
+          "title": " Did I remove all of the <code>print</code> statements I was using? Am I doing any unnecessary logging?"
+        },
+        {
+          "title": " Does my PR include testing instructions, a description, and a link to the ticket?"
+        }
+      ]
+    }
+  ]
+}

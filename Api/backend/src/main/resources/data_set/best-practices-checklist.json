@@ -1,0 +1,638 @@
+{
+  "id": 25,
+  "header": "best-practices-checklist",
+  "topicList": [
+    "Table of Contents",
+    "What is this?",
+    "Why does this repo exist?",
+    "What counts as an acceptable entry?",
+    "Language Specific Resources"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<a href=\"#best-practices-checklist\">Best Practices Checklist</a>"
+        },
+        {
+          "title": "<a href=\"#what-is-this\">What is this</a>"
+        },
+        {
+          "title": "<a href=\"#why-this-repo\">Why this repo</a>"
+        },
+        {
+          "title": "<a href=\"#what-counts-as-an-acceptable-entry\">What counts as an acceptable entry</a>"
+        },
+        {
+          "title": "<a href=\"#language-specific-resources\">Language Specific Resources</a>"
+        },
+        {
+          "title": "<a href=\"#rust\">Rust</a>"
+        },
+        {
+          "title": "<a href=\"#go\">Go</a>"
+        },
+        {
+          "title": "<a href=\"#python\">Python</a>"
+        },
+        {
+          "title": "<a href=\"#ruby\">Ruby</a>"
+        },
+        {
+          "title": "<a href=\"#ocaml\">OCaml</a>"
+        },
+        {
+          "title": "<a href=\"#haskell\">Haskell</a>"
+        },
+        {
+          "title": "<a href=\"#erlang\">Erlang</a>"
+        },
+        {
+          "title": "<a href=\"#elixir\">Elixir</a>"
+        },
+        {
+          "title": "<a href=\"#common-lisp\">Common Lisp</a>"
+        },
+        {
+          "title": "<a href=\"#csharp\">C#</a>"
+        },
+        {
+          "title": "<a href=\"#fsharp\">F#</a>"
+        },
+        {
+          "title": "<a href=\"#java\">Java</a>"
+        },
+        {
+          "title": "<a href=\"#scala\">Scala</a>"
+        },
+        {
+          "title": "<a href=\"#groovy\">Groovy</a>"
+        },
+        {
+          "title": "<a href=\"#kotlin\">Kotlin</a>"
+        },
+        {
+          "title": "<a href=\"#d\">D</a>"
+        },
+        {
+          "title": "<a href=\"#clojure\">Clojure</a>"
+        },
+        {
+          "title": "<a href=\"#nim\">Nim</a>"
+        },
+        {
+          "title": "<a href=\"#pony\">Pony</a>"
+        },
+        {
+          "title": "<a href=\"#javascript\">Javascript</a>"
+        },
+        {
+          "title": "<a href=\"#c\">C</a>"
+        },
+        {
+          "title": "<a href=\"#c-1\">C++</a>"
+        },
+        {
+          "title": "<a href=\"#dart\">Dart</a>"
+        },
+        {
+          "title": "<a href=\"#sql\">SQL</a>"
+        },
+        {
+          "title": "<a href=\"#objective-c\">Objective-C</a>"
+        },
+        {
+          "title": "<a href=\"#swift\">Swift</a>"
+        },
+        {
+          "title": "<a href=\"#r\">R</a>"
+        },
+        {
+          "title": "<a href=\"#shell\">Shell</a>"
+        },
+        {
+          "title": "<a href=\"#htmlcss\">HTML/CSS</a>"
+        },
+        {
+          "title": "<a href=\"#vimscript\">Vimscript</a>"
+        },
+        {
+          "title": "<a href=\"#xml\">XML</a>"
+        },
+        {
+          "title": "<a href=\"#zig\">Zig</a>"
+        },
+        {
+          "title": "<a href=\"#prolog\">Prolog</a>"
+        }
+      ]
+    },
+    {
+      "topic": "What is this?",
+      "items": [
+        {
+          "title": "<p>This is a collection of language specific resources that can be used to look up the best practices followed by a particular language's community.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Why does this repo exist?",
+      "items": [
+        {
+          "title": "<p>I dabble into multiple programming languages and I wanted to have a central place that I can refer to whenever I am looking up best practices for a particular language.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "What counts as an acceptable entry?",
+      "items": [
+        {
+          "title": "<p>It could be anything from articles to books to videos that describes:</p>"
+        },
+        {
+          "title": "how to write idiomatic code in a particular language"
+        },
+        {
+          "title": "what build systems / package managers to use and the best practices surrounding these aforementioned tools"
+        },
+        {
+          "title": "how to good write unit/integration tests"
+        },
+        {
+          "title": "different styles, design patterns &amp; idioms of a language"
+        },
+        {
+          "title": "new language section (if you find that the resources for your favourite language are missing feel free to create a new section and add them)<p><strong>Note:</strong> If you are adding a book to the list make sure that it is a free ebook. Amazon links to buy books will not be accepted.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Language Specific Resources",
+      "items": [
+        {
+          "topic": "Rust",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/ferrous-systems/elements-of-rust\">Elements of Rust</a>"
+            },
+            {
+              "title": "<a href=\"https://cheats.rs/\">Rust Language Cheat Sheet</a>"
+            },
+            {
+              "title": "<a href=\"https://rust-lang-nursery.github.io/rust-cookbook/\">Rust Cookbook</a>"
+            },
+            {
+              "title": "<a href=\"https://doc.rust-lang.org/rust-by-example/macros/overload.html\">Rust By Example</a>"
+            },
+            {
+              "title": "<a href=\"https://doc.rust-lang.org/cargo/guide/\">Cargo Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/mre/idiomatic-rust\">Idiomatic Rust</a>"
+            },
+            {
+              "title": "<a href=\"https://rust-lang.github.io/unsafe-code-guidelines/\">Unsafe Code Guidelines</a>"
+            },
+            {
+              "title": "<a href=\"https://nnethercote.github.io/perf-book/title-page.html\">Rust Performance Book</a>"
+            },
+            {
+              "title": "<a href=\"https://rust-fuzz.github.io/book/introduction.html\">Rust Fuzz Book</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/spacejam/test-idioms\">Test Idioms</a> (an example crate showcasing idiomatic test layout for Rust projects)"
+            }
+          ]
+        },
+        {
+          "topic": "Go",
+          "items": [
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/go/\">Google's Go Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/Pungyeon/clean-go-article\">Clean Go</a>"
+            },
+            {
+              "title": "<a href=\"https://about.sourcegraph.com/go/idiomatic-go\">Idiomatic Go - Sourcegraph</a>"
+            },
+            {
+              "title": "<a href=\"https://dmitri.shuralyov.com/idiomatic-go\">Idiomatic Go - by dmitshur</a>"
+            },
+            {
+              "title": "<a href=\"https://rakyll.org/style-packages/\">Go package style guide by Rakyll</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/cristaloleg/go-advice\">Go Advice</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/marcusolsson/goddd\">Domain Driven Design in Go</a>"
+            },
+            {
+              "title": "<a href=\"https://golang.org/doc/effective_go.html\">Effective Go</a>"
+            },
+            {
+              "title": "<a href=\"https://golang.org/doc/code.html\">How to Write Go Code</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/uber-go/guide\">The Uber Go Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/golang-standards/project-layout\">Golang Standards</a>"
+            },
+            {
+              "title": "<a href=\"https://www.youtube.com/watch?v=8hQG7QlcLBk\">Advanced Testing Patterns Talk</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Python",
+          "items": [
+            {
+              "title": "<a href=\"https://docs.python-guide.org/\">Hitchhiker's Guide to Python</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/vintasoftware/python-api-checklist\">Python API Checklist</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/faif/python-patterns\">Design Patterns Implementations</a>"
+            },
+            {
+              "title": "<a href=\"https://www.python.org/dev/peps/pep-0008/\">PEP8</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/amontalenti/elements-of-python-style\">Elements Of Python Style</a>"
+            },
+            {
+              "title": "<a href=\"https://www.toptal.com/python/python-design-patterns\">Design Patterns Toptal Blog Post</a>"
+            },
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/pyguide.html\">Google Python Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://firefox-source-docs.mozilla.org/tools/lint/coding-style/coding_style_python.html\">Mozilla Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://fuchsia.dev/fuchsia-src/development/languages/python/python_style\">Python style guide (Fuchsia)</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Ruby",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/abinoda/rspec-best-practices\">RSpec Best Practices</a>"
+            },
+            {
+              "title": "<a href=\"https://medium.com/@baweaver/lets-read-eloquent-ruby-ch-1-b2115d1416a6\">Let’s Read! — Eloquent Ruby</a>"
+            },
+            {
+              "title": "<a href=\"https://rubystyle.guide/\">Ruby Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"http://franzejr.github.io/best-ruby/\">Best Ruby</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/JuanitoFatas/fast-ruby\">Fast Ruby - Idioms for writing performant code</a>"
+            }
+          ]
+        },
+        {
+          "topic": "OCaml",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/lindig/ocaml-style\">OCaml Style Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Haskell",
+          "items": [
+            {
+              "title": "<a href=\"https://wiki.haskell.org/Programming_guidelines\">Programming Guidelines</a>"
+            },
+            {
+              "title": "<a href=\"https://wiki.haskell.org/Haskell_programming_tips\">Things to Avoid</a>"
+            },
+            {
+              "title": "<a href=\"https://wiki.haskell.org/Blow_your_mind\">Useful Idioms</a>"
+            },
+            {
+              "title": "<a href=\"https://kowainik.github.io/posts/haskell-mini-patterns\">Haskell Mini Patterns Book</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Erlang",
+          "items": [
+            {
+              "title": "<a href=\"http://spawnedshelter.com\">Spawned Shelter (a list of various Erlang resources)</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/gar1t/erlang-patterns\">Erlang Patterns (the site is no longer accessible but one can read the md files in the repo)</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Elixir",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/devonestes/fast-elixir\">Fast Elixir - Idioms for writing performant code</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/rrrene/elixir-style-guide\">Credo's Elixir Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/tony612/the-zen-of-elixir\">The Zen of Elixir</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Common Lisp",
+          "items": [
+            {
+              "title": "<a href=\"https://www.hexstreamsoft.com/articles/notes-tips-standard-common-lisp-symbols/\">Standard CL Symbols</a>"
+            },
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/lispguide.xml\">Google Common Lisp Style Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "CSharp",
+          "items": [
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/\">Open-source library guidance</a>"
+            },
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/\">C# Programming guide</a>"
+            },
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/dotnet/architecture/microservices/\">.NET Microservices: Architecture for Containerized .NET Applications</a>"
+            },
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions\">C# Coding conventions</a>"
+            },
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/dotnet/core/testing/\">Unit testing in .NET Core and .NET Standard</a>"
+            },
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/csharp-style.html\">Google C# Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/aspnet/core/performance/performance-best-practices?view=aspnetcore-5.0\">ASP.NET Core Performance Best Practices</a>"
+            }
+          ]
+        },
+        {
+          "topic": "FSharp",
+          "items": [
+            {
+              "title": "<a href=\"https://learn.microsoft.com/en-us/dotnet/fsharp/style-guide/\">F# style guide</a>"
+            },
+            {
+              "title": "<a href=\"https://gist.github.com/swlaschin/31d5a0a2c4478e82e3ed60d653c0206b\">Effective F#, tips and tricks </a>"
+            }
+          ]
+        },
+        {
+          "topic": "Java",
+          "items": [
+            {
+              "title": "<a href=\"http://www.ameyalokare.com/software/2018/01/13/lean-java-principles.html\">Principles of Lean Java</a>"
+            },
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/javaguide.html\">Google Java Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://www.oracle.com/technetwork/java/codeconventions-150003.pdf\">Java Code Conventions</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Scala",
+          "items": [
+            {
+              "title": "<a href=\"https://leanpub.com/scalaidioms/read\">Scala Idioms</a>"
+            },
+            {
+              "title": "<a href=\"https://alvinalexander.com/scala/scala-best-practices-idioms-cookbook\">Scala Best Practice Idioms</a>"
+            },
+            {
+              "title": "<a href=\"https://twitter.github.io/scala_school/\">Scala School</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Groovy",
+          "items": [
+            {
+              "title": "<a href=\"https://groovy-lang.org/style-guide.html\">Style guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Kotlin",
+          "items": [
+            {
+              "title": "<a href=\"https://kotlinlang.org/docs/reference/coding-conventions.html\">Coding Conventions</a>"
+            },
+            {
+              "title": "<a href=\"https://developer.android.com/kotlin/style-guide\">Google Kotlin Style Guide for Android</a>"
+            }
+          ]
+        },
+        {
+          "topic": "D",
+          "items": [
+            {
+              "title": "<a href=\"https://dlang.org/dstyle.html\">The D Style</a>"
+            },
+            {
+              "title": "<a href=\"https://qznc.github.io/d-tut/idiomatic.html\">Pragmatic D Tutorial: Idiomatic D</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Clojure",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/bbatsov/clojure-style-guide\">Clojure Style Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Nim",
+          "items": [
+            {
+              "title": "<a href=\"https://nim-lang.org/docs/nep1.html\">Nim Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://scripter.co/notes/nim\">Nim Notes</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Pony",
+          "items": [
+            {
+              "title": "<a href=\"https://patterns.ponylang.io/\">Pony Patterns</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Javascript",
+          "items": [
+            {
+              "title": "<a href=\"http://eloquentjavascript.net/\">Eloquent Javascript</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/getify/You-Dont-Know-JS\">You Don't Know JS</a>"
+            },
+            {
+              "title": "<a href=\"https://jstherightway.org/\">JS: The Right Way</a>"
+            },
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/jsguide.html\">Google JavaScript Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://firefox-source-docs.mozilla.org/tools/lint/coding-style/coding_style_js.html\">Mozilla Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/angularjs-google-style.html\">An AngularJS Style Guide for Closure Users at Google</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/airbnb/javascript\">Airbnb Style Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "C",
+          "items": [
+            {
+              "title": "<a href=\"https://developer.gnome.org/programming-guidelines/stable/c-coding-style.html.en\">C Coding Style</a>"
+            },
+            {
+              "title": "<a href=\"https://www.gnu.org/prep/standards/html_node/Writing-C.html\">Making The Best Use of C</a>"
+            },
+            {
+              "title": "<a href=\"https://www.doc.ic.ac.uk/lab/cplus/cstyle.html\">Recommended C Style and Coding Standards</a>"
+            }
+          ]
+        },
+        {
+          "topic": "C++",
+          "items": [
+            {
+              "title": "<a href=\"http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines\">ISO C++ Core Guidelines</a>"
+            },
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/cppguide.html\">Google C++ Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://firefox-source-docs.mozilla.org/tools/lint/coding-style/coding_style_cpp.html\">Mozilla Style Guide</a>"
+            },
+            {
+              "title": "<a href=\"https://fuchsia.dev/fuchsia-src/development/languages/c-cpp/cpp-style\">C++ style guide (Fuchsia)</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Dart",
+          "items": [
+            {
+              "title": "<a href=\"https://dart.dev/guides/language/effective-dart\">Effective Dart</a>"
+            },
+            {
+              "title": "<a href=\"https://fuchsia.dev/fuchsia-src/development/languages/dart/style\">Dart style guide (Fuchsia)</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo\">Style guide for Flutter repo</a>"
+            }
+          ]
+        },
+        {
+          "topic": "SQL",
+          "items": [
+            {
+              "title": "<a href=\"https://www.sqlstyle.guide\">SQL Style Guide by Simon Holywell</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Objective-C",
+          "items": [
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/objcguide.html\">Google Objective-C Style Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Swift",
+          "items": [
+            {
+              "title": "<a href=\"https://google.github.io/swift/\">Google Swift Style Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "R",
+          "items": [
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/Rguide.html\">Google R Style Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Shell",
+          "items": [
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/shellguide.html\">Google Shell Style Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "HTML/CSS",
+          "items": [
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/htmlcssguide.html\">Google HTML/CSS Style Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Vimscript",
+          "items": [
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/vimscriptguide.xml\">Google Vimscript Style Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "XML",
+          "items": [
+            {
+              "title": "<a href=\"https://google.github.io/styleguide/xmlstyle.html\">Google XML Style Guide</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Zig",
+          "items": [
+            {
+              "title": "TODO once zig hits <code>v1.0</code> and someone actually writes up the best practices."
+            }
+          ]
+        },
+        {
+          "topic": "Prolog",
+          "items": [
+            {
+              "title": "TODO"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

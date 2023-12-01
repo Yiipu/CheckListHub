@@ -1,0 +1,159 @@
+{
+  "id": 89,
+  "header": "frontend-developer-checklist",
+  "topicList": [
+    "Usage",
+    "Checklist"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Usage",
+      "items": [
+        {
+          "title": "<p>Open <a href=\"https://raw.githubusercontent.com/albburtsev/frontend-developer-checklist/master/README.md\">source code of this file</a> and copy next chapter into issue of your project. Enjoy!</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Checklist",
+      "items": [
+        {
+          "topic": "Common stuff: pages, styles, etc",
+          "items": [
+            {
+              "title": " Check responsive design for typical resolutions (320, 480, 1024, 1600, 2k)"
+            },
+            {
+              "title": " <a href=\"https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag\">Viewport</a> meta tag"
+            },
+            {
+              "title": " X-UA-Compatible meta tag <sup>1</sup>"
+            },
+            {
+              "title": " Format detection meta tags <sup>2</sup>"
+            },
+            {
+              "title": " Page 404"
+            },
+            {
+              "title": " Page 5xx"
+            },
+            {
+              "title": " Print version"
+            },
+            {
+              "title": " Noscript version"
+            },
+            {
+              "title": " Proper cache for all static files"
+            },
+            {
+              "title": " <a href=\"https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html\">Apple-specific</a> meta tags"
+            },
+            {
+              "title": " All absolute pathes without protocol"
+            }
+          ]
+        },
+        {
+          "topic": "Graphics",
+          "items": [
+            {
+              "title": " Favicon 16x16, 32x32 <sup>3</sup>"
+            },
+            {
+              "title": " Apple icons <sup>4</sup>"
+            },
+            {
+              "title": " Android icons <sup>5</sup>"
+            },
+            {
+              "title": " Support retina displays"
+            },
+            {
+              "title": " Sprites and icon fonts"
+            },
+            {
+              "title": " Minify all images with <a href=\"https://github.com/gruntjs/grunt-contrib-imagemin\">Imagemin</a>"
+            },
+            {
+              "title": " Image inlining (for instance <a href=\"http://learnboost.github.io/stylus/docs/functions.url.html\">in Stylus</a>)"
+            }
+          ]
+        },
+        {
+          "topic": "SEO and Social",
+          "items": [
+            {
+              "title": " robots.txt"
+            },
+            {
+              "title": " humans.txt"
+            },
+            {
+              "title": " Mark up content with <a href=\"http://schema.org/\">microdata</a>"
+            },
+            {
+              "title": " Social likes buttons"
+            },
+            {
+              "title": " Common meta tags <sup>6</sup>"
+            },
+            {
+              "title": " <a href=\"https://developers.facebook.com/docs/opengraph/using-objects?locale=ru_RU#selfhosted-creating\">Facebook OG</a> meta tags"
+            },
+            {
+              "title": " <a href=\"https://dev.twitter.com/cards/markup\">Twitter cards</a> meta tags"
+            },
+            {
+              "title": " <a href=\"http://www.google.com/analytics/\">GA</a> and other statistic"
+            },
+            {
+              "title": " <a href=\"http://www.google.com/webmasters/\">Google webmasters</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Validation and performance",
+          "items": [
+            {
+              "title": " <a href=\"https://developers.google.com/speed/pagespeed/\">Google PageSpeed</a> tools"
+            },
+            {
+              "title": " <a href=\"http://validator.w3.org/check\">HTML validation</a>"
+            },
+            {
+              "title": " <a href=\"http://jigsaw.w3.org/css-validator/validator\">CSS validation</a>"
+            },
+            {
+              "title": " <a href=\"http://validator.w3.org/checklink\">Link checker</a>"
+            }
+          ]
+        },
+        {
+          "topic": "Build systems",
+          "items": [
+            {
+              "title": " Deploy task for build system"
+            },
+            {
+              "title": " Code style (jshint, jscs) for JavaScript code"
+            },
+            {
+              "title": " <a href=\"https://github.com/postcss/autoprefixer\">Autoprefixer</a> for all styles"
+            },
+            {
+              "title": " Don't save builds in project's VCS"
+            },
+            {
+              "title": " Check project's deployment (all stuff must be in config files: package.json, bower.json)"
+            },
+            {
+              "title": " <code>npm test</code> required<hr/><p><sup>[1] X-UA-Compatible</sup></p><p><code>html\n&lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt;</code></p><p><sup>[2] Format detection</sup></p><p><code>html\n&lt;meta name=\"format-detection\" content=\"telephone=no\"/&gt;\n&lt;meta name=\"format-detection\" content=\"address=no\"/&gt;</code></p><p><sup>[3] Favicon</sup></p><p><code>html\n&lt;link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"path/to/icon.ico\"/&gt;</code></p><p><sup>[4] Apple icons</sup></p><p><code>html\n&lt;link rel=\"apple-touch-icon\" href=\"57x57.png\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"72x72.png\" sizes=\"72x72\"&gt;\n&lt;link rel=\"apple-touch-icon\" href=\"114x114.png\" sizes=\"114x114\"&gt;\n&lt;link rel=\"apple-touch-startup-image\" href=\"57x57.png\"&gt;</code></p><p><sup>[5] Android icons</sup></p><p><code>html\n&lt;link rel=\"icon\" sizes=\"192x192\" href=\"nice-highres.png\"&gt;\n&lt;link rel=\"icon\" sizes=\"128x128\" href=\"niceicon.png\"&gt;</code></p><p><sup>[6] Common meta tags</sup></p><p><code>html\n&lt;meta name=\"description\" content=\"\" /&gt;\n&lt;meta name=\"keywords\" content=\"\" /&gt;\n&lt;meta name=\"author\" content=\"\" /&gt;\n&lt;meta name=\"copyright\" content=\"\" /&gt;</code></p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

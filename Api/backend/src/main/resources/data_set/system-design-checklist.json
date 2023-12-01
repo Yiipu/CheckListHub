@@ -1,0 +1,130 @@
+{
+  "id": 204,
+  "header": "system-design-checklist",
+  "topicList": [
+    "What this checklist is",
+    "What this checklist is not",
+    "How I came up with the checklist",
+    "Why I made the checklist public",
+    "How to contribute to the checklist",
+    "👩🏻‍💻 About me"
+  ],
+  "itemGroups": [
+    {
+      "topic": "What this checklist is",
+      "items": [
+        {
+          "title": "<p>This is a checklist of things to think about when designing or re-designing a software system or parts of it.</p><p>For example, a specialised, shorter version of this checklist can be used to design:</p>"
+        },
+        {
+          "title": "an Minimum Viable Product (MVP) for a pre-PMF company"
+        },
+        {
+          "title": "a microservice for a post-PMF company"
+        },
+        {
+          "title": "a migration process from a monolith to a microservice architecture"
+        },
+        {
+          "title": "a logging and monitoring system for external auditing"
+        },
+        {
+          "title": "a frontend component"
+        },
+        {
+          "title": "a new API endpoint etc."
+        }
+      ]
+    },
+    {
+      "topic": "What this checklist is not",
+      "items": [
+        {
+          "title": "<p>This is not a tutorial on software system design. However, as a refresher, I added a few notes about <em><strong>why</strong></em> certain questions are important and some opinionated suggestions. Feel free to skip over them.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "How I came up with the checklist",
+      "items": [
+        {
+          "title": "<p>I've successfully used checklists my entire life, as a software engineer, during my time as a CTO of an early-stage fintech app, where I designed software for high-street banks and when I prepared for the <a href=\"https://aws.amazon.com/certification/certified-solutions-architect-associate/\">AWS Solution Architect</a> exam. I created a mental checklist to:</p>"
+        },
+        {
+          "title": "extract the system requirements from the question"
+        },
+        {
+          "title": "determine the desired system properties"
+        },
+        {
+          "title": "break down the system layers"
+        },
+        {
+          "title": "consider trade-offs at each layer<p>This is how I was able answer 60+ scenario-based questions in 120 minutes and pass the exam 🙌.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Why I made the checklist public",
+      "items": [
+        {
+          "title": "<p>We are bombarded by new information every day. There are many books and articles on software system design. Technologies, frameworks, languages, practices change at huge speed.</p><p><mark>However, most of them lack a practical format, to apply the knowledge immediately. Also, our brains can't cope well with so many long-form texts on a daily basis.</mark></p><p>I noticed a move towards checklists and flowcharts in the developer community. Therefore, this repository is the first step towards a practical tool. I want to help not only first-time CTOs, but any software team before a routine design task.</p><p>I hope the checklist accomplishes three goals:</p><ol>\n<li>Helps them <strong>discover unknown unknowns</strong> by sparking curiosity and reflection ahead of the design task."
+        },
+        {
+          "title": "Inspires them to <strong>use it in Pre-Mortems</strong>, to better assess high-impact, high-risk systems, and <strong>in Post-Mortems</strong>, to update it with learnings discovered the hard way."
+        },
+        {
+          "title": "Used and refined frequently, it <strong>builds good habits</strong> leading to high quality work.</li>\n</ol><p>“Checklists […] remind us of the minimum necessary steps and make them explicit. They not only offer the possibility of verification but also instill a kind of discipline of higher performance.” — Atul Gawande, The Checklist Manifesto</p>"
+        }
+      ]
+    },
+    {
+      "topic": "How to contribute to the checklist",
+      "items": [
+        {
+          "title": "<p>If you like the checklist, let's make it more useful together! 💪 </p><p><mark>Mistakes are human nature. Because technology advances so quickly, what was good-enough yesterday may not be tomorrow. Nobody can know everything at all times.</mark></p><p>You're very welcome to contribute to fix mistakes, and refine the list of questions and options by submitting a Pull Request.</p><p>I'm running some tests with real teams from a few companies to benchmark if the usage of a checklist results in:</p><blockquote>"
+        },
+        {
+          "title": "shorter <code>commit → review → deploy</code> cycles"
+        },
+        {
+          "title": "improved code quality"
+        },
+        {
+          "title": "increased number of issued discovered ahead"
+        },
+        {
+          "title": "fewer severe incidents"
+        },
+        {
+          "title": "better knowledge loops in and between teams\n</blockquote><p>If you want to try it, email me at evelina@vrabie.info. Feel free to leave a comment with suggestions to make it more specific or shorter for certain cases, like the ones I mentioned in the first paragraph.</p>"
+        },
+        {
+          "topic": "How to run Jekyll locally",
+          "items": [
+            {
+              "title": "<ol>\n<li>Install <a href=\"https://www.docker.com/\">Docker</a> on your machine"
+            },
+            {
+              "title": "Run Jekyll: <code>docker-compose up</code>"
+            },
+            {
+              "title": "The browser should livereload at <code>http://localhost:4000</code> </li>\n</ol>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "👩🏻‍💻 About me",
+      "items": [
+        {
+          "title": "<a href=\"https://www.linkedin.com/in/evelinavrabie/\">LinkedIn</a>"
+        },
+        {
+          "title": "<a href=\"https://medium.com/jump-start\">Medium</a>"
+        }
+      ]
+    }
+  ]
+}

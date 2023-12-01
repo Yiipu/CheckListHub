@@ -1,0 +1,98 @@
+{
+  "id": 231,
+  "header": "WordPress-Developer-Checklist",
+  "topicList": [
+    "WordPress-Developer-Checklist",
+    "Installation",
+    "How to use ?",
+    "Customize",
+    "Troubleshooting",
+    "Contributing",
+    "Support",
+    "Author",
+    "License",
+    "Credits"
+  ],
+  "itemGroups": [
+    {
+      "topic": "WordPress-Developer-Checklist",
+      "items": [
+        {
+          "title": "<p align=\"center\">\n<em>A user-friendly and fluid interface for using checklists.</em>\n</p><p align=\"center\">\n<a href=\"https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist\" rel=\"noopener noreferrer\" target=\"_blank\">\n<img alt=\"&gt;WordPress-Developer-Checklist\" src=\"dist/img/WordPress-Developer-Checklist-Animation.apng\" title=\"&gt;WordPress-Developer-Checklist\" width=\"800\"/>\n</a>\n</p><p><strong>Repository Status</strong></p><p><a href=\"https://opensource.org/licenses/Apache-2.0\"><img alt=\"License\" src=\"https://img.shields.io/badge/License-Apache%202.0-red.svg?style=flat-square\"/></a>\n<a href=\"https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/releases/\"><img alt=\"GitHub release\" src=\"https://img.shields.io/github/release/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square\"/></a>\n<a href=\"https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commit/\"><img alt=\"GitHub commits\" src=\"https://img.shields.io/github/commits-since/Thomas-A-Reinert/WordPress-Developer-Checklist/1.0.0.svg\"/></a>\n<a href=\"https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master\"><img alt=\"Last deployed\" src=\"https://img.shields.io/github/last-commit/Thomas-A-Reinert/WordPress-Developer-Checklist/master.svg?label=last%20deployed&amp;style=flat-square\"/></a>\n<a href=\"https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist\"><img alt=\"Build Status\" src=\"https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?branch=master&amp;style=flat-square\"/></a>\n<a href=\"https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues\"><img alt=\"GitHub issues\" src=\"https://img.shields.io/github/issues/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square\"/></a></p><p><a href=\"https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/network/\"><img alt=\"GitHub forks\" src=\"https://img.shields.io/github/forks/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square&amp;label=Fork&amp;maxAge=2592000\"/></a>\n<a href=\"https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers\"><img alt=\"GitHub stars\" src=\"https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square\"/></a>\n<a href=\"https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/watchers/\"><img alt=\"GitHub watchers\" src=\"https://img.shields.io/github/watchers/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square&amp;label=Watch&amp;maxAge=2592000\"/></a>\n<a href=\"https://github.com/Thomas-A-Reinert?tab=followers\"><img alt=\"GitHub followers\" src=\"https://img.shields.io/github/followers/Thomas-A-Reinert.svg?style=flat-square&amp;label=Follow&amp;maxAge=2592000\"/></a>\n<a href=\"https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/graphs/contributors/\"><img alt=\"GitHub contributors\" src=\"https://img.shields.io/github/contributors/Thomas-A-Reinert/WordPress-Developer-Checklist.svg\"/></a></p><p><strong>Checklist/s Completion Status</strong></p><p><a href=\"\"><img alt=\"Prerequisites, Installation &amp; Post-Install\" src=\"https://img.shields.io/badge/Prerequisites%2C%20Installation%20%26%20Post--Install-80%25-yellowgreen.svg?style=flat-square\"/></a>\n<a href=\"\"><img alt=\"Development\" src=\"https://img.shields.io/badge/Development-0%25-%23f00.svg?style=flat-square\"/></a>\n<a href=\"\"><img alt=\"Security\" src=\"https://img.shields.io/badge/Security-0%25-%23f00.svg?style=flat-square\"/></a>\n<a href=\"\"><img alt=\"Performance\" src=\"https://img.shields.io/badge/Performance-0%25-%23f00.svg?style=flat-square\"/></a>\n<a href=\"\"><img alt=\"Theme-Development\" src=\"https://img.shields.io/badge/Theme--Development-0%25-%23f00.svg?style=flat-square\"/></a>\n<a href=\"\"><img alt=\"Plugin-Development\" src=\"https://img.shields.io/badge/Plugin--Development-0%25-%23f00.svg?style=flat-square\"/></a></p><p><strong>All the power of checklists, without the overhead:</strong>\n - User-friendly and fluid interface\n - Fast build with <a href=\"https://github.com/developit/preact\">Preact</a> and <a href=\"https://github.com/twbs\">Bootstrap4</a>\n - Generate PDF report\n - Offline checklists storage with LocalStorage\n - Auto-save your progress\n - <strong>Instant no-config app bundling</strong></p><p><strong>Use the online version:</strong>\n<a href=\"https://wpchecklist.tarthemes.com\">wpchecklist.tarthemes.com/</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Installation",
+      "items": [
+        {
+          "title": "<p><strong>Install manually</strong></p><p>```bash\ngit clone https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist.git\nyarn install</p>"
+        }
+      ]
+    },
+    {
+      "topic": "How to use ?",
+      "items": [
+        {
+          "title": "<p><strong>Build with <a href=\"https://github.com/gulpjs/gulp\">Gulp</a></strong>\n<code>bash\ngulp build</code>\nBuilt files are available in <code>dist</code> folder.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Customize",
+      "items": [
+        {
+          "title": "<p><strong>Build and serve files with <a href=\"https://github.com/gulpjs/gulp\">Gulp</a></strong>\n<code>bash\ngulp build\ngulp webserver</code></p><p>The version is available at <a href=\"http://localhost:8080\">http://localhost:8080</a></p>"
+        },
+        {
+          "topic": "Add a new Checklist",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Troubleshooting",
+      "items": [
+        {
+          "title": "<p>The new checklist does not appear in select:\n - Empty the localStorage before add a new checklist.\n - Try the Chrome extension <a href=\"https://chrome.google.com/webstore/detail/clear-session/maejjihldgmkjlfmgpgoebepjchengka\">\"Clear Session\"</a> to clear the localStorage for the current window</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<p><strong>Open an issue or a pull request to suggest changes or additions.</strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Support",
+      "items": []
+    },
+    {
+      "topic": "Author",
+      "items": [
+        {
+          "title": "<p><strong><a href=\"https://github.com/Thomas-A-Reinert/\">Thomas A. Reinert</a></strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p>Designed and created with ♥ by <a href=\"https://www.tarcgn.de/portfolio/\">Thomas A. Reinert</a>. Licensed under the <a href=\"https://www.apache.org/licenses/LICENSE-2.0\">Apache 2.0 License</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Credits",
+      "items": [
+        {
+          "title": "<p>This project wouldn´t exist without the selfless work of the following persons / projects:\n- Code for the <em>WordPress-Developer-Checklist</em> based on the <a href=\"https://github.com/AlexisDanizan/Checklist-Tools-Website\">Front-End Checklist</a> by <a href=\"https://github.com/AlexisDanizan/\">Alexis Danizan</a>\n- <a href=\"https://gist.github.com/briandk\">Brian A. Danielak</a> for his <a href=\"https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62\">CONTRIBUTING.md Template</a>\n- <a href=\"https://github.com/phillipjohnston\">Phillip Johnston</a> for his <a href=\"https://github.com/embeddedartistry/embedded-resources/blob/master/docs/PULL_REQUEST_TEMPLATE_example.md\">PULL_REQUEST_TEMPLATE.md</a>\n- The people from <a href=\"https://github.com/twitter\">Twitter</a> for their <a href=\"https://github.com/twitter/code-of-conduct\">Code-of-Conduct</a>,<br/>\nAttribution: \"@TwitterOSS Code of Conduct\" © 2013 Twitter, Inc, used under a Creative Commons Attribution Unported license: http://creativecommons.org/licenses/by/3.0/</p>"
+        }
+      ]
+    }
+  ]
+}

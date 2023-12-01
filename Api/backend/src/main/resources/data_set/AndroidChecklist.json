@@ -1,0 +1,453 @@
+{
+  "id": 7,
+  "header": "AndroidChecklist",
+  "topicList": [
+    "一、静态扫描",
+    "二、动态扫描",
+    "三、业务安全扫描",
+    "四、Checklist脑图：",
+    "五、问题反馈",
+    "六、关于作者"
+  ],
+  "itemGroups": [
+    {
+      "topic": "一、静态扫描",
+      "items": [
+        {
+          "topic": "1 文件信息",
+          "items": []
+        },
+        {
+          "topic": "2 证书检测",
+          "items": []
+        },
+        {
+          "topic": "3 权限信息检测",
+          "items": []
+        },
+        {
+          "topic": "4 so文件检测",
+          "items": []
+        },
+        {
+          "topic": "5 第三方库/SDK/组件检测",
+          "items": [
+            {
+              "title": "第三方开源库/SDK检测"
+            }
+          ]
+        },
+        {
+          "topic": "6 manifest文件检测",
+          "items": [
+            {
+              "title": "6.1 <a href=\"http://01hackcode.com/wiki/6.1\">AndroidManifest文件中PermissionGroup检测</a>"
+            },
+            {
+              "title": "6.2 <a href=\"http://01hackcode.com/wiki/6.2\">AndroidManifest文件中系统权限使用检测</a>"
+            },
+            {
+              "title": "6.3 <a href=\"http://01hackcode.com/wiki/6.3\">AndroidManifest危险ProtectionLevel权限检测</a>"
+            },
+            {
+              "title": "6.4 <a href=\"http://01hackcode.com/wiki/6.4\">AndroidManifest sharedUserId 检测</a>"
+            },
+            {
+              "title": "6.5 <a href=\"http://01hackcode.com/wiki/6.5\">AndroidManifest allowBackup标志检测</a>"
+            },
+            {
+              "title": "6.6 <a href=\"http://01hackcode.com/wiki/6.6\">AndroidManifest文件Debuggable配置检测</a>"
+            },
+            {
+              "title": "6.7 <a href=\"http://01hackcode.com/wiki/6.7\">非必要权限检测</a>"
+            },
+            {
+              "title": "6.8 <a href=\"http://01hackcode.com/wiki/6.8\">app最低版本检测</a>"
+            }
+          ]
+        },
+        {
+          "topic": "7 组件安全检测",
+          "items": [
+            {
+              "title": "7.1 <a href=\"http://01hackcode.com/wiki/7.1\">Activity、activity-alias、service、receiver组件导出检测</a>"
+            },
+            {
+              "title": "7.2 <a href=\"http://01hackcode.com/wiki/7.2\">ContentProvider组件导出检测</a>"
+            },
+            {
+              "title": "7.3 <a href=\"http://01hackcode.com/wiki/7.3\">ContentProvider目录遍历漏洞检测</a>"
+            },
+            {
+              "title": "7.4 <a href=\"http://01hackcode.com/wiki/7.4\">Implicit Service漏洞检测</a>"
+            },
+            {
+              "title": "7.5 <a href=\"http://01hackcode.com/wiki/7.5\">Provider：grant-uri-permission属性检测</a>"
+            },
+            {
+              "title": "7.6 <a href=\"http://01hackcode.com/wiki/7.6\">Intent-Based攻击检测</a>"
+            },
+            {
+              "title": "7.7 <a href=\"http://01hackcode.com/wiki/7.7\">Intent Scheme URI漏洞攻击检测</a>"
+            },
+            {
+              "title": "7.8 <a href=\"http://01hackcode.com/wiki/7.8\">应用本地拒绝服务漏洞检测</a>"
+            },
+            {
+              "title": "7.9 <a href=\"http://01hackcode.com/wiki/7.9\">manifest中定义组件未实现检测</a>"
+            },
+            {
+              "title": "7.10 <a href=\"http://01hackcode.com/wiki/7.10\">Debug或Test敏感测试组件泄露检测</a>"
+            },
+            {
+              "title": "7.11 <a href=\"http://01hackcode.com/wiki/7.11\">Intent不安全反射风险检测</a>"
+            }
+          ]
+        },
+        {
+          "topic": "8 webview组件安全检测",
+          "items": [
+            {
+              "title": "8.1 <a href=\"http://01hackcode.com/wiki/8.1\">WebView远程执行漏洞检测</a>"
+            },
+            {
+              "title": "8.2 <a href=\"http://01hackcode.com/wiki/8.2\">WebView潜在XSS攻击检测</a>"
+            },
+            {
+              "title": "8.3 <a href=\"http://01hackcode.com/wiki/8.3\">WebView本地文件访问漏洞检测</a>"
+            },
+            {
+              "title": "8.4 <a href=\"http://01hackcode.com/wiki/8.4\">WebView密码明文存储漏洞检测</a>"
+            },
+            {
+              "title": "8.5 <a href=\"http://01hackcode.com/wiki/8.5\">主机名弱校验检测</a>"
+            },
+            {
+              "title": "8.6 <a href=\"http://01hackcode.com/wiki/8.6\">证书弱校验检测</a>"
+            },
+            {
+              "title": "8.7 <a href=\"http://01hackcode.com/wiki/8.7\">中间人攻击漏洞检测</a>"
+            },
+            {
+              "title": "8.8 <a href=\"http://01hackcode.com/wiki/8.8\">WebView不校验证书漏洞检测</a>"
+            },
+            {
+              "title": "8.9 <a href=\"http://01hackcode.com/wiki/8.9\">WebView组件系统隐藏接口未移除漏洞</a>"
+            }
+          ]
+        },
+        {
+          "topic": "9 sqlite安全检测",
+          "items": [
+            {
+              "title": "9.1 <a href=\"http://01hackcode.com/wiki/9.1\">SQLite数据库加密(SQLCipher)检测</a>"
+            },
+            {
+              "title": "9.2 <a href=\"http://01hackcode.com/wiki/9.2\">SQLite数据库(SQLite Encryption Extension (SEE)) 检测</a>"
+            },
+            {
+              "title": "9.3 <a href=\"http://01hackcode.com/wiki/9.3\">SQLite数据库的对称密钥(PRAGMA key) 检测</a>"
+            },
+            {
+              "title": "9.4 <a href=\"http://01hackcode.com/wiki/9.4\">SQLiteDatabase Transaction Deprecated检测</a>"
+            },
+            {
+              "title": "9.5 <a href=\"http://01hackcode.com/wiki/9.5\">Databases任意读写漏洞检测</a>"
+            }
+          ]
+        },
+        {
+          "topic": "10 网络通信安全检测",
+          "items": [
+            {
+              "title": "10.1 <a href=\"http://01hackcode.com/wiki/10.1\">SSL连接检测</a>"
+            },
+            {
+              "title": "10.2 <a href=\"http://01hackcode.com/wiki/10.2\">SSL不安全组件检测</a>"
+            },
+            {
+              "title": "10.3 <a href=\"http://01hackcode.com/wiki/10.3\">HttpHost检测</a>"
+            },
+            {
+              "title": "10.4 <a href=\"http://01hackcode.com/wiki/10.4\">HttpURLConnection漏洞检测</a>"
+            },
+            {
+              "title": "10.5 <a href=\"http://01hackcode.com/wiki/10.5\">网络端口开放威胁检测</a>"
+            }
+          ]
+        },
+        {
+          "topic": "11 弱加密风险检测",
+          "items": [
+            {
+              "title": "11.1 <a href=\"http://01hackcode.com/wiki/11.1\">弱加密算法风险检测</a>"
+            },
+            {
+              "title": "11.2 <a href=\"http://01hackcode.com/wiki/11.2\">不安全的密钥长度风险检测</a>"
+            },
+            {
+              "title": "11.3 <a href=\"http://01hackcode.com/wiki/11.3\">ECB弱加密模式风险检测</a>"
+            },
+            {
+              "title": "11.4 <a href=\"http://01hackcode.com/wiki/11.4\">IVParameterSpec不安全初始化向量风险检测</a>"
+            },
+            {
+              "title": "11.5 <a href=\"http://01hackcode.com/wiki/11.5\">RSA中不使用Padding风险检测</a>"
+            },
+            {
+              "title": "11.6 <a href=\"http://01hackcode.com/wiki/11.6\">检测keystore是否使用密码保护</a>"
+            }
+          ]
+        },
+        {
+          "topic": "12 数据安全检测",
+          "items": [
+            {
+              "title": "12.1 <a href=\"http://01hackcode.com/wiki/12.1\">敏感信息检测</a>"
+            },
+            {
+              "title": "12.2 <a href=\"http://01hackcode.com/wiki/12.2\">剪贴板敏感信息泄露风险检测</a>"
+            },
+            {
+              "title": "12.3 <a href=\"http://01hackcode.com/wiki/12.3\">Intent敏感数据泄露风险检测</a>"
+            },
+            {
+              "title": "12.4 <a href=\"http://01hackcode.com/wiki/12.4\">PendingIntent误用风险</a>"
+            },
+            {
+              "title": "12.5 <a href=\"http://01hackcode.com/wiki/12.5\">密钥硬编码风险检测</a>"
+            },
+            {
+              "title": "12.6 <a href=\"http://01hackcode.com/wiki/12.6\">数据或程序加载检查</a>"
+            },
+            {
+              "title": "12.7 <a href=\"http://01hackcode.com/wiki/12.7\">BASE64安全检测</a>"
+            },
+            {
+              "title": "12.8 <a href=\"http://01hackcode.com/wiki/12.8\">文件全局读写漏洞检测</a>"
+            },
+            {
+              "title": "12.9 <a href=\"http://01hackcode.com/wiki/12.9\">日志泄露风险检测</a>"
+            },
+            {
+              "title": "12.10 <a href=\"http://01hackcode.com/wiki/12.10\">外部加载Dex检测</a>"
+            },
+            {
+              "title": "12.11 <a href=\"http://01hackcode.com/wiki/12.11\">外部存储路径检测</a>"
+            },
+            {
+              "title": "12.12 <a href=\"http://01hackcode.com/wiki/12.12\">明文数字证书风险</a>"
+            },
+            {
+              "title": "12.13 第三方oauth敏感信息泄露"
+            }
+          ]
+        },
+        {
+          "topic": "13 敏感函数调用检测",
+          "items": [
+            {
+              "title": "13.1 <a href=\"http://01hackcode.com/wiki/13.1\">安全相关的函数检测</a>"
+            },
+            {
+              "title": "13.2 <a href=\"http://01hackcode.com/wiki/13.2\">安全相关的类检测</a>"
+            },
+            {
+              "title": "13.3 <a href=\"http://01hackcode.com/wiki/13.3\">运行命令检测</a>"
+            },
+            {
+              "title": "13.4 <a href=\"http://01hackcode.com/wiki/13.4\">Native Library加载检测</a>"
+            },
+            {
+              "title": "13.5 <a href=\"http://01hackcode.com/wiki/13.5\">外部动态加载DEX检测</a>"
+            },
+            {
+              "title": "13.6 <a href=\"http://01hackcode.com/wiki/13.6\">root代码检测</a>"
+            },
+            {
+              "title": "13.7 <a href=\"http://01hackcode.com/wiki/13.7\">获取IMEI 和Device ID敏感信息代码检测</a>"
+            },
+            {
+              "title": "13.8 <a href=\"http://01hackcode.com/wiki/13.8\">获取Android ID敏感信息代码检测</a>"
+            },
+            {
+              "title": "13.9 <a href=\"http://01hackcode.com/wiki/13.9\">发送SMS敏感代码检测</a>"
+            },
+            {
+              "title": "13.10 <a href=\"http://01hackcode.com/wiki/13.10\">文件删除代码检测</a>"
+            },
+            {
+              "title": "13.11 <a href=\"http://01hackcode.com/wiki/13.11\">signature代码检测</a>"
+            }
+          ]
+        },
+        {
+          "topic": "14 加固检测",
+          "items": [
+            {
+              "title": "14.1 dex加固检测"
+            },
+            {
+              "title": "14.2 So文件加固检测"
+            },
+            {
+              "title": "14.3 资源文件加固检测"
+            },
+            {
+              "title": "14.4 混淆率检测"
+            }
+          ]
+        },
+        {
+          "topic": "15 系统漏洞检测",
+          "items": [
+            {
+              "title": "15.1 <a href=\"http://01hackcode.com/wiki/15.1\">fragment注入漏洞检测</a>"
+            },
+            {
+              "title": "15.2 <a href=\"http://01hackcode.com/wiki/15.2\">sqlite数据库日志泄露漏洞检测</a>"
+            },
+            {
+              "title": "15.3 <a href=\"http://01hackcode.com/wiki/15.3\">随机数生成漏洞检测</a>"
+            }
+          ]
+        },
+        {
+          "topic": "16 其他",
+          "items": [
+            {
+              "title": "通用签名风险检测"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "二、动态扫描",
+      "items": [
+        {
+          "title": "<p>1 服务端漏洞检测</p>"
+        },
+        {
+          "title": "基于http代理"
+        },
+        {
+          "title": "水平权限风险检测"
+        },
+        {
+          "title": "垂直权限风险检测"
+        },
+        {
+          "title": "sql注入漏洞检测"
+        },
+        {
+          "title": "XSS漏洞检测"
+        },
+        {
+          "title": "敏感信息检测（硬编码、用户密码、银行卡、身份证等明文传输）</li>\n</ul>"
+        },
+        {
+          "title": "基于tcp或udp(socket)代理"
+        },
+        {
+          "title": "敏感信息检测（硬编码、用户密码、银行卡、身份证等明文传输）</li>\n</ul>"
+        },
+        {
+          "title": "html5漏洞检测</li>\n</ul>"
+        },
+        {
+          "title": "<p>2 hook技术检测</p>"
+        },
+        {
+          "title": "2.1 SQLite Database存储信息检测"
+        },
+        {
+          "title": "2.2 SharePreferences存储信息检测"
+        },
+        {
+          "title": "2.3 Contert Provider存储信息检测"
+        },
+        {
+          "title": "2.4 File存储信息检测"
+        },
+        {
+          "title": "2.5 Intent数据内容检测"
+        },
+        {
+          "title": "2.6 Log日志打印检测"
+        },
+        {
+          "title": "2.7 System.print*输出检测"
+        },
+        {
+          "title": "2.8 剪贴板敏感信息检测</li>\n</ul>"
+        },
+        {
+          "title": "<p>3 DDOS攻击检测</p>"
+        },
+        {
+          "title": "3.1 组件DDOS攻击检测"
+        },
+        {
+          "title": "Activity组件通用crash"
+        },
+        {
+          "title": "Receiver组件通用crash"
+        },
+        {
+          "title": "Service组件通用crash</li>\n</ul>"
+        },
+        {
+          "title": "3.2 native crash检测"
+        },
+        {
+          "title": "3.3 java crash检测</li>\n</ul>"
+        },
+        {
+          "title": "<p>4 provider注入漏洞检测</p>"
+        },
+        {
+          "title": "<p>5 网络端口开放威胁检测</p>"
+        }
+      ]
+    },
+    {
+      "topic": "三、业务安全扫描",
+      "items": [
+        {
+          "title": "<p>未整理，欢迎大家补充</p>"
+        }
+      ]
+    },
+    {
+      "topic": "四、Checklist脑图：",
+      "items": [
+        {
+          "title": "<p><img alt=\"checklist-logo\" src=\"checklist.png\"/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "五、问题反馈",
+      "items": [
+        {
+          "title": "<p>上面大部分的checklist，我在开发的APP审计系统中已经实现。\n<a href=\"http://01hackcode.com\">http://01hackcode.com</a>\n在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流</p>"
+        },
+        {
+          "title": "邮件(shuwoom.wgc@gmail.com)"
+        },
+        {
+          "title": "weixin: wenbanana"
+        }
+      ]
+    },
+    {
+      "topic": "六、关于作者",
+      "items": [
+        {
+          "title": "个人博客: <a href=\"http://shuwoom.com\">@shuwoom</a>"
+        }
+      ]
+    }
+  ]
+}

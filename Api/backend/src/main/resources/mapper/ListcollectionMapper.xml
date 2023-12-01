@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wallace.mapper.ListcollectionMapper">
+
+    <resultMap id="BaseResultMap" type="com.wallace.pojo.Listcollection">
+            <id property="colid" column="colid" jdbcType="INTEGER"/>
+            <result property="uid" column="uid" jdbcType="INTEGER"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        colid,uid,
+        type,version,is_deleted
+    </sql>
+    <select id="selectByUid" resultType="com.wallace.pojo.CkList">
+        select * from checklist_db.ck_list where uid = #{uid};
+    </select>
+    <select id="selectByType" resultType="com.wallace.pojo.Listcollection">
+        select * from checklist_db.listcollection where type = #{type};
+    </select>
+    <select id="selectByTypeAndUid" resultType="com.wallace.pojo.Listcollection">
+        select * from checklist_db.listcollection where type = #{type} and uid = #{uid};
+    </select>
+</mapper>

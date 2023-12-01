@@ -1,0 +1,448 @@
+{
+  "id": 158,
+  "header": "profile",
+  "topicList": [
+    "Progress Section",
+    "Introduction",
+    "Resume",
+    "Profiles",
+    "Porfolio",
+    "Other formats"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Progress Section",
+      "items": [
+        {
+          "title": " Resume"
+        },
+        {
+          "title": " Header"
+        },
+        {
+          "title": " Summary"
+        },
+        {
+          "title": " Accomplishments"
+        },
+        {
+          "title": " Experience"
+        },
+        {
+          "title": " Education"
+        },
+        {
+          "title": "<p> Other stuff</p>"
+        },
+        {
+          "title": "<p> GitHub</p>"
+        },
+        {
+          "title": " Followings (20+)"
+        },
+        {
+          "title": " Followers (10+)"
+        },
+        {
+          "title": " Stars (50+)"
+        },
+        {
+          "title": " Forks (10+)"
+        },
+        {
+          "title": " PRs (5+)"
+        },
+        {
+          "title": "<p> Avatar</p>"
+        },
+        {
+          "title": "<p> LinkedIn</p>"
+        },
+        {
+          "title": " Contacts (50+)"
+        },
+        {
+          "title": "<p> Photo</p>"
+        },
+        {
+          "title": "<p> Portfolio (TODO)</p>"
+        },
+        {
+          "title": " Sandboxes (10+) (TODO)"
+        },
+        {
+          "title": " Libraries (1+) (TODO)"
+        },
+        {
+          "title": " Applications (1+) (TODO)"
+        },
+        {
+          "title": " Games and puzzles (TODO)"
+        },
+        {
+          "title": " Flagship project (1) (TODO)"
+        },
+        {
+          "title": "<p> Common errors (TODO)</p>"
+        },
+        {
+          "title": "<p> Other Formats</p>"
+        },
+        {
+          "title": " Tutorials (TODO)"
+        },
+        {
+          "title": " Articles (TODO)"
+        },
+        {
+          "title": " Interviews (TODO)"
+        },
+        {
+          "title": " Polls (TODO)"
+        },
+        {
+          "title": " Tech reviews (TODO)"
+        },
+        {
+          "title": " Book editing"
+        },
+        {
+          "title": " Recommendations (TODO)"
+        },
+        {
+          "title": " Competitions (TODO)"
+        },
+        {
+          "title": " Ranks (TODO)"
+        }
+      ]
+    },
+    {
+      "topic": "Introduction",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>Fake it till you make it!\nhttps://en.wikipedia.org/wiki/Fake_it_till_you_make_it</p>\n</blockquote>"
+        },
+        {
+          "title": "(TODO) Goals."
+        },
+        {
+          "title": "(TODO) Professional and non professional."
+        },
+        {
+          "title": "(TODO) Pyramid of impression."
+        },
+        {
+          "title": "(TODO) Ethics."
+        }
+      ]
+    },
+    {
+      "topic": "Resume",
+      "items": [
+        {
+          "title": "<p>The basic idea is to make a single resume in markdown format and update or fine-tune it for each\nhiring platform or medium independently. Some platforms require sections in specific order, some\nmediums don’t support images, some vacancies worth highlighting or muting some spefific skills.\nYou simply can’t have a single document satisfying all those mutually exclusive points. Yet You\ndon’t want to recreate resumes from scratch each time either.</p><p>As tedious as it is, it’s a good idea to have a few versions of your resume if you find yourself\napplying to different roles. You don’t have to have a unique resume for every single job, of course,\nbut if you’re applying for both manager and individual contributor positions, for example, then you\nwant to have a slightly different version of your resume that’s tailored to each one.</p><p>The best way to go about this is to find at least 10 recent job listings under the position title\nyou’re going for, scan them all for common skills and experience requirements, and then emphasize\nthose skills and experiences in your own resume. Do this for each position you’re applying for and\nyou’ll be prepared for anything.</p><p>(TODO) downloadable example</p><p>What’s a resume to begin with?</p><blockquote>\n<p>Your resume is a marketing document. It’s not the history of your past – it’s an ad. You’re selling\nyourself to the employer, and competing against other people who are attempting to do the same thing.</p>\n<p>A great resume doesn’t just tell them what you have done but makes the same assertion that all\ngood ads do: If you buy this product, you will get these specific, direct benefits.\nhttps://rockportinstitute.com/resources/how-to-write-a-masterpiece-of-a-resume/</p>\n<p>Your resume is not a place to brag; nor is it a place to be modest. Its sole purpose is to generate\ninterest in you. What differentiates you from the competition.\nhttps://rockportinstitute.com/resources/how-to-write-a-masterpiece-of-a-resume/</p>\n</blockquote>"
+        },
+        {
+          "topic": "Sections",
+          "items": [
+            {
+              "title": "<p>There are three basic resume structures: Chronological, Functional, and Combined. I personally\nprefer Combined so I will explain sections from its point of view. Feel free to make your\nown research.</p><blockquote>\n<p>In most cases, a great resume has two main sections. In the first, you make assertions about your\nabilities, qualities, and achievements. You write powerful, but honest, advertising copy that grabs\nthe reader’s attention.</p>\n<p>The second section, the evidence section, is where you back up your assertions with evidence that\nyou actually did what you said you did.\nhttps://rockportinstitute.com/resources/how-to-write-a-masterpiece-of-a-resume/</p>\n</blockquote>"
+            },
+            {
+              "title": "<strong>Header</strong>"
+            },
+            {
+              "title": "<strong>Summary</strong> (assertion)"
+            },
+            {
+              "title": "<strong>Skills</strong> (assertion)"
+            },
+            {
+              "title": "<strong>Accomplishments</strong> (evidence)"
+            },
+            {
+              "title": "<strong>Job History</strong> (evidence)"
+            },
+            {
+              "title": "<strong>Education</strong><p>Put the strongest titles first. No matter how well written, a resume gets scanned for 5–25 seconds.\nAnd only then, a recruiter may decide to inspect it in more details.\nScanning is more difficult if your resume is hard to read, poorly organized or it spans multiple (4+) pages.</p><p>I believe 1–3 pages are the optimal length for most cases. As a rule of thumb, the more experience\nyou have, the longer your resume may and should be.</p><p>Let's talk first about general writing style you should follow.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Style",
+          "items": [
+            {
+              "title": "<p>One of the best marketing advices I heard is to <em>flip your statement to the opposite\nand check if it gets a bad meaning</em>. If so – your initial statement is probably a platitude,\na commonplace and needs reconsideration.</p><p>For example, \"experienced\", \"specialist\", \"senior\" adjectives aren’t bad because their opposites\n\"novice\", \"generalist\", \"junior\" aren’t bad by default. You don’t say you’re automaticall better-than-others, using them.\nIt’s just a clarification. While \"the best\", \"competent\", \"expert\" are bad because nobody will use\nterms like \"the worst\", \"incompetent\", \"amateur\" to describe themselves in resume.</p><p>Use a logical format and wide margins, clean type, big and contrasty font and clear headings. Selectively apply bold and italic typeface\nthat help guide the reader’s eye. Use bullets to call attention to important points (i.e. accomplishments).</p><p>USE ACTION VERBS</p><p>Like the tip above, don’t be afraid to take ownership of the things you’ve achieved. Phrases like\n\"assisted with\" and \"participated in\" are passive, and they can give off the impression that you were\na bystander on the project. \"Responsible for\" and \"contributed to\" are slightly better, but action\nverbs like \"completed\", \"engineered\", and \"developed\" are the best there.</p><p>This isn’t to say that you should eliminate all passive phrases from your bullets, but do try to limit\nthem. On the flipside, don’t take ownership of things you haven’t achieved. You want to be honest\nwith what you’ve done, so if you really did only assist on a project – don’t say (or imply) that you\nmanaged it.</p><p>DETAILS THAT MATTER\nThere are any number of details that really matter. Consider all of the following.</p><p>Font. Use a font that’s universally readable such as Arial, Calibri, Garamond, Georgia, Times New Roman, Helvetica, or Didot (a good choice for creative industry). Whatever font you select, use it consistently. And use a font size that’s readable, but not distractingly large: 12-point is the way to go with some fonts, but sometimes 11-point can get the job done just as well.\nPDF. Save your resume file as a PDF. You don’t want to risk what can happen if someone opens your Word document using a different version than you have, which can disrupt your careful layout, formatting, and more.\nFile name. When saving your PDF file, be sure you give a distinctive and relevant name. Definitively don’t give it a number (e.g., NickSmith_V3.pdf) and don’t call it NicksResume.pdf. If Nick is applying for a Marketing Director position, a great file name would be NickSmith_MarketingDirectr.pdf).\nKeep track. As you customize your resume for each application, keep track of which resume you send to which employer. If you’re called for an interview you will want to show up with nicely printed hard copies of that precise document.\nDon’t mix first-person and third-person. Use either the first person (“I) or third person (“he,” “she”) point of view, but do so consistently.\nWatch your verb tense. If the accomplishment is completed, it should be past tense. If the task is still underway, it should be present tense. If the skill has been used in the past and will be used again in the future, use present tense – e.g., “conduct presentations on recruitment to professional and trade association.”\nExperience first. Experience sections should come before Education. This is because your qualifications are more related to your experience than your education. Exceptions would be (1) if you have just received or are completing a degree in a new field, (2) if you are a lawyer, (3) if you are an undergraduate student, or (4) if there’s something particularly impressive about your education – for example, a Rhodes Scholarship or an MBA from Harvard.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Header",
+          "items": [
+            {
+              "title": "<p>Recruiters expect to find your contacts right on the resume header. So I think it’s a good idea to follow this convention.\nDon’t add multiple emails there – it will present you as an unorganized person. Check that your contacts look professional\nand preferably contain your name:</p><p><code>diff\n- lord-of-chaos666@mail.inferno.com\n+ john-doe@gmail.com</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "Summary",
+          "items": [
+            {
+              "title": "<p>Summary it the <strong>most important</strong> section of the resume. As the word suggests, it summarizes your\nwhole resume in a few sentences, making the work recruiters/HRs would do otherwise.\nWeak summary = No Job. You'll have to rewrite this paragraph as many times as you need to\nachieve the perfection it deserves. It should be short, outstanding, and memorable at the same time.</p><p><strong>Concrete Recipe:</strong></p><ol>\n<li>A short phrase describing your profession"
+            },
+            {
+              "title": "Followed by a statement of a broad or specialized expertise"
+            },
+            {
+              "title": "Followed by 2–3 statements emphasizing your TOP selling points."
+            },
+            {
+              "title": "breadth or depth of skills"
+            },
+            {
+              "title": "unique mix of skills"
+            },
+            {
+              "title": "range of environments in which you have experience"
+            },
+            {
+              "title": "a special or well-documented accomplishment"
+            },
+            {
+              "title": "a history of awards, promotions, or superior performance recommendations"
+            },
+            {
+              "title": "One or more professional or appropriate personal characteristics"
+            },
+            {
+              "title": "One sentence describing professional objective or interest.</li>\n</ol><p>More information:</p>"
+            },
+            {
+              "title": "https://uptowork.com/blog/how-to-make-a-resume"
+            },
+            {
+              "title": "https://rockportinstitute.com/resources/how-to-write-a-masterpiece-of-a-resume/<p>Use Summary section instead of Objective. Employers don’t really care about what they can do for\nyour career. They care about what You can do for them instead. The objective section is all about you,\nwhen the interview should be all about what you can do for them.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Skills",
+          "items": [
+            {
+              "title": "<p>The number of bot usage in resume search is increasing. As most bots evaluate keywords – the importance of Skills section is hard\nto overestimate.</p><p>On the same time, you should avoid repetitions and redundancy: HTML, XML, XHTML, HTML5, DHTML... HTML5 or just HTML is enough.\nThose bots will use shortest terms or fuzzy matches to handle such corner cases for you. So HTML5 or just HTML should be enough.\nAnd for people it will look spammy. Be conservative – unless you’re a Java developer – you can easily forget about XML \"skill\".</p><p>Avoid skills like \"Microsoft Word\", \"Markdown\" and other skills you must have by definition as a developer. If you don’t have anything better to put there – it’s probably too early for you to look for a programming job.</p><p>Don’t list years of experience with each tech. Those years will hardly be accurate and don’t add anything valueable to a reader. If you have a big experience with PHP – state it explicitly in your summary. Your projects and work history prove your skills much better than abstract \"years spent\".</p><p>Avoid progress bars. They assume you know exactly the amount of knowledge in the specific area and those particular bits you’re missing. Which is, most probably, a big lie.</p><p>INCLUDE SOFT SKILLS</p><p>Soft skills are becoming almost as essential as technical skills to hiring managers and companies. You want to demonstrate that you’re someone who can work well in a team, analyze and solve problems as they come, and communicate with all levels of an organization and everyone outside it—most importantly.</p><p>So how do you show this on your resume? Use words like \"negotiated\", \"analyzed\", and \"influenced\". You want to be the \"key player\" in motivating a team or the \"go-to person\" for relaying information. You completed a difficult project under \"tight deadlines\" or \"with minimal supervision\". If you were ever asked to do something outside your job responsibilities, this shows flexibility. If you ever trained a new team member, then that shows leadership and communication skills.</p><p>https://resumecompanion.com/how-to-write-a-resume/skills-section-best-tips/</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Accomplishments",
+          "items": [
+            {
+              "title": "<p>Identify accomplishments not just job descriptions.</p><p>HRs seek candidates that can help them solve a problem or satisfy company’s needs.\nConsequently, you can’t be a solution to their problems without stating how you solved similar\nproblems in other companies and situations.</p><p>Focus on what you did in the job – don’t just claim \"my job was X\".\nAccomplishments should be unique to you, not just a list of what someone else did.\nAvoid being vague and generic – the more specific are your claims, the better.</p><p>If the only awards received were in school, put them in the Education section.\nIf you have received commendations or praise from some very senior source, you could call this section,\n“Awards and Recommendations.” In that case, go ahead and quote the source.</p><p>When you set about writing the bullet points for each of your previous roles, remember that it’s\nnot about the work you’ve done; it’s about the things you’ve accomplished. Companies want you to\nduplicate your successes with them, not just your tasks, and they don’t want to just take your word for it.\nIf possible, always include solid figures that put your accomplishments into measurable terms;\nyou want to definitively show that you’ve increased productivity or lowered costs, for example, by x percent.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Job History",
+          "items": [
+            {
+              "title": "<p>Use reverse chronological order.\nFor instance, every job should list this information in this order: Title, Name of Employer, City and State, and the years.\n(TODO expand)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Education",
+          "items": [
+            {
+              "title": "<blockquote>\n<p>List education in reverse chronological order – degrees or licenses first, followed by certificates and advanced training.\nSet degrees apart so they are easily seen. Put in boldface whatever will be most impressive. Don’t\ninclude any details about college except your major and distinctions or awards you have won, unless\nyou are still in college or just recently graduated. Include grade-point average only if over 3.4.\nList selected coursework if this will help convince the reader of your qualifications for the targeted job.\nhttps://rockportinstitute.com/resources/how-to-write-a-masterpiece-of-a-resume/</p>\n</blockquote>"
+            }
+          ]
+        },
+        {
+          "topic": "Other",
+          "items": [
+            {
+              "title": "<p><strong>Languages</strong></p><p>Being fluent in more than one language is definitely something to include.</p><p><strong>Publications</strong></p><p>Include only if published, and provide links where you can if you think the work is impressive and relevant.\nSummarize if there are many.</p><p><strong>Comments from Supervisors, Clients, other Professional Elite</strong></p><p>Include only if very exceptional. Heavily edit for key phrases.</p><p><strong>Interests</strong></p><p>Tread thoughtfully here. While personal interests tend to feature prominently on social media platforms\nsuch as LinkedIn, you should weigh how much it can help you when applying for a job—ideally on a\ncase-by-case basis. It you include a section like this, keep the following in mind.Advantages:\nPersonal interests can indicate a skill or area of knowledge that is related to the goal, such as\nphotography for someone in public relations, or carpentry and wood-working for someone in construction\nmanagement. This section can show well-roundedness, good physical health, or knowledge of a subject\nrelated to the goal. It can also create common ground or spark conversation, and/or help a hiring\nmanager see you as someone who would fit in their tribe.Disadvantages: Personal interests can be\nirrelevant to the job goal and purpose of the resume. Listing such interests can also have unintended\nnegative consequences. For example, if you’re highly athletic and the people interviewing you aren’t\nphysically fit – or perhaps eve self-conscious about that – the fact that you’re super-fit might not\nplay in your favor.If in doubt, do not include a Personal Interests section. Your reason for\nincluding it is most likely that you want to tell them about you. But, as you know, this is an ad.\nIf this section would move the employer to understand why you would be the best candidate,\ninclude it; otherwise, forget about it.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Things to avoid",
+          "items": [
+            {
+              "title": "<p>Every word on your resume takes up valuable space, and you shouldn’t waste it with things that make no difference at an initial resume assessment. Constantly ask yourself: does this piece of information help the employer decide whether or not to call me for an interview?</p><p>I recommend removing all of the following pieces of information from your resume:\n* Age / Birthday\n* Marital / Relationship status\n* Gender / Sexual orientation (*)\n* Ethnicity / Nationality / Immigration Status\n* Social Security Number\n* Driver’s license (how does being a driver help you as a developer?)\n* Full address (city and state/country are fine if you want to give a general idea)\n* Irrelevant hobbies</p><p>(*) – every person has at least one trait that an \"average person\", will consider bad or wrong.\nYou may not like kids or anymals, you may prefer loud music (making others mad), you may be a vegan or <a href=\"https://www.urbandictionary.com/define.php?term=Meatan\">meatan</a>. Whatever unique features you’ve got, it doesn’t\nmean you have to proclaim them every now and then. Conversely, if you <em>enjoy</em> being different – have a\ncourage to meet the consequences.</p><p>If you want to mention your less controversial traits or hobbies (ones, you think, may add a bit of\npersonality to the document) – feel free to do that. Just don’t overemphasize them.</p><p>DO\nSell yourself – first and foremost.\nAlways bear in mind the needs of your customer – the employer. What do they need to know to assess that you’re right for the job and will deliver for them?\nCustomize your resume for each job application.\nUse keywords selected with your prospective employer in mind.\nBe sure you can back up what you say (pumping up is fine but within the bounds of integrity).\nUse dynamic, high-energy language.\nTighten up sentences where you can. Space is at a premium.\nUse quantitative information when possible as you describe accomplishments (e.g., ($1 million portfolio, increased sales 30%, double revenues).\nLook at everything you’ve written in your resume and add action verbs wherever possible.\nMake your resume long enough to include all relevant information.\nBe sure any e-mail addresses and social media handles shared are appropriate (not unprofessional).\nUse the same version of your professional “screen name” consistently.</p><p>DON’T\nBe unduly modest. You are selling yourself, period.\nWing it. Real preparation and homework is required – no matter how lucky you’ve been in the past.\nInclude information – even if you’re proud of it – that could be construed as controversial or possible be off-putting to the employer (e.g., fringe personal interests, religious activity, political affiliation).\nList everything you’ve ever done. It’s better to leave an employer a little curious and more apt to interview you.\nInclude salary information. It is appropriate for you to provide this information only when asked.\nMention reasons for leaving jobs. You can have tactful, professional reasons ready for interviews.\nInclude references. Provide them when requested, and be sure your references know that an inquiry is on the way.\nTry to be funny or cute – no matter how great your personality, these things don’t translate on paper.\nInclude every single piece of information about yourself – this is not your resume’s job. If the employer wants to know more about you, they’ll ask you for an interview.\nGet wordy. Don’t use three examples when one will suffice.\nBe hyperbolic. Don’t use more than one power word or adjective in one sentence.\nUnderestimate the power of reading the job posting carefully and doing all of your homework. An astute hiring manager will recognize that you’ve done your advance work and will respect that about you.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Photo",
+          "items": [
+            {
+              "title": "<blockquote>\n<p>This is certainly a controversial topic, but personally speaking, I see no problem with it. Profile photos are everywhere on the web and you probably have them on LinkedIn, Github and a bunch of other sites. I don’t see why you shouldn’t be supposed to add them to your resume if you want to. Resumes with good-quality photos bring a human connection and empathy that might even give you an advantage.\nSome say it’s not professional, but I can’t see what’s so unprofessional about showing your face. Others say hiring managers could judge based on looks. To be honest, I prefer to assume good faith and believe that employers are looking for talent and, especially for developer roles, no one cares about looks. A smile brings people together and doesn’t cause any harm IMHO.\nObviously, it’s also totally acceptable not to add a photo as well and no job application should require one.\nhttps://medium.freecodecamp.org/how-to-write-a-good-resume-in-2017-b8ea9dfdd3b9</p>\n</blockquote>"
+            }
+          ]
+        },
+        {
+          "topic": "Profiles",
+          "items": [
+            {
+              "title": "<p>Do you have a GitHub account already? GitLab, BitBucket, etc. are decent repo storages but they fail to be\n<strong>social networks</strong>. Maybe it’s community sizes (cumulative effect), maybe it’s a better design and usability (GitLab and BitBucket render 150+ chars per line in <code>.md</code> – omg), maybe it’s something else. Whatever it is, I can tell you 100% that many recruiters scan GitHub on daily basis, and few of them are even aware of its competitors. You may prefer one’s or another’s plans for a commercial subscription, but be sure to setup your GitHub account properly anyway, in case you’re looking for job opportunities.</p><p>English may be not your native language, but make sure to have (at least) all your main texts (captions, project descriptions)\ntranslated to English. Hopefully, I shouldn’t explain why. Once you’re there, check your grammar.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Profiles",
+      "items": [
+        {
+          "topic": "GitHub",
+          "items": []
+        },
+        {
+          "topic": "LinkedIn",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "Porfolio",
+      "items": [
+        {
+          "topic": "Sandboxes",
+          "items": [
+            {
+              "title": "<p>(TODO) 10+</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Libraries",
+          "items": [
+            {
+              "title": "<p>(TODO) 1+</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Applications",
+          "items": [
+            {
+              "title": "<p>(TODO) 1+</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Games and puzzles",
+          "items": [
+            {
+              "title": "<p>(TODO)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Flagship project",
+          "items": [
+            {
+              "title": "<p>(TODO) 1</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Common errors",
+          "items": [
+            {
+              "title": "<ol>\n<li>Bad or no <code>.gitignore</code>. Extra folders like <code>.idea</code> are very visible and make people question your skills for no reason."
+            },
+            {
+              "title": "..."
+            },
+            {
+              "title": "..."
+            },
+            {
+              "title": "...</li>\n</ol>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Other formats",
+      "items": [
+        {
+          "topic": "Tutorials",
+          "items": [
+            {
+              "title": "<p>(TODO)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Articles",
+          "items": [
+            {
+              "title": "<p>(TODO) Technical writing and co-authoring</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Interviews",
+          "items": [
+            {
+              "title": "<p>(TODO)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Polls",
+          "items": [
+            {
+              "title": "<p>(TODO)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Tech reviews",
+          "items": [
+            {
+              "title": "<p>(TODO)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Book editing",
+          "items": [
+            {
+              "title": "<p>(TODO)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Recommendations",
+          "items": [
+            {
+              "title": "<p>(TODO)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Competitions",
+          "items": [
+            {
+              "title": "<p>(TODO)</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Ranks",
+          "items": [
+            {
+              "title": "<p>(TODO)</p><hr/><p>Recommended Resources:\n* http://onlinewritingtraining.com.au/</p>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

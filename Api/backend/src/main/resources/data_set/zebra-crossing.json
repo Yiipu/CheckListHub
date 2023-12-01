@@ -1,0 +1,748 @@
+{
+  "id": 233,
+  "header": "zebra-crossing",
+  "topicList": [
+    "🎯 Start here!",
+    "🧐 Useful terms to learn",
+    "🚶🏽‍♀️ Level 1",
+    "🏃🏻‍♂️ Level 2",
+    "🧗🏿‍♀️ Level 3",
+    "🤹🏻 Scenarios",
+    "🎁 Bonus",
+    "🧠 Other resources",
+    " 📝 License",
+    " 👋🏾 Special thanks"
+  ],
+  "itemGroups": [
+    {
+      "topic": "🎯 Start here!",
+      "items": [
+        {
+          "topic": "🤔 Read this guide if you",
+          "items": [
+            {
+              "title": "Use the internet daily — for work, social media, and financial transactions."
+            },
+            {
+              "title": "Want to secure your digital safety and privacy proactively but aren’t in immediate danger. (If you are, reach out to someone in your community for a one-on-one consultation.)"
+            },
+            {
+              "title": "Feel comfortable with technology — you feel confident about changing the settings on your computer or smartphone."
+            }
+          ]
+        },
+        {
+          "topic": "🗺 Where this guide is from",
+          "items": [
+            {
+              "title": "This guide draws from our work helping individuals and groups upgrade their digital safety practices, and from our experiences living and working in the United States, Canada, and Hong Kong."
+            },
+            {
+              "title": "Wherever possible, we chose apps and tools that are accessible and easy to use over ones that are technically sophisticated but difficult to use. Our decision is based on our observation that people become clumsier in stressful situations, so it is important to keep procedures as simple as possible."
+            }
+          ]
+        },
+        {
+          "topic": "🌱 How to use this guide",
+          "items": [
+            {
+              "title": "<strong>Start from Level 1 and work your way up!</strong> Recommendations are sorted by increasing levels of difficulty."
+            },
+            {
+              "title": "<strong>Level 1 is the quick essentials section.</strong> You should be able to work through it within 1 hour, and chances are, you're already familiar with many of the recommendations in there — but it never hurts to double check."
+            },
+            {
+              "title": "<strong>Level 2 digs deeper into your device/app settings and will help you fine tune your privacy online.</strong> This section will take 1-2 hours, depending on how many accounts and devices you frequently use."
+            },
+            {
+              "title": "<strong>At a minimum, do everything in Levels 1 and 2.</strong> It'll protect you from the most widely-used attacks while drastically decreasing the amount of personal information you're giving out for free."
+            },
+            {
+              "title": "<strong>Level 3 ties up loose ends in your digital safety practice</strong>, but it does requires more time and money to complete. Depending on the amount of digital housekeeping required, this part may take anywhere from 1-4 hours."
+            },
+            {
+              "title": "<strong>The scenarios shared after Level 3 are for higher-stakes situations.</strong> Scan them to see if any of them apply to you. (Because the stakes are higher, they assume you’ve done everything in Levels 1–3.)"
+            },
+            {
+              "title": "<strong>This guide is a living document.</strong> Please feel free to submit a pull request or fork your version of this guide <a href=\"https://github.com/narwhalacademy/zebra-crossing\">on GitHub</a>."
+            }
+          ]
+        },
+        {
+          "topic": "🗣 Read this guide in other languages",
+          "items": [
+            {
+              "title": "<a href=\"https://github.com/narwhalacademy/zebra-crossing/blob/main/README-繁體中文.md\">繁體中文 (Traditional Chinese)</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/narwhalacademy/zebra-crossing/blob/main/README-Deutsch.md\">Deutsch (German)</a>"
+            },
+            {
+              "title": "<a href=\"https://github.com/narwhalacademy/zebra-crossing/blob/main/README-日本語.md\">日本語</a> (Japanese, a work-in-progress)"
+            },
+            {
+              "title": "<a href=\"https://github.com/narwhalacademy/zebra-crossing/blob/main/README-Italiano.md\">Italiano</a> (Italian, a work-in-progress)"
+            },
+            {
+              "title": "Looking to contribute another language? <a href=\"mailto:contact@narwhalacademy.org\">Send us a message</a> to collaborate."
+            }
+          ]
+        },
+        {
+          "topic": "☕️ Support this guide",
+          "items": [
+            {
+              "title": "<a href=\"https://ko-fi.com/narwhalacademy\">Buy us a virtual coffee</a>"
+            },
+            {
+              "title": "Share this guide with your friends and community!"
+            },
+            {
+              "title": "<a href=\"mailto:contact@narwhalacademy.org\">Send your feedback</a> or <a href=\"https://github.com/narwhalacademy/zebra-crossing\">contribute to the guide on GitHub</a>."
+            }
+          ]
+        },
+        {
+          "topic": "🕒 Last updated",
+          "items": [
+            {
+              "title": "12 August 2023<hr/>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "🧐 Useful terms to learn",
+      "items": [
+        {
+          "topic": "🎯 Threat modeling",
+          "items": [
+            {
+              "title": "<p><strong>Threat modeling</strong> is a process that allows us to identify potential threats to safeguard against them. To build your threat model, ask yourself the following:</p>"
+            },
+            {
+              "title": "<strong>“What kind of danger am I in?”</strong> E.g. credit card hacks, corporate espionage, or online harassment/doxxing."
+            },
+            {
+              "title": "<strong>“What kind of assets am I protecting?”</strong> E.g. confidential documents, private photos, or personal messages.<p>Remember though, your threat model can change — either gradually over time or abruptly, say, when a new law is suddenly passed.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "🔗 Weakest link",
+          "items": [
+            {
+              "title": "<p>The <strong>weakest link</strong> is where your digital safety is most vulnerable. For example, if an account’s forgot password function sends a link to your email, attackers only need to access your email to gain access to the account.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "🔡 Encryption levels",
+          "items": [
+            {
+              "title": "<p><strong>Encryption</strong> is the process of scrambling or encoding information to make it unreadable to passers-by and prevent unauthorized access. People often categorize <strong>encryption</strong> into these three types:</p><ol>\n<li><strong>No encryption:</strong> Any third party can intercept the data and read it as-is. Often called \"plaintext.\""
+            },
+            {
+              "title": "<strong>Standard encryption:</strong> Data is encrypted so that intercepting third parties cannot read it, but the platform being used to send the data (e.g. Facebook Messenger) can unscramble and read it. The platform may hand the unscrambled data to courts or government agencies if ordered to do so."
+            },
+            {
+              "title": "<strong>End-to-end encryption:</strong> Only the original sender and receiver can read the data. The platform being used to send the data only has the scrambled, unreadable version. So if courts or government agencies order the platform to hand over the data, there's nothing useful to hand over.</li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "topic": "🧩 Metadata",
+          "items": [
+            {
+              "title": "<p><strong>Metadata</strong> is the contextual information surrounding your data. For example, the metadata for a phone call includes the number you called and the length of your call (but not the call’s contents). With enough metadata, attackers can piece together a relatively reliable picture of who you are, who you know, and where you’re going.</p><p><em>Unfortunately, legal protections around metadata tend to be weak or nonexistent.</em></p><hr/>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "🚶🏽‍♀️ Level 1",
+      "items": [
+        {
+          "topic": "✅ Things to do",
+          "items": []
+        },
+        {
+          "topic": "💪🏽 Habits to grow",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "🏃🏻‍♂️ Level 2",
+      "items": [
+        {
+          "topic": "✅ Things to do",
+          "items": []
+        },
+        {
+          "topic": "💪🏽 Habits to grow",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "🧗🏿‍♀️ Level 3",
+      "items": [
+        {
+          "topic": "✅ Things to do",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "🤹🏻 Scenarios",
+      "items": [
+        {
+          "title": "<hr/>"
+        },
+        {
+          "topic": "👤 Masking your identity for online dating, events, or organizing",
+          "items": []
+        },
+        {
+          "topic": "✊🏾 Attending a protest",
+          "items": [
+            {
+              "title": "<p>When it comes to attending a protest, there are many, many considerations depending on where you are and who you are. In this guide, we are only going to make recommendations related to uses of technology.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "🩸 Accessing reproductive health services privately",
+          "items": [
+            {
+              "title": "<p>Getting the care you need can be a controversial and fraught endeavor in many parts of the world. Here are some recommendations that may apply if you live in one of those places.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "🛫 Crossing an international border",
+          "items": [
+            {
+              "title": "<strong>Turn off your devices.</strong>"
+            },
+            {
+              "title": "Storage/hard drives are only encrypted when off, <em>not</em> when they’re just in sleep mode."
+            },
+            {
+              "title": "This will also ensure that your mobile devices can only be unlocked using a pin code, which is protected by freedom of speech laws in some jurisdictions."
+            },
+            {
+              "title": "<strong>Backup before you depart and keep a copy at home</strong> in case your devices are lost in transit."
+            },
+            {
+              "title": "<strong>Store less information on your devices.</strong> They can’t take what you don’t have if your devices are seized."
+            },
+            {
+              "title": "<strong>Be mindful of what stickers you put on your devices.</strong> A border agent could mistake them for something suspicious."
+            },
+            {
+              "title": "<strong>Decide beforehand what you will do if you are asked to unlock your devices.</strong> Searches sometimes happen as a routine part of border crossing."
+            },
+            {
+              "title": "<strong>Notify your people about your flight number and arrival time.</strong> Regularly check in with one of them at points in your journey. Have them contact a lawyer/relevant organization if you do not show up."
+            }
+          ]
+        },
+        {
+          "topic": "🤐 Traveling to a place with weak data privacy laws or internet censorship",
+          "items": [
+            {
+              "title": "<strong>Be aware that phone companies might share your location and personal info</strong> with others without your permission."
+            },
+            {
+              "title": "<strong>Setup a VPN beforehand to:</strong>"
+            },
+            {
+              "title": "Access services uninterrupted."
+            },
+            {
+              "title": "Minimize the amount of data collected about you."
+            },
+            {
+              "title": "Recommended apps: <a href=\"https://mullvad.net/\">Mullvad</a>, <a href=\"https://www.tunnelbear.com/\">TunnelBear</a>"
+            },
+            {
+              "title": "<strong>Download these offline apps in case there are connectivity issues:</strong>"
+            },
+            {
+              "title": "<strong>An offline messaging app</strong> to send text messages to people nearby if the internet goes down by using Bluetooth."
+            },
+            {
+              "title": "Recommended: <a href=\"https://bridgefy.me/\">Bridgefy</a></li>\n</ul>"
+            },
+            {
+              "title": "<strong>An offline maps app</strong>"
+            },
+            {
+              "title": "Recommended: <a href=\"https://organicmaps.app/\">Organic Maps</a></li>\n</ul>"
+            },
+            {
+              "title": "<strong>Consider traveling with a burner phone while leaving your laptop at home.</strong> This will be especially useful if you need to install new/untested software for work that might violate data privacy policies."
+            },
+            {
+              "title": "<strong>Re-evaluate which online platforms are safe to use.</strong>"
+            },
+            {
+              "title": "See how often a platform hands over its data by looking up their transparency reports."
+            },
+            {
+              "title": "<a href=\"https://transparencyreport.google.com/user-data/overview\">Google Transparency Report: Request for user information</a>"
+            },
+            {
+              "title": "<a href=\"https://transparency.facebook.com/\">Facebook Transparency Report: Government Requests for User Data</a>"
+            },
+            {
+              "title": "<a href=\"https://transparency.twitter.com/en/reports/information-requests.html\">X/Twitter Transparency Center: Information Requests</a>"
+            },
+            {
+              "title": "<a href=\"https://www.apple.com/legal/transparency/\">Apple Transparency Report</a></li>\n</ul>"
+            },
+            {
+              "title": "Look up the location of the platform's global headquarters and see where the nearest local/regional office is. Location affects a platform's relationship with the authorities and its privacy policy.<hr/>"
+            }
+          ]
+        },
+        {
+          "topic": "‍💻 Hosting a public event online",
+          "items": [
+            {
+              "title": "<strong>Don’t say anything you wouldn’t say in public.</strong> Encourage your attendees to do the same. Most commercial platforms have access to your audio/video data and mine your metadata to create consumer profiles."
+            },
+            {
+              "title": "<strong>Limit the amount of control an audience member has.</strong>"
+            },
+            {
+              "title": "For example, for most Zoom events, it's not necessary for everyone to have screensharing access."
+            },
+            {
+              "title": "<strong>Don't make the meeting link too public.</strong> Either set a meeting password or set up an RSVP system so that you don’t have to give out the meeting link and password publicly."
+            },
+            {
+              "title": "<strong>Create a user/content moderation plan.</strong>"
+            },
+            {
+              "title": "If you have co-hosts or moderators, make sure they are set up in the online system as administrators/editors/moderators."
+            },
+            {
+              "title": "Familiarize yourselves with what filtering/muting/blocking powers you have as a host/moderator."
+            },
+            {
+              "title": "Create an emergency plan of action around what you would do if a malicious troll enters your event.<hr/>"
+            }
+          ]
+        },
+        {
+          "topic": "🥴 Online harassment & doxxing",
+          "items": [
+            {
+              "title": "<p>Harassment and doxxing tend to be very specific situations, which vary drastically depending on who you are, what you do, who the attacker is, etc.</p><p>While we have some general recommendations below, we suggest seeking additional information from someone in your community and from an online resource/guide that hews closer to your exact situation.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "👀 Remove information about you off of the internet",
+          "items": [
+            {
+              "title": "<p>If you’re about to become a public figure or are experiencing harassment, consider the suggestions below.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "💔 Dealing with stalkerware/spyware",
+          "items": [
+            {
+              "title": "<p>When someone close to you (usually a romantic partner) spies on  you using a hidden app on your mobile device, that person is using <em>stalkerware</em>.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "📰 Researching and writing about sensitive topics",
+          "items": [
+            {
+              "title": "<p>Below are some general recommendations that all journalists and researchers should consider, especially for those working with (human) sources. If you have access to experts and training sessions through your workplace or professional communities, we highly recommend you taking advantage of that.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "😭 Missing or lost device",
+          "items": [
+            {
+              "title": "<strong>Look for, lock or wipe your device remotely.</strong> Instructions for:"
+            },
+            {
+              "title": "iOS and macOS: <a href=\"https://support.apple.com/HT210515\">Find My</a>."
+            },
+            {
+              "title": "Android: <a href=\"https://support.google.com/accounts/answer/6160491\">Find My Device</a>."
+            },
+            {
+              "title": "Windows: <a href=\"https://support.microsoft.com/account-billing/find-and-lock-a-lost-windows-device-890bf25e-b8ba-d3fe-8253-e98a12f26316\">Find My Device</a>"
+            },
+            {
+              "title": "<strong>Log out of all important accounts</strong> by logging into them from another device, and then logging out all other active sessions."
+            },
+            {
+              "title": "Instructions for:"
+            },
+            {
+              "title": "<a href=\"https://support.google.com/mail/answer/45938?#zippy=%2Cconcurrent-session-information\">Gmail</a>"
+            },
+            {
+              "title": "<a href=\"https://www.facebook.com/help/211990645501187\">Facebook</a>"
+            },
+            {
+              "title": "<a href=\"https://help.instagram.com/2761108904184084\">Instagram</a>"
+            },
+            {
+              "title": "<a href=\"https://help.twitter.com/en/managing-your-account/connect-or-revoke-access-to-third-party-apps#sessions\">X/Twitter</a>"
+            },
+            {
+              "title": "<a href=\"https://support.microsoft.com/en-us/account-billing/check-the-recent-sign-in-activity-for-your-microsoft-account-5b3cfb8e-70b3-2bd6-9a56-a50177863357\">Microsoft</a></li>\n</ul>"
+            },
+            {
+              "title": "<strong>To prevent misuse, get a new SIM card and cancel your old one.</strong> Make sure to do this only after you've tried calling your phone to reach whoever has picked it up."
+            },
+            {
+              "title": "<strong>If you get your device back, reset it</strong> back to its factory settings and restore it from your last backup."
+            },
+            {
+              "title": "<strong>If the authorities seize your device at an international border crossing, ask for a seizure receipt</strong> (available in some jurisdictions, such as <a href=\"https://bccla.org/wp-content/uploads/2018/10/Electronic-Devices-Privacy-Handbook-BCCLA_2.0.pdf\">Canada</a>).<hr/>"
+            }
+          ]
+        },
+        {
+          "topic": "👾 Figuring out if your device has been hacked",
+          "items": [
+            {
+              "title": "<strong>Log in to your important accounts and look for any suspicious logged in sessions.</strong> Instructions for:"
+            },
+            {
+              "title": "<a href=\"https://support.google.com/mail/answer/45938?#zippy=%2Cconcurrent-session-information\">Gmail</a>"
+            },
+            {
+              "title": "<a href=\"https://www.facebook.com/help/211990645501187\">Facebook</a>"
+            },
+            {
+              "title": "<a href=\"https://help.instagram.com/2761108904184084\">Instagram</a>"
+            },
+            {
+              "title": "<a href=\"https://help.twitter.com/en/managing-your-account/connect-or-revoke-access-to-third-party-apps#sessions\">X/Twitter</a>"
+            },
+            {
+              "title": "<a href=\"https://support.microsoft.com/en-us/account-billing/check-the-recent-sign-in-activity-for-your-microsoft-account-5b3cfb8e-70b3-2bd6-9a56-a50177863357\">Microsoft</a>"
+            },
+            {
+              "title": "<strong>Use the device's built-in tools to look for irregular patterns.</strong>"
+            },
+            {
+              "title": "On your computer, look for any processes that are using a lot of your CPU, or have names that you don't recognize (look them up to be sure). Use these tools:"
+            },
+            {
+              "title": "macOS: Activity Monitor"
+            },
+            {
+              "title": "Windows: Process Explorer to look at what processes/applications are running. Google any suspicious names.</li>\n</ul>"
+            },
+            {
+              "title": "On your phone, look for apps that are using an abnormally large amount of battery or data. Use these tools:"
+            },
+            {
+              "title": "iOS: <code>Settings → Battery → Battery usage by app</code>"
+            },
+            {
+              "title": "iOS: <code>Settings → Cellular → Cellular data</code>"
+            },
+            {
+              "title": "Android: <code>Settings → Battery → Battery usage</code>"
+            },
+            {
+              "title": "Android: <code>Settings → Network and interent → SIMs → App data usage</code>"
+            },
+            {
+              "title": "Android: <code>Settings → Network and interent → Internet → Non-operator data usage</code> </li>\n</ul>"
+            },
+            {
+              "title": "<p>If you are on an iPhone:</p>"
+            },
+            {
+              "title": "See if you can go to <code>Settings → General → Profiles</code>, and if it’s available, look for anything you don’t recognize."
+            },
+            {
+              "title": "In Safari, enter the URL <code>videos://</code>. This should ask you to open the TV app if it’s working. Cancel that, and then type in a new URL <code>cydia://</code>. It should say “Safari cannot open the page because the address is invalid.”</li>\n</ul>"
+            },
+            {
+              "title": "<p><strong>Download third-party apps to help you analyze the data streams going in and out of your device:</strong></p>"
+            },
+            {
+              "title": "macOS:"
+            },
+            {
+              "title": "<a href=\"https://radiosilenceapp.com/\">Radio Silence</a>"
+            },
+            {
+              "title": "<a href=\"https://bonzaiapps.com/loading/\">Loading</a>"
+            },
+            {
+              "title": "<a href=\"https://www.obdev.at/products/littlesnitch/index.html\">Little Snitch</a>"
+            },
+            {
+              "title": "<a href=\"https://www.charlesproxy.com/\">Charles Proxy</a>"
+            },
+            {
+              "title": "<a href=\"https://objective-see.org/products/lulu.html\">LuLu</a></li>\n</ul>"
+            },
+            {
+              "title": "Windows:"
+            },
+            {
+              "title": "<a href=\"https://www.glasswire.com/\">Glasswire</a>"
+            },
+            {
+              "title": "<a href=\"https://www.charlesproxy.com/\">Charles Proxy</a></li>\n</ul>"
+            },
+            {
+              "title": "Linux:"
+            },
+            {
+              "title": "<a href=\"https://www.charlesproxy.com/\">Charles Proxy</a></li>\n</ul>"
+            },
+            {
+              "title": "iOS:"
+            },
+            {
+              "title": "<a href=\"https://www.iverify.io/individuals\">iVerify</a>"
+            },
+            {
+              "title": "<a href=\"https://guardianapp.com\">Guardian Firewall</a>"
+            },
+            {
+              "title": "<a href=\"https://www.lookout.com/life\">Lookout Life</a></li>\n</ul>"
+            },
+            {
+              "title": "Android:"
+            },
+            {
+              "title": "<a href=\"https://www.glasswire.com/\">Glasswire</a>"
+            },
+            {
+              "title": "<a href=\"https://www.lookout.com/life\">Lookout Life</a></li>\n</ul>"
+            },
+            {
+              "title": "<strong>Set up a spare phone as a room monitor</strong> to detect unwanted physical intrusion. Example apps:"
+            },
+            {
+              "title": "iOS &amp; Android: <a href=\"https://alfred.camera/\">Alfred</a>"
+            },
+            {
+              "title": "Android: <a href=\"https://guardianproject.info/apps/org.havenapp.main/\">Haven</a>"
+            },
+            {
+              "title": "<strong>Put your phone or tablet in “lockdown mode” (iOS only)</strong>  to block most of the incoming messages and connections while you figure things out:"
+            },
+            {
+              "title": "<a href=\"https://support.apple.com/en-us/HT212650\">Read Apple Support’s article about it.</a>"
+            },
+            {
+              "title": "<code>Settings → Privacy &amp; Security → Lockdown Mode → Turn On Lockdown Mode</code> <hr/>"
+            }
+          ]
+        },
+        {
+          "topic": "😣 Seeking help in an emergency",
+          "items": []
+        }
+      ]
+    },
+    {
+      "topic": "🎁 Bonus",
+      "items": [
+        {
+          "title": "<p>This section contains additional tips and tools that we encountered during our research. Many of the recommendations below are popular with members of the cybersecurity community, but we found them to be a little too hard to follow, a little too new/untested or a little too specific for a small group of people.</p>"
+        },
+        {
+          "topic": "Cool tools for maximum safety",
+          "items": [
+            {
+              "title": "<strong>Write and take notes on end-to-end encrypted apps.</strong> Instead of Google Docs or Microsoft Office, use <a href=\"https://cryptpad.fr\">CryptPad</a> or <a href=\"https://standardnotes.org/\">Standard Notes</a>. Both are open-source and free to use."
+            },
+            {
+              "title": "<strong>Share files anonymous</strong> with <a href=\"https://send.tresorit.com/\">Tresorit Send</a>, Wormhole or <a href=\"https://onionshare.org/\">OnionShare</a>."
+            },
+            {
+              "title": "<strong>Turn suspicious PDFs into safe ones</strong> using <a href=\"https://dangerzone.rocks\">Dangerzone</a>."
+            },
+            {
+              "title": "<strong>Send end-to-end encrypted emails</strong> using <a href=\"https://protonmail.com/\">Protonmail</a> or <a href=\"https://tutanota.com/\">Tutanota</a>."
+            },
+            {
+              "title": "<strong>Find an end-to-end encrypted video calling service</strong> using <a href=\"https://freedom.press/training/blog/videoconferencing-tools/\">Freedom of the Press' guide</a>."
+            },
+            {
+              "title": "<strong>Send a self-destructing, password-protected message</strong> using <a href=\"https://onetimesecret.com/\">One Time</a>."
+            },
+            {
+              "title": "<strong>Scan for any Bluetooth devices near you</strong> (including AirTags) with <a href=\"https://www.nordicsemi.com/Products/Development-tools/nrf-connect-for-mobile\">nRF Connect</a>."
+            }
+          ]
+        },
+        {
+          "topic": "Cool tools that cost money",
+          "items": [
+            {
+              "title": "<strong>Buy a USB <a href=\"https://www.yubico.com/products/\">YubiKey</a> for two-factor authentication.</strong> If you work in free speech/press/internet, you may qualify for a free <a href=\"https://www.yubico.com/about/about-us/free-speech-program/\">Yubico for Free Speech</a>."
+            },
+            {
+              "title": "<strong>Use <a href=\"https://support.1password.com/travel-mode/\">1Password’s Travel Mode</a></strong> to create a set of passwords you don’t take with you on the road."
+            },
+            {
+              "title": "<strong>Increase the protective barriers around your Google account and Android phone</strong> by signing up for <a href=\"https://landing.google.com/advancedprotection/\">Google’s Advanced Protection program</a>. This is especially useful if your most-used and most-private account belongs to Google (including Gmail)."
+            },
+            {
+              "title": "<strong>Put your smart cards/passports/phones in a Faraday bag that blocks signals from going in and out.</strong> (See <a href=\"https://micahflee.com/2015/11/some-thoughts-on-faraday-bags-and-operational-security/\">Micah Lee’s guide on them</a>.)"
+            },
+            {
+              "title": "<strong>Get a security-focused router</strong> from <a href=\"https://www.pcwrt.com/\">pcWRT</a> or <a href=\"https://www.peplink.com/\">Peplink</a>."
+            },
+            {
+              "title": "<strong>Buy a hardware-encrypted external USB or hard drive</strong> from companies like <a href=\"https://www.apricorn.com/\">Apricorn</a>."
+            }
+          ]
+        },
+        {
+          "topic": "Cool tools with steep learning curves",
+          "items": [
+            {
+              "title": "<strong>Switch to an open source, security-focused app store</strong> by using <a href=\"https://f-droid.org\">F-Droid</a> (Android only)."
+            },
+            {
+              "title": "<strong>Use a decentralized, private messaging app powered by the Tor network</strong>. Check out <a href=\"https://www.ricochetrefresh.net/\">Ricohet Refresh</a>."
+            },
+            {
+              "title": "<strong>Use a more secure operating system for your computer.</strong>  Options include:"
+            },
+            {
+              "title": "<a href=\"https://tails.boum.org/\">Tails</a>"
+            },
+            {
+              "title": "<a href=\"https://www.qubes-os.org/\">Qubes OS</a>"
+            },
+            {
+              "title": "<strong>Use a more secure operating system for your phone.</strong>  Options include:"
+            },
+            {
+              "title": "<a href=\"https://calyxos.org/\">CalyxOS</a>"
+            },
+            {
+              "title": "<a href=\"https://grapheneos.org/\">GrapheneOS</a>"
+            },
+            {
+              "title": "<strong>Start using more secure devices.</strong> Options include:"
+            },
+            {
+              "title": "<a href=\"https://www.pine64.org/\">PINE64</a>"
+            },
+            {
+              "title": "<a href=\"https://puri.sm/\">Purism</a>."
+            }
+          ]
+        },
+        {
+          "topic": "Hosting/running a website",
+          "items": [
+            {
+              "title": "<strong>Read <a href=\"https://edri.org/ethical-web-dev/\">this EDRi guide on ethical website development and maintenance</a>.</strong> Pay special attention to its privacy recommendations."
+            },
+            {
+              "title": "<strong>Protect your website from DDOS attacks and other threats by using</strong>"
+            },
+            {
+              "title": "<strong><a href=\"https://deflect.ca/\">Deflect</a>.</strong> There’s a <a href=\"[https://deflect.ca/nonprofit](https://deflect.ca/nonprofit)\">free plan</a> for non-profits."
+            },
+            {
+              "title": "<strong><a href=\"https://www.cloudflare.com/\">Cloudflare</a>.</strong> There’s a <a href=\"https://www.cloudflare.com/galileo/\">free plan</a> for arts, human rights, civil society, journalism, or democracy organizations."
+            },
+            {
+              "title": "<strong><a href=\"https://projectshield.withgoogle.com\">Project Shield</a> from Google.</strong> Only available for news, human rights and election monitoring sites."
+            },
+            {
+              "title": "<strong>If using WordPress, consider using the following plugins</strong>"
+            },
+            {
+              "title": "<strong><a href=\"https://wordpress.org/plugins/wordfence/\">Wordfence</a></strong>"
+            },
+            {
+              "title": "<strong><a href=\"https://wordpress.org/plugins/sucuri-scanner/\">Sucuri Security</a></strong>"
+            },
+            {
+              "title": "<strong><a href=\"https://wordpress.org/plugins/better-wp-security/\">iThemes Security</a></strong>"
+            },
+            {
+              "title": "If your hosting service doesn't offer backups, use <a href=\"https://jetpack.com/upgrade/backup/\">VaultPress</a> or <a href=\"https://ithemes.com/backupbuddy/\">BackupBuddy</a>."
+            },
+            {
+              "title": "<strong>Consider switching to a more privacy-oriented hosting service</strong> like <a href=\"https://greenhost.net/\">Greenhost</a> or <a href=\"https://maadix.net/en/\">Maadix</a> ."
+            },
+            {
+              "title": "<strong>Set up a <a href=\"https://securitytxt.org/\">security.txt</a> file</strong> so that researchers have a place to disclose security vulnerabilities."
+            }
+          ]
+        },
+        {
+          "topic": "Other bonus items",
+          "items": [
+            {
+              "title": "<strong>Want a new messaging app?</strong> Check this table of secure messaging apps (<a href=\"https://www.securemessagingapps.com/\">Secure Messaging Apps Comparison</a> to learn more about security considerations beyond end-to-end encryption and what trade-offs you may be OK with."
+            },
+            {
+              "title": "<strong>Sign up to be notified by <a href=\"https://haveibeenpwned.com/\">Have I Been Pwned</a></strong> when an account tied to your email is compromised."
+            },
+            {
+              "title": "<strong>Access Facebook with more anonymity and bypass internet filtering by using <a href=\"https://en.wikipedia.org/wiki/Facebookcorewwwi.onion\">its onion service</a>.</strong>"
+            },
+            {
+              "title": "<strong>Freeze your credit</strong> (USA only) to prevent bad actors from accessing or mis-using your personal information. See IntelTechniques’ <a href=\"https://inteltechniques.com/freeze.html\">Credit Freeze Guide</a> for details.<hr/><p><strong>🏆 Oh my, you have arrived.</strong><br/>\n<strong>🏆 This is the end.</strong><br/>\n<strong>🏆 Thank you for reading.</strong><br/>\n<strong>🏆 Thank you for being thorough.</strong><br/>\n<strong>🏆 You are a true champ.</strong></p><hr/>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "🧠 Other resources",
+      "items": [
+        {
+          "title": "<p>We consulted many sources and drew upon our experiences in creating this guide. If you’re not finding quite what you want here, we recommend checking out the following resources:</p>"
+        },
+        {
+          "title": "Consumer Reports: <a href=\"https://securityplanner.consumerreports.org/\">Security Planner</a>"
+        },
+        {
+          "title": "Electronic Frontier Foundation: <a href=\"https://ssd.eff.org/\">Surveillance Self-Defense</a><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": " 📝 License",
+      "items": [
+        {
+          "title": "<p>This work is licensed under a <a href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": " 👋🏾 Special thanks",
+      "items": [
+        {
+          "title": "<p>Special thanks to the <a href=\"https://twitter.com/cryptoharlem\">CryptoHarlem</a> community, the students at the School of Journalism and Communication at the Chinese University of Hong Kong, and <a href=\"https://github.com/narwhalacademy/zebra-crossing/graphs/contributors\">our GitHub contributors</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

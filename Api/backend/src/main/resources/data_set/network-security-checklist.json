@@ -1,0 +1,434 @@
+{
+  "id": 132,
+  "header": "network-security-checklist",
+  "topicList": [
+    "Abstract",
+    "All OS",
+    "Windows",
+    "Linux",
+    "Networking",
+    "Explanations",
+    "Supplemental Information"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Abstract",
+      "items": [
+        {
+          "title": "<p>This is a checklist that may help you defending your network against cyber attacks.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "All OS",
+      "items": [
+        {
+          "title": "<p>You should match this section against all operating systems.</p>"
+        },
+        {
+          "title": " Ensure system is patched and up to date"
+        },
+        {
+          "title": " Implement proper least privilege"
+        },
+        {
+          "title": " Run a layered endpoint defense strategy"
+        },
+        {
+          "title": " Enforce complex passwords"
+        },
+        {
+          "title": " If no application protecting IPv6, disable IPv6 [[1]]"
+        },
+        {
+          "title": " Enable password rotation"
+        },
+        {
+          "title": " Disable user accounts after login failures"
+        },
+        {
+          "title": " Use dual factor authentication if possible"
+        },
+        {
+          "title": " Centralized authentication service"
+        },
+        {
+          "title": " Monitor log messages with Logwatch"
+        }
+      ]
+    },
+    {
+      "topic": "Windows",
+      "items": [
+        {
+          "title": " Remove PowerShell v2 [[2]]"
+        },
+        {
+          "title": " Limit execution of script content (WSH)"
+        },
+        {
+          "title": " Constrained language"
+        },
+        {
+          "title": " block powershell interpreter"
+        },
+        {
+          "title": " Enable system wide transcript files"
+        },
+        {
+          "title": " Restrict macro execution"
+        },
+        {
+          "title": " Disable local administrator accounts"
+        },
+        {
+          "title": " Disable NTLM [[3]]"
+        },
+        {
+          "title": " Enable Kerberos with AES encryption"
+        },
+        {
+          "title": " Disable SMBv1"
+        },
+        {
+          "title": " Enable SMB signing"
+        },
+        {
+          "title": " Deploy Microsoft <a href=\"https://technet.microsoft.com/en-us/mt227395.aspx\">LAPS</a>"
+        },
+        {
+          "title": " Use fine grained password policy"
+        },
+        {
+          "title": " Disable <a href=\"https://en.wikipedia.org/wiki/Link-Local_Multicast_Name_Resolution\">LLMNR</a>"
+        },
+        {
+          "title": " Disable <a href=\"https://en.wikipedia.org/wiki/NetBIOS\">NetBIOS-NS</a>"
+        },
+        {
+          "title": " Disable WDigest and caching of cleartext credentials"
+        },
+        {
+          "title": " Create an entry for <a href=\"https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol\">WPAD</a> deweaponize poisoning [[4]]"
+        },
+        {
+          "title": " Limit use of privileged accounts to only manage explicit privileged machines"
+        },
+        {
+          "title": " Make use of Read-Only Domain Controllers (<a href=\"https://docs.microsoft.com/en-us/windows/desktop/ad/rodc-and-active-directory-schema\">RODC</a>) [[5]]"
+        },
+        {
+          "title": " Change DSRM account password or create DSRM account on DC"
+        },
+        {
+          "title": " Set DsrmAdminLogonBehavior = 1 (force stop AD for DSRM logon)"
+        },
+        {
+          "title": " Enable UNC hardening (MS15-011)"
+        },
+        {
+          "title": " No computer accounts in admin groups"
+        },
+        {
+          "title": " Identify who has AD admin rights (domain/forest)"
+        },
+        {
+          "title": " Identify who can logon to Domain Controllers (and admin rights to virtual environment hosting virtual DCs)"
+        },
+        {
+          "title": " Scan ADs, OUs, AdminSDHolder, and GPOs for inappropriate custom permissions"
+        },
+        {
+          "title": " Ensure AD administrators (Domain Admins) protect their credentials by not logging into untrusted systems (workstations)."
+        },
+        {
+          "title": " Limit service account rights that are currently DA (or equivalent)."
+        },
+        {
+          "title": " Enable compound authentication"
+        },
+        {
+          "title": " Enable Dynamic access control"
+        },
+        {
+          "title": " Check <a href=\"https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection\">LSA protection</a>"
+        },
+        {
+          "title": " Add administrator accounts to \"Protected Users\" security group"
+        },
+        {
+          "title": " Configure Just Enough Administration (<a href=\"https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/jea/overview\">JEA</a>)"
+        },
+        {
+          "title": " Enable Privileged Access Management feature"
+        }
+      ]
+    },
+    {
+      "topic": "Linux",
+      "items": [
+        {
+          "title": " Minimize packages"
+        },
+        {
+          "title": " Check listening ports"
+        },
+        {
+          "title": " Disable unnecessary services"
+        },
+        {
+          "title": " Disable root login"
+        },
+        {
+          "title": " Login whitelist"
+        },
+        {
+          "title": " SSHv2 enabled"
+        },
+        {
+          "title": " Deny users from using Cronjobs"
+        },
+        {
+          "title": " enable <code>SELinux</code>"
+        },
+        {
+          "title": " Enable <code>iptables</code> (<code>ufw</code>)"
+        },
+        {
+          "title": " Disable Ctrl+Alt+Delete in <code>/etc/inittab</code>"
+        },
+        {
+          "title": " Disable interactive hotkey startup at boot"
+        },
+        {
+          "title": " Check accounts for empty passwords"
+        },
+        {
+          "title": " Keep <code>/boot</code> read-only"
+        },
+        {
+          "title": " Ignore ICMP / Broadcast request"
+        },
+        {
+          "title": " Check file permissions (777, SUID, SGID)"
+        },
+        {
+          "title": " Check files with no owners"
+        },
+        {
+          "title": " Deploy security pakcages (<code>tiger</code>, <code>tripwire</code>, <code>rkhunter</code>)"
+        },
+        {
+          "title": " Deploy <code>auditd</code> to check for read / write events"
+        },
+        {
+          "title": " Deploy <code>fail2ban</code> / <code>denyhost</code> as IDS"
+        },
+        {
+          "title": " Set GRUB bootloader password"
+        },
+        {
+          "title": " Configure sysctl (<a href=\"https://www.cyberciti.biz/faq/linux-kernel-etcsysctl-conf-security-hardening/\">Linux Kernel /etc/sysctl.conf Security Hardening</a>)"
+        }
+      ]
+    },
+    {
+      "topic": "Networking",
+      "items": [
+        {
+          "title": " Set up ARP poisoning mitigation (<a href=\"https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-6500-series-switches/white_paper_c11_603839.html\">ARP Poisoning Attack and Mitigation Techniques</a>)"
+        },
+        {
+          "title": " Check ACL items"
+        },
+        {
+          "title": " No split tunneling"
+        },
+        {
+          "title": " Check DMZ"
+        },
+        {
+          "title": " Check OOB"
+        },
+        {
+          "title": " Routing protocol authentication"
+        },
+        {
+          "title": " STP Enabled"
+        },
+        {
+          "title": " VLAN configured properly"
+        },
+        {
+          "title": " Segregate legacy technology"
+        }
+      ]
+    },
+    {
+      "topic": "Explanations",
+      "items": [
+        {
+          "topic": "IPv6",
+          "items": [
+            {
+              "title": "<p>When implementing IPv6 on a network, remember a basic principle: <strong>you need to configure security for IPv4 and IPv6 separately</strong>. For example, if ACL is deployed on the router for IPv6, it does not apply for IPv6.</p><p>Configure ACL (deny all pings).</p><p><code>(config)#access-list 100 deny icmp any any echo</code></p><p>Apply ACL to interface GigabitEthernet 0/0. Note how you have to apply ACL to both IPv4 and IPv6 on both directions.</p><p><code>(config)#ip access-group 100 in\n(config)#ip access-group 100 out\n(config)#ipv6 access-group 100 in\n(config)#ipv6 access-group 100 out</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "PowerShell V2",
+          "items": [
+            {
+              "title": "<p>Even if powershell is disabled <strong>TODO</strong></p>"
+            }
+          ]
+        },
+        {
+          "topic": "NTLM and Kerberos",
+          "items": [
+            {
+              "title": "<a href=\"https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-audit-ntlm-authentication-in-this-domain\">Network security: Restrict NTLM: Audit NTLM authentication in this domain</a><p>NTLM is how Windows stores passwords and authenticates. It uses MD4 to store passwords. Network authentication uses the hash, but not the original password. This makes NTLM vulnerable to NTLM relaying. By relaying the authentication request to a rogue server, the target machine will attempt to log in into the server, without verifying the identity of the server. Then, the rogue server can relay the authentication requests to a target server, thus gaining access to the server.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "WPAD",
+          "items": [
+            {
+              "title": "<p>By default, Windows detects web proxies and tries to log in with the currently-logged-in user's credentials. This might cause leakage of HTTP credentials, and should be disabled.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "RODC",
+          "items": [
+            {
+              "title": "DC services without storing passwords."
+            },
+            {
+              "title": "Only receives inbound replication from writable DCs."
+            },
+            {
+              "title": "Requires cached passwords for local site authentication."
+            },
+            {
+              "title": "Enables delegation of RODC administration to non AD admin."
+            },
+            {
+              "title": "Use cases:"
+            },
+            {
+              "title": "Physical security issues."
+            },
+            {
+              "title": "Third party software install on DC."
+            },
+            {
+              "title": "\"Untrusted admin\" scenario."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Supplemental Information",
+      "items": [
+        {
+          "topic": "PowerSploit",
+          "items": [
+            {
+              "title": "<p><a href=\"https://github.com/PowerShellMafia/PowerSploit\">PoewrSploit</a> is a collection of Microsoft PowerShell modules that can be used to aid penetration testers during all phases of an assessment.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Active Directory",
+          "items": [
+            {
+              "title": "All authenticated users have read access to:"
+            },
+            {
+              "title": "Most (all) objects &amp; their attributes in AD (even across trusts)."
+            },
+            {
+              "title": "Most (all) contents in the domain share \"SYSVOL\" which can contain interesting scripts &amp; files."
+            },
+            {
+              "title": "A standard user account can:"
+            },
+            {
+              "title": "Have elevated rights through the magic of \"SID History\" without being a member of any groups."
+            },
+            {
+              "title": "Have the ability to modify users/groups without elevated rights through custom OU permissions."
+            },
+            {
+              "title": "Compromise an entire AD domain simply by improperly being granted modify rights to an OU or domain-linked GPO."
+            },
+            {
+              "title": "AD objects are not deleted when removed from the list."
+            },
+            {
+              "title": "AD forest is the security boundary."
+            },
+            {
+              "title": "All AD information stays in the boundary."
+            },
+            {
+              "title": "All domains within the forest implicitly trust each other through automatic trust of the parent and the child domain."
+            },
+            {
+              "title": "Domain is a partition of the forest."
+            },
+            {
+              "title": "Trust can exist between forests."
+            },
+            {
+              "title": "<strong>Federation</strong> is more secure than trust. It creates a ticket for every authenticated request, thus preventing unauthorized access."
+            },
+            {
+              "title": "No security policy = default (minimum)."
+            },
+            {
+              "title": "DCs need additional security policies (GPO)."
+            },
+            {
+              "title": "Windows systems (DC) need to be configured for enhanced auditing."
+            },
+            {
+              "title": "You can query DNS through LDAP."
+            }
+          ]
+        },
+        {
+          "topic": "Microsoft Password & Active Directory",
+          "items": [
+            {
+              "title": "TPM generates user public-private key pair (public key added to AD user attribute)."
+            },
+            {
+              "title": "User credential device-specific secrets stored in VSM."
+            },
+            {
+              "title": "Machine data &amp; user credential info combined &amp; sent to DC for user TGT."
+            },
+            {
+              "title": "Cred Guard owns system private key used to get TGT."
+            }
+          ]
+        },
+        {
+          "topic": "Useful Links",
+          "items": [
+            {
+              "title": "<a href=\"https://www.youtube.com/watch?v=nHU3ujyw_sQ\">DEFCON 20: Owned in 60 Seconds: From Network Guest to Windows Domain Admin</a>"
+            },
+            {
+              "title": "<a href=\"https://www.youtube.com/watch?v=2w1cesS7pGY\">Beyond the Mcse: Active Directory for the Security Professional</a>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

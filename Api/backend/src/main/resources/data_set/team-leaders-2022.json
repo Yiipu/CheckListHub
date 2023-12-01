@@ -1,0 +1,122 @@
+{
+  "id": 206,
+  "header": "team-leaders-2022",
+  "topicList": [
+    "Welcome",
+    "Readiness Checklist",
+    "Help",
+    "Team Leader Readiness"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Welcome",
+      "items": [
+        {
+          "title": "<p>We'd like to welcome you to Hackin' Omics 2022! We hope you are as excited as we are to have an event focused on building community, increasing technical literacy, and solving scientific problems.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Readiness Checklist",
+      "items": [
+        {
+          "title": " Log in to slack and introduce yourself."
+        },
+        {
+          "title": " Sign up for a GitHub account if you don't have one."
+        },
+        {
+          "title": " Fork this repository."
+        },
+        {
+          "title": " Review the <a href=\"CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT</a>"
+        },
+        {
+          "title": " Review some of the helpful resources we listed in the resources <a href=\"https://github.com/u-brite/team-leaders-2022/blob/main/resources/README.md\">README</a>."
+        },
+        {
+          "title": " Review what it takes to be a good team leader."
+        },
+        {
+          "title": " Ensure your team members are on slack and be sure to introduce yourself and the project."
+        },
+        {
+          "title": " Remember to discuss authorship and responsibilities up front as some projects may result in publications.</li>\n</ul>"
+        },
+        {
+          "title": " Create a GitHub repository on our <strong>U-BRITE organization</strong> (not on your GitHub profile)."
+        },
+        {
+          "title": " Use the <a href=\"https://github.com/u-brite/team-repo-template\">\"team-repo\"</a> template and update with your team's information."
+        },
+        {
+          "title": " Your repository should be PUBLIC."
+        },
+        {
+          "title": " Refine your project proposal based on the feedback given (if there was feedback)."
+        },
+        {
+          "title": " Add your team members to the <a href=\"https://github.com/orgs/u-brite/teams/hackin-omics/members\">U-BRITE organization</a> if they have a GitHub account or have them create an account.</li>\n</ul>"
+        },
+        {
+          "title": " Watch recordings of workshops to become ready for the hackathon."
+        },
+        {
+          "title": " <a href=\"https://uab.box.com/s/ddsxtndjci74uob55xil6qwcrp6ksjjl\">Computing Resources Workshop: An Introduction to Jetstream2, HPC, and Git/GitHub</a> by <a href=\"https://github.com/bjoyce3\">Dr. Blake Joyce</a>"
+        },
+        {
+          "title": " <a href=\"https://github.com/u-brite/u-brite-bootcamp\">U-BRITE Bootcamp: Learn how to use PAGER &amp; SEAS for multi-omics downstream analysis</a> <a href=\"https://github.com/jakechen1\">by Dr. Jake Chen</a></li>\n</ul>"
+        },
+        {
+          "title": " Ensure any datasets that need to be dowloaded have been mentioned by communicating with Zhandos Sembay via slack (His slack is <code>@Zhandos Sembay</code> or tagging the technical committee on GitHub using <code>@u-brite/technical-committee</code>."
+        },
+        {
+          "title": " Submit this <a href=\"https://airtable.com/shrnpxEogyAzlRWGX\">form</a> to submit any datasets or tools you'll be using throughtout the hackathon."
+        },
+        {
+          "title": " Determine if you’ll need cloud (<a href=\"https://jetstream-cloud.org/about/index.html\">Jetstream2</a>) or HPC computing (Cheaha) for the hackathon. Contact Blake Joyce in slack to discuss your team’s needs or discuss in the #team-leaders  channel on slack."
+        },
+        {
+          "title": " If you want access to cloud (Jetstream2 - free cloud option):"
+        },
+        {
+          "title": "Please create an <a href=\"https://portal.xsede.org/my-xsede?p_p_id=58&amp;p_p_lifecycle=0&amp;p_p_state=maximized&amp;p_p_mode=view&amp;_58_struts_action=%2Flogin%2Fcreate_account\">XSEDE account</a>."
+        },
+        {
+          "title": "Have your team members create an XSEDE account."
+        },
+        {
+          "title": "Gather your and all your team members’ XSEDE accounts and email to <a href=\"bjoyce@uab.edu\">Blake Joyce</a> in a single list.</li>\n</ul>"
+        },
+        {
+          "title": " If you want access to Cheaha high performance computing:"
+        },
+        {
+          "title": "If you have a BlazerID or UAB XIAS account: go to https://rc.uab.edu/ and sign up."
+        },
+        {
+          "title": "If you are not at UAB or do not have a XIAS account already: slack message <code>@Blake Joyce (UAB Research Computing)</code> with your <code>.edu</code> email or your company email. We cannot accept personal emails for Cheaha access.</li>\n</ul>"
+        },
+        {
+          "title": " Complete the above tasks and add your name and project name to the Team Leader Readiness table. Submit a pull request and assign <code>@u-brite/hackin-omics-co-chairs</code>."
+        }
+      ]
+    },
+    {
+      "topic": "Help",
+      "items": [
+        {
+          "title": "<p>If you need help, please view the <a href=\"https://github.com/u-brite/team-leaders-2022/discussions\">discussions tab</a> on this repository or make an <a href=\"https://github.com/u-brite/team-leaders-2022/issues/new\">issue</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Team Leader Readiness",
+      "items": [
+        {
+          "title": "<p>| Team Leader | Team Name | Completed Checklist (yes or no) |\n|-------------|-----------|---------------------------------|\n|Tarun Mamidi |   canAI   |            Yes                  |\n|Rahul Sharma |MedvAIsor  | Yes                             |\n|Arun Boddapati| Team Vecna-scDehasheR|Yes                  |\n|Pradeep Varathan|Team AD Guy|         Yes                  |\n|Anton Orlichenko | ImageNomeR |    Yes                     |\n|Akhil Pampana| HeriVar         | Yes                       |\n|  Emily Page |ReproCanAtlas|      Yes                      |\n|Vasileios Alevios| Papaki    |         Yes                 |\n|Shaurita Hutchins| SNVariome |             Yes.            |\n|             |           |                                 |\n|             |           |                                 |\n|             |           |                                 |\n|             |           |                                 |\n|             |           |                                 |\n|             |           |                                 |\n|             |           |                                 |\n|             |           |                                 |</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": 100,
+  "header": "haskell-package-checklist",
+  "topicList": [
+    "Use Git for source control",
+    "Host on GitHub",
+    "Build with Stack",
+    "Define with hpack",
+    "Name with kebab case",
+    "Use Semantic Versioning",
+    "Choose a license",
+    "Write a README",
+    "Keep a change log",
+    "Write a synopsis",
+    "Avoid heavy dependencies",
+    "Include extra source files",
+    "Fix package warnings",
+    "Separate source files from metadata",
+    "Match package and module names",
+    "Require one import",
+    "Expose implementation details",
+    "Fix all GHC warnings",
+    "Follow HLint suggestions",
+    "Format code with Brittany",
+    "Write documentation with examples",
+    "Test with Hspec",
+    "Run tests on Travis CI",
+    "Keep executables small",
+    "Benchmark with Criterion",
+    "Automate releases"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Use Git for source control",
+      "items": [
+        {
+          "title": "<p>If it's not in source control, it doesn't exist.\n<a href=\"https://git-scm.com\">Git</a> is the most popular choice, but its interface can be difficult to understand.\nConsider using a GUI like GitHub Desktop.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Host on GitHub",
+      "items": [
+        {
+          "title": "<p><a href=\"https://github.com\">GitHub</a> allows other developers to easily contribute to your package.\nCompared to other hosts, you are more likely to receive contributions.\nAlso GitHub integrates nicely with many other services.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Build with Stack",
+      "items": [
+        {
+          "title": "<p><a href=\"https://docs.haskellstack.org/en/stable/README/\">Stack</a> painlessly manages Haskell dependencies.\nIt installs GHC for you and ensures you get a build plan that actually works.\nIf your package builds today, Stack ensures it will continue to build tomorrow.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Define with hpack",
+      "items": [
+        {
+          "title": "<p>The default Cabal package file format is custom, tedious, and verbose.\n<a href=\"https://github.com/sol/hpack\">hpack</a> uses YAML and avoids unnecessary boilerplate.\nStack integrates hpack to automatically convert your <code>package.yaml</code> into a <code>*.cabal</code> file when necessary.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Name with kebab case",
+      "items": [
+        {
+          "title": "<p>Keep everything lowercase to avoid confusion.\nYou don't want people trying to install <code>http</code> when they really meant <code>HTTP</code>.\nUse hyphens to separate words, but keep it short and memorable.\nNobody wants to type out <code>hypertext-transfer-protocol</code>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Use Semantic Versioning",
+      "items": [
+        {
+          "title": "<p>Unfortunately Hackage recommends the <a href=\"https://pvp.haskell.org\">Package Versioning Policy</a>.\nThe PVP adds ambiguity by using two major version numbers.\nThat encourages packages to stay on major version 0, which doesn't inspire confidence.\nMany other languages use <a href=\"https://semver.org\">Semantic Versioning</a>.\nSemVer matches how developers generally think about version numbers.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Choose a license",
+      "items": [
+        {
+          "title": "<p>Nobody can use a package without a license.\nThe most popular license for Haskell is <a href=\"https://choosealicense.com/licenses/bsd-3-clause-clear/\">BSD 3-Clause</a>, followed by MIT.\nWhichever license you choose, include the license file in your package.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Write a README",
+      "items": [
+        {
+          "title": "<p>Most people will familiarize themselves with your package by reading your README.\nIt should describe the problem that your package solves.\nBe sure to include at least one concrete example in it.\nGitHub will automatically format your <code>README.markdown</code>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Keep a change log",
+      "items": [
+        {
+          "title": "<p>Most packages will use Git tags to mark releases, but reading diffs is not an acceptable way for users to discover changes.\nPut a human-readable summary of changes in the GitHub releases.\nThen link to that from your <code>CHANGELOG.markdown</code>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Write a synopsis",
+      "items": [
+        {
+          "title": "<p>The <code>synopsis</code> shows up when searching and viewing your package.\nKeep it short, imperative, and descriptive.\nAlso write a <code>description</code>, which can be pretty much the same as the <code>synopsis</code>.\nFor example:</p><p><code>yaml\nname: aeson\nsynopsis: Encode and decode JSON.\ndescription: Aeson encodes and decodes JSON.</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Avoid heavy dependencies",
+      "items": [
+        {
+          "title": "<p>Only add a dependency if your package needs it to function.\nDon't include stuff that's just nice to have.\nFor example, you should probably avoid <code>lens</code> even though it makes code easier to write.\nIn addition to avoiding heavy dependencies, you should avoid having too many dependencies.\nThink about how long it would take to install your package starting from scratch.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Include extra source files",
+      "items": [
+        {
+          "title": "<p>If a file is necessary for your package to build, it belongs in <code>extra-source-files</code>.\nThis includes files that tests and benchmarks need.\nYou should also include package metadata like your README and change log.\nNote that you don't need to include your license file if your package's <code>license-file</code> is set.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Fix package warnings",
+      "items": [
+        {
+          "title": "<p>Stack prints these out when you run <code>stack sdist</code>.\nYou should fix all of them, even though some aren't that useful.\nFor instance, Stack warns you if you don't set a category even though the categories on Hackage aren't that useful.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Separate source files from metadata",
+      "items": [
+        {
+          "title": "<p>In other words, separate your package metadata from actual source files.\nThis makes it easy to write scripts that work on every Haskell file, like formatting or counting lines of code.\nThe exact names aren't important, but you should end up with a structure like this:</p>"
+        },
+        {
+          "title": "<code>library/YourPackage.hs</code>"
+        },
+        {
+          "title": "<code>executables/Main.hs</code>"
+        },
+        {
+          "title": "<code>tests/Main.hs</code>"
+        }
+      ]
+    },
+    {
+      "topic": "Match package and module names",
+      "items": [
+        {
+          "title": "<p>If your package is named <code>tasty-burrito</code>, you should have a top-level module called <code>TastyBurrito</code>.\nAvoid the unnecessary module hierarchy like <code>Data.ByteString</code> or <code>Text.ParserCombinators.Parsec</code>.\nWhile the package name uses <code>kebab-case</code>, module names should use <code>CamelCase</code>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Require one import",
+      "items": [
+        {
+          "title": "<p>Users should be able to get started with nothing more than <code>import YourPackage</code>.\nIf necessary, re-export stuff from other packages.\nDesign for qualified imports; don't be afraid to take common names like <code>singleton</code>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Expose implementation details",
+      "items": [
+        {
+          "title": "<p>People will want to use your package in ways you didn't think of.\nMake everything public, but not necessarily part of your published API.\nUse <code>Internal</code> module names like <code>Data.Text.Internal</code> to signal that things aren't published.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Fix all GHC warnings",
+      "items": [
+        {
+          "title": "<p>GHC finds all kinds of problems with <code>-Wall</code>.\nFew of them are false positives and they generally help you write better code.\nBut if you don't like one, disable it with <code>-Wno-warn-whatever</code>.\nBe sure to use <code>stack build --pedantic</code> when developing your package.\nIt will force you to fix warnings.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Follow HLint suggestions",
+      "items": [
+        {
+          "title": "<p><a href=\"https://github.com/ndmitchell/hlint\">HLint</a> is a great tool for improving code quality.\nHowever some suggestions aren't worth following.\nFor example, the re-export shortcut suggestion breaks the Haddock documentation.\nUse your own judgment when deciding which suggestions to follow.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Format code with Brittany",
+      "items": [
+        {
+          "title": "<p><a href=\"https://github.com/lspitzner/brittany\">Brittany</a> is a robust and customizable Haskell source code formatter.\nUsing it frees you from ever thinking about formatting again.\nIf you don't like how something looks, fix it in Brittany and everyone's formatting will improve.\nUsing Brittany also avoids pointless arguments about style in pull requests.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Write documentation with examples",
+      "items": [
+        {
+          "title": "<p>Types are not a substitute for documentation.\nNeither are laws.\nUsually functions are added to solve a specific problem.\nShow that problem in the documentation as an example.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Test with Hspec",
+      "items": [
+        {
+          "title": "<p><a href=\"https://hspec.github.io\">Hspec</a> is a library for writing human-readable tests.\nIt is inspired by Ruby's RSpec.\nIt integrates with QuickCheck and SmallCheck for writing property-based tests.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Run tests on Travis CI",
+      "items": [
+        {
+          "title": "<p><a href=\"https://travis-ci.org\">Travis CI</a> is free for open source projects and integrates with GitHub.\nEvery time you push a commit to GitHub, Travis CI will run your test suite.\nThis makes it easy to keep your package buildable.\nBy default Travis CI runs on Linux, but you can also run on macOS.\nIf you want to run your test suite on Windows, consider using <a href=\"https://www.appveyor.com\">AppVeyor</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Keep executables small",
+      "items": [
+        {
+          "title": "<p>If your package provides an executable, define it in your library and re-export it.\nThis allows other packages to use your executable's behavior from Haskell.\nYour executable should look like this:</p><p><code>haskell\nmodule Main (module YourPackage) where\nimport YourPackage (main)</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Benchmark with Criterion",
+      "items": [
+        {
+          "title": "<p>If your package needs to be fast, <a href=\"http://www.serpentine.com/criterion/\">Criterion</a> is the best tool for measuring it.\nOn the other hand if your package doesn't need to be fast, there's no sense in maintaining benchmarks for it.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Automate releases",
+      "items": [
+        {
+          "title": "<p>Don't manually create distribution tarballs and upload them to Hackage.\nInstead, get Travis CI to do it.\nTravis CI sets the <code>TRAVIS_TAG</code> environment variable.\nIf that's set, you can run <code>stack upload .</code> to upload your package.\nTravis CI will need your Hackage credentials, so be sure not to leak those into the build log.</p>"
+        }
+      ]
+    }
+  ]
+}

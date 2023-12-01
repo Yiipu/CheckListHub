@@ -1,0 +1,359 @@
+{
+  "id": 81,
+  "header": "events-checklist",
+  "topicList": [
+    "📖 Zawartość",
+    "📋 Podstawy",
+    "💚 Pomoc w organizacji",
+    "🎥 Streaming i nagrywanie",
+    "🗂️ Materiały marketingowe",
+    "📣 Promocja wydarzenia",
+    "✍️ Zapisy na wydarzenie",
+    "🍕 Catering",
+    "🤝 Partnerstwo z innymi organizacjami",
+    "📝 Rodo i inne zgody",
+    "Przed wydarzeniem",
+    "Podczas wydarzenia",
+    "Po wydarzeniu",
+    "📜 Dobre praktyki",
+    "🔗 Linki"
+  ],
+  "itemGroups": [
+    {
+      "topic": "📖 Zawartość",
+      "items": [
+        {
+          "title": "<p><strong><a href=\"#-podstawy\">Podstawy</a></strong><br/>\n<strong><a href=\"#-streaming-i-nagrywanie\">Streaming i nagrywanie</a></strong><br/>\n<strong><a href=\"#-materiały-marketingowe\">Materiały marketingowe</a></strong><br/>\n<strong><a href=\"#-promocja-wydarzenia\">Promocja</a></strong><br/>\n<strong><a href=\"#-dobre-praktyki\">Dobre praktyki</a></strong><br/>\n<strong><a href=\"#-linki\">Linki</a></strong><br/></p>"
+        }
+      ]
+    },
+    {
+      "topic": "📋 Podstawy",
+      "items": [
+        {
+          "title": "<p>Zaczynamy oczywiście od pomysłu zebranym na kanale pomysły, Idea Squash, w zwykłej konwersacji lub z potrzeby serca. Te punkty pomogą nadać mu kształty:</p>"
+        },
+        {
+          "title": " Rodzaj wydarzenia"
+        },
+        {
+          "title": " Temat"
+        },
+        {
+          "title": " Formuła (offline/online/hybryda)"
+        },
+        {
+          "title": " Termin"
+        },
+        {
+          "title": " Miejsce"
+        },
+        {
+          "title": " Uczestnicy (wydarzenie otwarte/tylko dla członków HS3)"
+        },
+        {
+          "title": " Prelegenci (<strong>Mówcy HS3</strong>)"
+        }
+      ]
+    },
+    {
+      "topic": "💚 Pomoc w organizacji",
+      "items": [
+        {
+          "title": "<p>Na Discordzie mamy rolę <strong>🥳 Ogarniacze wydarzeń</strong>, są to osoby które już coś kiedyś (współ)organizowały i na pewno pomogą w razie wątpliwości.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "🎥 Streaming i nagrywanie",
+      "items": [
+        {
+          "title": "<p>Jeżeli planujemy wydarzenie online warto pomyśleć czy będzie streamowane, nagrywane, czy to jednak zwykłe spotkanie na kanale głosowym.</p>"
+        },
+        {
+          "title": " Platforma/y"
+        },
+        {
+          "title": " YouTube-można zaplanować odpowiednio wcześniej"
+        },
+        {
+          "title": " Twitch"
+        },
+        {
+          "title": " Internet w przypadku streamowania to minimum łącze o parametrach: upload 10 Mb/s"
+        },
+        {
+          "title": " Czy wydarzenie będzie też nagrane i np. wstawione na nasz YouTube?"
+        },
+        {
+          "title": " Osoba techniczna, która ogarnie transmisje - @Kacu ¯_(ツ)_/¯"
+        },
+        {
+          "title": " Sprawny mikrofon!"
+        },
+        {
+          "title": " Przeprowadzić testy przed wydarzeniem (1 dzień lub 1h)."
+        },
+        {
+          "title": " Grafiki na Youtube-ekran początkowy i ekran na przerwy. Takie, które jest łatwy w edycji np w formie prezentacji."
+        },
+        {
+          "title": " Osobę, która będzie odpowiadać na zapytania na Discordzie oraz Youtubie."
+        },
+        {
+          "title": " Osobę, która na live sprawdzi, jaka jest jakość transmisji (głos, obraz)."
+        },
+        {
+          "title": " Linki do transmisji na YouTube przygotuj i przetestuj kilka dni przed wydarzeniem"
+        },
+        {
+          "title": " Umieść te linki wszędzie gdzie pojawiają się wzmianki o wydarzeniu"
+        }
+      ]
+    },
+    {
+      "topic": "🗂️ Materiały marketingowe",
+      "items": [
+        {
+          "title": "<p>👉 Zadbajmy, żeby nasze wydarzenie przyciągnęło uwagę ładnymi grafikami (na odpowiedniej licencji) np. z <a href=\"https://unsplash.com/\">Unsplash</a>. Przyjemnie tworzy się grafikę w <a href=\"https://www.canva.com/\">Canvie</a></p><p>👉 Logo Hackerspace Trójmiasto w różnych formatach i wariantach (<a href=\"https://github.com/hs3city/events-checklist/files/7355310/hs3_logo_pack.zip\">hs3_logo_pack.zip</a>\n) i <a href=\"https://fishy-tile-b98.notion.site/8ba11351d77a407492b3691db7c43e42?v=f06acb96869c4f0a9ee7c2a9cd3ac068\">tutaj</a>.</p><p>👉 Swoim lekkim piórem na pewno wesprą <strong>Pisarze HS3</strong>.</p>"
+        },
+        {
+          "title": "<p> Grafika (najlepiej <strong>pozioma</strong>) </p>"
+        },
+        {
+          "title": "Meetup - Przynajmniej 1200 x 675 px / może być większa, ale w tych proporcjach."
+        },
+        {
+          "title": "Facebook - grafika na wydarzenie 1200 x 628 px"
+        },
+        {
+          "title": "LinkedIn"
+        },
+        {
+          "title": "Youtube - na planowania streama (thumbnails) - 1280 x 720 px  (dopuszczelne formaty JPG, GIF, PNG) rozmiar poniżej 2MB"
+        },
+        {
+          "title": "Plakat  (może być pionowy) </li>\n</ul>"
+        },
+        {
+          "title": "<p> Teksty</p>"
+        },
+        {
+          "title": "<p> Video </p>"
+        },
+        {
+          "title": "<p> Muzyka</p>"
+        }
+      ]
+    },
+    {
+      "topic": "📣 Promocja wydarzenia",
+      "items": [
+        {
+          "title": "<p>Najlepsze wydarzenia to takie, o których ktoś wie...</p><p>Po przygotowaniu materiałów ruszamy w świat! Promujemy wydarzenia na różnych platformach, z reguły są to:</p><p>🔴 <a href=\"https://hs3.pl/join\">Discord</a>  - opiekun <strong>🥳 Ogarniacze wydarzeń</strong></p><p>🔴 <a href=\"https://hs3.pl/wydarzenia\">Meetup</a>  - @Doomhammer, @LeszekM, @Marcin Młyński, @Dreat</p><p>🔴 <a href=\"https://www.linkedin.com/company/hackerspace-tr%C3%B3jmiasto\">LinkedIn</a>  - @Doomhammer, @LeszekM, @Marcin Młyński</p><p>🔴 <a href=\"https://www.facebook.com/hackerspacetrojmiasto/\">Facebook</a> - @LeszekM, @Marcin Młyński</p><p>🔴 <a href=\"https://twitter.com/hs3city\">Twitter</a> - @Makneta, @Doomhammer</p><p>🔴 <a href=\"https://www.youtube.com/channel/UC1MjdZvgtGZwSAaveL-Z8CA\">Youtube</a> - @Kacu ¯_(ツ)_/¯  , @Doomhammer, @LeszekM</p>"
+        }
+      ]
+    },
+    {
+      "topic": "✍️ Zapisy na wydarzenie",
+      "items": [
+        {
+          "title": "<p>W zależności od formy i wskaźnika amatorsko-profesjonalnego zapisy mogą wyglądać różnie.</p><p>✅ Okejka pod wiadomością z informacją o wydarzeniu (przypomnieć, że odznaczamy jak zmienimy plany, żeby nie robić sztucznego tłumu)</p><p>✏️ Zapisy bezpośrednio przez meetup</p><p>👉 Evenea - do stworzenia zapisów na Evenei potrzeba: \n- opis\n- bilety od kiedy do kiedy i po ile \n- liczba miejsc\n- termin wydarzenia z godzinami \n- grafika \n- adres mailowy kontaktowy\n- czy zapisy mają się same akceptować? \n- czy ma być jakieś niestandardowe potwierdzenie zapisania się na wydarzenie (idzie automatem)</p><p>👉 Mix/inny pomysł</p>"
+        }
+      ]
+    },
+    {
+      "topic": "🍕 Catering",
+      "items": [
+        {
+          "title": "<p>W zależności od długości wydarzenia warto pomyśleć o napełnieniu brzuszków. Jak określić ile jedzenia będzie potrzebne? </p>"
+        },
+        {
+          "title": " Ile czasu trwa wydarzenie?"
+        },
+        {
+          "title": " Ile będzie osób?"
+        },
+        {
+          "title": " Jaki mamy budżet?"
+        },
+        {
+          "title": " Przekąski (ciastka, czipsy) czy może pizza?"
+        }
+      ]
+    },
+    {
+      "topic": "🤝 Partnerstwo z innymi organizacjami",
+      "items": [
+        {
+          "title": "<p>Z reguły najlepiej wchodzi się we współpracę z organizacjami, które znają albo HS3, albo kogoś z nas osobiście. Dobrymi kandydatami są:</p>"
+        },
+        {
+          "title": " Firmy"
+        },
+        {
+          "title": " Uczelnie"
+        },
+        {
+          "title": " Stowarzyszenia/Fundacje"
+        },
+        {
+          "title": " Portale/media<p>Pisząc o propozycje współpracy warto zawrzeć w komunikacji misje i/lub cele wszystkich organizacji/fundacji które chcemy wesprzeć podczas danego wydarzenia (w tym Hackerspace Trójmiasto). W ten sposób nie trzeba będzie odkręcać czyjegoś wyobrażenia i łatwiej będzie znaleźć odpowiednie warunki współpracy.</p><p>Checklista komunikacyjna:\n-  Czym jest Hackerspace? (zob. opis na LinkedIn, Patronite, etc.)\n-  Misja\n-  Opis planowanego wydarzenia\n-  Cele\n-  Czego oczekujemy od patrona?\n-  Benefity dla patrona (np. umieszczenie logo na grafikach, wzmianka w mediach, pomysły własne)</p><p>Niektórzy partnerzy lub sponsorzy oczekują podsumowania po zakończeniu wydarzenia. Zwykle chodzi o statystyki i krótkie podsumowanie, więc warto pamiętać by sprawdzić ile osób wzięło udział (zarówno na miejscu jak i na transmisjach).</p>"
+        }
+      ]
+    },
+    {
+      "topic": "📝 Rodo i inne zgody",
+      "items": [
+        {
+          "title": "<p>Potrzebujemy jeśli zbieramy zapisy inaczej niż Meetup i Discord</p><p>Najważniejsze zgody:</p>"
+        },
+        {
+          "title": " Rodo (przetwarzenia danych)"
+        },
+        {
+          "title": " Na umieszczenie wizerunku w celu promocji wydarzenia. Foto z wydarzenia.<p>Zapytaj @Marcin Młyński jeśli masz wątpliwości lub potrzebujesz pomocy </p>"
+        }
+      ]
+    },
+    {
+      "topic": "Przed wydarzeniem",
+      "items": [
+        {
+          "title": " Rozłóż naklejki i inne materiały pamiątkowo-promocyjne HS3 blisko wejścia"
+        }
+      ]
+    },
+    {
+      "topic": "Podczas wydarzenia",
+      "items": [
+        {
+          "title": " Przywitaj się z uczestnikami"
+        },
+        {
+          "title": " Przedstaw Hackerspace Trójmiasto"
+        },
+        {
+          "title": " Zaproś uczestników do <a href=\"https://hs3.pl/join\">dołączenia na Discord</a> oraz <a href=\"https://hs3.pl/wspieram\">wsparcia finansowego</a>"
+        },
+        {
+          "title": " Baw się dobrze"
+        },
+        {
+          "title": " Dziel się pozytywną zajawką z innymi"
+        },
+        {
+          "title": " Pamiętaj o robieniu zdjęć"
+        }
+      ]
+    },
+    {
+      "topic": "Po wydarzeniu",
+      "items": [
+        {
+          "title": " Podziękuj uczestnikom"
+        },
+        {
+          "title": " Zaproś uczestników na piknik by mogli lepiej nas poznać"
+        },
+        {
+          "title": " Posprzątaj"
+        },
+        {
+          "title": " Uczcij świetnie wykonaną robotę"
+        },
+        {
+          "title": " Podziel się wrażeniami z resztą społeczności na Discord (np. kanał #wydarzenia-dyskusje)"
+        },
+        {
+          "title": " Podziękuj prelegentom w mediach społecznościowych publikując zdjęcia z nimi z wydarzenia"
+        }
+      ]
+    },
+    {
+      "topic": "📜 Dobre praktyki",
+      "items": [
+        {
+          "topic": "Reguła Równowagi",
+          "items": [
+            {
+              "title": "<p>Zanim zdecydujesz się wybrać termin wydarzenia <a href=\"https://hs3.pl/wydarzenia/wewnetrzne\">sprawdź w kalendarzu</a> co już mamy zaplanowane w danym tygodniu i danym miesiącu. Za dużo wydarzeń w krótkim czasie to nie zdrowo.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Reguła Dwojga",
+          "items": [
+            {
+              "title": "<p>Warto by każde wydarzenie (i każdy inny projekt) realizowane przez Hackerspace Trójmaisto miało przynajmniej dwoje liderów. Dzięki temu gdy jedna osoba nie może/zmęczy się/cokolwiek to druga będzie pełną moc i pełną wiedzę by wszystko poprowadzić.</p><p>Przy okazji, w najgorszym przypadku jeśli tylko dwoje liderów pojawi się na wydarzeniu to nie jest to czas stracony, bo przynajmniej te dwie osoby mogą sobie pogadać i jest z tego jakaś korzyść.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Reguła Mnemoników",
+          "items": [
+            {
+              "title": "<p>Jeśli robisz wydarzenie cykliczne to warto trzymać się łatwych do zapamiętania mnemoników typu \"co X miesiąc w pierwszy/drugi Y miesiąca. Przykładowo: Idea Squash jest zawsze w pierwszy wtorek miesiąca, Piknik w ostatni piątek miesiąca, English Night w co drugą środę.</p><p>Trzymając się tej reguły ułatwiamy też życie sobie, bo nie musimy za każdym razem wybierać terminu wydarzenia. Wiadomo że czasami robi się odstępstwa (święta albo inne kolizje), ważne jednak by nie było to za często.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Reguła Przygotowania",
+          "items": [
+            {
+              "title": "<p>Jeśli wydarzenie wymaga użycia jakiegoś dodatkowego sprzętu (np. impreza robiona w siedzibie partnera którą chcemy streamować) to warto dzień wcześniej przynieść, rozstawić i przetestować ten sprzęt.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Reguła Dokumentacji",
+          "items": [
+            {
+              "title": "<p>Dobre wydarzenie zasługuje dobre zdjęcia. Dobrze prelegenci zasługują na dobre zdjęcia. Dobry organizator i sponsorzy również. A uczestnicy? Już wiesz:) Publikacja zdjęć po wydarzeniu i oznaczanie na nich prelegentów czy sponsorów daje im poczucie docenienia oraz potrzebną ekspozycję. Zwłaszcza gdy reprezentują instytucję i/lub sponsora.\nZ perspektywy organizatora łatwiej będzie pozyskać sponsorów czy publiczność w trakcie kolejnych wydarzeń. Zdjęcia są doskonałym portfolio osiągnięć organizatora i ułatwiają reklamę, negocjacje sponsorskie i instytucjonalne czy pozyskiwanie patronów medialnych.\nZ perspektywy potencjalnego uczestnika, zdjęcia z innych imprez lub edycji pomagają wyrobić sobie wyobrażenie na temat eventu. To ułatwia podjęcie decyzji o uczestnictwie oraz stworzenie racjonalnych oczekiwań.</p>"
+            }
+          ]
+        },
+        {
+          "topic": "Reguła Twarzy",
+          "items": [
+            {
+              "title": "<p>Dobre zdjęcia zawierają twarze. Mile widziane są zbliżenia, pokazywanie gestów oraz zaangażowanie uczestników, np. w pracę warsztatową. Zdjęcia ogólne i zza pleców, choć się przydają, mają mniejsze znaczenie niż dwa/trzy dobre ujęcia uśmiechniętych twarzy.\nTwarzą firmy, partnera, sponsora czy patrona medialnego jest jego logo. Jeśli dał stand, zrób mu zdjęcie. Dobre będzie też zdjęcie uczestników ze standem gdzieś w tle.  </p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "🔗 Linki",
+      "items": [
+        {
+          "title": "<p><a href=\"https://www.hs3.pl\">Strona WWW</a></p>"
+        },
+        {
+          "title": "<p><a href=\"https://discord.gg/GSTgYzU\">Discord</a></p>"
+        },
+        {
+          "title": "<p><a href=\"https://www.linkedin.com/company/hackerspace-tr%C3%B3jmiasto\">LinkedIn</a></p>"
+        },
+        {
+          "title": "<p><a href=\"https://www.facebook.com/hackerspacetrojmiasto/\">Facebook</a></p>"
+        },
+        {
+          "title": "<p><a href=\"https://www.meetup.com/hs3city/events/\">Meetup</a></p>"
+        },
+        {
+          "title": "<p><a href=\"https://www.twitch.tv/hs3city\">Twitch</a></p>"
+        },
+        {
+          "title": "<p><a href=\"https://www.youtube.com/channel/UC1MjdZvgtGZwSAaveL-Z8CA\">YouTube</a></p>"
+        },
+        {
+          "title": "<p><a href=\"https://patronite.pl/hs3\">Patronite</a></p>"
+        },
+        {
+          "title": "<p><a href=\"https://twitter.com/hs3city\">Twitter</a></p>"
+        }
+      ]
+    }
+  ]
+}

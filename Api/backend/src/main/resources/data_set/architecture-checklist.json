@@ -1,0 +1,26 @@
+{
+  "id": 13,
+  "header": "architecture-checklist",
+  "topicList": [
+    "🤝 How to contribute",
+    "📃 License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "🤝 How to contribute",
+      "items": [
+        {
+          "title": "<p>Feel free to make a pull request if something is missing!</p>"
+        }
+      ]
+    },
+    {
+      "topic": "📃 License",
+      "items": [
+        {
+          "title": "<p><a href=\"https://creativecommons.org/licenses/by/4.0/\"><img alt=\"License: CC BY 4.0\" src=\"https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg\"/></a></p>"
+        }
+      ]
+    }
+  ]
+}

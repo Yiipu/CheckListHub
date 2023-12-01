@@ -1,0 +1,113 @@
+{
+  "id": 41,
+  "header": "checklist-server-setup",
+  "topicList": [
+    "Support us",
+    "1. Before getting started",
+    "2. Provision the server on Laravel Forge",
+    "3. Further provisioning with Ansible",
+    "4. Deploy the website",
+    "5. Set up the demo site",
+    "6. Update the live site's DNS settings"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Support us",
+      "items": [
+        {
+          "title": "<p><a href=\"https://spatie.be/github-ad-click/checklist-server-setup\"><img src=\"https://github-ads.s3.eu-central-1.amazonaws.com/checklist-server-setup.jpg?t=1\" width=\"419px\"/></a></p><p>We invest a lot of resources into creating <a href=\"https://spatie.be/open-source\">best in class open source packages</a>. You can support us by <a href=\"https://spatie.be/open-source/support-us\">buying one of our paid products</a>.</p><p>We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on <a href=\"https://spatie.be/about-us\">our contact page</a>. We publish all received postcards on <a href=\"https://spatie.be/open-source/postcards\">our virtual postcard wall</a>.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "1. Before getting started",
+      "items": [
+        {
+          "title": "<p>Inform a project manager about the server setup. Ensure that it's clear who will bear the costs of the server (Spatie or the client), and what those costs are.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "2. Provision the server on Laravel Forge",
+      "items": [
+        {
+          "title": "<p><strong>Log in to <a href=\"https://forge.laravel.com\">Laravel Forge</a>.</strong> The credentials are stored in our 1Password vault.</p><p><strong>Create a new server.</strong> Choose DigitalOcean as the provider. Use the domain name as the server name, replacing dots with dashed. A server for <code>spatie.be</code> would be named <code>spatie-be</code>.</p>"
+        },
+        {
+          "title": "Choose the smallest server and the Frankfurt region (most of our clients are based in western Europe)"
+        },
+        {
+          "title": "Choose the latest PHP version and MySQL 5.7"
+        },
+        {
+          "title": "Enable DigitalOcean weekly backups</li>\n</ul><p>Create the server, and wait a few minutes for it to provision.</p><p><strong>After the new server is provisioned, set up the site.</strong> First, delete the \"default\" site Forge created.</p>"
+        },
+        {
+          "title": "Set the site's domain as root domain, for example <code>spatie.be</code>"
+        },
+        {
+          "title": "Set the web directory to <code>/current/public</code> when using our zero-downtime deploy script<p><strong>Store the server credentials in our 1Password vault.</strong> Forge sends the server's credentials to our technical mailbox. Create a new login in 1Password with the full set of credentials as a note.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "3. Further provisioning with Ansible",
+      "items": [
+        {
+          "title": "<p>After the basics have been provisioned with Forge we have some additional setup and configuration to do. We've automated these small tasks with Ansible.</p><p>Our Ansible playbook will:</p>"
+        },
+        {
+          "title": "Add all of our active team member's SSH keys to the server's authorized keys"
+        },
+        {
+          "title": "Add 2GB of swap memory"
+        },
+        {
+          "title": "Enable passwordless <code>sudo</code> commands"
+        },
+        {
+          "title": "Set the max. upload size in PHP to 30MB"
+        },
+        {
+          "title": "And more…</li>\n</ul><p>You can find the location of our Ansible server in our 1Password vault.</p><p><strong>Add a hosts entry for the new server</strong> in <code>ansible/hosts</code> with your preferred editor.</p><p><strong>Install Python on the newly provisioned server.</strong> Python is required to run some provisioning scripts. SSH to the new server from the Ansible droplet and run <code>sudo apt-get install python</code>. Then <code>exit</code> back to Ansible.</p><p><strong>Provision the new server with Ansible.</strong> Run <code>ansible-playbook ansible/playbooks/provisionServer.yml --ask-sudo-pass -l spatie-be</code>. Replace <code>spatie-be</code> with the server name you just added to the <code>hosts</code> file.</p>"
+        },
+        {
+          "title": "The provisioning script will ask for the sudo password once. Use the sudo password provided by Forge earlier"
+        },
+        {
+          "title": "Next, the script will ask for <code>Name of site directory in /home/forge:</code>, type the site name you created in the new forge server, for example <code>spatie.be</code>"
+        }
+      ]
+    },
+    {
+      "topic": "4. Deploy the website",
+      "items": [
+        {
+          "title": "<p>After provisioning with Ansible, you should be able to access the server with <code>ssh forge@123.4.5.6</code> using the droplet's IP address.</p><p><strong>Create a deploy key on GitHub.</strong> SSH to the server and copy the contents of <code>~/.ssh/id_rsa.pub</code>. Use it to create a deploy key on GitHub (Repository &gt; Settings &gt; Deploy keys).</p><p><strong>Create an <code>.env</code> file in the site's root directory.</strong> Based on the repository's <code>.env.example</code> file, create an <code>.env</code> file in the site's root directory, for example <code>~/spatie.be</code>.</p><p><strong>Remove the <code>current</code> directory.</strong> Envoy needs to create a symlink at this location.</p><p><strong>Double check.</strong> Your site's directory should then look like this:</p><p><code>forge@spatie-be:~/spatie.be$ ls\npersistent  public  releases .env</code></p><p><strong>Deploy the site.</strong> Assuming the project uses Envoy, run <code>envoy run deploy</code> from a local copy of the application to deploy the project for the first time.</p><p><strong>Enable Laravel Horizon.</strong> Log into Forge, and add a daemon to your server. </p>"
+        },
+        {
+          "title": "Set the command to <code>php artisan horizon</code>"
+        },
+        {
+          "title": "Set the path to <code>/home/forge/spatie.be/current</code>, replacing <code>spatie.be</code> with your site's domain"
+        }
+      ]
+    },
+    {
+      "topic": "5. Set up the demo site",
+      "items": [
+        {
+          "title": "<p>Skip this step if you don't need to set up a demo site on a separate subdomain.</p><p>We often set up demo sites on <code>*.spatie.be</code>. The demo site may exist until the project goes live, as it runs on the same droplet as the production site. This is not the same as a staging environment!</p><p><strong>Add the demo URL to the NGINX configuration.</strong> In Forge, edit the site's NGINX configuration and add the demo site URL.</p><p><code>diff\n server {\n     listen 80;\n     listen [::]:80;\n-    server_name spatie.be;\n+    server_name spatie-demo.spatie.be spatie.be;</code></p><p><strong>Configure the demo URL's DNS.</strong> It should point to the new server.</p><p><code>spatie-demo.spatie.be.  3600 IN A 123.4.5.6</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "6. Update the live site's DNS settings",
+      "items": [
+        {
+          "title": "<p>Skip this step for now if you're setting up a server to replace an existing site.</p><p>Add an A record with the IP address of the new server, and a CNAME for the <code>www.</code>-version.</p><p><code>spatie.be.      3600 IN A 123.4.5.6\nwww.spatie.be.  3600 IN CNAME spatie.be.</code></p>"
+        }
+      ]
+    }
+  ]
+}

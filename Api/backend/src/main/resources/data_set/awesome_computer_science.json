@@ -1,0 +1,898 @@
+{
+  "id": 22,
+  "header": "awesome_computer_science",
+  "topicList": [
+    "Table of Contents",
+    "Computer Science - 1",
+    "Digital Electronics",
+    "Computer Organization and Architecture",
+    "Theory of Computation and Automata",
+    "Computer Science - 2",
+    "Compiler Design",
+    "Programming",
+    "Data Structures",
+    "Algorithms",
+    "Artificial Intelligence",
+    "Computer Science - 3",
+    "DBMS and SQL",
+    "Operating Systems",
+    "Computer Networks",
+    "Software Engineering After learning the above",
+    "Computer Science - 4",
+    "Cryptography and Network Security",
+    "Web Development",
+    "Computer Graphics",
+    "LICENSE"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<p>#### <a href=\"#computer-science---1\">Computer Science 1</a>\n- <a href=\"#digital-electronics\">Digital Electronics</a>\n- <a href=\"#computer-organization-and-architecture\">Computer Organization and Architecture</a>\n- <a href=\"#theory-of-computation-and-automata\">Theory of Computation and Automata</a>\n #### <a href=\"#computer-science---2\">Computer Science 2</a>\n- <a href=\"#compiler-design\">Compiler Design</a>\n- <a href=\"#programming\">Programming</a>\n- <a href=\"#data-structures\">Data Structures</a>\n- <a href=\"#algorithms\">Algorithms</a>\n- <a href=\"#artificial-intelligence\">Artificial Intelligence</a>\n #### <a href=\"#computer-science---3\">Computer Science 3</a>\n- <a href=\"#operating-systems\">Operating Systems</a>\n- <a href=\"#computer-networks\">Computer Networks</a>\n- <a href=\"#dbms-and-sql\">DBMS and SQL</a>\n- <a href=\"#software-engineering-after-learning-the-above\">Software Engineering</a>\n #### <a href=\"#computer-science---4\">Computer Science 4</a>\n- <a href=\"#cryptography\">Cryptography</a>\n- <a href=\"#machine-learning\">Machine Learning</a>\n- <a href=\"#computer-graphics\">Computer Graphics</a>\n- <a href=\"#web-dev\">Web Dev</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Computer Science - 1",
+      "items": []
+    },
+    {
+      "topic": "Digital Electronics",
+      "items": [
+        {
+          "title": " <strong><a href=\"http://www.uop.edu.pk/ocontents/ELEC-DIGE-S3%20Boolean%20Algebra%20Laws%20.pdf\">Boolean Algebra</a></strong>"
+        },
+        {
+          "title": "Number System"
+        },
+        {
+          "title": "Addition, Subtraction"
+        },
+        {
+          "title": "Multiplication, Division"
+        },
+        {
+          "title": "1's, 2's compliments"
+        },
+        {
+          "title": "<p>k-maps</p>"
+        },
+        {
+          "title": "<p> <strong>Hardware</strong></p>"
+        },
+        {
+          "title": "Logic Gates"
+        },
+        {
+          "title": "Flip-Flops and Latches"
+        },
+        {
+          "title": "Adder - Subtractor"
+        },
+        {
+          "title": "Encoder - Decoder"
+        },
+        {
+          "title": "Multiplexer - Demultiplexer"
+        },
+        {
+          "title": "Integrated Circuits"
+        },
+        {
+          "title": "<a href=\"https://www.youtube.com/watch?v=ljOoGyCso8s\">Printed Circuit Boards</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Computer Organization and Architecture",
+      "items": [
+        {
+          "title": " <strong>Computer Organization</strong>"
+        },
+        {
+          "title": "Address Bus, Data Bus"
+        },
+        {
+          "title": "ROM, EPROM, RAM"
+        },
+        {
+          "title": "Memory Hierarchy, Cache Memory, Virtual Memory"
+        },
+        {
+          "title": "Secondary Storage"
+        },
+        {
+          "title": "Programmable Logic Devices and Controllers"
+        },
+        {
+          "title": "<p>Input - Output Devices</p>"
+        },
+        {
+          "title": "<p> <strong>Computer Architecture</strong></p>"
+        },
+        {
+          "title": "Stack"
+        },
+        {
+          "title": "Registers"
+        },
+        {
+          "title": "Endianness (Big, Little)"
+        },
+        {
+          "title": "Floating Point Numbers"
+        },
+        {
+          "title": "Addressing Modes"
+        },
+        {
+          "title": "Pipelining"
+        },
+        {
+          "title": "Interrupts"
+        },
+        {
+          "title": "RISC - CISC"
+        },
+        {
+          "title": "aarch64, Intel_x86 / AMD64, MIPS / RISC-V (learn the differences)"
+        },
+        {
+          "title": "<a href=\"https://stackoverflow.com/questions/1933801/x86-assembly-reference-sheet\">Assembly Language</a> (basic instructions)"
+        }
+      ]
+    },
+    {
+      "topic": "Theory of Computation and Automata",
+      "items": [
+        {
+          "title": " <strong>Automata and Languages</strong>"
+        },
+        {
+          "title": "NFA - DFA - NDFA"
+        },
+        {
+          "title": "Regular Expressions"
+        },
+        {
+          "title": "Context-Free Languages and Grammers"
+        },
+        {
+          "title": "Pushdown Automata"
+        },
+        {
+          "title": "Turing Machines"
+        },
+        {
+          "title": "Decidability of Languages"
+        },
+        {
+          "title": "Reducibility of Languages"
+        },
+        {
+          "title": "Complexity Theory : P vs NP"
+        }
+      ]
+    },
+    {
+      "topic": "Computer Science - 2",
+      "items": []
+    },
+    {
+      "topic": "Compiler Design",
+      "items": [
+        {
+          "title": " <strong>Compiler Design</strong>"
+        },
+        {
+          "title": "Lexical analysis"
+        },
+        {
+          "title": "Syntax analysis"
+        },
+        {
+          "title": "Type Checking"
+        },
+        {
+          "title": "Intermediate code generation"
+        },
+        {
+          "title": "Machine code generation"
+        },
+        {
+          "title": "Assembly and linking"
+        },
+        {
+          "title": "Analysis and optimisation"
+        },
+        {
+          "title": "Memory management"
+        },
+        {
+          "title": "Interpreters"
+        },
+        {
+          "title": "<a href=\"https://go.dev/ref/spec\">Golang reference specifications</a><sup>If you want to red an easy specification</sup>"
+        }
+      ]
+    },
+    {
+      "topic": "Programming",
+      "items": [
+        {
+          "title": "<p> <strong><a href=\"https://codescracker.com/c/\">Learn C</a></strong>\n    &gt; The language almost every computer knows</p>"
+        },
+        {
+          "title": "<a href=\"https://www.cs.fsu.edu/~myers/c++/notes/basics1.html\">Character constants, escape sequences, string constants</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cs.fsu.edu/~myers/c++/notes/basics2.html\">Data types and Type conversion</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?source=apeman\">Precedence and associativity</a> of <a href=\"https://learn.microsoft.com/en-us/cpp/cpp/cpp-built-in-operators-precedence-and-associativity?source=apeman\">Operators</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cs.fsu.edu/~myers/c++/notes/functions1.html\">Functions</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/cpp/cpp/storage-classes-cpp?source=apeman\">storage class</a> and <a href=\"https://learn.microsoft.com/en-us/cpp/cpp/scope-visual-cpp?source=apeman\">variable scope</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cs.fsu.edu/~myers/c++/notes/control1.html\">if, for, while, switch_case</a>"
+        },
+        {
+          "title": "<a href=\"https://codescracker.com/c/c-jump-statements.htm?source=apeman\">break, continue, goto</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cs.fsu.edu/~myers/c++/notes/arrays.html\">Arrays</a>, <a href=\"https://www.cs.fsu.edu/~myers/c++/notes/strings.html\">Strings</a>, <a href=\"https://www.cs.fsu.edu/~myers/c++/notes/pointers1.html\">Pointers</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cs.fsu.edu/~myers/c++/notes/structs1.html\">Structs</a>, <a href=\"http://www.cs.cornell.edu/courses/cs2022/2009fa/lectures/lec06.pdf\">Union, enum, typedef</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/cpp/cpp/header-files-cpp?source=apeman\">Header files, #MACROS</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cs.cmu.edu/~ab/15-123S09/lectures/Lecture%2008%20-%20%20Dealing%20with%20Dynamic%20Memory.pdf\">malloc, calloc, realloc</a> | <a href=\"https://manpages.ubuntu.com/manpages/xenial/man3/malloc.3.html\">2</a>, <a href=\"https://www.cs.fsu.edu/~myers/c++/notes/dma.html\">new</a>, <a href=\"https://learn.microsoft.com/en-us/cpp/cpp/main-function-command-line-args?source=apeman\">argc argv</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cs.fsu.edu/~myers/c++/notes/c_io.html\">input/output</a>, <a href=\"https://www.cs.fsu.edu/~myers/c++/notes/fileio.html\">file io</a>, <a href=\"https://www.cs.fsu.edu/~myers/c++/notes/formatting.html\">streams</a>"
+        },
+        {
+          "title": "<a href=\"https://pubs.opengroup.org/onlinepubs/009695399/basedefs/math.h.html\"><math.h></math.h></a></li>\n</ul>"
+        },
+        {
+          "title": "<p> <strong><a href=\"https://www.cs.nmsu.edu/~jcook/tags/c/c++/\">C++</a></strong> (You can try <strong><a href=\"https://docs.python.org/3/tutorial/index.html\">Python</a></strong> for same topics)\n    &gt; Used in almost everything from Games to Browsers to Machine learning and beyond</p>"
+        },
+        {
+          "title": "<a href=\"https://google.github.io/styleguide/cppguide.html\">Everything mentioned in C</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/cpp/cpp/namespaces-cpp?source=apeman\">namespaces</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/cpp/cpp/class-cpp?source=apeman\">Classes</a> and <a href=\"https://en.cppreference.com/w/cpp/language/object\">Objects</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/cpp/cpp/member-access-control-cpp?source=apeman\">Access Controls : Public, Private, Protected</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/cpp/cpp/overview-of-member-functions?source=apeman\">Member Functions</a> and <a href=\"https://learn.microsoft.com/en-us/cpp/cpp/friend-cpp?source=apeman\">Friend Functions</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/cpp/cpp/function-overloading?source=apeman\">Function Overloading</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/cpp/cpp/constructors-cpp?source=apeman\">Constructor</a> and <a href=\"https://learn.microsoft.com/en-us/cpp/cpp/destructors-cpp?source=apeman\">Destructors</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/cpp/cpp/inheritance-cpp?source=apeman\">Inheritence</a>, <a href=\"https://www.cs.nmsu.edu/~jcook/posts/cpp-polymorphism/\">Polymorphism</a>"
+        },
+        {
+          "title": "<a href=\"https://learn.microsoft.com/en-us/cpp/cpp/templates-cpp?source=apeman\">Templates</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Data Structures",
+      "items": [
+        {
+          "title": "<strong><a href=\"https://www.digitalocean.com/community/tutorials/how-to-work-with-arrays-in-ruby\">Arrays</a></strong>"
+        },
+        {
+          "title": "<strong><a href=\"https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html\">Linked Lists</a></strong>"
+        },
+        {
+          "title": "<strong><a href=\"https://www.cs.cmu.edu/~ckingsf/bioinfo-lectures/skiplists.pdf\">Skip Lists</a></strong><sup>PDF</sup>"
+        },
+        {
+          "title": "<a href=\"http://ticki.github.io/blog/skip-lists-done-right/\">Skip-Lists done right</a><sup>Suggested Reading</sup>"
+        },
+        {
+          "title": "<strong><a href=\"https://www.cs.cornell.edu/courses/cs3110/2014fa/lectures/13/lec13.html\">Hash Tables</a>, <a href=\"https://www.eecs.umich.edu/courses/eecs380/ALG/hash_tables.html\">2</a></strong>"
+        },
+        {
+          "title": "<strong>stack</strong> and <strong>queue</strong> and <strong>set</strong>"
+        },
+        {
+          "title": " <strong><a href=\"http://math.hws.edu/eck/cs225/s03/binary_trees/\">Trees</a></strong> and <strong>Tries</strong>"
+        },
+        {
+          "title": " Self Balancing Trees"
+        },
+        {
+          "title": " n-ary Trees"
+        },
+        {
+          "title": " 2-3 Trees</li>\n</ul>"
+        },
+        {
+          "title": " <strong><a href=\"http://www-h.eng.cam.ac.uk/help/tpl/talks/C++graphs.html\">Graphs</a></strong>"
+        },
+        {
+          "title": " Adjacency matrix vs Adjacency list"
+        }
+      ]
+    },
+    {
+      "topic": "Algorithms",
+      "items": [
+        {
+          "title": " <strong>Searching</strong>"
+        },
+        {
+          "title": " Breadth First Search"
+        },
+        {
+          "title": " Depth First Search</li>\n</ul>"
+        },
+        {
+          "title": " <strong><a href=\"https://en.wikipedia.org/wiki/Sorting_algorithm\">Sorting</a></strong>"
+        },
+        {
+          "title": " Merge Sort"
+        },
+        {
+          "title": " Quick Sort"
+        },
+        {
+          "title": " Insertion Sort"
+        },
+        {
+          "title": " Selection Sort</li>\n</ul>"
+        },
+        {
+          "title": " <strong>Graph Traversal</strong>"
+        },
+        {
+          "title": " Minimum Spanning Trees"
+        },
+        {
+          "title": " Shortest Paths</li>\n</ul>"
+        },
+        {
+          "title": " <strong>space-time Complexity</strong>"
+        }
+      ]
+    },
+    {
+      "topic": "Artificial Intelligence",
+      "items": [
+        {
+          "title": " <strong>Knowledge Representation</strong> and <strong>Reasoning</strong>"
+        },
+        {
+          "title": " <strong>State Space</strong>"
+        },
+        {
+          "title": " <strong>Search</strong>"
+        },
+        {
+          "title": "<a href=\"https://www.javatpoint.com/hill-climbing-algorithm-in-ai\">Hill Climbing</a><sup>Must know</sup>"
+        },
+        {
+          "title": "<a href=\"https://www.ics.uci.edu/~kkask/Fall-2016%20CS271/slides/03-InformedHeuristicSearch.pdf\">A*</a><sup>Must know</sup>"
+        },
+        {
+          "title": "<a href=\"http://web.mit.edu/sp.268/www/gamesearch.pdf\">MinMax</a><sup>Easiest Algorithm in AI</sup></li>\n</ul>"
+        },
+        {
+          "title": " <strong><a href=\"https://stackoverflow.com/questions/2019056/getting-a-simple-neural-network-to-work-from-scratch-in-c\">Neural Networks</a></strong>"
+        },
+        {
+          "title": "Weights and Layers (Neural Networks)"
+        },
+        {
+          "title": "Gradient Descent"
+        },
+        {
+          "title": "Convolutional neural networks(https://towardsdatascience.com/convolutional-neural-networks-from-the-ground-up-c67bb41454e1)</li>\n</ul>"
+        },
+        {
+          "title": " <a href=\"http://galaxy.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html\">Backpropagation</a>"
+        },
+        {
+          "title": " <a href=\"https://sheepolution.com/learn/book/contents\">Game Dev Basics</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Computer Science - 3",
+      "items": []
+    },
+    {
+      "topic": "DBMS and SQL",
+      "items": [
+        {
+          "title": "<p><a href=\"https://www.freecodecamp.org/news/basic-sql-commands/\">FCC quick commands</a> | <a href=\"https://www.guru99.com/sql-commands-dbms-query.html\">Graphical view</a>\n- <strong><a href=\"https://www.javatpoint.com/sql-tutorial\">SQL</a></strong>\n    - <strong>Data Definition Language</strong>\n     - <a href=\"https://www.1keydata.com/sql/sqlcreate.html\">CREATE</a>\n     - <a href=\"https://www.1keydata.com/sql/drop-table.html\">DROP</a>\n     - <a href=\"https://www.1keydata.com/sql/sql-alter-table.html\">ALTER</a>\n     - <a href=\"https://www.1keydata.com/sql/sqltruncate.html\">TRUNCATE</a>\n    - <strong>Data Query Language</strong>\n     - <a href=\"https://www.1keydata.com/sql/sqlselect.html\">SELECT</a>\n    - <strong>Data Manipulation Language</strong>\n     - <a href=\"https://www.1keydata.com/sql/sqlinsert.html\">INSERT</a>\n     - <a href=\"https://www.1keydata.com/sql/update.html\">UPDATE</a>\n     - <a href=\"https://www.1keydata.com/sql/sqldelete.html\">DELETE</a>\n    - <strong>Data Control Language</strong>\n     - <a href=\"https://www.1keydata.com/sql/sql-grant.html\">GRANT</a>\n     - <a href=\"https://www.1keydata.com/sql/sql-revoke.html\">REVOKE</a>\n    - <strong>Transction Control Language</strong>\n     - <a href=\"https://www.1keydata.com/sql/sql-commit.html\">COMMIT</a>\n     - <a href=\"https://dev.mysql.com/doc/refman/8.0/en/savepoint.html\">ROLLBACK</a>\n     - <a href=\"https://www.postgresql.org/docs/current/sql-savepoint.html\">SAVEPOINT</a>\n    - <strong>AGGREGATE FUNCTIONS</strong>\n     - <a href=\"https://www.1keydata.com/sql/sqlcount.html\">COUNT</a> | <a href=\"https://www.1keydata.com/sql/sum-function.html\">SUM</a> | <a href=\"https://www.1keydata.com/sql/sql-average.html\">AVG</a> | <a href=\"https://www.1keydata.com/sql/max-function.html\">MAX</a> | <a href=\"https://www.1keydata.com/sql/min-function.html\">MIN</a>\n    - <strong>JOINS</strong>\n     - <a href=\"https://www.ibm.com/docs/en/db2-for-zos/12?topic=jdfmtot-full-outer-join\">FULL OUTER JOIN</a>\n     - <a href=\"https://www.ibm.com/docs/en/db2-for-zos/12?topic=table-inner-joins\">INNER JOIN</a>\n     - <a href=\"https://stackoverflow.com/questions/5706437/\">LEFT JOIN</a> | <a href=\"https://stackoverflow.com/questions/5706437/\">RIGHT JOIN</a>\n     - <a href=\"https://docs.oracle.com/javadb/10.6.2.1/ref/rrefsqljnaturaljoin.html\">NATURAL JOIN</a>\n     - <a href=\"https://www.1keydata.com/sql/left-outer-join.html\">LEFT OUTER JOIN</a>\n     - <a href=\"https://docs.oracle.com/javadb/10.6.2.1/ref/rrefsqlj57522.html\">RIGHT OUTER JOIN</a></p>"
+        },
+        {
+          "title": "<strong><a href=\"https://www.javatpoint.com/dbms-tutorial\">DataBase Management Systems</a></strong>"
+        },
+        {
+          "title": "Entity-Relationship model."
+        },
+        {
+          "title": " <strong>Integrity Constraints</strong>"
+        },
+        {
+          "title": "Primary Key and Foreign key"
+        },
+        {
+          "title": "Composite keys"
+        },
+        {
+          "title": "All other types of keys"
+        },
+        {
+          "title": " Normal Forms : 1NF to 4 NF"
+        },
+        {
+          "title": " File Organization."
+        },
+        {
+          "title": " Indexing (<a href=\"https://www.javatpoint.com/b-tree-vs-bplus-tree\">B- Trees and B+ Trees</a>)"
+        },
+        {
+          "title": " <strong>Transactions and Concurrency Control</strong>"
+        },
+        {
+          "title": "Conflict Serializability"
+        },
+        {
+          "title": "Locking"
+        },
+        {
+          "title": "ACID | BASE"
+        },
+        {
+          "title": "Database security"
+        },
+        {
+          "title": "SQL Injection"
+        },
+        {
+          "title": "Flat file / document database"
+        },
+        {
+          "title": "Object / JSON based database"
+        }
+      ]
+    },
+    {
+      "topic": "Operating Systems",
+      "items": [
+        {
+          "title": "The Boot Process"
+        },
+        {
+          "title": " <strong>Processes and Threads</strong>"
+        },
+        {
+          "title": "Process Control Block"
+        },
+        {
+          "title": "Dispatcher and Scheduler"
+        },
+        {
+          "title": " <strong>Inter Process Communication</strong>"
+        },
+        {
+          "title": "Mesage Passing"
+        },
+        {
+          "title": "Shared Memory"
+        },
+        {
+          "title": " <strong>Scheduling Algorithms</strong>"
+        },
+        {
+          "title": "Round Robin."
+        },
+        {
+          "title": "Shortest Remaining Time First."
+        },
+        {
+          "title": "Least Recently Used."
+        },
+        {
+          "title": " <strong>Deadlocks</strong>"
+        },
+        {
+          "title": "MutEx and Locks"
+        },
+        {
+          "title": "Semaphores"
+        },
+        {
+          "title": "Banker's Algorithm"
+        },
+        {
+          "title": " <strong>Memory Management</strong>"
+        },
+        {
+          "title": "Paging and Page tables"
+        },
+        {
+          "title": "Segmentation"
+        },
+        {
+          "title": "First Fit, Next Fit, Best Fit"
+        },
+        {
+          "title": "Non-continuous Allocation"
+        },
+        {
+          "title": " <strong>Virtual memory</strong>"
+        },
+        {
+          "title": "Page Faults"
+        },
+        {
+          "title": "Page Replacement Algorithms"
+        },
+        {
+          "title": "Belady’s Anomaly"
+        },
+        {
+          "title": " <strong>File Systems</strong>"
+        },
+        {
+          "title": "File Allocation Tables."
+        },
+        {
+          "title": "Disk Scheduling Algorithms"
+        },
+        {
+          "title": " <strong>OS Security</strong>"
+        },
+        {
+          "title": "Firewall"
+        },
+        {
+          "title": "Malware and Antiviruses"
+        },
+        {
+          "title": " <a href=\"http://www.ee.surrey.ac.uk/Teaching/Unix/\">Unix commands</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Computer Networks",
+      "items": [
+        {
+          "title": "<p> <strong>Layers of TCP and OSI</strong></p>"
+        },
+        {
+          "title": "Application."
+        },
+        {
+          "title": "Presentation."
+        },
+        {
+          "title": "Session."
+        },
+        {
+          "title": "Transport."
+        },
+        {
+          "title": "Network."
+        },
+        {
+          "title": "Data."
+        },
+        {
+          "title": "Physical.</li>\n</ul>"
+        },
+        {
+          "title": "<p> <strong>Flow Control</strong></p>"
+        },
+        {
+          "title": "Flow Control"
+        },
+        {
+          "title": "Congestion Control"
+        },
+        {
+          "title": "Error Control</li>\n</ul>"
+        },
+        {
+          "title": "<p> <strong>Routers and Routing Algorithms</strong></p>"
+        },
+        {
+          "title": "DHCP and static routing"
+        },
+        {
+          "title": "Round Robin and others"
+        },
+        {
+          "title": "DHCP | ICMP</li>\n</ul>"
+        },
+        {
+          "title": "<p> <strong>UDP and Sockets</strong></p>"
+        },
+        {
+          "title": "<p> <strong>IPv4 | IPv6</strong></p>"
+        },
+        {
+          "title": "<p> <strong>Application Layer Protocols</strong></p>"
+        },
+        {
+          "title": "HTTP | FTP"
+        },
+        {
+          "title": "DNS | SMTP"
+        },
+        {
+          "title": "Email MIME Types | POP | IMAP"
+        }
+      ]
+    },
+    {
+      "topic": "Software Engineering After learning the above",
+      "items": [
+        {
+          "title": "<p> <strong>Software development models</strong></p>"
+        },
+        {
+          "title": "Waterfall"
+        },
+        {
+          "title": "Spiral"
+        },
+        {
+          "title": "Iterative"
+        },
+        {
+          "title": "Agile</li>\n</ul>"
+        },
+        {
+          "title": "<p> <strong>Software Cost Estimation</strong></p>"
+        },
+        {
+          "title": "<p> <strong>COCOMO Model</strong></p>"
+        },
+        {
+          "title": "<p> <strong>Risk Management</strong></p>"
+        },
+        {
+          "title": "<p> <strong>Software Requirement</strong></p>"
+        },
+        {
+          "title": "Software Requirement Specifications"
+        },
+        {
+          "title": "Data Flow Diagrams</li>\n</ul>"
+        },
+        {
+          "title": "<p> <strong>Software Quality</strong></p>"
+        },
+        {
+          "title": "ISO standards 9001, 14001"
+        },
+        {
+          "title": "SEICMM"
+        },
+        {
+          "title": "Six Sigma</li>\n</ul>"
+        },
+        {
+          "title": "<p> <strong>Software Design</strong></p>"
+        },
+        {
+          "title": "Software Design Principles"
+        },
+        {
+          "title": "<strong>Coupling and Cohesion</strong>"
+        },
+        {
+          "title": "Object-Oriented Design"
+        },
+        {
+          "title": "User Interface Design</li>\n</ul>"
+        },
+        {
+          "title": "<p> <strong>Testing</strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Computer Science - 4",
+      "items": [
+        {
+          "title": "<p><em>You will need these when you make projects</em></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Cryptography and Network Security",
+      "items": [
+        {
+          "title": " <strong>Encryption Algorithms</strong>"
+        },
+        {
+          "title": "DES, AES, Whirlpool, One Time Pad</li>\n</ul>"
+        },
+        {
+          "title": " <strong>Hashing Algorithms</strong>"
+        },
+        {
+          "title": "SHA family</li>\n</ul>"
+        },
+        {
+          "title": " <strong>Key Distribution</strong>"
+        },
+        {
+          "title": "RSA, Kerberos</li>\n</ul>"
+        },
+        {
+          "title": " <strong><a href=\"https://cloud.google.com/kms/docs/digital-signatures#:~:text=A%20digital%20signature%20is%20a,a%20signature%20over%20raw%20data\">Digital Signatures</a></strong>"
+        },
+        {
+          "title": "<a href=\"https://www.ibm.com/docs/en/ibm-mq/7.5?topic=concepts-message-digests\">Message Digest</a> </li>\n</ul>"
+        },
+        {
+          "title": " <strong>Compression</strong>"
+        },
+        {
+          "title": "<a href=\"https://www.hanshq.net/zip.html#huffman\">History</a>.</li>\n</ul>"
+        },
+        {
+          "title": " <strong>Firewalls</strong>"
+        },
+        {
+          "title": " <strong>Network Security</strong>"
+        },
+        {
+          "title": "<a href=\"https://en.wikipedia.org/wiki/Honeypot_(computing)\">Honeypots</a>"
+        },
+        {
+          "title": "<a href=\"https://owasp.org/www-community/attacks/Manipulator-in-the-middle_attack\">Man in the middle attacks</a>"
+        },
+        {
+          "title": "<a href=\"https://www.researchgate.net/figure/DDoS-Mitigation-Module_fig3_220939734\">DDOS prevention</a>"
+        },
+        {
+          "title": "<a href=\"https://www.ibm.com/docs/en/ibm-mq/7.5?topic=mechanisms-cryptographic-security-protocols-tls-ssl\">SSL and TLS</a>"
+        },
+        {
+          "topic": "Data Science and Machine Learning",
+          "items": [
+            {
+              "title": "<p> <strong><a href=\"https://svivek.com/teaching/lectures/slides/loss-minimization/bias-variance.pdf\">Bias and Variance</a></strong></p>"
+            },
+            {
+              "title": "<p> <strong>Supervised Learning</strong></p>"
+            },
+            {
+              "title": " <a href=\"https://cogitoai.home.blog/2019/08/21/what-is-classification-in-machine-learning/\">Classification</a>"
+            },
+            {
+              "title": "<p> <a href=\"https://www.topcoder.com/thrive/articles/introduction-to-linear-regression\">Regression</a></p>"
+            },
+            {
+              "title": "<p> <strong>Un-supervised Learning</strong></p>"
+            },
+            {
+              "title": " <a href=\"https://scikit-learn.org/stable/modules/clustering.html\">Clustering</a>"
+            },
+            {
+              "title": "<p> <a href=\"https://web.iitd.ac.in/~bspanda/KNN%20presentation.pdf\">k-Nearest Neighbours</a></p>"
+            },
+            {
+              "title": "<p> <strong><a href=\"https://homepages.inf.ed.ac.uk/rbf/HIPR2/wksheets.htm\">Image Processing</a></strong><sup>Worth learning</sup></p>"
+            },
+            {
+              "title": "<a href=\"http://www.it.hiof.no/~borres/j3d/math/twod/p-twod.html\">Transformation</a> and <a href=\"https://homepages.inf.ed.ac.uk/rbf/HIPR2/translte.htm\">Translation</a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Web Development",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>You can study Web Development from <a href=\"https://developer.mozilla.org/en-US/docs/Web/Tutorials\">Mozilla Developer Network Website</a>.</p>\n</blockquote>"
+        },
+        {
+          "title": "<a href=\"https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web\">MDN Getting Started Guide</a>"
+        },
+        {
+          "title": "<p> <strong>Front-End</strong></p>"
+        },
+        {
+          "title": "<a href=\"https://developer.mozilla.org/en-US/docs/Learn/HTML\">HTML5</a>"
+        },
+        {
+          "title": "<a href=\"https://developer.mozilla.org/en-US/docs/Learn/CSS\">CSS3</a>"
+        },
+        {
+          "title": "<a href=\"https://developer.mozilla.org/en-US/docs/Learn/JavaScript\">JavaScript</a>"
+        },
+        {
+          "title": "<a href=\"https://developer.mozilla.org/en-US/docs/Learn/Forms\">Web Forms</a>"
+        },
+        {
+          "title": "<a href=\"https://developer.mozilla.org/en-US/docs/Learn/Accessibility\">Accessibility</a>"
+        },
+        {
+          "title": "<a href=\"https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing\">Tools and Testing</a>"
+        },
+        {
+          "title": "<a href=\"https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name\">DNS and Domain Names</a>"
+        },
+        {
+          "title": "<a href=\"https://www.zionandzion.com/json-vs-xml-vs-toml-vs-cson-vs-yaml/\">JSON and other formats</a> and <a href=\"https://yaml.org/\">YAML</a></li>\n</ul>"
+        },
+        {
+          "title": "<p> <strong>BackEnd</strong></p>"
+        },
+        {
+          "title": "<a href=\"https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/\">Golang</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Computer Graphics",
+      "items": [
+        {
+          "title": "<blockquote>\n<p>Not mandatory, just get the overview</p>\n</blockquote>"
+        },
+        {
+          "title": " <strong>Concepts and principles</strong>"
+        },
+        {
+          "title": "<a href=\"https://learnopengl.com/\">OpenGL basics : lines, planes, vertex and edges</a>"
+        },
+        {
+          "title": "<a href=\"http://math.hws.edu/graphicsbook/c2/s1.html\">Pixels</a>"
+        },
+        {
+          "title": "<a href=\"https://github.com/ssloy/tinyrenderer/wiki\">Rendering</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cs.uic.edu/~jbell/CourseNotes/ComputerGraphics/LightingAndShading.html\">Shading</a>"
+        },
+        {
+          "title": "<a href=\"https://www.cs.uic.edu/~jbell/CourseNotes/ComputerGraphics/TextureMapping.html\">Texturing</a>"
+        },
+        {
+          "title": "<a href=\"https://raytracing.github.io/books/RayTracingInOneWeekend.html\">Ray Tracing</a>"
+        },
+        {
+          "title": "<a href=\"http://web.cs.wpi.edu/~matt/courses/cs563/talks/powwie/p1/ray-cast.htm\">Raycasting</a>\n<p>After you are done with all this and want to make projects, check out <a href=\"https://github.com/apeman/awesome_computer_science/blob/master/what-should-i-code.md\">Projects you can make</a></p>"
+        }
+      ]
+    },
+    {
+      "topic": "LICENSE",
+      "items": [
+        {
+          "title": "<p><a href=\"./LICENSE.txt\">Mozilla-Public-License</a></p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "id": 32,
+  "header": "Chat-Bot-Security-Checklist",
+  "topicList": [
+    "Table of Contents",
+    "How to use?",
+    "OS-Platforms",
+    "Messaging-platforms",
+    "Custom-Web-Platform",
+    "Intent-Classifiers",
+    "Dialog-Management-System",
+    "Conversation-Records",
+    "OWASP-TOP-10",
+    "Licensing",
+    "Regulation",
+    "Chat-bot Security Checklist Badge",
+    "Contributing",
+    "Support",
+    "Author",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Table of Contents",
+      "items": [
+        {
+          "title": "<ol>\n<li><strong><a href=\"#Client-Security\">CLient Side Security</a></strong><ol>\n<li><a href=\"#OS-Platforms\">OS Platform</a>"
+        },
+        {
+          "title": "<a href=\"#Messaging-platforms\">Messaging Platforms</a>"
+        },
+        {
+          "title": "<a href=\"#Custom-Web-Platform\">Custom-Website Platform</a></li>\n</ol>"
+        },
+        {
+          "title": "<strong><a href=\"#NLP-security\">NLP Technology Secuirty</a></strong><ol>\n<li><a href=\"#Intent-Classifiers\">Intent Classifiers</a>"
+        },
+        {
+          "title": "<a href=\"#Dialog-Management-System\">Dialog Mangement System</a>"
+        },
+        {
+          "title": "<a href=\"#Conversation-Records\">Conversation Records</a></li>\n</ol>"
+        },
+        {
+          "title": "<strong><a href=\"#Back-end-Infrastructure\">Backend + Infrastructure</a></strong><ol>\n<li><a href=\"#OWASP-Top-10\">OWASP Top 10</a>"
+        },
+        {
+          "title": "<a href=\"#Licesnsing\">Licensing</a></li>\n</ol>\n</li>\n</ol><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "How to use?",
+      "items": [
+        {
+          "title": "<p>All items in the <strong>Chat-bot Security Checklist</strong> are must for the majority of the projects.exception only be made for a regulatory reason. you can use this checklist to implement three-layered defense to your Chat-bot product. Each point in the list is marked as low medium and high.</p>"
+        },
+        {
+          "title": "<img alt=\"Low\" src=\"data/low.svg\"> means that the item is <strong>recommended</strong> but can be omitted in some particular situations.</img>"
+        },
+        {
+          "title": "<img alt=\"Medium\" src=\"data/medium.svg\"> means that the item is <strong>highly recommended</strong> and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions.</img>"
+        },
+        {
+          "title": "<img alt=\"High\" src=\"data/high.svg\"> means that the item <strong>can't be omitted</strong> by any reason. You may leave a huge vulnerability open to the world. The testing priority needs to be on these elements first.</img><hr/><p>Before diving right into the checklist, let's ask a question why Chat-bot needs security\nand what's different with them? And the answer is, most of the components are same like your Infrastructure, Back-end, your middleware and dev-ops practices all are same, the only thing that differs is Language and conversational components of the chat-bot which isn't common in mainstream applications that's where the focus of this checklist.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "OS-Platforms",
+      "items": [
+        {
+          "title": " <strong>Data:</strong> <img alt=\"Medium\" src=\"data/medium.svg\"> You need to make sure that your customers Data is not available to other apps. and you should also encrypt the data so that it can't be stolen even under physical access.</img>"
+        },
+        {
+          "title": "📖 <a href=\"https://www.futurelearn.com/courses/secure-android-app-development/0/steps/21592\">Securing Data on Android</a>"
+        },
+        {
+          "title": "<p>📖 <a href=\"https://medium.com/ios-os-x-development/securing-user-data-with-keychain-for-ios-e720e0f9a8e2\">Securing Data on iOS</a></p>"
+        },
+        {
+          "title": "<p> <strong>Authentication:</strong><img alt=\"High\" src=\"data/high.svg\">\n There are two types of authentication that You might need.</img></p>"
+        },
+        {
+          "title": "You want to make sure that No, Non-user can access your platform."
+        },
+        {
+          "title": "📖 <a href=\"https://www.freecodecamp.org/news/evaluating-authentication-as-a-service-providers-6903895a8450/\">Here's how you can choose good authentication </a></li>\n</ul>"
+        },
+        {
+          "title": "<p>When your users' device requesting private information you must ensure that your user is requesting the information instead of malicious user with device access.\n  You can do this using FaceID and TouchID they are becoming more and more common with new smartphones.</p>"
+        },
+        {
+          "title": "<p>📖 <a href=\"https://proandroiddev.com/5-steps-to-implement-biometric-authentication-in-android-dbeb825aeee8\">biometric authentication on Android App</a></p>"
+        },
+        {
+          "title": "<p>📖 <a href=\"https://medium.com/we-talk-it/face-id-and-touch-id-biometric-authentication-ca1678fc338\">biometric authentication on iOS App</a></p>"
+        },
+        {
+          "title": "<p>📖 <a href=\"https://medium.com/react-native-training/integrate-touch-id-and-face-id-to-your-react-native-app-707e7db17edc\">biometric authentication on Cross Platform App</a></p>\n</li>\n</ul>"
+        },
+        {
+          "title": "<p>Developing in-house authentication Management system can be vulnerable at times considering you haven't got it pentested yet. So if possible for your organization you can go for an AaaS Provider.</p>"
+        },
+        {
+          "title": "📖 <a href=\"https://www.freecodecamp.org/news/evaluating-authentication-as-a-service-providers-6903895a8450/\">Auth as a service providers</a> </li>\n</ul>"
+        },
+        {
+          "title": " <strong>Hard-coding:</strong><img alt=\"High\" src=\"data/high.svg\"/> Make sure you are not storing your secrets on your code.\nAny API access token with admin privilege should not be hard-coded in your App."
+        },
+        {
+          "title": "📖 <a href=\"https://www.zdnet.com/article/tens-of-thousands-of-cars-left-exposed-to-thieves-due-to-a-hardcoded-password/\">Hard-coded credentials case study</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Messaging-platforms",
+      "items": [
+        {
+          "title": "<p> <strong>Channel Authorization:</strong> <img alt=\"Medium\" src=\"data/medium.svg\"/> Chat-bots have this unique feature of being available to everyone by deploying the bot on multiple channels like Skype for Business, Microsoft Teams, Facebook, Slack, etc. So If you are planning to deploy your chat-bot in any of the platforms your organization must make sure to restrict features which shouldn't be available to all.</p>"
+        },
+        {
+          "title": "<p> <strong>Channel Authentication:</strong> <img alt=\"Low\" src=\"data/low.svg\"/> You should check if your customer is using your platform instead of someone else from his/her account.you can do this using 2-Factor Authentication like OTP SMS or Email, Google Authenticator.</p>"
+        },
+        {
+          "title": "<p> <strong>regulatory Data Protection:</strong><img alt=\"High\" src=\"data/high.svg\"/> Every regulation restricts customer data ownership to yourself so if you are asking PII(Personally identifiable information) or ePHI(Electronic protected health information) from your customer you must restrict that particular intent to your native channel only.\nBecause you don't have custom SLAs to any of these channel provider, you can't solely own the private data it'll be shared with them.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Custom-Web-Platform",
+      "items": [
+        {
+          "title": " <strong>Front-end Security</strong><img alt=\"High\" src=\"data/high.svg\"/>\nIf you are a chat-bot as a service company than you must think of secure deployability.  for that reason you might SDK for a platform like a web, Android, iOS, etc. then you need your Client Technology secure and tested. you will also need a VAPT in order to work in B2B.This c"
+        },
+        {
+          "title": "<a href=\"https://restfulapi.net/security-essentials/\">Secure your API's</a>"
+        },
+        {
+          "title": "<a href=\"https://proandroiddev.com/developing-secure-android-apps-8edad978d8ba\">Secure your Android Client</a>"
+        },
+        {
+          "title": "<a href=\"https://medium.com/swift2go/application-security-musts-for-every-ios-app-dabf095b9c4f\">Secure your iOS Client</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Intent-Classifiers",
+      "items": [
+        {
+          "title": "<p> <strong>Intent Segregation:</strong><img alt=\"High\" src=\"data/high.svg\"/> The intent of your chat-bot should be different for a different class of users. since NLP is a probabilistic system instead of being a deterministic system\nyou should not differ response based on user class. you should all together create another intent/instance for a different class of users.  </p>"
+        },
+        {
+          "title": "<p> <strong>Permissioned Intent:</strong><img alt=\"High\" src=\"data/high.svg\"/> You must verify identity then channel and role of your customers before passing it to the intent.you should also check if the intent is there for that particular role or not.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Dialog-Management-System",
+      "items": [
+        {
+          "title": "<p> <strong>Authorization:</strong> <img alt=\"medium\" src=\"data/medium.svg\"/> You must check who is the user.\nRole Management</p>"
+        },
+        {
+          "title": "<p>Customer</p>"
+        },
+        {
+          "title": "Unauthenticated customer"
+        },
+        {
+          "title": "Authenticated Non-Premium customer"
+        },
+        {
+          "title": "Premium customer</li>\n</ul>\n</li>\n</ul><p>If your chat-bot also has functionality for Internal users then you should have these roles.</p>"
+        },
+        {
+          "title": "Internal Roles"
+        },
+        {
+          "title": "Developer/tester/federated Identities"
+        },
+        {
+          "title": "<p>Admin\nthese roles will help you in intent Segregation, logging and for audit purpose.</p>"
+        },
+        {
+          "title": "<p> <strong>Language generation Constraint:</strong>\n<img alt=\"high\" src=\"data/high.svg\"/> you should not directly use your customer input. Because if a malicious user sent you a malformed input it could be dangerous for the system. although it is a very common practice to sanitize input here because of multiple contexts in play. developers forget to sanitize.</p>"
+        },
+        {
+          "title": "<p> <strong>Rate Limiting queries:</strong> <img alt=\"medium\" src=\"data/medium.svg\"/>\nConsidering the speed of typing of a mobile user ranges 30–75 wpm and reading speed is 250 wpm.\nif one user takes 5 seconds to read the text and 10 seconds with other UIs then we can assume that on an interactive Bot no. of user calls can be 10 +-5 = max-15 so we can limit our bot API call rate to 15 Per/Minute. By doing this we mitigate the risk of a DOS attack.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Conversation-Records",
+      "items": [
+        {
+          "title": "<p> <strong>Life Cycle Management:</strong><img alt=\"High\" src=\"data/high.svg\"/> You should create a system where you mark Conversation as stale and send them to archive. and also if you need to delete them or not.\nbackup should be in place for all the chats.</p>"
+        },
+        {
+          "title": "<p> <strong>PII and PHI Redaction:</strong><img alt=\"High\" src=\"data/high.svg\"/> You should implement a solution to redact or encrypt the Personally identifiable data. you can do this by storing a key on the user's device. so the user can decrypt and read their Conversation and no one else will be able to read it. but you will be needing these logs for audit purposes.</p>"
+        },
+        {
+          "title": "<p> <strong>Administration:</strong> <img alt=\"High\" src=\"data/high.svg\"/> Create a system where there should be clear access on who can access the conversational data. and also log the data accessing activity to another server where you have the access.</p>"
+        }
+      ]
+    },
+    {
+      "topic": "OWASP-TOP-10",
+      "items": [
+        {
+          "title": " <strong>Injection:</strong>"
+        },
+        {
+          "title": " <strong>Broken Authentication:</strong>"
+        },
+        {
+          "title": " <strong>Sensitive data exposure:</strong>"
+        },
+        {
+          "title": " <strong>XML External Entities:</strong>"
+        },
+        {
+          "title": " <strong>Broken Access control:</strong>"
+        },
+        {
+          "title": " <strong>Security misconfigurations:</strong>"
+        },
+        {
+          "title": " <strong>Cross Site Scripting (XSS):</strong>"
+        },
+        {
+          "title": " <strong>Insecure Deserialization:</strong>"
+        },
+        {
+          "title": " <strong>vulnerabilities:</strong>"
+        },
+        {
+          "title": " <strong>Insufficient logging and monitoring:</strong>"
+        }
+      ]
+    },
+    {
+      "topic": "Licensing",
+      "items": [
+        {
+          "title": " <strong>SLAs:</strong> Check service level agreement for bot usage. There would be problems if a vendor doesn't support bot accessing their service. It will be no use for you to buy some software which doesn't allow bot access to their service."
+        }
+      ]
+    },
+    {
+      "topic": "Regulation",
+      "items": [
+        {
+          "title": " <a href=\"https://blog.rasa.com/how-gdpr-affects-your-chatbot-and-voice-assistant/\">GDPR</a>"
+        },
+        {
+          "title": " <a href=\"https://usa.visa.com/dam/VCOM/global/support-legal/documents/visa-security-alert-july-2018.pdf\">PCI-DSS</a><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Chat-bot Security Checklist Badge",
+      "items": [
+        {
+          "title": "<p>If you want to show you are following the rules of the Chat-Bot Checklist, put this badge on your README file!</p><p>➔ <a href=\"https://github.com/apoorvrajsaxena/Chat-Bot-Security-Checklist\"><img alt=\"Chat_Bot_Security_Checklist followed\" src=\"https://img.shields.io/badge/Chat_Bot_Security_Checklist-followed-brightgreen.svg\"/></a></p><p><code>md\n[![Chat‑Bot_Checklist followed](https://img.shields.io/badge/Chat_Bot_Security_Checklist-followed-brightgreen.svg)](https://github.com/apoorvrajsaxena/Chat-Bot-Security-Checklist)</code></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p><hr/>"
+        }
+      ]
+    },
+    {
+      "topic": "Contributing",
+      "items": [
+        {
+          "title": "<p><strong>Open an issue or a pull request to suggest changes or additions.</strong></p>"
+        },
+        {
+          "topic": "Guide",
+          "items": [
+            {
+              "title": "<p>The <strong>Chat-Bot Security Checklist</strong> repository consists of two branches:</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Support",
+      "items": [
+        {
+          "title": "<p>If you have any question or suggestion, don't hesitate to use Twitter:</p>"
+        },
+        {
+          "title": "<a href=\"https://twitter.com/secxena\">Twitter</a>"
+        }
+      ]
+    },
+    {
+      "topic": "Author",
+      "items": [
+        {
+          "title": "<p><strong><a href=\"https://github.com/apoorvrajsaxena\">Apoorv Raj Saxena</a></strong></p>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p><a href=\"https://creativecommons.org/publicdomain/zero/1.0/\"><img alt=\"CC0\" src=\"https://i.creativecommons.org/p/zero/1.0/88x31.png\"/></a></p><p><strong><a href=\"#table-of-contents\">⬆ back to top</a></strong></p>"
+        }
+      ]
+    }
+  ]
+}

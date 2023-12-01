@@ -1,0 +1,65 @@
+{
+  "id": 211,
+  "header": "trustpass",
+  "topicList": [
+    "install",
+    "Usage",
+    "Options",
+    "Development",
+    "License"
+  ],
+  "itemGroups": [
+    {
+      "topic": "install",
+      "items": [
+        {
+          "title": "<p>You can install this package either with <code>npm</code> or with <code>bower</code>.</p>"
+        },
+        {
+          "topic": "npm",
+          "items": [
+            {
+              "title": "<p><code>shell\nnpm install angular-trustpass --save</code></p><p>Then add <code>trTrustpass</code> as a dependency for your app:</p><p><code>javascript\nangular.module('demoApp', ['trTrustpass']);</code></p>"
+            }
+          ]
+        },
+        {
+          "topic": "bower",
+          "items": [
+            {
+              "title": "<p><code>shell\nbower install angular-trustpass --save</code></p><p>Add <code>&lt;script&gt;</code> and <code>&lt;link&gt;</code> to your page:\n```html\n<link href=\"bower_modules/angular-trustpass/dist/tr-trustpass.css\" rel=\"stylesheet\"/></p><script src=\"bower_modules/angular-trustpass/dist/tr-trustpass.js\"></script><p>```</p><p>Then add <code>trTrustpass</code> as a dependency for your app:</p><p><code>javascript\nangular.module('demoApp', ['trTrustpass']);</code></p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Usage",
+      "items": []
+    },
+    {
+      "topic": "Options",
+      "items": [
+        {
+          "title": "<p>Pass a json object to <code>tr-trustpass</code> like this: <code>tr-trustpass=\"{maximum: true, special: false}\"</code></p>"
+        }
+      ]
+    },
+    {
+      "topic": "Development",
+      "items": [
+        {
+          "title": "<p><a href=\"https://github.com/Trustroots/trustpass/issues\">Ideas</a> and pull requests totally welcome!</p>"
+        }
+      ]
+    },
+    {
+      "topic": "License",
+      "items": [
+        {
+          "title": "<p><a href=\"LICENSE.md\">MIT</a></p>"
+        }
+      ]
+    }
+  ]
+}

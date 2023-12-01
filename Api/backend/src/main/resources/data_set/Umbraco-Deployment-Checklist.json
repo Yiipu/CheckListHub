@@ -1,0 +1,71 @@
+{
+  "id": 214,
+  "header": "Umbraco-Deployment-Checklist",
+  "topicList": [
+    "Server",
+    "Code",
+    "Configurations",
+    "IIS",
+    "Umbraco",
+    "SEO",
+    "Load balancing"
+  ],
+  "itemGroups": [
+    {
+      "topic": "Server",
+      "items": [
+        {
+          "title": "<p>| Title | Description |\n| :--- | :--- | \n| Separate drive | You do not want the system drive to run out of free space, so make sure the website, logging (both IIS and Umbraco), Umbraco media folder, search index, caching etc are stored on a separate drive  |\n| Backup and monitoring | Ensure that both  web server and SQL Server are constantly monitored and regularly backed up  |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Code",
+      "items": [
+        {
+          "title": "<p>| Title | Description |\n| :--- | :--- | \n| Release mode | All DLL's in production environments should be built in Release mode |\n| Minified CSS and JS | If possible, all JavaScript and CSS files should be bundled and minified. I use <a href=\"http://www.mindscapehq.com/products/web-workbench\">Mindscape Web Workbench</a> but there are loads of options |\n| Remove debug stuff | Search through your entire project for lines that you usually use for testing/debug and remove the ones that will display in your html, css or javascript. \"console.log\", \"todo\", \"lorem ipsum\", \"test\" etc.  |\n| Google Analytics | If you use Google Analytics, make sure the tracking code is correct  |\n| Caching | Make sure the code leverages caching offered by the framework. Look <a href=\"http://stefantsov.com/umbraco-7-mvc-performance/\">here</a> and <a href=\"http://www.abstractmethod.co.uk/blog/2015/8/optimize-your-mvc-umbraco-site/\">here</a> |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Configurations",
+      "items": [
+        {
+          "title": "<p>| Title | Description |\n| :--- | :--- | \n| Debug = false | Seems like the most obvious thing in the world, but I still stumble upon sites with compilation debug set to true in production environments  |\n| Force WWW | To keep consistent URLs on my site, I like to force my website to be visited with the WWW prefix. One way to ensure this is using a simple <a href=\"http://stackoverflow.com/questions/10153670/microsoft-rewriting-module-force-www-on-url-or-remove-www-from-url\">URL rewrite rule</a>\n| Verify all paths | Search for \":\\\" and \"\\\\\" in all config files and check that all paths are correct  |\n| Verify appsettings and connectionstring | make sure they have the correct values for production environment |\n| Encrypt connectionstrings | Don't keep connectionstrings in plaintext in the <a href=\"https://en.wikipedia.org/wiki/DMZ_(computing)\">demilitarized zone</a>. [Separate the connectionstring section] (http://stackoverflow.com/questions/6582970/separate-connectionstrings-and-mailsettings-from-web-config-possible) and <a href=\"http://www.codeproject.com/Tips/795135/Encrypt-ConnectionString-in-Web-Config\">encrypt it on the web server</a> (Remember: You cannot encrypt the file on one server and transfer it to another. You must copy the file in plaintext and do the encryption on each server) |\n| Security headers | Analyze security headers at  <a href=\"https://securityheaders.io/\">Securityheaders.io</a> and add the missing ones |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "IIS",
+      "items": [
+        {
+          "title": "<p>| Title | Description |\n| :--- | :--- | \n| SSL | No excuses. Get a certificate and make sure that information sent between your site and the users are encrypted. Analyze your website at <a href=\"https://www.ssllabs.com/ssltest/analyze.html\">SSLLABS</a> and try to get an A. <a href=\"https://cultiv.nl/blog/so-you-want-to-secure-your-umbraco-site/\">Read Sebastiaans great blog post about securing Umbraco</a> Remember to add <code>&lt;add key=\"umbracoUseSSL\" value=\"true\" /&gt;</code> in web.config! |\n| No logging until needed | Turn off logging (both IIS and Umbraco) until needed. (Not everyone will agree, and if you have a low-traffic website you can ignore this part. I usually do like this: Keep logging on for 2 weeks. If everything runs smooth I turn it off until things get shaky) |\n| App pool recycle | Create a separate Application Pool for the site and  <a href=\"https://technet.microsoft.com/nb-no/library/cc754494(v=ws.10).aspx\">schedule a nightly recycle</a> |\n| Robots.txt | Do you need search engines to ignore parts of your page? |\n| Sitemap.xml | Consider to <a href=\"https://support.google.com/webmasters/answer/156184?hl=en\">include a sitemap.xml</a> on your site |\n| 404 | Do you handle 404's in a decent way?  |\n| 500 | Do you handle 500's in a decent way? <a href=\"https://msdn.microsoft.com/en-us/library/h0hfz6fc(v=vs.85).aspx\">Custom error page</a>  |\n| Print.css | Sounds crazy, but some people actually print web pages |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Umbraco",
+      "items": [
+        {
+          "title": "<p>| Title | Description |\n| :--- | :--- | \n| Latest version | Update to latest (stable) version |\n| Disable Version Check | [Set umbracoVersionCheckPeriod = 0] (https://our.umbraco.org/wiki/reference/webconfig) |\n| Silent/Inline macro errors | In the umbracoSettings.config set MacroErrors to inline or silent (if you choose inline, <a href=\"https://github.com/umbraco/Umbraco-CMS/pull/921\">this PR</a> now makes it possible to change the default error message |\n| Files and images | Verify that files and images can be uploaded to the site |\n| Scheduled tasks | Verify that schedule tasks are running |\n| Search | Test some search queries |\n| Access to backoffice | Do you want to expose the \".../Umbraco\" URL to everyone or limit it to your local network? <a href=\"http://staheri.com/my-blog/2014/may/restrict-umbraco-cms-by-ip-address/\">Check out this blog post to restrict access to backend by IP address</a> |\n| Redirect old URLs | Are you replacing an old site with new URLs? Go through analytics data and set up 301 redirects for the most popular pages. The <a href=\"https://our.umbraco.org/projects/developer-tools/301-url-tracker/\">301 URL Tracker</a> makes it easy, and is planned implemeted in the core for <a href=\"https://our.umbraco.org/contribute/releases/750\">7.5.0</a> |\n| Forms | Using Umbraco Forms? Make sure it's the correct license and try to submit a test form |\n| Cold boot | Delete cache and search index. Restart site. [Republish site] (https://our.umbraco.org/wiki/reference/api-cheatsheet/publishing-and-republishing/) Reindex  |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "SEO",
+      "items": [
+        {
+          "title": "<p>| Title | Description |\n| :--- | :--- | \n| Page titles | One h1 tag on each page? |\n| Meta data | <a href=\"http://www.w3schools.com/tags/tag_meta.asp\">HTML meta tags</a> |\n| Alt text | Images have alt text? |\n| Broken links | Check site for broken links. I Use <a href=\"https://wummel.github.io/linkchecker/\">LinkChecker</a> | \n| Favicon | Add favicon |\n| Google Webmaster Tools | With Google Webmaster tools you can tell google to reindex your site quicker after a release.|\n| Google PageSpeed Insights | <a href=\"https://developers.google.com/speed/pagespeed/insights/\">Analyze and try to improve the score for the site</a>  |</p>"
+        }
+      ]
+    },
+    {
+      "topic": "Load balancing",
+      "items": [
+        {
+          "title": "<p>TODO!</p>"
+        }
+      ]
+    }
+  ]
+}
