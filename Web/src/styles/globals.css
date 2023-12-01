@@ -19,12 +19,16 @@
 @layer base {
   :root {
     color-scheme: light dark;
-    @apply dark:text-white dark:bg-black
+    @apply dark:text-white dark:bg-slate-900 bg-white
   }
 }
 
 @layer components {
   .container-md {
     @apply w-full mx-auto md:max-w-md lg:max-w-lg xl:max-w-xl xxl:max-w-xxl;
+  }
+
+  .divider{
+    @apply h-[0.25rem] bg-gradient-to-r dark:from-white from-black to-transparent rounded-lg
   }
 }
